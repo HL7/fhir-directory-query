@@ -1,0 +1,1 @@
+Because this resource is expected to be a [contained resource](https://www.hl7.org/fhir/references.html#contained) in the resources whose content is restricted, there are no RESTful interactions defined for this profile.

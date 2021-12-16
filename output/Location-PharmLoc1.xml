@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="PharmLoc1"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><blockquote><p><b>New Patients</b></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS existptonly}">Accepting existing patients</span></p><p><b>value</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p></blockquote><p><b>Accessibility</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS adacomp}">ADA compliant</span></p><p><b>Accessibility</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS pubtrans}">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: OrgA CT Location 1</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}">outpatient pharmacy</span></p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.orga.com">https://www.orga.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>3</td><td>15</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-BigBox.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS bus}">Non-Healthcare Business</span>; name: Big Box Retailer; Phone: (111)-222-3333, https://www.bixboxretailer.com</a></p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>allDay</b>: true</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sat, sun</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 17:00:00</p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients">
+    <extension url="acceptingPatients">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS"/>
+          <code value="existptonly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="fromNetwork">
+      <valueReference>
+        <reference value="Organization/AcmeofCTStdNet"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS"/>
+        <code value="adacomp"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS"/>
+        <code value="pubtrans"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <name value="OrgA CT Location 1"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="OUTPHARM"/>
+      <display value="outpatient pharmacy"/>
+    </coding>
+  </type>
+  <telecom>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+      <extension url="daysOfWeek">
+        <valueCode value="mon"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="tue"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="wed"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="thu"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="fri"/>
+      </extension>
+      <extension url="allDay">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+      <extension url="daysOfWeek">
+        <valueCode value="sat"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="sun"/>
+      </extension>
+      <extension url="availableStartTime">
+        <valueTime value="08:00:00"/>
+      </extension>
+      <extension url="availableEndTime">
+        <valueTime value="17:00:00"/>
+      </extension>
+    </extension>
+    <system value="phone"/>
+    <value value="(111)-222-3333"/>
+    <rank value="2"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="https://www.orga.com"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <line value="123 Main Street"/>
+    <city value="Anytown"/>
+    <state value="CT"/>
+    <postalCode value="00014-1234"/>
+  </address>
+  <position>
+    <longitude value="3"/>
+    <latitude value="15"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/BigBox"/>
+  </managingOrganization>
+  <hoursOfOperation>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <allDay value="true"/>
+  </hoursOfOperation>
+  <hoursOfOperation>
+    <daysOfWeek value="sat"/>
+    <daysOfWeek value="sun"/>
+    <openingTime value="08:00:00"/>
+    <closingTime value="17:00:00"/>
+  </hoursOfOperation>
+</Location>

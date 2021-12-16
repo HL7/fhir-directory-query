@@ -1,0 +1,467 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceTypeVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HealthcareServiceTypeVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-service-type.html\"><code>http://terminology.hl7.org/CodeSystem/service-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td>Adoption/Permanent Care Info/Support</td><td>Adoption &amp; permanent care information/support</td></tr><tr><td>3</td><td>Aged Care Information/Referral</td><td>Aged Care information/referral</td></tr><tr><td>8</td><td>Home Care/Housekeeping Assistance</td><td>Home care/housekeeping assistance</td></tr><tr><td>9</td><td>Home Maintenance and Repair</td><td>Home maintenance and repair</td></tr><tr><td>10</td><td>Personal Alarms/Alerts</td><td>Personal alarms/alerts</td></tr><tr><td>11</td><td>Personal Care for Older Persons</td><td>Personal care for older persons</td></tr><tr><td>21</td><td>Hydrotherapy</td><td>Hydrotherapy</td></tr><tr><td>26</td><td>Meditation</td><td>Meditation</td></tr><tr><td>31</td><td>Relaxation Therapy</td><td>Relaxation therapy</td></tr><tr><td>33</td><td>Western Herbal Medicine</td><td>Western herbal medicine</td></tr><tr><td>34</td><td>Family Day care</td><td>Family day care</td></tr><tr><td>36</td><td>Kindergarten Inclusion Support</td><td>Kindergarten inclusion support for children with a disability</td></tr><tr><td>42</td><td>Parenting/Family Support/Education</td><td>Parenting &amp; family management support/education</td></tr><tr><td>51</td><td>Blood Donation</td><td>Blood donation</td></tr><tr><td>55</td><td>Health Advocacy/Liaison Service</td><td>Health advocacy/Liaison service</td></tr><tr><td>67</td><td>Sexual Health</td><td>Sexual health</td></tr><tr><td>68</td><td>Speech Pathology/Therapy</td><td>Speech pathology/therapy</td></tr><tr><td>69</td><td>Bereavement Counselling</td><td>Bereavement counselling</td></tr><tr><td>70</td><td>Crisis Counselling</td><td>Crisis counselling</td></tr><tr><td>71</td><td>Family Counselling/Therapy</td><td>Family counselling and/or family therapy</td></tr><tr><td>72</td><td>Family Violence Counselling</td><td>Family violence counselling</td></tr><tr><td>75</td><td>Genetic Counselling</td><td>Genetic counselling</td></tr><tr><td>76</td><td>Health Counselling</td><td>Health counselling</td></tr><tr><td>78</td><td>Problem Gambling Counselling</td><td>Problem gambling counselling</td></tr><tr><td>79</td><td>Relationship Counselling</td><td>Relationship counselling</td></tr><tr><td>80</td><td>Sexual Assault Counselling</td><td>Sexual assault counselling</td></tr><tr><td>81</td><td>Trauma Counselling</td><td>Trauma counselling</td></tr><tr><td>82</td><td>Victims of Crime Counselling</td><td>Victims of crime counselling</td></tr><tr><td>96</td><td>Disability Advocacy</td><td>Disability advocacy</td></tr><tr><td>97</td><td>Disability Aids &amp; Equipment</td><td>Disability aids &amp; equipment</td></tr><tr><td>99</td><td>Disability Day Programs/Activities</td><td>Disability day programs &amp; activities</td></tr><tr><td>102</td><td>Disability Supported Accommodation</td><td>Disability supported accommodation</td></tr><tr><td>103</td><td>Early Childhood Intervention</td><td>Early childhood intervention</td></tr><tr><td>105</td><td>Drug and/or Alcohol Counselling</td><td>Drug and/or alcohol counselling</td></tr><tr><td>106</td><td>Drug/Alcohol Information/Referral</td><td>Drug and/or alcohol information/referral</td></tr><tr><td>107</td><td>Needle &amp; Syringe Exchange</td><td>Needle &amp; Syringe exchange</td></tr><tr><td>108</td><td>Non-resid. Alcohol/Drug Treatment</td><td>Non-residential alcohol and/or drug dependence treatment</td></tr><tr><td>111</td><td>Residential Alcohol/Drug Treatment</td><td>Residential alcohol and/or drug dependence treatment</td></tr><tr><td>118</td><td>Employment Placement and/or Support</td><td>Employment placement and/or support</td></tr><tr><td>119</td><td>Vocational Rehabilitation</td><td>Vocational Rehabilitation</td></tr><tr><td>126</td><td>Crisis/Emergency Accommodation</td><td>Crisis/emergency accommodation</td></tr><tr><td>127</td><td>Homelessness Support</td><td>Homelessness support</td></tr><tr><td>128</td><td>Housing Information/Referral</td><td>Housing information/referral</td></tr><tr><td>130</td><td>Interpreting/Multilingual Service</td><td>Interpreting/Multilingual/Language service</td></tr><tr><td>134</td><td>Mental Health Advocacy</td><td>Mental health advocacy</td></tr><tr><td>146</td><td>Physical Activity Programs</td><td>Physical activity programs</td></tr><tr><td>147</td><td>Physical Fitness Testing</td><td>Physical fitness testing</td></tr><tr><td>224</td><td>Support Groups</td><td>Support groups</td></tr><tr><td>230</td><td>Patient Transport</td><td>Patient transport</td></tr><tr><td>233</td><td>Abuse</td><td>Abuse</td></tr><tr><td>238</td><td>Adult Day Programs</td><td>Adult Day Programs</td></tr><tr><td>245</td><td>Aids</td><td>Aids</td></tr><tr><td>275</td><td>Cancer Support</td><td>Cancer Support</td></tr><tr><td>284</td><td>Child Care</td><td>Child Care</td></tr><tr><td>296</td><td>Companion Visiting</td><td>Companion Visiting</td></tr><tr><td>301</td><td>Contraception Inform</td><td>Contraception Information</td></tr><tr><td>308</td><td>Crisis Assessment An</td><td>Crisis Assessment And Treatment Services (Cats)</td></tr><tr><td>309</td><td>Crisis Assistance</td><td>Crisis Assistance</td></tr><tr><td>310</td><td>Crisis Refuge</td><td>Crisis Refuge</td></tr><tr><td>316</td><td>Depression</td><td>Depression</td></tr><tr><td>317</td><td>Detoxification</td><td>Detoxification</td></tr><tr><td>323</td><td>Divorce</td><td>Divorce</td></tr><tr><td>328</td><td>Eating Disorder</td><td>Eating Disorder</td></tr><tr><td>331</td><td>Employment And Train</td><td>Employment And Training</td></tr><tr><td>344</td><td>Food</td><td>Food</td></tr><tr><td>345</td><td>Food Vouchers</td><td>Food Vouchers</td></tr><tr><td>352</td><td>Grief Counselling</td><td>Grief Counselling</td></tr><tr><td>366</td><td>Household Items</td><td>Household Items</td></tr><tr><td>400</td><td>Pain</td><td>Pain</td></tr><tr><td>409</td><td>Postnatal</td><td>Postnatal</td></tr><tr><td>411</td><td>Pregnancy Tests</td><td>Pregnancy Tests</td></tr><tr><td>427</td><td>Rent Assistance</td><td>Rent Assistance</td></tr><tr><td>429</td><td>Residential Respite</td><td>Residential Respite</td></tr><tr><td>440</td><td>Sexual Issues</td><td>Sexual Issues</td></tr><tr><td>446</td><td>Speech Therapist</td><td>Speech Therapist</td></tr><tr><td>459</td><td>Tenancy Advice</td><td>Tenancy Advice</td></tr><tr><td>468</td><td>Vocational Guidance</td><td>Vocational Guidance</td></tr><tr><td>470</td><td>Welfare Assistance</td><td>Welfare Assistance</td></tr><tr><td>488</td><td>Diabetes Educator</td><td>Diabetes Educator</td></tr><tr><td>494</td><td>Youth Services</td><td>Youth Services</td></tr><tr><td>495</td><td>Youth Health</td><td>Youth Health</td></tr><tr><td>501</td><td>Cancer Services</td><td>Cancer Services</td></tr><tr><td>513</td><td>Cancer Support Groups</td><td>Cancer Support Groups</td></tr><tr><td>530</td><td>Disability Care Transport</td><td>Disability Care Transport</td></tr><tr><td>531</td><td>Aged Care Transport</td><td>Aged Care Transport</td></tr><tr><td>532</td><td>Diabetes Education s</td><td>Diabetes Education service</td></tr><tr><td>534</td><td>Young Adult Diabetes</td><td>Young Adult Diabetes services (YADS)</td></tr><tr><td>535</td><td>Pulmonary Rehabilita</td><td>Pulmonary Rehabilitation Service</td></tr><tr><td>537</td><td>Medication Reviews</td><td>Medication Reviews</td></tr><tr><td>539</td><td>Telephone Help Line</td><td>Telephone Help Line</td></tr><tr><td>546</td><td>Veterans Services</td><td>Veterans Services</td></tr><tr><td>548</td><td>Food Relief/Food/Meals</td><td>Food Relief/food/meals</td></tr><tr><td>552</td><td>Drug and/or Alcohol Support Groups</td><td>Drug and/or alcohol support groups</td></tr><tr><td>554</td><td>Chronic Disease Management</td><td>Chronic Disease Management</td></tr><tr><td>559</td><td>Women's Health</td><td>Women's Health</td></tr><tr><td>560</td><td>Men's Health</td><td>Men's Health</td></tr><tr><td>565</td><td>Youth Drop In/Assistance/Support</td><td>Youth drop in/assistance/support</td></tr><tr><td>569</td><td>Migrant Health Clinic</td><td>Migrant Health Clinic</td></tr><tr><td>570</td><td>Refugee Health Clinic</td><td>Refugee Health Clinic</td></tr><tr><td>571</td><td>Aboriginal Health Clinic</td><td>Aboriginal Health Clinic</td></tr><tr><td>614</td><td>Development-Life Skills</td><td>Development-Life Skills</td></tr><tr><td>628</td><td>Vehicle modifications</td><td>Vehicle modifications</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceTypeVS"];
+  fhir:ValueSet.version [ fhir:value "0.0.1"];
+  fhir:ValueSet.name [ fhir:value "HealthcareServiceTypeVS"];
+  fhir:ValueSet.title [ fhir:value "HealthcareService Types"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Administration Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Valueset for HealthCareService type"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/service-type" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adoption/Permanent Care Info/Support" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aged Care Information/Referral" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Home Care/Housekeeping Assistance" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Home Maintenance and Repair" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Personal Alarms/Alerts" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Personal Care for Older Persons" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hydrotherapy" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Meditation" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Relaxation Therapy" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Western Herbal Medicine" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Day care" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kindergarten Inclusion Support" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parenting/Family Support/Education" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood Donation" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health Advocacy/Liaison Service" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sexual Health" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Speech Pathology/Therapy" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bereavement Counselling" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crisis Counselling" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Counselling/Therapy" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Violence Counselling" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genetic Counselling" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health Counselling" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Problem Gambling Counselling" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Relationship Counselling" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sexual Assault Counselling" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Counselling" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Victims of Crime Counselling" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "96" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disability Advocacy" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "97" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disability Aids & Equipment" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "99" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disability Day Programs/Activities" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disability Supported Accommodation" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Early Childhood Intervention" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drug and/or Alcohol Counselling" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drug/Alcohol Information/Referral" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Needle & Syringe Exchange" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-resid. Alcohol/Drug Treatment" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residential Alcohol/Drug Treatment" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "118" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Employment Placement and/or Support" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vocational Rehabilitation" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "126" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crisis/Emergency Accommodation" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "127" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Homelessness Support" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Housing Information/Referral" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "130" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Interpreting/Multilingual Service" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "134" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mental Health Advocacy" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "146" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Activity Programs" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "147" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Fitness Testing" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "224" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Support Groups" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "230" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient Transport" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abuse" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "238" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adult Day Programs" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "245" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aids" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "275" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cancer Support" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "284" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Child Care" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "296" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Companion Visiting" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contraception Inform" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "308" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crisis Assessment An" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crisis Assistance" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "310" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crisis Refuge" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "316" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depression" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "317" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Detoxification" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "323" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Divorce" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "328" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eating Disorder" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Employment And Train" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "344" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Food" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "345" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Food Vouchers" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "352" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Grief Counselling" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "366" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Household Items" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "400" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pain" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "409" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postnatal" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "411" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnancy Tests" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "427" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rent Assistance" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "429" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residential Respite" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "440" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sexual Issues" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "446" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Speech Therapist" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "459" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenancy Advice" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "468" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vocational Guidance" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "470" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Welfare Assistance" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "488" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diabetes Educator" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "494" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Youth Services" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "495" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Youth Health" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cancer Services" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "513" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cancer Support Groups" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "530" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disability Care Transport" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "531" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aged Care Transport" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "532" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diabetes Education s" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "534" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Young Adult Diabetes" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "535" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary Rehabilita" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "537" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medication Reviews" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "539" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Telephone Help Line" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "546" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Veterans Services" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "548" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Food Relief/Food/Meals" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "552" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drug and/or Alcohol Support Groups" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "554" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chronic Disease Management" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "559" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Women's Health" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "560" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Men's Health" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "565" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Youth Drop In/Assistance/Support" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "569" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Migrant Health Clinic" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "570" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refugee Health Clinic" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "571" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aboriginal Health Clinic" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "614" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Development-Life Skills" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "628" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vehicle modifications" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceTypeVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/national-directory-query/ValueSet/HealthcareServiceTypeVS.ttl> .
+
+# -------------------------------------------------------------------------------------
+

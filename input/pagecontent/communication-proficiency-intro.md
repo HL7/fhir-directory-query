@@ -1,0 +1,1 @@
+An extension to express a practitioner's spoken proficiency with the language indicated in `practitioner.communication`.

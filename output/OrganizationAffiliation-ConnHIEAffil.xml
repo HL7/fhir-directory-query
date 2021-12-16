@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <id value="ConnHIEAffil"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>organization</b>: <a href="Organization-ConnHIE.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS atyprv}">Atypical Provider</span>; name: Connecticut HIE; Phone: (111)-222-3333, https://www.connhie.com</a></p><p><b>participatingOrganization</b>: <a href="Organization-BurrClinic.html">Generated Summary: language: en-US; id: NPI999; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}">Facility</span>; name: Burr Clinic; Phone: (111)-222-3333, https://www.burrclinic.com</a></p><p><b>code</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS bt}">Member Of</span></p></div>
+  </text>
+  <active value="true"/>
+  <organization>
+    <reference value="Organization/ConnHIE"/>
+  </organization>
+  <participatingOrganization>
+    <reference value="Organization/BurrClinic"/>
+  </participatingOrganization>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS"/>
+      <code value="bt"/>
+    </coding>
+  </code>
+</OrganizationAffiliation>

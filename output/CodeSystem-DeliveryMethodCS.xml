@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DeliveryMethodCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">virtual<a name="DeliveryMethodCS-virtual"> </a></td><td>Virtual</td><td>Delivery not requiring provider and patient to be physically co-located, such as tele-medicine</td></tr><tr><td style="white-space:nowrap">physical<a name="DeliveryMethodCS-physical"> </a></td><td>Physical</td><td>Traditional delivery requiring provider and patient to be physically co-located.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS"/>
+  <version value="0.0.1"/>
+  <name value="DeliveryMethodCS"/>
+  <title value="Delivery Methods"/>
+  <status value="active"/>
+  <date value="2021-12-16T11:05:58-05:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Categories of healthcare service delivery methods."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="virtual"/>
+    <display value="Virtual"/>
+    <definition value="Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"/>
+  </concept>
+  <concept>
+    <code value="physical"/>
+    <display value="Physical"/>
+    <definition value="Traditional delivery requiring provider and patient to be physically co-located."/>
+  </concept>
+</CodeSystem>

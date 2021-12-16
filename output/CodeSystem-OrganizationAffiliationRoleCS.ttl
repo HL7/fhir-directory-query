@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "OrganizationAffiliationRoleCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">behavioral<a name=\"OrganizationAffiliationRoleCS-behavioral\"> </a></td><td>Outpatient Behavioral Health Provider</td><td>Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities.</td></tr><tr><td style=\"white-space:nowrap\">bt<a name=\"OrganizationAffiliationRoleCS-bt\"> </a></td><td>Member Of</td><td>Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of a hospital in an HIE</td></tr><tr><td style=\"white-space:nowrap\">dme<a name=\"OrganizationAffiliationRoleCS-dme\"> </a></td><td>DME/Medical Supplier</td><td>Supplier of health care consumables or equipments supplied to patients.</td></tr><tr><td style=\"white-space:nowrap\">group<a name=\"OrganizationAffiliationRoleCS-group\"> </a></td><td>Medical Group</td><td>A group of people, e.g. a group of Physicians, who render health care services.</td></tr><tr><td style=\"white-space:nowrap\">home<a name=\"OrganizationAffiliationRoleCS-home\"> </a></td><td>Home Health Provider</td><td>Provider of health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit.</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"OrganizationAffiliationRoleCS-hospital\"> </a></td><td>Hospital</td><td>An inpatient facility, other than long-term care, providng patient treatment with specialzed medical and nursing staff and medical equipment.</td></tr><tr><td style=\"white-space:nowrap\">laboratory<a name=\"OrganizationAffiliationRoleCS-laboratory\"> </a></td><td>Laboratory</td><td>Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"OrganizationAffiliationRoleCS-other\"> </a></td><td>Other</td><td>A provider of heatlh care services not otherwise listed in this value set.</td></tr><tr><td style=\"white-space:nowrap\">outpatient<a name=\"OrganizationAffiliationRoleCS-outpatient\"> </a></td><td>Clinic or Outpatient Facility</td><td>An outpatient facility providing patient services, e.g. medical procedures, surgeries, etc.</td></tr><tr><td style=\"white-space:nowrap\">pharmacy<a name=\"OrganizationAffiliationRoleCS-pharmacy\"> </a></td><td>Pharmacy</td><td>An entity which provider services related to the storage, compounding, dispensing and sale of drugs.</td></tr><tr><td style=\"white-space:nowrap\">transport<a name=\"OrganizationAffiliationRoleCS-transport\"> </a></td><td>Transporation Provider</td><td>A provider which transports patients to or from a medical facility, e.g., ambulance.</td></tr><tr><td style=\"white-space:nowrap\">urgent<a name=\"OrganizationAffiliationRoleCS-urgent\"> </a></td><td>Urgent Care Center</td><td>A center in which unscheduled health care services are provided for point-in-time evaluation or treatment of a non-life-threatening medical condition.</td></tr><tr><td style=\"white-space:nowrap\">hospice<a name=\"OrganizationAffiliationRoleCS-hospice\"> </a></td><td>Hospice</td><td>Hospice</td></tr><tr><td style=\"white-space:nowrap\">nurseCustodial<a name=\"OrganizationAffiliationRoleCS-nurseCustodial\"> </a></td><td>Nursing and Custodial Care Facility</td><td>Nursing and Custodial Care Facility</td></tr><tr><td style=\"white-space:nowrap\">residential<a name=\"OrganizationAffiliationRoleCS-residential\"> </a></td><td>Residential Treatment Facility</td><td>Residential Treatment Facility</td></tr><tr><td style=\"white-space:nowrap\">respite<a name=\"OrganizationAffiliationRoleCS-respite\"> </a></td><td>Respite Care Facility</td><td>Respite Care Facility</td></tr><tr><td style=\"white-space:nowrap\">retail<a name=\"OrganizationAffiliationRoleCS-retail\"> </a></td><td>Retail Health Center</td><td>Retail Health Center</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS"];
+  fhir:CodeSystem.version [ fhir:value "0.0.1"];
+  fhir:CodeSystem.name [ fhir:value "OrganizationAffiliationRoleCS"];
+  fhir:CodeSystem.title [ fhir:value "Organization Affiliation Role"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Administration Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes For Organization Affiliation Role"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "17"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "behavioral" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outpatient Behavioral Health Provider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "bt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Member Of" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of a hospital in an HIE" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "dme" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DME/Medical Supplier" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Supplier of health care consumables or equipments supplied to patients." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "group" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medical Group" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A group of people, e.g. a group of Physicians, who render health care services." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "home" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Home Health Provider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Provider of health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "hospital" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "An inpatient facility, other than long-term care, providng patient treatment with specialzed medical and nursing staff and medical equipment." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "laboratory" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laboratory" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A provider of heatlh care services not otherwise listed in this value set." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "outpatient" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clinic or Outpatient Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "An outpatient facility providing patient services, e.g. medical procedures, surgeries, etc." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "pharmacy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pharmacy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "An entity which provider services related to the storage, compounding, dispensing and sale of drugs." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "transport" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transporation Provider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A provider which transports patients to or from a medical facility, e.g., ambulance." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "urgent" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urgent Care Center" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A center in which unscheduled health care services are provided for point-in-time evaluation or treatment of a non-life-threatening medical condition." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "hospice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospice" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospice" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "nurseCustodial" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nursing and Custodial Care Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nursing and Custodial Care Facility" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "residential" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Residential Treatment Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Residential Treatment Facility" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "respite" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Respite Care Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Respite Care Facility" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "retail" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Retail Health Center" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Retail Health Center" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS.ttl> .
+
+# -------------------------------------------------------------------------------------
+

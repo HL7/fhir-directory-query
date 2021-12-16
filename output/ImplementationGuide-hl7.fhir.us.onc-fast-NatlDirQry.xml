@@ -1,0 +1,2975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.onc-fast-NatlDirQry"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ONCFASTNationalDirectoryEndpointQuery</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory-query/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDirQry</pre><div><p>National Directory Endpoint Query</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/national-directory-query/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDirQry"/>
+  <version value="0.0.1"/>
+  <name value="ONCFASTNationalDirectoryEndpointQuery"/>
+  <title value="National Directory Endpoint Query"/>
+  <status value="active"/>
+  <date value="2021-12-16T11:05:58-05:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="National Directory Endpoint Query"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.us.onc-fast-NatlDirQry"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="4.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="draft"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/national-directory-query/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-CareTeam"/>
+      </reference>
+      <name value="National Directory Care Team"/>
+      <description value="Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Endpoint"/>
+      </reference>
+      <name value="National Directory Exchange Endpoint"/>
+      <description value="The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-HealthcareService"/>
+      </reference>
+      <name value="National Directory Exchange HealthcareService"/>
+      <description value="The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-InsurancePlan"/>
+      </reference>
+      <name value="National Directory Exchange InsurancePlan"/>
+      <description value="An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).&#xD;&#xA;&#xD;&#xA;InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Location"/>
+      </reference>
+      <name value="National Directory Exchange Location"/>
+      <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, &#xD;&#xA;                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Network"/>
+      </reference>
+      <name value="National Directory Exchange Network"/>
+      <description value="A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.&#xD;&#xA;&#xD;&#xA;In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Organization"/>
+      </reference>
+      <name value="National Directory Exchange Organization"/>
+      <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.&#xD;&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      </reference>
+      <name value="National Directory Exchange OrganizationAffiliation"/>
+      <description value="The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Practitioner"/>
+      </reference>
+      <name value="National Directory Exchange Practitioner"/>
+      <description value="Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-PractitionerRole"/>
+      </reference>
+      <name value="National Directory Exchange PractitionerRole"/>
+      <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xD;&#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xD;&#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Restriction"/>
+      </reference>
+      <name value="NatlDir Restriction"/>
+      <description value="Restriction on use/release of exchanged information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDir-Validation"/>
+      </reference>
+      <name value="NatlDir Validation"/>
+      <description value="Describes validation requirements, source(s), status and dates for one or more elements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/accessibility"/>
+      </reference>
+      <name value="Accessibility"/>
+      <description value="An extension to describe accessibility options offered by a practitioner or at a location."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/associatedServers"/>
+      </reference>
+      <name value="Associated Servers"/>
+      <description value="Associated Servers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careteam-alias"/>
+      </reference>
+      <name value="NatlDir Careteam Alias"/>
+      <description value="Alternate names by which the team is known"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-proficiency"/>
+      </reference>
+      <name value="Communication Proficiency"/>
+      <description value="An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-availabletime"/>
+      </reference>
+      <name value="Contactpoint Availabletime"/>
+      <description value="An extension representing the days and times a contact point is available"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-viaintermediary"/>
+      </reference>
+      <name value="NatlDir Contactpoint Viaintermediary"/>
+      <description value="Represents an external point of contact responsible for handling communications with this entity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/delivery-method"/>
+      </reference>
+      <name value="Delivery Method"/>
+      <description value="An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/digitalcertificate"/>
+      </reference>
+      <name value="NatlDir Digitalcertificate"/>
+      <description value="A digital certificate, used to identify a user or group of users, or for encrypted communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dynamicRegistration"/>
+      </reference>
+      <name value="Dynamic Registration"/>
+      <description value="Dynamic Registration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpoint-reference"/>
+      </reference>
+      <name value="NatlDir Practitioner Endpoint Reference"/>
+      <description value="The technical details of an endpoint that can be used for electronic services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpointType"/>
+      </reference>
+      <name value="Endpoint Type"/>
+      <description value="Type of Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpoint-usecase"/>
+      </reference>
+      <name value="Endpoint Usecase"/>
+      <description value="EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/healthcareservice-reference"/>
+      </reference>
+      <name value="NatlDir Healthcareservice Reference"/>
+      <description value="Reference to healthcareservice resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/igsSupported"/>
+      </reference>
+      <name value="IGs Supported"/>
+      <description value="IGs Supported document the different types of IGs supported by the Endpoint."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/identifier-status"/>
+      </reference>
+      <name value="NatlDir Identifier Status"/>
+      <description value="Describes the status of an identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/insuranceplan-reference"/>
+      </reference>
+      <name value="NatlDir Insurance Plan Reference"/>
+      <description value="A reference to the insurancePlan resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-reference"/>
+      </reference>
+      <name value="Location Reference"/>
+      <description value="A reference to a Location resource (NatlDir-Location) defining the coverage area of a health insurance provider network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/network-reference"/>
+      </reference>
+      <name value="Network Reference"/>
+      <description value="A reference to the healthcare provider insurance networks (NatlDir-Network) the practitioner participates in through their role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/newpatientprofile"/>
+      </reference>
+      <name value="NatlDir New Patient Profile"/>
+      <description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/newpatients"/>
+      </reference>
+      <name value="New Patients"/>
+      <description value="New Patients indicates whether new patients are being accepted in general, or from a specific network.   &#xD;&#xA;              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  &#xD;&#xA;              This provides needed flexibility for specifying whether a provider accepts new patients by location and network."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/org-alias-period"/>
+      </reference>
+      <name value="NatlDir Org Alias Period"/>
+      <description value="the period of time the alias was actively used"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/org-alias-type"/>
+      </reference>
+      <name value="NatlDir Org Alias Type"/>
+      <description value="Type of alias (legal alternative | historical)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/org-description"/>
+      </reference>
+      <name value="Org Description"/>
+      <description value="An extension to provide a human-readable description of an organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-qualification"/>
+      </reference>
+      <name value="Practitioner Qualification"/>
+      <description value="An extension to add status and whereValid elements to a practitioner’s qualifications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/qualification"/>
+      </reference>
+      <name value="Qualification"/>
+      <description value="An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/secureEndpoint"/>
+      </reference>
+      <name value="Secure Endpoint"/>
+      <description value="Is the Endpoint Secured"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/secureExchangeArtifacts"/>
+      </reference>
+      <name value="Secure Exchange Artifacts"/>
+      <description value="Secure Exchange Artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/trustFramework"/>
+      </reference>
+      <name value="Trust Framework"/>
+      <description value="Trust Framework"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/usage-restriction"/>
+      </reference>
+      <name value="NatlDir Usage Restriction"/>
+      <description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn&#39;t exposed that shouldn&#39;t be.&#xA;This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)&#xA;This will be expected to be used as a modifier extension."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/via-intermediary"/>
+      </reference>
+      <name value="Via Intermediary"/>
+      <description value="A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AcceptingPatientsVS"/>
+      </reference>
+      <name value="Accepting Patients Codes"/>
+      <description value="Codes to identify if the practice is accepting new patients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AccessibilityVS"/>
+      </reference>
+      <name value="Accessibility"/>
+      <description value="Codes for documenting general categories of accommodations available."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DeliveryMethodVS"/>
+      </reference>
+      <name value="Delivery Methods"/>
+      <description value="Codes for documenting delivery methods."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EndpointConnectionTypeVS"/>
+      </reference>
+      <name value="Endpoint Connection Types"/>
+      <description value="Endpoint Connection Types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EndpointPayloadTypeVS"/>
+      </reference>
+      <name value="Endpoint Payload Types"/>
+      <description value="Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EndpointTypeVS"/>
+      </reference>
+      <name value="Endpoint Type"/>
+      <description value="Codes to identify Endpoint Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EndpointUsecaseVS"/>
+      </reference>
+      <name value="Endpoint Usecases"/>
+      <description value="Codes for documenting business use case by a general grouping by business area."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/HealthcareServiceCategoryVS"/>
+      </reference>
+      <name value="Healthcare Service Category"/>
+      <description value="Broad categories of healthcare services being performed or delivered."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/HealthcareServiceTypeVS"/>
+      </reference>
+      <name value="HealthcareService Types"/>
+      <description value="Valueset for HealthCareService type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IgTypeVS"/>
+      </reference>
+      <name value="IG Type"/>
+      <description value="Codes to identify IG Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IndividualAndGroupSpecialtiesVS"/>
+      </reference>
+      <name value="Individual and Group Specialties"/>
+      <description value="Individual and Group Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS"/>
+      </reference>
+      <name value="Individual Specialties, Degrees, Licenses, and Certificates"/>
+      <description value="Individual Specialties, Degrees, Licenses, and Certificates"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/InsurancePlanTypeVS"/>
+      </reference>
+      <name value="Insurance Plan Type"/>
+      <description value="Categories of cost-sharing used by plans."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/InsuranceProductTypeVS"/>
+      </reference>
+      <name value="Insurance Product Type"/>
+      <description value="A distinct package of health insurance coverage benefits that are offered using a particular product network type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/LanguageProficiencyVS"/>
+      </reference>
+      <name value="Language Proficiency"/>
+      <description value="Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MinEndpointConnectionTypeVS"/>
+      </reference>
+      <name value="Minimum Endpoint Connection Types"/>
+      <description value="Minimum Endpoint Connection Types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NetworkTypeVS"/>
+      </reference>
+      <name value="Network Type"/>
+      <description value="Single value describing networks."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NonIndividualSpecialtiesVS"/>
+      </reference>
+      <name value="Non-Individual Specialties"/>
+      <description value="Non-Individual Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS"/>
+      </reference>
+      <name value="Non-Individual Specialties, Degrees, Licenses, and Certificates"/>
+      <description value="Non-Individual Specialties, Degrees, Licenses, and Certificates"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OrgTypeVS"/>
+      </reference>
+      <name value="Organization Type"/>
+      <description value="Categories of organizations based on criteria in provider directories."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OrganizationAffiliationRoleVS"/>
+      </reference>
+      <name value="OrganizationAffiliation Roles"/>
+      <description value="Value Set for Organization Affiliation Roles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PractitionerRoleVS"/>
+      </reference>
+      <name value="PractitionerRole Code"/>
+      <description value="Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/QualificationStatusVS"/>
+      </reference>
+      <name value="Qualification Status"/>
+      <description value="The state indicating if a qualification is currently valid."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SpecialtiesVS"/>
+      </reference>
+      <name value="Specialties"/>
+      <description value="Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SpecialtyAndDegreeLicenseCertificateVS"/>
+      </reference>
+      <name value="Specialties, Degrees, Licenses, and Certificates"/>
+      <description value="Specialties and Degree License and Certificates"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TrustFrameworkTypeVS"/>
+      </reference>
+      <name value="Trust Framework Type"/>
+      <description value="Trust Framework Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VirtualModalitiesVS"/>
+      </reference>
+      <name value="Virtual Modalities"/>
+      <description value="Codes for virtual service delivery modalities ."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/AcceptingPatientsCS"/>
+      </reference>
+      <name value="Accepting Patients Codes"/>
+      <description value="Codes to identify if the practice is accepting new patients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/AccessibilityCS"/>
+      </reference>
+      <name value="Accessibility"/>
+      <description value="General categories of accommodations available."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DeliveryMethodCS"/>
+      </reference>
+      <name value="Delivery Methods"/>
+      <description value="Categories of healthcare service delivery methods."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EndpointConnectionTypeCS"/>
+      </reference>
+      <name value="Endpoint Connection Types (additional)"/>
+      <description value="Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EndpointPayloadTypeCS"/>
+      </reference>
+      <name value="Endpoint Payload Types"/>
+      <description value="Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EndpointTypeCS"/>
+      </reference>
+      <name value="IG Type"/>
+      <description value="IG Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/HealthcareServiceCategoryCS"/>
+      </reference>
+      <name value="Healthcare Service Category"/>
+      <description value="Broad categories of healthcare services being performed or delivered"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/IgTypeCS"/>
+      </reference>
+      <name value="IG Type"/>
+      <description value="IG Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/InsurancePlanTypeCS"/>
+      </reference>
+      <name value="Insurance Plan Type"/>
+      <description value="Categories of cost-sharing used by plans"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/InsuranceProductTypeCS"/>
+      </reference>
+      <name value="Insurance Product Type"/>
+      <description value="A distinct package of health insurance coverage benefits that are offered using a particular product network type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LanguageProficiencyCS"/>
+      </reference>
+      <name value="Language Proficiency"/>
+      <description value="Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/OrgTypeCS"/>
+      </reference>
+      <name value="Organization Type"/>
+      <description value="Categories of organizations based on criteria in provider directories."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/OrganizationAffiliationRoleCS"/>
+      </reference>
+      <name value="Organization Affiliation Role"/>
+      <description value="Codes For Organization Affiliation Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ProviderRoleCS"/>
+      </reference>
+      <name value="Provider Role Codes"/>
+      <description value="A capability that an individual, group, or organization is acknowledged to have in a payer network."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/QualificationStatusCS"/>
+      </reference>
+      <name value="Qualification Status"/>
+      <description value="The state indicating if a qualification is currently valid."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/TrustFrameworkTypeCS"/>
+      </reference>
+      <name value="Trust FrameworkType"/>
+      <description value="Trust Framework Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/VirtualModalitiesCS"/>
+      </reference>
+      <name value="Virtual Modalities"/>
+      <description value="Categories of virtual service delivery modalities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Acme"/>
+      </reference>
+      <name value="Acme"/>
+      <description value="Payer Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/AcmeOfCTPortalEndpoint"/>
+      </reference>
+      <name value="AcmeOfCTPortalEndpoint"/>
+      <description value="Endpoint for Acme of CT Portal"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="InsurancePlan"/>
+      </extension>
+      <reference>
+        <reference value="InsurancePlan/AcmeQHPBronze"/>
+      </reference>
+      <name value="AcmeQHPBronze"/>
+      <description value="Acme of CT QHP Bronze Plan"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="InsurancePlan"/>
+      </extension>
+      <reference>
+        <reference value="InsurancePlan/AcmeQHPGold"/>
+      </reference>
+      <name value="AcmeQHPGold"/>
+      <description value="Acme of CT QHP Gold Plan"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/AcmeofCTPremNet"/>
+      </reference>
+      <name value="AcmeofCTPremNet"/>
+      <description value="Acme of CT Premium Premium Network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/AcmeofCTStdNet"/>
+      </reference>
+      <name value="AcmeofCTStdNet"/>
+      <description value="Acme of CT Standard Network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/AnonRole"/>
+      </reference>
+      <name value="AnonRole"/>
+      <description value="Practitioner role that doesn&#39;t refer to a specific practitioner"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/BigBox"/>
+      </reference>
+      <name value="BigBox"/>
+      <description value="Organization that Manages 2 of PharmChain&#39;s pharmacies"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/BurrClinic"/>
+      </reference>
+      <name value="BurrClinic"/>
+      <description value="Burr Clinic provides service to Hartford Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/BurrClinicAffil"/>
+      </reference>
+      <name value="BurrClinicAffil"/>
+      <description value="Burr Clinic&#39;s affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/BurrClinicServices"/>
+      </reference>
+      <name value="BurrClinicServices"/>
+      <description value="Burr Clinic Services"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/CancerClinic"/>
+      </reference>
+      <name value="CancerClinic"/>
+      <description value="HartfordCancerClinicLLC"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/CancerClinicLoc"/>
+      </reference>
+      <name value="CancerClinicLoc"/>
+      <description value="Location1 of Cancer Clinic"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/CancerClinicService"/>
+      </reference>
+      <name value="CancerClinicService"/>
+      <description value="Cancer Clinic Services"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ConnHIE"/>
+      </reference>
+      <name value="ConnHIE"/>
+      <description value="Connecticut HIE"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/ConnHIEAffil"/>
+      </reference>
+      <name value="ConnHIEAffil"/>
+      <description value="Burr Clinic&#39;s affiliation with Conn HIE"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Counselor"/>
+      </reference>
+      <name value="Counselor"/>
+      <description value="Counselor Susie Smith"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/CounselorRole1"/>
+      </reference>
+      <name value="CounselorRole1"/>
+      <description value="Susie  Smith is a counselor via Telemedicine"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HamiltonClinic"/>
+      </reference>
+      <name value="HamiltonClinic"/>
+      <description value="Hamilton Clinic (a Division of Hartford Hospital)"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/HamiltonClinicAffil"/>
+      </reference>
+      <name value="HamiltonClinicAffil"/>
+      <description value="Hamilton Clinic&#39;s affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/HamiltonClinicServices"/>
+      </reference>
+      <name value="HamiltonClinicServices"/>
+      <description value="Hamilton Clinic Services"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/HansSolo"/>
+      </reference>
+      <name value="HansSolo"/>
+      <description value="Solo Practitioner Hans Solo"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/HansSoloClinic"/>
+      </reference>
+      <name value="HansSoloClinic"/>
+      <description value="Location of Hans Solo&#39;s clinic"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/HansSoloRole1"/>
+      </reference>
+      <name value="HansSoloRole1"/>
+      <description value="Hans Solo is a solo practitioner"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/HansSoloService"/>
+      </reference>
+      <name value="HansSoloService"/>
+      <description value="Hans Solo Services"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/HartfordOrthopedicAffil"/>
+      </reference>
+      <name value="HartfordOrthopedicAffil"/>
+      <description value="Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/HartfordOrthopedicServices"/>
+      </reference>
+      <name value="HartfordOrthopedicServices"/>
+      <description value="Hartford Orthopedic Services"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HartfordOrthopedics"/>
+      </reference>
+      <name value="HartfordOrthopedics"/>
+      <description value="Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/HospERService"/>
+      </reference>
+      <name value="HospERService"/>
+      <description value="Hartford General Hospital ER"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/HospLoc1"/>
+      </reference>
+      <name value="HospLoc1"/>
+      <description value="Location1 of Hartford Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/HospLoc2"/>
+      </reference>
+      <name value="HospLoc2"/>
+      <description value="Location2 of Hartford Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Hospital"/>
+      </reference>
+      <name value="Hospital"/>
+      <description value="Hartford General Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/JoeSmith"/>
+      </reference>
+      <name value="JoeSmith"/>
+      <description value="Practitioner Dr Joe Smith"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/JoeSmithRole1"/>
+      </reference>
+      <name value="JoeSmithRole1"/>
+      <description value="Dr Smith moonlighting as ER Doc at Hartford Hospital"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/JoeSmithRole2"/>
+      </reference>
+      <name value="JoeSmithRole2"/>
+      <description value="Dr Smith Internal Medicine at Burr Clinic"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/JoeSmithRole3"/>
+      </reference>
+      <name value="JoeSmithRole3"/>
+      <description value="Dr Smith Admitting Privileges at Hartford General"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/PharmChain"/>
+      </reference>
+      <name value="PharmChain"/>
+      <description value="Organization that Provides Pharmacy Services"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/PharmChainAffil1"/>
+      </reference>
+      <name value="PharmChainAffil1"/>
+      <description value="Organization Affiliation for PharmChain (Retail)"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/PharmChainAffil2"/>
+      </reference>
+      <name value="PharmChainAffil2"/>
+      <description value="Organization Affiliation for PharmChain (Compounding)"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/PharmChainAffil3"/>
+      </reference>
+      <name value="PharmChainAffil3"/>
+      <description value="Organization Affiliation for PharmChain (MailOrder)"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/PharmChainCompService"/>
+      </reference>
+      <name value="PharmChainCompService"/>
+      <description value="Compound Pharmacy Service provided by PharmacyOrganization A"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/PharmChainMailService"/>
+      </reference>
+      <name value="PharmChainMailService"/>
+      <description value="Mail Order Pharmacy Service provided by PharmacyOrganization A"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/PharmChainRetailService"/>
+      </reference>
+      <name value="PharmChainRetailService"/>
+      <description value="Pharmacy Service provided by PharmChain"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/PharmLoc1"/>
+      </reference>
+      <name value="PharmLoc1"/>
+      <description value="Location of Pharmacy1 in PharmChain&#39;s network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/PharmLoc2"/>
+      </reference>
+      <name value="PharmLoc2"/>
+      <description value="Location of Pharmacy2 in PharmChain&#39;s network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/PharmLoc3"/>
+      </reference>
+      <name value="PharmLoc3"/>
+      <description value="Location of Pharmacy3 in PharmChain&#39;s network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/PharmLoc4"/>
+      </reference>
+      <name value="PharmLoc4"/>
+      <description value="Location of Pharmacy4 in PharmChain&#39;s network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/StateOfCTLocation"/>
+      </reference>
+      <name value="StateOfCTLocation"/>
+      <description value="State of CT Area"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/VirtualCounselService"/>
+      </reference>
+      <name value="VirtualCounselService"/>
+      <description value="Virtual Counseling Service"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/NatlDir"/>
+      </reference>
+      <name value="NatlDir CapabilityStatement"/>
+      <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/endpoint-organization"/>
+      </reference>
+      <name value="NatlDir_sp_endpoint_organization"/>
+      <description value="Select Endpoints managed by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-coverage-area"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_coverage_area"/>
+      <description value="Select services available in a region described by the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-endpoint"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_endpoint"/>
+      <description value="Select HealthcareServices with the specified endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-location"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_location"/>
+      <description value="Select HealthcareServices available at the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-name"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_name"/>
+      <description value="Select HealthcareServices with the specified name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-organization"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_organization"/>
+      <description value="Select HealthcareServices provided by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-service-category"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_category"/>
+      <description value="Select HealthcareServices providing the specified category of services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-service-type"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_type"/>
+      <description value="Select HealthcareServices of the specified type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/healthcareservice-specialty"/>
+      </reference>
+      <name value="NatlDir_sp_healthcareservice_specialty"/>
+      <description value="Select services associated with the specified specialty"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-administered-by"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_administered_by"/>
+      <description value="Select products that are administered by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-coverage-area"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_coverage_area"/>
+      <description value="Select products that are offered in the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-identifier"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_identifier"/>
+      <description value="Select products with the specified identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-name"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_name"/>
+      <description value="Select products with the specified name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-owned-by"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_owned_by"/>
+      <description value="Select products that are owned by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-plan-type"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_plan_type"/>
+      <description value="Select plans of the specified type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/insuranceplan-type"/>
+      </reference>
+      <name value="NatlDir_sp_insuranceplan_type"/>
+      <description value="Select insurance plans of the specified type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-address-city"/>
+      </reference>
+      <name value="NatlDir_sp_location_address_city"/>
+      <description value="Select Locations with the specified address.city"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-address-postalcode"/>
+      </reference>
+      <name value="NatlDir_sp_location_address_postalcode"/>
+      <description value="Select Locations with the specified address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-address-state"/>
+      </reference>
+      <name value="NatlDir_sp_location_address_state"/>
+      <description value="Select Locations with the specified address.state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-address"/>
+      </reference>
+      <name value="NatlDir_sp_location_address"/>
+      <description value="Select Locations with the specified address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-endpoint"/>
+      </reference>
+      <name value="NatlDir_sp_location_endpoint"/>
+      <description value="Select Locations with the specified endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-organization"/>
+      </reference>
+      <name value="NatlDir_sp_location_organization"/>
+      <description value="Select Locations managed by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-partof"/>
+      </reference>
+      <name value="NatlDir_sp_location_partof"/>
+      <description value="Select Locations that are part of the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/location-type"/>
+      </reference>
+      <name value="NatlDir_sp_location_type"/>
+      <description value="Select Locations of the specified type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-address"/>
+      </reference>
+      <name value="NatlDir_sp_organization_address"/>
+      <description value="Select organizations with the specified address (matches any of the string elements of an address)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-coverage-area"/>
+      </reference>
+      <name value="NatlDir_sp_network_coverage_area"/>
+      <description value="Select health insurance provider networks available in a region described by the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-endpoint"/>
+      </reference>
+      <name value="NatlDir_sp_organization_endpoint"/>
+      <description value="Select Organizations with the specified endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-name"/>
+      </reference>
+      <name value="NatlDir_sp_organization_name"/>
+      <description value="Select Organizations with the specified name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-partof"/>
+      </reference>
+      <name value="NatlDir_sp_organization_partof"/>
+      <description value="Select Organizations that are part of the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organization-type"/>
+      </reference>
+      <name value="NatlDir_sp_organization_type"/>
+      <description value="Select Organizations of the specified type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-endpoint"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_endpoint"/>
+      <description value="Select OrganizationAffiliations with the specified endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-location"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_location"/>
+      <description value="Select OrganizationAffiliations available at the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-network"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_network"/>
+      <description value="Select roles where the organization is a member of the specified health insurance provider network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-participating-organization"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_participating_organization"/>
+      <description value="Select roles filled by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-primary-organization"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_primary_organization"/>
+      <description value="Select roles offered by the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-role"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_role"/>
+      <description value="Select OrganizationAffiliations with the specified role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-service"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_service"/>
+      <description value="Select OrganizationAffiliations providing the specified service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/organizationaffiliation-specialty"/>
+      </reference>
+      <name value="NatlDir_sp_organizationaffiliation_specialty"/>
+      <description value="Select OrganizationAffiliations associated with the specified specialty"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-family-name"/>
+      </reference>
+      <name value="NatlDir_sp_practitioner_family_name"/>
+      <description value="Select Practitioners with the specified family name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-given-name"/>
+      </reference>
+      <name value="NatlDir_sp_practitioner_given_name"/>
+      <description value="Select Practitioners with the specified given name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-name"/>
+      </reference>
+      <name value="NatlDir_sp_practitioner_name"/>
+      <description value="Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-endpoint"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_endpoint"/>
+      <description value="Select PractitionerRoles with the specified endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-location"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_location"/>
+      <description value="Select PractitionerRoles available at the specified location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-network"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_network"/>
+      <description value="Select roles where the practitioner is a member of the specified health insurance provider network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-organization"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_organization"/>
+      <description value="Select PractitionerRoles available at the specified organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-period"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_period"/>
+      <description value="Select PractitionerRoles available in the specified period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-practitioner"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_practitioner"/>
+      <description value="Select roles filled by the specified practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-role"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_role"/>
+      <description value="Select PractitionerRoles with the specified role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-service"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_service"/>
+      <description value="Select PractitionerRoles providing the specified service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerrole-specialty"/>
+      </reference>
+      <name value="NatlDir_sp_practitionerrole_specialty"/>
+      <description value="Select PractitionerRoles associated with the specified specialty"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="accessibility-diff2.html"/>
+        <title value="Accessibility Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="accessibility-search.html"/>
+        <title value="Accessibility Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="accessibility-summary.html"/>
+        <title value="Accessibility Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="bulk-data.html"/>
+        <title value="Bulk Data"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capstatements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="careteam-alias-diff2.html"/>
+        <title value="Careteam Alias Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="careteam-alias-search.html"/>
+        <title value="Careteam Alias Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="careteam-alias-summary.html"/>
+        <title value="Careteam Alias Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="communication-proficiency-diff2.html"/>
+        <title value="Communication Proficiency Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="communication-proficiency-search.html"/>
+        <title value="Communication Proficiency Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="communication-proficiency-summary.html"/>
+        <title value="Communication Proficiency Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-availabletime-diff2.html"/>
+        <title value="Contactpoint Availabletime Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-availabletime-search.html"/>
+        <title value="Contactpoint Availabletime Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-availabletime-summary.html"/>
+        <title value="Contactpoint Availabletime Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-viaintermediary-diff2.html"/>
+        <title value="Contactpoint Viaintermediary Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-viaintermediary-search.html"/>
+        <title value="Contactpoint Viaintermediary Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-viaintermediary-summary.html"/>
+        <title value="Contactpoint Viaintermediary Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="digitalcertificate-diff2.html"/>
+        <title value="Digitalcertificate Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="digitalcertificate-search.html"/>
+        <title value="Digitalcertificate Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="digitalcertificate-summary.html"/>
+        <title value="Digitalcertificate Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ehr-diff2.html"/>
+        <title value="Ehr Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ehr-search.html"/>
+        <title value="Ehr Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ehr-summary.html"/>
+        <title value="Ehr Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-rank-diff2.html"/>
+        <title value="Endpoint Rank Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-rank-search.html"/>
+        <title value="Endpoint Rank Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-rank-summary.html"/>
+        <title value="Endpoint Rank Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-reference-diff2.html"/>
+        <title value="Endpoint Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-reference-search.html"/>
+        <title value="Endpoint Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-reference-summary.html"/>
+        <title value="Endpoint Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-usecase-diff2.html"/>
+        <title value="Endpoint Usecase Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-usecase-search.html"/>
+        <title value="Endpoint Usecase Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-usecase-summary.html"/>
+        <title value="Endpoint Usecase Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="example-list-generator.html"/>
+        <title value="Example List Generator"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="general-guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="healthcareservice-reference-diff2.html"/>
+        <title value="Healthcareservice Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="healthcareservice-reference-search.html"/>
+        <title value="Healthcareservice Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="healthcareservice-reference-summary.html"/>
+        <title value="Healthcareservice Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="history.html"/>
+        <title value="History"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="identifier-status-diff2.html"/>
+        <title value="Identifier Status Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="identifier-status-search.html"/>
+        <title value="Identifier Status Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="identifier-status-summary.html"/>
+        <title value="Identifier Status Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="implementation.html"/>
+        <title value="Implementation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="insuranceplan-reference-diff2.html"/>
+        <title value="Insuranceplan Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="insuranceplan-reference-search.html"/>
+        <title value="Insuranceplan Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="insuranceplan-reference-summary.html"/>
+        <title value="Insuranceplan Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="link-list.html"/>
+        <title value="Link List"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-availability-search.html"/>
+        <title value="Location Availability Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-availability-summary.html"/>
+        <title value="Location Availability Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-reference-diff2.html"/>
+        <title value="Location Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-reference-search.html"/>
+        <title value="Location Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-reference-summary.html"/>
+        <title value="Location Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="logo.html"/>
+        <title value="Logo"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="network-reference-diff2.html"/>
+        <title value="Network Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="network-reference-search.html"/>
+        <title value="Network Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="network-reference-summary.html"/>
+        <title value="Network Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatientprofile-diff2.html"/>
+        <title value="Newpatientprofile Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatientprofile-search.html"/>
+        <title value="Newpatientprofile Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatientprofile-summary.html"/>
+        <title value="Newpatientprofile Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatients-diff2.html"/>
+        <title value="Newpatients Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatients-search.html"/>
+        <title value="Newpatients Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatients-summary.html"/>
+        <title value="Newpatients Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-period-diff2.html"/>
+        <title value="Org Alias Period Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-period-search.html"/>
+        <title value="Org Alias Period Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-period-summary.html"/>
+        <title value="Org Alias Period Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-type-diff2.html"/>
+        <title value="Org Alias Type Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-type-search.html"/>
+        <title value="Org Alias Type Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-type-summary.html"/>
+        <title value="Org Alias Type Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-description-diff2.html"/>
+        <title value="Org Description Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-description-search.html"/>
+        <title value="Org Description Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-description-summary.html"/>
+        <title value="Org Description Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner-qualification-diff2.html"/>
+        <title value="Practitioner Qualification Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner-qualification-search.html"/>
+        <title value="Practitioner Qualification Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner-qualification-summary.html"/>
+        <title value="Practitioner Qualification Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualification-diff2.html"/>
+        <title value="Qualification Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualification-search.html"/>
+        <title value="Qualification Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualification-summary.html"/>
+        <title value="Qualification Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="schematron-list-generator.html"/>
+        <title value="Schematron List Generator"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Searchparameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="sp_list.html"/>
+        <title value="Sp List"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="technical-guidance.html"/>
+        <title value="Technical Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="todo.html"/>
+        <title value="Todo"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usage-restriction-diff2.html"/>
+        <title value="Usage Restriction Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usage-restriction-search.html"/>
+        <title value="Usage Restriction Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usage-restriction-summary.html"/>
+        <title value="Usage Restriction Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="validation-diff2.html"/>
+        <title value="Validation Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="validation-search.html"/>
+        <title value="Validation Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-careteam-diff2.html"/>
+        <title value="Vhdir Careteam Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-careteam-search.html"/>
+        <title value="Vhdir Careteam Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-careteam-summary.html"/>
+        <title value="Vhdir Careteam Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-endpoint-diff2.html"/>
+        <title value="Vhdir Endpoint Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-endpoint-search.html"/>
+        <title value="Vhdir Endpoint Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-endpoint-summary.html"/>
+        <title value="Vhdir Endpoint Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-healthcareservice-diff2.html"/>
+        <title value="Vhdir Healthcareservice Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-healthcareservice-search.html"/>
+        <title value="Vhdir Healthcareservice Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-healthcareservice-summary.html"/>
+        <title value="Vhdir Healthcareservice Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-insuranceplan-diff2.html"/>
+        <title value="Vhdir Insuranceplan Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-insuranceplan-search.html"/>
+        <title value="Vhdir Insuranceplan Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-insuranceplan-summary.html"/>
+        <title value="Vhdir Insuranceplan Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-location-diff2.html"/>
+        <title value="Vhdir Location Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-location-search.html"/>
+        <title value="Vhdir Location Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-location-summary.html"/>
+        <title value="Vhdir Location Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-network-diff2.html"/>
+        <title value="Vhdir Network Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-network-search.html"/>
+        <title value="Vhdir Network Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-network-summary.html"/>
+        <title value="Vhdir Network Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organization-diff2.html"/>
+        <title value="Vhdir Organization Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organization-search.html"/>
+        <title value="Vhdir Organization Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organization-summary.html"/>
+        <title value="Vhdir Organization Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organizationaffiliation-diff2.html"/>
+        <title value="Vhdir Organizationaffiliation Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organizationaffiliation-search.html"/>
+        <title value="Vhdir Organizationaffiliation Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organizationaffiliation-summary.html"/>
+        <title value="Vhdir Organizationaffiliation Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitioner-diff2.html"/>
+        <title value="Vhdir Practitioner Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitioner-search.html"/>
+        <title value="Vhdir Practitioner Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitioner-summary.html"/>
+        <title value="Vhdir Practitioner Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitionerrole-diff2.html"/>
+        <title value="Vhdir Practitionerrole Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitionerrole-search.html"/>
+        <title value="Vhdir Practitionerrole Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitionerrole-summary.html"/>
+        <title value="Vhdir Practitionerrole Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-restriction-diff2.html"/>
+        <title value="Vhdir Restriction Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-restriction-search.html"/>
+        <title value="Vhdir Restriction Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-restriction-summary.html"/>
+        <title value="Vhdir Restriction Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-validation-diff2.html"/>
+        <title value="Vhdir Validation Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-validation-search.html"/>
+        <title value="Vhdir Validation Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-validation-summary.html"/>
+        <title value="Vhdir Validation Summary"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

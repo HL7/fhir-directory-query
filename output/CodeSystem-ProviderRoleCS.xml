@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ProviderRoleCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ap<a name="ProviderRoleCS-ap"> </a></td><td>Admitting Privileges</td><td>Practitioner has admitting privileges at hospital (organization)</td></tr><tr><td style="white-space:nowrap">apn<a name="ProviderRoleCS-apn"> </a></td><td>Advanced Practice Nursing Providers</td><td>Advanced Practice Nursing Providers</td></tr><tr><td style="white-space:nowrap">at<a name="ProviderRoleCS-at"> </a></td><td>Athletic Trainer</td><td>Athletic Trainer</td></tr><tr><td style="white-space:nowrap">au<a name="ProviderRoleCS-au"> </a></td><td>Audiologist</td><td>Audiologist</td></tr><tr><td style="white-space:nowrap">bh<a name="ProviderRoleCS-bh"> </a></td><td>Behavioral Health &amp; Social Service Providers</td><td>Behavioral Health &amp; Social Service Providers</td></tr><tr><td style="white-space:nowrap">ba<a name="ProviderRoleCS-ba"> </a></td><td>Board Certified Behavior Analyst</td><td>Board Certified Behavior Analyst</td></tr><tr><td style="white-space:nowrap">bt<a name="ProviderRoleCS-bt"> </a></td><td>Member Of</td><td>Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of physician in the AMA</td></tr><tr><td style="white-space:nowrap">cnw<a name="ProviderRoleCS-cnw"> </a></td><td>Certified Nurse Midwife</td><td>Certified Nurse Midwife</td></tr><tr><td style="white-space:nowrap">crnp<a name="ProviderRoleCS-crnp"> </a></td><td>Certified Registered Nurse Practitioner</td><td>Certified Registered Nurse Practitioner</td></tr><tr><td style="white-space:nowrap">ch<a name="ProviderRoleCS-ch"> </a></td><td>Chiropractor</td><td>Chiropractor</td></tr><tr><td style="white-space:nowrap">cs<a name="ProviderRoleCS-cs"> </a></td><td>Christian Science Practitioner</td><td>Christian Science Practitioner</td></tr><tr><td style="white-space:nowrap">co<a name="ProviderRoleCS-co"> </a></td><td>Counselor</td><td>Counselor</td></tr><tr><td style="white-space:nowrap">dp<a name="ProviderRoleCS-dp"> </a></td><td>Dental Provider</td><td>Dental Provider</td></tr><tr><td style="white-space:nowrap">de<a name="ProviderRoleCS-de"> </a></td><td>Dentist</td><td>Dentist</td></tr><tr><td style="white-space:nowrap">drr<a name="ProviderRoleCS-drr"> </a></td><td>Developmental, Rehabilitative and Restorative Service Providers</td><td>Developmental, Rehabilitative and Restorative Service Providers</td></tr><tr><td style="white-space:nowrap">dn<a name="ProviderRoleCS-dn"> </a></td><td>Dietary and Nutritional Service Provider</td><td>Dietary and Nutritional Service Provider</td></tr><tr><td style="white-space:nowrap">om<a name="ProviderRoleCS-om"> </a></td><td>Doctor of Oriental Medicine</td><td>Doctor of Oriental Medicine</td></tr><tr><td style="white-space:nowrap">em<a name="ProviderRoleCS-em"> </a></td><td>Emergency Medical Service Provider</td><td>Emergency Medical Service Provider</td></tr><tr><td style="white-space:nowrap">ho<a name="ProviderRoleCS-ho"> </a></td><td>Homeopath</td><td>Homeopath</td></tr><tr><td style="white-space:nowrap">lpn<a name="ProviderRoleCS-lpn"> </a></td><td>Licensed Practical Nurse</td><td>Licensed Practical Nurse</td></tr><tr><td style="white-space:nowrap">mt<a name="ProviderRoleCS-mt"> </a></td><td>Marriage/Family Therapist</td><td>Marriage/Family Therapist</td></tr><tr><td style="white-space:nowrap">ma<a name="ProviderRoleCS-ma"> </a></td><td>Massage Therapist</td><td>Massage Therapist</td></tr><tr><td style="white-space:nowrap">nh<a name="ProviderRoleCS-nh"> </a></td><td>Naprapath</td><td>Naprapath</td></tr><tr><td style="white-space:nowrap">na<a name="ProviderRoleCS-na"> </a></td><td>Naturopath</td><td>Naturopath</td></tr><tr><td style="white-space:nowrap">nu<a name="ProviderRoleCS-nu"> </a></td><td>Nursing Service Related Providers</td><td>Nursing Service Related Providers</td></tr><tr><td style="white-space:nowrap">ot<a name="ProviderRoleCS-ot"> </a></td><td>Occupational Therapist</td><td>Occupational Therapist</td></tr><tr><td style="white-space:nowrap">op<a name="ProviderRoleCS-op"> </a></td><td>Optician</td><td>Optician</td></tr><tr><td style="white-space:nowrap">oo<a name="ProviderRoleCS-oo"> </a></td><td>Optometrist</td><td>Optometrist</td></tr><tr><td style="white-space:nowrap">os<a name="ProviderRoleCS-os"> </a></td><td>Other Service Provider</td><td>Other Service Provider</td></tr><tr><td style="white-space:nowrap">rx<a name="ProviderRoleCS-rx"> </a></td><td>Pharmacy Service Providers</td><td>Pharmacy Service Providers</td></tr><tr><td style="white-space:nowrap">pt<a name="ProviderRoleCS-pt"> </a></td><td>Physical Therapist</td><td>Physical Therapist</td></tr><tr><td style="white-space:nowrap">ph<a name="ProviderRoleCS-ph"> </a></td><td>Physician</td><td>Physician</td></tr><tr><td style="white-space:nowrap">pa<a name="ProviderRoleCS-pa"> </a></td><td>Physician Assistant</td><td>Physician Assistant</td></tr><tr><td style="white-space:nowrap">po<a name="ProviderRoleCS-po"> </a></td><td>Podiatrist</td><td>Podiatrist</td></tr><tr><td style="white-space:nowrap">py<a name="ProviderRoleCS-py"> </a></td><td>Psychologist</td><td>Psychologist</td></tr><tr><td style="white-space:nowrap">rn<a name="ProviderRoleCS-rn"> </a></td><td>Registered Nurse</td><td>Registered Nurse</td></tr><tr><td style="white-space:nowrap">rt<a name="ProviderRoleCS-rt"> </a></td><td>Respiratory Therapist</td><td>Respiratory Therapist</td></tr><tr><td style="white-space:nowrap">sw<a name="ProviderRoleCS-sw"> </a></td><td>Social Worker</td><td>Social Worker</td></tr><tr><td style="white-space:nowrap">sp<a name="ProviderRoleCS-sp"> </a></td><td>Speech Language Pathologist</td><td>Speech Language Pathologist</td></tr><tr><td style="white-space:nowrap">sh<a name="ProviderRoleCS-sh"> </a></td><td>Speech, Language and Hearing Service Providers</td><td>Speech, Language and Hearing Service Providers</td></tr><tr><td style="white-space:nowrap">te<a name="ProviderRoleCS-te"> </a></td><td>Technologists, Technicians and Other Technical Service Providers</td><td>Technologists, Technicians and Other Technical Service Providers</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS"/>
+  <version value="0.0.1"/>
+  <name value="ProviderRoleCS"/>
+  <title value="Provider Role Codes"/>
+  <status value="active"/>
+  <date value="2021-12-16T11:05:58-05:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="A capability that an individual, group, or organization is acknowledged to have in a payer network."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="41"/>
+  <concept>
+    <code value="ap"/>
+    <display value="Admitting Privileges"/>
+    <definition value="Practitioner has admitting privileges at hospital (organization)"/>
+  </concept>
+  <concept>
+    <code value="apn"/>
+    <display value="Advanced Practice Nursing Providers"/>
+    <definition value="Advanced Practice Nursing Providers"/>
+  </concept>
+  <concept>
+    <code value="at"/>
+    <display value="Athletic Trainer"/>
+    <definition value="Athletic Trainer"/>
+  </concept>
+  <concept>
+    <code value="au"/>
+    <display value="Audiologist"/>
+    <definition value="Audiologist"/>
+  </concept>
+  <concept>
+    <code value="bh"/>
+    <display value="Behavioral Health &amp; Social Service Providers"/>
+    <definition value="Behavioral Health &amp; Social Service Providers"/>
+  </concept>
+  <concept>
+    <code value="ba"/>
+    <display value="Board Certified Behavior Analyst"/>
+    <definition value="Board Certified Behavior Analyst"/>
+  </concept>
+  <concept>
+    <code value="bt"/>
+    <display value="Member Of"/>
+    <definition value="Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of physician in the AMA"/>
+  </concept>
+  <concept>
+    <code value="cnw"/>
+    <display value="Certified Nurse Midwife"/>
+    <definition value="Certified Nurse Midwife"/>
+  </concept>
+  <concept>
+    <code value="crnp"/>
+    <display value="Certified Registered Nurse Practitioner"/>
+    <definition value="Certified Registered Nurse Practitioner"/>
+  </concept>
+  <concept>
+    <code value="ch"/>
+    <display value="Chiropractor"/>
+    <definition value="Chiropractor"/>
+  </concept>
+  <concept>
+    <code value="cs"/>
+    <display value="Christian Science Practitioner"/>
+    <definition value="Christian Science Practitioner"/>
+  </concept>
+  <concept>
+    <code value="co"/>
+    <display value="Counselor"/>
+    <definition value="Counselor"/>
+  </concept>
+  <concept>
+    <code value="dp"/>
+    <display value="Dental Provider"/>
+    <definition value="Dental Provider"/>
+  </concept>
+  <concept>
+    <code value="de"/>
+    <display value="Dentist"/>
+    <definition value="Dentist"/>
+  </concept>
+  <concept>
+    <code value="drr"/>
+    <display value="Developmental, Rehabilitative and Restorative Service Providers"/>
+    <definition value="Developmental, Rehabilitative and Restorative Service Providers"/>
+  </concept>
+  <concept>
+    <code value="dn"/>
+    <display value="Dietary and Nutritional Service Provider"/>
+    <definition value="Dietary and Nutritional Service Provider"/>
+  </concept>
+  <concept>
+    <code value="om"/>
+    <display value="Doctor of Oriental Medicine"/>
+    <definition value="Doctor of Oriental Medicine"/>
+  </concept>
+  <concept>
+    <code value="em"/>
+    <display value="Emergency Medical Service Provider"/>
+    <definition value="Emergency Medical Service Provider"/>
+  </concept>
+  <concept>
+    <code value="ho"/>
+    <display value="Homeopath"/>
+    <definition value="Homeopath"/>
+  </concept>
+  <concept>
+    <code value="lpn"/>
+    <display value="Licensed Practical Nurse"/>
+    <definition value="Licensed Practical Nurse"/>
+  </concept>
+  <concept>
+    <code value="mt"/>
+    <display value="Marriage/Family Therapist"/>
+    <definition value="Marriage/Family Therapist"/>
+  </concept>
+  <concept>
+    <code value="ma"/>
+    <display value="Massage Therapist"/>
+    <definition value="Massage Therapist"/>
+  </concept>
+  <concept>
+    <code value="nh"/>
+    <display value="Naprapath"/>
+    <definition value="Naprapath"/>
+  </concept>
+  <concept>
+    <code value="na"/>
+    <display value="Naturopath"/>
+    <definition value="Naturopath"/>
+  </concept>
+  <concept>
+    <code value="nu"/>
+    <display value="Nursing Service Related Providers"/>
+    <definition value="Nursing Service Related Providers"/>
+  </concept>
+  <concept>
+    <code value="ot"/>
+    <display value="Occupational Therapist"/>
+    <definition value="Occupational Therapist"/>
+  </concept>
+  <concept>
+    <code value="op"/>
+    <display value="Optician"/>
+    <definition value="Optician"/>
+  </concept>
+  <concept>
+    <code value="oo"/>
+    <display value="Optometrist"/>
+    <definition value="Optometrist"/>
+  </concept>
+  <concept>
+    <code value="os"/>
+    <display value="Other Service Provider"/>
+    <definition value="Other Service Provider"/>
+  </concept>
+  <concept>
+    <code value="rx"/>
+    <display value="Pharmacy Service Providers"/>
+    <definition value="Pharmacy Service Providers"/>
+  </concept>
+  <concept>
+    <code value="pt"/>
+    <display value="Physical Therapist"/>
+    <definition value="Physical Therapist"/>
+  </concept>
+  <concept>
+    <code value="ph"/>
+    <display value="Physician"/>
+    <definition value="Physician"/>
+  </concept>
+  <concept>
+    <code value="pa"/>
+    <display value="Physician Assistant"/>
+    <definition value="Physician Assistant"/>
+  </concept>
+  <concept>
+    <code value="po"/>
+    <display value="Podiatrist"/>
+    <definition value="Podiatrist"/>
+  </concept>
+  <concept>
+    <code value="py"/>
+    <display value="Psychologist"/>
+    <definition value="Psychologist"/>
+  </concept>
+  <concept>
+    <code value="rn"/>
+    <display value="Registered Nurse"/>
+    <definition value="Registered Nurse"/>
+  </concept>
+  <concept>
+    <code value="rt"/>
+    <display value="Respiratory Therapist"/>
+    <definition value="Respiratory Therapist"/>
+  </concept>
+  <concept>
+    <code value="sw"/>
+    <display value="Social Worker"/>
+    <definition value="Social Worker"/>
+  </concept>
+  <concept>
+    <code value="sp"/>
+    <display value="Speech Language Pathologist"/>
+    <definition value="Speech Language Pathologist"/>
+  </concept>
+  <concept>
+    <code value="sh"/>
+    <display value="Speech, Language and Hearing Service Providers"/>
+    <definition value="Speech, Language and Hearing Service Providers"/>
+  </concept>
+  <concept>
+    <code value="te"/>
+    <display value="Technologists, Technicians and Other Technical Service Providers"/>
+    <definition value="Technologists, Technicians and Other Technical Service Providers"/>
+  </concept>
+</CodeSystem>

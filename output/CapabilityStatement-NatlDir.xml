@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="NatlDir"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">NatlDir CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-19</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p>This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The NatlDir  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+<ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
+</li><li>Support json source formats for all NatlDir interactions.</li><li>Identify the NatlDir  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li><li>Support the searchParameters on each profile  individually and in combination.
+1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li></ol><p>The NatlDir  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all NatlDir  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="implementation.html#general-security-considerations">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#endpoint">Endpoint</a></td><td><a href="StructureDefinition-NatlDir-Endpoint.html">NatlDir Endpoint</a></td><td>
+							
+							organization, _id, _lastUpdated
+							
+							
+							
+						</td><td>
+							Endpoint:organization
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#healthcareservice">HealthcareService</a></td><td><a href="StructureDefinition-NatlDir-HealthcareService.html">NatlDir HealthcareService</a></td><td>
+							
+							location, coverage-area, organization, endpoint, name, service-category, service-type, specialty, _id, _lastUpdated
+							
+							
+							
+						</td><td>
+							HealthcareService:location, HealthcareService:coverage-area, HealthcareService:organization, HealthcareService:endpoint
+						</td><td>
+              PractitionerRole:service, OrganizationAffiliation:service
+            </td><td>
+							
+						</td></tr><tr><td><a href="#insuranceplan">InsurancePlan</a></td><td><a href="StructureDefinition-NatlDir-InsurancePlan.html">NatlDir InsurancePlan</a></td><td>
+							
+							administered-by, owned-by, coverage-area, name, plan-type, identifier, _id, _lastUpdated, type
+							
+							
+							
+						</td><td>
+							InsurancePlan:administered-by, InsurancePlan:owned-by, InsurancePlan:coverage-area
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#location">Location</a></td><td><a href="StructureDefinition-NatlDir-Location.html">NatlDir Location</a></td><td>
+							
+							partof, organization, endpoint, address-city, address-state, address-postalcode, address, type, _id, _lastUpdated
+							
+							
+							
+						</td><td>
+							Location:endpoint, Location:organization, Location:partof
+						</td><td>
+              HealthcareService:location, InsurancePlan:coverage-area, OrganizationAffiliation:location, PractitionerRole:location
+            </td><td>
+							
+						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-NatlDir-Network.html">NatlDir Network</a>, 
+
+						<a href="StructureDefinition-NatlDir-Organization.html">NatlDir Organization</a></td><td>
+							
+							partof, endpoint, address, name, _id, _lastUpdated, type, coverage-area
+							
+							
+							
+						</td><td>
+							Organization:partof, Organization:endpoint, Organization:coverage-area
+						</td><td>
+              Endpoint:organization, HealthcareService:organization, InsurancePlan:administered-by, InsurancePlan:owned-by, OrganizationAffiliation:primary-organization, PractitionerRole:organization, PractitionerRole:network, OrganizationAffiliation:participating-organization
+            </td><td>
+							
+						</td></tr><tr><td><a href="#organizationaffiliation">OrganizationAffiliation</a></td><td><a href="StructureDefinition-NatlDir-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a></td><td>
+							
+							primary-organization, participating-organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated
+							
+							
+							
+						</td><td>
+							OrganizationAffiliation:primary-organization, OrganizationAffiliation:participating-organization, OrganizationAffiliation:location, OrganizationAffiliation:service, OrganizationAffiliation:endpoint, OrganizationAffiliation:network
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-NatlDir-Practitioner.html">NatlDir Practitioner</a></td><td>
+							
+							name, _id, _lastUpdated, family, given
+							
+							
+							
+						</td><td>
+							
+						</td><td>
+              PractitionerRole:practitioner
+            </td><td>
+							
+						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-NatlDir-PractitionerRole.html">NatlDir PractitionerRole</a></td><td>
+							
+							practitioner, organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated
+							
+							
+							
+						</td><td>
+							PractitionerRole:practitioner, PractitionerRole:organization, PractitionerRole:location, PractitionerRole:service, PractitionerRole:network, PractitionerRole:endpoint
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr></tbody></table><br/><h4 id="endpoint" class="no_toc">Endpoint</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-Endpoint.html">NatlDir Endpoint</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Endpoint resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Endpoint/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Endpoint resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Endpoint/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						Endpoint:organization - <code class="highlighter-rouge">GET [base]/Endpoint?[parameter=value]&amp;_include=Endpoint:organization</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-endpoint-organization.html">organization</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Endpoint?organization=[organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Endpoint?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/Endpoint?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="healthcareservice" class="no_toc">HealthcareService</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-HealthcareService.html">NatlDir HealthcareService</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a HealthcareService resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/HealthcareService/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a HealthcareService resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/HealthcareService/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						HealthcareService:location - <code class="highlighter-rouge">GET [base]/HealthcareService?[parameter=value]&amp;_include=HealthcareService:location</code><br/>
+					
+						HealthcareService:coverage-area - <code class="highlighter-rouge">GET [base]/HealthcareService?[parameter=value]&amp;_include=HealthcareService:coverage-area</code><br/>
+					
+						HealthcareService:organization - <code class="highlighter-rouge">GET [base]/HealthcareService?[parameter=value]&amp;_include=HealthcareService:organization</code><br/>
+					
+						HealthcareService:endpoint - <code class="highlighter-rouge">GET [base]/HealthcareService?[parameter=value]&amp;_include=HealthcareService:endpoint</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						PractitionerRole:service - <code class="highlighter-rouge">GET [base]/HealthcareService?[parameter=value]&amp;_revinclude=PractitionerRole:service</code><br/>
+					
+						OrganizationAffiliation:service - <code class="highlighter-rouge">GET [base]/HealthcareService?[parameter=value]&amp;_revinclude=OrganizationAffiliation:service</code><br/>
+					
+				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-location.html">location</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-coverage-area.html">coverage-area</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?coverage-area=[coverage-area]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-organization.html">organization</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?organization=[organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-endpoint.html">endpoint</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?endpoint=[endpoint]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-name.html">name</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-service-category.html">service-category</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?service-category=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-service-type.html">service-type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?service-type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-healthcareservice-specialty.html">specialty</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?specialty=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="insuranceplan" class="no_toc">InsurancePlan</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-InsurancePlan.html">NatlDir InsurancePlan</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a InsurancePlan resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/InsurancePlan/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a InsurancePlan resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/InsurancePlan/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						InsurancePlan:administered-by - <code class="highlighter-rouge">GET [base]/InsurancePlan?[parameter=value]&amp;_include=InsurancePlan:administered-by</code><br/>
+					
+						InsurancePlan:owned-by - <code class="highlighter-rouge">GET [base]/InsurancePlan?[parameter=value]&amp;_include=InsurancePlan:owned-by</code><br/>
+					
+						InsurancePlan:coverage-area - <code class="highlighter-rouge">GET [base]/InsurancePlan?[parameter=value]&amp;_include=InsurancePlan:coverage-area</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-administered-by.html">administered-by</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?administered-by=[administered-by]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-owned-by.html">owned-by</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?owned-by=[owned-by]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-coverage-area.html">coverage-area</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?coverage-area=[coverage-area]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-name.html">name</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-plan-type.html">plan-type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?plan-type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-identifier.html">identifier</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?identifier=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-insuranceplan-type.html">type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?type=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="location" class="no_toc">Location</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-Location.html">NatlDir Location</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Location resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Location/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Location resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Location/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						Location:endpoint - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_include=Location:endpoint</code><br/>
+					
+						Location:organization - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_include=Location:organization</code><br/>
+					
+						Location:partof - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_include=Location:partof</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						HealthcareService:location - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_revinclude=HealthcareService:location</code><br/>
+					
+						InsurancePlan:coverage-area - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_revinclude=InsurancePlan:coverage-area</code><br/>
+					
+						OrganizationAffiliation:location - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_revinclude=OrganizationAffiliation:location</code><br/>
+					
+						PractitionerRole:location - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_revinclude=PractitionerRole:location</code><br/>
+					
+				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-partof.html">partof</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Location?partof=[partof]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-organization.html">organization</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Location?organization=[organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-endpoint.html">endpoint</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Location?endpoint=[endpoint]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-address-city.html">address-city</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Location?address-city=[address-city]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-address-state.html">address-state</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Location?address-state=[address-state]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-address-postalcode.html">address-postalcode</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Location?address-postalcode=[address-postalcode]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-address.html">address</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Location?address=[address]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-location-type.html">type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Location?type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Location?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/Location?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-Network.html">NatlDir Network</a>, 
+				
+											<a href="StructureDefinition-NatlDir-Organization.html">NatlDir Organization</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Organization resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Organization/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Organization resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Organization/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						Organization:partof - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_include=Organization:partof</code><br/>
+					
+						Organization:endpoint - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_include=Organization:endpoint</code><br/>
+					
+						Organization:coverage-area - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_include=Organization:coverage-area</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Endpoint:organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=Endpoint:organization</code><br/>
+					
+						HealthcareService:organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=HealthcareService:organization</code><br/>
+					
+						InsurancePlan:administered-by - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=InsurancePlan:administered-by</code><br/>
+					
+						InsurancePlan:owned-by - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=InsurancePlan:owned-by</code><br/>
+					
+						OrganizationAffiliation:primary-organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=OrganizationAffiliation:primary-organization</code><br/>
+					
+						PractitionerRole:organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=PractitionerRole:organization</code><br/>
+					
+						PractitionerRole:network - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=PractitionerRole:network</code><br/>
+					
+						OrganizationAffiliation:participating-organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=OrganizationAffiliation:participating-organization</code><br/>
+					
+				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-partof.html">partof</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?partof=[partof]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-endpoint.html">endpoint</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?endpoint=[endpoint]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-address.html">address</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?address=[address]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-name.html">name</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-type.html">type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-coverage-area.html">coverage-area</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?coverage-area=[coverage-area]</code></td></tr></tbody></table><hr/><h4 id="organizationaffiliation" class="no_toc">OrganizationAffiliation</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a OrganizationAffiliation resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/OrganizationAffiliation/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a OrganizationAffiliation resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/OrganizationAffiliation/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						OrganizationAffiliation:primary-organization - <code class="highlighter-rouge">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:primary-organization</code><br/>
+					
+						OrganizationAffiliation:participating-organization - <code class="highlighter-rouge">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:participating-organization</code><br/>
+					
+						OrganizationAffiliation:location - <code class="highlighter-rouge">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:location</code><br/>
+					
+						OrganizationAffiliation:service - <code class="highlighter-rouge">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:service</code><br/>
+					
+						OrganizationAffiliation:endpoint - <code class="highlighter-rouge">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:endpoint</code><br/>
+					
+						OrganizationAffiliation:network - <code class="highlighter-rouge">GET [base]/OrganizationAffiliation?[parameter=value]&amp;_include=OrganizationAffiliation:network</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-primary-organization.html">primary-organization</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?primary-organization=[primary-organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-participating-organization.html">participating-organization</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?participating-organization=[participating-organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-location.html">location</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-service.html">service</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?service=[service]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-network.html">network</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?network=[network]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-endpoint.html">endpoint</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?endpoint=[endpoint]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-role.html">role</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?role=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organizationaffiliation-specialty.html">specialty</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?specialty=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-Practitioner.html">NatlDir Practitioner</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Practitioner resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Practitioner/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Practitioner resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Practitioner/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						PractitionerRole:practitioner - <code class="highlighter-rouge">GET [base]/Practitioner?[parameter=value]&amp;_revinclude=PractitionerRole:practitioner</code><br/>
+					
+				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitioner-name.html">name</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitioner-family-name.html">family</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?family=[family]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitioner-given-name.html">given</a></td><td>
+							string
+						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?given=[given]</code></td></tr></tbody></table><hr/><h4 id="practitionerrole" class="no_toc">PractitionerRole</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-NatlDir-PractitionerRole.html">NatlDir PractitionerRole</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a PractitionerRole resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/PractitionerRole/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a PractitionerRole resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/PractitionerRole/[id]/_history/vid</code>
+				</li><br/>  <!-- Only SHALL for include for now the capability statement does not create the primitive
+				     extensios for this yet. --><li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						PractitionerRole:practitioner - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:practitioner</code><br/>
+					
+						PractitionerRole:organization - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:organization</code><br/>
+					
+						PractitionerRole:location - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:location</code><br/>
+					
+						PractitionerRole:service - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:service</code><br/>
+					
+						PractitionerRole:network - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:network</code><br/>
+					
+						PractitionerRole:endpoint - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:endpoint</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-practitioner.html">practitioner</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner=[practitioner]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-organization.html">organization</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?organization=[organization]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-location.html">location</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-service.html">service</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?service=[service]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-network.html">network</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?network=[network]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-endpoint.html">endpoint</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?endpoint=[endpoint]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-role.html">role</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?role=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-practitionerrole-specialty.html">specialty</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><br/></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/CapabilityStatement/NatlDir"/>
+  <version value="0.0.1"/>
+  <name value="DavinciPdexNatlDirCapabilityStatement"/>
+  <title value="NatlDir CapabilityStatement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-11-19"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
+  <patchFormat value="application/json-patch+json"/>
+  <implementationGuide value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/ImplementationGuide/hl7.fhir.us.davinci-pdex-NatlDir"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="The NatlDir  Server **SHALL**:&#xA;&#xA;1. Support all profiles defined in this Implementation Guide..&#xA;1.  Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all NatlDir interactions.&#xA;1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;1. Support the searchParameters on each profile  individually and in combination.&#xA;1.Support forward and reverse chaining on all search parameters that specify the &#39;chain&#39; property&#xA;&#xA;The NatlDir  Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all NatlDir  interactions.&#xA;"/>
+    <security>
+      <description value="1. See the [General Security Considerations](implementation.html#general-security-considerations) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
+    </security>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Endpoint"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Endpoint"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="Endpoint:organization"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="organization"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/endpoint-organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="HealthcareService"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-HealthcareService"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="HealthcareService:location"/>
+      <searchInclude value="HealthcareService:coverage-area"/>
+      <searchInclude value="HealthcareService:organization"/>
+      <searchInclude value="HealthcareService:endpoint"/>
+      <searchRevInclude value="PractitionerRole:service"/>
+      <searchRevInclude value="OrganizationAffiliation:service"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="location"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="coverage-area"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-coverage-area"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="organization"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="endpoint"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-endpoint"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-name"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="service-category"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="service-type"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-type"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="specialty"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-specialty"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="InsurancePlan"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-InsurancePlan"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="InsurancePlan:administered-by"/>
+      <searchInclude value="InsurancePlan:owned-by"/>
+      <searchInclude value="InsurancePlan:coverage-area"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="administered-by"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-administered-by"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="owned-by"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-owned-by"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="coverage-area"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-coverage-area"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-name"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="plan-type"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-plan-type"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-type"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Location"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Location"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="Location:endpoint"/>
+      <searchInclude value="Location:organization"/>
+      <searchInclude value="Location:partof"/>
+      <searchRevInclude value="HealthcareService:location"/>
+      <searchRevInclude value="InsurancePlan:coverage-area"/>
+      <searchRevInclude value="OrganizationAffiliation:location"/>
+      <searchRevInclude value="PractitionerRole:location"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="partof"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-partof"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="organization"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="endpoint"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-endpoint"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="address-city"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-city"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="address-state"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-state"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="address-postalcode"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-postalcode"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="address"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-type"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Organization"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Network"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Organization"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="Organization:partof"/>
+      <searchInclude value="Organization:endpoint"/>
+      <searchInclude value="Organization:coverage-area"/>
+      <searchRevInclude value="Endpoint:organization"/>
+      <searchRevInclude value="HealthcareService:organization"/>
+      <searchRevInclude value="InsurancePlan:administered-by"/>
+      <searchRevInclude value="InsurancePlan:owned-by"/>
+      <searchRevInclude value="OrganizationAffiliation:primary-organization"/>
+      <searchRevInclude value="PractitionerRole:organization"/>
+      <searchRevInclude value="PractitionerRole:network"/>
+      <searchRevInclude value="OrganizationAffiliation:participating-organization"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="partof"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-partof"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="endpoint"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-endpoint"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="address"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-address"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-name"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-type"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="coverage-area"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-coverage-area"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="OrganizationAffiliation"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="OrganizationAffiliation:primary-organization"/>
+      <searchInclude value="OrganizationAffiliation:participating-organization"/>
+      <searchInclude value="OrganizationAffiliation:location"/>
+      <searchInclude value="OrganizationAffiliation:service"/>
+      <searchInclude value="OrganizationAffiliation:endpoint"/>
+      <searchInclude value="OrganizationAffiliation:network"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="primary-organization"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-primary-organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="participating-organization"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-participating-organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="location"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="service"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-service"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="network"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-network"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="endpoint"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-endpoint"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="role"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-role"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="specialty"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-specialty"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Practitioner"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchRevInclude value="PractitionerRole:practitioner"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-name"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="family"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-family-name"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="given"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-given-name"/>
+        <type value="string"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-PractitionerRole"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:location"/>
+      <searchInclude value="PractitionerRole:service"/>
+      <searchInclude value="PractitionerRole:network"/>
+      <searchInclude value="PractitionerRole:endpoint"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="practitioner"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="organization"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="location"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="service"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-service"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="network"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-network"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="endpoint"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-endpoint"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="role"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-role"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="specialty"/>
+        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-specialty"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

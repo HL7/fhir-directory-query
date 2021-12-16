@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <id value="HartfordOrthopedicAffil"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>organization</b>: <a href="Organization-Hospital.html">Generated Summary: language: en-US; id: NPI456; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><p><b>participatingOrganization</b>: <a href="Organization-HartfordOrthopedics.html">Generated Summary: language: en-US; id: NPI456; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}">Provider Group</span>; name: Hartford Orthopedics Services; Phone: (111)-222-3333, https://www.orga.com</a></p><p><b>network</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>code</b>: <span title="Codes: {http://hl7.org/fhir/organization-role provider}">Provider</span></p><p><b>location</b>: </p><ul><li><a href="Location-HospLoc1.html">Generated Summary: language: en-US; status: active; name: Hartford Hospital Location 1; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span>; Phone: (111)-222-3333, https://www.hgh.com</a></li><li><a href="Location-HospLoc2.html">Generated Summary: language: en-US; status: active; name: Hartford Hospital Location 2; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span>; Phone: (111)-222-3333, https://www.hgh.com</a></li></ul><p><b>healthcareService</b>: <a href="HealthcareService-HartfordOrthopedicServices.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS prov}">Medical Provider</span>; <span title="Codes: {http://nucc.org/provider-taxonomy 207X00000X}">Orthopedic Surgery</span></a></p></div>
+  </text>
+  <active value="true"/>
+  <organization>
+    <reference value="Organization/Hospital"/>
+  </organization>
+  <participatingOrganization>
+    <reference value="Organization/HartfordOrthopedics"/>
+  </participatingOrganization>
+  <network>
+    <reference value="Organization/AcmeofCTStdNet"/>
+  </network>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/organization-role"/>
+      <code value="provider"/>
+    </coding>
+  </code>
+  <location>
+    <reference value="Location/HospLoc1"/>
+  </location>
+  <location>
+    <reference value="Location/HospLoc2"/>
+  </location>
+  <healthcareService>
+    <reference value="HealthcareService/HartfordOrthopedicServices"/>
+  </healthcareService>
+</OrganizationAffiliation>

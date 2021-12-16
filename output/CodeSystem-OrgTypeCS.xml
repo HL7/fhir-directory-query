@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="OrgTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fac<a name="OrgTypeCS-fac"> </a></td><td>Facility</td><td>A physical healthcare facility.</td></tr><tr><td style="white-space:nowrap">prvgrp<a name="OrgTypeCS-prvgrp"> </a></td><td>Provider Group</td><td>A healthcare provider entity</td></tr><tr><td style="white-space:nowrap">payer<a name="OrgTypeCS-payer"> </a></td><td>Payer</td><td>A healthcare payer.</td></tr><tr><td style="white-space:nowrap">atyprv<a name="OrgTypeCS-atyprv"> </a></td><td>Atypical Provider</td><td>Providers that do not provide healthcare</td></tr><tr><td style="white-space:nowrap">bus<a name="OrgTypeCS-bus"> </a></td><td>Non-Healthcare Business</td><td>An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility</td></tr><tr><td style="white-space:nowrap">ntwk<a name="OrgTypeCS-ntwk"> </a></td><td>Network</td><td>A healthcare provider insurance network</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS"/>
+  <version value="0.0.1"/>
+  <name value="OrgTypeCS"/>
+  <title value="Organization Type"/>
+  <status value="active"/>
+  <date value="2021-12-16T11:05:58-05:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Categories of organizations based on criteria in provider directories."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="fac"/>
+    <display value="Facility"/>
+    <definition value="A physical healthcare facility."/>
+  </concept>
+  <concept>
+    <code value="prvgrp"/>
+    <display value="Provider Group"/>
+    <definition value="A healthcare provider entity"/>
+  </concept>
+  <concept>
+    <code value="payer"/>
+    <display value="Payer"/>
+    <definition value="A healthcare payer."/>
+  </concept>
+  <concept>
+    <code value="atyprv"/>
+    <display value="Atypical Provider"/>
+    <definition value="Providers that do not provide healthcare"/>
+  </concept>
+  <concept>
+    <code value="bus"/>
+    <display value="Non-Healthcare Business"/>
+    <definition value="An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility"/>
+  </concept>
+  <concept>
+    <code value="ntwk"/>
+    <display value="Network"/>
+    <definition value="A healthcare provider insurance network"/>
+  </concept>
+</CodeSystem>

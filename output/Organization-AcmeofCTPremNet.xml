@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="AcmeofCTPremNet"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>Location Reference</b>: <a href="Location-StateOfCTLocation.html">Generated Summary: language: en-US; status: active; name: State of CT Area</a></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span></p><p><b>name</b>: ACME CT Premium Preferred Provider Network</p><p><b>partOf</b>: <a href="Organization-Acme.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS payer}">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Jane Kawasaki </td><td>-unknown-</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/location-reference">
+    <valueReference>
+      <reference value="Location/StateOfCTLocation"/>
+    </valueReference>
+  </extension>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS"/>
+      <code value="ntwk"/>
+      <display value="Network"/>
+    </coding>
+  </type>
+  <name value="ACME CT Premium Preferred Provider Network"/>
+  <partOf>
+    <reference value="Organization/Acme"/>
+  </partOf>
+  <contact>
+    <name>
+      <family value="Kawasaki"/>
+      <given value="Jane"/>
+    </name>
+    <telecom>
+      <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary">
+        <valueReference>
+          <reference value="Organization/Acme"/>
+        </valueReference>
+      </extension>
+    </telecom>
+  </contact>
+</Organization>

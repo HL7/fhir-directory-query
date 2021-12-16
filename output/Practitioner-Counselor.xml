@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Counselor"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>Communication Proficiency</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS 30}">General professional proficiency</span></p><p><b>identifier</b>: id: NPI3238</p><p><b>active</b>: true</p><p><b>name</b>: Susie Smith, LPC</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td></td><td><span title="Codes: ">IL</span></td><td><span>State of Illinois</span></td></tr></table><p><b>communication</b>: <span title="Codes: {urn:ietf:bcp:47 ru}">Russian</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/communication-proficiency">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS"/>
+        <code value="30"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="NPI3238"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Susie Smith, LPC"/>
+    <family value="Smith"/>
+    <given value="Susie"/>
+  </name>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <display value="LPC"/>
+      </coding>
+      <text value="IL"/>
+    </code>
+    <issuer>
+      <display value="State of Illinois"/>
+    </issuer>
+  </qualification>
+  <communication>
+    <coding>
+      <system value="urn:ietf:bcp:47"/>
+      <code value="ru"/>
+    </coding>
+  </communication>
+</Practitioner>

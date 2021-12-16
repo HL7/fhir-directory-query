@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="HartfordOrthopedics"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI456</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}">Provider Group</span></p><p><b>name</b>: Hartford Orthopedics Services</p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.orga.com">https://www.orga.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="NPI456"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS"/>
+      <code value="prvgrp"/>
+      <display value="Provider Group"/>
+    </coding>
+  </type>
+  <name value="Hartford Orthopedics Services"/>
+  <telecom>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+      <extension url="daysOfWeek">
+        <valueCode value="mon"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="tue"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="wed"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="thu"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="fri"/>
+      </extension>
+      <extension url="allDay">
+        <valueBoolean value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+      <extension url="daysOfWeek">
+        <valueCode value="sat"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="sun"/>
+      </extension>
+      <extension url="availableStartTime">
+        <valueTime value="08:00:00"/>
+      </extension>
+      <extension url="availableEndTime">
+        <valueTime value="17:00:00"/>
+      </extension>
+    </extension>
+    <system value="phone"/>
+    <value value="(111)-222-3333"/>
+    <rank value="2"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="https://www.orga.com"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <line value="123 Main Street"/>
+    <city value="Anytown"/>
+    <state value="CT"/>
+    <postalCode value="00014-1234"/>
+  </address>
+  <contact>
+    <telecom>
+      <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+        <extension url="daysOfWeek">
+          <valueCode value="mon"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="tue"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="wed"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="thu"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="fri"/>
+        </extension>
+        <extension url="allDay">
+          <valueBoolean value="true"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+        <extension url="daysOfWeek">
+          <valueCode value="sat"/>
+        </extension>
+        <extension url="daysOfWeek">
+          <valueCode value="sun"/>
+        </extension>
+        <extension url="availableStartTime">
+          <valueTime value="08:00:00"/>
+        </extension>
+        <extension url="availableEndTime">
+          <valueTime value="17:00:00"/>
+        </extension>
+      </extension>
+      <system value="phone"/>
+      <value value="(111)-222-3333"/>
+      <rank value="2"/>
+    </telecom>
+  </contact>
+</Organization>

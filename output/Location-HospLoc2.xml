@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="HospLoc2"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>Accessibility</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS adacomp}">ADA compliant</span></p><p><b>Accessibility</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS pubtrans}">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: Hartford Hospital Location 2</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span></p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.hgh.com">https://www.hgh.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>3</td><td>15</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-Hospital.html">Generated Summary: language: en-US; id: NPI456; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>HoursOfOperations</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS"/>
+        <code value="adacomp"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS"/>
+        <code value="pubtrans"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <name value="Hartford Hospital Location 2"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+    </coding>
+  </type>
+  <telecom>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+      <extension url="daysOfWeek">
+        <valueCode value="mon"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="tue"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="wed"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="thu"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="fri"/>
+      </extension>
+      <extension url="allDay">
+        <valueBoolean value="true"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="sat"/>
+      </extension>
+      <extension url="daysOfWeek">
+        <valueCode value="sun"/>
+      </extension>
+    </extension>
+    <system value="phone"/>
+    <value value="(111)-222-3333"/>
+    <rank value="2"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="https://www.hgh.com"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <line value="123 Main Street"/>
+    <city value="Anytown"/>
+    <state value="CT"/>
+    <postalCode value="00014-1234"/>
+  </address>
+  <position>
+    <longitude value="3"/>
+    <latitude value="15"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/Hospital"/>
+  </managingOrganization>
+  <hoursOfOperation>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <daysOfWeek value="sat"/>
+    <daysOfWeek value="sun"/>
+    <allDay value="true"/>
+  </hoursOfOperation>
+</Location>

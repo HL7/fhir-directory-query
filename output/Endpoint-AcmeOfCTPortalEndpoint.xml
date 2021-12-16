@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Endpoint xmlns="http://hl7.org/fhir">
+  <id value="AcmeOfCTPortalEndpoint"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><blockquote><p><b>Endpoint Usecase</b></p><p><b>value</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActReason HOPERAT}">healthcare operations</span></p></blockquote><p><b>status</b>: active</p><p><b>connectionType</b>: <span title="{http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS rest-non-fhir}">REST (not FHIR)</span></p><p><b>name</b>: Endpoint for Acme of CT Portal</p><p><b>payloadType</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS NA}">Not Applicable</span></p><p><b>address</b>: <a href="https://urlofportal.acmect.com">https://urlofportal.acmect.com</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-usecase">
+    <extension url="type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+          <code value="HOPERAT"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <connectionType>
+    <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS"/>
+    <code value="rest-non-fhir"/>
+  </connectionType>
+  <name value="Endpoint for Acme of CT Portal"/>
+  <payloadType>
+    <coding>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS"/>
+      <code value="NA"/>
+    </coding>
+  </payloadType>
+  <address value="https://urlofportal.acmect.com"/>
+</Endpoint>

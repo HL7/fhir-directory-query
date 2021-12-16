@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="OrganizationAffiliationRoleCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">behavioral<a name="OrganizationAffiliationRoleCS-behavioral"> </a></td><td>Outpatient Behavioral Health Provider</td><td>Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities.</td></tr><tr><td style="white-space:nowrap">bt<a name="OrganizationAffiliationRoleCS-bt"> </a></td><td>Member Of</td><td>Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of a hospital in an HIE</td></tr><tr><td style="white-space:nowrap">dme<a name="OrganizationAffiliationRoleCS-dme"> </a></td><td>DME/Medical Supplier</td><td>Supplier of health care consumables or equipments supplied to patients.</td></tr><tr><td style="white-space:nowrap">group<a name="OrganizationAffiliationRoleCS-group"> </a></td><td>Medical Group</td><td>A group of people, e.g. a group of Physicians, who render health care services.</td></tr><tr><td style="white-space:nowrap">home<a name="OrganizationAffiliationRoleCS-home"> </a></td><td>Home Health Provider</td><td>Provider of health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit.</td></tr><tr><td style="white-space:nowrap">hospital<a name="OrganizationAffiliationRoleCS-hospital"> </a></td><td>Hospital</td><td>An inpatient facility, other than long-term care, providng patient treatment with specialzed medical and nursing staff and medical equipment.</td></tr><tr><td style="white-space:nowrap">laboratory<a name="OrganizationAffiliationRoleCS-laboratory"> </a></td><td>Laboratory</td><td>Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease.</td></tr><tr><td style="white-space:nowrap">other<a name="OrganizationAffiliationRoleCS-other"> </a></td><td>Other</td><td>A provider of heatlh care services not otherwise listed in this value set.</td></tr><tr><td style="white-space:nowrap">outpatient<a name="OrganizationAffiliationRoleCS-outpatient"> </a></td><td>Clinic or Outpatient Facility</td><td>An outpatient facility providing patient services, e.g. medical procedures, surgeries, etc.</td></tr><tr><td style="white-space:nowrap">pharmacy<a name="OrganizationAffiliationRoleCS-pharmacy"> </a></td><td>Pharmacy</td><td>An entity which provider services related to the storage, compounding, dispensing and sale of drugs.</td></tr><tr><td style="white-space:nowrap">transport<a name="OrganizationAffiliationRoleCS-transport"> </a></td><td>Transporation Provider</td><td>A provider which transports patients to or from a medical facility, e.g., ambulance.</td></tr><tr><td style="white-space:nowrap">urgent<a name="OrganizationAffiliationRoleCS-urgent"> </a></td><td>Urgent Care Center</td><td>A center in which unscheduled health care services are provided for point-in-time evaluation or treatment of a non-life-threatening medical condition.</td></tr><tr><td style="white-space:nowrap">hospice<a name="OrganizationAffiliationRoleCS-hospice"> </a></td><td>Hospice</td><td>Hospice</td></tr><tr><td style="white-space:nowrap">nurseCustodial<a name="OrganizationAffiliationRoleCS-nurseCustodial"> </a></td><td>Nursing and Custodial Care Facility</td><td>Nursing and Custodial Care Facility</td></tr><tr><td style="white-space:nowrap">residential<a name="OrganizationAffiliationRoleCS-residential"> </a></td><td>Residential Treatment Facility</td><td>Residential Treatment Facility</td></tr><tr><td style="white-space:nowrap">respite<a name="OrganizationAffiliationRoleCS-respite"> </a></td><td>Respite Care Facility</td><td>Respite Care Facility</td></tr><tr><td style="white-space:nowrap">retail<a name="OrganizationAffiliationRoleCS-retail"> </a></td><td>Retail Health Center</td><td>Retail Health Center</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS"/>
+  <version value="0.0.1"/>
+  <name value="OrganizationAffiliationRoleCS"/>
+  <title value="Organization Affiliation Role"/>
+  <status value="active"/>
+  <date value="2021-12-16T11:05:58-05:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes For Organization Affiliation Role"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="17"/>
+  <concept>
+    <code value="behavioral"/>
+    <display value="Outpatient Behavioral Health Provider"/>
+    <definition value="Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."/>
+  </concept>
+  <concept>
+    <code value="bt"/>
+    <display value="Member Of"/>
+    <definition value="Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of a hospital in an HIE"/>
+  </concept>
+  <concept>
+    <code value="dme"/>
+    <display value="DME/Medical Supplier"/>
+    <definition value="Supplier of health care consumables or equipments supplied to patients."/>
+  </concept>
+  <concept>
+    <code value="group"/>
+    <display value="Medical Group"/>
+    <definition value="A group of people, e.g. a group of Physicians, who render health care services."/>
+  </concept>
+  <concept>
+    <code value="home"/>
+    <display value="Home Health Provider"/>
+    <definition value="Provider of health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit."/>
+  </concept>
+  <concept>
+    <code value="hospital"/>
+    <display value="Hospital"/>
+    <definition value="An inpatient facility, other than long-term care, providng patient treatment with specialzed medical and nursing staff and medical equipment."/>
+  </concept>
+  <concept>
+    <code value="laboratory"/>
+    <display value="Laboratory"/>
+    <definition value="Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease."/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="A provider of heatlh care services not otherwise listed in this value set."/>
+  </concept>
+  <concept>
+    <code value="outpatient"/>
+    <display value="Clinic or Outpatient Facility"/>
+    <definition value="An outpatient facility providing patient services, e.g. medical procedures, surgeries, etc."/>
+  </concept>
+  <concept>
+    <code value="pharmacy"/>
+    <display value="Pharmacy"/>
+    <definition value="An entity which provider services related to the storage, compounding, dispensing and sale of drugs."/>
+  </concept>
+  <concept>
+    <code value="transport"/>
+    <display value="Transporation Provider"/>
+    <definition value="A provider which transports patients to or from a medical facility, e.g., ambulance."/>
+  </concept>
+  <concept>
+    <code value="urgent"/>
+    <display value="Urgent Care Center"/>
+    <definition value="A center in which unscheduled health care services are provided for point-in-time evaluation or treatment of a non-life-threatening medical condition."/>
+  </concept>
+  <concept>
+    <code value="hospice"/>
+    <display value="Hospice"/>
+    <definition value="Hospice"/>
+  </concept>
+  <concept>
+    <code value="nurseCustodial"/>
+    <display value="Nursing and Custodial Care Facility"/>
+    <definition value="Nursing and Custodial Care Facility"/>
+  </concept>
+  <concept>
+    <code value="residential"/>
+    <display value="Residential Treatment Facility"/>
+    <definition value="Residential Treatment Facility"/>
+  </concept>
+  <concept>
+    <code value="respite"/>
+    <display value="Respite Care Facility"/>
+    <definition value="Respite Care Facility"/>
+  </concept>
+  <concept>
+    <code value="retail"/>
+    <display value="Retail Health Center"/>
+    <definition value="Retail Health Center"/>
+  </concept>
+</CodeSystem>

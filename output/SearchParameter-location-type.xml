@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="location-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-type</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDir_sp_location_type</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/Location-type">http://hl7.org/fhir/SearchParameter/Location-type</a></p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018, 8:00:00 PM</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select Locations of the specified type</p><p><b>jurisdiction</b>: <span title="Codes: {urn:iso:std:iso:3166 US}">United States of America</span></p><p><b>code</b>: type</p><p><b>base</b>: Location</p><p><b>type</b>: token</p><p><b>expression</b>: Location.type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-type"/>
+  <version value="0.0.1"/>
+  <name value="NatlDir_sp_location_type"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/Location-type"/>
+  <status value="active"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Select Locations of the specified type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="type"/>
+  <base value="Location"/>
+  <type value="token"/>
+  <expression value="Location.type"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <modifier value="text"/>
+</SearchParameter>

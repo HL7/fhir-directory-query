@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/OrganizationAffiliation/ConnHIEAffil> a fhir:OrganizationAffiliation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ConnHIEAffil"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"Organization-ConnHIE.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS atyprv}\">Atypical Provider</span>; name: Connecticut HIE; Phone: (111)-222-3333, https://www.connhie.com</a></p><p><b>participatingOrganization</b>: <a href=\"Organization-BurrClinic.html\">Generated Summary: language: en-US; id: NPI999; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Burr Clinic; Phone: (111)-222-3333, https://www.burrclinic.com</a></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS bt}\">Member Of</span></p></div>"
+  ];
+  fhir:OrganizationAffiliation.active [ fhir:value "true"^^xsd:boolean];
+  fhir:OrganizationAffiliation.organization [
+     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/ConnHIE>;
+     fhir:Reference.reference [ fhir:value "Organization/ConnHIE" ]
+  ];
+  fhir:OrganizationAffiliation.participatingOrganization [
+     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/BurrClinic>;
+     fhir:Reference.reference [ fhir:value "Organization/BurrClinic" ]
+  ];
+  fhir:OrganizationAffiliation.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS" ];
+       fhir:Coding.code [ fhir:value "bt" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/national-directory-query/Organization/ConnHIE> a fhir:us .
+
+<http://hl7.org/fhir/us/national-directory-query/Organization/BurrClinic> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/OrganizationAffiliation/ConnHIEAffil.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/national-directory-query/OrganizationAffiliation/ConnHIEAffil.ttl> .
+
+# -------------------------------------------------------------------------------------
+

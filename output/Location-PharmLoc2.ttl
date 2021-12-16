@@ -1,0 +1,197 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc2> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PharmLoc2"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>New Patients</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS existptonly}\">Accepting existing patients</span></p><p><b>value</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></p></blockquote><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS adacomp}\">ADA compliant</span></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS pubtrans}\">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: OrgA CT Location 2</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span></p><p><b>telecom</b>: ph: (777)-888-9999, <a href=\"https://www.orga.com\">https://www.orga.com</a></p><p><b>address</b>: 444 Main Street Rainbow CT 00014-1334 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>9</td><td>18</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-BigBox.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS bus}\">Non-Healthcare Business</span>; name: Big Box Retailer; Phone: (111)-222-3333, https://www.bixboxretailer.com</a></p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>allDay</b>: true</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sat, sun</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 17:00:00</p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "acceptingPatients" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS" ];
+           fhir:Coding.code [ fhir:value "existptonly" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "fromNetwork" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet>;
+         fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.code [ fhir:value "adacomp" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.code [ fhir:value "pubtrans" ]
+       ]
+     ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "OrgA CT Location 2"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "OUTPHARM" ];
+       fhir:Coding.display [ fhir:value "outpatient pharmacy" ]
+     ]
+  ];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "mon" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "tue" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "wed" ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "thu" ]
+       ], [
+         fhir:index 4;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "fri" ]
+       ], [
+         fhir:index 5;
+         fhir:Extension.url [ fhir:value "allDay" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "sat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "daysOfWeek" ];
+         fhir:Extension.valueCode [ fhir:value "sun" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "availableStartTime" ];
+         fhir:Extension.valueTime [ fhir:value "08:00:00"^^xsd:time ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "availableEndTime" ];
+         fhir:Extension.valueTime [ fhir:value "17:00:00"^^xsd:time ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(777)-888-9999" ];
+     fhir:ContactPoint.rank [ fhir:value "2"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "url" ];
+     fhir:ContactPoint.value [ fhir:value "https://www.orga.com" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Location.address [
+     fhir:Address.line [
+       fhir:value "444 Main Street";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Rainbow" ];
+     fhir:Address.state [ fhir:value "CT" ];
+     fhir:Address.postalCode [ fhir:value "00014-1334" ]
+  ];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "9"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "18"^^xsd:decimal ]
+  ];
+  fhir:Location.managingOrganization [
+     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/BigBox>;
+     fhir:Reference.reference [ fhir:value "Organization/BigBox" ]
+  ];
+  fhir:Location.hoursOfOperation [
+     fhir:index 0;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "mon";
+       fhir:index 0
+     ], [
+       fhir:value "tue";
+       fhir:index 1
+     ], [
+       fhir:value "wed";
+       fhir:index 2
+     ], [
+       fhir:value "thu";
+       fhir:index 3
+     ], [
+       fhir:value "fri";
+       fhir:index 4
+     ];
+     fhir:Location.hoursOfOperation.allDay [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "sat";
+       fhir:index 0
+     ], [
+       fhir:value "sun";
+       fhir:index 1
+     ];
+     fhir:Location.hoursOfOperation.openingTime [ fhir:value "08:00:00"^^xsd:time ];
+     fhir:Location.hoursOfOperation.closingTime [ fhir:value "17:00:00"^^xsd:time ]
+  ] .
+
+<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
+
+<http://hl7.org/fhir/us/national-directory-query/Organization/BigBox> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Location/PharmLoc2.ttl> .
+
+# -------------------------------------------------------------------------------------
+

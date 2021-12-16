@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="organizationaffiliation-primary-organization"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-primary-organization</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDir_sp_organizationaffiliation_primary_organization</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-primary-organization">http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-primary-organization</a></p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018, 8:00:00 PM</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select roles offered by the specified organization</p><p><b>jurisdiction</b>: <span title="Codes: {urn:iso:std:iso:3166 US}">United States of America</span></p><p><b>code</b>: primary-organization</p><p><b>base</b>: OrganizationAffiliation</p><p><b>type</b>: reference</p><p><b>expression</b>: OrganizationAffiliation.organization</p><p><b>target</b>: Organization</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>chain</b>: type, address, name, partof</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-primary-organization"/>
+  <version value="0.0.1"/>
+  <name value="NatlDir_sp_organizationaffiliation_primary_organization"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-primary-organization"/>
+  <status value="active"/>
+  <date value="2018-05-23T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Select roles offered by the specified organization"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="primary-organization"/>
+  <base value="OrganizationAffiliation"/>
+  <type value="reference"/>
+  <expression value="OrganizationAffiliation.organization"/>
+  <target value="Organization"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <chain value="type"/>
+  <chain value="address"/>
+  <chain value="name"/>
+  <chain value="partof"/>
+</SearchParameter>

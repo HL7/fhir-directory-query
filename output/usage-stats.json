@@ -1,0 +1,1192 @@
+{
+  "package": "hl7.fhir.us.onc-fast-NatlDirQry",
+  "version": "0.0.1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility",
+      "title": "Accessibility",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/associatedServers",
+      "title": "Associated Servers",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/careteam-alias",
+      "title": "NatlDir Careteam Alias",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/communication-proficiency",
+      "title": "Communication Proficiency",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime",
+      "title": "Contactpoint Availabletime",
+      "types": [
+        "code",
+        "code",
+        "boolean",
+        "time",
+        "time",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-viaintermediary",
+      "title": "NatlDir Contactpoint Viaintermediary",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method",
+      "title": "Delivery Method",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/digitalcertificate",
+      "title": "NatlDir Digitalcertificate",
+      "types": [
+        "Coding",
+        "Coding",
+        "Coding",
+        "Coding",
+        "Coding",
+        "Coding",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "date",
+        "date",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/dynamicRegistration",
+      "title": "Dynamic Registration",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-reference",
+      "title": "NatlDir Practitioner Endpoint Reference",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-usecase",
+      "title": "Endpoint Usecase",
+      "types": [
+        "CodeableConcept",
+        "uri",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpointType",
+      "title": "Endpoint Type",
+      "types": [
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/healthcareservice-reference",
+      "title": "NatlDir Healthcareservice Reference",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/identifier-status",
+      "title": "NatlDir Identifier Status",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/igsSupported",
+      "title": "IGs Supported",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/insuranceplan-reference",
+      "title": "NatlDir Insurance Plan Reference",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/location-reference",
+      "title": "Location Reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference",
+      "title": "Network Reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatientprofile",
+      "title": "NatlDir New Patient Profile",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients",
+      "title": "New Patients",
+      "types": [
+        "CodeableConcept",
+        "Reference",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-alias-period",
+      "title": "NatlDir Org Alias Period",
+      "types": [
+        "Period",
+        "Period"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-alias-type",
+      "title": "NatlDir Org Alias Type",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-description",
+      "title": "Org Description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification",
+      "title": "Practitioner Qualification",
+      "types": [
+        "code",
+        "code",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification",
+      "title": "Qualification",
+      "types": [
+        "Identifier",
+        "CodeableConcept",
+        "Reference",
+        "code",
+        "code",
+        "Period",
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/secureEndpoint",
+      "title": "Secure Endpoint",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/secureExchangeArtifacts",
+      "title": "Secure Exchange Artifacts",
+      "types": [
+        "string",
+        "base64Binary",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/trustFramework",
+      "title": "Trust Framework",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "base64Binary",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/usage-restriction",
+      "title": "NatlDir Usage Restriction",
+      "types": [
+        "Reference",
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary",
+      "title": "Via Intermediary",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "CareTeam": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-CareTeam",
+        "title": "National Directory Care Team"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint",
+        "title": "National Directory Exchange Endpoint"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService",
+        "title": "National Directory Exchange HealthcareService"
+      }
+    ],
+    "InsurancePlan": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan",
+        "title": "National Directory Exchange InsurancePlan"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location",
+        "title": "National Directory Exchange Location"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network",
+        "title": "National Directory Exchange Network"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization",
+        "title": "National Directory Exchange Organization"
+      }
+    ],
+    "OrganizationAffiliation": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation",
+        "title": "National Directory Exchange OrganizationAffiliation"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner",
+        "title": "National Directory Exchange Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole",
+        "title": "National Directory Exchange PractitionerRole"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Restriction",
+        "title": "NatlDir Restriction"
+      }
+    ],
+    "VerificationResult": [
+      {
+        "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Validation",
+        "title": "NatlDir Validation"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.searchParam"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Organization.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/location-boundary-geojson": [
+      "Location"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility": [
+      "Location"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/associatedServers": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/careteam-alias": [
+      "CareTeam"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/communication-proficiency": [
+      "Practitioner",
+      "Practitioner.communication"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime": [
+      "CareTeam.telecom",
+      "HealthcareService.telecom",
+      "Location.telecom",
+      "Organization.contact.telecom",
+      "Organization.telecom",
+      "Practitioner.telecom",
+      "PractitionerRole.telecom"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method": [
+      "HealthcareService"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/dynamicRegistration": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-reference": [
+      "CareTeam"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-usecase": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpointType": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/healthcareservice-reference": [
+      "CareTeam"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/identifier-status": [
+      "CareTeam.identifier"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/igsSupported": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/location-reference": [
+      "CareTeam",
+      "Organization"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference": [
+      "PractitionerRole"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients": [
+      "HealthcareService",
+      "Location",
+      "PractitionerRole"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-description": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification": [
+      "Organization",
+      "OrganizationAffiliation",
+      "PractitionerRole"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/secureEndpoint": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/secureExchangeArtifacts": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/trustFramework": [
+      "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/usage-restriction": [
+      "CareTeam"
+    ],
+    "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary": [
+      "CareTeam.telecom",
+      "HealthcareService.telecom",
+      "Location.telecom",
+      "Organization.contact.telecom",
+      "Organization.telecom",
+      "Practitioner.telecom",
+      "PractitionerRole.telecom"
+    ]
+  }
+}

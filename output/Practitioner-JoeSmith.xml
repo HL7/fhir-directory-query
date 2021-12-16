@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="JoeSmith"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI323</p><p><b>active</b>: true</p><p><b>name</b>: Joe Smith, MD</p><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title="Codes: {https://www.usps.com/ IL}">Illinois</span></p></blockquote><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0360 MD}">MD</span></p><p><b>issuer</b>: <span>State of Illinois</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title="Codes: {https://www.usps.com/ IL}">Illinois</span></p></blockquote><p><b>code</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 207R00000X}">Board Certified Internal Medicine</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title="Codes: {https://www.usps.com/ IL}">Illinois</span></p></blockquote><p><b>code</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 207RC0000X}">Board Certified Cardiovascular Disease</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="NPI323"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Joe Smith, MD"/>
+    <family value="Smith"/>
+    <given value="Joe"/>
+  </name>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0360"/>
+        <code value="MD"/>
+      </coding>
+      <text value="MD"/>
+    </code>
+    <issuer>
+      <display value="State of Illinois"/>
+    </issuer>
+  </qualification>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://nucc.org/provider-taxonomy"/>
+        <code value="207R00000X"/>
+        <display value="Internal Medicine"/>
+      </coding>
+      <text value="Board Certified Internal Medicine"/>
+    </code>
+    <issuer>
+      <display value="American Board of Internal Medicine"/>
+    </issuer>
+  </qualification>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://nucc.org/provider-taxonomy"/>
+        <code value="207RC0000X"/>
+        <display value="Cardiovascular Disease"/>
+      </coding>
+      <text value="Board Certified Cardiovascular Disease"/>
+    </code>
+    <issuer>
+      <display value="American Board of Internal Medicine"/>
+    </issuer>
+  </qualification>
+</Practitioner>

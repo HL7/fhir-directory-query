@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="PharmChainRetailService"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS physical}">Physical</span></p></blockquote><blockquote><p><b>New Patients</b></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS existptonly}">Accepting existing patients</span></p><p><b>value</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization-PharmChain.html">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}">Pharmacy</span></p><p><b>specialty</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 3336C0003X}">Community/Retail Pharmacy</span></p><p><b>location</b>: </p><ul><li><a href="Location-PharmLoc1.html">Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}">outpatient pharmacy</span>; Phone: (111)-222-3333, https://www.orga.com</a></li><li><a href="Location-PharmLoc2.html">Generated Summary: language: en-US; status: active; name: OrgA CT Location 2; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}">outpatient pharmacy</span>; Phone: (777)-888-9999, https://www.orga.com</a></li><li><a href="Location-PharmLoc3.html">Generated Summary: language: en-US; status: active; name: OrgA MA Location 1; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}">outpatient pharmacy</span>; Phone: (444)-555-666, https://www.orga.com</a></li><li><a href="Location-PharmLoc4.html">Generated Summary: language: en-US; status: active; name: OrgA MA Location 2; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}">outpatient pharmacy</span>; Phone: (222)-333-4444, https://www.orga.com</a></li></ul><p><b>name</b>: Pharmacy by PharmChain</p><p><b>telecom</b>: -unknown-</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method">
+    <extension url="type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS"/>
+          <code value="physical"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients">
+    <extension url="acceptingPatients">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS"/>
+          <code value="existptonly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="fromNetwork">
+      <valueReference>
+        <reference value="Organization/AcmeofCTStdNet"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/PharmChain"/>
+  </providedBy>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS"/>
+      <code value="pharm"/>
+      <display value="Pharmacy"/>
+    </coding>
+  </category>
+  <specialty>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="3336C0003X"/>
+      <display value="Community/Retail Pharmacy"/>
+    </coding>
+  </specialty>
+  <location>
+    <reference value="Location/PharmLoc1"/>
+  </location>
+  <location>
+    <reference value="Location/PharmLoc2"/>
+  </location>
+  <location>
+    <reference value="Location/PharmLoc3"/>
+  </location>
+  <location>
+    <reference value="Location/PharmLoc4"/>
+  </location>
+  <name value="Pharmacy by PharmChain"/>
+  <telecom>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary">
+      <valueReference>
+        <reference value="Organization/PharmChain"/>
+      </valueReference>
+    </extension>
+  </telecom>
+</HealthcareService>

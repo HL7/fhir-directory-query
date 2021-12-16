@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="QualificationStatusVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-QualificationStatusCS.html"><code>http://hl7.org/fhir/us/national-directory-query/CodeSystem/QualificationStatusCS</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/national-directory-query/ValueSet/QualificationStatusVS"/>
+  <version value="0.0.1"/>
+  <name value="QualificationStatusVS"/>
+  <title value="Qualification Status"/>
+  <status value="active"/>
+  <date value="2021-12-16T11:05:58-05:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="The state indicating if a qualification is currently valid."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/QualificationStatusCS"/>
+    </include>
+  </compose>
+</ValueSet>

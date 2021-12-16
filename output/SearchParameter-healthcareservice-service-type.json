@@ -1,0 +1,52 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-service-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-type</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDir_sp_healthcareservice_type</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/HealthcareService-service-type\">http://hl7.org/fhir/SearchParameter/HealthcareService-service-type</a></p><p><b>status</b>: active</p><p><b>date</b>: May 22, 2018, 8:00:00 PM</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select HealthcareServices of the specified type</p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>code</b>: service-type</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: token</p><p><b>expression</b>: HealthcareService.type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-type",
+  "version": "0.0.1",
+  "name": "NatlDir_sp_healthcareservice_type",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type",
+  "status": "active",
+  "date": "2018-05-23T00:00:00+00:00",
+  "publisher": "HL7 Patient Administration Working Group",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.org/Special/committees/pafm/index.cfm"
+        },
+        {
+          "system": "email",
+          "value": "pafm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Select HealthcareServices of the specified type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "code": "service-type",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
+  "expression": "HealthcareService.type",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

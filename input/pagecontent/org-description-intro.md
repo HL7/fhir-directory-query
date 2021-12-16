@@ -1,0 +1,1 @@
+An extension to provide a human-readable description of an organization.

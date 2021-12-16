@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="VirtualCounselService"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS virtual}">Virtual</span></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS web}">Website</span></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS app}">App</span></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS tdd}">TDD</span></p><p><b>value</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS phone}">phone</span></p></blockquote><p><b>active</b>: true</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS prov}">Medical Provider</span></p><p><b>specialty</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 101YP2500X}">Professional</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method">
+    <extension url="type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS"/>
+          <code value="virtual"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="virtualModalities">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS"/>
+          <code value="web"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="virtualModalities">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS"/>
+          <code value="app"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="virtualModalities">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS"/>
+          <code value="tdd"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="virtualModalities">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS"/>
+          <code value="phone"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <active value="true"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS"/>
+      <code value="prov"/>
+      <display value="Medical Provider"/>
+    </coding>
+  </category>
+  <specialty>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="101YP2500X"/>
+      <display value="Professional"/>
+    </coding>
+  </specialty>
+</HealthcareService>

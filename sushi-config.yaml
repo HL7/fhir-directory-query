@@ -1,0 +1,58 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭───────────────────ImplementationGuide-hl7.fhir.us.national-healthcare-directory.json───────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.us.onc-fast-NatlDirQry
+canonical: http://hl7.org/fhir/us/national-directory-query
+version: 0.0.1
+name: ONC FAST National Directory Endpoint Query
+title: National Directory Endpoint Query
+status: active
+publisher:
+  name: HL7 Patient Administration Working Group
+  url: https://www.hl7.org/Special/committees/pafm/index.cfm
+  email: pafm@lists.HL7.org
+description: National Directory Endpoint Query
+jurisdiction: urn:iso:std:iso:3166#US
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+   hl7.fhir.us.core: 4.0.0
+  #hl7.fhir.us.onc-fast-NatlDir:
+   # id: natl-dir
+   # uri: http://hl7.org/fhir/us/national-directory
+   # version: 0.0.1
+
+parameters:
+  show-inherited-invariants: false
+  
+copyrightYear: 2021+
+releaseLabel: draft
+
+# ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
+# │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home:          index.html
+  Guidance:
+    General Guidance:                              general-guidance.html
+    Technical Guidance: technical-guidance.html
+    Bulk Data and Subscriptions:          bulk-data.html
+  Search Parameters   : searchparameters.html
+  Capability Statement: 
+    Conformance Requirements  : CapabilityStatement-NatlDir.html
+  Examples      : examples.html
+  Downloads     : downloads.html
+  

@@ -1,0 +1,968 @@
+[
+  {
+    "id": "NatlDir",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/CapabilityStatement/NatlDir",
+    "version": "0.0.1",
+    "name": "DavinciPdexNatlDirCapabilityStatement"
+  },
+  {
+    "id": "endpoint-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/endpoint-organization",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_endpoint_organization"
+  },
+  {
+    "id": "healthcareservice-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-coverage-area",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_coverage_area"
+  },
+  {
+    "id": "healthcareservice-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-endpoint",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_endpoint"
+  },
+  {
+    "id": "healthcareservice-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-location",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_location"
+  },
+  {
+    "id": "healthcareservice-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-name",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_name"
+  },
+  {
+    "id": "healthcareservice-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-organization",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_organization"
+  },
+  {
+    "id": "healthcareservice-service-category",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-category",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_category"
+  },
+  {
+    "id": "healthcareservice-service-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-type",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_type"
+  },
+  {
+    "id": "healthcareservice-specialty",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-specialty",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_healthcareservice_specialty"
+  },
+  {
+    "id": "insuranceplan-administered-by",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-administered-by",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_administered_by"
+  },
+  {
+    "id": "insuranceplan-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-coverage-area",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_coverage_area"
+  },
+  {
+    "id": "insuranceplan-identifier",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-identifier",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_identifier"
+  },
+  {
+    "id": "insuranceplan-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-name",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_name"
+  },
+  {
+    "id": "insuranceplan-owned-by",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-owned-by",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_owned_by"
+  },
+  {
+    "id": "insuranceplan-plan-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-plan-type",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_plan_type"
+  },
+  {
+    "id": "insuranceplan-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-type",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_insuranceplan_type"
+  },
+  {
+    "id": "location-address",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_address"
+  },
+  {
+    "id": "location-address-city",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-city",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_address_city"
+  },
+  {
+    "id": "location-address-postalcode",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-postalcode",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_address_postalcode"
+  },
+  {
+    "id": "location-address-state",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-state",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_address_state"
+  },
+  {
+    "id": "location-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-endpoint",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_endpoint"
+  },
+  {
+    "id": "location-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-organization",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_organization"
+  },
+  {
+    "id": "location-partof",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-partof",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_partof"
+  },
+  {
+    "id": "location-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-type",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_location_type"
+  },
+  {
+    "id": "organization-address",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-address",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organization_address"
+  },
+  {
+    "id": "organization-coverage-area",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-coverage-area",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_network_coverage_area"
+  },
+  {
+    "id": "organization-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-endpoint",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organization_endpoint"
+  },
+  {
+    "id": "organization-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-name",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organization_name"
+  },
+  {
+    "id": "organization-partof",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-partof",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organization_partof"
+  },
+  {
+    "id": "organization-type",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-type",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organization_type"
+  },
+  {
+    "id": "organizationaffiliation-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-endpoint",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_endpoint"
+  },
+  {
+    "id": "organizationaffiliation-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-location",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_location"
+  },
+  {
+    "id": "organizationaffiliation-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-network",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_network"
+  },
+  {
+    "id": "organizationaffiliation-participating-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-participating-organization",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_participating_organization"
+  },
+  {
+    "id": "organizationaffiliation-primary-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-primary-organization",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_primary_organization"
+  },
+  {
+    "id": "organizationaffiliation-role",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-role",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_role"
+  },
+  {
+    "id": "organizationaffiliation-service",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-service",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_service"
+  },
+  {
+    "id": "organizationaffiliation-specialty",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-specialty",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_organizationaffiliation_specialty"
+  },
+  {
+    "id": "practitioner-family-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-family-name",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitioner_family_name"
+  },
+  {
+    "id": "practitioner-given-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-given-name",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitioner_given_name"
+  },
+  {
+    "id": "practitioner-name",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-name",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitioner_name"
+  },
+  {
+    "id": "practitionerrole-endpoint",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-endpoint",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_endpoint"
+  },
+  {
+    "id": "practitionerrole-location",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-location",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_location"
+  },
+  {
+    "id": "practitionerrole-network",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-network",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_network"
+  },
+  {
+    "id": "practitionerrole-organization",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-organization",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_organization"
+  },
+  {
+    "id": "practitionerrole-period",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-period",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_period"
+  },
+  {
+    "id": "practitionerrole-practitioner",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-practitioner",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_practitioner"
+  },
+  {
+    "id": "practitionerrole-role",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-role",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_role"
+  },
+  {
+    "id": "practitionerrole-service",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-service",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_service"
+  },
+  {
+    "id": "practitionerrole-specialty",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-specialty",
+    "version": "0.0.1",
+    "name": "NatlDir_sp_practitionerrole_specialty"
+  },
+  {
+    "id": "AcceptingPatientsCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS",
+    "version": "0.0.1",
+    "name": "AcceptingPatientsCS"
+  },
+  {
+    "id": "AccessibilityCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS",
+    "version": "0.0.1",
+    "name": "AccessibilityCS"
+  },
+  {
+    "id": "DeliveryMethodCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS",
+    "version": "0.0.1",
+    "name": "DeliveryMethodCS"
+  },
+  {
+    "id": "EndpointConnectionTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS",
+    "version": "0.0.1",
+    "name": "EndpointConnectionTypeCS"
+  },
+  {
+    "id": "EndpointPayloadTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS",
+    "version": "0.0.1",
+    "name": "EndpointPayloadTypeCS"
+  },
+  {
+    "id": "EndpointTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointTypeCS",
+    "version": "0.0.1",
+    "name": "EndpointTypeCS"
+  },
+  {
+    "id": "HealthcareServiceCategoryCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS",
+    "version": "0.0.1",
+    "name": "HealthcareServiceCategoryCS"
+  },
+  {
+    "id": "IgTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/IgTypeCS",
+    "version": "0.0.1",
+    "name": "IgTypeCS"
+  },
+  {
+    "id": "InsurancePlanTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsurancePlanTypeCS",
+    "version": "0.0.1",
+    "name": "InsurancePlanTypeCS"
+  },
+  {
+    "id": "InsuranceProductTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsuranceProductTypeCS",
+    "version": "0.0.1",
+    "name": "InsuranceProductTypeCS"
+  },
+  {
+    "id": "LanguageProficiencyCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS",
+    "version": "0.0.1",
+    "name": "LanguageProficiencyCS"
+  },
+  {
+    "id": "OrgTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS",
+    "version": "0.0.1",
+    "name": "OrgTypeCS"
+  },
+  {
+    "id": "OrganizationAffiliationRoleCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS",
+    "version": "0.0.1",
+    "name": "OrganizationAffiliationRoleCS"
+  },
+  {
+    "id": "ProviderRoleCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+    "version": "0.0.1",
+    "name": "ProviderRoleCS"
+  },
+  {
+    "id": "QualificationStatusCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/QualificationStatusCS",
+    "version": "0.0.1",
+    "name": "QualificationStatusCS"
+  },
+  {
+    "id": "TrustFrameworkTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS",
+    "version": "0.0.1",
+    "name": "TrustFrameworkTypeCS"
+  },
+  {
+    "id": "VirtualModalitiesCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS",
+    "version": "0.0.1",
+    "name": "VirtualModalitiesCS"
+  },
+  {
+    "id": "hl7.fhir.us.onc-fast-NatlDirQry",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDirQry",
+    "version": "0.0.1",
+    "name": "ONCFASTNationalDirectoryEndpointQuery"
+  },
+  {
+    "id": "NatlDir-CareTeam",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-CareTeam",
+    "version": "0.0.1",
+    "name": "NatlDirCareTeam"
+  },
+  {
+    "id": "NatlDir-Endpoint",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint",
+    "version": "0.0.1",
+    "name": "NatlDirEndpoint"
+  },
+  {
+    "id": "NatlDir-HealthcareService",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService",
+    "version": "0.0.1",
+    "name": "NatlDirHealthcareService"
+  },
+  {
+    "id": "NatlDir-InsurancePlan",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan",
+    "version": "0.0.1",
+    "name": "NatlDirInsurancePlan"
+  },
+  {
+    "id": "NatlDir-Location",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location",
+    "version": "0.0.1",
+    "name": "NatlDirLocation"
+  },
+  {
+    "id": "NatlDir-Network",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network",
+    "version": "0.0.1",
+    "name": "NatlDirNetwork"
+  },
+  {
+    "id": "NatlDir-Organization",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization",
+    "version": "0.0.1",
+    "name": "NatlDirOrganization"
+  },
+  {
+    "id": "NatlDir-OrganizationAffiliation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation",
+    "version": "0.0.1",
+    "name": "NatlDirOrganizationAffiliation"
+  },
+  {
+    "id": "NatlDir-Practitioner",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner",
+    "version": "0.0.1",
+    "name": "NatlDirPractitioner"
+  },
+  {
+    "id": "NatlDir-PractitionerRole",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole",
+    "version": "0.0.1",
+    "name": "NatlDirPractitionerRole"
+  },
+  {
+    "id": "NatlDir-Restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Restriction",
+    "version": "0.0.1",
+    "name": "NatlDirRestriction"
+  },
+  {
+    "id": "NatlDir-Validation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Validation",
+    "version": "0.0.1",
+    "name": "NatlDirValidation"
+  },
+  {
+    "id": "accessibility",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility",
+    "version": "0.0.1",
+    "name": "Accessibility"
+  },
+  {
+    "id": "associatedServers",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/associatedServers",
+    "version": "0.0.1",
+    "name": "AssociatedServers"
+  },
+  {
+    "id": "careteam-alias",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/careteam-alias",
+    "version": "0.0.1",
+    "name": "CareteamAlias"
+  },
+  {
+    "id": "communication-proficiency",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/communication-proficiency",
+    "version": "0.0.1",
+    "name": "CommunicationProficiency"
+  },
+  {
+    "id": "contactpoint-availabletime",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime",
+    "version": "0.0.1",
+    "name": "ContactPointAvailableTime"
+  },
+  {
+    "id": "contactpoint-viaintermediary",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-viaintermediary",
+    "version": "0.0.1",
+    "name": "ContactPointViaIntermediary"
+  },
+  {
+    "id": "delivery-method",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method",
+    "version": "0.0.1",
+    "name": "DeliveryMethod"
+  },
+  {
+    "id": "digitalcertificate",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/digitalcertificate",
+    "version": "0.0.1",
+    "name": "DigitalCertificate"
+  },
+  {
+    "id": "dynamicRegistration",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/dynamicRegistration",
+    "version": "0.0.1",
+    "name": "DynamicRegistration"
+  },
+  {
+    "id": "endpoint-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-reference",
+    "version": "0.0.1",
+    "name": "EndpointReference"
+  },
+  {
+    "id": "endpoint-usecase",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-usecase",
+    "version": "0.0.1",
+    "name": "EndpointUsecase"
+  },
+  {
+    "id": "endpointType",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpointType",
+    "version": "0.0.1",
+    "name": "EndpointType"
+  },
+  {
+    "id": "healthcareservice-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/healthcareservice-reference",
+    "version": "0.0.1",
+    "name": "HealthcareServiceReference"
+  },
+  {
+    "id": "identifier-status",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/identifier-status",
+    "version": "0.0.1",
+    "name": "IdentifierStatus"
+  },
+  {
+    "id": "igsSupported",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/igsSupported",
+    "version": "0.0.1",
+    "name": "IGsSupported"
+  },
+  {
+    "id": "insuranceplan-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/insuranceplan-reference",
+    "version": "0.0.1",
+    "name": "InsurancePlanReference"
+  },
+  {
+    "id": "location-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/location-reference",
+    "version": "0.0.1",
+    "name": "LocationReference"
+  },
+  {
+    "id": "network-reference",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference",
+    "version": "0.0.1",
+    "name": "NetworkReference"
+  },
+  {
+    "id": "newpatientprofile",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatientprofile",
+    "version": "0.0.1",
+    "name": "NewPatientProfile"
+  },
+  {
+    "id": "newpatients",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients",
+    "version": "0.0.1",
+    "name": "NewPatients"
+  },
+  {
+    "id": "org-alias-period",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-alias-period",
+    "version": "0.0.1",
+    "name": "OrgAliasPeriod"
+  },
+  {
+    "id": "org-alias-type",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-alias-type",
+    "version": "0.0.1",
+    "name": "OrgAliasType"
+  },
+  {
+    "id": "org-description",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-description",
+    "version": "0.0.1",
+    "name": "OrgDescription"
+  },
+  {
+    "id": "practitioner-qualification",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification",
+    "version": "0.0.1",
+    "name": "PractitionerQualification"
+  },
+  {
+    "id": "qualification",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification",
+    "version": "0.0.1",
+    "name": "Qualification"
+  },
+  {
+    "id": "secureEndpoint",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/secureEndpoint",
+    "version": "0.0.1",
+    "name": "SecureEndpoint"
+  },
+  {
+    "id": "secureExchangeArtifacts",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/secureExchangeArtifacts",
+    "version": "0.0.1",
+    "name": "SecureExchangeArtifacts"
+  },
+  {
+    "id": "trustFramework",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/trustFramework",
+    "version": "0.0.1",
+    "name": "TrustFramework"
+  },
+  {
+    "id": "usage-restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/usage-restriction",
+    "version": "0.0.1",
+    "name": "UsageRestriction"
+  },
+  {
+    "id": "via-intermediary",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary",
+    "version": "0.0.1",
+    "name": "ViaIntermediary"
+  },
+  {
+    "id": "AcceptingPatientsVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/AcceptingPatientsVS",
+    "version": "0.0.1",
+    "name": "AcceptingPatientsVS"
+  },
+  {
+    "id": "AccessibilityVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/AccessibilityVS",
+    "version": "0.0.1",
+    "name": "AccessibilityVS"
+  },
+  {
+    "id": "DeliveryMethodVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/DeliveryMethodVS",
+    "version": "0.0.1",
+    "name": "DeliveryMethodVS"
+  },
+  {
+    "id": "EndpointConnectionTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointConnectionTypeVS",
+    "version": "0.0.1",
+    "name": "EndpointConnectionTypeVS"
+  },
+  {
+    "id": "EndpointPayloadTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointPayloadTypeVS",
+    "version": "0.0.1",
+    "name": "EndpointPayloadTypeVS"
+  },
+  {
+    "id": "EndpointTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointTypeVS",
+    "version": "0.0.1",
+    "name": "EndpointTypeVS"
+  },
+  {
+    "id": "EndpointUsecaseVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointUsecaseVS",
+    "version": "0.0.1",
+    "name": "EndpointUsecaseVS"
+  },
+  {
+    "id": "HealthcareServiceCategoryVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceCategoryVS",
+    "version": "0.0.1",
+    "name": "HealthcareServiceCategoryVS"
+  },
+  {
+    "id": "HealthcareServiceTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceTypeVS",
+    "version": "0.0.1",
+    "name": "HealthcareServiceTypeVS"
+  },
+  {
+    "id": "IgTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/IgTypeVS",
+    "version": "0.0.1",
+    "name": "IgTypeVS"
+  },
+  {
+    "id": "IndividualAndGroupSpecialtiesVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS",
+    "version": "0.0.1",
+    "name": "IndividualAndGroupSpecialtiesVS"
+  },
+  {
+    "id": "IndividualSpecialtyAndDegreeLicenseCertificateVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS",
+    "version": "0.0.1",
+    "name": "IndividualSpecialtyAndDegreeLicenseCertificateVS"
+  },
+  {
+    "id": "InsurancePlanTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/InsurancePlanTypeVS",
+    "version": "0.0.1",
+    "name": "InsurancePlanTypeVS"
+  },
+  {
+    "id": "InsuranceProductTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/InsuranceProductTypeVS",
+    "version": "0.0.1",
+    "name": "InsuranceProductTypeVS"
+  },
+  {
+    "id": "LanguageProficiencyVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/LanguageProficiencyVS",
+    "version": "0.0.1",
+    "name": "LanguageProficiencyVS"
+  },
+  {
+    "id": "MinEndpointConnectionTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/MinEndpointConnectionTypeVS",
+    "version": "0.0.1",
+    "name": "MinEndpointConnectionTypeVS"
+  },
+  {
+    "id": "NetworkTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/NetworkTypeVS",
+    "version": "0.0.1",
+    "name": "NetworkTypeVS"
+  },
+  {
+    "id": "NonIndividualSpecialtiesVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/NonIndividualSpecialtiesVS",
+    "version": "0.0.1",
+    "name": "NonIndividualSpecialtiesVS"
+  },
+  {
+    "id": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
+    "version": "0.0.1",
+    "name": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
+  },
+  {
+    "id": "OrgTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/OrgTypeVS",
+    "version": "0.0.1",
+    "name": "OrgTypeVS"
+  },
+  {
+    "id": "OrganizationAffiliationRoleVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/OrganizationAffiliationRoleVS",
+    "version": "0.0.1",
+    "name": "OrganizationAffiliationRoleVS"
+  },
+  {
+    "id": "PractitionerRoleVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/PractitionerRoleVS",
+    "version": "0.0.1",
+    "name": "PractitionerRoleVS"
+  },
+  {
+    "id": "QualificationStatusVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/QualificationStatusVS",
+    "version": "0.0.1",
+    "name": "QualificationStatusVS"
+  },
+  {
+    "id": "SpecialtiesVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/SpecialtiesVS",
+    "version": "0.0.1",
+    "name": "SpecialtiesVS"
+  },
+  {
+    "id": "SpecialtyAndDegreeLicenseCertificateVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/SpecialtyAndDegreeLicenseCertificateVS",
+    "version": "0.0.1",
+    "name": "SpecialtyAndDegreeLicenseCertificateVS"
+  },
+  {
+    "id": "TrustFrameworkTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/TrustFrameworkTypeVS",
+    "version": "0.0.1",
+    "name": "TrustFrameworkTypeVS"
+  },
+  {
+    "id": "VirtualModalitiesVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/VirtualModalitiesVS",
+    "version": "0.0.1",
+    "name": "VirtualModalitiesVS"
+  }
+]

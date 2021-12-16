@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/HealthcareService/PharmChainMailService> a fhir:HealthcareService;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PharmChainMailService"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS virtual}\">Virtual</span></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS web}\">Website</span></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS app}\">App</span></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS tdd}\">TDD</span></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS phone}\">phone</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-PharmChain.html\">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}\">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}\">Pharmacy</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336M0002X}\">Mail Order Pharmacy</span></p><p><b>name</b>: Mail Order Pharmacy by OrgA</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://mailorderrx.com\">https://mailorderrx.com</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS" ];
+           fhir:Coding.code [ fhir:value "virtual" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "virtualModalities" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.code [ fhir:value "web" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "virtualModalities" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.code [ fhir:value "app" ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "virtualModalities" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.code [ fhir:value "tdd" ]
+         ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "virtualModalities" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.code [ fhir:value "phone" ]
+         ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method" ]
+  ];
+  fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
+  fhir:HealthcareService.providedBy [
+     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/PharmChain>;
+     fhir:Reference.reference [ fhir:value "Organization/PharmChain" ]
+  ];
+  fhir:HealthcareService.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
+       fhir:Coding.code [ fhir:value "pharm" ];
+       fhir:Coding.display [ fhir:value "Pharmacy" ]
+     ]
+  ];
+  fhir:HealthcareService.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://nucc.org/provider-taxonomy" ];
+       fhir:Coding.code [ fhir:value "3336M0002X" ];
+       fhir:Coding.display [ fhir:value "Mail Order Pharmacy" ]
+     ]
+  ];
+  fhir:HealthcareService.name [ fhir:value "Mail Order Pharmacy by OrgA"];
+  fhir:HealthcareService.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(111)-222-3333" ];
+     fhir:ContactPoint.rank [ fhir:value "2"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "url" ];
+     fhir:ContactPoint.value [ fhir:value "https://mailorderrx.com" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ] .
+
+<http://hl7.org/fhir/us/national-directory-query/Organization/PharmChain> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/national-directory-query/HealthcareService/PharmChainMailService.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/national-directory-query/HealthcareService/PharmChainMailService.ttl> .
+
+# -------------------------------------------------------------------------------------
+

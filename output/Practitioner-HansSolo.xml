@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="HansSolo"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>Communication Proficiency</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS 30}">General professional proficiency</span></p><p><b>identifier</b>: id: NPI3233</p><p><b>active</b>: true</p><p><b>name</b>: Hans Solo, MD</p><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title="Codes: {https://www.usps.com/ IL}">Illinois</span></p></blockquote><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0360 MD}">MD</span></p><p><b>issuer</b>: <span>State of Illinois</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title="Codes: {https://www.usps.com/ IL}">Illinois</span></p></blockquote><p><b>code</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 207R00000X}">Board Certified Internal Medicine</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title="Codes: {https://www.usps.com/ IL}">Illinois</span></p></blockquote><p><b>code</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 207RC0000X}">Board Certified Cardiovascular Disease</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><p><b>communication</b>: <span title="Codes: {urn:ietf:bcp:47 ja}">Japanese</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/communication-proficiency">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS"/>
+        <code value="30"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="NPI3233"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Hans Solo, MD"/>
+    <family value="Solo"/>
+    <given value="Hans"/>
+  </name>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0360"/>
+        <code value="MD"/>
+      </coding>
+      <text value="MD"/>
+    </code>
+    <issuer>
+      <display value="State of Illinois"/>
+    </issuer>
+  </qualification>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://nucc.org/provider-taxonomy"/>
+        <code value="207R00000X"/>
+        <display value="Internal Medicine"/>
+      </coding>
+      <text value="Board Certified Internal Medicine"/>
+    </code>
+    <issuer>
+      <display value="American Board of Internal Medicine"/>
+    </issuer>
+  </qualification>
+  <qualification>
+    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification">
+      <extension url="status">
+        <valueCode value="active"/>
+      </extension>
+      <extension url="whereValid">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.usps.com/"/>
+            <code value="IL"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://nucc.org/provider-taxonomy"/>
+        <code value="207RC0000X"/>
+        <display value="Cardiovascular Disease"/>
+      </coding>
+      <text value="Board Certified Cardiovascular Disease"/>
+    </code>
+    <issuer>
+      <display value="American Board of Internal Medicine"/>
+    </issuer>
+  </qualification>
+  <communication>
+    <coding>
+      <system value="urn:ietf:bcp:47"/>
+      <code value="ja"/>
+    </coding>
+  </communication>
+</Practitioner>

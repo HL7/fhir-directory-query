@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SpecialtiesVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-IndividualAndGroupSpecialtiesVS.html\">http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-NonIndividualSpecialtiesVS.html\">http://hl7.org/fhir/us/national-directory-query/ValueSet/NonIndividualSpecialtiesVS</a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/SpecialtiesVS",
+  "version": "0.0.1",
+  "name": "SpecialtiesVS",
+  "title": "Specialties",
+  "status": "active",
+  "date": "2021-12-16T11:05:58-05:00",
+  "publisher": "HL7 Patient Administration Working Group",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.org/Special/committees/pafm/index.cfm"
+        },
+        {
+          "system": "email",
+          "value": "pafm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/us/national-directory-query/ValueSet/NonIndividualSpecialtiesVS"
+        ]
+      }
+    ]
+  }
+}
