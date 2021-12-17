@@ -4,11 +4,11 @@
   <id value="PharmChainAffil3"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
   </meta>
   <language value="en-US"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>participatingOrganization</b>: <a href="Organization-PharmChain.html">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>network</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>code</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS pharmacy}">Pharmacy</span></p><p><b>specialty</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 3336M0002X}">Mail Order Pharmacy</span></p><p><b>healthcareService</b>: <a href="HealthcareService-PharmChainMailService.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}">Pharmacy</span>; <span title="Codes: {http://nucc.org/provider-taxonomy 3336M0002X}">Mail Order Pharmacy</span>; name: Mail Order Pharmacy by OrgA; Phone: (111)-222-3333, https://mailorderrx.com</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>participatingOrganization</b>: <a href="Organization-PharmChain.html">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS prvgrp}">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>network</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>code</b>: <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS pharmacy}">Pharmacy</span></p><p><b>specialty</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 3336M0002X}">Mail Order Pharmacy</span></p><p><b>healthcareService</b>: <a href="HealthcareService-PharmChainMailService.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}">Pharmacy</span>; <span title="Codes: {http://nucc.org/provider-taxonomy 3336M0002X}">Mail Order Pharmacy</span>; name: Mail Order Pharmacy by OrgA; Phone: (111)-222-3333, https://mailorderrx.com</a></p></div>
   </text>
   <active value="true"/>
   <participatingOrganization>
@@ -19,7 +19,7 @@
   </network>
   <code>
     <coding>
-      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS"/>
       <code value="pharmacy"/>
     </coding>
   </code>

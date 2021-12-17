@@ -1,16 +1,16 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.us.onc-fast-NatlDirQry",
+  "id": "hl7.fhir.us.fhir-directory-query",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalDirectoryEndpointQuery</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory-query/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDirQry</pre><div><p>National Directory Endpoint Query</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalDirectoryEndpointQuery</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query</pre><div><p>National Directory Endpoint Query</p>\n</div></div>"
   },
-  "url": "http://hl7.org/fhir/us/national-directory-query/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDirQry",
+  "url": "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query",
   "version": "0.0.1",
   "name": "ONCFASTNationalDirectoryEndpointQuery",
-  "title": "National Directory Endpoint Query",
+  "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2021-12-16T11:05:58-05:00",
+  "date": "2021-12-17T13:53:37-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.us.onc-fast-NatlDirQry",
+  "packageId": "hl7.fhir.us.fhir-directory-query",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -49,6 +49,12 @@
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "4.0.0"
+    },
+    {
+      "id": "nationalDirectory",
+      "uri": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/",
+      "packageId": "hl7.fhir.us.fhir-directory-exchange",
+      "version": "current"
     }
   ],
   "definition": {
@@ -100,7 +106,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://hl7.org/fhir/us/national-directory-query/history.html"
+            "valueString": "http://hl7.org/fhir/us/fhir-directory-query/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -368,7 +374,7 @@
           "reference": "StructureDefinition/NatlDir-InsurancePlan"
         },
         "name": "National Directory Exchange InsurancePlan",
-        "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\r\n\r\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
+        "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).",
         "exampleBoolean": false
       },
       {
@@ -396,7 +402,7 @@
           "reference": "StructureDefinition/NatlDir-Network"
         },
         "name": "National Directory Exchange Network",
-        "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\r\n\r\nIn the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively.",
+        "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.",
         "exampleBoolean": false
       },
       {
@@ -453,34 +459,6 @@
         },
         "name": "National Directory Exchange PractitionerRole",
         "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDir-Restriction"
-        },
-        "name": "NatlDir Restriction",
-        "description": "Restriction on use/release of exchanged information",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDir-Validation"
-        },
-        "name": "NatlDir Validation",
-        "description": "Describes validation requirements, source(s), status and dates for one or more elements",
         "exampleBoolean": false
       },
       {
@@ -1531,7 +1509,7 @@
         },
         "name": "Acme",
         "description": "Payer Organization",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1545,7 +1523,7 @@
         },
         "name": "AcmeOfCTPortalEndpoint",
         "description": "Endpoint for Acme of CT Portal",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint"
       },
       {
         "extension": [
@@ -1559,7 +1537,7 @@
         },
         "name": "AcmeQHPBronze",
         "description": "Acme of CT QHP Bronze Plan",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan"
       },
       {
         "extension": [
@@ -1573,7 +1551,7 @@
         },
         "name": "AcmeQHPGold",
         "description": "Acme of CT QHP Gold Plan",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan"
       },
       {
         "extension": [
@@ -1587,7 +1565,7 @@
         },
         "name": "AcmeofCTPremNet",
         "description": "Acme of CT Premium Premium Network",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network"
       },
       {
         "extension": [
@@ -1601,7 +1579,7 @@
         },
         "name": "AcmeofCTStdNet",
         "description": "Acme of CT Standard Network",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network"
       },
       {
         "extension": [
@@ -1615,7 +1593,7 @@
         },
         "name": "AnonRole",
         "description": "Practitioner role that doesn't refer to a specific practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"
       },
       {
         "extension": [
@@ -1629,7 +1607,7 @@
         },
         "name": "BigBox",
         "description": "Organization that Manages 2 of PharmChain's pharmacies",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1643,7 +1621,7 @@
         },
         "name": "BurrClinic",
         "description": "Burr Clinic provides service to Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1657,7 +1635,7 @@
         },
         "name": "BurrClinicAffil",
         "description": "Burr Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1671,7 +1649,7 @@
         },
         "name": "BurrClinicServices",
         "description": "Burr Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -1685,7 +1663,7 @@
         },
         "name": "CancerClinic",
         "description": "HartfordCancerClinicLLC",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1699,7 +1677,7 @@
         },
         "name": "CancerClinicLoc",
         "description": "Location1 of Cancer Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -1713,7 +1691,7 @@
         },
         "name": "CancerClinicService",
         "description": "Cancer Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -1727,7 +1705,7 @@
         },
         "name": "ConnHIE",
         "description": "Connecticut HIE",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1741,7 +1719,7 @@
         },
         "name": "ConnHIEAffil",
         "description": "Burr Clinic's affiliation with Conn HIE",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1755,7 +1733,7 @@
         },
         "name": "Counselor",
         "description": "Counselor Susie Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"
       },
       {
         "extension": [
@@ -1769,7 +1747,7 @@
         },
         "name": "CounselorRole1",
         "description": "Susie  Smith is a counselor via Telemedicine",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"
       },
       {
         "extension": [
@@ -1783,7 +1761,7 @@
         },
         "name": "HamiltonClinic",
         "description": "Hamilton Clinic (a Division of Hartford Hospital)",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1797,7 +1775,7 @@
         },
         "name": "HamiltonClinicAffil",
         "description": "Hamilton Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1811,7 +1789,7 @@
         },
         "name": "HamiltonClinicServices",
         "description": "Hamilton Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -1825,7 +1803,7 @@
         },
         "name": "HansSolo",
         "description": "Solo Practitioner Hans Solo",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"
       },
       {
         "extension": [
@@ -1839,7 +1817,7 @@
         },
         "name": "HansSoloClinic",
         "description": "Location of Hans Solo's clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -1853,7 +1831,7 @@
         },
         "name": "HansSoloRole1",
         "description": "Hans Solo is a solo practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"
       },
       {
         "extension": [
@@ -1867,7 +1845,7 @@
         },
         "name": "HansSoloService",
         "description": "Hans Solo Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -1881,7 +1859,7 @@
         },
         "name": "HartfordOrthopedicAffil",
         "description": "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1895,7 +1873,7 @@
         },
         "name": "HartfordOrthopedicServices",
         "description": "Hartford Orthopedic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -1909,7 +1887,7 @@
         },
         "name": "HartfordOrthopedics",
         "description": "Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1923,7 +1901,7 @@
         },
         "name": "HospERService",
         "description": "Hartford General Hospital ER",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -1937,7 +1915,7 @@
         },
         "name": "HospLoc1",
         "description": "Location1 of Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -1951,7 +1929,7 @@
         },
         "name": "HospLoc2",
         "description": "Location2 of Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -1965,7 +1943,7 @@
         },
         "name": "Hospital",
         "description": "Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -1979,7 +1957,7 @@
         },
         "name": "JoeSmith",
         "description": "Practitioner Dr Joe Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"
       },
       {
         "extension": [
@@ -1993,7 +1971,7 @@
         },
         "name": "JoeSmithRole1",
         "description": "Dr Smith moonlighting as ER Doc at Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"
       },
       {
         "extension": [
@@ -2007,7 +1985,7 @@
         },
         "name": "JoeSmithRole2",
         "description": "Dr Smith Internal Medicine at Burr Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"
       },
       {
         "extension": [
@@ -2021,7 +1999,7 @@
         },
         "name": "JoeSmithRole3",
         "description": "Dr Smith Admitting Privileges at Hartford General",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"
       },
       {
         "extension": [
@@ -2035,7 +2013,7 @@
         },
         "name": "PharmChain",
         "description": "Organization that Provides Pharmacy Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
       },
       {
         "extension": [
@@ -2049,7 +2027,7 @@
         },
         "name": "PharmChainAffil1",
         "description": "Organization Affiliation for PharmChain (Retail)",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -2063,7 +2041,7 @@
         },
         "name": "PharmChainAffil2",
         "description": "Organization Affiliation for PharmChain (Compounding)",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -2077,7 +2055,7 @@
         },
         "name": "PharmChainAffil3",
         "description": "Organization Affiliation for PharmChain (MailOrder)",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -2091,7 +2069,7 @@
         },
         "name": "PharmChainCompService",
         "description": "Compound Pharmacy Service provided by PharmacyOrganization A",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -2105,7 +2083,7 @@
         },
         "name": "PharmChainMailService",
         "description": "Mail Order Pharmacy Service provided by PharmacyOrganization A",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -2119,7 +2097,7 @@
         },
         "name": "PharmChainRetailService",
         "description": "Pharmacy Service provided by PharmChain",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -2133,7 +2111,7 @@
         },
         "name": "PharmLoc1",
         "description": "Location of Pharmacy1 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -2147,7 +2125,7 @@
         },
         "name": "PharmLoc2",
         "description": "Location of Pharmacy2 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -2161,7 +2139,7 @@
         },
         "name": "PharmLoc3",
         "description": "Location of Pharmacy3 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -2175,7 +2153,7 @@
         },
         "name": "PharmLoc4",
         "description": "Location of Pharmacy4 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -2189,7 +2167,7 @@
         },
         "name": "StateOfCTLocation",
         "description": "State of CT Area",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"
       },
       {
         "extension": [
@@ -2203,7 +2181,7 @@
         },
         "name": "VirtualCounselService",
         "description": "Virtual Counseling Service",
-        "exampleCanonical": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [

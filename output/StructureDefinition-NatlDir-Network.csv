@@ -50,7 +50,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension","location-reference","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/location-reference]]} {[]}
+"Organization.extension","location-reference","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/location-reference]]} {[]}
 ","Network coverage area","A reference to a Location resource (NatlDir-Location) defining the coverage area of a health insurance provider network","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -112,7 +112,7 @@ This element is labeled as a modifier because it may be used to mark that the re
 
 When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
 
-We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","http://hl7.org/fhir/us/national-directory-query/ValueSet/NetworkTypeVS","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/NetworkTypeVS","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in v2",".code","n/a","FiveWs.class"
 "Organization.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","Name used for the organization","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"org-1
@@ -198,7 +198,7 @@ Territory","",0,1,"Y","","Y","string {[]} {[]}
   <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
-"Organization.partOf","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization]]}
+"Organization.partOf","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
 ","The organization that manages this network","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in HL7 v2",".playedBy[classCode=Part].scoper","n/a"
 "Organization.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
@@ -232,10 +232,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Organization.contact.telecom.extension","contactpoint-availabletime","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime]]} {[]}
+"Organization.contact.telecom.extension","contactpoint-availabletime","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime]]} {[]}
 ","Contactpoint Availabletime","An extension representing the days and times a contact point is available","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.extension","via-intermediary","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary]]} {[]}
+"Organization.contact.telecom.extension","via-intermediary","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary]]} {[]}
 ","Via Intermediary","A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.contact.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
@@ -257,6 +257,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.contact.address","","","",0,1,"","","","Address {[]} {[]}
 ","Visiting or postal addresses for the contact","Visiting or postal addresses for the contact.","","May need to keep track of a contact party's address for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PID-11","./addr"
-"Organization.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint]]}
+"Organization.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint]]}
 ","Technical endpoints providing access to services operated for the organization","Technical endpoints providing access to services operated for the organization.","","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Organization.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AccessibilityCS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cultcomp<a name=\"AccessibilityCS-cultcomp\"> </a></td><td>Cultural competence</td><td>Provides services that meet the social, cultural, and linguistic needs of persons.</td></tr><tr><td style=\"white-space:nowrap\">handiaccess<a name=\"AccessibilityCS-handiaccess\"> </a></td><td>handicap accessible</td><td>Provides access to persons with disabilities.</td></tr><tr><td style=\"white-space:nowrap\">adacomp<a name=\"AccessibilityCS-adacomp\"> </a></td><td>ADA compliant</td><td>Provides access which complies with the Americans with Disabilities Act and/or amendments.</td></tr><tr><td style=\"white-space:nowrap\">pubtrans<a name=\"AccessibilityCS-pubtrans\"> </a></td><td>public transit options</td><td>Provides access using public transportation modes.</td></tr><tr><td style=\"white-space:nowrap\">anssrvc<a name=\"AccessibilityCS-anssrvc\"> </a></td><td>answering service</td><td>Provides capability to communicate when intended recipient is not immediately available.</td></tr><tr><td style=\"white-space:nowrap\">cognitive<a name=\"AccessibilityCS-cognitive\"> </a></td><td>cognitive</td><td>Provides services for cognitively impaired persons.</td></tr><tr><td style=\"white-space:nowrap\">mobility<a name=\"AccessibilityCS-mobility\"> </a></td><td>mobility</td><td>Provides services for mobility impaired persons.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cultcomp<a name=\"AccessibilityCS-cultcomp\"> </a></td><td>Cultural competence</td><td>Provides services that meet the social, cultural, and linguistic needs of persons.</td></tr><tr><td style=\"white-space:nowrap\">handiaccess<a name=\"AccessibilityCS-handiaccess\"> </a></td><td>handicap accessible</td><td>Provides access to persons with disabilities.</td></tr><tr><td style=\"white-space:nowrap\">adacomp<a name=\"AccessibilityCS-adacomp\"> </a></td><td>ADA compliant</td><td>Provides access which complies with the Americans with Disabilities Act and/or amendments.</td></tr><tr><td style=\"white-space:nowrap\">pubtrans<a name=\"AccessibilityCS-pubtrans\"> </a></td><td>public transit options</td><td>Provides access using public transportation modes.</td></tr><tr><td style=\"white-space:nowrap\">anssrvc<a name=\"AccessibilityCS-anssrvc\"> </a></td><td>answering service</td><td>Provides capability to communicate when intended recipient is not immediately available.</td></tr><tr><td style=\"white-space:nowrap\">cognitive<a name=\"AccessibilityCS-cognitive\"> </a></td><td>cognitive</td><td>Provides services for cognitively impaired persons.</td></tr><tr><td style=\"white-space:nowrap\">mobility<a name=\"AccessibilityCS-mobility\"> </a></td><td>mobility</td><td>Provides services for mobility impaired persons.</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS"];
   fhir:CodeSystem.version [ fhir:value "0.0.1"];
   fhir:CodeSystem.name [ fhir:value "AccessibilityCS"];
   fhir:CodeSystem.title [ fhir:value "Accessibility"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -82,9 +82,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/CodeSystem/AccessibilityCS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CodeSystem/AccessibilityCS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

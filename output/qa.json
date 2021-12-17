@@ -1,12 +1,12 @@
 {
-  "url": "http://hl7.org/fhir/us/national-directory-query/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDirQry",
+  "url": "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query",
   "name": "ONCFASTNationalDirectoryEndpointQuery",
-  "package-id": "hl7.fhir.us.onc-fast-NatlDirQry",
+  "package-id": "hl7.fhir.us.fhir-directory-query",
   "ig-ver": "0.0.1",
-  "date": "Thu, 16 Dec, 2021 11:05:58 -0500",
-  "errs": 37,
-  "warnings": 44,
-  "hints": 0,
+  "date": "Fri, 17 Dec, 2021 13:53:37 -0500",
+  "errs": 55,
+  "warnings": 54,
+  "hints": 1,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

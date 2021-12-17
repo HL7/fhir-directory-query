@@ -50,13 +50,13 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension","newpatients","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients]]} {[]}
+"Location.extension","newpatients","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients]]} {[]}
 ","New Patients","New Patients indicates whether new patients are being accepted in general, or from a specific network.   
               This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  
               This provides needed flexibility for specifying whether a provider accepts new patients by location and network.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}new-patients-characteristics:If no new patients are accepted, no characteristics are allowed {extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()}"
-"Location.extension","accessibility","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility]]} {[]}
+"Location.extension","accessibility","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility]]} {[]}
 ","Accessibility","An extension to describe accessibility options offered by a practitioner or at a location.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -131,10 +131,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Location.telecom.extension","contactpoint-availabletime","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime]]} {[]}
+"Location.telecom.extension","contactpoint-availabletime","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime]]} {[]}
 ","Contactpoint Availabletime","An extension representing the days and times a contact point is available","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.telecom.extension","via-intermediary","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary]]} {[]}
+"Location.telecom.extension","via-intermediary","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary]]} {[]}
 ","Via Intermediary","A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Location.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
@@ -227,10 +227,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Location.position.altitude","","","",0,1,"","","","decimal {[]} {[]}
 ","Altitude with WGS84 datum","Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.altitude",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
-"Location.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization]]}
+"Location.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
 ","Organization responsible for provisioning and upkeep","The organization responsible for the provisioning and upkeep of the location.","This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource.","Need to know who manages the location.","","","","","","","",,,,,"",,,,"Location.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scopingEntity[classCode=ORG determinerKind=INSTANCE]"
-"Location.partOf","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location]]}
+"Location.partOf","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
 ","Another Location this one is physically a part of","Another Location of which this Location is physically a part of.","","For purposes of location, display and identification, knowing which locations are located within other locations is important.","","","","","","","",,,,,"",,,,"Location.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundLink[typeCode=PART].source[classCode=SDLC]"
 "Location.hoursOfOperation","","","",0,*,"Y","","","BackboneElement {[]} {[]}
@@ -265,6 +265,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Location.availabilityExceptions","","","",0,1,"Y","","","string {[]} {[]}
 ","Description of availability exceptions","A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times.","","","","","","","","","",,,,,"",,,,"Location.availabilityExceptions",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Location.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint]]}
+"Location.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint]]}
 ","Technical endpoints providing access to services operated for the location","Technical endpoints providing access to services operated for the location.","","Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Location.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"

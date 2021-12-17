@@ -5,25 +5,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/Acme> a fhir:Organization;
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Acme"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Org Description</b>: Acme of CT is a leading provider of health and other insurance products.</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span></p><p><b>name</b>: Acme of CT</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.acmeofct.com\">https://www.acmeofct.com</a></p><p><b>address</b>: 456 Main Street Norwalk CT 00014-1234 </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Org Description</b>: Acme of CT is a leading provider of health and other insurance products.</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span></p><p><b>name</b>: Acme of CT</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.acmeofct.com\">https://www.acmeofct.com</a></p><p><b>address</b>: 456 Main Street Norwalk CT 00014-1234 </p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/org-description" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-description" ];
      fhir:Extension.valueString [ fhir:value "Acme of CT is a leading provider of health and other insurance products." ]
   ];
   fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
@@ -31,7 +31,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS" ];
        fhir:Coding.code [ fhir:value "payer" ];
        fhir:Coding.display [ fhir:value "Payer" ]
      ]
@@ -70,7 +70,7 @@
          fhir:Extension.url [ fhir:value "availableEndTime" ];
          fhir:Extension.valueTime [ fhir:value "17:00:00"^^xsd:time ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(111)-222-3333" ];
@@ -94,9 +94,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/Acme.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Organization/Acme.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Organization/Acme.ttl> .
 
 # -------------------------------------------------------------------------------------
 

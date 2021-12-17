@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AcceptingPatientsCS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">nopt<a name=\"AcceptingPatientsCS-nopt\"> </a></td><td>Not Accepting</td><td>Not accepting patients</td></tr><tr><td style=\"white-space:nowrap\">newpt<a name=\"AcceptingPatientsCS-newpt\"> </a></td><td>Accepting</td><td>Accepting patients</td></tr><tr><td style=\"white-space:nowrap\">existptonly<a name=\"AcceptingPatientsCS-existptonly\"> </a></td><td>Accepting existing patients</td><td>Accepting existing patients</td></tr><tr><td style=\"white-space:nowrap\">existptfam<a name=\"AcceptingPatientsCS-existptfam\"> </a></td><td>Accepting existing patients and their families</td><td>Accepting existing patients and members of their families</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">nopt<a name=\"AcceptingPatientsCS-nopt\"> </a></td><td>Not Accepting</td><td>Not accepting patients</td></tr><tr><td style=\"white-space:nowrap\">newpt<a name=\"AcceptingPatientsCS-newpt\"> </a></td><td>Accepting</td><td>Accepting patients</td></tr><tr><td style=\"white-space:nowrap\">existptonly<a name=\"AcceptingPatientsCS-existptonly\"> </a></td><td>Accepting existing patients</td><td>Accepting existing patients</td></tr><tr><td style=\"white-space:nowrap\">existptfam<a name=\"AcceptingPatientsCS-existptfam\"> </a></td><td>Accepting existing patients and their families</td><td>Accepting existing patients and members of their families</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS"];
   fhir:CodeSystem.version [ fhir:value "0.0.1"];
   fhir:CodeSystem.name [ fhir:value "AcceptingPatientsCS"];
   fhir:CodeSystem.title [ fhir:value "Accepting Patients Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -67,9 +67,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/CodeSystem/AcceptingPatientsCS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

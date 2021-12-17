@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="InsuranceProductTypeVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-InsuranceProductTypeCS.html"><code>http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsuranceProductTypeCS</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-InsuranceProductTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsuranceProductTypeCS</code></a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory-query/ValueSet/InsuranceProductTypeVS"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/InsuranceProductTypeVS"/>
   <version value="0.0.1"/>
   <name value="InsuranceProductTypeVS"/>
   <title value="Insurance Product Type"/>
   <status value="active"/>
-  <date value="2021-12-16T11:05:58-05:00"/>
+  <date value="2021-12-17T13:53:37-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsuranceProductTypeCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsuranceProductTypeCS"/>
     </include>
   </compose>
 </ValueSet>

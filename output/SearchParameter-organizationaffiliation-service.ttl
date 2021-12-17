@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/SearchParameter/organizationaffiliation-service> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-service> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "organizationaffiliation-service"];
   fhir:DomainResource.text [
@@ -70,9 +70,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/SearchParameter/organizationaffiliation-service.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-service.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/SearchParameter/organizationaffiliation-service.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/SearchParameter/organizationaffiliation-service.ttl> .
 
 # -------------------------------------------------------------------------------------
 

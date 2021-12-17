@@ -5,27 +5,27 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTPremNet> a fhir:Organization;
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTPremNet> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AcmeofCTPremNet"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Location Reference</b>: <a href=\"Location-StateOfCTLocation.html\">Generated Summary: language: en-US; status: active; name: State of CT Area</a></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span></p><p><b>name</b>: ACME CT Premium Preferred Provider Network</p><p><b>partOf</b>: <a href=\"Organization-Acme.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Jane Kawasaki </td><td>-unknown-</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Location Reference</b>: <a href=\"Location-StateOfCTLocation.html\">Generated Summary: language: en-US; status: active; name: State of CT Area</a></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span></p><p><b>name</b>: ACME CT Premium Preferred Provider Network</p><p><b>partOf</b>: <a href=\"Organization-Acme.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Jane Kawasaki </td><td>-unknown-</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/location-reference" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/location-reference" ];
      fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/Location/StateOfCTLocation>;
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/StateOfCTLocation>;
        fhir:Reference.reference [ fhir:value "Location/StateOfCTLocation" ]
      ]
   ];
@@ -34,14 +34,14 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS" ];
        fhir:Coding.code [ fhir:value "ntwk" ];
        fhir:Coding.display [ fhir:value "Network" ]
      ]
   ];
   fhir:Organization.name [ fhir:value "ACME CT Premium Preferred Provider Network"];
   fhir:Organization.partOf [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/Acme>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme>;
      fhir:Reference.reference [ fhir:value "Organization/Acme" ]
   ];
   fhir:Organization.contact [
@@ -57,24 +57,24 @@
        fhir:index 0;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary" ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary" ];
          fhir:Extension.valueReference [
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/Acme>;
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme>;
            fhir:Reference.reference [ fhir:value "Organization/Acme" ]
          ]
        ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Location/StateOfCTLocation> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Location/StateOfCTLocation> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/Acme> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTPremNet.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTPremNet.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Organization/AcmeofCTPremNet.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Organization/AcmeofCTPremNet.ttl> .
 
 # -------------------------------------------------------------------------------------
 

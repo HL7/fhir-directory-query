@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Endpoint/AcmeOfCTPortalEndpoint> a fhir:Endpoint;
+<http://hl7.org/fhir/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint> a fhir:Endpoint;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AcmeOfCTPortalEndpoint"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Endpoint Usecase</b></p><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActReason HOPERAT}\">healthcare operations</span></p></blockquote><p><b>status</b>: active</p><p><b>connectionType</b>: <span title=\"{http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS rest-non-fhir}\">REST (not FHIR)</span></p><p><b>name</b>: Endpoint for Acme of CT Portal</p><p><b>payloadType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS NA}\">Not Applicable</span></p><p><b>address</b>: <a href=\"https://urlofportal.acmect.com\">https://urlofportal.acmect.com</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Endpoint Usecase</b></p><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActReason HOPERAT}\">healthcare operations</span></p></blockquote><p><b>status</b>: active</p><p><b>connectionType</b>: <span title=\"{http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS rest-non-fhir}\">REST (not FHIR)</span></p><p><b>name</b>: Endpoint for Acme of CT Portal</p><p><b>payloadType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS NA}\">Not Applicable</span></p><p><b>address</b>: <a href=\"https://urlofportal.acmect.com\">https://urlofportal.acmect.com</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -34,11 +34,11 @@
          ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/endpoint-usecase" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpoint-usecase" ]
   ];
   fhir:Endpoint.status [ fhir:value "active"];
   fhir:Endpoint.connectionType [
-     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS" ];
+     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS" ];
      fhir:Coding.code [ fhir:value "rest-non-fhir" ]
   ];
   fhir:Endpoint.name [ fhir:value "Endpoint for Acme of CT Portal"];
@@ -46,7 +46,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS" ];
        fhir:Coding.code [ fhir:value "NA" ]
      ]
   ];
@@ -54,9 +54,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Endpoint/AcmeOfCTPortalEndpoint.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Endpoint/AcmeOfCTPortalEndpoint.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint.ttl> .
 
 # -------------------------------------------------------------------------------------
 

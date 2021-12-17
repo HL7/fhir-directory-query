@@ -3,22 +3,12 @@
   <sch:ns prefix="f" uri="http://hl7.org/fhir"/>
   <sch:ns prefix="h" uri="http://www.w3.org/1999/xhtml"/>
   <!-- 
-    This file contains just the constraints for the profile InsurancePlan
+    This file contains just the constraints for the profile NatlDirInsurancePlan
     It includes the base constraints for the resource as well.
     Because of the way that schematrons and containment work, 
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
-  <sch:pattern>
-    <sch:title>f:InsurancePlan</sch:title>
-    <sch:rule context="f:InsurancePlan">
-      <sch:assert test="count(f:status) &gt;= 1">status: minimum cardinality of 'status' is 1</sch:assert>
-      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:ownedBy) &gt;= 1">ownedBy: minimum cardinality of 'ownedBy' is 1</sch:assert>
-      <sch:assert test="count(f:administeredBy) &gt;= 1">administeredBy: minimum cardinality of 'administeredBy' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
   <sch:pattern>
     <sch:title>InsurancePlan</sch:title>
     <sch:rule context="f:InsurancePlan">
@@ -28,16 +18,6 @@
       <sch:assert test="not(exists(f:contained/*/f:meta/f:security))">If a resource is contained in another resource, it SHALL NOT have a security label (inherited)</sch:assert>
       <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
       <sch:assert test="count(f:identifier | f:name) &gt; 0">The organization SHALL at least have a name or an idendtifier, and possibly more than one (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:InsurancePlan/f:meta</sch:title>
-    <sch:rule context="f:InsurancePlan/f:meta">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:versionId) &lt;= 1">versionId: maximum cardinality of 'versionId' is 1</sch:assert>
-      <sch:assert test="count(f:lastUpdated) &gt;= 1">lastUpdated: minimum cardinality of 'lastUpdated' is 1</sch:assert>
-      <sch:assert test="count(f:lastUpdated) &lt;= 1">lastUpdated: maximum cardinality of 'lastUpdated' is 1</sch:assert>
-      <sch:assert test="count(f:source) &lt;= 1">source: maximum cardinality of 'source' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -119,18 +99,6 @@
     <sch:rule context="f:InsurancePlan/f:modifierExtension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:InsurancePlan/f:identifier</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
-      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
-      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
-      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
-      <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -257,16 +225,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:InsurancePlan/f:contact/f:name</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
-      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
-      <sch:assert test="count(f:family) &lt;= 1">family: maximum cardinality of 'family' is 1</sch:assert>
-      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>InsurancePlan.contact.name</sch:title>
     <sch:rule context="f:InsurancePlan/f:contact/f:name">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -319,17 +277,6 @@
     <sch:title>InsurancePlan.contact.name.period</sch:title>
     <sch:rule context="f:InsurancePlan/f:contact/f:name/f:period">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:InsurancePlan/f:contact/f:telecom</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
-      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
-      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
-      <sch:assert test="count(f:rank) &lt;= 1">rank: maximum cardinality of 'rank' is 1</sch:assert>
-      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

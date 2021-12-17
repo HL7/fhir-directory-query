@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/SearchParameter/practitionerrole-network> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-network> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "practitionerrole-network"];
   fhir:DomainResource.text [
@@ -69,9 +69,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/SearchParameter/practitionerrole-network.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-network.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/SearchParameter/practitionerrole-network.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/SearchParameter/practitionerrole-network.ttl> .
 
 # -------------------------------------------------------------------------------------
 

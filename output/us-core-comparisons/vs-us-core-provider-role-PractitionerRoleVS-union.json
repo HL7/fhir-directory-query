@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "331c98fd-4abd-4a00-8b8d-fc4dea9c7201-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/331c98fd-4abd-4a00-8b8d-fc4dea9c7201-11",
+  "id" : "e970e8b0-5119-4727-9e78-94a26cc68f3d-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e970e8b0-5119-4727-9e78-94a26cc68f3d-11",
   "name" : "UnionUSCoreProviderRoleNuccAndPractitionerRoleVS",
   "title" : "Union of US Core Provider Role (NUCC) And PractitionerRole Code",
   "status" : "active",
-  "date" : "2021-12-16T11:07:21-05:00",
+  "date" : "2021-12-17T13:55:03-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -17,7 +17,7 @@
       "system" : "http://nucc.org/provider-taxonomy"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS"
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role"
@@ -7693,207 +7693,207 @@
       "display" : "Prevention Professional"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ap",
       "display" : "Admitting Privileges"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "apn",
       "display" : "Advanced Practice Nursing Providers"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "at",
       "display" : "Athletic Trainer"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "au",
       "display" : "Audiologist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "bh",
       "display" : "Behavioral Health & Social Service Providers"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ba",
       "display" : "Board Certified Behavior Analyst"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "bt",
       "display" : "Member Of"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "cnw",
       "display" : "Certified Nurse Midwife"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "crnp",
       "display" : "Certified Registered Nurse Practitioner"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ch",
       "display" : "Chiropractor"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "cs",
       "display" : "Christian Science Practitioner"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "co",
       "display" : "Counselor"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "dp",
       "display" : "Dental Provider"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "de",
       "display" : "Dentist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "drr",
       "display" : "Developmental, Rehabilitative and Restorative Service Providers"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "dn",
       "display" : "Dietary and Nutritional Service Provider"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "om",
       "display" : "Doctor of Oriental Medicine"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "em",
       "display" : "Emergency Medical Service Provider"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ho",
       "display" : "Homeopath"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "lpn",
       "display" : "Licensed Practical Nurse"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "mt",
       "display" : "Marriage/Family Therapist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ma",
       "display" : "Massage Therapist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "nh",
       "display" : "Naprapath"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "na",
       "display" : "Naturopath"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "nu",
       "display" : "Nursing Service Related Providers"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ot",
       "display" : "Occupational Therapist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "op",
       "display" : "Optician"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "oo",
       "display" : "Optometrist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "os",
       "display" : "Other Service Provider"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "rx",
       "display" : "Pharmacy Service Providers"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "pt",
       "display" : "Physical Therapist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "ph",
       "display" : "Physician"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "pa",
       "display" : "Physician Assistant"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "po",
       "display" : "Podiatrist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "py",
       "display" : "Psychologist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "rn",
       "display" : "Registered Nurse"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "rt",
       "display" : "Respiratory Therapist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "sw",
       "display" : "Social Worker"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "sp",
       "display" : "Speech Language Pathologist"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "sh",
       "display" : "Speech, Language and Hearing Service Providers"
     },
     {
-      "system" : "http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS",
+      "system" : "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
       "code" : "te",
       "display" : "Technologists, Technicians and Other Technical Service Providers"
     },

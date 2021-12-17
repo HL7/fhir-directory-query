@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointConnectionTypeVS> a fhir:ValueSet;
+<http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "EndpointConnectionTypeVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-endpoint-connection-type.html\"><code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-EndpointConnectionTypeCS.html\"><code>http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-endpoint-connection-type.html\"><code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-EndpointConnectionTypeCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointConnectionTypeVS"];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS"];
   fhir:ValueSet.version [ fhir:value "0.0.1"];
   fhir:ValueSet.name [ fhir:value "EndpointConnectionTypeVS"];
   fhir:ValueSet.title [ fhir:value "Endpoint Connection Types"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -47,15 +47,15 @@
        fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/endpoint-connection-type" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/ValueSet/EndpointConnectionTypeVS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/ValueSet/EndpointConnectionTypeVS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

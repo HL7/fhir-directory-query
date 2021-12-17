@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="OrgTypeCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fac<a name="OrgTypeCS-fac"> </a></td><td>Facility</td><td>A physical healthcare facility.</td></tr><tr><td style="white-space:nowrap">prvgrp<a name="OrgTypeCS-prvgrp"> </a></td><td>Provider Group</td><td>A healthcare provider entity</td></tr><tr><td style="white-space:nowrap">payer<a name="OrgTypeCS-payer"> </a></td><td>Payer</td><td>A healthcare payer.</td></tr><tr><td style="white-space:nowrap">atyprv<a name="OrgTypeCS-atyprv"> </a></td><td>Atypical Provider</td><td>Providers that do not provide healthcare</td></tr><tr><td style="white-space:nowrap">bus<a name="OrgTypeCS-bus"> </a></td><td>Non-Healthcare Business</td><td>An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility</td></tr><tr><td style="white-space:nowrap">ntwk<a name="OrgTypeCS-ntwk"> </a></td><td>Network</td><td>A healthcare provider insurance network</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fac<a name="OrgTypeCS-fac"> </a></td><td>Facility</td><td>A physical healthcare facility.</td></tr><tr><td style="white-space:nowrap">prvgrp<a name="OrgTypeCS-prvgrp"> </a></td><td>Provider Group</td><td>A healthcare provider entity</td></tr><tr><td style="white-space:nowrap">payer<a name="OrgTypeCS-payer"> </a></td><td>Payer</td><td>A healthcare payer.</td></tr><tr><td style="white-space:nowrap">atyprv<a name="OrgTypeCS-atyprv"> </a></td><td>Atypical Provider</td><td>Providers that do not provide healthcare</td></tr><tr><td style="white-space:nowrap">bus<a name="OrgTypeCS-bus"> </a></td><td>Non-Healthcare Business</td><td>An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility</td></tr><tr><td style="white-space:nowrap">ntwk<a name="OrgTypeCS-ntwk"> </a></td><td>Network</td><td>A healthcare provider insurance network</td></tr></table></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS"/>
   <version value="0.0.1"/>
   <name value="OrgTypeCS"/>
   <title value="Organization Type"/>
   <status value="active"/>
-  <date value="2021-12-16T11:05:58-05:00"/>
+  <date value="2021-12-17T13:53:37-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

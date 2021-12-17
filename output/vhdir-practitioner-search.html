@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.US.ONC-FAST-NATLDIRQRY\Vhdir Practitioner Search - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.FHIR-DIRECTORY-QUERY\Vhdir Practitioner Search - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -61,7 +61,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Directory Endpoint Query</span><br/>0.0.1 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span><br/>0.0.1 - draft</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -105,6 +105,9 @@
   </li>
   <li>
     <a href="searchparameters.html">Search Parameters</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statement
@@ -154,7 +157,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">National Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/national-directory-query/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Vhdir Practitioner Search</h2>
   
 
@@ -185,7 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?endpoint=[id]</code></p>
 
-    <p><a name="l338">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-endpoint.html"><code class="language-plaintext highlighter-rouge">endpoint</code></a> parameter</p>
+    <p><a name="l344">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-endpoint.html"><code class="language-plaintext highlighter-rouge">endpoint</code></a> parameter</p>
     <ul>
       <li>with a target type:  <code class="language-plaintext highlighter-rouge">Endpoint</code></li>
       <li>including these search paramaters which may be chained:  <code class="language-plaintext highlighter-rouge">endpoint.identifier</code></li>
@@ -222,7 +225,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?identifier=[code]</code></p>
 
-    <p><a name="l430">​</a><em>Support:</em> SHALL support search by the <a href="SearchParameter-practitioner-identifier.html"><code class="language-plaintext highlighter-rouge">identifier</code></a> parameter</p>
+    <p><a name="l436">​</a><em>Support:</em> SHALL support search by the <a href="SearchParameter-practitioner-identifier.html"><code class="language-plaintext highlighter-rouge">identifier</code></a> parameter</p>
     <ul>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">text</code>, <code class="language-plaintext highlighter-rouge">ofType</code></li>
     </ul>
@@ -234,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?identifier-assigner=[id]</code></p>
 
-    <p><a name="l462">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-identifier-assigner.html"><code class="language-plaintext highlighter-rouge">identifier-assigner</code></a> parameter</p>
+    <p><a name="l468">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-identifier-assigner.html"><code class="language-plaintext highlighter-rouge">identifier-assigner</code></a> parameter</p>
     <ul>
       <li>with a target type:  <code class="language-plaintext highlighter-rouge">Organization</code></li>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">below</code></li>
@@ -260,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?phonetic=[string]</code></p>
 
-    <p><a name="l536">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-phonetic.html"><code class="language-plaintext highlighter-rouge">phonetic</code></a> parameter</p>
+    <p><a name="l542">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-phonetic.html"><code class="language-plaintext highlighter-rouge">phonetic</code></a> parameter</p>
   </li>
 </ol>
 <hr/>
@@ -269,7 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?qualification-code=[code]</code></p>
 
-    <p><a name="l557">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-code.html"><code class="language-plaintext highlighter-rouge">qualification-code</code></a> parameter</p>
+    <p><a name="l563">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-code.html"><code class="language-plaintext highlighter-rouge">qualification-code</code></a> parameter</p>
     <ul>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">text</code></li>
     </ul>
@@ -281,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?qualification-issuer=[id]</code></p>
 
-    <p><a name="l586">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-qualification-issuer.html"><code class="language-plaintext highlighter-rouge">qualification-issuer</code></a> parameter</p>
+    <p><a name="l592">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-qualification-issuer.html"><code class="language-plaintext highlighter-rouge">qualification-issuer</code></a> parameter</p>
     <ul>
       <li>with a target type:  <code class="language-plaintext highlighter-rouge">Organization</code></li>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">below</code></li>
@@ -295,7 +298,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?qualification-status=[code]</code></p>
 
-    <p><a name="l628">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-status.html"><code class="language-plaintext highlighter-rouge">qualification-status</code></a> parameter</p>
+    <p><a name="l634">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-status.html"><code class="language-plaintext highlighter-rouge">qualification-status</code></a> parameter</p>
   </li>
 </ol>
 <hr/>
@@ -304,7 +307,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?qualification-wherevalid-code=[code]</code></p>
 
-    <p><a name="l649">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-wherevalid-code.html"><code class="language-plaintext highlighter-rouge">qualification-wherevalid-code</code></a> parameter</p>
+    <p><a name="l655">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-wherevalid-code.html"><code class="language-plaintext highlighter-rouge">qualification-wherevalid-code</code></a> parameter</p>
     <ul>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">text</code></li>
     </ul>
@@ -316,7 +319,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?qualification-wherevalid-location=[id]</code></p>
 
-    <p><a name="l678">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-wherevalid-location.html"><code class="language-plaintext highlighter-rouge">qualification-wherevalid-location</code></a> parameter</p>
+    <p><a name="l684">​</a><em>Support:</em> SHOULD support search by the <a href="SearchParameter-practitioner-qualification-wherevalid-location.html"><code class="language-plaintext highlighter-rouge">qualification-wherevalid-location</code></a> parameter</p>
     <ul>
       <li>with a target type:  <code class="language-plaintext highlighter-rouge">Location</code></li>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">above</code>, <code class="language-plaintext highlighter-rouge">below</code></li>
@@ -330,7 +333,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?via-intermediary=[id]</code></p>
 
-    <p><a name="l726">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-via-intermediary.html"><code class="language-plaintext highlighter-rouge">via-intermediary</code></a> parameter</p>
+    <p><a name="l732">​</a><em>Support:</em> MAY support search by the <a href="SearchParameter-practitioner-via-intermediary.html"><code class="language-plaintext highlighter-rouge">via-intermediary</code></a> parameter</p>
     <ul>
       <li>with a target type:  <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">OrganizationAffiliation</code>, <code class="language-plaintext highlighter-rouge">Location</code></li>
     </ul>
@@ -342,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Practitioner?qualification-period=[string]</code></p>
 
-    <p><a name="l764">​</a><em>Support:</em> SHALL support search by the <a href="SearchParameter-practitioner-qualification-period.html"><code class="language-plaintext highlighter-rouge">qualification-period</code></a> parameter</p>
+    <p><a name="l770">​</a><em>Support:</em> SHALL support search by the <a href="SearchParameter-practitioner-qualification-period.html"><code class="language-plaintext highlighter-rouge">qualification-period</code></a> parameter</p>
     <ul>
       <li>including the modifiers:  <code class="language-plaintext highlighter-rouge">exact</code>, <code class="language-plaintext highlighter-rouge">contains</code></li>
     </ul>
@@ -375,14 +378,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.onc-fast-NatlDirQry#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 16, 2021 11:05-0500">2021-12-16</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 17, 2021 13:53-0500">2021-12-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/national-directory-query/history.html" target="_blank">Version History  |
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/fhir-directory-query/history.html" target="_blank">Version History  |
                <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 

@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="SpecialtiesVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-IndividualAndGroupSpecialtiesVS.html">http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS</a></li><li>Import all the codes that are contained in <a href="ValueSet-NonIndividualSpecialtiesVS.html">http://hl7.org/fhir/us/national-directory-query/ValueSet/NonIndividualSpecialtiesVS</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-IndividualAndGroupSpecialtiesVS.html">http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS</a></li><li>Import all the codes that are contained in <a href="ValueSet-NonIndividualSpecialtiesVS.html">http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NonIndividualSpecialtiesVS</a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory-query/ValueSet/SpecialtiesVS"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS"/>
   <version value="0.0.1"/>
   <name value="SpecialtiesVS"/>
   <title value="Specialties"/>
   <status value="active"/>
-  <date value="2021-12-16T11:05:58-05:00"/>
+  <date value="2021-12-17T13:53:37-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -32,10 +32,10 @@
   </jurisdiction>
   <compose>
     <include>
-      <valueSet value="http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS"/>
+      <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS"/>
     </include>
     <include>
-      <valueSet value="http://hl7.org/fhir/us/national-directory-query/ValueSet/NonIndividualSpecialtiesVS"/>
+      <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NonIndividualSpecialtiesVS"/>
     </include>
   </compose>
 </ValueSet>

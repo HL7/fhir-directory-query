@@ -3,14 +3,14 @@
   "id": "OrganizationAffiliationRoleVS",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-organization-role.html\"><code>http://hl7.org/fhir/organization-role</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-OrganizationAffiliationRoleCS.html\"><code>http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-organization-role.html\"><code>http://hl7.org/fhir/organization-role</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-organization-role.html#organization-role-member\">member</a></td><td>Member</td><td>A type of non-ownership relationship between entities (encompasses partnerships, collaboration, joint ventures, etc.)</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-organization-role.html\"><code>http://hl7.org/fhir/organization-role</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-OrganizationAffiliationRoleCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-organization-role.html\"><code>http://hl7.org/fhir/organization-role</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-organization-role.html#organization-role-member\">member</a></td><td>Member</td><td>A type of non-ownership relationship between entities (encompasses partnerships, collaboration, joint ventures, etc.)</td></tr></table></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/national-directory-query/ValueSet/OrganizationAffiliationRoleVS",
+  "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrganizationAffiliationRoleVS",
   "version": "0.0.1",
   "name": "OrganizationAffiliationRoleVS",
   "title": "OrganizationAffiliation Roles",
   "status": "active",
-  "date": "2021-12-16T11:05:58-05:00",
+  "date": "2021-12-17T13:53:37-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -44,7 +44,7 @@
         "system": "http://hl7.org/fhir/organization-role"
       },
       {
-        "system": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS"
+        "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS"
       }
     ],
     "exclude": [

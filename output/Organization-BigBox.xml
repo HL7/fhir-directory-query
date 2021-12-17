@@ -4,23 +4,23 @@
   <id value="BigBox"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
   </meta>
   <language value="en-US"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS bus}">Non-Healthcare Business</span></p><p><b>name</b>: Big Box Retailer</p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.bixboxretailer.com">https://www.bixboxretailer.com</a></p><p><b>address</b>: 456 Main Street Norwalk CT 00014-1234 </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS bus}">Non-Healthcare Business</span></p><p><b>name</b>: Big Box Retailer</p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.bixboxretailer.com">https://www.bixboxretailer.com</a></p><p><b>address</b>: 456 Main Street Norwalk CT 00014-1234 </p></div>
   </text>
   <active value="true"/>
   <type>
     <coding>
-      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS"/>
       <code value="bus"/>
       <display value="Non-Healthcare Business"/>
     </coding>
   </type>
   <name value="Big Box Retailer"/>
   <telecom>
-    <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime">
+    <extension url="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime">
       <extension url="daysOfWeek">
         <valueCode value="mon"/>
       </extension>

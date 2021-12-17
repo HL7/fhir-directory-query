@@ -4,11 +4,11 @@
   <id value="CancerClinic"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"/>
+    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
   </meta>
   <language value="en-US"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI788</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}">Facility</span></p><p><b>name</b>: Hamilton Clinic</p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.Hospital.com">https://www.Hospital.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI788</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}">Facility</span></p><p><b>name</b>: Hamilton Clinic</p><p><b>telecom</b>: ph: (111)-222-3333, <a href="https://www.Hospital.com">https://www.Hospital.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>
   </text>
   <identifier>
     <system value="http://hl7.org/fhir/sid/us-npi"/>
@@ -17,7 +17,7 @@
   <active value="true"/>
   <type>
     <coding>
-      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS"/>
       <code value="fac"/>
       <display value="Facility"/>
     </coding>

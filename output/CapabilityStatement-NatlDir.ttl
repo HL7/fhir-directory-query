@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CapabilityStatement/NatlDir> a fhir:CapabilityStatement;
+<http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDir> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDir"];
   fhir:DomainResource.text [
@@ -1399,9 +1399,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CapabilityStatement/NatlDir.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDir.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/CapabilityStatement/NatlDir.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CapabilityStatement/NatlDir.ttl> .
 
 # -------------------------------------------------------------------------------------
 

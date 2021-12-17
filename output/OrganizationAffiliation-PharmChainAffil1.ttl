@@ -5,37 +5,37 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/OrganizationAffiliation/PharmChainAffil1> a fhir:OrganizationAffiliation;
+<http://hl7.org/fhir/us/fhir-directory-query/OrganizationAffiliation/PharmChainAffil1> a fhir:OrganizationAffiliation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PharmChainAffil1"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>participatingOrganization</b>: <a href=\"Organization-PharmChain.html\">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}\">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>network</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS pharmacy}\">Pharmacy</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336C0003X}\">Community/Retail Pharmacy</span></p><p><b>location</b>: </p><ul><li><a href=\"Location-PharmLoc1.html\">Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span>; Phone: (111)-222-3333, https://www.orga.com</a></li><li><a href=\"Location-PharmLoc2.html\">Generated Summary: language: en-US; status: active; name: OrgA CT Location 2; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span>; Phone: (777)-888-9999, https://www.orga.com</a></li></ul><p><b>healthcareService</b>: <a href=\"HealthcareService-PharmChainRetailService.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}\">Pharmacy</span>; <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336C0003X}\">Community/Retail Pharmacy</span>; name: Pharmacy by PharmChain; </a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>participatingOrganization</b>: <a href=\"Organization-PharmChain.html\">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS prvgrp}\">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>network</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS pharmacy}\">Pharmacy</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336C0003X}\">Community/Retail Pharmacy</span></p><p><b>location</b>: </p><ul><li><a href=\"Location-PharmLoc1.html\">Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span>; Phone: (111)-222-3333, https://www.orga.com</a></li><li><a href=\"Location-PharmLoc2.html\">Generated Summary: language: en-US; status: active; name: OrgA CT Location 2; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span>; Phone: (777)-888-9999, https://www.orga.com</a></li></ul><p><b>healthcareService</b>: <a href=\"HealthcareService-PharmChainRetailService.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}\">Pharmacy</span>; <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336C0003X}\">Community/Retail Pharmacy</span>; name: Pharmacy by PharmChain; </a></p></div>"
   ];
   fhir:OrganizationAffiliation.active [ fhir:value "true"^^xsd:boolean];
   fhir:OrganizationAffiliation.participatingOrganization [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/PharmChain>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/PharmChain>;
      fhir:Reference.reference [ fhir:value "Organization/PharmChain" ]
   ];
   fhir:OrganizationAffiliation.network [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTStdNet>;
      fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
   ];
   fhir:OrganizationAffiliation.code [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrganizationAffiliationRoleCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS" ];
        fhir:Coding.code [ fhir:value "pharmacy" ]
      ]
   ];
@@ -50,34 +50,34 @@
   ];
   fhir:OrganizationAffiliation.location [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc1" ]
   ], [
      fhir:index 1;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc2>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc2>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc2" ]
   ];
   fhir:OrganizationAffiliation.healthcareService [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/HealthcareService/PharmChainRetailService>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/HealthcareService/PharmChainRetailService>;
      fhir:Reference.reference [ fhir:value "HealthcareService/PharmChainRetailService" ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/PharmChain> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/PharmChain> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc2> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc2> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/HealthcareService/PharmChainRetailService> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/HealthcareService/PharmChainRetailService> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/OrganizationAffiliation/PharmChainAffil1.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/OrganizationAffiliation/PharmChainAffil1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/OrganizationAffiliation/PharmChainAffil1.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/OrganizationAffiliation/PharmChainAffil1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

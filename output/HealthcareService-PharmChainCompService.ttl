@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/HealthcareService/PharmChainCompService> a fhir:HealthcareService;
+<http://hl7.org/fhir/us/fhir-directory-query/HealthcareService/PharmChainCompService> a fhir:HealthcareService;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PharmChainCompService"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS physical}\">Physical</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-PharmChain.html\">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS prvgrp}\">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}\">Pharmacy</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336C0004X}\">Compounding Pharmacy</span></p><p><b>location</b>: <a href=\"Location-PharmLoc1.html\">Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span>; Phone: (111)-222-3333, https://www.orga.com</a></p><p><b>name</b>: Compounding Pharmacy by OrgA</p><p><b>telecom</b>: -unknown-</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS physical}\">Physical</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-PharmChain.html\">Generated Summary: language: en-US; id: NPI-ORGA; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS prvgrp}\">Provider Group</span>; name: Pharm Chain; Phone: (111)-222-3333, https://www.pharmchain.com</a></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS pharm}\">Pharmacy</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 3336C0004X}\">Compounding Pharmacy</span></p><p><b>location</b>: <a href=\"Location-PharmLoc1.html\">Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span>; Phone: (111)-222-3333, https://www.orga.com</a></p><p><b>name</b>: Compounding Pharmacy by OrgA</p><p><b>telecom</b>: -unknown-</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -29,23 +29,23 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS" ];
            fhir:Coding.code [ fhir:value "physical" ]
          ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/delivery-method" ]
   ];
   fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
   fhir:HealthcareService.providedBy [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/PharmChain>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/PharmChain>;
      fhir:Reference.reference [ fhir:value "Organization/PharmChain" ]
   ];
   fhir:HealthcareService.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
        fhir:Coding.code [ fhir:value "pharm" ];
        fhir:Coding.display [ fhir:value "Pharmacy" ]
      ]
@@ -62,7 +62,7 @@
   ];
   fhir:HealthcareService.location [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc1" ]
   ];
   fhir:HealthcareService.name [ fhir:value "Compounding Pharmacy by OrgA"];
@@ -70,23 +70,23 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary" ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary" ];
        fhir:Extension.valueReference [
-         fhir:link <http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1>;
+         fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1>;
          fhir:Reference.reference [ fhir:value "Location/PharmLoc1" ]
        ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/PharmChain> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/PharmChain> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/HealthcareService/PharmChainCompService.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/HealthcareService/PharmChainCompService.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/HealthcareService/PharmChainCompService.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/HealthcareService/PharmChainCompService.ttl> .
 
 # -------------------------------------------------------------------------------------
 

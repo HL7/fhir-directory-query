@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Practitioner/JoeSmith> a fhir:Practitioner;
+<http://hl7.org/fhir/us/fhir-directory-query/Practitioner/JoeSmith> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JoeSmith"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -55,7 +55,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -87,7 +87,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -120,7 +120,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -138,9 +138,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Practitioner/JoeSmith.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Practitioner/JoeSmith.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Practitioner/JoeSmith.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Practitioner/JoeSmith.ttl> .
 
 # -------------------------------------------------------------------------------------
 

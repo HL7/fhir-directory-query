@@ -4,13 +4,13 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService"
+      "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"
     ]
   },
   "language": "en-US",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS physical}\">Physical</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-HamiltonClinic.html\">Generated Summary: language: en-US; id: NPI78; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hamilton Clinic; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS outpat}\">Clinic or Outpatient Facility</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 207Q00000X}\">Family Medicine</span></p><p><b>location</b>: <a href=\"Location-HospLoc1.html\">Generated Summary: language: en-US; status: active; name: Hartford Hospital Location 1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; Phone: (111)-222-3333, https://www.hgh.com</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS physical}\">Physical</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-HamiltonClinic.html\">Generated Summary: language: en-US; id: NPI78; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hamilton Clinic; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS outpat}\">Clinic or Outpatient Facility</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 207Q00000X}\">Family Medicine</span></p><p><b>location</b>: <a href=\"Location-HospLoc1.html\">Generated Summary: language: en-US; status: active; name: Hartford Hospital Location 1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; Phone: (111)-222-3333, https://www.hgh.com</a></p></div>"
   },
   "extension": [
     {
@@ -20,14 +20,14 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/DeliveryMethodCS",
+                "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS",
                 "code": "physical"
               }
             ]
           }
         }
       ],
-      "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/delivery-method"
+      "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/delivery-method"
     }
   ],
   "active": true,
@@ -38,7 +38,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS",
+          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS",
           "code": "outpat"
         }
       ]

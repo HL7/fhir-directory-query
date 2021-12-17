@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1> a fhir:Location;
+<http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PharmLoc1"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>New Patients</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS existptonly}\">Accepting existing patients</span></p><p><b>value</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></p></blockquote><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS adacomp}\">ADA compliant</span></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS pubtrans}\">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: OrgA CT Location 1</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span></p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.orga.com\">https://www.orga.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>3</td><td>15</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-BigBox.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS bus}\">Non-Healthcare Business</span>; name: Big Box Retailer; Phone: (111)-222-3333, https://www.bixboxretailer.com</a></p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>allDay</b>: true</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sat, sun</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 17:00:00</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><blockquote><p><b>New Patients</b></p><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS existptonly}\">Accepting existing patients</span></p><p><b>value</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></p></blockquote><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS adacomp}\">ADA compliant</span></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS pubtrans}\">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: OrgA CT Location 1</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}\">outpatient pharmacy</span></p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.orga.com\">https://www.orga.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>3</td><td>15</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-BigBox.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS bus}\">Non-Healthcare Business</span>; name: Big Box Retailer; Phone: (111)-222-3333, https://www.bixboxretailer.com</a></p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>allDay</b>: true</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sat, sun</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 17:00:00</p></blockquote></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -29,7 +29,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AcceptingPatientsCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS" ];
            fhir:Coding.code [ fhir:value "existptonly" ]
          ]
        ]
@@ -37,28 +37,28 @@
        fhir:index 1;
        fhir:Extension.url [ fhir:value "fromNetwork" ];
        fhir:Extension.valueReference [
-         fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet>;
+         fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTStdNet>;
          fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients" ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "adacomp" ]
        ]
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "pubtrans" ]
        ]
      ]
@@ -103,7 +103,7 @@
          fhir:Extension.url [ fhir:value "allDay" ];
          fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime" ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -123,7 +123,7 @@
          fhir:Extension.url [ fhir:value "availableEndTime" ];
          fhir:Extension.valueTime [ fhir:value "17:00:00"^^xsd:time ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(111)-222-3333" ];
@@ -148,7 +148,7 @@
      fhir:Location.position.latitude [ fhir:value "15"^^xsd:decimal ]
   ];
   fhir:Location.managingOrganization [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/BigBox>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/BigBox>;
      fhir:Reference.reference [ fhir:value "Organization/BigBox" ]
   ];
   fhir:Location.hoursOfOperation [
@@ -183,15 +183,15 @@
      fhir:Location.hoursOfOperation.closingTime [ fhir:value "17:00:00"^^xsd:time ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/BigBox> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/BigBox> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Location/PharmLoc1.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Location/PharmLoc1.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Location/PharmLoc1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

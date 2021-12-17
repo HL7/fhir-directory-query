@@ -5,12 +5,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDir-PractitionerRole"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole\">PractitionerRole</a><a name=\"PractitionerRole\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element has or is affected by some invariants (practitioner-or-organization-or-healthcareservice-or-location)\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Roles/organizations the practitioner is associated with</span><br/><span style=\"font-weight:bold\">practitioner-or-organization-or-healthcareservice-or-location: </span>If NatlDirPractitionerRole.practitioner is absent  ( NatlDirPractitionerRole.organization, NatlDirPractitionerRole.healthcareservice, NatlDirPractitionerRole.location) must be present</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.meta\">meta</a><a name=\"PractitionerRole.meta\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.meta.lastUpdated\">lastUpdated</a><a name=\"PractitionerRole.meta.lastUpdated\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">When the resource version last changed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.extension\">Slices for extension</a><a name=\"PractitionerRole.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.extension:newpatients\" title=\"Extension URL = http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients\">newpatients</a><a name=\"PractitionerRole.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(Complex)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">New Patients<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-newpatients.html\">http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.extension:network-reference\" title=\"Extension URL = http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference\">network-reference</a><a name=\"PractitionerRole.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Network.html\">National Directory Exchange Network</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NetworkReference<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-network-reference.html\">http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.extension:qualification\" title=\"Extension URL = http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification\">qualification</a><a name=\"PractitionerRole.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(Complex)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Qualification<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-qualification.html\">http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck145.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.extension:qualification.extension:code\" title=\"Slice code\">extension:code</a><a name=\"PractitionerRole.extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1440.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.extension:qualification.extension:code.value[x]\">value[x]</a><a name=\"PractitionerRole.extension.extension.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS.html\">Individual Specialties, Degrees, Licenses, and Certificates</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.identifier\">identifier</a><a name=\"PractitionerRole.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.identifier.type\">type</a><a name=\"PractitionerRole.identifier.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Description of identifier</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.identifier.value\">value</a><a name=\"PractitionerRole.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.active\">active</a><a name=\"PractitionerRole.active\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Whether this practitioner role record is in active use</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.period\">period</a><a name=\"PractitionerRole.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The period during which the practitioner is authorized to perform in these role(s)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.practitioner\">practitioner</a><a name=\"PractitionerRole.practitioner\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Practitioner.html\">National Directory Exchange Practitioner</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Practitioner that is able to provide the defined services for the organization</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.organization\">organization</a><a name=\"PractitionerRole.organization\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Organization.html\">National Directory Exchange Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Organization where the roles are available</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.code\">code</a><a name=\"PractitionerRole.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Roles which this practitioner may perform</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-PractitionerRoleVS.html\">PractitionerRole Code</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.specialty\">specialty</a><a name=\"PractitionerRole.specialty\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specific specialty of the practitioner</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-IndividualAndGroupSpecialtiesVS.html\">Individual and Group Specialties</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.location\">location</a><a name=\"PractitionerRole.location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Location.html\">National Directory Exchange Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The location(s) at which this practitioner provides care</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.healthcareService\">healthcareService</a><a name=\"PractitionerRole.healthcareService\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-HealthcareService.html\">National Directory Exchange HealthcareService</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The list of healthcare services that this worker provides for this role's Organization/Location(s)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.telecom\">telecom</a><a name=\"PractitionerRole.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Contact details that are specific to the role/location/service</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck114.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.telecom.extension:contactpoint-availabletime\" title=\"Extension URL = http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime\">contactpoint-availabletime</a><a name=\"PractitionerRole.telecom.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(Complex)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Contactpoint Availabletime</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-contactpoint-availabletime.html\">http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck114.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.telecom.extension:via-intermediary\" title=\"Extension URL = http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary\">via-intermediary</a><a name=\"PractitionerRole.telecom.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-PractitionerRole.html\">National Directory Exchange PractitionerRole</a> | <a href=\"StructureDefinition-NatlDir-OrganizationAffiliation.html\">National Directory Exchange OrganizationAffiliation</a> | <a href=\"StructureDefinition-NatlDir-Location.html\">National Directory Exchange Location</a> | <a href=\"StructureDefinition-NatlDir-Organization.html\">National Directory Exchange Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Via Intermediary<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-via-intermediary.html\">http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.telecom.system\">system</a><a name=\"PractitionerRole.telecom.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">phone | fax | email | pager | url | sms | other</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.telecom.value\">value</a><a name=\"PractitionerRole.telecom.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The actual contact point details</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.telecom.rank\">rank</a><a name=\"PractitionerRole.telecom.rank\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specify preferred order of use (1 = highest)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.availableTime\">availableTime</a><a name=\"PractitionerRole.availableTime\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Times the Service Site is available</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.availableTime.daysOfWeek\">daysOfWeek</a><a name=\"PractitionerRole.availableTime.daysOfWeek\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">mon | tue | wed | thu | fri | sat | sun</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.availableTime.allDay\">allDay</a><a name=\"PractitionerRole.availableTime.allDay\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Always available? e.g. 24 hour service</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.availableTime.availableStartTime\">availableStartTime</a><a name=\"PractitionerRole.availableTime.availableStartTime\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#time\">time</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Opening time of day (ignored if allDay = true)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.availableTime.availableEndTime\">availableEndTime</a><a name=\"PractitionerRole.availableTime.availableEndTime\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#time\">time</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Closing time of day (ignored if allDay = true)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.notAvailable\">notAvailable</a><a name=\"PractitionerRole.notAvailable\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Not available during this time due to provided reason</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.notAvailable.description\">description</a><a name=\"PractitionerRole.notAvailable.description\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Reason presented to the user explaining why time not available</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.notAvailable.during\">during</a><a name=\"PractitionerRole.notAvailable.during\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Service not available from this date</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole.endpoint\">endpoint</a><a name=\"PractitionerRole.endpoint\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Endpoint.html\">National Directory Exchange Endpoint</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Technical endpoints providing access to services operated for the practitioner with this role</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-PractitionerRole-definitions.html#PractitionerRole\">PractitionerRole</a><a name=\"PractitionerRole\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange//StructureDefinition-NatlDir-PractitionerRole.html\">NatlDirPractitionerRole</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Roles/organizations the practitioner is associated with</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "individual" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirPractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "National Directory Exchange PractitionerRole"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -76,8 +76,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "PractitionerRole"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole";
-     fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+     fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole";
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -165,8 +165,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "If NatlDirPractitionerRole.practitioner is absent  ( NatlDirPractitionerRole.organization, NatlDirPractitionerRole.healthcareservice, NatlDirPractitionerRole.location) must be present" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists())" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -799,7 +799,7 @@
        fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "newpatients" ];
        fhir:ElementDefinition.short [ fhir:value "New Patients" ];
-       fhir:ElementDefinition.definition [ fhir:value "New Patients indicates whether new patients are being accepted in general, or from a specific network.   \r\n              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  \r\n              This provides needed flexibility for specifying whether a provider accepts new patients by location and network." ];
+       fhir:ElementDefinition.definition [ fhir:value "New Patients indicates whether new patients are being accepted in general, or from a specific network.   \n              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  \n              This provides needed flexibility for specifying whether a provider accepts new patients by location and network." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -811,9 +811,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -849,8 +849,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "If no new patients are accepted, no characteristics are allowed" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
@@ -873,9 +873,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -925,9 +925,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/qualification";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/qualification>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1439,8 +1439,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1628,9 +1628,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1896,8 +1896,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/QualificationStatusVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/QualificationStatusVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/QualificationStatusVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/QualificationStatusVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2287,9 +2287,9 @@
          fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2345,7 +2345,7 @@
          ];
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification" ];
+       fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/qualification" ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -3166,9 +3166,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3208,9 +3208,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3270,8 +3270,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/PractitionerRoleVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/PractitionerRoleVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/PractitionerRoleVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/PractitionerRoleVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -3322,8 +3322,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IndividualAndGroupSpecialtiesVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IndividualAndGroupSpecialtiesVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -3356,9 +3356,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3406,9 +3406,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3588,9 +3588,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3637,9 +3637,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -4585,9 +4585,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -4616,326 +4616,15 @@
      fhir:StructureDefinition.differential.element [
        fhir:index 0;
        fhir:Element.id [ fhir:value "PractitionerRole" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole" ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "practitioner-or-organization-or-healthcareservice-or-location" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "If NatlDirPractitionerRole.practitioner is absent  ( NatlDirPractitionerRole.organization, NatlDirPractitionerRole.healthcareservice, NatlDirPractitionerRole.location) must be present" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists())" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole>
-         ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:Element.id [ fhir:value "PractitionerRole.meta.lastUpdated" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.meta.lastUpdated" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
-     ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ]
-     ], [
-       fhir:index 3;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:newpatients" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "newpatients" ];
-       fhir:ElementDefinition.short [ fhir:value "New Patients" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/newpatients>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:network-reference" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "network-reference" ];
-       fhir:ElementDefinition.short [ fhir:value "NetworkReference" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:qualification" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "qualification" ];
-       fhir:ElementDefinition.short [ fhir:value "Qualification" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:qualification.extension:code" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "code" ]
-     ], [
-       fhir:index 7;
-       fhir:Element.id [ fhir:value "PractitionerRole.extension:qualification.extension:code.value[x]" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.extension.extension.value[x]" ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS>
-         ]
-       ]
-     ], [
-       fhir:index 8;
-       fhir:Element.id [ fhir:value "PractitionerRole.identifier.type" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.identifier.type" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
-       fhir:Element.id [ fhir:value "PractitionerRole.identifier.value" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.identifier.value" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.id [ fhir:value "PractitionerRole.active" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.active" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 11;
-       fhir:Element.id [ fhir:value "PractitionerRole.period" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.period" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 12;
-       fhir:Element.id [ fhir:value "PractitionerRole.practitioner" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.practitioner" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 13;
-       fhir:Element.id [ fhir:value "PractitionerRole.organization" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.organization" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
-       fhir:Element.id [ fhir:value "PractitionerRole.code" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.code" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/PractitionerRoleVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/PractitionerRoleVS>
-         ]
-       ]
-     ], [
-       fhir:index 15;
-       fhir:Element.id [ fhir:value "PractitionerRole.specialty" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.specialty" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS>
-         ]
-       ]
-     ], [
-       fhir:index 16;
-       fhir:Element.id [ fhir:value "PractitionerRole.location" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.location" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 17;
-       fhir:Element.id [ fhir:value "PractitionerRole.healthcareService" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.healthcareService" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 18;
-       fhir:Element.id [ fhir:value "PractitionerRole.telecom" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.telecom" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 19;
-       fhir:Element.id [ fhir:value "PractitionerRole.telecom.extension:contactpoint-availabletime" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.telecom.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "contactpoint-availabletime" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 20;
-       fhir:Element.id [ fhir:value "PractitionerRole.telecom.extension:via-intermediary" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.telecom.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "via-intermediary" ];
-       fhir:ElementDefinition.short [ fhir:value "Via Intermediary" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/via-intermediary>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 21;
-       fhir:Element.id [ fhir:value "PractitionerRole.telecom.system" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.telecom.system" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 22;
-       fhir:Element.id [ fhir:value "PractitionerRole.telecom.value" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.telecom.value" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 23;
-       fhir:Element.id [ fhir:value "PractitionerRole.telecom.rank" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.telecom.rank" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 24;
-       fhir:Element.id [ fhir:value "PractitionerRole.availableTime" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.availableTime" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 25;
-       fhir:Element.id [ fhir:value "PractitionerRole.availableTime.daysOfWeek" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.availableTime.daysOfWeek" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 26;
-       fhir:Element.id [ fhir:value "PractitionerRole.availableTime.allDay" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.availableTime.allDay" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 27;
-       fhir:Element.id [ fhir:value "PractitionerRole.availableTime.availableStartTime" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.availableTime.availableStartTime" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 28;
-       fhir:Element.id [ fhir:value "PractitionerRole.availableTime.availableEndTime" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.availableTime.availableEndTime" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 29;
-       fhir:Element.id [ fhir:value "PractitionerRole.notAvailable" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.notAvailable" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 30;
-       fhir:Element.id [ fhir:value "PractitionerRole.notAvailable.description" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.notAvailable.description" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 31;
-       fhir:Element.id [ fhir:value "PractitionerRole.notAvailable.during" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.notAvailable.during" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 32;
-       fhir:Element.id [ fhir:value "PractitionerRole.endpoint" ];
-       fhir:ElementDefinition.path [ fhir:value "PractitionerRole.endpoint" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       fhir:ElementDefinition.path [ fhir:value "PractitionerRole" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole.ttl> .
 
 # -------------------------------------------------------------------------------------
 

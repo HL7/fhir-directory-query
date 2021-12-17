@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "TrustFrameworkTypeCS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DirectTrust<a name=\"TrustFrameworkTypeCS-DirectTrust\"> </a></td><td>Direct Trust</td></tr><tr><td style=\"white-space:nowrap\">CareQuality<a name=\"TrustFrameworkTypeCS-CareQuality\"> </a></td><td>Carequality</td></tr><tr><td style=\"white-space:nowrap\">Commonwell<a name=\"TrustFrameworkTypeCS-Commonwell\"> </a></td><td>Commonwell</td></tr><tr><td style=\"white-space:nowrap\">TEFCA<a name=\"TrustFrameworkTypeCS-TEFCA\"> </a></td><td>TEFCA</td></tr><tr><td style=\"white-space:nowrap\">PayerToPayer<a name=\"TrustFrameworkTypeCS-PayerToPayer\"> </a></td><td>Payer to Payer Trust Network</td></tr><tr><td style=\"white-space:nowrap\">Exchange<a name=\"TrustFrameworkTypeCS-Exchange\"> </a></td><td>Exchange Required by Federal Regulations</td></tr><tr><td style=\"white-space:nowrap\">PCDH<a name=\"TrustFrameworkTypeCS-PCDH\"> </a></td><td>Patient Centered Data Home</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DirectTrust<a name=\"TrustFrameworkTypeCS-DirectTrust\"> </a></td><td>Direct Trust</td></tr><tr><td style=\"white-space:nowrap\">CareQuality<a name=\"TrustFrameworkTypeCS-CareQuality\"> </a></td><td>Carequality</td></tr><tr><td style=\"white-space:nowrap\">Commonwell<a name=\"TrustFrameworkTypeCS-Commonwell\"> </a></td><td>Commonwell</td></tr><tr><td style=\"white-space:nowrap\">TEFCA<a name=\"TrustFrameworkTypeCS-TEFCA\"> </a></td><td>TEFCA</td></tr><tr><td style=\"white-space:nowrap\">PayerToPayer<a name=\"TrustFrameworkTypeCS-PayerToPayer\"> </a></td><td>Payer to Payer Trust Network</td></tr><tr><td style=\"white-space:nowrap\">Exchange<a name=\"TrustFrameworkTypeCS-Exchange\"> </a></td><td>Exchange Required by Federal Regulations</td></tr><tr><td style=\"white-space:nowrap\">PCDH<a name=\"TrustFrameworkTypeCS-PCDH\"> </a></td><td>Patient Centered Data Home</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS"];
   fhir:CodeSystem.version [ fhir:value "0.0.1"];
   fhir:CodeSystem.name [ fhir:value "TrustFrameworkTypeCS"];
   fhir:CodeSystem.title [ fhir:value "Trust FrameworkType"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -75,9 +75,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

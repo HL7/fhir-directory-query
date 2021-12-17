@@ -10,11 +10,11 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.us.onc-fast-NatlDirQry
-canonical: http://hl7.org/fhir/us/national-directory-query
+id: hl7.fhir.us.fhir-directory-query
+canonical: http://hl7.org/fhir/us/fhir-directory-query
 version: 0.0.1
 name: ONC FAST National Directory Endpoint Query
-title: National Directory Endpoint Query
+title: National Healthcare Directory Endpoint Query
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
@@ -25,11 +25,11 @@ jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-   hl7.fhir.us.core: 4.0.0
-  #hl7.fhir.us.onc-fast-NatlDir:
-   # id: natl-dir
-   # uri: http://hl7.org/fhir/us/national-directory
-   # version: 0.0.1
+  hl7.fhir.us.core: 4.0.0
+  hl7.fhir.us.fhir-directory-exchange:
+    id: nationalDirectory
+    uri: https://build.fhir.org/ig/HL7/fhir-directory-exchange/
+    version: current
 
 parameters:
   show-inherited-invariants: false
@@ -51,6 +51,7 @@ menu:
     Technical Guidance: technical-guidance.html
     Bulk Data and Subscriptions:          bulk-data.html
   Search Parameters   : searchparameters.html
+  Profiles: profiles.html
   Capability Statement: 
     Conformance Requirements  : CapabilityStatement-NatlDir.html
   Examples      : examples.html

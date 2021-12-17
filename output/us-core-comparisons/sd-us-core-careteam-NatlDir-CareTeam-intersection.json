@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "331c98fd-4abd-4a00-8b8d-fc4dea9c7201-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/331c98fd-4abd-4a00-8b8d-fc4dea9c7201-3",
+  "id" : "e970e8b0-5119-4727-9e78-94a26cc68f3d-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e970e8b0-5119-4727-9e78-94a26cc68f3d-3",
   "name" : "IntersectionUSCoreCareTeamAndNatlDirCareTeam",
   "title" : "Intersection of US Core CareTeam Profile And National Directory Care Team",
   "status" : "active",
-  "date" : "2021-12-16T11:07:20-05:00",
+  "date" : "2021-12-17T13:55:02-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -579,7 +579,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1111,7 +1111,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1469,11 +1469,11 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner"]
       },
       {
         "code" : "string",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner"]
       }],
       "constraint" : [{
         "key" : "ele-1",

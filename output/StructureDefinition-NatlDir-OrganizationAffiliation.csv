@@ -50,7 +50,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"OrganizationAffiliation.extension","qualification","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/qualification]]} {[]}
+"OrganizationAffiliation.extension","qualification","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/qualification]]} {[]}
 ","Qualification","An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -94,25 +94,25 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "OrganizationAffiliation.period","","","",0,1,"Y","","Y","Period {[]} {[]}
 ","The period during which the participatingOrganization is affiliated with the primary organization","The period during which the participatingOrganization is affiliated with the primary organization.","","An affiliation may be created ahead of time and only be active for a defined period of time. Once the affiliation is complete, the fact that it existed may still be required.","","","","","","","",,,,,"",,,,"OrganizationAffiliation.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".performance[@typeCode <= 'PPRF'].ActDefinitionOrEvent.effectiveTime","FiveWs.done[x]"
-"OrganizationAffiliation.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization]]}
+"OrganizationAffiliation.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
 ","Organization where the role is available","Organization where the role is available (primary organization/has members).","","","","","","","","","",,,,,"",,,,"OrganizationAffiliation.organization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"
-"OrganizationAffiliation.participatingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization]]}
+"OrganizationAffiliation.participatingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
 ","Organization that provides/performs the role (e.g. providing services or is a member of)","The Participating Organization provides/performs the role(s) defined by the code to the Primary Organization (e.g. providing services or is a member of).","","","","","","","","","",,,,,"",,,,"OrganizationAffiliation.participatingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player"
-"OrganizationAffiliation.network","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network]]}
+"OrganizationAffiliation.network","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network]]}
 ","Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined)","Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined).","","","","","","","","","",,,,,"",,,,"OrganizationAffiliation.network",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "OrganizationAffiliation.code","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Definition of the role the participatingOrganization plays","Definition of the role the participatingOrganization plays in the association.","","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/national-directory-query/ValueSet/OrganizationAffiliationRoleVS","",,,,"OrganizationAffiliation.code",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Definition of the role the participatingOrganization plays","Definition of the role the participatingOrganization plays in the association.","","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/OrganizationAffiliationRoleVS","",,,,"OrganizationAffiliation.code",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code"
 "OrganizationAffiliation.specialty","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Specific specialty of the participatingOrganization in the context of the role","Specific specialty of the participatingOrganization in the context of the role.","","","","","","","","","",,"required","","http://hl7.org/fhir/us/national-directory-query/ValueSet/SpecialtiesVS","",,,,"OrganizationAffiliation.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specific specialty of the participatingOrganization in the context of the role","Specific specialty of the participatingOrganization in the context of the role.","","","","","","","","","",,"required","","http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/SpecialtiesVS","",,,,"OrganizationAffiliation.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player.HealthCareProvider[@classCode = 'PROV'].code"
-"OrganizationAffiliation.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location]]}
+"OrganizationAffiliation.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
 ","The location(s) at which the role occurs","The location(s) at which the role occurs.","","","","","","","","","",,,,,"",,,,"OrganizationAffiliation.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".performance.ActDefinitionOrEvent.ServiceDeliveryLocation[@classCode = 'SDLOC']","FiveWs.where[x]"
-"OrganizationAffiliation.healthcareService","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-HealthcareService]]}
+"OrganizationAffiliation.healthcareService","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService]]}
 ","Healthcare services provided through the role","Healthcare services provided through the role.","","","","","","","","","",,,,,"",,,,"OrganizationAffiliation.healthcareService",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player.QualifiedEntity[@classCode = 'QUAL'].code"
 "OrganizationAffiliation.telecom","","","",0,*,"Y","","Y","ContactPoint {[]} {[]}
@@ -141,6 +141,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "OrganizationAffiliation.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]"
-"OrganizationAffiliation.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint]]}
+"OrganizationAffiliation.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint]]}
 ","Technical endpoints providing access to services operated for this role","Technical endpoints providing access to services operated for this role.","","","","","","","","","",,,,,"",,,,"OrganizationAffiliation.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"

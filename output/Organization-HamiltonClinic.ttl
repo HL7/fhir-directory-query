@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/HamiltonClinic> a fhir:Organization;
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/HamiltonClinic> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HamiltonClinic"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI78</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span></p><p><b>name</b>: Hamilton Clinic</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.hartfordgeneralhospital.com\">https://www.hartfordgeneralhospital.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><p><b>partOf</b>: <a href=\"Organization-Hospital.html\">Generated Summary: language: en-US; id: NPI456; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI78</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span></p><p><b>name</b>: Hamilton Clinic</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.hartfordgeneralhospital.com\">https://www.hartfordgeneralhospital.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><p><b>partOf</b>: <a href=\"Organization-Hospital.html\">Generated Summary: language: en-US; id: NPI456; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -31,7 +31,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS" ];
        fhir:Coding.code [ fhir:value "fac" ];
        fhir:Coding.display [ fhir:value "Facility" ]
      ]
@@ -59,7 +59,7 @@
      fhir:Address.postalCode [ fhir:value "00014-1234" ]
   ];
   fhir:Organization.partOf [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/Hospital>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/Hospital>;
      fhir:Reference.reference [ fhir:value "Organization/Hospital" ]
   ];
   fhir:Organization.contact [
@@ -72,13 +72,13 @@
      ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/Hospital> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/Hospital> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/HamiltonClinic.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/HamiltonClinic.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Organization/HamiltonClinic.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Organization/HamiltonClinic.ttl> .
 
 # -------------------------------------------------------------------------------------
 

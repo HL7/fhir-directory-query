@@ -5,39 +5,39 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Location/HospLoc2> a fhir:Location;
+<http://hl7.org/fhir/us/fhir-directory-query/Location/HospLoc2> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HospLoc2"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS adacomp}\">ADA compliant</span></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS pubtrans}\">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: Hartford Hospital Location 2</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.hgh.com\">https://www.hgh.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>3</td><td>15</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-Hospital.html\">Generated Summary: language: en-US; id: NPI456; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS adacomp}\">ADA compliant</span></p><p><b>Accessibility</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS pubtrans}\">public transit options</span></p><p><b>status</b>: active</p><p><b>name</b>: Hartford Hospital Location 2</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.hgh.com\">https://www.hgh.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>3</td><td>15</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-Hospital.html\">Generated Summary: language: en-US; id: NPI456; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "adacomp" ]
        ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "pubtrans" ]
        ]
      ]
@@ -89,7 +89,7 @@
          fhir:Extension.url [ fhir:value "daysOfWeek" ];
          fhir:Extension.valueCode [ fhir:value "sun" ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(111)-222-3333" ];
@@ -114,7 +114,7 @@
      fhir:Location.position.latitude [ fhir:value "15"^^xsd:decimal ]
   ];
   fhir:Location.managingOrganization [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/Hospital>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/Hospital>;
      fhir:Reference.reference [ fhir:value "Organization/Hospital" ]
   ];
   fhir:Location.hoursOfOperation [
@@ -144,13 +144,13 @@
      fhir:Location.hoursOfOperation.allDay [ fhir:value "true"^^xsd:boolean ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/Hospital> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/Hospital> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Location/HospLoc2.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Location/HospLoc2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Location/HospLoc2.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Location/HospLoc2.ttl> .
 
 # -------------------------------------------------------------------------------------
 

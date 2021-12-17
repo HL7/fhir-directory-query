@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="TrustFrameworkTypeVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-TrustFrameworkTypeCS.html"><code>http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-TrustFrameworkTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS</code></a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory-query/ValueSet/TrustFrameworkTypeVS"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/TrustFrameworkTypeVS"/>
   <version value="0.0.1"/>
   <name value="TrustFrameworkTypeVS"/>
   <title value="Trust Framework Type"/>
   <status value="active"/>
-  <date value="2021-12-16T11:05:58-05:00"/>
+  <date value="2021-12-17T13:53:37-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/TrustFrameworkTypeCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS"/>
     </include>
   </compose>
 </ValueSet>

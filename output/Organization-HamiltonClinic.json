@@ -4,13 +4,13 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+      "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
     ]
   },
   "language": "en-US",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI78</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span></p><p><b>name</b>: Hamilton Clinic</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.hartfordgeneralhospital.com\">https://www.hartfordgeneralhospital.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><p><b>partOf</b>: <a href=\"Organization-Hospital.html\">Generated Summary: language: en-US; id: NPI456; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NPI78</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span></p><p><b>name</b>: Hamilton Clinic</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.hartfordgeneralhospital.com\">https://www.hartfordgeneralhospital.com</a></p><p><b>address</b>: 123 Main Street Anytown CT 00014-1234 </p><p><b>partOf</b>: <a href=\"Organization-Hospital.html\">Generated Summary: language: en-US; id: NPI456; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS fac}\">Facility</span>; name: Hartford General Hospital; Phone: (111)-222-3333, https://www.hartfordgeneralhos...</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>"
   },
   "identifier": [
     {
@@ -23,7 +23,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS",
+          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS",
           "code": "fac",
           "display": "Facility"
         }

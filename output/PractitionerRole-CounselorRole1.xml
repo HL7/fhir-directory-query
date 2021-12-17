@@ -4,13 +4,13 @@
   <id value="CounselorRole1"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
   </meta>
   <language value="en-US"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>Network Reference</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-Counselor.html">Generated Summary: language: en-US; id: NPI3238; active: true; Susie Smith, LPC; <span title="Codes: {urn:ietf:bcp:47 ru}">Russian</span></a></p><p><b>code</b>: <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS co}">Counselor</span></p><p><b>specialty</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 101YP2500X}">Professional Counselor</span></p><p><b>healthcareService</b>: <a href="HealthcareService-VirtualCounselService.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS prov}">Medical Provider</span>; <span title="Codes: {http://nucc.org/provider-taxonomy 101YP2500X}">Professional</span></a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><p><b>Network Reference</b>: <a href="Organization-AcmeofCTStdNet.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}">Network</span>; name: ACME CT Preferred Provider Network</a></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-Counselor.html">Generated Summary: language: en-US; id: NPI3238; active: true; Susie Smith, LPC; <span title="Codes: {urn:ietf:bcp:47 ru}">Russian</span></a></p><p><b>code</b>: <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS co}">Counselor</span></p><p><b>specialty</b>: <span title="Codes: {http://nucc.org/provider-taxonomy 101YP2500X}">Professional Counselor</span></p><p><b>healthcareService</b>: <a href="HealthcareService-VirtualCounselService.html">Generated Summary: language: en-US; active: true; <span title="Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS prov}">Medical Provider</span>; <span title="Codes: {http://nucc.org/provider-taxonomy 101YP2500X}">Professional</span></a></p></div>
   </text>
-  <extension url="http://hl7.org/fhir/us/national-directory-query/StructureDefinition/network-reference">
+  <extension url="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference">
     <valueReference>
       <reference value="Organization/AcmeofCTStdNet"/>
     </valueReference>
@@ -21,7 +21,7 @@
   </practitioner>
   <code>
     <coding>
-      <system value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/ProviderRoleCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS"/>
       <code value="co"/>
       <display value="Counselor"/>
     </coding>

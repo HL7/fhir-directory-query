@@ -3,14 +3,14 @@
   "id": "EndpointPayloadTypeCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"EndpointPayloadTypeCS-NA\"> </a></td><td>Not Applicable</td><td>Not Applicable</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"EndpointPayloadTypeCS-NA\"> </a></td><td>Not Applicable</td><td>Not Applicable</td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS",
+  "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS",
   "version": "0.0.1",
   "name": "EndpointPayloadTypeCS",
   "title": "Endpoint Payload Types",
   "status": "active",
-  "date": "2021-12-16T11:05:58-05:00",
+  "date": "2021-12-17T13:53:37-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

@@ -58,15 +58,14 @@ Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/Code
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 
 
-Alias: $NatlDirectoryCareTeam =	http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan
-/*
+Alias: $NatlDirectoryCareTeam =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-CareTeam
+
 Alias: $NatlDirectoryEndPoint =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint
 Alias: $NatlDirectoryHealthCareService =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService
 Alias: $NatlDirectoryInsurancePlan = http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan
 Alias: $NatlDirectoryLocation =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location
 Alias: $NatlDirectoryNetwork =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network
 Alias: $NatlDirectoryOrganization =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization
-Alias: $NatlDirectoryOrganizationAfflication =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization-Affiliation
+Alias: $NatlDirectoryOrganizationAfflication =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation
 Alias: $NatlDirectoryPractitioner =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner
 Alias: $NatlDirectoryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole
-*/

@@ -5,29 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Practitioner/HansSolo> a fhir:Practitioner;
+<http://hl7.org/fhir/us/fhir-directory-query/Practitioner/HansSolo> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HansSolo"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Practitioner>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Communication Proficiency</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS 30}\">General professional proficiency</span></p><p><b>identifier</b>: id: NPI3233</p><p><b>active</b>: true</p><p><b>name</b>: Hans Solo, MD</p><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title=\"Codes: {https://www.usps.com/ IL}\">Illinois</span></p></blockquote><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0360 MD}\">MD</span></p><p><b>issuer</b>: <span>State of Illinois</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title=\"Codes: {https://www.usps.com/ IL}\">Illinois</span></p></blockquote><p><b>code</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 207R00000X}\">Board Certified Internal Medicine</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title=\"Codes: {https://www.usps.com/ IL}\">Illinois</span></p></blockquote><p><b>code</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 207RC0000X}\">Board Certified Cardiovascular Disease</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><p><b>communication</b>: <span title=\"Codes: {urn:ietf:bcp:47 ja}\">Japanese</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>Communication Proficiency</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS 30}\">General professional proficiency</span></p><p><b>identifier</b>: id: NPI3233</p><p><b>active</b>: true</p><p><b>name</b>: Hans Solo, MD</p><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title=\"Codes: {https://www.usps.com/ IL}\">Illinois</span></p></blockquote><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0360 MD}\">MD</span></p><p><b>issuer</b>: <span>State of Illinois</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title=\"Codes: {https://www.usps.com/ IL}\">Illinois</span></p></blockquote><p><b>code</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 207R00000X}\">Board Certified Internal Medicine</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: <span title=\"Codes: {https://www.usps.com/ IL}\">Illinois</span></p></blockquote><p><b>code</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 207RC0000X}\">Board Certified Cardiovascular Disease</span></p><p><b>issuer</b>: <span>American Board of Internal Medicine</span></p></blockquote><p><b>communication</b>: <span title=\"Codes: {urn:ietf:bcp:47 ja}\">Japanese</span></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/communication-proficiency" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/LanguageProficiencyCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS" ];
          fhir:Coding.code [ fhir:value "30" ]
        ]
      ]
@@ -66,7 +66,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -98,7 +98,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -131,7 +131,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -157,9 +157,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/Practitioner/HansSolo.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/Practitioner/HansSolo.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/Practitioner/HansSolo.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/Practitioner/HansSolo.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointTypeCS> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "EndpointTypeCS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FHIR<a name=\"EndpointTypeCS-FHIR\"> </a></td><td>FHIR Server</td></tr><tr><td style=\"white-space:nowrap\">OpEndpoint<a name=\"EndpointTypeCS-OpEndpoint\"> </a></td><td>Operation Endpoint</td></tr><tr><td style=\"white-space:nowrap\">CDS<a name=\"EndpointTypeCS-CDS\"> </a></td><td>CDS Hooks</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FHIR<a name=\"EndpointTypeCS-FHIR\"> </a></td><td>FHIR Server</td></tr><tr><td style=\"white-space:nowrap\">OpEndpoint<a name=\"EndpointTypeCS-OpEndpoint\"> </a></td><td>Operation Endpoint</td></tr><tr><td style=\"white-space:nowrap\">CDS<a name=\"EndpointTypeCS-CDS\"> </a></td><td>CDS Hooks</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointTypeCS"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS"];
   fhir:CodeSystem.version [ fhir:value "0.0.1"];
   fhir:CodeSystem.name [ fhir:value "EndpointTypeCS"];
   fhir:CodeSystem.title [ fhir:value "IG Type"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -59,9 +59,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointTypeCS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/CodeSystem/EndpointTypeCS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CodeSystem/EndpointTypeCS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

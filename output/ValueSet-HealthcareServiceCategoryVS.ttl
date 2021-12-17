@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceCategoryVS> a fhir:ValueSet;
+<http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HealthcareServiceCategoryVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-HealthcareServiceCategoryCS.html\"><code>http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-HealthcareServiceCategoryCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceCategoryVS"];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS"];
   fhir:ValueSet.version [ fhir:value "0.0.1"];
   fhir:ValueSet.name [ fhir:value "HealthcareServiceCategoryVS"];
   fhir:ValueSet.title [ fhir:value "Healthcare Service Category"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -44,15 +44,15 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/HealthcareServiceCategoryCS" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/ValueSet/HealthcareServiceCategoryVS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/ValueSet/HealthcareServiceCategoryVS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

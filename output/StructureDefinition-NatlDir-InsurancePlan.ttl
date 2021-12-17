@@ -5,12 +5,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDir-InsurancePlan"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan\">InsurancePlan</a><a name=\"InsurancePlan\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element has or is affected by some invariants (network-or-NatlDirwork, plan-type-is-distinct)\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/insuranceplan.html\">InsurancePlan</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of a Health Insurance product/plan provided by an organization</span><br/><span style=\"font-weight:bold\">network-or-NatlDirwork: </span>If an insuranceplan does not define a network, then each plan must define one<br/><span style=\"font-weight:bold\">plan-type-is-distinct: </span>Each InsurancePlan.plan should have a distinct plan.type.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.meta\">meta</a><a name=\"InsurancePlan.meta\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.meta.lastUpdated\">lastUpdated</a><a name=\"InsurancePlan.meta.lastUpdated\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">When the resource version last changed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.identifier\">identifier</a><a name=\"InsurancePlan.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.identifier.type\">type</a><a name=\"InsurancePlan.identifier.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Description of identifier</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.identifier.value\">value</a><a name=\"InsurancePlan.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.identifier.assigner\">assigner</a><a name=\"InsurancePlan.identifier.assigner\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Organization that issued id (may be just text)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.status\">status</a><a name=\"InsurancePlan.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">draft | active | retired | unknown</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">active</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.type\">type</a><a name=\"InsurancePlan.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product Type<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-InsuranceProductTypeVS.html\">Insurance Product Type</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.name\">name</a><a name=\"InsurancePlan.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Official name</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.alias\">alias</a><a name=\"InsurancePlan.alias\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Alternate names</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.period\">period</a><a name=\"InsurancePlan.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">When the product is available</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.ownedBy\">ownedBy</a><a name=\"InsurancePlan.ownedBy\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Organization.html\">National Directory Exchange Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Plan issuer</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.administeredBy\">administeredBy</a><a name=\"InsurancePlan.administeredBy\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Organization.html\">National Directory Exchange Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Product administrator</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.coverageArea\">coverageArea</a><a name=\"InsurancePlan.coverageArea\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Location.html\">National Directory Exchange Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Where product applies</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.contact\">contact</a><a name=\"InsurancePlan.contact\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Contact for the product</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.contact.name\">name</a><a name=\"InsurancePlan.contact.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A name associated with the contact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.contact.name.text\">text</a><a name=\"InsurancePlan.contact.name.text\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Text representation of the full name</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.contact.telecom\">telecom</a><a name=\"InsurancePlan.contact.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Contact details (telephone, email, etc.)  for a contact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.contact.telecom.system\">system</a><a name=\"InsurancePlan.contact.telecom.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">phone | fax | email | pager | url | sms | other</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.contact.telecom.value\">value</a><a name=\"InsurancePlan.contact.telecom.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The actual contact point details</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.endpoint\">endpoint</a><a name=\"InsurancePlan.endpoint\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Endpoint.html\">National Directory Exchange Endpoint</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Technical endpoint</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.network\">network</a><a name=\"InsurancePlan.network\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Network.html\">National Directory Exchange Network</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What networks are Included</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.plan\">plan</a><a name=\"InsurancePlan.plan\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Cost sharing details for the plan</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.plan.type\">type</a><a name=\"InsurancePlan.plan.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Categorization of the cost sharing for the plan<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-InsurancePlanTypeVS.html\">Insurance Plan Type</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.plan.coverageArea\">coverageArea</a><a name=\"InsurancePlan.plan.coverageArea\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Location.html\">National Directory Exchange Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Where product applies</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan.plan.network\">network</a><a name=\"InsurancePlan.plan.network\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-NatlDir-Network.html\">National Directory Exchange Network</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What networks provide coverage</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NatlDir-InsurancePlan-definitions.html#InsurancePlan\">InsurancePlan</a><a name=\"InsurancePlan\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange//StructureDefinition-NatlDir-InsurancePlan.html\">NatlDirInsurancePlan</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of a Health Insurance product/plan provided by an organization</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirInsurancePlan"];
   fhir:StructureDefinition.title [ fhir:value "National Directory Exchange InsurancePlan"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-16T11:05:58-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-17T13:53:37-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -41,7 +41,7 @@
        fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\r\n\r\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."];
+  fhir:StructureDefinition.description [ fhir:value "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits)."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -66,8 +66,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "InsurancePlan"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://hl7.org/fhir/StructureDefinition/InsurancePlan";
-     fhir:link <http://hl7.org/fhir/StructureDefinition/InsurancePlan>
+     fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan";
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -166,8 +166,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "If an insuranceplan does not define a network, then each plan must define one" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "network.exists() or plan.network.exists.allTrue()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan>
          ]
        ], [
          fhir:index 7;
@@ -176,8 +176,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "Each InsurancePlan.plan should have a distinct plan.type." ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "plan.type.coding.code.isDistinct()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -1404,8 +1404,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/InsuranceProductTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/InsuranceProductTypeVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/InsuranceProductTypeVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/InsuranceProductTypeVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1551,9 +1551,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1588,9 +1588,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1625,9 +1625,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2797,9 +2797,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2840,9 +2840,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3850,8 +3850,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/InsurancePlanTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/InsurancePlanTypeVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/InsurancePlanTypeVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/InsurancePlanTypeVS>
          ]
        ]
      ], [
@@ -3871,9 +3871,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3909,9 +3909,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -4978,240 +4978,15 @@
      fhir:StructureDefinition.differential.element [
        fhir:index 0;
        fhir:Element.id [ fhir:value "InsurancePlan" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan" ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "network-or-NatlDirwork" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "If an insuranceplan does not define a network, then each plan must define one" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "network.exists() or plan.network.exists.allTrue()" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "plan-type-is-distinct" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Each InsurancePlan.plan should have a distinct plan.type." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "plan.type.coding.code.isDistinct()" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan>
-         ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:Element.id [ fhir:value "InsurancePlan.meta.lastUpdated" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.meta.lastUpdated" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
-     ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "InsurancePlan.identifier.type" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.identifier.type" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 3;
-       fhir:Element.id [ fhir:value "InsurancePlan.identifier.value" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.identifier.value" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "InsurancePlan.identifier.assigner" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.identifier.assigner" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
-       fhir:Element.id [ fhir:value "InsurancePlan.status" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.status" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.fixedCode [ fhir:value "active" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.id [ fhir:value "InsurancePlan.type" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.type" ];
-       fhir:ElementDefinition.short [ fhir:value "Product Type" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/InsuranceProductTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/InsuranceProductTypeVS>
-         ]
-       ]
-     ], [
-       fhir:index 7;
-       fhir:Element.id [ fhir:value "InsurancePlan.name" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.name" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.id [ fhir:value "InsurancePlan.alias" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.alias" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
-       fhir:Element.id [ fhir:value "InsurancePlan.period" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.period" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.id [ fhir:value "InsurancePlan.ownedBy" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.ownedBy" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 11;
-       fhir:Element.id [ fhir:value "InsurancePlan.administeredBy" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.administeredBy" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 12;
-       fhir:Element.id [ fhir:value "InsurancePlan.coverageArea" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.coverageArea" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 13;
-       fhir:Element.id [ fhir:value "InsurancePlan.contact" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.contact" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
-       fhir:Element.id [ fhir:value "InsurancePlan.contact.name" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.contact.name" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
-       fhir:Element.id [ fhir:value "InsurancePlan.contact.name.text" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.contact.name.text" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 16;
-       fhir:Element.id [ fhir:value "InsurancePlan.contact.telecom" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.contact.telecom" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 17;
-       fhir:Element.id [ fhir:value "InsurancePlan.contact.telecom.system" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.contact.telecom.system" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 18;
-       fhir:Element.id [ fhir:value "InsurancePlan.contact.telecom.value" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.contact.telecom.value" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 19;
-       fhir:Element.id [ fhir:value "InsurancePlan.endpoint" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.endpoint" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Endpoint>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 20;
-       fhir:Element.id [ fhir:value "InsurancePlan.network" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.network" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 21;
-       fhir:Element.id [ fhir:value "InsurancePlan.plan" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.plan" ];
-       fhir:ElementDefinition.short [ fhir:value "Cost sharing details for the plan" ]
-     ], [
-       fhir:index 22;
-       fhir:Element.id [ fhir:value "InsurancePlan.plan.type" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.plan.type" ];
-       fhir:ElementDefinition.short [ fhir:value "Categorization of the cost sharing for the plan" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/ValueSet/InsurancePlanTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/ValueSet/InsurancePlanTypeVS>
-         ]
-       ]
-     ], [
-       fhir:index 23;
-       fhir:Element.id [ fhir:value "InsurancePlan.plan.coverageArea" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.plan.coverageArea" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Location>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 24;
-       fhir:Element.id [ fhir:value "InsurancePlan.plan.network" ];
-       fhir:ElementDefinition.path [ fhir:value "InsurancePlan.plan.network" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Network>
-         ]
-       ]
+       fhir:ElementDefinition.path [ fhir:value "InsurancePlan" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan.ttl> .
 
 # -------------------------------------------------------------------------------------
 

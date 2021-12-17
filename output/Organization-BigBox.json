@@ -4,20 +4,20 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-Organization"
+      "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"
     ]
   },
   "language": "en-US",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS bus}\">Non-Healthcare Business</span></p><p><b>name</b>: Big Box Retailer</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.bixboxretailer.com\">https://www.bixboxretailer.com</a></p><p><b>address</b>: 456 Main Street Norwalk CT 00014-1234 </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS bus}\">Non-Healthcare Business</span></p><p><b>name</b>: Big Box Retailer</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.bixboxretailer.com\">https://www.bixboxretailer.com</a></p><p><b>address</b>: 456 Main Street Norwalk CT 00014-1234 </p></div>"
   },
   "active": true,
   "type": [
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS",
+          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS",
           "code": "bus",
           "display": "Non-Healthcare Business"
         }
@@ -59,7 +59,7 @@
               "valueTime": "17:00:00"
             }
           ],
-          "url": "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/contactpoint-availabletime"
+          "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime"
         }
       ],
       "system": "phone",

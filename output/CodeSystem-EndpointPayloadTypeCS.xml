@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="EndpointPayloadTypeCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">NA<a name="EndpointPayloadTypeCS-NA"> </a></td><td>Not Applicable</td><td>Not Applicable</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">NA<a name="EndpointPayloadTypeCS-NA"> </a></td><td>Not Applicable</td><td>Not Applicable</td></tr></table></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS"/>
   <version value="0.0.1"/>
   <name value="EndpointPayloadTypeCS"/>
   <title value="Endpoint Payload Types"/>
   <status value="active"/>
-  <date value="2021-12-16T11:05:58-05:00"/>
+  <date value="2021-12-17T13:53:37-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

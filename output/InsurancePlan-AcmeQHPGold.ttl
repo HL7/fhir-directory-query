@@ -5,58 +5,58 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/InsurancePlan/AcmeQHPGold> a fhir:InsurancePlan;
+<http://hl7.org/fhir/us/fhir-directory-query/InsurancePlan/AcmeQHPGold> a fhir:InsurancePlan;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AcmeQHPGold"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/national-directory-query/StructureDefinition/NatlDir-InsurancePlan>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsuranceProductTypeCS qhp}\">Qualified Health Plan</span></p><p><b>name</b>: Acme of CT QHP Gold</p><p><b>ownedBy</b>: <a href=\"Organization-Acme.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><p><b>administeredBy</b>: <a href=\"Organization-Acme.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><p><b>coverageArea</b>: <a href=\"Location-StateOfCTLocation.html\">Generated Summary: language: en-US; status: active; name: State of CT Area</a></p><p><b>endpoint</b>: <a href=\"Endpoint-AcmeOfCTPortalEndpoint.html\">Generated Summary: language: en-US; status: active; <span title=\"{http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointConnectionTypeCS rest-non-fhir}\">REST (not FHIR)</span>; name: Endpoint for Acme of CT Portal; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/EndpointPayloadTypeCS NA}\">Not Applicable</span>; address: https://urlofportal.acmect.com</a></p><p><b>network</b>: </p><ul><li><a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></li><li><a href=\"Organization-AcmeofCTPremNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Premium Preferred Provider Network</a></li></ul><h3>Plans</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsurancePlanTypeCS gold}\">Gold-QHP</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsuranceProductTypeCS qhp}\">Qualified Health Plan</span></p><p><b>name</b>: Acme of CT QHP Gold</p><p><b>ownedBy</b>: <a href=\"Organization-Acme.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><p><b>administeredBy</b>: <a href=\"Organization-Acme.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS payer}\">Payer</span>; name: Acme of CT; Phone: (111)-222-3333, https://www.acmeofct.com</a></p><p><b>coverageArea</b>: <a href=\"Location-StateOfCTLocation.html\">Generated Summary: language: en-US; status: active; name: State of CT Area</a></p><p><b>endpoint</b>: <a href=\"Endpoint-AcmeOfCTPortalEndpoint.html\">Generated Summary: language: en-US; status: active; <span title=\"{http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS rest-non-fhir}\">REST (not FHIR)</span>; name: Endpoint for Acme of CT Portal; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS NA}\">Not Applicable</span>; address: https://urlofportal.acmect.com</a></p><p><b>network</b>: </p><ul><li><a href=\"Organization-AcmeofCTStdNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Preferred Provider Network</a></li><li><a href=\"Organization-AcmeofCTPremNet.html\">Generated Summary: language: en-US; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS ntwk}\">Network</span>; name: ACME CT Premium Preferred Provider Network</a></li></ul><h3>Plans</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsurancePlanTypeCS gold}\">Gold-QHP</span></td></tr></table></div>"
   ];
   fhir:InsurancePlan.status [ fhir:value "active"];
   fhir:InsurancePlan.type [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsuranceProductTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsuranceProductTypeCS" ];
        fhir:Coding.code [ fhir:value "qhp" ];
        fhir:Coding.display [ fhir:value "Qualified Health Plan" ]
      ]
   ];
   fhir:InsurancePlan.name [ fhir:value "Acme of CT QHP Gold"];
   fhir:InsurancePlan.ownedBy [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/Acme>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme>;
      fhir:Reference.reference [ fhir:value "Organization/Acme" ]
   ];
   fhir:InsurancePlan.administeredBy [
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/Acme>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme>;
      fhir:Reference.reference [ fhir:value "Organization/Acme" ]
   ];
   fhir:InsurancePlan.coverageArea [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Location/StateOfCTLocation>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/StateOfCTLocation>;
      fhir:Reference.reference [ fhir:value "Location/StateOfCTLocation" ]
   ];
   fhir:InsurancePlan.endpoint [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Endpoint/AcmeOfCTPortalEndpoint>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint>;
      fhir:Reference.reference [ fhir:value "Endpoint/AcmeOfCTPortalEndpoint" ]
   ];
   fhir:InsurancePlan.network [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTStdNet>;
      fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
   ], [
      fhir:index 1;
-     fhir:link <http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTPremNet>;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTPremNet>;
      fhir:Reference.reference [ fhir:value "Organization/AcmeofCTPremNet" ]
   ];
   fhir:InsurancePlan.plan [
@@ -64,28 +64,28 @@
      fhir:InsurancePlan.plan.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/national-directory-query/CodeSystem/InsurancePlanTypeCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsurancePlanTypeCS" ];
          fhir:Coding.code [ fhir:value "gold" ];
          fhir:Coding.display [ fhir:value "Gold-QHP" ]
        ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/Acme> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/Acme> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Location/StateOfCTLocation> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Location/StateOfCTLocation> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Endpoint/AcmeOfCTPortalEndpoint> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/national-directory-query/Organization/AcmeofCTPremNet> a fhir:us .
+<http://hl7.org/fhir/us/fhir-directory-query/Organization/AcmeofCTPremNet> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory-query/InsurancePlan/AcmeQHPGold.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/InsurancePlan/AcmeQHPGold.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory-query/InsurancePlan/AcmeQHPGold.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/InsurancePlan/AcmeQHPGold.ttl> .
 
 # -------------------------------------------------------------------------------------
 
