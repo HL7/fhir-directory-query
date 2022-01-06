@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatientprofile",
   "version": "0.0.1",
   "name": "NewPatientProfile",
-  "title": "NatlDir New Patient Profile",
+  "title": "NatlDirEndpointQry New Patient Profile",
   "status": "active",
   "date": "2017-11-13T14:13:29.07-05:00",
   "publisher": "HL7 Patient Administration Working Group",

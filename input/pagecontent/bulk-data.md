@@ -1,12 +1,3 @@
----
-title: Bulk Data and Subscriptions
-layout: default
-active: bulk-data
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/
-
----
 
 <p class="note-to-balloters">
 <b>Informative only:</b> was not a part of the September 2018 ballotted content.<br/>

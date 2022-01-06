@@ -13,7 +13,7 @@
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-type"/>
   <version value="0.0.1"/>
   <name value="OrgAliasType"/>
-  <title value="NatlDir Org Alias Type"/>
+  <title value="NatlDirEndpointQry Org Alias Type"/>
   <status value="active"/>
   <date value="2017-09-01T06:32:54.172+10:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>

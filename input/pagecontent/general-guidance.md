@@ -1,11 +1,4 @@
----
-title: General Guidance and Background Information
-layout: default
-active: guidance
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/
----
+
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 **Contents**

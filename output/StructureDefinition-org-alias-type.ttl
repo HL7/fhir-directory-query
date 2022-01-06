@@ -15,7 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-type"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "OrgAliasType"];
-  fhir:StructureDefinition.title [ fhir:value "NatlDir Org Alias Type"];
+  fhir:StructureDefinition.title [ fhir:value "NatlDirEndpointQry Org Alias Type"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-09-01T06:32:54.172+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];

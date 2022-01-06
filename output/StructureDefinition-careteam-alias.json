@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias",
   "version": "0.0.1",
   "name": "CareteamAlias",
-  "title": "NatlDir Careteam Alias",
+  "title": "NatlDirEndpointQry Careteam Alias",
   "status": "active",
   "date": "2017-11-16T15:42:31.192-05:00",
   "publisher": "HL7 Patient Administration Working Group",

@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction"/>
   <version value="0.0.1"/>
   <name value="UsageRestriction"/>
-  <title value="NatlDir Usage Restriction"/>
+  <title value="NatlDirEndpointQry Usage Restriction"/>
   <status value="active"/>
   <date value="2017-10-20T10:59:36.931+11:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>

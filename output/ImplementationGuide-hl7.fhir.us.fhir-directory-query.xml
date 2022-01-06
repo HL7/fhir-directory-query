@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2021-12-17T13:53:37-05:00"/>
+  <date value="2022-01-06T09:30:55-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -210,9 +210,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-CareTeam"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-CareTeam"/>
       </reference>
-      <name value="National Directory Care Team"/>
+      <name value="National Directory Endpoint Qry Care Team"/>
       <description value="Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -221,9 +221,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Endpoint"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-Endpoint"/>
       </reference>
-      <name value="National Directory Exchange Endpoint"/>
+      <name value="National Directory Endpoint Qry Exchange Endpoint"/>
       <description value="The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -232,9 +232,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-HealthcareService"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-HealthcareService"/>
       </reference>
-      <name value="National Directory Exchange HealthcareService"/>
+      <name value="National Directory  Endpoint Qry Exchange HealthcareService"/>
       <description value="The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -243,10 +243,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-InsurancePlan"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-InsurancePlan"/>
       </reference>
-      <name value="National Directory Exchange InsurancePlan"/>
-      <description value="An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits)."/>
+      <name value="National Directory Endpoint Qry Exchange InsurancePlan"/>
+      <description value="An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).&#xD;&#xA;&#xD;&#xA;InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -254,9 +254,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Location"/>
+        <reference value="StructureDefinition/NatlDiEndpointQryr-Location"/>
       </reference>
-      <name value="National Directory Exchange Location"/>
+      <name value="National Directory Endpoint Qry Exchange Location"/>
       <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, &#xD;&#xA;                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -265,10 +265,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Network"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-Network"/>
       </reference>
-      <name value="National Directory Exchange Network"/>
-      <description value="A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer."/>
+      <name value="National Directory Endpoint Qry Exchange Network"/>
+      <description value="A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.&#xD;&#xA;&#xD;&#xA;In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -276,9 +276,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Organization"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-Organization"/>
       </reference>
-      <name value="National Directory Exchange Organization"/>
+      <name value="National Directory Endpoint Qry Exchange Organization"/>
       <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.&#xD;&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -287,9 +287,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-OrganizationAffiliation"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation"/>
       </reference>
-      <name value="National Directory Exchange OrganizationAffiliation"/>
+      <name value="National Directory Endpoint Qry Exchange OrganizationAffiliation"/>
       <description value="The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -298,9 +298,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Practitioner"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-Practitioner"/>
       </reference>
-      <name value="National Directory Exchange Practitioner"/>
+      <name value="National Directory Endpoint Qry Exchange Practitioner"/>
       <description value="Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -309,9 +309,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-PractitionerRole"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
       </reference>
-      <name value="National Directory Exchange PractitionerRole"/>
+      <name value="National Directory Endpoint Qry Exchange PractitionerRole"/>
       <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xD;&#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xD;&#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -344,7 +344,7 @@
       <reference>
         <reference value="StructureDefinition/careteam-alias"/>
       </reference>
-      <name value="NatlDir Careteam Alias"/>
+      <name value="NatlDirEndpointQry Careteam Alias"/>
       <description value="Alternate names by which the team is known"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -377,7 +377,7 @@
       <reference>
         <reference value="StructureDefinition/contactpoint-viaintermediary"/>
       </reference>
-      <name value="NatlDir Contactpoint Viaintermediary"/>
+      <name value="NatlDirEndpointQry Contactpoint Viaintermediary"/>
       <description value="Represents an external point of contact responsible for handling communications with this entity"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -399,7 +399,7 @@
       <reference>
         <reference value="StructureDefinition/digitalcertificate"/>
       </reference>
-      <name value="NatlDir Digitalcertificate"/>
+      <name value="NatlDirEndpointQry Digitalcertificate"/>
       <description value="A digital certificate, used to identify a user or group of users, or for encrypted communications"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -421,7 +421,7 @@
       <reference>
         <reference value="StructureDefinition/endpoint-reference"/>
       </reference>
-      <name value="NatlDir Practitioner Endpoint Reference"/>
+      <name value="NatlDirEndpointQry Practitioner Endpoint Reference"/>
       <description value="The technical details of an endpoint that can be used for electronic services"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -454,7 +454,7 @@
       <reference>
         <reference value="StructureDefinition/healthcareservice-reference"/>
       </reference>
-      <name value="NatlDir Healthcareservice Reference"/>
+      <name value="NatlDirEndpointQry Healthcareservice Reference"/>
       <description value="Reference to healthcareservice resource"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -476,7 +476,7 @@
       <reference>
         <reference value="StructureDefinition/identifier-status"/>
       </reference>
-      <name value="NatlDir Identifier Status"/>
+      <name value="NatlDirEndpointQry Identifier Status"/>
       <description value="Describes the status of an identifier"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -487,7 +487,7 @@
       <reference>
         <reference value="StructureDefinition/insuranceplan-reference"/>
       </reference>
-      <name value="NatlDir Insurance Plan Reference"/>
+      <name value="NatlDirEndpointQry Insurance Plan Reference"/>
       <description value="A reference to the insurancePlan resource"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -510,7 +510,7 @@
         <reference value="StructureDefinition/network-reference"/>
       </reference>
       <name value="Network Reference"/>
-      <description value="A reference to the healthcare provider insurance networks (NatlDir-Network) the practitioner participates in through their role"/>
+      <description value="A reference to the healthcare provider insurance networks (NatlDirEndpointQry-Network) the practitioner participates in through their role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -520,7 +520,7 @@
       <reference>
         <reference value="StructureDefinition/newpatientprofile"/>
       </reference>
-      <name value="NatlDir New Patient Profile"/>
+      <name value="NatlDirEndpointQry New Patient Profile"/>
       <description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -542,7 +542,7 @@
       <reference>
         <reference value="StructureDefinition/org-alias-period"/>
       </reference>
-      <name value="NatlDir Org Alias Period"/>
+      <name value="NatlDirEndpointQry Org Alias Period"/>
       <description value="the period of time the alias was actively used"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -553,7 +553,7 @@
       <reference>
         <reference value="StructureDefinition/org-alias-type"/>
       </reference>
-      <name value="NatlDir Org Alias Type"/>
+      <name value="NatlDirEndpointQry Org Alias Type"/>
       <description value="Type of alias (legal alternative | historical)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -630,7 +630,7 @@
       <reference>
         <reference value="StructureDefinition/usage-restriction"/>
       </reference>
-      <name value="NatlDir Usage Restriction"/>
+      <name value="NatlDirEndpointQry Usage Restriction"/>
       <description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn&#39;t exposed that shouldn&#39;t be.&#xA;This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)&#xA;This will be expected to be used as a modifier extension."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -642,7 +642,7 @@
         <reference value="StructureDefinition/via-intermediary"/>
       </reference>
       <name value="Via Intermediary"/>
-      <description value="A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization"/>
+      <description value="A reference to an alternative point of contact (NatlDirEndpointQry-PractitionerRole, NatlDirEndpointQry-Organization, NatlDirEndpointQry-OrganizationAffiliation, or NatlDirEndpointQry-Location) for this organization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1138,7 +1138,7 @@
       </reference>
       <name value="Acme"/>
       <description value="Payer Organization"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1149,7 +1149,7 @@
       </reference>
       <name value="AcmeOfCTPortalEndpoint"/>
       <description value="Endpoint for Acme of CT Portal"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1160,7 +1160,7 @@
       </reference>
       <name value="AcmeQHPBronze"/>
       <description value="Acme of CT QHP Bronze Plan"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1171,7 +1171,7 @@
       </reference>
       <name value="AcmeQHPGold"/>
       <description value="Acme of CT QHP Gold Plan"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1182,7 +1182,7 @@
       </reference>
       <name value="AcmeofCTPremNet"/>
       <description value="Acme of CT Premium Premium Network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1193,7 +1193,7 @@
       </reference>
       <name value="AcmeofCTStdNet"/>
       <description value="Acme of CT Standard Network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1204,7 +1204,7 @@
       </reference>
       <name value="AnonRole"/>
       <description value="Practitioner role that doesn&#39;t refer to a specific practitioner"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1215,7 +1215,7 @@
       </reference>
       <name value="BigBox"/>
       <description value="Organization that Manages 2 of PharmChain&#39;s pharmacies"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1226,7 +1226,7 @@
       </reference>
       <name value="BurrClinic"/>
       <description value="Burr Clinic provides service to Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1237,7 +1237,7 @@
       </reference>
       <name value="BurrClinicAffil"/>
       <description value="Burr Clinic&#39;s affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1248,7 +1248,7 @@
       </reference>
       <name value="BurrClinicServices"/>
       <description value="Burr Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1259,7 +1259,7 @@
       </reference>
       <name value="CancerClinic"/>
       <description value="HartfordCancerClinicLLC"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1270,7 +1270,7 @@
       </reference>
       <name value="CancerClinicLoc"/>
       <description value="Location1 of Cancer Clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1281,7 +1281,7 @@
       </reference>
       <name value="CancerClinicService"/>
       <description value="Cancer Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1292,7 +1292,7 @@
       </reference>
       <name value="ConnHIE"/>
       <description value="Connecticut HIE"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1303,7 +1303,7 @@
       </reference>
       <name value="ConnHIEAffil"/>
       <description value="Burr Clinic&#39;s affiliation with Conn HIE"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1314,7 +1314,7 @@
       </reference>
       <name value="Counselor"/>
       <description value="Counselor Susie Smith"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1325,7 +1325,7 @@
       </reference>
       <name value="CounselorRole1"/>
       <description value="Susie  Smith is a counselor via Telemedicine"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1336,7 +1336,7 @@
       </reference>
       <name value="HamiltonClinic"/>
       <description value="Hamilton Clinic (a Division of Hartford Hospital)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1347,7 +1347,7 @@
       </reference>
       <name value="HamiltonClinicAffil"/>
       <description value="Hamilton Clinic&#39;s affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1358,7 +1358,7 @@
       </reference>
       <name value="HamiltonClinicServices"/>
       <description value="Hamilton Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1369,7 +1369,7 @@
       </reference>
       <name value="HansSolo"/>
       <description value="Solo Practitioner Hans Solo"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1380,7 +1380,7 @@
       </reference>
       <name value="HansSoloClinic"/>
       <description value="Location of Hans Solo&#39;s clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1391,7 +1391,7 @@
       </reference>
       <name value="HansSoloRole1"/>
       <description value="Hans Solo is a solo practitioner"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1402,7 +1402,7 @@
       </reference>
       <name value="HansSoloService"/>
       <description value="Hans Solo Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1413,7 +1413,7 @@
       </reference>
       <name value="HartfordOrthopedicAffil"/>
       <description value="Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1424,7 +1424,7 @@
       </reference>
       <name value="HartfordOrthopedicServices"/>
       <description value="Hartford Orthopedic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1435,7 +1435,7 @@
       </reference>
       <name value="HartfordOrthopedics"/>
       <description value="Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1446,7 +1446,7 @@
       </reference>
       <name value="HospERService"/>
       <description value="Hartford General Hospital ER"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1457,7 +1457,7 @@
       </reference>
       <name value="HospLoc1"/>
       <description value="Location1 of Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1468,7 +1468,7 @@
       </reference>
       <name value="HospLoc2"/>
       <description value="Location2 of Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1479,7 +1479,7 @@
       </reference>
       <name value="Hospital"/>
       <description value="Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1490,7 +1490,7 @@
       </reference>
       <name value="JoeSmith"/>
       <description value="Practitioner Dr Joe Smith"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1501,7 +1501,7 @@
       </reference>
       <name value="JoeSmithRole1"/>
       <description value="Dr Smith moonlighting as ER Doc at Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1512,7 +1512,7 @@
       </reference>
       <name value="JoeSmithRole2"/>
       <description value="Dr Smith Internal Medicine at Burr Clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1523,7 +1523,7 @@
       </reference>
       <name value="JoeSmithRole3"/>
       <description value="Dr Smith Admitting Privileges at Hartford General"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1534,7 +1534,7 @@
       </reference>
       <name value="PharmChain"/>
       <description value="Organization that Provides Pharmacy Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1545,7 +1545,7 @@
       </reference>
       <name value="PharmChainAffil1"/>
       <description value="Organization Affiliation for PharmChain (Retail)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1556,7 +1556,7 @@
       </reference>
       <name value="PharmChainAffil2"/>
       <description value="Organization Affiliation for PharmChain (Compounding)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1567,7 +1567,7 @@
       </reference>
       <name value="PharmChainAffil3"/>
       <description value="Organization Affiliation for PharmChain (MailOrder)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1578,7 +1578,7 @@
       </reference>
       <name value="PharmChainCompService"/>
       <description value="Compound Pharmacy Service provided by PharmacyOrganization A"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1589,7 +1589,7 @@
       </reference>
       <name value="PharmChainMailService"/>
       <description value="Mail Order Pharmacy Service provided by PharmacyOrganization A"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1600,7 +1600,7 @@
       </reference>
       <name value="PharmChainRetailService"/>
       <description value="Pharmacy Service provided by PharmChain"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1611,7 +1611,7 @@
       </reference>
       <name value="PharmLoc1"/>
       <description value="Location of Pharmacy1 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1622,7 +1622,7 @@
       </reference>
       <name value="PharmLoc2"/>
       <description value="Location of Pharmacy2 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1633,7 +1633,7 @@
       </reference>
       <name value="PharmLoc3"/>
       <description value="Location of Pharmacy3 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1644,7 +1644,7 @@
       </reference>
       <name value="PharmLoc4"/>
       <description value="Location of Pharmacy4 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1655,7 +1655,7 @@
       </reference>
       <name value="StateOfCTLocation"/>
       <description value="State of CT Area"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1666,14 +1666,14 @@
       </reference>
       <name value="VirtualCounselService"/>
       <description value="Virtual Counseling Service"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/NatlDir"/>
+        <reference value="CapabilityStatement/NatlDirEndpointQry"/>
       </reference>
       <name value="NatlDir CapabilityStatement"/>
       <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>

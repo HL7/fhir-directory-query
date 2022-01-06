@@ -13,7 +13,7 @@
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatientprofile"/>
   <version value="0.0.1"/>
   <name value="NewPatientProfile"/>
-  <title value="NatlDir New Patient Profile"/>
+  <title value="NatlDirEndpointQry New Patient Profile"/>
   <status value="active"/>
   <date value="2017-11-13T14:13:29.07-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>

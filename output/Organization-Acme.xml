@@ -4,7 +4,7 @@
   <id value="Acme"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+    <profile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"/>
   </meta>
   <language value="en-US"/>
   <text>

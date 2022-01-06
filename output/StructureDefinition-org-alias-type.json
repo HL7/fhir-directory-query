@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-type",
   "version": "0.0.1",
   "name": "OrgAliasType",
-  "title": "NatlDir Org Alias Type",
+  "title": "NatlDirEndpointQry Org Alias Type",
   "status": "active",
   "date": "2017-09-01T06:32:54.172+10:00",
   "publisher": "HL7 Patient Administration Working Group",

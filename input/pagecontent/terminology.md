@@ -1,11 +1,4 @@
----
-title: Terminology defined for the Validated Healthcare Directory Implementation Guide
-layout: default
-active: terminology
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/
----
+
 
 This page lists the ValueSets, CodeSystems, and ConceptMaps defined as part of the Validated Healthcare Directory implementation Guide. For more information on using codes in resources, see the <!-- >[guidance section](guidance.html#using-codes-in-vhdir-profiles) as well as in --> the [FHIR specification](http://hl7.org/fhir/STU3/terminologies.html).
 

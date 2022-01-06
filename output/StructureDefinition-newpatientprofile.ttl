@@ -15,7 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatientprofile"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NewPatientProfile"];
-  fhir:StructureDefinition.title [ fhir:value "NatlDir New Patient Profile"];
+  fhir:StructureDefinition.title [ fhir:value "NatlDirEndpointQry New Patient Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-11-13T14:13:29.07-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];

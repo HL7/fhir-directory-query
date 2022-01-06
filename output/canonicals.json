@@ -1,12 +1,5 @@
 [
   {
-    "id": "NatlDir",
-    "type": "CapabilityStatement",
-    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/CapabilityStatement/NatlDir",
-    "version": "0.0.1",
-    "name": "DavinciPdexNatlDirCapabilityStatement"
-  },
-  {
     "id": "endpoint-organization",
     "type": "SearchParameter",
     "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/endpoint-organization",
@@ -357,6 +350,13 @@
     "name": "NatlDir_sp_practitionerrole_specialty"
   },
   {
+    "id": "NatlDirEndpointQry",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDir",
+    "version": "0.0.1",
+    "name": "NationalDirectoryCapabilityStatement"
+  },
+  {
     "id": "AcceptingPatientsCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS",
@@ -483,74 +483,74 @@
     "name": "ONCFASTNationalDirectoryEndpointQuery"
   },
   {
-    "id": "NatlDir-CareTeam",
+    "id": "NatlDiEndpointQryr-Location",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-CareTeam",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDiEndpointQryr-Location",
     "version": "0.0.1",
-    "name": "NatlDirCareTeam"
+    "name": "NatlDirEndpointQryLocation"
   },
   {
-    "id": "NatlDir-Endpoint",
+    "id": "NatlDirEndpointQry-CareTeam",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam",
     "version": "0.0.1",
-    "name": "NatlDirEndpoint"
+    "name": "NatlDirEndpointQryCareTeam"
   },
   {
-    "id": "NatlDir-HealthcareService",
+    "id": "NatlDirEndpointQry-Endpoint",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint",
     "version": "0.0.1",
-    "name": "NatlDirHealthcareService"
+    "name": "NatlDirEndpointQryEndpoint"
   },
   {
-    "id": "NatlDir-InsurancePlan",
+    "id": "NatlDirEndpointQry-HealthcareService",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService",
     "version": "0.0.1",
-    "name": "NatlDirInsurancePlan"
+    "name": "NatlDirEndpointQryHealthcareService"
   },
   {
-    "id": "NatlDir-Location",
+    "id": "NatlDirEndpointQry-InsurancePlan",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan",
     "version": "0.0.1",
-    "name": "NatlDirLocation"
+    "name": "NatlDirEndpointQryInsurancePlan"
   },
   {
-    "id": "NatlDir-Network",
+    "id": "NatlDirEndpointQry-Network",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network",
     "version": "0.0.1",
-    "name": "NatlDirNetwork"
+    "name": "NatlDirEndpointQryNetwork"
   },
   {
-    "id": "NatlDir-Organization",
+    "id": "NatlDirEndpointQry-Organization",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization",
     "version": "0.0.1",
-    "name": "NatlDirOrganization"
+    "name": "NatlDirEndpointQryOrganization"
   },
   {
-    "id": "NatlDir-OrganizationAffiliation",
+    "id": "NatlDirEndpointQry-OrganizationAffiliation",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation",
     "version": "0.0.1",
-    "name": "NatlDirOrganizationAffiliation"
+    "name": "NatlDirEndpointQryOrganizationAffiliation"
   },
   {
-    "id": "NatlDir-Practitioner",
+    "id": "NatlDirEndpointQry-Practitioner",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner",
     "version": "0.0.1",
-    "name": "NatlDirPractitioner"
+    "name": "NatlDirEndpointQryPractitioner"
   },
   {
-    "id": "NatlDir-PractitionerRole",
+    "id": "NatlDirEndpointQry-PractitionerRole",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole",
     "version": "0.0.1",
-    "name": "NatlDirPractitionerRole"
+    "name": "NatlDirEndpointQryPractitionerRole"
   },
   {
     "id": "accessibility",

@@ -15,7 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "UsageRestriction"];
-  fhir:StructureDefinition.title [ fhir:value "NatlDir Usage Restriction"];
+  fhir:StructureDefinition.title [ fhir:value "NatlDirEndpointQry Usage Restriction"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-10-20T10:59:36.931+11:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];

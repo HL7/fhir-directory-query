@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/digitalcertificate",
   "version": "0.0.1",
   "name": "DigitalCertificate",
-  "title": "NatlDir Digitalcertificate",
+  "title": "NatlDirEndpointQry Digitalcertificate",
   "status": "active",
   "date": "2017-11-13T11:51:52.262-05:00",
   "publisher": "HL7 Patient Administration Working Group",

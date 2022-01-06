@@ -1,11 +1,4 @@
----
-title: General Security Considerations
-layout: default
-active: security
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/
----
+
  
 The following are the VhDir security considerations that implementers should follow:
 * All implementers of FHIR servers and clients should pay attention to [FHIR Security](http://hl7.org/fhir/security.html) considerations. 

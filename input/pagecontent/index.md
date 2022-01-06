@@ -1,11 +1,4 @@
----
-title: National Directory Implementation Guide HomePage
-layout: default
-active: home
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/
----
+
 
 ## Introduction
 

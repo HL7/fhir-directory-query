@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status",
   "version": "0.0.1",
   "name": "IdentifierStatus",
-  "title": "NatlDir Identifier Status",
+  "title": "NatlDirEndpointQry Identifier Status",
   "status": "active",
   "date": "2017-11-20T11:33:43.51-05:00",
   "publisher": "HL7 Patient Administration Working Group",

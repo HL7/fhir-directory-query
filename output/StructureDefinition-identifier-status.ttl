@@ -15,7 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "IdentifierStatus"];
-  fhir:StructureDefinition.title [ fhir:value "NatlDir Identifier Status"];
+  fhir:StructureDefinition.title [ fhir:value "NatlDirEndpointQry Identifier Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-11-20T11:33:43.51-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];

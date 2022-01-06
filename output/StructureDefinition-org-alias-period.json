@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-period",
   "version": "0.0.1",
   "name": "OrgAliasPeriod",
-  "title": "NatlDir Org Alias Period",
+  "title": "NatlDirEndpointQry Org Alias Period",
   "status": "active",
   "date": "2017-09-01T06:36:02.345+10:00",
   "publisher": "HL7 Patient Administration Working Group",

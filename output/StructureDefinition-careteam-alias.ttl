@@ -15,7 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "CareteamAlias"];
-  fhir:StructureDefinition.title [ fhir:value "NatlDir Careteam Alias"];
+  fhir:StructureDefinition.title [ fhir:value "NatlDirEndpointQry Careteam Alias"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-11-16T15:42:31.192-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];

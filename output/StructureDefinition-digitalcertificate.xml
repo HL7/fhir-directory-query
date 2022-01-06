@@ -41,7 +41,7 @@
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/digitalcertificate"/>
   <version value="0.0.1"/>
   <name value="DigitalCertificate"/>
-  <title value="NatlDir Digitalcertificate"/>
+  <title value="NatlDirEndpointQry Digitalcertificate"/>
   <status value="active"/>
   <date value="2017-11-13T11:51:52.262-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>

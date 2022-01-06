@@ -110,7 +110,7 @@ Description: "Is the Endpoint Secured"
 
 Extension: OrgAliasPeriod
 Id: org-alias-period
-Title: "NatlDir Org Alias Period"
+Title: "NatlDirEndpointQry Org Alias Period"
 Description: "the period of time the alias was actively used"
 * ^context.expression = "Organization.alias"
 * ^context.type = #element
@@ -127,7 +127,7 @@ Description: "the period of time the alias was actively used"
 
 Extension: OrgAliasType
 Id: org-alias-type
-Title: "NatlDir Org Alias Type"
+Title: "NatlDirEndpointQry Org Alias Type"
 Description: "Type of alias (legal alternative | historical)"
 * ^context.expression = "Organization.alias"
 * ^context.type = #element
@@ -146,7 +146,7 @@ Description: "Type of alias (legal alternative | historical)"
 
 Extension: NewPatientProfile
 Id: newpatientprofile
-Title: "NatlDir New Patient Profile"
+Title: "NatlDirEndpointQry New Patient Profile"
 Description: "Additional information about new patients a practitioner/service/location accepts (e.g. only children)"
 * ^context[0].expression = "PractitionerRole"
 * ^context[=].type = #element
@@ -166,7 +166,7 @@ Description: "Additional information about new patients a practitioner/service/l
 
 Extension: InsurancePlanReference
 Id: insuranceplan-reference
-Title: "NatlDir Insurance Plan Reference"
+Title: "NatlDirEndpointQry Insurance Plan Reference"
 Description: "A reference to the insurancePlan resource"
 * ^context.expression = "Organization"
 * ^context.type = #element
@@ -174,7 +174,7 @@ Description: "A reference to the insurancePlan resource"
 * . ^short = "InsurancePlan reference"
 * . ^definition = "A reference to the insurancePlan resource"
 * valueReference 1.. MS
-* valueReference only Reference(NatlDirInsurancePlan)
+* valueReference only Reference(NatlDirEndpointQryInsurancePlan)
 * valueReference ^sliceName = "valueReference"
 * valueReference ^short = "A reference to the insurance plan"
 * valueReference ^definition = "A reference to the insurance plan"
@@ -182,7 +182,7 @@ Description: "A reference to the insurancePlan resource"
 
 Extension: HealthcareServiceReference
 Id: healthcareservice-reference
-Title: "NatlDir Healthcareservice Reference"
+Title: "NatlDirEndpointQry Healthcareservice Reference"
 Description: "Reference to healthcareservice resource"
 * ^context.expression = "CareTeam"
 * ^context.type = #element
@@ -190,7 +190,7 @@ Description: "Reference to healthcareservice resource"
 * . ^short = "healthcareservice"
 * . ^definition = "Reference to healthcareservice resources"
 * valueReference 1.. MS
-* valueReference only Reference(NatlDirHealthcareService)
+* valueReference only Reference(NatlDirEndpointQryHealthcareService)
 * valueReference ^sliceName = "valueReference"
 * valueReference ^label = "healthcareservice"
 * valueReference ^short = "Healthcare service"
@@ -200,7 +200,7 @@ Description: "Reference to healthcareservice resource"
 
 Extension: EndpointReference
 Id: endpoint-reference
-Title: "NatlDir Practitioner Endpoint Reference"
+Title: "NatlDirEndpointQry Practitioner Endpoint Reference"
 Description: "The technical details of an endpoint that can be used for electronic services"
 * ^context[0].expression = "Practitioner"
 * ^context[=].type = #element
@@ -210,7 +210,7 @@ Description: "The technical details of an endpoint that can be used for electron
 * . ^short = "Endpoint reference"
 * . ^definition = "A reference to the endpoint resource"
 * valueReference 1.. MS
-* valueReference only Reference(NatlDirEndpoint)
+* valueReference only Reference(NatlDirEndpointQryEndpoint)
 * valueReference ^sliceName = "valueReference"
 * valueReference ^short = "Endpoint reference"
 * valueReference ^definition = "A reference to the endpoint"
@@ -218,7 +218,7 @@ Description: "The technical details of an endpoint that can be used for electron
 
 Extension: DigitalCertificate
 Id: digitalcertificate
-Title: "NatlDir Digitalcertificate"
+Title: "NatlDirEndpointQry Digitalcertificate"
 Description: "A digital certificate, used to identify a user or group of users, or for encrypted communications"
 * ^context[0].expression = "Practitioner"
 * ^context[=].type = #element
@@ -304,7 +304,7 @@ Description: "A digital certificate, used to identify a user or group of users, 
 
 Extension: CareteamAlias
 Id: careteam-alias
-Title: "NatlDir Careteam Alias"
+Title: "NatlDirEndpointQry Careteam Alias"
 Description: "Alternate names by which the team is known"
 * ^context.expression = "CareTeam"
 * ^context.type = #element
@@ -321,7 +321,7 @@ Description: "Alternate names by which the team is known"
 
 Extension: UsageRestriction
 Id: usage-restriction
-Title: "NatlDir Usage Restriction"
+Title: "NatlDirEndpointQry Usage Restriction"
 Description: """The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.
 This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)
 This will be expected to be used as a modifier extension."""
@@ -341,7 +341,7 @@ This will be expected to be used as a modifier extension."""
 
 Extension: IdentifierStatus
 Id: identifier-status
-Title: "NatlDir Identifier Status"
+Title: "NatlDirEndpointQry Identifier Status"
 Description: "Describes the status of an identifier"
 * ^context.expression = "Identifier"
 * ^context.type = #element
@@ -359,7 +359,7 @@ Description: "Describes the status of an identifier"
 
 Extension: ContactPointViaIntermediary
 Id: contactpoint-viaintermediary
-Title: "NatlDir Contactpoint Viaintermediary"
+Title: "NatlDirEndpointQry Contactpoint Viaintermediary"
 Description: "Represents an external point of contact responsible for handling communications with this entity"
 * ^context.expression = "ContactPoint"
 * ^context.type = #element
@@ -368,7 +368,7 @@ Description: "Represents an external point of contact responsible for handling c
 * . ^short = "viaintermediary"
 * . ^definition = "Represents an external point of contact responsible for handling communications with this entity"
 * valueReference 1.. MS
-* valueReference only Reference(NatlDirPractitionerRole or NatlDirOrganization or NatlDirOrganizationAffiliation or NatlDirLocation)
+* valueReference only Reference(NatlDirEndpointQryPractitionerRole or NatlDirEndpointQryOrganization or NatlDirEndpointQryOrganizationAffiliation or NatlDirLocation)
 * valueReference ^sliceName = "valueReference"
 * valueReference ^label = "viaintermediary"
 * valueReference ^short = "Via intermediary"
@@ -447,15 +447,15 @@ Extension: LocationReference
 Id: location-reference
 Title: "Location Reference"
 Description: "A reference to a Location resource (NatlDir-Location) defining the coverage area of a health insurance provider network"
-* value[x] only Reference (NatlDirLocation)
+* value[x] only Reference (NatlDirEndpointQryLocation)
 * value[x] 1..1 MS 
 
 
 Extension: NetworkReference
 Id: network-reference
 Title: "Network Reference"
-Description: "A reference to the healthcare provider insurance networks (NatlDir-Network) the practitioner participates in through their role"
-* value[x] only Reference(NatlDirNetwork) 
+Description: "A reference to the healthcare provider insurance networks (NatlDirEndpointQry-Network) the practitioner participates in through their role"
+* value[x] only Reference(NatlDirEndpointQryNetwork) 
 * value[x] 1..1 MS 
 
 
@@ -475,7 +475,7 @@ Description: "New Patients indicates whether new patients are being accepted in 
 * extension[acceptingPatients] ^short = "Accepting Patients"
 * extension[acceptingPatients].value[x] 1..1
 * extension[acceptingPatients].value[x] from AcceptingPatientsVS (required)
-* extension[fromNetwork].value[x] only Reference(NatlDirNetwork)
+* extension[fromNetwork].value[x] only Reference(NatlDirEndpointQryNetwork)
 * extension[fromNetwork].value[x] 1..1
 * extension[fromNetwork] ^short = "From Network"
 * extension[characteristics].value[x] only string
@@ -513,7 +513,7 @@ Description: "An extension to add status and whereValid elements to a practition
 * extension[status].valueCode from QualificationStatusVS (required)
 * extension[status].valueCode =  $QualificationStatusCS#active (exactly)
 * extension[whereValid] ^short = "Where the qualification is valid"
-* extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirLocation)
+* extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirEndpointQryLocation)
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
 * extension[whereValid].value[x] 1..1
 
@@ -534,22 +534,20 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[code].value[x] 1..1
 * extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[issuer].value[x] 1..1
-* extension[issuer].value[x] only Reference(NatlDirOrganization)
+* extension[issuer].value[x] only Reference(NatlDirEndpointQryOrganization)
 * extension[status].value[x] 1..1
 * extension[status].value[x] only  code 
 * extension[status].valueCode from QualificationStatusVS (required)
 * extension[status].valueCode = $QualificationStatusCS#active (exactly)
 * extension[period].value[x] only Period 
 * extension[period].value[x] 1..1
-* extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirLocation)
+* extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirEndpointQryLocation)
 * extension[whereValid].value[x] from $USPSState (required)
 * extension[whereValid].value[x] 1..1
 
 Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"
-Description: "A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization"
-* value[x] only Reference(NatlDirPractitionerRole or NatlDirOrganizationAffiliation or NatlDirLocation or NatlDirOrganization) 
+Description: "A reference to an alternative point of contact (NatlDirEndpointQry-PractitionerRole, NatlDirEndpointQry-Organization, NatlDirEndpointQry-OrganizationAffiliation, or NatlDirEndpointQry-Location) for this organization"
+* value[x] only Reference(NatlDirEndpointQryPractitionerRole or NatlDirEndpointQryOrganizationAffiliation or NatlDirEndpointQryLocation or NatlDirEndpointQryOrganization) 
 * value[x] 1..1 MS
-
-

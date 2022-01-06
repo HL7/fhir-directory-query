@@ -13,7 +13,7 @@
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-period"/>
   <version value="0.0.1"/>
   <name value="OrgAliasPeriod"/>
-  <title value="NatlDir Org Alias Period"/>
+  <title value="NatlDirEndpointQry Org Alias Period"/>
   <status value="active"/>
   <date value="2017-09-01T06:36:02.345+10:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
