@@ -354,7 +354,7 @@
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDir",
     "version": "0.0.1",
-    "name": "NationalDirectoryCapabilityStatement"
+    "name": "NationalDirectoryEndPointQueryCapabilityStatement"
   },
   {
     "id": "AcceptingPatientsCS",
@@ -483,13 +483,6 @@
     "name": "ONCFASTNationalDirectoryEndpointQuery"
   },
   {
-    "id": "NatlDiEndpointQryr-Location",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDiEndpointQryr-Location",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryLocation"
-  },
-  {
     "id": "NatlDirEndpointQry-CareTeam",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam",
@@ -516,6 +509,13 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan",
     "version": "0.0.1",
     "name": "NatlDirEndpointQryInsurancePlan"
+  },
+  {
+    "id": "NatlDirEndpointQry-Location",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location",
+    "version": "0.0.1",
+    "name": "NatlDirEndpointQryLocation"
   },
   {
     "id": "NatlDirEndpointQry-Network",

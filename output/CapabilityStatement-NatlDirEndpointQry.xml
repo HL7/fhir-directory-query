@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">NatlDir CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-19</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p>This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The NatlDir  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
 </li><li>Support json source formats for all NatlDir interactions.</li><li>Identify the NatlDir  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li><li>Support the searchParameters on each profile  individually and in combination.
-1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li></ol><p>The NatlDir  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all NatlDir  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="implementation.html#general-security-considerations">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#endpoint">Endpoint</a></td><td><a href="StructureDefinition-NatlDir-Endpoint.html">NatlDir Endpoint</a></td><td>
+1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li></ol><p>The NatlDir  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all NatlDir  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="implementation.html#general-security-considerations">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#endpoint">Endpoint</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-Endpoint.html">NatlDir Endpoint</a></td><td>
 							
 							organization, _id, _lastUpdated
 							
@@ -18,7 +18,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#healthcareservice">HealthcareService</a></td><td><a href="StructureDefinition-NatlDir-HealthcareService.html">NatlDir HealthcareService</a></td><td>
+						</td></tr><tr><td><a href="#healthcareservice">HealthcareService</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-HealthcareService.html">NatlDir HealthcareService</a></td><td>
 							
 							location, coverage-area, organization, endpoint, name, service-category, service-type, specialty, _id, _lastUpdated
 							
@@ -30,7 +30,7 @@
               PractitionerRole:service, OrganizationAffiliation:service
             </td><td>
 							
-						</td></tr><tr><td><a href="#insuranceplan">InsurancePlan</a></td><td><a href="StructureDefinition-NatlDir-InsurancePlan.html">NatlDir InsurancePlan</a></td><td>
+						</td></tr><tr><td><a href="#insuranceplan">InsurancePlan</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">NatlDir InsurancePlan</a></td><td>
 							
 							administered-by, owned-by, coverage-area, name, plan-type, identifier, _id, _lastUpdated, type
 							
@@ -42,7 +42,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#location">Location</a></td><td><a href="StructureDefinition-NatlDir-Location.html">NatlDir Location</a></td><td>
+						</td></tr><tr><td><a href="#location">Location</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-Location.html">NatlDir Location</a></td><td>
 							
 							partof, organization, endpoint, address-city, address-state, address-postalcode, address, type, _id, _lastUpdated
 							
@@ -54,9 +54,9 @@
               HealthcareService:location, InsurancePlan:coverage-area, OrganizationAffiliation:location, PractitionerRole:location
             </td><td>
 							
-						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-NatlDir-Network.html">NatlDir Network</a>, 
+						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-Network.html">NatlDir Network</a>, 
 
-						<a href="StructureDefinition-NatlDir-Organization.html">NatlDir Organization</a></td><td>
+						<a href="StructureDefinition-NatlDirEndpointQry-Organization.html">NatlDir Organization</a></td><td>
 							
 							partof, endpoint, address, name, _id, _lastUpdated, type, coverage-area
 							
@@ -68,7 +68,7 @@
               Endpoint:organization, HealthcareService:organization, InsurancePlan:administered-by, InsurancePlan:owned-by, OrganizationAffiliation:primary-organization, PractitionerRole:organization, PractitionerRole:network, OrganizationAffiliation:participating-organization
             </td><td>
 							
-						</td></tr><tr><td><a href="#organizationaffiliation">OrganizationAffiliation</a></td><td><a href="StructureDefinition-NatlDir-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a></td><td>
+						</td></tr><tr><td><a href="#organizationaffiliation">OrganizationAffiliation</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a></td><td>
 							
 							primary-organization, participating-organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated
 							
@@ -80,7 +80,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-NatlDir-Practitioner.html">NatlDir Practitioner</a></td><td>
+						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-Practitioner.html">NatlDir Practitioner</a></td><td>
 							
 							name, _id, _lastUpdated, family, given
 							
@@ -92,7 +92,7 @@
               PractitionerRole:practitioner
             </td><td>
 							
-						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-NatlDir-PractitionerRole.html">NatlDir PractitionerRole</a></td><td>
+						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">NatlDir PractitionerRole</a></td><td>
 							
 							practitioner, organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated
 							
@@ -106,7 +106,7 @@
 							
 						</td></tr></tbody></table><br/><h4 id="endpoint" class="no_toc">Endpoint</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Endpoint.html">NatlDir Endpoint</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-Endpoint.html">NatlDir Endpoint</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -134,7 +134,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Endpoint?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="healthcareservice" class="no_toc">HealthcareService</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-HealthcareService.html">NatlDir HealthcareService</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-HealthcareService.html">NatlDir HealthcareService</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -190,7 +190,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="insuranceplan" class="no_toc">InsurancePlan</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-InsurancePlan.html">NatlDir InsurancePlan</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">NatlDir InsurancePlan</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -234,7 +234,7 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?type=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="location" class="no_toc">Location</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Location.html">NatlDir Location</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-Location.html">NatlDir Location</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -292,9 +292,9 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Location?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Network.html">NatlDir Network</a>, 
+											<a href="StructureDefinition-NatlDirEndpointQry-Network.html">NatlDir Network</a>, 
 				
-											<a href="StructureDefinition-NatlDir-Organization.html">NatlDir Organization</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-Organization.html">NatlDir Organization</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -356,7 +356,7 @@
 							reference
 						</td><td><code class="highlighter-rouge">GET [base]/Organization?coverage-area=[coverage-area]</code></td></tr></tbody></table><hr/><h4 id="organizationaffiliation" class="no_toc">OrganizationAffiliation</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -408,7 +408,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Practitioner.html">NatlDir Practitioner</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-Practitioner.html">NatlDir Practitioner</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -440,7 +440,7 @@
 							string
 						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?given=[given]</code></td></tr></tbody></table><hr/><h4 id="practitionerrole" class="no_toc">PractitionerRole</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-PractitionerRole.html">NatlDir PractitionerRole</a>
+											<a href="StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">NatlDir PractitionerRole</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -494,7 +494,7 @@
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDir"/>
   <version value="0.0.1"/>
-  <name value="NationalDirectoryCapabilityStatement"/>
+  <name value="NationalDirectoryEndPointQueryCapabilityStatement"/>
   <title value="NatlDir CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>
@@ -535,7 +535,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Endpoint"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -586,7 +586,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="HealthcareService"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -698,7 +698,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="InsurancePlan"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -799,7 +799,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Location"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -912,8 +912,8 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1014,7 +1014,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="OrganizationAffiliation"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1126,7 +1126,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1193,7 +1193,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="PractitionerRole"/>
-      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>

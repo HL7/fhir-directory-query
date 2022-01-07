@@ -969,12 +969,6 @@
     }
   ],
   "profiles": {
-    "Location": [
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDiEndpointQryr-Location",
-        "title": "National Directory Endpoint Qry Exchange Location"
-      }
-    ],
     "CareTeam": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam",
@@ -997,6 +991,12 @@
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan",
         "title": "National Directory Endpoint Qry Exchange InsurancePlan"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location",
+        "title": "National Directory Endpoint Qry Exchange Location"
       }
     ],
     "Organization": [

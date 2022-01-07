@@ -1,39 +1,39 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>HL7.FHIR.US.FHIR-DIRECTORY-QUERY\Implementation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/hl7.css"/>
-    <link rel="stylesheet" href="assets/css/fhir.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -43,47 +43,47 @@
 
     <style type="text/css">h2{--heading-prefix:"49"}
     h3,h4,h5,h6{--heading-prefix:"49"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="http://hl7.org">
-            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
           </a>
         </div>
         <div id="family-nav">
-          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span><br/>0.0.1 - draft</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -114,8 +114,8 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l208">​</a>
-        <a href="CapabilityStatement-NatlDir.html">Conformance Requirements</a>
+      <li>
+        <a href="CapabilityStatement-NatlDirEndpointQry.html">Conformance Requirements</a>
       </li>
     </ul>
   </li>
@@ -126,26 +126,26 @@
     <a href="downloads.html">Downloads</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Implementation</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Implementation</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -157,7 +157,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Implementation</h2>
   
 
@@ -169,7 +169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
+    <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 
 </div>
@@ -202,7 +202,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><strong>NO CONTENT</strong></p>
 <h3><a name="Representing"></a>Representing and Searching Provider Directory Data</h3>
 <p>It is important for payers to use the NatlDir profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The NatlDir design is based around the following types of searches.</p>
-<table border="3" width="947" style="border-color: Black;">
+<table style="border-color: Black;" border="3" width="947">
 <tbody>
 <tr>
 <td width="231">
@@ -290,11 +290,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 </tbody>
 </table>
-<p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br/>Specific examples are referenced in the text below.</p>
+<p>The content in this section of the IG is based on the <a href="artifacts.html#7">examples</a> provided and on the patterns provided <a href="patterns.pptx">here</a>.<br />Specific examples are referenced in the text below.</p>
 <h4><a name="HealthcareService"></a>HealthcareService</h4>
 <p>The first type of search starts from HealthcareService.category and HealthcareService.specialty, so it is essential that each provider's service be supported by appropriate set of HealthcareService instances.&nbsp; HealthcareServices are typically provided by an organization, except in the case of a Practitioner that is not associated with an organization (see the solo practitioner example), and can be linked to a set of locations where service is provided, or identified as virtual services through an indicated set of virtual modalities.&nbsp; &nbsp;The examples illustrate this with an organization that provides three distinct Pharmacy services -- retail, compounding, and mail-order -- across its locations.&nbsp; All organizations that provide service should define an appropriate set. of HealthcareServices to facilitate search.&nbsp; The HealthcareService category, specialty and type fields are the highest level of organization of the services provided by the provider's network.</p>
 <p>Relevant examples:</p>
-<table border="1" width="509" style="height: 119px; border-color: Black;">
+<table style="height: 119px; border-color: Black;" border="1" width="509">
 <tbody>
 <tr>
 <td style="width: 162px;">Scenario</td>
@@ -303,28 +303,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <tr>
 <td style="width: 162px;">Retail Pharmacy Chain</td>
 <td style="width: 162px;">
-<p><a href="HealthcareService-PharmChainRetailService.html" title="HealthcareService/PharmChainRetailService">PharmChainRetailService</a></p>
+<p><a title="HealthcareService/PharmChainRetailService" href="HealthcareService-PharmChainRetailService.html">PharmChainRetailService</a></p>
 </td>
 </tr>
 <tr>
 <td style="width: 162px;">Compounding Pharmacy</td>
-<td style="width: 162px;"><a href="HealthcareService-PharmChainCompService.html" title="HealthcareService/PharmChainCompService">PharmChainCompService</a></td>
+<td style="width: 162px;"><a title="HealthcareService/PharmChainCompService" href="HealthcareService-PharmChainCompService.html">PharmChainCompService</a></td>
 </tr>
 <tr>
 <td style="width: 162px;">Mail Order Pharmacy (virtual service with no physical location)</td>
-<td style="width: 162px;"><a href="HealthcareService-PharmChainMailService.html" title="HealthcareService/PharmChainMailService">PharmChainMailService</a></td>
+<td style="width: 162px;"><a title="HealthcareService/PharmChainMailService" href="HealthcareService-PharmChainMailService.html">PharmChainMailService</a></td>
 </tr>
 <tr>
 <td style="width: 162px;">Provider Group</td>
-<td style="width: 162px;"><a href="HealthcareService-HartfordOrthopedicServices.html" title="HealthcareService/HartfordOrthopedicServices">HartfordOrthopedicServices</a></td>
+<td style="width: 162px;"><a title="HealthcareService/HartfordOrthopedicServices" href="HealthcareService-HartfordOrthopedicServices.html">HartfordOrthopedicServices</a></td>
 </tr>
 <tr>
 <td style="width: 162px;">Emergency Room</td>
-<td style="width: 162px;"><a href="HealthcareService-HospERService.html" title="HealthcareService/HospERService">HospERService</a></td>
+<td style="width: 162px;"><a title="HealthcareService/HospERService" href="HealthcareService-HospERService.html">HospERService</a></td>
 </tr>
 <tr>
 <td style="width: 162px;">Cancer Clinic</td>
-<td style="width: 162px;"><a href="HealthcareService-CancerClinicService.html" title="HealthcareService/CancerClinicService">CancerClinicService</a></td>
+<td style="width: 162px;"><a title="HealthcareService/CancerClinicService" href="HealthcareService-CancerClinicService.html">CancerClinicService</a></td>
 </tr>
 <tr>
 <td style="width: 162px;">
@@ -340,7 +340,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 </tbody>
 </table>
-<h4><a name="InsurancePlanAndNetwork"></a>Insurance Plan and Network<br/><br/></h4>
+<h4><a name="InsurancePlanAndNetwork"></a>Insurance Plan and Network<br /><br /></h4>
 <p>Each payer will offer one or more products -- Insurance Plans -- and each plan is associated with one or more Networks.&nbsp; Practitioners and Organizations indicate participation in a Network with a link to the Network using a PractitionerRole or OrganizationAffiliation instance, respectively.&nbsp; &nbsp;PractitionerRole and OrganizationAffiliation instances are what tie Practitioners and Organizations to HealthcareServices, Organizations, Networks and Locations.</p>
 <p>The examples demonstrate the use of the InsurancePlan profile to represent two distinct Qualified Health Plan products covering the state of Connecticut, using a pair of Networks.&nbsp; The practitioners and organizations in the examples participate in one or both of these networks.</p>
 <p>Relevant examples:</p>
@@ -353,24 +353,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <tr>
 <td>Insurance Company</td>
 <td>
-<p><a href="Organization-Acme.html" title="Organization/Acme">Acme</a></p>
+<p><a title="Organization/Acme" href="Organization-Acme.html">Acme</a></p>
 </td>
 </tr>
 <tr>
 <td>QHP Gold Plan with two networks</td>
-<td><a href="InsurancePlan-AcmeQHPGold.html" title="InsurancePlan/AcmeQHPGold">AcmeQHPGold</a></td>
+<td><a title="InsurancePlan/AcmeQHPGold" href="InsurancePlan-AcmeQHPGold.html">AcmeQHPGold</a></td>
 </tr>
 <tr>
 <td>QHP Bronze plan with one network</td>
-<td><a href="InsurancePlan-AcmeQHPBronze.html" title="InsurancePlan/AcmeQHPBronze">AcmeQHPBronze</a></td>
+<td><a title="InsurancePlan/AcmeQHPBronze" href="InsurancePlan-AcmeQHPBronze.html">AcmeQHPBronze</a></td>
 </tr>
 <tr>
 <td>Standard Network</td>
-<td><a href="Organization-AcmeofCTStdNet.html" title="Organization/AcmeofCTStdNet">AcmeofCTStdNet</a></td>
+<td><a title="Organization/AcmeofCTStdNet" href="Organization-AcmeofCTStdNet.html">AcmeofCTStdNet</a></td>
 </tr>
 <tr>
 <td>Premium Network</td>
-<td><a href="Organization-AcmeofCTPremNet.html" title="Organization/AcmeofCTPremNet">AcmeofCTPremNet</a></td>
+<td><a title="Organization/AcmeofCTPremNet" href="Organization-AcmeofCTPremNet.html">AcmeofCTPremNet</a></td>
 </tr>
 </tbody>
 </table>
@@ -386,30 +386,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <tr>
 <td>Hospital Location #1</td>
 <td>
-<p><a href="Location-HospLoc1.html" title="Location/HospLoc1">HospLoc1</a></p>
+<p><a title="Location/HospLoc1" href="Location-HospLoc1.html">HospLoc1</a></p>
 </td>
 </tr>
 <tr>
 <td>Hospital Location #2</td>
-<td><a href="Location-HospLoc2.html" title="Location/HospLoc2">HospLoc2</a></td>
+<td><a title="Location/HospLoc2" href="Location-HospLoc2.html">HospLoc2</a></td>
 </tr>
 <tr>
-<td>Pharmacy Location #1 .&nbsp; Shows newpatient,<br/>accessibliity, and contactpoint-availabletime extensions</td>
-<td><a href="Location-PharmLoc1.html" title="Location/PharmLoc1">PharmLoc1</a></td>
+<td>Pharmacy Location #1 .&nbsp; Shows newpatient,<br />accessibliity, and contactpoint-availabletime extensions</td>
+<td><a title="Location/PharmLoc1" href="Location-PharmLoc1.html">PharmLoc1</a></td>
 </tr>
 <tr>
 <td>Pharmacy Location #2</td>
-<td><a href="Location-PharmLoc2.html" title="Location/PharmLoc2">PharmLoc2</a></td>
+<td><a title="Location/PharmLoc2" href="Location-PharmLoc2.html">PharmLoc2</a></td>
 </tr>
 <tr>
 <td>Location used as CoverageArea</td>
-<td><a href="Location-StateOfCTLocation.html" title="Location/StateOfCTLocation">StateOfCTLocation</a></td>
+<td><a title="Location/StateOfCTLocation" href="Location-StateOfCTLocation.html">StateOfCTLocation</a></td>
 </tr>
 </tbody>
 </table>
 <h4><a name="PractitionersAndPractitionerRole"></a>Practitioners and PractitionerRoles</h4>
 <p>Practitioner instances provide information about a specific person, including name, gender, languages spoken, and qualifications.&nbsp; &nbsp;PractitionerRole defines a role for a particular practitioner, and associates it with locations, specialties, an organization, and networks.</p>
-<table border="1" style="height: 243px; width: 803px;">
+<table style="height: 243px; width: 803px;" border="1">
 <tbody>
 <tr>
 <td style="width: 432px;">Scenario</td>
@@ -418,24 +418,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <tr>
 <td style="width: 432px;">Solo Practitioner (no organization)</td>
 <td style="width: 355px;">
-<p><a href="Practitioner-HansSolo.html" title="Practitioner/HansSolo">HansSolo</a>,&nbsp;<a href="PractitionerRole-HansSoloRole1.html" title="PractitionerRole/HansSoloRole1">HansSoloRole1</a>,&nbsp;<a href="HealthcareService-HansSoloService.html" title="HealthcareService/HansSoloService">HansSoloService</a></p>
+<p><a title="Practitioner/HansSolo" href="Practitioner-HansSolo.html">HansSolo</a>,&nbsp;<a title="PractitionerRole/HansSoloRole1" href="PractitionerRole-HansSoloRole1.html">HansSoloRole1</a>,&nbsp;<a title="HealthcareService/HansSoloService" href="HealthcareService-HansSoloService.html">HansSoloService</a></p>
 </td>
 </tr>
 <tr>
 <td style="width: 432px;">Anonymous role (not associated with a specific practitioner)</td>
-<td style="width: 355px;"><a href="PractitionerRole-AnonRole.html" title="PractitionerRole/AnonRole">AnonRole</a></td>
+<td style="width: 355px;"><a title="PractitionerRole/AnonRole" href="PractitionerRole-AnonRole.html">AnonRole</a></td>
 </tr>
 <tr>
 <td style="width: 432px;">Physician working at a provider group</td>
-<td style="width: 355px;"><a href="Practitioner-JoeSmith.html" title="Practitioner/JoeSmith">JoeSmith</a><a href="PractitionerRole-JoeSmithRole2.html" title="PractitionerRole/JoeSmithRole2">, JoeSmithRole2</a></td>
+<td style="width: 355px;"><a title="Practitioner/JoeSmith" href="Practitioner-JoeSmith.html">JoeSmith</a><a title="PractitionerRole/JoeSmithRole2" href="PractitionerRole-JoeSmithRole2.html">, JoeSmithRole2</a></td>
 </tr>
 <tr>
 <td style="width: 432px;">Physician with admitting privileges</td>
-<td style="width: 355px;"><a href="Practitioner-JoeSmith.html" title="Practitioner/JoeSmith">JoeSmith</a><a href="PractitionerRole-JoeSmithRole3.html" title="PractitionerRole/JoeSmithRole3">, JoeSmithRole3</a></td>
+<td style="width: 355px;"><a title="Practitioner/JoeSmith" href="Practitioner-JoeSmith.html">JoeSmith</a><a title="PractitionerRole/JoeSmithRole3" href="PractitionerRole-JoeSmithRole3.html">, JoeSmithRole3</a></td>
 </tr>
 <tr>
 <td style="width: 432px;">Physician working at a hospital</td>
-<td style="width: 355px;"><a href="Practitioner-JoeSmith.html" title="Practitioner/JoeSmith">JoeSmith</a><a href="PractitionerRole-JoeSmithRole1.html" title="PractitionerRole/JoeSmithRole1">, JoeSmithRole1</a></td>
+<td style="width: 355px;"><a title="Practitioner/JoeSmith" href="Practitioner-JoeSmith.html">JoeSmith</a><a title="PractitionerRole/JoeSmithRole1" href="PractitionerRole-JoeSmithRole1.html">, JoeSmithRole1</a></td>
 </tr>
 <tr>
 <td style="width: 432px;">Counselor working virtually</td>
@@ -458,30 +458,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <tr>
 <td>Pharmacy services are associated with a specific provider network</td>
 <td>
-<p><a href="Organization-PharmChain.html" title="Organization/PharmChain">PharmChain</a>,&nbsp;<a href="OrganizationAffiliation-PharmChainAffil1.html" title="OrganizationAffiliation/PharmChainAffil1">PharmChainAffil1</a>,&nbsp;<a href="OrganizationAffiliation-PharmChainAffil2.html" title="OrganizationAffiliation/PharmChainAffil2">PharmChainAffil1</a>,&nbsp;<a href="OrganizationAffiliation-PharmChainAffil3.html" title="OrganizationAffiliation/PharmChainAffil3">PharmChainAffil1</a></p>
+<p><a title="Organization/PharmChain" href="Organization-PharmChain.html">PharmChain</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil1" href="OrganizationAffiliation-PharmChainAffil1.html">PharmChainAffil1</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil2" href="OrganizationAffiliation-PharmChainAffil2.html">PharmChainAffil1</a>,&nbsp;<a title="OrganizationAffiliation/PharmChainAffil3" href="OrganizationAffiliation-PharmChainAffil3.html">PharmChainAffil1</a></p>
 </td>
 </tr>
 <tr>
 <td>Clinic Providing Service to a Hospital</td>
-<td><a href="Organization-BurrClinic.html" title="Organization/BurrClinic">BurrClinic</a>,&nbsp;<a href="OrganizationAffiliation-BurrClinicAffil.html" title="OrganizationAffiliation/BurrClinicAffil">BurrClinicAffil,&nbsp;</a><a href="Organization-Hospital.html" title="Organization/Hospital">Hospital</a></td>
+<td><a title="Organization/BurrClinic" href="Organization-BurrClinic.html">BurrClinic</a>,&nbsp;<a title="OrganizationAffiliation/BurrClinicAffil" href="OrganizationAffiliation-BurrClinicAffil.html">BurrClinicAffil,&nbsp;</a><a title="Organization/Hospital" href="Organization-Hospital.html">Hospital</a></td>
 </tr>
 <tr>
 <td>Clinic that is part of a Hospital</td>
-<td><a href="Organization-HamiltonClinic.html" title="Organization/HamiltonClinic">HamiltonClinic</a>,&nbsp;<a href="OrganizationAffiliation-HamiltonClinicAffil.html" title="OrganizationAffiliation/HamiltonClinicAffil">HamiltonClinicAffil,&nbsp;</a><a href="Organization-Hospital.html" title="Organization/Hospital">Hospital</a></td>
+<td><a title="Organization/HamiltonClinic" href="Organization-HamiltonClinic.html">HamiltonClinic</a>,&nbsp;<a title="OrganizationAffiliation/HamiltonClinicAffil" href="OrganizationAffiliation-HamiltonClinicAffil.html">HamiltonClinicAffil,&nbsp;</a><a title="Organization/Hospital" href="Organization-Hospital.html">Hospital</a></td>
 </tr>
 <tr>
 <td>Specialty group providing service to a network at hospital</td>
-<td><a href="Organization-HartfordOrthopedics.html" title="Organization/HartfordOrthopedics">HartfordOrthopedics</a>,&nbsp;<a href="OrganizationAffiliation-HartfordOrthopedicAffil.html" title="OrganizationAffiliation/HartfordOrthopedicAffil">HartfordOrthopedicAffil,&nbsp;</a><a href="Organization-Hospital.html" title="Organization/Hospital">Hospital</a></td>
+<td><a title="Organization/HartfordOrthopedics" href="Organization-HartfordOrthopedics.html">HartfordOrthopedics</a>,&nbsp;<a title="OrganizationAffiliation/HartfordOrthopedicAffil" href="OrganizationAffiliation-HartfordOrthopedicAffil.html">HartfordOrthopedicAffil,&nbsp;</a><a title="Organization/Hospital" href="Organization-Hospital.html">Hospital</a></td>
 </tr>
 <tr>
 <td>Clinic that is a member of a regional HIE</td>
-<td><a href="Organization-BurrClinic.html" title="Organization/BurrClinic">BurrClinic</a>,&nbsp;<a href="Organization-ConnHIE.html" title="Organization/ConnHIE">ConnHIE</a>,&nbsp;<a href="OrganizationAffiliation-ConnHIEAffil.html" title="OrganizationAffiliation/ConnHIEAffil">ConnHIEAffil</a></td>
+<td><a title="Organization/BurrClinic" href="Organization-BurrClinic.html">BurrClinic</a>,&nbsp;<a title="Organization/ConnHIE" href="Organization-ConnHIE.html">ConnHIE</a>,&nbsp;<a title="OrganizationAffiliation/ConnHIEAffil" href="OrganizationAffiliation-ConnHIEAffil.html">ConnHIEAffil</a></td>
 </tr>
 </tbody>
 </table>
 <h4><a name="Privacy"></a>Endpoints</h4>
 <p>An Endpoint instance&nbsp;provides&nbsp; technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.</p>
-<table border="1" width="776" style="height: 33px;">
+<table style="height: 33px;" border="1" width="776">
 <tbody>
 <tr>
 <td style="width: 167px;">Scenario</td>
@@ -489,7 +489,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr>
 <td style="width: 167px;">Payer Portal</td>
-<td style="width: 593px;"><a href="Endpoint-AcmeOfCTPortalEndpoint.html" title="Endpoint/AcmeOfCTPortalEndpoint">AcmeOfCTPortalEndpoint</a></td>
+<td style="width: 593px;"><a title="Endpoint/AcmeOfCTPortalEndpoint" href="Endpoint-AcmeOfCTPortalEndpoint.html">AcmeOfCTPortalEndpoint</a></td>
 </tr>
 </tbody>
 </table>
@@ -498,13 +498,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -514,55 +514,54 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 6, 2022 09:30-0500">2022-01-06</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 7, 2022 08:48-0500">2022-01-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/fhir-directory-query/history.html" target="_blank">Version History  |
-               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
 
-          
-        
-          <!-- /inner-wrapper -->
-        <!-- /container -->
-      <!-- /segment-footer -->
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
-  
+  </body>
+</html>
 
-
-</a></a></p></div></div></div></body></html>

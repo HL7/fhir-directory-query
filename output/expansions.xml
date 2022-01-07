@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4d96c285-8025-4aea-b549-80b18338ee44"/>
+  <id value="b90dd397-4e4c-4171-9021-ed6ef738c672"/>
   <meta>
-    <lastUpdated value="2022-01-06T09:30:55.686-05:00"/>
+    <lastUpdated value="2022-01-07T08:48:00.717-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,7 +75,7 @@
         <name value="AcceptingPatientsVS"/>
         <title value="Accepting Patients Codes"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -96,8 +96,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a7d78cb1-24e1-4418-957e-88c147adfd05"/>
-          <timestamp value="2022-01-06T09:32:28-05:00"/>
+          <identifier value="urn:uuid:2bceee1a-d7e9-4fc2-95f8-da9eb6c5413c"/>
+          <timestamp value="2022-01-07T08:50:39-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -224,7 +224,7 @@
         <name value="AccessibilityVS"/>
         <title value="Accessibility"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -245,8 +245,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0f88fdf6-b706-4ef3-b2ee-0853f369d24f"/>
-          <timestamp value="2022-01-06T09:32:28-05:00"/>
+          <identifier value="urn:uuid:0046e426-d925-4eb2-9528-07348c041844"/>
+          <timestamp value="2022-01-07T08:50:39-05:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -348,7 +348,7 @@
         <name value="DeliveryMethodVS"/>
         <title value="Delivery Methods"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -369,8 +369,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e60563c8-4547-4b57-84e1-0aa0befb828c"/>
-          <timestamp value="2022-01-06T09:32:28-05:00"/>
+          <identifier value="urn:uuid:7a0bfbde-c777-471b-a4d0-13be007c5753"/>
+          <timestamp value="2022-01-07T08:50:39-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -581,7 +581,7 @@
         <name value="EndpointConnectionTypeVS"/>
         <title value="Endpoint Connection Types"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -602,8 +602,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:af1431cb-6c6a-458e-85cf-f315e8648812"/>
-          <timestamp value="2022-01-06T09:32:28-05:00"/>
+          <identifier value="urn:uuid:5173c287-f387-4bbc-b5df-86e9ec0040a7"/>
+          <timestamp value="2022-01-07T08:50:39-05:00"/>
           <total value="16"/>
           <parameter>
             <name value="excludeNested"/>
@@ -746,7 +746,7 @@
         <name value="EndpointPayloadTypeVS"/>
         <title value="Endpoint Payload Types"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -767,8 +767,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6531621f-823f-459e-b4c9-5984d7e2f2e2"/>
-          <timestamp value="2022-01-06T09:32:28-05:00"/>
+          <identifier value="urn:uuid:3ee8d34e-2920-49ea-b522-f7e2c1e96a0e"/>
+          <timestamp value="2022-01-07T08:50:40-05:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -848,7 +848,7 @@
         <name value="EndpointTypeVS"/>
         <title value="Endpoint Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -869,8 +869,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c599638-8b02-4cdf-b1c7-17febf772d99"/>
-          <timestamp value="2022-01-06T09:32:28-05:00"/>
+          <identifier value="urn:uuid:dcadbf03-f856-4f06-ad84-c15c00c413bb"/>
+          <timestamp value="2022-01-07T08:50:40-05:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1016,7 +1016,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="EndpointUsecaseVS"/>
         <title value="Endpoint Usecases"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -1037,8 +1037,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:90857113-92d6-4ff7-b071-e90e0f578c7e"/>
-          <timestamp value="2022-01-06T09:32:29-05:00"/>
+          <identifier value="urn:uuid:f0911c72-ca37-4e9a-a2ac-a62eb54d0855"/>
+          <timestamp value="2022-01-07T08:50:40-05:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1254,7 +1254,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="HealthcareServiceCategoryVS"/>
         <title value="Healthcare Service Category"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -1275,8 +1275,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7b9d43d2-ffde-442f-a5d5-13813978b2eb"/>
-          <timestamp value="2022-01-06T09:32:29-05:00"/>
+          <identifier value="urn:uuid:3aa8bf1d-43da-4411-af9f-78825141f903"/>
+          <timestamp value="2022-01-07T08:50:40-05:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1366,6 +1366,1603 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceTypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="HealthcareServiceTypeVS"/>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+            <p>This value set contains 102 concepts</p>
+            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on example code system http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-service-type.html">
+                <code>http://terminology.hl7.org/CodeSystem/service-type</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-1"> </a>1
+                </td>
+                <td>Adoption/Permanent Care Info/Support</td>
+                <td>Adoption &amp; permanent care information/support</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-3"> </a>3
+                </td>
+                <td>Aged Care Information/Referral</td>
+                <td>Aged Care information/referral</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-8"> </a>8
+                </td>
+                <td>Home Care/Housekeeping Assistance</td>
+                <td>Home care/housekeeping assistance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-9"> </a>9
+                </td>
+                <td>Home Maintenance and Repair</td>
+                <td>Home maintenance and repair</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-10"> </a>10
+                </td>
+                <td>Personal Alarms/Alerts</td>
+                <td>Personal alarms/alerts</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-11"> </a>11
+                </td>
+                <td>Personal Care for Older Persons</td>
+                <td>Personal care for older persons</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-21"> </a>21
+                </td>
+                <td>Hydrotherapy</td>
+                <td>Hydrotherapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-26"> </a>26
+                </td>
+                <td>Meditation</td>
+                <td>Meditation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-31"> </a>31
+                </td>
+                <td>Relaxation Therapy</td>
+                <td>Relaxation therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-33"> </a>33
+                </td>
+                <td>Western Herbal Medicine</td>
+                <td>Western herbal medicine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-34"> </a>34
+                </td>
+                <td>Family Day care</td>
+                <td>Family day care</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-36"> </a>36
+                </td>
+                <td>Kindergarten Inclusion Support</td>
+                <td>Kindergarten inclusion support for children with a disability</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-42"> </a>42
+                </td>
+                <td>Parenting/Family Support/Education</td>
+                <td>Parenting &amp; family management support/education</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-51"> </a>51
+                </td>
+                <td>Blood Donation</td>
+                <td>Blood donation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-55"> </a>55
+                </td>
+                <td>Health Advocacy/Liaison Service</td>
+                <td>Health advocacy/Liaison service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-67"> </a>67
+                </td>
+                <td>Sexual Health</td>
+                <td>Sexual health</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-68"> </a>68
+                </td>
+                <td>Speech Pathology/Therapy</td>
+                <td>Speech pathology/therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-69"> </a>69
+                </td>
+                <td>Bereavement Counselling</td>
+                <td>Bereavement counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-70"> </a>70
+                </td>
+                <td>Crisis Counselling</td>
+                <td>Crisis counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-71"> </a>71
+                </td>
+                <td>Family Counselling/Therapy</td>
+                <td>Family counselling and/or family therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-72"> </a>72
+                </td>
+                <td>Family Violence Counselling</td>
+                <td>Family violence counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-75"> </a>75
+                </td>
+                <td>Genetic Counselling</td>
+                <td>Genetic counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-76"> </a>76
+                </td>
+                <td>Health Counselling</td>
+                <td>Health counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-78"> </a>78
+                </td>
+                <td>Problem Gambling Counselling</td>
+                <td>Problem gambling counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-79"> </a>79
+                </td>
+                <td>Relationship Counselling</td>
+                <td>Relationship counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-80"> </a>80
+                </td>
+                <td>Sexual Assault Counselling</td>
+                <td>Sexual assault counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-81"> </a>81
+                </td>
+                <td>Trauma Counselling</td>
+                <td>Trauma counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-82"> </a>82
+                </td>
+                <td>Victims of Crime Counselling</td>
+                <td>Victims of crime counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-96"> </a>96
+                </td>
+                <td>Disability Advocacy</td>
+                <td>Disability advocacy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-97"> </a>97
+                </td>
+                <td>Disability Aids &amp; Equipment</td>
+                <td>Disability aids &amp; equipment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-99"> </a>99
+                </td>
+                <td>Disability Day Programs/Activities</td>
+                <td>Disability day programs &amp; activities</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-102"> </a>102
+                </td>
+                <td>Disability Supported Accommodation</td>
+                <td>Disability supported accommodation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-103"> </a>103
+                </td>
+                <td>Early Childhood Intervention</td>
+                <td>Early childhood intervention</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-105"> </a>105
+                </td>
+                <td>Drug and/or Alcohol Counselling</td>
+                <td>Drug and/or alcohol counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-106"> </a>106
+                </td>
+                <td>Drug/Alcohol Information/Referral</td>
+                <td>Drug and/or alcohol information/referral</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-107"> </a>107
+                </td>
+                <td>Needle &amp; Syringe Exchange</td>
+                <td>Needle &amp; Syringe exchange</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-108"> </a>108
+                </td>
+                <td>Non-resid. Alcohol/Drug Treatment</td>
+                <td>Non-residential alcohol and/or drug dependence treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-111"> </a>111
+                </td>
+                <td>Residential Alcohol/Drug Treatment</td>
+                <td>Residential alcohol and/or drug dependence treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-118"> </a>118
+                </td>
+                <td>Employment Placement and/or Support</td>
+                <td>Employment placement and/or support</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-119"> </a>119
+                </td>
+                <td>Vocational Rehabilitation</td>
+                <td>Vocational Rehabilitation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-126"> </a>126
+                </td>
+                <td>Crisis/Emergency Accommodation</td>
+                <td>Crisis/emergency accommodation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-127"> </a>127
+                </td>
+                <td>Homelessness Support</td>
+                <td>Homelessness support</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-128"> </a>128
+                </td>
+                <td>Housing Information/Referral</td>
+                <td>Housing information/referral</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-130"> </a>130
+                </td>
+                <td>Interpreting/Multilingual Service</td>
+                <td>Interpreting/Multilingual/Language service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-134"> </a>134
+                </td>
+                <td>Mental Health Advocacy</td>
+                <td>Mental health advocacy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-146"> </a>146
+                </td>
+                <td>Physical Activity Programs</td>
+                <td>Physical activity programs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-147"> </a>147
+                </td>
+                <td>Physical Fitness Testing</td>
+                <td>Physical fitness testing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-224"> </a>224
+                </td>
+                <td>Support Groups</td>
+                <td>Support groups</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-230"> </a>230
+                </td>
+                <td>Patient Transport</td>
+                <td>Patient transport</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-233"> </a>233
+                </td>
+                <td>Abuse</td>
+                <td>Abuse</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-238"> </a>238
+                </td>
+                <td>Adult Day Programs</td>
+                <td>Adult Day Programs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-245"> </a>245
+                </td>
+                <td>Aids</td>
+                <td>Aids</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-275"> </a>275
+                </td>
+                <td>Cancer Support</td>
+                <td>Cancer Support</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-284"> </a>284
+                </td>
+                <td>Child Care</td>
+                <td>Child Care</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-296"> </a>296
+                </td>
+                <td>Companion Visiting</td>
+                <td>Companion Visiting</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-301"> </a>301
+                </td>
+                <td>Contraception Inform</td>
+                <td>Contraception Information</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-308"> </a>308
+                </td>
+                <td>Crisis Assessment An</td>
+                <td>Crisis Assessment And Treatment Services (Cats)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-309"> </a>309
+                </td>
+                <td>Crisis Assistance</td>
+                <td>Crisis Assistance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-310"> </a>310
+                </td>
+                <td>Crisis Refuge</td>
+                <td>Crisis Refuge</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-316"> </a>316
+                </td>
+                <td>Depression</td>
+                <td>Depression</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-317"> </a>317
+                </td>
+                <td>Detoxification</td>
+                <td>Detoxification</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-323"> </a>323
+                </td>
+                <td>Divorce</td>
+                <td>Divorce</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-328"> </a>328
+                </td>
+                <td>Eating Disorder</td>
+                <td>Eating Disorder</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-331"> </a>331
+                </td>
+                <td>Employment And Train</td>
+                <td>Employment And Training</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-344"> </a>344
+                </td>
+                <td>Food</td>
+                <td>Food</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-345"> </a>345
+                </td>
+                <td>Food Vouchers</td>
+                <td>Food Vouchers</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-352"> </a>352
+                </td>
+                <td>Grief Counselling</td>
+                <td>Grief Counselling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-366"> </a>366
+                </td>
+                <td>Household Items</td>
+                <td>Household Items</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-400"> </a>400
+                </td>
+                <td>Pain</td>
+                <td>Pain</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-409"> </a>409
+                </td>
+                <td>Postnatal</td>
+                <td>Postnatal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-411"> </a>411
+                </td>
+                <td>Pregnancy Tests</td>
+                <td>Pregnancy Tests</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-427"> </a>427
+                </td>
+                <td>Rent Assistance</td>
+                <td>Rent Assistance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-429"> </a>429
+                </td>
+                <td>Residential Respite</td>
+                <td>Residential Respite</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-440"> </a>440
+                </td>
+                <td>Sexual Issues</td>
+                <td>Sexual Issues</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-446"> </a>446
+                </td>
+                <td>Speech Therapist</td>
+                <td>Speech Therapist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-459"> </a>459
+                </td>
+                <td>Tenancy Advice</td>
+                <td>Tenancy Advice</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-468"> </a>468
+                </td>
+                <td>Vocational Guidance</td>
+                <td>Vocational Guidance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-470"> </a>470
+                </td>
+                <td>Welfare Assistance</td>
+                <td>Welfare Assistance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-488"> </a>488
+                </td>
+                <td>Diabetes Educator</td>
+                <td>Diabetes Educator</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-494"> </a>494
+                </td>
+                <td>Youth Services</td>
+                <td>Youth Services</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-495"> </a>495
+                </td>
+                <td>Youth Health</td>
+                <td>Youth Health</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-501"> </a>501
+                </td>
+                <td>Cancer Services</td>
+                <td>Cancer Services</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-513"> </a>513
+                </td>
+                <td>Cancer Support Groups</td>
+                <td>Cancer Support Groups</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-530"> </a>530
+                </td>
+                <td>Disability Care Transport</td>
+                <td>Disability Care Transport</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-531"> </a>531
+                </td>
+                <td>Aged Care Transport</td>
+                <td>Aged Care Transport</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-532"> </a>532
+                </td>
+                <td>Diabetes Education s</td>
+                <td>Diabetes Education service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-534"> </a>534
+                </td>
+                <td>Young Adult Diabetes</td>
+                <td>Young Adult Diabetes services (YADS)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-535"> </a>535
+                </td>
+                <td>Pulmonary Rehabilita</td>
+                <td>Pulmonary Rehabilitation Service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-537"> </a>537
+                </td>
+                <td>Medication Reviews</td>
+                <td>Medication Reviews</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-539"> </a>539
+                </td>
+                <td>Telephone Help Line</td>
+                <td>Telephone Help Line</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-546"> </a>546
+                </td>
+                <td>Veterans Services</td>
+                <td>Veterans Services</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-548"> </a>548
+                </td>
+                <td>Food Relief/Food/Meals</td>
+                <td>Food Relief/food/meals</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-552"> </a>552
+                </td>
+                <td>Drug and/or Alcohol Support Groups</td>
+                <td>Drug and/or alcohol support groups</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-554"> </a>554
+                </td>
+                <td>Chronic Disease Management</td>
+                <td>Chronic Disease Management</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-559"> </a>559
+                </td>
+                <td>Women&#39;s Health</td>
+                <td>Women&#39;s Health</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-560"> </a>560
+                </td>
+                <td>Men&#39;s Health</td>
+                <td>Men&#39;s Health</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-565"> </a>565
+                </td>
+                <td>Youth Drop In/Assistance/Support</td>
+                <td>Youth drop in/assistance/support</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-569"> </a>569
+                </td>
+                <td>Migrant Health Clinic</td>
+                <td>Migrant Health Clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-570"> </a>570
+                </td>
+                <td>Refugee Health Clinic</td>
+                <td>Refugee Health Clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-571"> </a>571
+                </td>
+                <td>Aboriginal Health Clinic</td>
+                <td>Aboriginal Health Clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-614"> </a>614
+                </td>
+                <td>Development-Life Skills</td>
+                <td>Development-Life Skills</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-628"> </a>628
+                </td>
+                <td>Vehicle modifications</td>
+                <td>Vehicle modifications</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceTypeVS"/>
+        <version value="0.0.1"/>
+        <name value="HealthcareServiceTypeVS"/>
+        <title value="HealthcareService Types"/>
+        <status value="active"/>
+        <date value="2022-01-06T12:37:27-05:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:b9182043-0a57-4c08-9cfe-c7e9e179ed92"/>
+          <timestamp value="2022-01-06T17:40:29.226Z"/>
+          <parameter>
+            <name value="expansion-source"/>
+            <valueUri value="ValueSet/HealthcareServiceTypeVS"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="example"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/service-type|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/service-type|4.0.1"/>
+          </parameter>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Adoption &amp; permanent care information/support"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="1"/>
+            <display value="Adoption/Permanent Care Info/Support"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Aged Care information/referral"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="3"/>
+            <display value="Aged Care Information/Referral"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Home care/housekeeping assistance"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="8"/>
+            <display value="Home Care/Housekeeping Assistance"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Home maintenance and repair"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="9"/>
+            <display value="Home Maintenance and Repair"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Personal alarms/alerts"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="10"/>
+            <display value="Personal Alarms/Alerts"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Personal care for older persons"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="11"/>
+            <display value="Personal Care for Older Persons"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Hydrotherapy"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="21"/>
+            <display value="Hydrotherapy"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Meditation"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="26"/>
+            <display value="Meditation"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Relaxation therapy"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="31"/>
+            <display value="Relaxation Therapy"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Western herbal medicine"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="33"/>
+            <display value="Western Herbal Medicine"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Family day care"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="34"/>
+            <display value="Family Day care"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Kindergarten inclusion support for children with a disability"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="36"/>
+            <display value="Kindergarten Inclusion Support"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Parenting &amp; family management support/education"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="42"/>
+            <display value="Parenting/Family Support/Education"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Blood donation"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="51"/>
+            <display value="Blood Donation"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Health advocacy/Liaison service"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="55"/>
+            <display value="Health Advocacy/Liaison Service"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Sexual health"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="67"/>
+            <display value="Sexual Health"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Speech pathology/therapy"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="68"/>
+            <display value="Speech Pathology/Therapy"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Bereavement counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="69"/>
+            <display value="Bereavement Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Crisis counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="70"/>
+            <display value="Crisis Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Family counselling and/or family therapy"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="71"/>
+            <display value="Family Counselling/Therapy"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Family violence counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="72"/>
+            <display value="Family Violence Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Genetic counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="75"/>
+            <display value="Genetic Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Health counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="76"/>
+            <display value="Health Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Problem gambling counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="78"/>
+            <display value="Problem Gambling Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Relationship counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="79"/>
+            <display value="Relationship Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Sexual assault counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="80"/>
+            <display value="Sexual Assault Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Trauma counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="81"/>
+            <display value="Trauma Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Victims of crime counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="82"/>
+            <display value="Victims of Crime Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Disability advocacy"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="96"/>
+            <display value="Disability Advocacy"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Disability aids &amp; equipment"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="97"/>
+            <display value="Disability Aids &amp; Equipment"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Disability day programs &amp; activities"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="99"/>
+            <display value="Disability Day Programs/Activities"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Disability supported accommodation"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="102"/>
+            <display value="Disability Supported Accommodation"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Early childhood intervention"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="103"/>
+            <display value="Early Childhood Intervention"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Drug and/or alcohol counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="105"/>
+            <display value="Drug and/or Alcohol Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Drug and/or alcohol information/referral"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="106"/>
+            <display value="Drug/Alcohol Information/Referral"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Needle &amp; Syringe exchange"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="107"/>
+            <display value="Needle &amp; Syringe Exchange"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Non-residential alcohol and/or drug dependence treatment"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="108"/>
+            <display value="Non-resid. Alcohol/Drug Treatment"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Residential alcohol and/or drug dependence treatment"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="111"/>
+            <display value="Residential Alcohol/Drug Treatment"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Employment placement and/or support"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="118"/>
+            <display value="Employment Placement and/or Support"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Vocational Rehabilitation"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="119"/>
+            <display value="Vocational Rehabilitation"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Crisis/emergency accommodation"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="126"/>
+            <display value="Crisis/Emergency Accommodation"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Homelessness support"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="127"/>
+            <display value="Homelessness Support"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Housing information/referral"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="128"/>
+            <display value="Housing Information/Referral"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Interpreting/Multilingual/Language service"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="130"/>
+            <display value="Interpreting/Multilingual Service"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Mental health advocacy"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="134"/>
+            <display value="Mental Health Advocacy"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Physical activity programs"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="146"/>
+            <display value="Physical Activity Programs"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Physical fitness testing"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="147"/>
+            <display value="Physical Fitness Testing"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Support groups"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="224"/>
+            <display value="Support Groups"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Patient transport"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="230"/>
+            <display value="Patient Transport"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Abuse"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="233"/>
+            <display value="Abuse"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Adult Day Programs"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="238"/>
+            <display value="Adult Day Programs"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Aids"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="245"/>
+            <display value="Aids"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Cancer Support"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="275"/>
+            <display value="Cancer Support"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Child Care"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="284"/>
+            <display value="Child Care"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Companion Visiting"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="296"/>
+            <display value="Companion Visiting"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Contraception Information"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="301"/>
+            <display value="Contraception Inform"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Crisis Assessment And Treatment Services (Cats)"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="308"/>
+            <display value="Crisis Assessment An"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Crisis Assistance"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="309"/>
+            <display value="Crisis Assistance"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Crisis Refuge"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="310"/>
+            <display value="Crisis Refuge"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Depression"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="316"/>
+            <display value="Depression"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Detoxification"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="317"/>
+            <display value="Detoxification"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Divorce"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="323"/>
+            <display value="Divorce"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Eating Disorder"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="328"/>
+            <display value="Eating Disorder"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Employment And Training"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="331"/>
+            <display value="Employment And Train"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Food"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="344"/>
+            <display value="Food"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Food Vouchers"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="345"/>
+            <display value="Food Vouchers"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Grief Counselling"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="352"/>
+            <display value="Grief Counselling"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Household Items"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="366"/>
+            <display value="Household Items"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Pain"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="400"/>
+            <display value="Pain"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Postnatal"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="409"/>
+            <display value="Postnatal"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Pregnancy Tests"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="411"/>
+            <display value="Pregnancy Tests"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Rent Assistance"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="427"/>
+            <display value="Rent Assistance"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Residential Respite"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="429"/>
+            <display value="Residential Respite"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Sexual Issues"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="440"/>
+            <display value="Sexual Issues"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Speech Therapist"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="446"/>
+            <display value="Speech Therapist"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Tenancy Advice"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="459"/>
+            <display value="Tenancy Advice"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Vocational Guidance"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="468"/>
+            <display value="Vocational Guidance"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Welfare Assistance"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="470"/>
+            <display value="Welfare Assistance"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Diabetes Educator"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="488"/>
+            <display value="Diabetes Educator"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Youth Services"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="494"/>
+            <display value="Youth Services"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Youth Health"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="495"/>
+            <display value="Youth Health"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Cancer Services"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="501"/>
+            <display value="Cancer Services"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Cancer Support Groups"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="513"/>
+            <display value="Cancer Support Groups"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Disability Care Transport"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="530"/>
+            <display value="Disability Care Transport"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Aged Care Transport"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="531"/>
+            <display value="Aged Care Transport"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Diabetes Education service"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="532"/>
+            <display value="Diabetes Education s"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Young Adult Diabetes services (YADS)"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="534"/>
+            <display value="Young Adult Diabetes"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Pulmonary Rehabilitation Service"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="535"/>
+            <display value="Pulmonary Rehabilita"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Medication Reviews"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="537"/>
+            <display value="Medication Reviews"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Telephone Help Line"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="539"/>
+            <display value="Telephone Help Line"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Veterans Services"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="546"/>
+            <display value="Veterans Services"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Food Relief/food/meals"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="548"/>
+            <display value="Food Relief/Food/Meals"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Drug and/or alcohol support groups"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="552"/>
+            <display value="Drug and/or Alcohol Support Groups"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Chronic Disease Management"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="554"/>
+            <display value="Chronic Disease Management"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Women&#39;s Health"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="559"/>
+            <display value="Women&#39;s Health"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Men&#39;s Health"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="560"/>
+            <display value="Men&#39;s Health"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Youth drop in/assistance/support"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="565"/>
+            <display value="Youth Drop In/Assistance/Support"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Migrant Health Clinic"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="569"/>
+            <display value="Migrant Health Clinic"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Refugee Health Clinic"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="570"/>
+            <display value="Refugee Health Clinic"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Aboriginal Health Clinic"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="571"/>
+            <display value="Aboriginal Health Clinic"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Development-Life Skills"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="614"/>
+            <display value="Development-Life Skills"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="Vehicle modifications"/>
+            </extension>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="628"/>
+            <display value="Vehicle modifications"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS"/>
     <resource>
       <ValueSet>
@@ -1418,7 +3015,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="IgTypeVS"/>
         <title value="IG Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -1439,8 +3036,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c0b3c765-8b74-4486-8020-259d20042ca9"/>
-          <timestamp value="2022-01-06T09:32:29-05:00"/>
+          <identifier value="urn:uuid:9f5898ca-5043-4477-b0e7-c9111431ed75"/>
+          <timestamp value="2022-01-07T08:50:41-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5504,8 +7101,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:fdcb2d6a-aed8-45e1-bd93-4dcc1dfc7c87"/>
-          <timestamp value="2022-01-05T23:53:32.462Z"/>
+          <identifier value="urn:uuid:0a65d278-f1fb-4fc5-8384-4010e5605f5b"/>
+          <timestamp value="2022-01-06T17:40:29.930Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -16815,7 +18412,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="IndividualSpecialtyAndDegreeLicenseCertificateVS"/>
         <title value="Individual Specialties, Degrees, Licenses, and Certificates"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -16836,8 +18433,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5df200e2-396d-49d4-993f-8a51804fb8e0"/>
-          <timestamp value="2022-01-06T09:32:30-05:00"/>
+          <identifier value="urn:uuid:c6b3a6fc-fccb-4f70-ad09-754dfa710d6e"/>
+          <timestamp value="2022-01-07T08:50:41-05:00"/>
           <total value="730"/>
           <parameter>
             <name value="excludeNested"/>
@@ -21952,7 +23549,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="InsurancePlanTypeVS"/>
         <title value="Insurance Plan Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -21973,8 +23570,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:283f041d-161e-45f2-9e7a-816e67a5b214"/>
-          <timestamp value="2022-01-06T09:32:30-05:00"/>
+          <identifier value="urn:uuid:4f387f21-0acb-4b23-b7b9-bb7bba928adf"/>
+          <timestamp value="2022-01-07T08:50:41-05:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22241,7 +23838,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="InsuranceProductTypeVS"/>
         <title value="Insurance Product Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22262,8 +23859,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0b1741f1-a5cb-4fad-9184-9f57814955cc"/>
-          <timestamp value="2022-01-06T09:32:30-05:00"/>
+          <identifier value="urn:uuid:df3b7732-1578-497e-ba25-8efb72ffda0b"/>
+          <timestamp value="2022-01-07T08:50:42-05:00"/>
           <total value="22"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22472,7 +24069,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="LanguageProficiencyVS"/>
         <title value="Language Proficiency"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22493,8 +24090,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8f52d9b5-aa77-443d-8dfa-094d0c597639"/>
-          <timestamp value="2022-01-06T09:32:30-05:00"/>
+          <identifier value="urn:uuid:d0976541-fdab-4c72-baa9-8d0fefa37ba4"/>
+          <timestamp value="2022-01-07T08:50:42-05:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22626,7 +24223,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="MinEndpointConnectionTypeVS"/>
         <title value="Minimum Endpoint Connection Types"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22647,8 +24244,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b7a41b5a-7033-4230-b7c0-fa84f148421b"/>
-          <timestamp value="2022-01-06T09:32:30-05:00"/>
+          <identifier value="urn:uuid:e157fa85-2038-4ef1-a5ac-f2e1afd76d6d"/>
+          <timestamp value="2022-01-07T08:50:42-05:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22736,7 +24333,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="NetworkTypeVS"/>
         <title value="Network Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22757,8 +24354,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b98ae998-9665-4879-8900-f872ea7169e2"/>
-          <timestamp value="2022-01-06T09:32:31-05:00"/>
+          <identifier value="urn:uuid:1af7d8ab-4c9d-408b-87ec-e82e94503f94"/>
+          <timestamp value="2022-01-07T08:50:42-05:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -23889,8 +25486,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b8c127c3-86e7-4bb2-bf20-970529bb2047"/>
-          <timestamp value="2022-01-05T23:53:34.572Z"/>
+          <identifier value="urn:uuid:029a305e-5d6f-4cd1-8652-2f34c593217d"/>
+          <timestamp value="2022-01-06T17:40:32.040Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -27392,7 +28989,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="NonIndividualSpecialtyAndDegreeLicenseCertificateVS"/>
         <title value="Non-Individual Specialties, Degrees, Licenses, and Certificates"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -27413,8 +29010,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:42246582-6d28-4045-b78d-849f0057b1cb"/>
-          <timestamp value="2022-01-06T09:32:31-05:00"/>
+          <identifier value="urn:uuid:3f39c188-9fdf-4988-a898-ab541bfea760"/>
+          <timestamp value="2022-01-07T08:50:43-05:00"/>
           <total value="242"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29089,7 +30686,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="OrgTypeVS"/>
         <title value="Organization Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -29110,8 +30707,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4ae801b0-57d2-4fd5-8a85-9440bd9b90c4"/>
-          <timestamp value="2022-01-06T09:32:31-05:00"/>
+          <identifier value="urn:uuid:3678983a-a333-409b-a8cf-3fe9dd418eb0"/>
+          <timestamp value="2022-01-07T08:50:43-05:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29409,7 +31006,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="OrganizationAffiliationRoleVS"/>
         <title value="OrganizationAffiliation Roles"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -29430,8 +31027,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0cca267c-a299-4fdb-a82f-c50c949f57ea"/>
-          <timestamp value="2022-01-06T09:32:31-05:00"/>
+          <identifier value="urn:uuid:2dbb74cc-20c4-47a9-99a4-1e47d513b8fd"/>
+          <timestamp value="2022-01-07T08:50:43-05:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30035,7 +31632,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="PractitionerRoleVS"/>
         <title value="PractitionerRole Code"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -30056,8 +31653,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e0ecb13-b1c2-4456-ab5f-f690598c4392"/>
-          <timestamp value="2022-01-06T09:32:32-05:00"/>
+          <identifier value="urn:uuid:3072a847-97a7-49e5-b20b-d6b22c1bf631"/>
+          <timestamp value="2022-01-07T08:50:43-05:00"/>
           <total value="47"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30395,7 +31992,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="QualificationStatusVS"/>
         <title value="Qualification Status"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -30416,8 +32013,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:04b3d586-e48d-45d6-b34b-2471c820baf3"/>
-          <timestamp value="2022-01-06T09:32:32-05:00"/>
+          <identifier value="urn:uuid:16c45ce6-2990-4fc0-a9e3-d27208d20eb3"/>
+          <timestamp value="2022-01-07T08:50:44-05:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35602,7 +37199,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="SpecialtiesVS"/>
         <title value="Specialties"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -35623,8 +37220,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:316dbeeb-1698-4f79-ae4b-126b8125c95f"/>
-          <timestamp value="2022-01-06T09:32:32-05:00"/>
+          <identifier value="urn:uuid:2e276d9d-4541-42ed-a703-c2eea9eb25c7"/>
+          <timestamp value="2022-01-07T08:50:44-05:00"/>
           <total value="850"/>
           <parameter>
             <name value="excludeNested"/>
@@ -48999,7 +50596,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="SpecialtyAndDegreeLicenseCertificateVS"/>
         <title value="Specialties, Degrees, Licenses, and Certificates"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -49020,8 +50617,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4f6816db-8ffa-422c-a50d-ac6bbbb03c55"/>
-          <timestamp value="2022-01-06T09:32:32-05:00"/>
+          <identifier value="urn:uuid:f3fffc9a-27f3-4c68-8d2d-9b0bac181857"/>
+          <timestamp value="2022-01-07T08:50:44-05:00"/>
           <total value="911"/>
           <parameter>
             <name value="excludeNested"/>
@@ -55403,7 +57000,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="TrustFrameworkTypeVS"/>
         <title value="Trust Framework Type"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -55424,8 +57021,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6f769ec0-e719-4d95-833a-905a196ac34d"/>
-          <timestamp value="2022-01-06T09:32:33-05:00"/>
+          <identifier value="urn:uuid:118235f8-15dc-42d0-95ee-7f20a42055b9"/>
+          <timestamp value="2022-01-07T08:50:44-05:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -55559,7 +57156,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="VirtualModalitiesVS"/>
         <title value="Virtual Modalities"/>
         <status value="active"/>
-        <date value="2022-01-06T09:30:55-05:00"/>
+        <date value="2022-01-07T08:48:00-05:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -55580,8 +57177,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:57319049-de61-4e61-86e2-e0430bb2ea04"/>
-          <timestamp value="2022-01-06T09:32:33-05:00"/>
+          <identifier value="urn:uuid:3acc0549-98bf-4a52-a241-c450ff466b09"/>
+          <timestamp value="2022-01-07T08:50:45-05:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

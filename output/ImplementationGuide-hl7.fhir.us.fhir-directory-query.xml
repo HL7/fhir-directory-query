@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-01-06T09:30:55-05:00"/>
+  <date value="2022-01-07T08:48:00-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -254,7 +254,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDiEndpointQryr-Location"/>
+        <reference value="StructureDefinition/NatlDirEndpointQry-Location"/>
       </reference>
       <name value="National Directory Endpoint Qry Exchange Location"/>
       <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, &#xD;&#xA;                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>

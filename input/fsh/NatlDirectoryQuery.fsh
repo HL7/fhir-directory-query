@@ -211,7 +211,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 
 Profile:        NatlDirEndpointQryLocation
 Parent:         $USCoreLocation
-Id:             NatlDiEndpointQryr-Location
+Id:             NatlDirEndpointQry-Location
 Title:          "National Directory Endpoint Qry Exchange Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, 
                  organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
