@@ -1,1141 +1,925 @@
 {
-  "ImplementationGuide/hl7.fhir.us.fhir-directory-exchange": {
+  "ImplementationGuide/hl7.fhir.us.core": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-CareTeam": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/NatlDir-Endpoint": {
-    "errors": 2,
-    "warnings": 0
-  },
-  "StructureDefinition/NatlDir-HealthcareService": {
+  "CapabilityStatement/us-core-client": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-InsurancePlan": {
+  "CapabilityStatement/us-core-server": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Location": {
+  "CodeSystem/careplan-category": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Network": {
+  "CodeSystem/cdcrec": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Organization": {
+  "CodeSystem/condition-category": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-OrganizationAffiliation": {
+  "CodeSystem/us-core-documentreference-category": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Practitioner": {
+  "CodeSystem/us-core-provenance-participant-type": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-PractitionerRole": {
+  "OperationDefinition/docref": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Restriction": {
-    "errors": 3,
-    "warnings": 3
-  },
-  "StructureDefinition/NatlDir-Validation": {
-    "errors": 2,
-    "warnings": 3
-  },
-  "StructureDefinition/accessibility": {
+  "SearchParameter/us-core-allergyintolerance-clinical-status": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/associatedServers": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/careteam-alias": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/communication-proficiency": {
+  "SearchParameter/us-core-allergyintolerance-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/contactpoint-availabletime": {
+  "SearchParameter/us-core-careplan-category": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/contactpoint-viaintermediary": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/delivery-method": {
+  "SearchParameter/us-core-careplan-date": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/digitalcertificate": {
-    "errors": 8,
-    "warnings": 9
-  },
-  "StructureDefinition/dynamicRegistration": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/endpoint-reference": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/endpointType": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/endpoint-usecase": {
+  "SearchParameter/us-core-careplan-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/healthcareservice-reference": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/igsSupported": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/identifier-status": {
-    "errors": 2,
-    "warnings": 3
-  },
-  "StructureDefinition/insuranceplan-reference": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/location-reference": {
+  "SearchParameter/us-core-careplan-status": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/network-reference": {
+  "SearchParameter/us-core-careteam-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/newpatientprofile": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/newpatients": {
+  "SearchParameter/us-core-careteam-status": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/org-alias-period": {
+  "SearchParameter/us-core-condition-category": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-condition-clinical-status": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-condition-code": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-condition-onset-date": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-condition-patient": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-device-patient": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-device-type": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-diagnosticreport-category": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-diagnosticreport-code": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-diagnosticreport-date": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-diagnosticreport-patient": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-diagnosticreport-status": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-documentreference-category": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-documentreference-date": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-documentreference-id": {
     "errors": 0,
     "warnings": 1
   },
-  "StructureDefinition/org-alias-type": {
-    "errors": 2,
-    "warnings": 3
-  },
-  "StructureDefinition/org-description": {
+  "SearchParameter/us-core-documentreference-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/practitioner-qualification": {
+  "SearchParameter/us-core-documentreference-period": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/qualification": {
+  "SearchParameter/us-core-documentreference-status": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/secureEndpoint": {
+  "SearchParameter/us-core-documentreference-type": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "StructureDefinition/secureExchangeArtifacts": {
+  "SearchParameter/us-core-encounter-class": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "StructureDefinition/trustFramework": {
+  "SearchParameter/us-core-encounter-date": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "StructureDefinition/usage-restriction": {
+  "SearchParameter/us-core-encounter-id": {
     "errors": 0,
     "warnings": 1
   },
-  "StructureDefinition/via-intermediary": {
+  "SearchParameter/us-core-encounter-identifier": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/AcceptingPatientsVS": {
+  "SearchParameter/us-core-encounter-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/AccessibilityVS": {
+  "SearchParameter/us-core-encounter-status": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/DeliveryMethodVS": {
+  "SearchParameter/us-core-encounter-type": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/EndpointConnectionTypeVS": {
+  "SearchParameter/us-core-ethnicity": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/EndpointPayloadTypeVS": {
+  "SearchParameter/us-core-goal-lifecycle-status": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/EndpointTypeVS": {
+  "SearchParameter/us-core-goal-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/EndpointUsecaseVS": {
+  "SearchParameter/us-core-goal-target-date": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/HealthcareServiceCategoryVS": {
+  "SearchParameter/us-core-immunization-date": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/HealthcareServiceTypeVS": {
+  "SearchParameter/us-core-immunization-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/IgTypeVS": {
+  "SearchParameter/us-core-immunization-status": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/IndividualAndGroupSpecialtiesVS": {
-    "errors": 0,
-    "warnings": 2
-  },
-  "ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS": {
+  "SearchParameter/us-core-location-address-city": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/InsurancePlanTypeVS": {
+  "SearchParameter/us-core-location-address-postalcode": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/InsuranceProductTypeVS": {
+  "SearchParameter/us-core-location-address-state": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/LanguageProficiencyVS": {
+  "SearchParameter/us-core-location-address": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/MinEndpointConnectionTypeVS": {
+  "SearchParameter/us-core-location-name": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/NetworkTypeVS": {
+  "SearchParameter/us-core-medicationrequest-authoredon": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/NonIndividualSpecialtiesVS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS": {
+  "SearchParameter/us-core-medicationrequest-encounter": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/OrgTypeVS": {
+  "SearchParameter/us-core-medicationrequest-intent": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/OrganizationAffiliationRoleVS": {
+  "SearchParameter/us-core-medicationrequest-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/PractitionerRoleVS": {
+  "SearchParameter/us-core-medicationrequest-status": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/QualificationStatusVS": {
+  "SearchParameter/us-core-observation-category": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/SpecialtiesVS": {
+  "SearchParameter/us-core-observation-code": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/SpecialtyAndDegreeLicenseCertificateVS": {
+  "SearchParameter/us-core-observation-date": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/TrustFrameworkTypeVS": {
+  "SearchParameter/us-core-observation-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "ValueSet/VirtualModalitiesVS": {
+  "SearchParameter/us-core-observation-status": {
     "errors": 0,
     "warnings": 0
   },
-  "CodeSystem/AcceptingPatientsCS": {
+  "SearchParameter/us-core-organization-address": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "CodeSystem/AccessibilityCS": {
+  "SearchParameter/us-core-organization-name": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "CodeSystem/DeliveryMethodCS": {
+  "SearchParameter/us-core-patient-birthdate": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "CodeSystem/EndpointConnectionTypeCS": {
+  "SearchParameter/us-core-patient-family": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "CodeSystem/EndpointPayloadTypeCS": {
+  "SearchParameter/us-core-patient-gender": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
-  "CodeSystem/EndpointTypeCS": {
+  "SearchParameter/us-core-patient-given": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/us-core-patient-id": {
     "errors": 0,
     "warnings": 1
   },
-  "CodeSystem/HealthcareServiceCategoryCS": {
+  "SearchParameter/us-core-patient-identifier": {
     "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/IgTypeCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/InsurancePlanTypeCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/InsuranceProductTypeCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/LanguageProficiencyCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/OrgTypeCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/OrganizationAffiliationRoleCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/ProviderRoleCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/QualificationStatusCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/TrustFrameworkTypeCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "CodeSystem/VirtualModalitiesCS": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Organization/Acme": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Endpoint/AcmeOfCTPortalEndpoint": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "InsurancePlan/AcmeQHPBronze": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "InsurancePlan/AcmeQHPGold": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Organization/AcmeofCTPremNet": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Organization/AcmeofCTStdNet": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "PractitionerRole/AnonRole": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Organization/BigBox": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Organization/BurrClinic": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "OrganizationAffiliation/BurrClinicAffil": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/BurrClinicServices": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Organization/CancerClinic": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Location/CancerClinicLoc": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/CancerClinicService": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Organization/ConnHIE": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "OrganizationAffiliation/ConnHIEAffil": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Practitioner/Counselor": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "PractitionerRole/CounselorRole1": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Organization/HamiltonClinic": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "OrganizationAffiliation/HamiltonClinicAffil": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/HamiltonClinicServices": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Practitioner/HansSolo": {
-    "errors": 0,
-    "warnings": 2
-  },
-  "Location/HansSoloClinic": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "PractitionerRole/HansSoloRole1": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "HealthcareService/HansSoloService": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "OrganizationAffiliation/HartfordOrthopedicAffil": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/HartfordOrthopedicServices": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Organization/HartfordOrthopedics": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/HospERService": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "Location/HospLoc1": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Location/HospLoc2": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Organization/Hospital": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Practitioner/JoeSmith": {
-    "errors": 0,
-    "warnings": 2
-  },
-  "PractitionerRole/JoeSmithRole1": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "PractitionerRole/JoeSmithRole2": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "PractitionerRole/JoeSmithRole3": {
-    "errors": 0,
-    "warnings": 2
-  },
-  "Organization/PharmChain": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "OrganizationAffiliation/PharmChainAffil1": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "OrganizationAffiliation/PharmChainAffil2": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "OrganizationAffiliation/PharmChainAffil3": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/PharmChainCompService": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/PharmChainMailService": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/PharmChainRetailService": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "Location/PharmLoc1": {
-    "errors": 0,
     "warnings": 0
   },
-  "Location/PharmLoc2": {
+  "SearchParameter/us-core-patient-name": {
     "errors": 0,
     "warnings": 0
   },
-  "Location/PharmLoc3": {
+  "SearchParameter/us-core-practitioner-identifier": {
     "errors": 0,
     "warnings": 0
   },
-  "Location/PharmLoc4": {
+  "SearchParameter/us-core-practitioner-name": {
     "errors": 0,
     "warnings": 0
-  },
-  "Location/StateOfCTLocation": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "HealthcareService/VirtualCounselService": {
-    "errors": 0,
-    "warnings": 1
   },
-  "SearchParameter/endpoint-organization": {
+  "SearchParameter/us-core-practitionerrole-practitioner": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-coverage-area": {
+  "SearchParameter/us-core-practitionerrole-specialty": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-endpoint": {
+  "SearchParameter/us-core-procedure-code": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-location": {
+  "SearchParameter/us-core-procedure-date": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-name": {
+  "SearchParameter/us-core-procedure-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-organization": {
+  "SearchParameter/us-core-procedure-status": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-service-category": {
+  "SearchParameter/us-core-race": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-service-type": {
+  "StructureDefinition/head-occipital-frontal-circumference-percentile": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-specialty": {
+  "StructureDefinition/us-core-allergyintolerance": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-administered-by": {
+  "StructureDefinition/us-core-birthsex": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-coverage-area": {
+  "StructureDefinition/us-core-blood-pressure": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-identifier": {
+  "StructureDefinition/us-core-bmi": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-name": {
+  "StructureDefinition/us-core-body-height": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-owned-by": {
+  "StructureDefinition/us-core-body-temperature": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-plan-type": {
+  "StructureDefinition/us-core-body-weight": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-type": {
+  "StructureDefinition/us-core-careplan": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-address-city": {
+  "StructureDefinition/us-core-careteam": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-address-postalcode": {
+  "StructureDefinition/us-core-condition": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-address-state": {
+  "StructureDefinition/us-core-diagnosticreport-lab": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-address": {
+  "StructureDefinition/us-core-diagnosticreport-note": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-endpoint": {
+  "StructureDefinition/us-core-direct": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-organization": {
+  "StructureDefinition/us-core-documentreference": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-partof": {
+  "StructureDefinition/us-core-encounter": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-type": {
+  "StructureDefinition/us-core-ethnicity": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-address": {
+  "StructureDefinition/us-core-goal": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-coverage-area": {
+  "StructureDefinition/us-core-head-circumference": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-endpoint": {
+  "StructureDefinition/us-core-heart-rate": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-name": {
+  "StructureDefinition/us-core-immunization": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-partof": {
+  "StructureDefinition/us-core-implantable-device": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-type": {
+  "StructureDefinition/us-core-location": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-endpoint": {
+  "StructureDefinition/us-core-medication": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-location": {
+  "StructureDefinition/us-core-medicationrequest": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-network": {
+  "StructureDefinition/us-core-observation-lab": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-participating-organization": {
+  "StructureDefinition/us-core-organization": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-primary-organization": {
+  "StructureDefinition/us-core-patient": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-role": {
+  "StructureDefinition/pediatric-bmi-for-age": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-service": {
+  "StructureDefinition/pediatric-weight-for-height": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-specialty": {
+  "StructureDefinition/us-core-practitioner": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-family-name": {
+  "StructureDefinition/us-core-practitionerrole": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-given-name": {
+  "StructureDefinition/us-core-procedure": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-name": {
+  "StructureDefinition/us-core-provenance": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-endpoint": {
+  "StructureDefinition/us-core-pulse-oximetry": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-location": {
+  "StructureDefinition/us-core-race": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-network": {
+  "StructureDefinition/us-core-respiratory-rate": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-organization": {
+  "StructureDefinition/us-core-smokingstatus": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-period": {
+  "StructureDefinition/us-core-vital-signs": {
     "errors": 1,
     "warnings": 1
   },
-  "SearchParameter/practitionerrole-practitioner": {
+  "ValueSet/detailed-ethnicity": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-role": {
+  "ValueSet/detailed-race": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-service": {
+  "ValueSet/omb-ethnicity-category": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-specialty": {
+  "ValueSet/omb-race-category": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/NatlDir": {
-    "errors": 10,
+  "ValueSet/simple-language": {
+    "errors": 1,
     "warnings": 0
   },
-  "SearchParameter/careteam-category": {
+  "ValueSet/birthsex": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-endpoint": {
+  "ValueSet/us-core-clinical-note-type": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-identifier-assigner": {
+  "ValueSet/us-core-condition-category": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-identifier": {
+  "ValueSet/us-core-condition-code": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-location": {
+  "ValueSet/us-core-diagnosticreport-category": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-name": {
+  "ValueSet/us-core-diagnosticreport-lab-codes": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-organization": {
+  "ValueSet/us-core-diagnosticreport-report-and-note-codes": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-participant": {
+  "ValueSet/us-core-documentreference-category": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-service": {
+  "ValueSet/us-core-documentreference-type": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-status": {
+  "ValueSet/us-core-encounter-type": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/careteam-via-intermediary": {
+  "ValueSet/us-core-narrative-status": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-connection-type": {
+  "ValueSet/us-core-observation-smokingstatus-max": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-identifier-assigner": {
+  "ValueSet/us-core-observation-smoking-status-status": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-identifier": {
+  "ValueSet/us-core-observation-value-codes": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-mime-type": {
+  "ValueSet/us-core-procedure-code": {
     "errors": 0,
+    "warnings": 1
+  },
+  "ValueSet/us-core-provenance-participant-type": {
+    "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-payload-type": {
+  "ValueSet/us-core-provider-role": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-status": {
+  "ValueSet/us-core-smoking-status-observation-codes": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-usecase-standard": {
+  "ValueSet/us-core-usps-state": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-usecase-type": {
+  "ValueSet/us-core-vital-signs": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/endpoint-via-intermediary": {
+  "Organization/acme-lab": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-characteristic": {
+  "AllergyIntolerance/example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-eligibility": {
+  "Bundle/c887e62f-6166-419f-8268-b5ecd6c7b901": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-identifier-assigner": {
+  "Observation/blood-glucose": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-identifier": {
+  "Observation/blood-pressure": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-new-patient-network": {
+  "Observation/bmi": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-new-patient": {
+  "Observation/bp-data-absent": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/healthcareservice-via-intermediary": {
+  "Observation/bun": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-coverage-benefit-type": {
+  "CareTeam/example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-coverage-limit-value": {
+  "DiagnosticReport/cbc": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-coverage-network": {
+  "CarePlan/colonoscopy": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-coverage-type": {
+  "Condition/example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-endpoint": {
+  "Device/udi-2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-general-cost-groupsize": {
+  "Device/udi-3": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-general-cost-type": {
+  "DiagnosticReport/cardiology-report": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-general-cost-value": {
+  "DiagnosticReport/chest-xray-report": {
     "errors": 0,
     "warnings": 0
+  },
+  "Encounter/1036": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Encounter/example-1": {
+    "errors": 0,
+    "warnings": 1
   },
-  "SearchParameter/insuranceplan-network": {
+  "DocumentReference/episode-summary": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-plan-coverage-area": {
+  "Observation/erythrocytes": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-plan-identifier": {
+  "Organization/example-organization-2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-plan-network": {
+  "Goal/goal-1": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-specific-cost-benefit-type": {
+  "Condition/hc1": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-specific-cost-category": {
+  "Observation/head-circumference": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-specific-cost-cost-type": {
+  "Observation/heart-rate": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-specific-cost-value": {
+  "Observation/height": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/insuranceplan-status": {
+  "Observation/hemoglobin": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-accessibility": {
+  "Location/hl7east": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-contains": {
+  "Immunization/imm-1": {
+    "errors": 1,
+    "warnings": 0
+  },
+  "Observation/length": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-identifier-assigner": {
+  "Observation/mchc": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-identifier": {
+  "DiagnosticReport/metabolic-panel": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-new-patient-network": {
+  "Observation/neutrophils": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-new-patient": {
+  "Observation/satO2-fiO2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-status": {
+  "Observation/ofc-percentile": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/location-via-intermediary": {
+  "Observation/oxygen-saturation": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-address-city": {
+  "Patient/child-example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-address-country": {
+  "Patient/example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-address-postalcode": {
+  "Patient/infant-example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-address-state": {
+  "Observation/pediatric-bmi-example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-identifier-assigner": {
+  "Observation/pediatric-wt-example": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-identifier": {
+  "Practitioner/practitioner-1": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-qualification-code": {
+  "Practitioner/practitioner-2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-qualification-issuer": {
+  "Bundle/66c8856b-ba11-4876-8aa8-467aad8c11a2": {
     "errors": 0,
     "warnings": 0
+  },
+  "Procedure/defib-implant": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Procedure/rehab": {
+    "errors": 0,
+    "warnings": 1
   },
-  "SearchParameter/organization-qualification-status": {
+  "Observation/respiratory-rate": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-qualification-wherevalid-code": {
+  "Organization/saint-luke-w-endpoint": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-qualification-wherevalid-location": {
+  "MedicationRequest/self-tylenol": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organization-via-intermediary": {
+  "Observation/serum-calcium": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-identifier-assigner": {
+  "Observation/serum-chloride": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-identifier": {
+  "Observation/serum-co2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/organizationaffiliation-via-intermediary": {
+  "Observation/serum-creatinine": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-endpoint": {
+  "Observation/serum-potassium": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-identifier-assigner": {
+  "Observation/serum-sodium": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-identifier": {
+  "Observation/serum-total-bilirubin": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-phonetic": {
+  "Observation/some-day-smoker": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-qualification-code": {
+  "Observation/temperature": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-qualification-issuer": {
+  "Device/udi-1": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-qualification-period": {
+  "DiagnosticReport/urinalysis": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-qualification-status": {
+  "Observation/urine-bacteria": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-qualification-wherevalid-code": {
+  "Observation/urine-bilirubin": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-qualification-wherevalid-location": {
+  "Observation/urine-cells": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitioner-via-intermediary": {
+  "Observation/urine-clarity": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-identifier-assigner": {
+  "Observation/urine-color": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-identifier": {
+  "Observation/urine-epi-cells": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-new-patient-network": {
+  "Observation/urine-glucose": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-new-patient": {
+  "Observation/urine-hemoglobin": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-qualification-code": {
+  "Observation/urine-ketone": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-qualification-issuer": {
+  "Observation/urine-leukocyte-esterase": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-qualification-status": {
+  "Observation/urine-nitrite": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-qualification-wherevalid-code": {
+  "Observation/urine-ph": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-qualification-wherevalid-location": {
+  "Observation/urine-protein": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/practitionerrole-via-intermediary": {
+  "Observation/urine-rbcs": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-attestation-method": {
+  "Observation/urine-sediment": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-attestation-onbehalfof": {
+  "Observation/urine-wbcs": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-attestation-who": {
+  "Observation/urobilinogen": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-primarysource-date": {
+  "Medication/uscore-med1": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-primarysource-type": {
+  "Medication/uscore-med2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-primarysource-who": {
+  "MedicationRequest/uscore-mo1": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-status-date": {
+  "MedicationRequest/uscore-mo2": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-target": {
+  "Bundle/uscore-mo3": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-validation-status": {
+  "Observation/usg": {
     "errors": 0,
     "warnings": 0
   },
-  "SearchParameter/verificationresult-validator-organization": {
+  "Observation/weight": {
     "errors": 0,
     "warnings": 0
   }

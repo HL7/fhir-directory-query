@@ -100,7 +100,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Endpoint.name","","","",0,1,"Y","","Y","string {[]} {[]}
 ","A name that this endpoint can be identified by","A friendly name that this endpoint can be referred to with.","","","","","","","","","",,,,,"",,,,"Endpoint.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.what[x]"
-"Endpoint.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
+"Endpoint.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Organization that manages this endpoint (might not be the organization that exposes the endpoint)","The organization that manages this endpoint (even if technically another organization is hosting this in the cloud, it is the organization associated with the data).","This property is not typically used when searching for Endpoint resources for usage. The typical usage is via the reference from an applicable Organization/Location/Practitioner resource, which is where the context is provided. Multiple Locations may reference a single endpoint, and don't have to be within the same organization resource, but most likely within the same organizational hierarchy.","","","","","","","","",,,,,"",,,,"Endpoint.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Endpoint.contact","","","",0,*,"Y","","","ContactPoint {[]} {[]}

@@ -352,7 +352,7 @@
   {
     "id": "NatlDirEndpointQry",
     "type": "CapabilityStatement",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDir",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry",
     "version": "0.0.1",
     "name": "NationalDirectoryEndPointQueryCapabilityStatement"
   },
@@ -747,13 +747,6 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework",
     "version": "0.0.1",
     "name": "TrustFramework"
-  },
-  {
-    "id": "usage-restriction",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction",
-    "version": "0.0.1",
-    "name": "UsageRestriction"
   },
   {
     "id": "via-intermediary",

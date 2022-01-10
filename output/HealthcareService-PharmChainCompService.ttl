@@ -11,15 +11,15 @@
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PharmChainCompService\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange//StructureDefinition-NatlDir-HealthcareService.html\">National Directory Exchange HealthcareService</a></p></div><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: Physical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DeliveryMethodCS.html\">Delivery Methods</a>#physical)</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-PharmChain.html\">Organization/PharmChain</a> \"Pharm Chain\"</p><p><b>category</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-HealthcareServiceCategoryCS.html\">Healthcare Service Category</a>#pharm)</span></p><p><b>specialty</b>: Compounding Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#3336C0004X)</span></p><p><b>location</b>: <a href=\"Location-PharmLoc1.html\">Location/PharmLoc1</a> \"OrgA CT Location 1\"</p><p><b>name</b>: Compounding Pharmacy by OrgA</p><p><b>telecom</b>: -unknown-</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PharmChainCompService\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEndpointQry-HealthcareService.html\">National Directory  Endpoint Qry Exchange HealthcareService</a></p></div><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: Physical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DeliveryMethodCS.html\">Delivery Methods</a>#physical)</span></p></blockquote><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-PharmChain.html\">Organization/PharmChain</a> \"Pharm Chain\"</p><p><b>category</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-HealthcareServiceCategoryCS.html\">Healthcare Service Category</a>#pharm)</span></p><p><b>specialty</b>: Compounding Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#3336C0004X)</span></p><p><b>location</b>: <a href=\"Location-PharmLoc1.html\">Location/PharmLoc1</a> \"OrgA CT Location 1\"</p><p><b>name</b>: Compounding Pharmacy by OrgA</p><p><b>telecom</b>: -unknown-</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -34,7 +34,7 @@
          ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/delivery-method" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method" ]
   ];
   fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
   fhir:HealthcareService.providedBy [
@@ -70,7 +70,7 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary" ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary" ];
        fhir:Extension.valueReference [
          fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Location/PharmLoc1>;
          fhir:Reference.reference [ fhir:value "Location/PharmLoc1" ]

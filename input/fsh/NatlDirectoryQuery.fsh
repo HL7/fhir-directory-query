@@ -11,13 +11,10 @@ Description: "Defines the basic constraints and extensions on the CareTeam resou
 * extension ^slicing.rules = #open
 * extension ^mustSupport = false
 * extension contains
-    UsageRestriction named restriction 0..* MS and
     CareteamAlias named alias 0..* MS and
     LocationReference named location 0..* MS and
     HealthcareServiceReference named service 0..* MS and
     EndpointReference named endpoint 0..* MS
-* extension[restriction] ^short = "Restriction"
-* extension[restriction] ^definition = "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"
 * extension[alias] ^short = "Alternate name for care team"
 * extension[alias] ^definition = "Alternate names by which the team is also known"
 * extension[location] ^short = "Where the care team operates"
@@ -39,7 +36,7 @@ Description: "Defines the basic constraints and extensions on the CareTeam resou
 * identifier.system MS
 * identifier.value MS
 * identifier.period MS
-* identifier.assigner only Reference(NatlDirOrganization)
+* identifier.assigner only Reference(NatlDirEndpointQryOrganization)
 * identifier.assigner MS
 * status 1.. MS
 * category 1..* MS
@@ -49,7 +46,7 @@ Description: "Defines the basic constraints and extensions on the CareTeam resou
 * period MS
 * participant MS
 * participant.role MS
-* participant.member only Reference(NatlDirCareTeam or NatlDirPractitionerRole or NatlDirOrganization)
+* participant.member only Reference(NatlDirEndpointQryCareTeam or NatlDirEndpointQryPractitionerRole or NatlDirEndpointQryOrganization)
 * participant.member MS
 * participant.member ^definition = "The role associated with the specific person or organization who is participating/expected to participate in the care team."
 * participant.onBehalfOf ..0 MS
@@ -57,7 +54,7 @@ Description: "Defines the basic constraints and extensions on the CareTeam resou
 * reasonCode ..0 MS
 * reasonReference ..0 MS
 * managingOrganization ..1 MS
-* managingOrganization only Reference(NatlDirOrganization)
+* managingOrganization only Reference(NatlDirEndpointQryOrganization)
 * telecom MS
 * telecom.extension contains
        ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
@@ -66,7 +63,7 @@ Description: "Defines the basic constraints and extensions on the CareTeam resou
 * telecom.system MS
 * telecom.value MS
 * note MS
-* note.author[x] only string or Reference(NatlDirPractitioner)
+* note.author[x] only string or Reference(NatlDirEndpointQryPractitioner)
 * note.author[x] MS
 * note.time MS
 * note.text MS
@@ -97,7 +94,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * connectionType ^binding.extension[0].url = $MinValueSet
 * connectionType ^binding.extension[0].valueCanonical = $MinEndpointConnectionTypeVS  
 * name MS
-* managingOrganization only Reference(NatlDirOrganization)
+* managingOrganization only Reference(NatlDirEndpointQryOrganization)
 * managingOrganization MS
 * contact MS
 * contact.value MS
@@ -122,7 +119,7 @@ Description:    "The HealthCareService resource typically describes services off
 * identifier.value MS
 * active 1..1 MS
 * active = true 
-* providedBy only Reference(NatlDirOrganization) 
+* providedBy only Reference(NatlDirEndpointQryOrganization) 
 * providedBy MS
 * category 1..1 MS
 * category from HealthcareServiceCategoryVS (extensible)
@@ -130,7 +127,7 @@ Description:    "The HealthCareService resource typically describes services off
 * type from HealthcareServiceTypeVS (extensible)
 * specialty MS
 * specialty from SpecialtiesVS (required)
-* location only Reference(NatlDirLocation)
+* location only Reference(NatlDirEndpointQryLocation)
 * location MS
 * name MS
 * comment MS
@@ -141,7 +138,7 @@ Description:    "The HealthCareService resource typically describes services off
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
-* coverageArea only Reference(NatlDirLocation)
+* coverageArea only Reference(NatlDirEndpointQryLocation)
 * coverageArea MS
 // * serviceProvisionCode MS
 // eligibility  MS
@@ -158,7 +155,7 @@ Description:    "The HealthCareService resource typically describes services off
 * notAvailable.description MS
 * notAvailable.during MS
 * availabilityExceptions MS
-* endpoint only Reference(NatlDirEndpoint)
+* endpoint only Reference(NatlDirEndpointQryEndpoint)
 * endpoint MS
 
 
@@ -184,10 +181,10 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * name MS
 * alias MS
 * ownedBy 1..1 MS
-* ownedBy only Reference(NatlDirOrganization)
+* ownedBy only Reference(NatlDirEndpointQryOrganization)
 * administeredBy 1..1 MS
-* administeredBy only Reference(NatlDirOrganization)
-* coverageArea only Reference(NatlDirLocation)
+* administeredBy only Reference(NatlDirEndpointQryOrganization)
+* coverageArea only Reference(NatlDirEndpointQryLocation)
 * coverageArea MS
 * contact MS
 * contact.name MS
@@ -195,17 +192,17 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * contact.telecom MS
 * contact.telecom.value MS
 * contact.telecom.system MS
-* endpoint only Reference(NatlDirEndpoint)
+* endpoint only Reference(NatlDirEndpointQryEndpoint)
 * endpoint MS 
-* network only Reference(NatlDirNetwork)
+* network only Reference(NatlDirEndpointQryNetwork)
 * network  MS
 * plan ^short = "Cost sharing details for the plan"
 * plan.type from InsurancePlanTypeVS (extensible)
 * plan.type MS 
 * plan.type ^short = "Categorization of the cost sharing for the plan"
-* plan.coverageArea only Reference(NatlDirLocation)
+* plan.coverageArea only Reference(NatlDirEndpointQryLocation)
 * plan.coverageArea MS   
-* plan.network only Reference(NatlDirNetwork)
+* plan.network only Reference(NatlDirEndpointQryNetwork)
 * period MS // Jira ticket FHIR-33206 - SMM
 
 
@@ -240,9 +237,9 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.value MS
 * position MS
 * managingOrganization 0..1 MS
-* managingOrganization only Reference(NatlDirOrganization)
+* managingOrganization only Reference(NatlDirEndpointQryOrganization)
 * partOf 0..1 MS
-* partOf only Reference(NatlDirLocation)
+* partOf only Reference(NatlDirEndpointQryLocation)
 * hoursOfOperation MS
 * hoursOfOperation.daysOfWeek MS
 * hoursOfOperation.allDay MS
@@ -250,7 +247,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * hoursOfOperation.closingTime MS
 * availabilityExceptions MS
 * endpoint MS
-* endpoint only Reference(NatlDirEndpoint)
+* endpoint only Reference(NatlDirEndpointQryEndpoint)
 
 /* Network -- deleted 
 * identifier.id MS
@@ -292,7 +289,7 @@ In the NatlDir IG, individuals and organizations are represented as participants
 * telecom 0..0
 * address 0..1 MS
 * partOf 1..1 MS
-* partOf only Reference(NatlDirOrganization)
+* partOf only Reference(NatlDirEndpointQryOrganization)
 * partOf ^short = "The organization that manages this network"
 * contact MS
 * contact.name MS
@@ -303,7 +300,7 @@ In the NatlDir IG, individuals and organizations are represented as participants
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value  MS
 * contact.telecom.system  MS
-* endpoint only Reference(NatlDirEndpoint)
+* endpoint only Reference(NatlDirEndpointQryEndpoint)
 * endpoint MS 
 
 /*  Organizaiton
@@ -338,7 +335,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * active = true 
 * name MS
 * partOf MS  
-* partOf only Reference(NatlDirOrganization)
+* partOf only Reference(NatlDirEndpointQryOrganization)
 * address 1..* MS
 * address.extension contains $GeolocationExtension named geolocation 0..1 MS
 * address.type MS
@@ -386,25 +383,25 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * active = true 
 * period MS //Jira ticket FHIR-33206 SMM
 * organization MS 
-* organization only Reference (NatlDirOrganization)
+* organization only Reference (NatlDirEndpointQryOrganization)
 * participatingOrganization MS 
-* participatingOrganization only Reference (NatlDirOrganization)
+* participatingOrganization only Reference (NatlDirEndpointQryOrganization)
 * network MS 
-* network only Reference (NatlDirNetwork)
+* network only Reference (NatlDirEndpointQryNetwork)
 * code MS
 * code from OrganizationAffiliationRoleVS  (extensible)
 * specialty MS
 * specialty from SpecialtiesVS (required)
 * location MS 
-* location only Reference (NatlDirLocation)
+* location only Reference (NatlDirEndpointQryLocation)
 * healthcareService MS 
-* healthcareService only Reference (NatlDirHealthcareService)
+* healthcareService only Reference (NatlDirEndpointQryHealthcareService)
 * telecom MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
 * endpoint MS
-* endpoint only Reference (NatlDirEndpoint)
+* endpoint only Reference (NatlDirEndpointQryEndpoint)
 
 /* Practitioner
 * identifier.id MS
@@ -487,17 +484,17 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * active 1..1 MS
 //* active = true // Jira ticket FHIR-33206-SMM to support incoming/outcgoing practititcioners
 * period MS 
-* practitioner only Reference(NatlDirPractitioner)   // 1..1 from USCore
-* organization only Reference(NatlDirOrganization)         // 1..1 from USCore
+* practitioner only Reference(NatlDirEndpointQryPractitioner)   // 1..1 from USCore
+* organization only Reference(NatlDirEndpointQryOrganization)         // 1..1 from USCore
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 0..1   MS  // 1..1 from USCore
 * code MS  
 * code from PractitionerRoleVS
 * specialty  MS
 * specialty from IndividualAndGroupSpecialtiesVS (required)
-* location only Reference(NatlDirLocation)
+* location only Reference(NatlDirEndpointQryLocation)
 * location MS
-* healthcareService only Reference(NatlDirHealthcareService)
+* healthcareService only Reference(NatlDirEndpointQryHealthcareService)
 * healthcareService MS 
 * telecom MS
 * telecom.extension contains
@@ -515,7 +512,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * notAvailable MS
 * notAvailable.description MS
 * notAvailable.during MS
-* endpoint only Reference(NatlDirEndpoint) 
+* endpoint only Reference(NatlDirEndpointQryEndpoint) 
 * endpoint 0..* MS
 
 
@@ -528,7 +525,7 @@ Severity:   #error
 
 
 Invariant:  organization-or-participatingOrganization 
-Description: "NatlDirOrganizationAffiliation.organization or  NatlDirOrganizationAffiliation.participatingOrganization"
+Description: "NatlDirEndpointQryOrganizationAffiliation.organization or  NatlDirEndpointQryOrganizationAffiliation.participatingOrganization"
 Expression: "organization.exists() or participatingOrganization.exists()"
 Severity:   #error
 

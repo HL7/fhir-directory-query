@@ -97,7 +97,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "HealthcareService.active","","","",1,1,"Y","Y","Y","boolean {[]} {[]}
 ","Whether this HealthcareService record is in active use","This flag is used to mark the record to not be used. This is not used when a center is closed for maintenance, or for holidays, the notAvailable period is to be used for this.","This element is labeled as a modifier because it may be used to mark that the resource was created in error.","","","This resource is generally assumed to be active if no value is provided for the active element","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","",,,,,"",,,,"HealthcareService.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".statusCode","FiveWs.status"
-"HealthcareService.providedBy","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
+"HealthcareService.providedBy","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Organization that provides this service","The organization that provides this healthcare service.","This property is recommended to be the same as the Location's managingOrganization, and if not provided should be interpreted as such. If the Location does not have a managing Organization, then this property should be populated.","","","","","","","","",,,,,"",,,,"HealthcareService.providedBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scopingRole.Organization"
 "HealthcareService.category","","service category
@@ -111,7 +111,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "HealthcareService.specialty","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Specialties handled by the HealthcareService","Collection of specialties handled by the service site. This is more of a medical term.","","","","","","","","","",,"required","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS","",,,,"HealthcareService.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"
-"HealthcareService.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
+"HealthcareService.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Location(s) where service may be provided","The location(s) where this healthcare service may be provided.","","","","","","","","","",,,,,"",,,,"HealthcareService.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".location.role[classCode=SDLOC]","FiveWs.where[x]"
 "HealthcareService.name","","","",0,1,"Y","","Y","string {[]} {[]}
@@ -158,7 +158,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "HealthcareService.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]"
-"HealthcareService.coverageArea","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
+"HealthcareService.coverageArea","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Location(s) service is intended for/available to","The location(s) that this service is available to (not where the service is provided).","The locations referenced by the coverage area can include both specific locations, including areas, and also conceptual domains too (mode = kind), such as a physical area (tri-state area) and some other attribute (covered by Example Care Organization). These types of Locations are often not managed by any specific organization. This could also include generic locations such as ""in-home"".","","","","","","","","",,,,,"",,,,"HealthcareService.coverageArea",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".location.role[classCode=SDLOC].subjectOf.A_SpatialCoordinate"
 "HealthcareService.serviceProvisionCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
@@ -251,6 +251,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "HealthcareService.availabilityExceptions","","","",0,1,"Y","","","string {[]} {[]}
 ","Description of availability exceptions","A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times.","","","","","","","","","",,,,,"",,,,"HealthcareService.availabilityExceptions",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".effectiveTime"
-"HealthcareService.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint]]}
+"HealthcareService.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint]]}
 ","Technical endpoints providing access to electronic services operated for the healthcare service","Technical endpoints providing access to services operated for the specific healthcare services defined at this resource.","","","","","","","","","",,,,,"",,,,"HealthcareService.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"

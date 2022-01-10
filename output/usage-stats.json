@@ -947,20 +947,6 @@
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction",
-      "title": "NatlDirEndpointQry Usage Restriction",
-      "types": [
-        "Reference",
-        "Reference",
-        "string",
-        "Extension",
-        "string",
-        "uri",
-        "Identifier",
-        "string"
-      ]
-    },
-    {
       "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary",
       "title": "Via Intermediary",
       "types": [
@@ -1085,43 +1071,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility": [
-      "Location"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime": [
-      "Location.telecom",
-      "Organization.contact.telecom",
-      "Organization.telecom"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/delivery-method": [
-      "HealthcareService"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpoint-usecase": [
-      "Endpoint"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/location-reference": [
-      "Organization"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference": [
-      "PractitionerRole"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients": [
-      "HealthcareService",
-      "Location"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-description": [
-      "Organization"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification": [
-      "Practitioner.qualification"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/qualification": [
-      "PractitionerRole"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary": [
-      "HealthcareService.telecom",
-      "Organization.contact.telecom"
-    ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility": [
       "Location"
     ],
@@ -1199,9 +1148,6 @@
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework": [
       "Endpoint"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction": [
-      "CareTeam"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary": [
       "CareTeam.telecom",

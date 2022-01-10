@@ -11,15 +11,15 @@
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PharmLoc3\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange//StructureDefinition-NatlDir-Location.html\">National Directory Exchange Location</a></p></div><blockquote><p><b>New Patients</b></p><p><b>value</b>: Accepting existing patients <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-AcceptingPatientsCS.html\">Accepting Patients Codes</a>#existptonly)</span></p><p><b>value</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Organization/AcmeofCTStdNet</a> \"ACME CT Preferred Provider Network\"</p></blockquote><p><b>Accessibility</b>: ADA compliant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-AccessibilityCS.html\">Accessibility</a>#adacomp)</span></p><p><b>Accessibility</b>: public transit options <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-AccessibilityCS.html\">Accessibility</a>#pubtrans)</span></p><p><b>status</b>: active</p><p><b>name</b>: OrgA MA Location 1</p><p><b>type</b>: outpatient pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#OUTPHARM)</span></p><p><b>telecom</b>: ph: (444)-555-666, <a href=\"https://www.orga.com\">https://www.orga.com</a></p><p><b>address</b>: 456 Main Street Somewhere CT 00014-1234 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>7</td><td>12</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-BigBox.html\">Organization/BigBox</a> \"Big Box Retailer\"</p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu</p><p><b>allDay</b>: true</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sun</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 17:00:00</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PharmLoc3\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEndpointQry-Location.html\">National Directory Endpoint Qry Exchange Location</a></p></div><blockquote><p><b>New Patients</b></p><p><b>value</b>: Accepting existing patients <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-AcceptingPatientsCS.html\">Accepting Patients Codes</a>#existptonly)</span></p><p><b>value</b>: <a href=\"Organization-AcmeofCTStdNet.html\">Organization/AcmeofCTStdNet</a> \"ACME CT Preferred Provider Network\"</p></blockquote><p><b>Accessibility</b>: ADA compliant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-AccessibilityCS.html\">Accessibility</a>#adacomp)</span></p><p><b>Accessibility</b>: public transit options <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-AccessibilityCS.html\">Accessibility</a>#pubtrans)</span></p><p><b>status</b>: active</p><p><b>name</b>: OrgA MA Location 1</p><p><b>type</b>: outpatient pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#OUTPHARM)</span></p><p><b>telecom</b>: ph: (444)-555-666, <a href=\"https://www.orga.com\">https://www.orga.com</a></p><p><b>address</b>: 456 Main Street Somewhere CT 00014-1234 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>7</td><td>12</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-BigBox.html\">Organization/BigBox</a> \"Big Box Retailer\"</p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu</p><p><b>allDay</b>: true</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sun</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 17:00:00</p></blockquote></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -41,10 +41,10 @@
          fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients" ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -54,7 +54,7 @@
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -103,7 +103,7 @@
          fhir:Extension.url [ fhir:value "allDay" ];
          fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime" ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -123,7 +123,7 @@
          fhir:Extension.url [ fhir:value "availableEndTime" ];
          fhir:Extension.valueTime [ fhir:value "17:00:00"^^xsd:time ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(444)-555-666" ];

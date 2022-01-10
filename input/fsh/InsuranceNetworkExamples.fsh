@@ -2,10 +2,10 @@
 
 
 Instance: AcmeofCTStdNet
-InstanceOf: NatlDirNetwork
+InstanceOf: NatlDirEndpointQryNetwork
 Description: "Acme of CT Standard Network"
 Usage: #example
-* meta.profile = Canonical(NatlDirNetwork) 
+* meta.profile = Canonical(NatlDirEndpointQryNetwork) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -18,10 +18,10 @@ Usage: #example
 
 
 Instance: AcmeofCTPremNet
-InstanceOf: NatlDirNetwork
+InstanceOf: NatlDirEndpointQryNetwork
 Description: "Acme of CT Premium Premium Network"
 Usage: #example
-* meta.profile = Canonical(NatlDirNetwork) 
+* meta.profile = Canonical(NatlDirEndpointQryNetwork) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -34,10 +34,10 @@ Usage: #example
 * extension[location-reference].valueReference = Reference(StateOfCTLocation)
 
 Instance: Acme
-InstanceOf: NatlDirOrganization
+InstanceOf: NatlDirEndpointQryOrganization
 Description: "Payer Organization"
 Usage: #example
-* meta.profile = Canonical(NatlDirOrganization) 
+* meta.profile = Canonical(NatlDirEndpointQryOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -63,10 +63,10 @@ Usage: #example
 * extension[org-description].valueString = "Acme of CT is a leading provider of health and other insurance products."
 
 Instance: AcmeQHPGold
-InstanceOf: NatlDirInsurancePlan
+InstanceOf: NatlDirEndpointQryInsurancePlan
 Description: "Acme of CT QHP Gold Plan"
 Usage: #example
-* meta.profile = Canonical(NatlDirInsurancePlan) 
+* meta.profile = Canonical(NatlDirEndpointQryInsurancePlan) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * name = "Acme of CT QHP Gold"
@@ -81,10 +81,10 @@ Usage: #example
 * status = #active
 
 Instance: AcmeQHPBronze
-InstanceOf: NatlDirInsurancePlan
+InstanceOf: NatlDirEndpointQryInsurancePlan
 Description: "Acme of CT QHP Bronze Plan"
 Usage: #example
-* meta.profile = Canonical(NatlDirInsurancePlan) 
+* meta.profile = Canonical(NatlDirEndpointQryInsurancePlan) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * name = "Acme of CT QHP Bronze"
@@ -98,10 +98,10 @@ Usage: #example
 * status = #active
 
 Instance: StateOfCTLocation
-InstanceOf: NatlDirLocation
+InstanceOf: NatlDirEndpointQryLocation
 Description: "State of CT Area"
 Usage: #example
-* meta.profile = Canonical(NatlDirLocation) 
+* meta.profile = Canonical(NatlDirEndpointQryLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -114,10 +114,10 @@ Usage: #example
 
 
 Instance: AcmeOfCTPortalEndpoint
-InstanceOf: NatlDirEndpoint
+InstanceOf: NatlDirEndpointQryEndpoint
 Description: "Endpoint for Acme of CT Portal"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpoint) 
+* meta.profile = Canonical(NatlDirEndpointQryEndpoint) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 

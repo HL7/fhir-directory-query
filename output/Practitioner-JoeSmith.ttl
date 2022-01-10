@@ -11,15 +11,15 @@
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner";
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner>
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JoeSmith\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange//StructureDefinition-NatlDir-Practitioner.html\">National Directory Exchange Practitioner</a></p></div><p><b>identifier</b>: id: NPI323</p><p><b>active</b>: true</p><p><b>name</b>: Joe Smith, MD</p><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: Illinois <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#IL)</span></p></blockquote><p><b>code</b>: MD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0360.html\">degreeLicenseCertificate</a>#MD)</span></p><p><b>issuer</b>: <span>: State of Illinois</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: Illinois <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#IL)</span></p></blockquote><p><b>code</b>: Board Certified Internal Medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#207R00000X \"Internal Medicine\")</span></p><p><b>issuer</b>: <span>: American Board of Internal Medicine</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: Illinois <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#IL)</span></p></blockquote><p><b>code</b>: Board Certified Cardiovascular Disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#207RC0000X \"Cardiovascular Disease\")</span></p><p><b>issuer</b>: <span>: American Board of Internal Medicine</span></p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JoeSmith\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEndpointQry-Practitioner.html\">National Directory Endpoint Qry Exchange Practitioner</a></p></div><p><b>identifier</b>: id: NPI323</p><p><b>active</b>: true</p><p><b>name</b>: Joe Smith, MD</p><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: Illinois <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#IL)</span></p></blockquote><p><b>code</b>: MD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v2-0360.html\">degreeLicenseCertificate</a>#MD)</span></p><p><b>issuer</b>: <span>: State of Illinois</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: Illinois <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#IL)</span></p></blockquote><p><b>code</b>: Board Certified Internal Medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#207R00000X \"Internal Medicine\")</span></p><p><b>issuer</b>: <span>: American Board of Internal Medicine</span></p></blockquote><blockquote><p><b>qualification</b></p><blockquote><p><b>Practitioner Qualification</b></p><p><b>value</b>: active</p><p><b>value</b>: Illinois <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#IL)</span></p></blockquote><p><b>code</b>: Board Certified Cardiovascular Disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#207RC0000X \"Cardiovascular Disease\")</span></p><p><b>issuer</b>: <span>: American Board of Internal Medicine</span></p></blockquote></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;
@@ -55,7 +55,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -87,7 +87,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -120,7 +120,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [

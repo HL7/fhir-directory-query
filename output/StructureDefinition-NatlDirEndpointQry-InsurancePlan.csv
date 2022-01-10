@@ -104,13 +104,13 @@ For searching knowing previous names that the product/plan was known by can be v
 ","When the product is available","The period of time that the health insurance product is available.","","","","","","","","","",,,,,"",,,,"InsurancePlan.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.ownedBy","","Payer
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Plan issuer","The entity that is providing  the health insurance product and underwriting the risk.  This is typically an insurance carriers, other third-party payers, or health plan sponsors comonly referred to as 'payers'.","","","","","","","","","",,,,,"",,,,"InsurancePlan.ownedBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.administeredBy","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
+"InsurancePlan.administeredBy","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Product administrator","An organization which administer other services such as underwriting, customer service and/or claims processing on behalf of the health insurance product owner.","","","","","","","","","",,,,,"",,,,"InsurancePlan.administeredBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.coverageArea","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
+"InsurancePlan.coverageArea","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Where product applies","The geographic region in which a health insurance product's benefits apply.","","","","","","","","","",,,,,"",,,,"InsurancePlan.coverageArea",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
@@ -193,10 +193,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "InsurancePlan.contact.address","","","",0,1,"","","","Address {[]} {[]}
 ","Visiting or postal addresses for the contact","Visiting or postal addresses for the contact.","","May need to keep track of a contact party's address for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"InsurancePlan.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./addr"
-"InsurancePlan.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint]]}
+"InsurancePlan.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint]]}
 ","Technical endpoint","The technical endpoints providing access to services operated for the health insurance product.","","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"InsurancePlan.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"InsurancePlan.network","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network]]}
+"InsurancePlan.network","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network]]}
 ","What networks are Included","Reference to the network included in the health insurance product.","Networks are represented as a hierarchy of organization resources.","","","","","","","","",,,,,"",,,,"InsurancePlan.network",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.coverage","","","",0,*,"","","","BackboneElement {[]} {[]}
@@ -283,10 +283,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "InsurancePlan.plan.type","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Categorization of the cost sharing for the plan","Type of plan. For example, ""Platinum"" or ""High Deductable"".","","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/InsurancePlanTypeVS","",,,,"InsurancePlan.plan.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.plan.coverageArea","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
+"InsurancePlan.plan.coverageArea","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Where product applies","The geographic region in which a health insurance plan's benefits apply.","","","","","","","","","",,,,,"",,,,"InsurancePlan.plan.coverageArea",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.plan.network","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network]]}
+"InsurancePlan.plan.network","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network]]}
 ","What networks provide coverage","Reference to the network that providing the type of coverage.","Networks are represented as a hierarchy of organization resources.","","","","","","","","",,,,,"",,,,"InsurancePlan.plan.network",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.plan.generalCost","","","",0,*,"","","","BackboneElement {[]} {[]}

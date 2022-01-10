@@ -227,10 +227,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Location.position.altitude","","","",0,1,"","","","decimal {[]} {[]}
 ","Altitude with WGS84 datum","Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.altitude",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
-"Location.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization]]}
+"Location.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Organization responsible for provisioning and upkeep","The organization responsible for the provisioning and upkeep of the location.","This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource.","Need to know who manages the location.","","","","","","","",,,,,"",,,,"Location.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scopingEntity[classCode=ORG determinerKind=INSTANCE]"
-"Location.partOf","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location]]}
+"Location.partOf","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Another Location this one is physically a part of","Another Location of which this Location is physically a part of.","","For purposes of location, display and identification, knowing which locations are located within other locations is important.","","","","","","","",,,,,"",,,,"Location.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundLink[typeCode=PART].source[classCode=SDLC]"
 "Location.hoursOfOperation","","","",0,*,"Y","","","BackboneElement {[]} {[]}
@@ -265,6 +265,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Location.availabilityExceptions","","","",0,1,"Y","","","string {[]} {[]}
 ","Description of availability exceptions","A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times.","","","","","","","","","",,,,,"",,,,"Location.availabilityExceptions",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Location.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint]]}
+"Location.endpoint","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint]]}
 ","Technical endpoints providing access to services operated for the location","Technical endpoints providing access to services operated for the location.","","Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Location.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"

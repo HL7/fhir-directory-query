@@ -26,10 +26,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
-  hl7.fhir.us.fhir-directory-exchange:
-    id: nationalDirectory
-    uri: https://build.fhir.org/ig/HL7/fhir-directory-exchange/
-    version: current
+  
 
 parameters:
   show-inherited-invariants: false
