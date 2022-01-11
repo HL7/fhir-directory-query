@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ONCFASTNationalDirectoryEndpointQuery"];
   fhir:ImplementationGuide.title [ fhir:value "National Healthcare Directory Endpoint Query"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-10T14:04:03-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-11T11:42:07-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

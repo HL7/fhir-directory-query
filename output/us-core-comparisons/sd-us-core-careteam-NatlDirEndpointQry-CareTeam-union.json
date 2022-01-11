@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "91f96562-1fc0-4d54-9d7b-b8b0379a9f6b-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/91f96562-1fc0-4d54-9d7b-b8b0379a9f6b-2",
+  "id" : "a5aab685-a0f4-4fe4-afac-03dd69ad2de6-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a5aab685-a0f4-4fe4-afac-03dd69ad2de6-2",
   "name" : "UnionUSCoreCareTeamAndNatlDirEndpointQryCareTeam",
   "title" : "Union of US Core CareTeam Profile And National Directory Endpoint Qry Care Team",
   "status" : "active",
-  "date" : "2022-01-10T14:05:45-05:00",
+  "date" : "2022-01-11T11:43:18-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -933,7 +933,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Indicates specific responsibility of an individual within the care team, such as Primary physician, Team coordinator, Caregiver, etc.; right: Indicates specific responsibility of an individual within the care team, such as \"Primary physician\", \"Team coordinator\", \"Caregiver\", etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/91f96562-1fc0-4d54-9d7b-b8b0379a9f6b-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a5aab685-a0f4-4fe4-afac-03dd69ad2de6-5"
       },
       "mapping" : [{
         "identity" : "v2",
