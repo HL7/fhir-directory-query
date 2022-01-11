@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "a5aab685-a0f4-4fe4-afac-03dd69ad2de6-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/a5aab685-a0f4-4fe4-afac-03dd69ad2de6-11",
+  "id" : "f7593165-6833-4322-a00b-b7e8677fdbbd-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f7593165-6833-4322-a00b-b7e8677fdbbd-11",
   "name" : "UnionUSCoreProviderRoleNuccAndPractitionerRoleVS",
   "title" : "Union of US Core Provider Role (NUCC) And PractitionerRole Code",
   "status" : "active",
-  "date" : "2022-01-11T11:43:18-05:00",
+  "date" : "2022-01-11T11:54:54-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

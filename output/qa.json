@@ -3,8 +3,10 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "package-id": "hl7.fhir.us.fhir-directory-query",
   "ig-ver": "0.0.1",
-  "date": "Tue, 11 Jan, 2022 11:42:07 -0500",
-  "exception": "Cannot invoke \"com.google.gson.JsonElement.getAsString()\" because the return value of \"com.google.gson.JsonObject.get(String)\" is null",
+  "date": "Tue, 11 Jan, 2022 11:53:21 -0500",
+  "errs": 70,
+  "warnings": 70,
+  "hints": 0,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"
 }
