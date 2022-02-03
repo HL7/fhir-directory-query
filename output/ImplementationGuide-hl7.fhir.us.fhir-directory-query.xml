@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-02-03T09:58:18-05:00"/>
+  <date value="2022-02-03T10:48:00-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -1670,7 +1670,7 @@
       <reference>
         <reference value="CapabilityStatement/NatlDirExpandedQry"/>
       </reference>
-      <name value="NatlDirEndpointQry CapabilityStatement"/>
+      <name value="NatlDir Endpoint Query CapabilityStatement"/>
       <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1681,8 +1681,8 @@
       <reference>
         <reference value="CapabilityStatement/NatlDirHealthServiceQry"/>
       </reference>
-      <name value="NatlDirEndpointQry CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <name value="National Directory Healthcare Service CapabilityStatement"/>
+      <description value="This Section describes the expected capabilities of the National Directory Healthcare Service  Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1692,8 +1692,8 @@
       <reference>
         <reference value="CapabilityStatement/NatlDirSocialServiceQry"/>
       </reference>
-      <name value="NatlDirEndpointQry CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <name value="National Directory Social Service CapabilityStatement"/>
+      <description value="This Section describes the expected capabilities of the National Directory Social Service  actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ONCFASTNationalDirectoryEndpointQuery"];
   fhir:ImplementationGuide.title [ fhir:value "National Healthcare Directory Endpoint Query"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-02-03T09:58:18-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-02-03T10:48:00-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2319,7 +2319,7 @@
          fhir:link <http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirExpandedQry>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/NatlDirExpandedQry" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NatlDirEndpointQry CapabilityStatement" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NatlDir Endpoint Query CapabilityStatement" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2333,8 +2333,8 @@
          fhir:link <http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirHealthServiceQry>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/NatlDirHealthServiceQry" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NatlDirEndpointQry CapabilityStatement" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Directory Healthcare Service CapabilityStatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the National Directory Healthcare Service  Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 135;
@@ -2347,8 +2347,8 @@
          fhir:link <http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirSocialServiceQry>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/NatlDirSocialServiceQry" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NatlDirEndpointQry CapabilityStatement" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Directory Social Service CapabilityStatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the National Directory Social Service  actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 136;

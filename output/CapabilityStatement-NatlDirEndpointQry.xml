@@ -494,7 +494,7 @@
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry"/>
   <version value="0.0.1"/>
-  <name value="NationalDirectoryEndPointQueryCapabilityStatement"/>
+  <name value="National Directory EndPointQuery CapabilityStatement"/>
   <title value="NatlDirEndpointQry CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>

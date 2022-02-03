@@ -330,7 +330,7 @@
 					
 						InsurancePlan:owned-by - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=InsurancePlan:owned-by</code><br/>
 					
-						OrganizationAffiliation:primary-organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=OrganizationAffiliation:primary-organization</code><br/>
+						OrganizationAffiliation:primary-organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]        &amp;_revinclude=OrganizationAffiliation:primary-organization</code><br/>
 					
 						PractitionerRole:organization - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=PractitionerRole:organization</code><br/>
 					
@@ -354,7 +354,7 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Organization?type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-organization-coverage-area.html">coverage-area</a></td><td>
 							reference
-						</td><td><code class="highlighter-rouge">GET [base]/Organization?coverage-area=[coverage-area]</code></td></tr></tbody></table><hr/><h4 id="organizationaffiliation" class="no_toc">OrganizationAffiliation</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?coverage-area=[coverage-area]</code></td></tr></tbody></table><hr/><h4 id="organizationaffiliation" class="no_toc">OrganizationAffiliation</h4><p>Conformance Expectation:	<strong>MAY</strong></p><p>Supported Profiles:
 				
 											<a href="StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a>
 				
@@ -494,8 +494,8 @@
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry"/>
   <version value="0.0.1"/>
-  <name value="NationalDirectoryEndPointQueryCapabilityStatement"/>
-  <title value="NatlDirEndpointQry CapabilityStatement"/>
+  <name value="National Directory Social Service CapabilityStatement"/>
+  <title value="National Directory Social Service CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-11-19"/>
@@ -511,7 +511,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+  <description value="This Section describes the expected capabilities of the National Directory Social Service  actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -526,7 +526,7 @@
   <implementationGuide value="http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query"/>
   <rest>
     <mode value="server"/>
-    <documentation value="The NatlDirEndpointQry  Server **SHALL**:&#xA;&#xA;1. Support all profiles defined in this Implementation Guide..&#xA;1.  Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all NatlDir interactions.&#xA;1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;1. Support the searchParameters on each profile  individually and in combination.&#xA;1.Support forward and reverse chaining on all search parameters that specify the &#39;chain&#39; property&#xA;&#xA;The NatlDir  Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all NatlDir  interactions.&#xA;"/>
+    <documentation value="The National Directory Social Service Query Server **SHALL**:&#xA;&#xA;1. Support all profiles defined in this Implementation Guide..&#xA;1.  Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all NatlDir interactions.&#xA;1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;1. Support the searchParameters on each profile  individually and in combination.&#xA;1.Support forward and reverse chaining on all search parameters that specify the &#39;chain&#39; property&#xA;&#xA;The NatlDir  Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all NatlDir  interactions.&#xA;"/>
     <security>
       <description value="1. See the [General Security Considerations](implementation.html#general-security-considerations) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
     </security>
@@ -1011,7 +1011,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHALL"/>
+        <valueCode value="MAY"/>
       </extension>
       <type value="OrganizationAffiliation"/>
       <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation"/>

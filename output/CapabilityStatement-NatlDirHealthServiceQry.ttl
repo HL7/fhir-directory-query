@@ -14,8 +14,8 @@
   ];
   fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry"];
   fhir:CapabilityStatement.version [ fhir:value "0.0.1"];
-  fhir:CapabilityStatement.name [ fhir:value "NationalDirectoryEndPointQueryCapabilityStatement"];
-  fhir:CapabilityStatement.title [ fhir:value "NatlDirEndpointQry CapabilityStatement"];
+  fhir:CapabilityStatement.name [ fhir:value "National Directory Healthcare Service CapabilityStatement"];
+  fhir:CapabilityStatement.title [ fhir:value "National Directory Healthcare Service CapabilityStatement"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
   fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean];
   fhir:CapabilityStatement.date [ fhir:value "2020-11-19"^^xsd:date];
@@ -33,7 +33,7 @@
        fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
      ]
   ];
-  fhir:CapabilityStatement.description [ fhir:value "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."];
+  fhir:CapabilityStatement.description [ fhir:value "This Section describes the expected capabilities of the National Directory Healthcare Service  Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."];
   fhir:CapabilityStatement.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -63,7 +63,7 @@
   fhir:CapabilityStatement.rest [
      fhir:index 0;
      fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
-     fhir:CapabilityStatement.rest.documentation [ fhir:value "The NatlDirEndpointQry  Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all NatlDir interactions.\n1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property\n\nThe NatlDir  Server **SHOULD**:\n\n1. Support xml source formats for all NatlDir  interactions.\n" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "The National Directory Healthcare Service Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all NatlDir interactions.\n1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property\n\nThe NatlDir  Server **SHOULD**:\n\n1. Support xml source formats for all NatlDir  interactions.\n" ];
      fhir:CapabilityStatement.rest.security [
        fhir:CapabilityStatement.rest.security.description [ fhir:value "1. See the [General Security Considerations](implementation.html#general-security-considerations) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code." ]
      ];

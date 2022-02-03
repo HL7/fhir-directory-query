@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-02-03T09:58:18-05:00",
+  "date": "2022-02-03T10:48:00-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -2187,7 +2187,7 @@
         "reference": {
           "reference": "CapabilityStatement/NatlDirExpandedQry"
         },
-        "name": "NatlDirEndpointQry CapabilityStatement",
+        "name": "NatlDir Endpoint Query CapabilityStatement",
         "description": "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false
       },
@@ -2201,8 +2201,8 @@
         "reference": {
           "reference": "CapabilityStatement/NatlDirHealthServiceQry"
         },
-        "name": "NatlDirEndpointQry CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+        "name": "National Directory Healthcare Service CapabilityStatement",
+        "description": "This Section describes the expected capabilities of the National Directory Healthcare Service  Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false
       },
       {
@@ -2215,8 +2215,8 @@
         "reference": {
           "reference": "CapabilityStatement/NatlDirSocialServiceQry"
         },
-        "name": "NatlDirEndpointQry CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+        "name": "National Directory Social Service CapabilityStatement",
+        "description": "This Section describes the expected capabilities of the National Directory Social Service  actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false
       },
       {

@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 220, warn = 70, info = 0
+err = 220, warn = 74, info = 0
 IG Publisher Version: 1.1.94 Out of date - current version is 1.1.98
-Generated Thu Feb 03 10:02:19 EST 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+Generated Thu Feb 03 10:51:46 EST 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 219 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-AcceptingPatientsCS : 0 / 1 / 1
@@ -138,10 +138,10 @@ Generated Thu Feb 03 10:02:19 EST 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-SpecialtyAndDegreeLicenseCertificateVS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-TrustFrameworkTypeVS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-VirtualModalitiesVS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirEndpointQry : 49 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirExpandedQry : 50 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirHealthServiceQry : 50 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirSocialServiceQry : 50 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirEndpointQry : 49 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirExpandedQry : 50 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirHealthServiceQry : 50 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\capabilitystatement-NatlDirSocialServiceQry : 50 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\searchparameter-endpoint-organization : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\searchparameter-healthcareservice-coverage-area : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\input\resources\searchparameter-healthcareservice-endpoint : 0 / 0 / 1
@@ -630,6 +630,7 @@ WARNING: ValueSet/NonIndividualSpecialtiesVS: ValueSet.compose[0].include[0].con
 == fsh-generated\resources\ValueSet-TrustFrameworkTypeVS.json ==
 == fsh-generated\resources\ValueSet-VirtualModalitiesVS.json ==
 == input\resources\capabilitystatement-NatlDirEndpointQry.json ==
+WARNING: CapabilityStatement/NatlDirEndpointQry: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: CapabilityStatement/NatlDirEndpointQry: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/endpoint-organization' does not resolve
 ERROR: CapabilityStatement/NatlDirEndpointQry: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-location' does not resolve
 ERROR: CapabilityStatement/NatlDirEndpointQry: CapabilityStatement.rest[0].resource[1].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-coverage-area' does not resolve
@@ -681,6 +682,7 @@ ERROR: CapabilityStatement/NatlDirEndpointQry: CapabilityStatement.rest[0].resou
 ERROR: CapabilityStatement/NatlDirEndpointQry: CapabilityStatement.rest[0].resource[7].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-specialty' does not resolve
 == input\resources\capabilitystatement-NatlDirExpandedQry.json ==
 ERROR: CapabilityStatement.url: Resource id/url mismatch: NatlDirExpandedQry/http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry
+WARNING: CapabilityStatement/NatlDirExpandedQry: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: CapabilityStatement/NatlDirExpandedQry: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/endpoint-organization' does not resolve
 ERROR: CapabilityStatement/NatlDirExpandedQry: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-location' does not resolve
 ERROR: CapabilityStatement/NatlDirExpandedQry: CapabilityStatement.rest[0].resource[1].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-coverage-area' does not resolve
@@ -732,6 +734,7 @@ ERROR: CapabilityStatement/NatlDirExpandedQry: CapabilityStatement.rest[0].resou
 ERROR: CapabilityStatement/NatlDirExpandedQry: CapabilityStatement.rest[0].resource[7].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-specialty' does not resolve
 == input\resources\capabilitystatement-NatlDirHealthServiceQry.json ==
 ERROR: CapabilityStatement.url: Resource id/url mismatch: NatlDirHealthServiceQry/http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry
+WARNING: CapabilityStatement/NatlDirHealthServiceQry: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: CapabilityStatement/NatlDirHealthServiceQry: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/endpoint-organization' does not resolve
 ERROR: CapabilityStatement/NatlDirHealthServiceQry: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-location' does not resolve
 ERROR: CapabilityStatement/NatlDirHealthServiceQry: CapabilityStatement.rest[0].resource[1].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-coverage-area' does not resolve
@@ -783,6 +786,7 @@ ERROR: CapabilityStatement/NatlDirHealthServiceQry: CapabilityStatement.rest[0].
 ERROR: CapabilityStatement/NatlDirHealthServiceQry: CapabilityStatement.rest[0].resource[7].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-specialty' does not resolve
 == input\resources\capabilitystatement-NatlDirSocialServiceQry.json ==
 ERROR: CapabilityStatement.url: Resource id/url mismatch: NatlDirSocialServiceQry/http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry
+WARNING: CapabilityStatement/NatlDirSocialServiceQry: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: CapabilityStatement/NatlDirSocialServiceQry: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/endpoint-organization' does not resolve
 ERROR: CapabilityStatement/NatlDirSocialServiceQry: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-location' does not resolve
 ERROR: CapabilityStatement/NatlDirSocialServiceQry: CapabilityStatement.rest[0].resource[1].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-coverage-area' does not resolve

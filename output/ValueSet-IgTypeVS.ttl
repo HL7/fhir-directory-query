@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "IgTypeVS"];
   fhir:ValueSet.title [ fhir:value "IG Type"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-02-03T09:58:18-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-02-03T10:48:00-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

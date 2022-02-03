@@ -7,7 +7,7 @@
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry",
   "version": "0.0.1",
-  "name": "NationalDirectoryEndPointQueryCapabilityStatement",
+  "name": "National Directory EndPointQuery CapabilityStatement",
   "title": "NatlDirEndpointQry CapabilityStatement",
   "status": "active",
   "experimental": false,

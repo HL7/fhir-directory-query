@@ -14,7 +14,7 @@
   ];
   fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry"];
   fhir:CapabilityStatement.version [ fhir:value "0.0.1"];
-  fhir:CapabilityStatement.name [ fhir:value "NationalDirectoryEndPointQueryCapabilityStatement"];
+  fhir:CapabilityStatement.name [ fhir:value "National Directory EndPointQuery CapabilityStatement"];
   fhir:CapabilityStatement.title [ fhir:value "NatlDirEndpointQry CapabilityStatement"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
   fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean];
