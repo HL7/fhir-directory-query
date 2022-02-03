@@ -1,0 +1,1494 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.US.FHIR-DIRECTORY-QUERY\NatlDirEndpointQry CapabilityStatement - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"97.4"}
+    h3,h4,h5,h6{--heading-prefix:"97.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span><br/>0.0.1 - draft</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="technical-guidance.html">Technical Guidance</a>
+      </li>
+      <li>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statement
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-NatlDirEndpointQry.html">Conformance Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NatlDirEndpointQry CapabilityStatement</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CapabilityStatement-NatlDirSocialServiceQry.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CapabilityStatement-NatlDirSocialServiceQry.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-NatlDirSocialServiceQry.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NatlDirEndpointQry CapabilityStatement - JSON Representation</h2>
+
+<p><a href="CapabilityStatement-NatlDirSocialServiceQry.json" no-download="true">Raw json</a> | <a href="CapabilityStatement-NatlDirSocialServiceQry.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a>" : "NatlDirSocialServiceQry",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2 id=\&quot;title\&quot;&gt;NatlDir CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-11-19&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.&lt;/p&gt;&lt;h3 id=\&quot;behavior\&quot;&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The NatlDir  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:\n&lt;ul&gt;&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;&lt;/ul&gt;\n&lt;/li&gt;&lt;li&gt;Support json source formats for all NatlDir interactions.&lt;/li&gt;&lt;li&gt;Identify the NatlDir  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;li&gt;Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The NatlDir  Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all NatlDir  interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id=\&quot;security\&quot;&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href=\&quot;implementation.html#general-security-considerations\&quot;&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;h3 id=\&quot;resource--details\&quot; class=\&quot;no_toc\&quot;&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#endpoint\&quot;&gt;Endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Endpoint.html\&quot;&gt;NatlDir Endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\torganization, _id, _lastUpdated\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tEndpoint:organization\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              \n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#healthcareservice\&quot;&gt;HealthcareService&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-HealthcareService.html\&quot;&gt;NatlDir HealthcareService&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tlocation, coverage-area, organization, endpoint, name, service-category, service-type, specialty, _id, _lastUpdated\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tHealthcareService:location, HealthcareService:coverage-area, HealthcareService:organization, HealthcareService:endpoint\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              PractitionerRole:service, OrganizationAffiliation:service\n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#insuranceplan\&quot;&gt;InsurancePlan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-InsurancePlan.html\&quot;&gt;NatlDir InsurancePlan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tadministered-by, owned-by, coverage-area, name, plan-type, identifier, _id, _lastUpdated, type\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tInsurancePlan:administered-by, InsurancePlan:owned-by, InsurancePlan:coverage-area\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              \n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#location\&quot;&gt;Location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Location.html\&quot;&gt;NatlDir Location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpartof, organization, endpoint, address-city, address-state, address-postalcode, address, type, _id, _lastUpdated\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tLocation:endpoint, Location:organization, Location:partof\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              HealthcareService:location, InsurancePlan:coverage-area, OrganizationAffiliation:location, PractitionerRole:location\n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#organization\&quot;&gt;Organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Network.html\&quot;&gt;NatlDir Network&lt;/a&gt;, \n\n\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Organization.html\&quot;&gt;NatlDir Organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpartof, endpoint, address, name, _id, _lastUpdated, type, coverage-area\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tOrganization:partof, Organization:endpoint, Organization:coverage-area\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              Endpoint:organization, HealthcareService:organization, InsurancePlan:administered-by, InsurancePlan:owned-by, OrganizationAffiliation:primary-organization, PractitionerRole:organization, PractitionerRole:network, OrganizationAffiliation:participating-organization\n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#organizationaffiliation\&quot;&gt;OrganizationAffiliation&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html\&quot;&gt;NatlDir OrganizationAffiliation&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tprimary-organization, participating-organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tOrganizationAffiliation:primary-organization, OrganizationAffiliation:participating-organization, OrganizationAffiliation:location, OrganizationAffiliation:service, OrganizationAffiliation:endpoint, OrganizationAffiliation:network\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              \n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#practitioner\&quot;&gt;Practitioner&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Practitioner.html\&quot;&gt;NatlDir Practitioner&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tname, _id, _lastUpdated, family, given\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              PractitionerRole:practitioner\n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#practitionerrole\&quot;&gt;PractitionerRole&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-PractitionerRole.html\&quot;&gt;NatlDir PractitionerRole&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpractitioner, organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tPractitionerRole:practitioner, PractitionerRole:organization, PractitionerRole:location, PractitionerRole:service, PractitionerRole:network, PractitionerRole:endpoint\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;\n              \n            &lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br/&gt;&lt;h4 id=\&quot;endpoint\&quot; class=\&quot;no_toc\&quot;&gt;Endpoint&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Endpoint.html\&quot;&gt;NatlDir Endpoint&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a Endpoint resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Endpoint/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a Endpoint resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Endpoint/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tEndpoint:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Endpoint?[parameter=value]&amp;amp;_include=Endpoint:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-endpoint-organization.html\&quot;&gt;organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Endpoint?organization=[organization]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Endpoint?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Endpoint?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;healthcareservice\&quot; class=\&quot;no_toc\&quot;&gt;HealthcareService&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;MAY&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-HealthcareService.html\&quot;&gt;NatlDir HealthcareService&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a HealthcareService resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a HealthcareService resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:location - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?[parameter=value]&amp;amp;_include=HealthcareService:location&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:coverage-area - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?[parameter=value]&amp;amp;_include=HealthcareService:coverage-area&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?[parameter=value]&amp;amp;_include=HealthcareService:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:endpoint - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?[parameter=value]&amp;amp;_include=HealthcareService:endpoint&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _revincludes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:service - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?[parameter=value]&amp;amp;_revinclude=PractitionerRole:service&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:service - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?[parameter=value]&amp;amp;_revinclude=OrganizationAffiliation:service&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-location.html\&quot;&gt;location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?location=[location]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-coverage-area.html\&quot;&gt;coverage-area&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?coverage-area=[coverage-area]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-organization.html\&quot;&gt;organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?organization=[organization]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-endpoint.html\&quot;&gt;endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?endpoint=[endpoint]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-name.html\&quot;&gt;name&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-service-category.html\&quot;&gt;service-category&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?service-category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-service-type.html\&quot;&gt;service-type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?service-type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-healthcareservice-specialty.html\&quot;&gt;specialty&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?specialty=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/HealthcareService?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;insuranceplan\&quot; class=\&quot;no_toc\&quot;&gt;InsurancePlan&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-InsurancePlan.html\&quot;&gt;NatlDir InsurancePlan&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a InsurancePlan resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a InsurancePlan resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:administered-by - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?[parameter=value]&amp;amp;_include=InsurancePlan:administered-by&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:owned-by - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?[parameter=value]&amp;amp;_include=InsurancePlan:owned-by&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:coverage-area - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?[parameter=value]&amp;amp;_include=InsurancePlan:coverage-area&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-administered-by.html\&quot;&gt;administered-by&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?administered-by=[administered-by]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-owned-by.html\&quot;&gt;owned-by&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?owned-by=[owned-by]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-coverage-area.html\&quot;&gt;coverage-area&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?coverage-area=[coverage-area]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-name.html\&quot;&gt;name&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-plan-type.html\&quot;&gt;plan-type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?plan-type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-identifier.html\&quot;&gt;identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?identifier=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-insuranceplan-type.html\&quot;&gt;type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/InsurancePlan?type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;location\&quot; class=\&quot;no_toc\&quot;&gt;Location&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Location.html\&quot;&gt;NatlDir Location&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a Location resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a Location resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tLocation:endpoint - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_include=Location:endpoint&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tLocation:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_include=Location:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tLocation:partof - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_include=Location:partof&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _revincludes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:location - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_revinclude=HealthcareService:location&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:coverage-area - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_revinclude=InsurancePlan:coverage-area&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:location - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_revinclude=OrganizationAffiliation:location&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:location - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?[parameter=value]&amp;amp;_revinclude=PractitionerRole:location&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-partof.html\&quot;&gt;partof&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?partof=[partof]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-organization.html\&quot;&gt;organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?organization=[organization]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-endpoint.html\&quot;&gt;endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?endpoint=[endpoint]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-address-city.html\&quot;&gt;address-city&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?address-city=[address-city]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-address-state.html\&quot;&gt;address-state&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?address-state=[address-state]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-address-postalcode.html\&quot;&gt;address-postalcode&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?address-postalcode=[address-postalcode]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-address.html\&quot;&gt;address&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?address=[address]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-location-type.html\&quot;&gt;type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Location?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;organization\&quot; class=\&quot;no_toc\&quot;&gt;Organization&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Network.html\&quot;&gt;NatlDir Network&lt;/a&gt;, \n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Organization.html\&quot;&gt;NatlDir Organization&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a Organization resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a Organization resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganization:partof - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_include=Organization:partof&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganization:endpoint - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_include=Organization:endpoint&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganization:coverage-area - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_include=Organization:coverage-area&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _revincludes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tEndpoint:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=Endpoint:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tHealthcareService:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=HealthcareService:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:administered-by - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=InsurancePlan:administered-by&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tInsurancePlan:owned-by - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=InsurancePlan:owned-by&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:primary-organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=OrganizationAffiliation:primary-organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=PractitionerRole:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:network - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=PractitionerRole:network&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:participating-organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?[parameter=value]&amp;amp;_revinclude=OrganizationAffiliation:participating-organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organization-partof.html\&quot;&gt;partof&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?partof=[partof]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organization-endpoint.html\&quot;&gt;endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?endpoint=[endpoint]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organization-address.html\&quot;&gt;address&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?address=[address]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organization-name.html\&quot;&gt;name&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organization-type.html\&quot;&gt;type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organization-coverage-area.html\&quot;&gt;coverage-area&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Organization?coverage-area=[coverage-area]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;organizationaffiliation\&quot; class=\&quot;no_toc\&quot;&gt;OrganizationAffiliation&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html\&quot;&gt;NatlDir OrganizationAffiliation&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a OrganizationAffiliation resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a OrganizationAffiliation resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:primary-organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?[parameter=value]&amp;amp;_include=OrganizationAffiliation:primary-organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:participating-organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?[parameter=value]&amp;amp;_include=OrganizationAffiliation:participating-organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:location - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?[parameter=value]&amp;amp;_include=OrganizationAffiliation:location&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:service - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?[parameter=value]&amp;amp;_include=OrganizationAffiliation:service&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:endpoint - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?[parameter=value]&amp;amp;_include=OrganizationAffiliation:endpoint&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tOrganizationAffiliation:network - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?[parameter=value]&amp;amp;_include=OrganizationAffiliation:network&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-primary-organization.html\&quot;&gt;primary-organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?primary-organization=[primary-organization]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-participating-organization.html\&quot;&gt;participating-organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?participating-organization=[participating-organization]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-location.html\&quot;&gt;location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?location=[location]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-service.html\&quot;&gt;service&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?service=[service]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-network.html\&quot;&gt;network&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?network=[network]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-endpoint.html\&quot;&gt;endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?endpoint=[endpoint]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-role.html\&quot;&gt;role&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?role=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-organizationaffiliation-specialty.html\&quot;&gt;specialty&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?specialty=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/OrganizationAffiliation?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;practitioner\&quot; class=\&quot;no_toc\&quot;&gt;Practitioner&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-Practitioner.html\&quot;&gt;NatlDir Practitioner&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a Practitioner resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a Practitioner resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _revincludes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:practitioner - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner?[parameter=value]&amp;amp;_revinclude=PractitionerRole:practitioner&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitioner-name.html\&quot;&gt;name&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner?name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitioner-family-name.html\&quot;&gt;family&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner?family=[family]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitioner-given-name.html\&quot;&gt;given&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tstring\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/Practitioner?given=[given]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=\&quot;practitionerrole\&quot; class=\&quot;no_toc\&quot;&gt;PractitionerRole&lt;/h4&gt;&lt;p&gt;Conformance Expectation:\t&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t&lt;a href=\&quot;StructureDefinition-NatlDirEndpointQry-PractitionerRole.html\&quot;&gt;NatlDir PractitionerRole&lt;/a&gt;\n\t\t\t\t\n\t\t\t\t&lt;/p&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;search-type&lt;/code&gt;, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a PractitionerRole resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole/[id]&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a PractitionerRole resource using:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\t&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole/[id]/_history/vid&lt;/code&gt;\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALL for include for now the capability statement does not create the primitive\n\t\t\t\t     extensios for this yet. --&gt;&lt;li&gt;\n\t\t\t\t\tA Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:\n\t\t\t\t\t&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:practitioner - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?[parameter=value]&amp;amp;_include=PractitionerRole:practitioner&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:organization - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?[parameter=value]&amp;amp;_include=PractitionerRole:organization&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:location - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?[parameter=value]&amp;amp;_include=PractitionerRole:location&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:service - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?[parameter=value]&amp;amp;_include=PractitionerRole:service&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:network - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?[parameter=value]&amp;amp;_include=PractitionerRole:network&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t\t\tPractitionerRole:endpoint - &lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?[parameter=value]&amp;amp;_include=PractitionerRole:endpoint&lt;/code&gt;&lt;br/&gt;\n\t\t\t\t\t\n\t\t\t\t&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;p&gt;Search Parameter Summary:&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-practitioner.html\&quot;&gt;practitioner&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?practitioner=[practitioner]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-organization.html\&quot;&gt;organization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?organization=[organization]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-location.html\&quot;&gt;location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?location=[location]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-service.html\&quot;&gt;service&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?service=[service]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-network.html\&quot;&gt;network&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?network=[network]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-endpoint.html\&quot;&gt;endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?endpoint=[endpoint]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-role.html\&quot;&gt;role&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?role=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-practitionerrole-specialty.html\&quot;&gt;specialty&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?specialty=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?_id=[id]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/search.html\&quot;&gt;_lastUpdated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t&lt;/td&gt;&lt;td&gt;&lt;code class=\&quot;highlighter-rouge\&quot;&gt;GET [base]/PractitionerRole?_lastUpdated=[_lastUpdated]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;br/&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.0.1",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a>" : "NationalDirectoryEndPointQueryCapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a>" : "NatlDirEndpointQry CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2020-11-19",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "HL7 Patient Administration Working Group",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 Patient Administration Working Group",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.hl7.org/Special/committees/pafm/index.cfm"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "pafm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>" : "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "US"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "requirements",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "4.0.1",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
+    "xml",
+    "json"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.patchFormat">patchFormat</a>" : [
+    "application/json-patch+json"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">implementationGuide</a>" : [
+    "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>" : "The NatlDirEndpointQry  Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all NatlDir interactions.\n1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile  individually and in combination.\n1.Support forward and reverse chaining on all search parameters that specify the 'chain' property\n\nThe NatlDir  Server **SHOULD**:\n\n1. Support xml source formats for all NatlDir  interactions.\n",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>" : {
+        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">description</a>" : "1. See the [General Security Considerations](implementation.html#general-security-considerations) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
+      },
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Endpoint",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "Endpoint:organization"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/endpoint-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "MAY"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "HealthcareService",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "HealthcareService:location",
+            "HealthcareService:coverage-area",
+            "HealthcareService:organization",
+            "HealthcareService:endpoint"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
+            "PractitionerRole:service",
+            "OrganizationAffiliation:service"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "MAY"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "location",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-location",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "coverage-area",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-coverage-area",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "service-category",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-service-category",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "service-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-service-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "specialty",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-specialty",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "MAY"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "InsurancePlan",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "MAY"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "MAY"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "MAY"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "InsurancePlan:administered-by",
+            "InsurancePlan:owned-by",
+            "InsurancePlan:coverage-area"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "administered-by",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-administered-by",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "owned-by",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-owned-by",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "coverage-area",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-coverage-area",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "plan-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-plan-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "identifier",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-identifier",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/insuranceplan-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Location",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "Location:endpoint",
+            "Location:organization",
+            "Location:partof"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
+            "HealthcareService:location",
+            "InsurancePlan:coverage-area",
+            "OrganizationAffiliation:location",
+            "PractitionerRole:location"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "partof",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-partof",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "address-city",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-address-city",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "address-state",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-address-state",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "address-postalcode",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-address-postalcode",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "address",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-address",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/location-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Organization",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network",
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "Organization:partof",
+            "Organization:endpoint",
+            "Organization:coverage-area"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
+            "Endpoint:organization",
+            "HealthcareService:organization",
+            "InsurancePlan:administered-by",
+            "InsurancePlan:owned-by",
+            "OrganizationAffiliation:primary-organization",
+            "PractitionerRole:organization",
+            "PractitionerRole:network",
+            "OrganizationAffiliation:participating-organization"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "partof",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organization-partof",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organization-endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "address",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organization-address",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organization-name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organization-type",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "coverage-area",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organization-coverage-area",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "OrganizationAffiliation",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "OrganizationAffiliation:primary-organization",
+            "OrganizationAffiliation:participating-organization",
+            "OrganizationAffiliation:location",
+            "OrganizationAffiliation:service",
+            "OrganizationAffiliation:endpoint",
+            "OrganizationAffiliation:network"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "primary-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-primary-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "participating-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-participating-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "location",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-location",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "service",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-service",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "network",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-network",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "role",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-role",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "specialty",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/organizationaffiliation-specialty",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Practitioner",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
+            "PractitionerRole:practitioner"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitioner-name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "family",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitioner-family-name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "given",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitioner-given-name",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "PractitionerRole",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
+            "resolves"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "PractitionerRole:practitioner",
+            "PractitionerRole:organization",
+            "PractitionerRole:location",
+            "PractitionerRole:service",
+            "PractitionerRole:network",
+            "PractitionerRole:endpoint"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "practitioner",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-practitioner",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-organization",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "location",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-location",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "service",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-service",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "network",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-network",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-endpoint",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "role",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-role",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "specialty",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/practitionerrole-specialty",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "SHALL"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "_lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 3, 2022 09:58-0500">2022-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

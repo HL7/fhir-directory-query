@@ -220,7 +220,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
-           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
@@ -351,7 +351,7 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
-         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         fhir:Extension.valueCode [ fhir:value "MAY" ]
        ];
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "InsurancePlan" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
@@ -364,7 +364,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
-           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
          ];
          fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
        ], [
@@ -372,7 +372,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
-           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
          ];
          fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
        ], [
@@ -380,7 +380,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
-           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
          ];
          fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
        ];

@@ -357,6 +357,27 @@
     "name": "NationalDirectoryEndPointQueryCapabilityStatement"
   },
   {
+    "id": "NatlDirExpandedQry",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry",
+    "version": "0.0.1",
+    "name": "NationalDirectoryEndPointQueryCapabilityStatement"
+  },
+  {
+    "id": "NatlDirHealthServiceQry",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry",
+    "version": "0.0.1",
+    "name": "NationalDirectoryEndPointQueryCapabilityStatement"
+  },
+  {
+    "id": "NatlDirSocialServiceQry",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/NatlDirEndpointQry",
+    "version": "0.0.1",
+    "name": "NationalDirectoryEndPointQueryCapabilityStatement"
+  },
+  {
     "id": "AcceptingPatientsCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS",

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "NewPatients"];
   fhir:StructureDefinition.title [ fhir:value "New Patients"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-11T11:53:21-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-02-03T09:58:18-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

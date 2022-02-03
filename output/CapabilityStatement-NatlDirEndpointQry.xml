@@ -614,7 +614,7 @@
       <searchRevInclude value="OrganizationAffiliation:service"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="MAY"/>
         </extension>
         <name value="location"/>
         <definition value="http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-location"/>
@@ -695,25 +695,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHALL"/>
+        <valueCode value="MAY"/>
       </extension>
       <type value="InsurancePlan"/>
       <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="MAY"/>
         </extension>
         <code value="search-type"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="MAY"/>
         </extension>
         <code value="read"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="MAY"/>
         </extension>
         <code value="vread"/>
       </interaction>

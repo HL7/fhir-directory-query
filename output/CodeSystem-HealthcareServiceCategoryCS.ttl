@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "HealthcareServiceCategoryCS"];
   fhir:CodeSystem.title [ fhir:value "Healthcare Service Category"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-11T11:53:21-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-02-03T09:58:18-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
