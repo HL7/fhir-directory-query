@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="EndpointConnectionTypeVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.0.0/CodeSystem-endpoint-connection-type.html"><code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code></a></li><li>Include all codes defined in <a href="CodeSystem-EndpointConnectionTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-endpoint-connection-type.html"><code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code></a></li><li>Include all codes defined in <a href="CodeSystem-EndpointConnectionTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS"/>
   <version value="0.0.1"/>
   <name value="EndpointConnectionTypeVS"/>
   <title value="Endpoint Connection Types"/>
   <status value="active"/>
-  <date value="2022-02-03T10:48:00-05:00"/>
+  <date value="2022-03-09T14:32:46-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

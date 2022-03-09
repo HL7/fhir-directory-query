@@ -1,0 +1,1185 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-directory-query-basic-endpoint"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CapabilityStatementFhirDirectoryQuerybasicEndpoint</h2><div><p>Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>A Federated Query server <strong>SHALL</strong>:</p>\n<ol>\n<li>Support all profiles defined in this Implementation Guide..</li>\n<li>Implement the RESTful behavior according to the FHIR specification.</li>\n<li>Return the following response classes:\n<ul>\n<li>(Status 400): invalid parameter</li>\n<li>(Status 401/4xx): unauthorized request</li>\n<li>(Status 403): insufficient scope</li>\n<li>(Status 404): unknown resource</li>\n<li>(Status 410): deleted resource.</li>\n</ul>\n</li>\n<li>Support json source formats for all mCODE interactions.</li>\n<li>Identify the mCODE  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>\n<li>Support the searchParameters on each profile individually and in combination.</li>\n</ol>\n<p>The Federated Query Server <strong>SHOULD</strong>:</p>\n<ol>\n<li>Support xml source formats for all mCODE interactions.</li>\n</ol>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>endpoint</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>healthcareService</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>location</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>network</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>organization</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Restriction</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Validation</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html\">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html</a></td><td></td><td></td><td></td><td></td></tr></table></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint"];
+  fhir:CapabilityStatement.version [ fhir:value "0.0.1"];
+  fhir:CapabilityStatement.name [ fhir:value "CapabilityStatementFhirDirectoryQuerybasicEndpoint"];
+  fhir:CapabilityStatement.title [ fhir:value "Capability Statement Basic Federated Endpoint Server  "];
+  fhir:CapabilityStatement.status [ fhir:value "draft"];
+  fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:CapabilityStatement.date [ fhir:value "2022-02-15T07:15:00.000000-04:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 Patient Administration Working Group"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Administration Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met"];
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  fhir:CapabilityStatement.format [
+     fhir:value "xml";
+     fhir:index 0
+  ], [
+     fhir:value "json";
+     fhir:index 1
+  ];
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/";
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/>
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "A Federated Query server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all mCODE interactions.\n1. Identify the mCODE  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile individually and in combination.\n\nThe Federated Query Server **SHOULD**:\n\n1. Support xml source formats for all mCODE interactions.\n" ];
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code." ]
+     ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "endpoint" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-identifier";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "usecase-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "healthcareService" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-category";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-category>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-coverage-area";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-coverage-area>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-endpoint";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-endpoint>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-location";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-location>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-organization";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-organization>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specialty" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-specialty";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-specialty>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-type";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "InsurancePlan" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-area";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-area>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "administrated-by" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-administrated-by";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-administrated-by>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-benefit-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-benefit-type";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-benefit-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-network" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-network";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-network>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-identifier";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "owned-by" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-owned-by";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-owned-by>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "location" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-address";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-address>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-endpoint";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-endpoint>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-organization";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-organization>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "physicalType" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-physicalType";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-physicalType>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partOf" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-partOf";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-partOf>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-type";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "network" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-coverage-area";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-coverage-area>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-network-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-network-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "organization" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-type";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-address";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-address>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-endpoint";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-endpoint>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-identifier";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partOf" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-partOf";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-partOf>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "OrganizationAffiliation" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-endpoint";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-endpoint>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-location";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-location>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "network" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-network";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-network>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "participating-organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-participating-organization";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-participating-organization>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "primary-organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-primary-organization";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-primary-organization>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "role" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-role";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-role>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-service";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-service>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specialty" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-specialty";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-specialty>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "family" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-family";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-family>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "given" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-given";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-given>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-identifier";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier-assigner" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-identifier-assigner";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-identifier-assigner>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "qualification-code" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-qualification-code";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-qualification-code>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "qualification-issuer" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-qualification-issuer";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practitioner-qualification-issuer>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-endpoint";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-endpoint>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-location";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-location>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "network" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-network";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-network>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-organization";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-organization>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "Practicioner" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-Practicioner";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-Practicioner>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "role" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-role";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-role>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-service";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-service>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specialty" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-specialty";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PractitionerRole-specialty>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Restriction" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-identifier";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-identifier";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-lastUpdated";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-lastUpdated>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "plan-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-plan-type";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-plan-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-coverage-area";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-coverage-area>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "owned=by" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-owned-by";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-owned-by>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "administrated-by" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-administrated-by";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-administrated-by>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Validation" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "attestation-who" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Validation-attestation-who";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Validation-attestation-who>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "primarysource-who" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Validation-primarysource-who";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Validation-primarysource-who>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "target" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Validation-target";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Validation-target>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "CareTeam" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html";
+         fhir:index 0;
+         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html>;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-endpoint";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-endpoint>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-location";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-location>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-name";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-name>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-organization";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-organization>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-service";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-service>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-category";
+           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-CareTeam-category>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -111,6 +111,7 @@ Title:          "National Directory  Endpoint Qry Exchange HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * meta.lastUpdated 1..1
 * extension contains
+    Rating named rating 0..* MS and
     NewPatients named newpatients 0..* MS and
     DeliveryMethod named deliverymethod 1..* MS 
 * extension[newpatients] ^short = "New Patients"
@@ -324,6 +325,7 @@ Description:    "An organization is a formal or informal grouping of people or o
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
 * meta.lastUpdated 1..1
 * extension contains
+   Rating named rating 0..* MS and
    Qualification named qualification 0..*  MS and
    OrgDescription named org-description  0..1 MS
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
@@ -425,6 +427,8 @@ Title:          "National Directory Endpoint Qry Exchange Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * meta.lastUpdated 1..1
 * identifier.type MS
+* extension contains
+   Rating named rating 0..* MS  
 * identifier.value MS
 * active 1..1  MS
 * active = true 
@@ -472,6 +476,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * meta.lastUpdated 1..1
 * obeys practitioner-or-organization-or-healthcareservice-or-location 
 * extension contains
+   Rating named rating 0..* MS and 
    NewPatients named newpatients 0..* MS and
    NetworkReference named network-reference 0..1 MS and
    Qualification named qualification  0..* MS

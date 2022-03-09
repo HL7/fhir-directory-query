@@ -61,7 +61,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span><br/>0.0.1 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - draft
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -114,7 +120,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
+      <li><a name="l212">​</a>
         <a href="CapabilityStatement-NatlDirEndpointQry.html">Conformance Requirements</a>
       </li>
     </ul>
@@ -166,6 +172,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query<button data-clipboard-text="http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.1<button data-clipboard-text="http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query|0.0.1" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-03-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ONCFASTNationalDirectoryEndpointQuery</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
 
 
 
@@ -184,22 +232,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Likewise, we provide general guidance about the technical architecture and capabilities of a central source of validated provider data, but are not prescriptive about what an implementation must include.</p>
 
-<p><a name="l335">​</a>For more information on the history of National Directory see the <a href="change-notes.html">National Directory change notes</a>.</p>
+<p><a name="l376">​</a>For more information on the history of National Directory see the <a href="change-notes.html">National Directory change notes</a>.</p>
 
 <h2 id="national-directory-profiles">National Directory Profiles</h2>
 
 <p>The list of National Directory Profiles is shown below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that <strong>MUST</strong> be present. For each profile, requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a <a href="http://hl7.org/fhir/STU3/formats.html#table">logical view</a> of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.  In addition each profile has a “Quick Start” section which is intended as an implementer friendly overview of the required search and read operations.</p>
 
 <li><a href="StructureDefinition-NatlDirEndpointQry-HealthcareService.html">National Directory  Endpoint Qry Exchange HealthcareService</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html">National Directory  Endpoint Qry Exchange HealthcareService - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-CareTeam.html">National Directory Endpoint Qry Care Team</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html">National Directory Endpoint Qry Care Team - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-Endpoint.html">National Directory Endpoint Qry Exchange Endpoint</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-EndpointComplete.html">National Directory Endpoint Qry Exchange Endpoint - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">National Directory Endpoint Qry Exchange InsurancePlan</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html">National Directory Endpoint Qry Exchange InsurancePlan - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-Location.html">National Directory Endpoint Qry Exchange Location</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-LocationComplete.html">National Directory Endpoint Qry Exchange Location - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-Network.html">National Directory Endpoint Qry Exchange Network</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-NetworkComplete.html">National Directory Endpoint Qry Exchange Network - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-Organization.html">National Directory Endpoint Qry Exchange Organization</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-OrganizationComplete.html">National Directory Endpoint Qry Exchange Organization - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">National Directory Endpoint Qry Exchange OrganizationAffiliation</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-OrganizationAffiliationComplete.html">National Directory Endpoint Qry Exchange OrganizationAffiliation - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-Practitioner.html">National Directory Endpoint Qry Exchange Practitioner</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html">National Directory Endpoint Qry Exchange Practitioner - Complete</a></li>
 <li><a href="StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">National Directory Endpoint Qry Exchange PractitionerRole</a></li>
+<li><a href="StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html">National Directory Endpoint Qry Exchange PractitionerRole - Complete</a></li>
 
 <h2 id="national-directory-conformance-requirements">National Directory Conformance Requirements</h2>
 
@@ -236,7 +294,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 3, 2022 10:48-0500">2022-02-03</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 9, 2022 14:32-0500">2022-03-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -267,6 +325,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

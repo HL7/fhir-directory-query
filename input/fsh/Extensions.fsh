@@ -31,6 +31,20 @@ Description: "Type of Endpoint"
 * extension[type].value[x] 1..1
 * extension[type].value[x] from EndpointTypeVS (required)
 
+Extension: Rating
+Id: rating
+Title: "Rating"
+Description: "Rating"
+* extension contains
+   type  1..1 MS and
+   value 1..1 MS
+* extension[type].value[x] only CodeableConcept
+* extension[type] ^short = "Rating Type"
+* extension[type].value[x] 1..1
+* extension[value].value[x] only string
+* extension[value] ^short = "Rating"
+* extension[type].value[x] 1..1
+
 
 Extension: SecureExchangeArtifacts
 Id: secureExchangeArtifacts

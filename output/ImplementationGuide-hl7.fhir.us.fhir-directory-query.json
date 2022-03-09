@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-02-03T10:48:00-05:00",
+  "date": "2022-03-09T14:32:46-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -312,6 +312,32 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -337,6 +363,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-CareTeamComplete"
+        },
+        "name": "National Directory Endpoint Qry Care Team - Complete",
+        "description": "Defines the expanded constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Endpoint"
         },
         "name": "National Directory Endpoint Qry Exchange Endpoint",
@@ -351,9 +391,37 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-EndpointComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange Endpoint - Complete",
+        "description": "The technical details of an expanded endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-HealthcareService"
         },
         "name": "National Directory  Endpoint Qry Exchange HealthcareService",
+        "description": "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete"
+        },
+        "name": "National Directory  Endpoint Qry Exchange HealthcareService - Complete",
         "description": "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services.",
         "exampleBoolean": false
       },
@@ -379,6 +447,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange InsurancePlan - Complete",
+        "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\r\n\r\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Location"
         },
         "name": "National Directory Endpoint Qry Exchange Location",
@@ -393,9 +475,37 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-LocationComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange Location - Complete",
+        "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, \r\n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Network"
         },
         "name": "National Directory Endpoint Qry Exchange Network",
+        "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\r\n\r\nIn the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-NetworkComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange Network - Complete",
         "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\r\n\r\nIn the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively.",
         "exampleBoolean": false
       },
@@ -435,6 +545,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange OrganizationAffiliation - Complete",
+        "description": "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-OrganizationComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange Organization - Complete",
+        "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\r\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Practitioner"
         },
         "name": "National Directory Endpoint Qry Exchange Practitioner",
@@ -449,9 +587,37 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-PractitionerComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange Practitioner - Complete",
+        "description": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-PractitionerRole"
         },
         "name": "National Directory Endpoint Qry Exchange PractitionerRole",
+        "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete"
+        },
+        "name": "National Directory Endpoint Qry Exchange PractitionerRole - Complete",
         "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
         "exampleBoolean": false
       },
@@ -803,6 +969,20 @@
         },
         "name": "Qualification",
         "description": "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/rating"
+        },
+        "name": "Rating",
+        "description": "Rating",
         "exampleBoolean": false
       },
       {
@@ -1733,6 +1913,118 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-connection-type"
+        },
+        "name": "Search by Connection Type in Endpoints",
+        "description": "Accesses the  connection-type of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-identifier"
+        },
+        "name": "Search by Indentifer in Endpoints",
+        "description": "Accesses the  identifier of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-mime-type"
+        },
+        "name": "Search by mime-type in Endpoints",
+        "description": "Accesses the  mime-type of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-organization"
+        },
+        "name": "Search by organization in Endpoints",
+        "description": "Accesses the  organization of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-payload-type"
+        },
+        "name": "Search by payload-type in Endpoints",
+        "description": "Accesses the  payload-type of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-status"
+        },
+        "name": "Search by status in Endpoints",
+        "description": "Accesses the status of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-usecase-standard"
+        },
+        "name": "Search by usecase-standard in Endpoints",
+        "description": "Accesses the usecase-standard of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Endpoint-usecase-type"
+        },
+        "name": "Search by usecase-type in Endpoints",
+        "description": "Accesses the  usecase-type of an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1873,6 +2165,118 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-coverage-area"
+        },
+        "name": "Search by coverage-area in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `coverage-area` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-endpoint"
+        },
+        "name": "Search by endpoint in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `endpoint` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-location"
+        },
+        "name": "Search by location in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `location` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-name"
+        },
+        "name": "Search by name in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `name` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-organization"
+        },
+        "name": "Search by organization in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `organization` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-service-category"
+        },
+        "name": "Search by service-category in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `service-category` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-service-type"
+        },
+        "name": "Search by service-type in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `service-type` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/HealthcareService-specialty"
+        },
+        "name": "Search by specialty in HealthcareService with multipleOr",
+        "description": "This SearchParameter enables query of HealthcareService by `specialty` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "HealthcareService"
           }
         ],
@@ -1929,6 +2333,118 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-administrated-by"
+        },
+        "name": "Search by administrated-by in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `administrated-by` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-coverage-area"
+        },
+        "name": "Search by coverage-area in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `coverage-area` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-coverage-benefit-type"
+        },
+        "name": "Search by coverage-benefit-type in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `coverage-benefit-type` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-coverage-network"
+        },
+        "name": "Search by coverage-network in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `coverage-network` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-identifier"
+        },
+        "name": "Search by identifier in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `identifier` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-name"
+        },
+        "name": "Search by name in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `specialty` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-owned-by"
+        },
+        "name": "Search by owned-by in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `owned-by` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/InsurancePlan-type"
+        },
+        "name": "Search by type in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of InsurancePlan by `type` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Practitioner"
           }
         ],
@@ -1980,6 +2496,314 @@
         "name": "JoeSmithRole3",
         "description": "Dr Smith Admitting Privileges at Hartford General",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Location-address"
+        },
+        "name": "Search by address in Location with multipleOr",
+        "description": "This SearchParameter enables query of Location by `address` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Location-endpoint"
+        },
+        "name": "Search by endpoint in Location with multipleOr",
+        "description": "This SearchParameter enables query of Location by `endpoint` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Location-organization"
+        },
+        "name": "Search by organization in Location with multipleOr",
+        "description": "This SearchParameter enables query of Location by `organization` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Location-partOf"
+        },
+        "name": "Search by partOf in Location with multipleOr",
+        "description": "This SearchParameter enables query of Location by `partOf` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Location-physicalType"
+        },
+        "name": "Search by physicalType in Location with multipleOr",
+        "description": "This SearchParameter enables query of Location by `physicalType` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Location-type"
+        },
+        "name": "Search by type in Location with multipleOr",
+        "description": "This SearchParameter enables query of Location by `type` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Network-coverage-area"
+        },
+        "name": "Search by coverage-area in Network with multipleOr",
+        "description": "This SearchParameter enables query of Network by `coverage-area` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Network-name"
+        },
+        "name": "Search by name in Network with multipleOr",
+        "description": "This SearchParameter enables query of Network by `name` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Organization-address"
+        },
+        "name": "Search by address in Organization with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `address` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Organization-endpoint"
+        },
+        "name": "Search by endpoint in Organization with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Organization-identifier"
+        },
+        "name": "Search by identifier in Organization with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `identifier` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Organization-name"
+        },
+        "name": "Search by name in Organization with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `name` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Organization-partOf"
+        },
+        "name": "Search by partOf in Organization with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `partOf` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Organization-type"
+        },
+        "name": "Search by type in Organization with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `type` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-endpoint"
+        },
+        "name": "Search by endpoint in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-location"
+        },
+        "name": "Search by location in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `location` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-network"
+        },
+        "name": "Search by network in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `network` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-participating-organization"
+        },
+        "name": "Search by participating-organization in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `participating-organization` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-primary-organization"
+        },
+        "name": "Search by primary-organization in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `primary-organization` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-role"
+        },
+        "name": "Search by role in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `role` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-service"
+        },
+        "name": "Search by service in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `service` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/OrganizationAffiliation-specialty"
+        },
+        "name": "Search by specialty in OrganizationAffiliation with multipleOr",
+        "description": "This SearchParameter enables query of Organization by `specialty` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -2139,6 +2963,216 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-family"
+        },
+        "name": "Search by family name in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `family` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-given"
+        },
+        "name": "Search by given name in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `given` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-identifier"
+        },
+        "name": "Search by identifier in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `identifier` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-identifier-assigner"
+        },
+        "name": "Search by identifier-assigner in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `identifier-assigner` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-name"
+        },
+        "name": "Search by name in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `name` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-qualification-code"
+        },
+        "name": "Search by qualification-code in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `qualification-code` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/Practicioner-qualification-issuer"
+        },
+        "name": "Search by qualification-issuer in Practicioner with multipleOr",
+        "description": "This SearchParameter enables query of Practicioner by `qualification-issuer` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-Practicioner"
+        },
+        "name": "Search by Practicioner in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `Practicioner` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-endpoint"
+        },
+        "name": "Search by endpoint in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `endpoint` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-location"
+        },
+        "name": "Search by location in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `location` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-network"
+        },
+        "name": "Search by network in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `network` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-organization"
+        },
+        "name": "Search by organization in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `organization` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-role"
+        },
+        "name": "Search by role in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `role` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-service"
+        },
+        "name": "Search by service in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `service` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PracticionerRole-specialty"
+        },
+        "name": "Search by specialty in PracticionerRole with multipleOr",
+        "description": "This SearchParameter enables query of PracticionerRole by `specialty` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -2148,6 +3182,48 @@
         "name": "StateOfCTLocation",
         "description": "State of CT Area",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/VerificationResult-attestation-who"
+        },
+        "name": "Search by attestation-who in VerificationResult with multipleOr",
+        "description": "This SearchParameter enables query of VerificationResult by `attestation-who` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/VerificationResult-primarysource-who"
+        },
+        "name": "Search by primarysource-who in VerificationResult with multipleOr",
+        "description": "This SearchParameter enables query of VerificationResult by `primarysource-who` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/VerificationResult-target"
+        },
+        "name": "Search by target in InsurancePlan with multipleOr",
+        "description": "This SearchParameter enables query of VerificationResult by `target` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -2167,14 +3243,98 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/careTeam-category"
+        },
+        "name": "Search by category in CareTeam with multipleOr",
+        "description": "This SearchParameter enables query of Careteams by `category` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/careTeam-endpoint"
+        },
+        "name": "Search by endpoint in CareTeam with multipleOr",
+        "description": "This SearchParameter enables query of Careteams by `endpoint` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/careTeam-location"
+        },
+        "name": "Search by location in CareTeam with multipleOr",
+        "description": "This SearchParameter enables query of Careteams by `location` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/careTeam-name"
+        },
+        "name": "Search by name in CareTeam with multipleOr",
+        "description": "This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/careTeam-organization"
+        },
+        "name": "Search by organization in CareTeam with multipleOr",
+        "description": "This SearchParameter enables query of Careteams by `organization` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/careTeam-service"
+        },
+        "name": "Search by service in CareTeam with multipleOr",
+        "description": "This SearchParameter enables query of Careteams by `service` with `mutlipleOr` enabled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CapabilityStatement"
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/NatlDirEndpointQry"
+          "reference": "CapabilityStatement/fhir-directory-query-basic-endpoint"
         },
-        "name": "NatlDirEndpointQry CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+        "name": "fhir-directory-query-basic-endpoint",
+        "description": "Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met",
         "exampleBoolean": false
       },
       {
@@ -2185,10 +3345,10 @@
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/NatlDirExpandedQry"
+          "reference": "CapabilityStatement/fhir-directory-query-basic-expanded"
         },
-        "name": "NatlDir Endpoint Query CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+        "name": "fhir-directory-query-basic-expanded",
+        "description": "Capabilities for a Basic Federated Query Server for where expanded search capabilities are met",
         "exampleBoolean": false
       },
       {
@@ -2199,10 +3359,10 @@
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/NatlDirHealthServiceQry"
+          "reference": "CapabilityStatement/fhir-directory-query-health-or-human-services-endpoint"
         },
-        "name": "National Directory Healthcare Service CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the National Directory Healthcare Service  Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+        "name": "fhir-directory-query-health-or-human-services-endpoint",
+        "description": "Capabilities for a Federated Query Server for Health or Human Services where endpoint search capabilities are met",
         "exampleBoolean": false
       },
       {
@@ -2213,710 +3373,66 @@
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/NatlDirSocialServiceQry"
+          "reference": "CapabilityStatement/fhir-directory-query-health-or-human-services-expanded"
         },
-        "name": "National Directory Social Service CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the National Directory Social Service  actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.",
+        "name": "fhir-directory-query-health-or-human-services-expanded",
+        "description": "Capabilities for a Federated Query Server for Health or Human Services where expanded search capabilities are met",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
+            "valueString": "CapabilityStatement"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/endpoint-organization"
+          "reference": "CapabilityStatement/fhir-directory-query-human-services-endpoint"
         },
-        "name": "NatlDir_sp_endpoint_organization",
-        "description": "Select Endpoints managed by the specified organization",
+        "name": "fhir-directory-query-human-services-endpoint",
+        "description": "Capabilities for a Federated Query Server for Health Services where endpoint search capabilities are met",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
+            "valueString": "CapabilityStatement"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/healthcareservice-coverage-area"
+          "reference": "CapabilityStatement/fhir-directory-query-human-services-expanded"
         },
-        "name": "NatlDir_sp_healthcareservice_coverage_area",
-        "description": "Select services available in a region described by the specified location",
+        "name": "fhir-directory-query-human-services-expanded",
+        "description": "Capabilities for a Federated Query Server for Health Services where expanded search capabilities are met",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
+            "valueString": "CapabilityStatement"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/healthcareservice-endpoint"
+          "reference": "CapabilityStatement/fhir-directory-query-provider-endpoint"
         },
-        "name": "NatlDir_sp_healthcareservice_endpoint",
-        "description": "Select HealthcareServices with the specified endpoint",
+        "name": "fhir-directory-query-provider-endpoint",
+        "description": "Capabilities for a Federated Query Server for a Provider where endpoint search capabilities are met",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
+            "valueString": "CapabilityStatement"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/healthcareservice-location"
+          "reference": "CapabilityStatement/fhir-directory-query-provider-expanded"
         },
-        "name": "NatlDir_sp_healthcareservice_location",
-        "description": "Select HealthcareServices available at the specified location",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/healthcareservice-name"
-        },
-        "name": "NatlDir_sp_healthcareservice_name",
-        "description": "Select HealthcareServices with the specified name",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/healthcareservice-organization"
-        },
-        "name": "NatlDir_sp_healthcareservice_organization",
-        "description": "Select HealthcareServices provided by the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/healthcareservice-service-category"
-        },
-        "name": "NatlDir_sp_healthcareservice_category",
-        "description": "Select HealthcareServices providing the specified category of services",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/healthcareservice-service-type"
-        },
-        "name": "NatlDir_sp_healthcareservice_type",
-        "description": "Select HealthcareServices of the specified type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/healthcareservice-specialty"
-        },
-        "name": "NatlDir_sp_healthcareservice_specialty",
-        "description": "Select services associated with the specified specialty",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-administered-by"
-        },
-        "name": "NatlDir_sp_insuranceplan_administered_by",
-        "description": "Select products that are administered by the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-coverage-area"
-        },
-        "name": "NatlDir_sp_insuranceplan_coverage_area",
-        "description": "Select products that are offered in the specified location",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-identifier"
-        },
-        "name": "NatlDir_sp_insuranceplan_identifier",
-        "description": "Select products with the specified identifier",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-name"
-        },
-        "name": "NatlDir_sp_insuranceplan_name",
-        "description": "Select products with the specified name",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-owned-by"
-        },
-        "name": "NatlDir_sp_insuranceplan_owned_by",
-        "description": "Select products that are owned by the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-plan-type"
-        },
-        "name": "NatlDir_sp_insuranceplan_plan_type",
-        "description": "Select plans of the specified type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/insuranceplan-type"
-        },
-        "name": "NatlDir_sp_insuranceplan_type",
-        "description": "Select insurance plans of the specified type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-address-city"
-        },
-        "name": "NatlDir_sp_location_address_city",
-        "description": "Select Locations with the specified address.city",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-address-postalcode"
-        },
-        "name": "NatlDir_sp_location_address_postalcode",
-        "description": "Select Locations with the specified address",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-address-state"
-        },
-        "name": "NatlDir_sp_location_address_state",
-        "description": "Select Locations with the specified address.state",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-address"
-        },
-        "name": "NatlDir_sp_location_address",
-        "description": "Select Locations with the specified address",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-endpoint"
-        },
-        "name": "NatlDir_sp_location_endpoint",
-        "description": "Select Locations with the specified endpoint",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-organization"
-        },
-        "name": "NatlDir_sp_location_organization",
-        "description": "Select Locations managed by the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-partof"
-        },
-        "name": "NatlDir_sp_location_partof",
-        "description": "Select Locations that are part of the specified location",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/location-type"
-        },
-        "name": "NatlDir_sp_location_type",
-        "description": "Select Locations of the specified type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organization-address"
-        },
-        "name": "NatlDir_sp_organization_address",
-        "description": "Select organizations with the specified address (matches any of the string elements of an address)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organization-coverage-area"
-        },
-        "name": "NatlDir_sp_network_coverage_area",
-        "description": "Select health insurance provider networks available in a region described by the specified location",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organization-endpoint"
-        },
-        "name": "NatlDir_sp_organization_endpoint",
-        "description": "Select Organizations with the specified endpoint",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organization-name"
-        },
-        "name": "NatlDir_sp_organization_name",
-        "description": "Select Organizations with the specified name",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organization-partof"
-        },
-        "name": "NatlDir_sp_organization_partof",
-        "description": "Select Organizations that are part of the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organization-type"
-        },
-        "name": "NatlDir_sp_organization_type",
-        "description": "Select Organizations of the specified type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-endpoint"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_endpoint",
-        "description": "Select OrganizationAffiliations with the specified endpoint",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-location"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_location",
-        "description": "Select OrganizationAffiliations available at the specified location",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-network"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_network",
-        "description": "Select roles where the organization is a member of the specified health insurance provider network",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-participating-organization"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_participating_organization",
-        "description": "Select roles filled by the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-primary-organization"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_primary_organization",
-        "description": "Select roles offered by the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-role"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_role",
-        "description": "Select OrganizationAffiliations with the specified role",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-service"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_service",
-        "description": "Select OrganizationAffiliations providing the specified service",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/organizationaffiliation-specialty"
-        },
-        "name": "NatlDir_sp_organizationaffiliation_specialty",
-        "description": "Select OrganizationAffiliations associated with the specified specialty",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitioner-family-name"
-        },
-        "name": "NatlDir_sp_practitioner_family_name",
-        "description": "Select Practitioners with the specified family name",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitioner-given-name"
-        },
-        "name": "NatlDir_sp_practitioner_given_name",
-        "description": "Select Practitioners with the specified given name",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitioner-name"
-        },
-        "name": "NatlDir_sp_practitioner_name",
-        "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-endpoint"
-        },
-        "name": "NatlDir_sp_practitionerrole_endpoint",
-        "description": "Select PractitionerRoles with the specified endpoint",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-location"
-        },
-        "name": "NatlDir_sp_practitionerrole_location",
-        "description": "Select PractitionerRoles available at the specified location",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-network"
-        },
-        "name": "NatlDir_sp_practitionerrole_network",
-        "description": "Select roles where the practitioner is a member of the specified health insurance provider network",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-organization"
-        },
-        "name": "NatlDir_sp_practitionerrole_organization",
-        "description": "Select PractitionerRoles available at the specified organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-period"
-        },
-        "name": "NatlDir_sp_practitionerrole_period",
-        "description": "Select PractitionerRoles available in the specified period",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-practitioner"
-        },
-        "name": "NatlDir_sp_practitionerrole_practitioner",
-        "description": "Select roles filled by the specified practitioner",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-role"
-        },
-        "name": "NatlDir_sp_practitionerrole_role",
-        "description": "Select PractitionerRoles with the specified role",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-service"
-        },
-        "name": "NatlDir_sp_practitionerrole_service",
-        "description": "Select PractitionerRoles providing the specified service",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "SearchParameter/practitionerrole-specialty"
-        },
-        "name": "NatlDir_sp_practitionerrole_specialty",
-        "description": "Select PractitionerRoles associated with the specified specialty",
+        "name": "fhir-directory-query-provider-expanded",
+        "description": "Capabilities for a Federated Query Server for a Provider where minimum search capabilities are met",
         "exampleBoolean": false
       }
     ],

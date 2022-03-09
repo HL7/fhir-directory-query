@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="insuranceplan-type"/>
+  <id value="InsurancePlan-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "insuranceplan-type" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-type</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDir_sp_insuranceplan_type</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/InsurancePlan-type">http://hl7.org/fhir/SearchParameter/InsurancePlan-type</a></p><p><b>status</b>: active</p><p><b>date</b>: 2018-05-23T00:00:00Z</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select insurance plans of the specified type</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: type</p><p><b>base</b>: InsurancePlan</p><p><b>type</b>: token</p><p><b>expression</b>: InsurancePlan.type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "InsurancePlan-type" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: InsurancePlan-typeSearchParameter</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/Resource-id">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-03-09T14:32:46-05:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of InsurancePlan by `type` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: type</p><p><b>base</b>: Network</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>
   </text>
-  <url value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-type"/>
+  <url value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type.html"/>
   <version value="0.0.1"/>
-  <name value="NatlDir_sp_insuranceplan_type"/>
-  <derivedFrom value="http://hl7.org/fhir/SearchParameter/InsurancePlan-type"/>
+  <name value="InsurancePlan-typeSearchParameter"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
   <status value="active"/>
-  <date value="2018-05-23T00:00:00+00:00"/>
+  <date value="2022-03-09T14:32:46-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -23,7 +23,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Select insurance plans of the specified type"/>
+  <description value="This SearchParameter enables query of InsurancePlan by `type` with `mutlipleOr` enabled."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -31,10 +31,7 @@
     </coding>
   </jurisdiction>
   <code value="type"/>
-  <base value="InsurancePlan"/>
+  <base value="Network"/>
   <type value="token"/>
-  <expression value="InsurancePlan.type"/>
   <multipleOr value="true"/>
-  <multipleAnd value="true"/>
-  <modifier value="text"/>
 </SearchParameter>

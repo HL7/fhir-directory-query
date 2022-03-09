@@ -1,16 +1,16 @@
 {
   "resourceType": "SearchParameter",
-  "id": "organization-endpoint",
+  "id": "Organization-endpoint",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"organization-endpoint\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-endpoint</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDir_sp_organization_endpoint</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Organization-endpoint\">http://hl7.org/fhir/SearchParameter/Organization-endpoint</a></p><p><b>status</b>: active</p><p><b>date</b>: 2018-05-23T00:00:00Z</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select Organizations with the specified endpoint</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: endpoint</p><p><b>base</b>: Organization</p><p><b>type</b>: reference</p><p><b>expression</b>: Organization.endpoint</p><p><b>target</b>: Endpoint</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>chain</b>: organization</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Organization-endpoint\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-endpoint.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: Organization-endpointSearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-03-09T14:32:46-05:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: endpoint</p><p><b>base</b>: Organization</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
   },
-  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-endpoint",
+  "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-endpoint.html",
   "version": "0.0.1",
-  "name": "NatlDir_sp_organization_endpoint",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-endpoint",
+  "name": "Organization-endpointSearchParameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Resource-id",
   "status": "active",
-  "date": "2018-05-23T00:00:00+00:00",
+  "date": "2022-03-09T14:32:46-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Select Organizations with the specified endpoint",
+  "description": "This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled.",
   "jurisdiction": [
     {
       "coding": [
@@ -42,14 +42,6 @@
   "base": [
     "Organization"
   ],
-  "type": "reference",
-  "expression": "Organization.endpoint",
-  "target": [
-    "Endpoint"
-  ],
-  "multipleOr": true,
-  "multipleAnd": true,
-  "chain": [
-    "organization"
-  ]
+  "type": "token",
+  "multipleOr": true
 }

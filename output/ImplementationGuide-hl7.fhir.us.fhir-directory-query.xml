@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-02-03T10:48:00-05:00"/>
+  <date value="2022-03-09T14:32:46-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -200,6 +200,22 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -209,6 +225,17 @@
       </reference>
       <name value="National Directory Endpoint Qry Care Team"/>
       <description value="Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-CareTeamComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Care Team - Complete"/>
+      <description value="Defines the expanded constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -227,9 +254,31 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-EndpointComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange Endpoint - Complete"/>
+      <description value="The technical details of an expanded endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NatlDirEndpointQry-HealthcareService"/>
       </reference>
       <name value="National Directory  Endpoint Qry Exchange HealthcareService"/>
+      <description value="The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete"/>
+      </reference>
+      <name value="National Directory  Endpoint Qry Exchange HealthcareService - Complete"/>
       <description value="The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -249,6 +298,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange InsurancePlan - Complete"/>
+      <description value="An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).&#xD;&#xA;&#xD;&#xA;InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NatlDirEndpointQry-Location"/>
       </reference>
       <name value="National Directory Endpoint Qry Exchange Location"/>
@@ -260,9 +320,31 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-LocationComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange Location - Complete"/>
+      <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, &#xD;&#xA;                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NatlDirEndpointQry-Network"/>
       </reference>
       <name value="National Directory Endpoint Qry Exchange Network"/>
+      <description value="A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.&#xD;&#xA;&#xD;&#xA;In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-NetworkComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange Network - Complete"/>
       <description value="A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.&#xD;&#xA;&#xD;&#xA;In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -293,6 +375,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange OrganizationAffiliation - Complete"/>
+      <description value="The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-OrganizationComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange Organization - Complete"/>
+      <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.&#xD;&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NatlDirEndpointQry-Practitioner"/>
       </reference>
       <name value="National Directory Endpoint Qry Exchange Practitioner"/>
@@ -304,9 +408,31 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-PractitionerComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange Practitioner - Complete"/>
+      <description value="Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
       </reference>
       <name value="National Directory Endpoint Qry Exchange PractitionerRole"/>
+      <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xD;&#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xD;&#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete"/>
+      </reference>
+      <name value="National Directory Endpoint Qry Exchange PractitionerRole - Complete"/>
       <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xD;&#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xD;&#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -583,6 +709,17 @@
       </reference>
       <name value="Qualification"/>
       <description value="An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rating"/>
+      </reference>
+      <name value="Rating"/>
+      <description value="Rating"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1313,6 +1450,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-connection-type"/>
+      </reference>
+      <name value="Search by Connection Type in Endpoints"/>
+      <description value="Accesses the  connection-type of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-identifier"/>
+      </reference>
+      <name value="Search by Indentifer in Endpoints"/>
+      <description value="Accesses the  identifier of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-mime-type"/>
+      </reference>
+      <name value="Search by mime-type in Endpoints"/>
+      <description value="Accesses the  mime-type of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-organization"/>
+      </reference>
+      <name value="Search by organization in Endpoints"/>
+      <description value="Accesses the  organization of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-payload-type"/>
+      </reference>
+      <name value="Search by payload-type in Endpoints"/>
+      <description value="Accesses the  payload-type of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-status"/>
+      </reference>
+      <name value="Search by status in Endpoints"/>
+      <description value="Accesses the status of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-usecase-standard"/>
+      </reference>
+      <name value="Search by usecase-standard in Endpoints"/>
+      <description value="Accesses the usecase-standard of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Endpoint-usecase-type"/>
+      </reference>
+      <name value="Search by usecase-type in Endpoints"/>
+      <description value="Accesses the  usecase-type of an Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -1423,6 +1648,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-coverage-area"/>
+      </reference>
+      <name value="Search by coverage-area in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `coverage-area` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-location"/>
+      </reference>
+      <name value="Search by location in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `location` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-name"/>
+      </reference>
+      <name value="Search by name in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `name` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-organization"/>
+      </reference>
+      <name value="Search by organization in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-service-category"/>
+      </reference>
+      <name value="Search by service-category in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `service-category` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-service-type"/>
+      </reference>
+      <name value="Search by service-type in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `service-type` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/HealthcareService-specialty"/>
+      </reference>
+      <name value="Search by specialty in HealthcareService with multipleOr"/>
+      <description value="This SearchParameter enables query of HealthcareService by `specialty` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="HealthcareService"/>
       </extension>
       <reference>
@@ -1467,6 +1780,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-administrated-by"/>
+      </reference>
+      <name value="Search by administrated-by in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `administrated-by` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-coverage-area"/>
+      </reference>
+      <name value="Search by coverage-area in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `coverage-area` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-coverage-benefit-type"/>
+      </reference>
+      <name value="Search by coverage-benefit-type in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `coverage-benefit-type` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-coverage-network"/>
+      </reference>
+      <name value="Search by coverage-network in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `coverage-network` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-identifier"/>
+      </reference>
+      <name value="Search by identifier in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `identifier` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-name"/>
+      </reference>
+      <name value="Search by name in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `specialty` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-owned-by"/>
+      </reference>
+      <name value="Search by owned-by in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `owned-by` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/InsurancePlan-type"/>
+      </reference>
+      <name value="Search by type in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of InsurancePlan by `type` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -1508,6 +1909,248 @@
       <name value="JoeSmithRole3"/>
       <description value="Dr Smith Admitting Privileges at Hartford General"/>
       <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Location-address"/>
+      </reference>
+      <name value="Search by address in Location with multipleOr"/>
+      <description value="This SearchParameter enables query of Location by `address` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Location-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in Location with multipleOr"/>
+      <description value="This SearchParameter enables query of Location by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Location-organization"/>
+      </reference>
+      <name value="Search by organization in Location with multipleOr"/>
+      <description value="This SearchParameter enables query of Location by `organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Location-partOf"/>
+      </reference>
+      <name value="Search by partOf in Location with multipleOr"/>
+      <description value="This SearchParameter enables query of Location by `partOf` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Location-physicalType"/>
+      </reference>
+      <name value="Search by physicalType in Location with multipleOr"/>
+      <description value="This SearchParameter enables query of Location by `physicalType` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Location-type"/>
+      </reference>
+      <name value="Search by type in Location with multipleOr"/>
+      <description value="This SearchParameter enables query of Location by `type` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Network-coverage-area"/>
+      </reference>
+      <name value="Search by coverage-area in Network with multipleOr"/>
+      <description value="This SearchParameter enables query of Network by `coverage-area` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Network-name"/>
+      </reference>
+      <name value="Search by name in Network with multipleOr"/>
+      <description value="This SearchParameter enables query of Network by `name` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Organization-address"/>
+      </reference>
+      <name value="Search by address in Organization with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `address` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Organization-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in Organization with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Organization-identifier"/>
+      </reference>
+      <name value="Search by identifier in Organization with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `identifier` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Organization-name"/>
+      </reference>
+      <name value="Search by name in Organization with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `name` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Organization-partOf"/>
+      </reference>
+      <name value="Search by partOf in Organization with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `partOf` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Organization-type"/>
+      </reference>
+      <name value="Search by type in Organization with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `type` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-location"/>
+      </reference>
+      <name value="Search by location in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `location` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-network"/>
+      </reference>
+      <name value="Search by network in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `network` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-participating-organization"/>
+      </reference>
+      <name value="Search by participating-organization in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `participating-organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-primary-organization"/>
+      </reference>
+      <name value="Search by primary-organization in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `primary-organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-role"/>
+      </reference>
+      <name value="Search by role in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `role` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-service"/>
+      </reference>
+      <name value="Search by service in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `service` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/OrganizationAffiliation-specialty"/>
+      </reference>
+      <name value="Search by specialty in OrganizationAffiliation with multipleOr"/>
+      <description value="This SearchParameter enables query of Organization by `specialty` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1632,6 +2275,171 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-family"/>
+      </reference>
+      <name value="Search by family name in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `family` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-given"/>
+      </reference>
+      <name value="Search by given name in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `given` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-identifier"/>
+      </reference>
+      <name value="Search by identifier in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `identifier` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-identifier-assigner"/>
+      </reference>
+      <name value="Search by identifier-assigner in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `identifier-assigner` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-name"/>
+      </reference>
+      <name value="Search by name in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `name` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-qualification-code"/>
+      </reference>
+      <name value="Search by qualification-code in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `qualification-code` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/Practicioner-qualification-issuer"/>
+      </reference>
+      <name value="Search by qualification-issuer in Practicioner with multipleOr"/>
+      <description value="This SearchParameter enables query of Practicioner by `qualification-issuer` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-Practicioner"/>
+      </reference>
+      <name value="Search by Practicioner in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `Practicioner` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-location"/>
+      </reference>
+      <name value="Search by location in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `location` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-network"/>
+      </reference>
+      <name value="Search by network in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `network` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-organization"/>
+      </reference>
+      <name value="Search by organization in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-role"/>
+      </reference>
+      <name value="Search by role in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `role` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-service"/>
+      </reference>
+      <name value="Search by service in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `service` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PracticionerRole-specialty"/>
+      </reference>
+      <name value="Search by specialty in PracticionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of PracticionerRole by `specialty` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -1640,6 +2448,39 @@
       <name value="StateOfCTLocation"/>
       <description value="State of CT Area"/>
       <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/VerificationResult-attestation-who"/>
+      </reference>
+      <name value="Search by attestation-who in VerificationResult with multipleOr"/>
+      <description value="This SearchParameter enables query of VerificationResult by `attestation-who` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/VerificationResult-primarysource-who"/>
+      </reference>
+      <name value="Search by primarysource-who in VerificationResult with multipleOr"/>
+      <description value="This SearchParameter enables query of VerificationResult by `primarysource-who` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/VerificationResult-target"/>
+      </reference>
+      <name value="Search by target in InsurancePlan with multipleOr"/>
+      <description value="This SearchParameter enables query of VerificationResult by `target` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1654,13 +2495,79 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careTeam-category"/>
+      </reference>
+      <name value="Search by category in CareTeam with multipleOr"/>
+      <description value="This SearchParameter enables query of Careteams by `category` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careTeam-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in CareTeam with multipleOr"/>
+      <description value="This SearchParameter enables query of Careteams by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careTeam-location"/>
+      </reference>
+      <name value="Search by location in CareTeam with multipleOr"/>
+      <description value="This SearchParameter enables query of Careteams by `location` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careTeam-name"/>
+      </reference>
+      <name value="Search by name in CareTeam with multipleOr"/>
+      <description value="This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careTeam-organization"/>
+      </reference>
+      <name value="Search by organization in CareTeam with multipleOr"/>
+      <description value="This SearchParameter enables query of Careteams by `organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/careTeam-service"/>
+      </reference>
+      <name value="Search by service in CareTeam with multipleOr"/>
+      <description value="This SearchParameter enables query of Careteams by `service` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/NatlDirEndpointQry"/>
+        <reference value="CapabilityStatement/fhir-directory-query-basic-endpoint"/>
       </reference>
-      <name value="NatlDirEndpointQry CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <name value="fhir-directory-query-basic-endpoint"/>
+      <description value="Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1668,10 +2575,10 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/NatlDirExpandedQry"/>
+        <reference value="CapabilityStatement/fhir-directory-query-basic-expanded"/>
       </reference>
-      <name value="NatlDir Endpoint Query CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <name value="fhir-directory-query-basic-expanded"/>
+      <description value="Capabilities for a Basic Federated Query Server for where expanded search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1679,10 +2586,10 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/NatlDirHealthServiceQry"/>
+        <reference value="CapabilityStatement/fhir-directory-query-health-or-human-services-endpoint"/>
       </reference>
-      <name value="National Directory Healthcare Service CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the National Directory Healthcare Service  Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <name value="fhir-directory-query-health-or-human-services-endpoint"/>
+      <description value="Capabilities for a Federated Query Server for Health or Human Services where endpoint search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1690,560 +2597,54 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/NatlDirSocialServiceQry"/>
+        <reference value="CapabilityStatement/fhir-directory-query-health-or-human-services-expanded"/>
       </reference>
-      <name value="National Directory Social Service CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the National Directory Social Service  actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements."/>
+      <name value="fhir-directory-query-health-or-human-services-expanded"/>
+      <description value="Capabilities for a Federated Query Server for Health or Human Services where expanded search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/endpoint-organization"/>
+        <reference value="CapabilityStatement/fhir-directory-query-human-services-endpoint"/>
       </reference>
-      <name value="NatlDir_sp_endpoint_organization"/>
-      <description value="Select Endpoints managed by the specified organization"/>
+      <name value="fhir-directory-query-human-services-endpoint"/>
+      <description value="Capabilities for a Federated Query Server for Health Services where endpoint search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/healthcareservice-coverage-area"/>
+        <reference value="CapabilityStatement/fhir-directory-query-human-services-expanded"/>
       </reference>
-      <name value="NatlDir_sp_healthcareservice_coverage_area"/>
-      <description value="Select services available in a region described by the specified location"/>
+      <name value="fhir-directory-query-human-services-expanded"/>
+      <description value="Capabilities for a Federated Query Server for Health Services where expanded search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/healthcareservice-endpoint"/>
+        <reference value="CapabilityStatement/fhir-directory-query-provider-endpoint"/>
       </reference>
-      <name value="NatlDir_sp_healthcareservice_endpoint"/>
-      <description value="Select HealthcareServices with the specified endpoint"/>
+      <name value="fhir-directory-query-provider-endpoint"/>
+      <description value="Capabilities for a Federated Query Server for a Provider where endpoint search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/healthcareservice-location"/>
+        <reference value="CapabilityStatement/fhir-directory-query-provider-expanded"/>
       </reference>
-      <name value="NatlDir_sp_healthcareservice_location"/>
-      <description value="Select HealthcareServices available at the specified location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-name"/>
-      </reference>
-      <name value="NatlDir_sp_healthcareservice_name"/>
-      <description value="Select HealthcareServices with the specified name"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-organization"/>
-      </reference>
-      <name value="NatlDir_sp_healthcareservice_organization"/>
-      <description value="Select HealthcareServices provided by the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-service-category"/>
-      </reference>
-      <name value="NatlDir_sp_healthcareservice_category"/>
-      <description value="Select HealthcareServices providing the specified category of services"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-service-type"/>
-      </reference>
-      <name value="NatlDir_sp_healthcareservice_type"/>
-      <description value="Select HealthcareServices of the specified type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/healthcareservice-specialty"/>
-      </reference>
-      <name value="NatlDir_sp_healthcareservice_specialty"/>
-      <description value="Select services associated with the specified specialty"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-administered-by"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_administered_by"/>
-      <description value="Select products that are administered by the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-coverage-area"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_coverage_area"/>
-      <description value="Select products that are offered in the specified location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-identifier"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_identifier"/>
-      <description value="Select products with the specified identifier"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-name"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_name"/>
-      <description value="Select products with the specified name"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-owned-by"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_owned_by"/>
-      <description value="Select products that are owned by the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-plan-type"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_plan_type"/>
-      <description value="Select plans of the specified type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/insuranceplan-type"/>
-      </reference>
-      <name value="NatlDir_sp_insuranceplan_type"/>
-      <description value="Select insurance plans of the specified type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-address-city"/>
-      </reference>
-      <name value="NatlDir_sp_location_address_city"/>
-      <description value="Select Locations with the specified address.city"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-address-postalcode"/>
-      </reference>
-      <name value="NatlDir_sp_location_address_postalcode"/>
-      <description value="Select Locations with the specified address"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-address-state"/>
-      </reference>
-      <name value="NatlDir_sp_location_address_state"/>
-      <description value="Select Locations with the specified address.state"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-address"/>
-      </reference>
-      <name value="NatlDir_sp_location_address"/>
-      <description value="Select Locations with the specified address"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-endpoint"/>
-      </reference>
-      <name value="NatlDir_sp_location_endpoint"/>
-      <description value="Select Locations with the specified endpoint"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-organization"/>
-      </reference>
-      <name value="NatlDir_sp_location_organization"/>
-      <description value="Select Locations managed by the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-partof"/>
-      </reference>
-      <name value="NatlDir_sp_location_partof"/>
-      <description value="Select Locations that are part of the specified location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/location-type"/>
-      </reference>
-      <name value="NatlDir_sp_location_type"/>
-      <description value="Select Locations of the specified type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organization-address"/>
-      </reference>
-      <name value="NatlDir_sp_organization_address"/>
-      <description value="Select organizations with the specified address (matches any of the string elements of an address)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organization-coverage-area"/>
-      </reference>
-      <name value="NatlDir_sp_network_coverage_area"/>
-      <description value="Select health insurance provider networks available in a region described by the specified location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organization-endpoint"/>
-      </reference>
-      <name value="NatlDir_sp_organization_endpoint"/>
-      <description value="Select Organizations with the specified endpoint"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organization-name"/>
-      </reference>
-      <name value="NatlDir_sp_organization_name"/>
-      <description value="Select Organizations with the specified name"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organization-partof"/>
-      </reference>
-      <name value="NatlDir_sp_organization_partof"/>
-      <description value="Select Organizations that are part of the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organization-type"/>
-      </reference>
-      <name value="NatlDir_sp_organization_type"/>
-      <description value="Select Organizations of the specified type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-endpoint"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_endpoint"/>
-      <description value="Select OrganizationAffiliations with the specified endpoint"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-location"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_location"/>
-      <description value="Select OrganizationAffiliations available at the specified location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-network"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_network"/>
-      <description value="Select roles where the organization is a member of the specified health insurance provider network"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-participating-organization"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_participating_organization"/>
-      <description value="Select roles filled by the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-primary-organization"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_primary_organization"/>
-      <description value="Select roles offered by the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-role"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_role"/>
-      <description value="Select OrganizationAffiliations with the specified role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-service"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_service"/>
-      <description value="Select OrganizationAffiliations providing the specified service"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/organizationaffiliation-specialty"/>
-      </reference>
-      <name value="NatlDir_sp_organizationaffiliation_specialty"/>
-      <description value="Select OrganizationAffiliations associated with the specified specialty"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitioner-family-name"/>
-      </reference>
-      <name value="NatlDir_sp_practitioner_family_name"/>
-      <description value="Select Practitioners with the specified family name"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitioner-given-name"/>
-      </reference>
-      <name value="NatlDir_sp_practitioner_given_name"/>
-      <description value="Select Practitioners with the specified given name"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitioner-name"/>
-      </reference>
-      <name value="NatlDir_sp_practitioner_name"/>
-      <description value="Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-endpoint"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_endpoint"/>
-      <description value="Select PractitionerRoles with the specified endpoint"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-location"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_location"/>
-      <description value="Select PractitionerRoles available at the specified location"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-network"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_network"/>
-      <description value="Select roles where the practitioner is a member of the specified health insurance provider network"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-organization"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_organization"/>
-      <description value="Select PractitionerRoles available at the specified organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-period"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_period"/>
-      <description value="Select PractitionerRoles available in the specified period"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-practitioner"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_practitioner"/>
-      <description value="Select roles filled by the specified practitioner"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-role"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_role"/>
-      <description value="Select PractitionerRoles with the specified role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-service"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_service"/>
-      <description value="Select PractitionerRoles providing the specified service"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/practitionerrole-specialty"/>
-      </reference>
-      <name value="NatlDir_sp_practitionerrole_specialty"/>
-      <description value="Select PractitionerRoles associated with the specified specialty"/>
+      <name value="fhir-directory-query-provider-expanded"/>
+      <description value="Capabilities for a Federated Query Server for a Provider where minimum search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

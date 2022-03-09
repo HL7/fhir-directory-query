@@ -5,22 +5,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-organization> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/HealthcareService-organization> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "healthcareservice-organization"];
+  fhir:Resource.id [ fhir:value "HealthcareService-organization"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"healthcareservice-organization\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-organization</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDir_sp_healthcareservice_organization</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/HealthcareService-organization\">http://hl7.org/fhir/SearchParameter/HealthcareService-organization</a></p><p><b>status</b>: active</p><p><b>date</b>: 2018-05-23T00:00:00Z</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select HealthcareServices provided by the specified organization</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: organization</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: reference</p><p><b>expression</b>: HealthcareService.providedBy</p><p><b>target</b>: Organization</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>chain</b>: name, address, partof, type</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HealthcareService-organization\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-organization.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: HealthcareService-organizationSearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-03-09T14:32:46-05:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of HealthcareService by `organization` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: organization</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
   ];
-  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-organization"];
+  fhir:SearchParameter.url [ fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-organization.html"];
   fhir:SearchParameter.version [ fhir:value "0.0.1"];
-  fhir:SearchParameter.name [ fhir:value "NatlDir_sp_healthcareservice_organization"];
+  fhir:SearchParameter.name [ fhir:value "HealthcareService-organizationSearchParameter"];
   fhir:SearchParameter.derivedFrom [
-     fhir:value "http://hl7.org/fhir/SearchParameter/HealthcareService-organization";
-     fhir:link <http://hl7.org/fhir/SearchParameter/HealthcareService-organization>
+     fhir:value "http://hl7.org/fhir/SearchParameter/Resource-id";
+     fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
   ];
   fhir:SearchParameter.status [ fhir:value "active"];
-  fhir:SearchParameter.date [ fhir:value "2018-05-23T00:00:00+00:00"^^xsd:dateTime];
+  fhir:SearchParameter.date [ fhir:value "2022-03-09T14:32:46-05:00"^^xsd:dateTime];
   fhir:SearchParameter.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:SearchParameter.contact [
      fhir:index 0;
@@ -35,7 +35,7 @@
        fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
      ]
   ];
-  fhir:SearchParameter.description [ fhir:value "Select HealthcareServices provided by the specified organization"];
+  fhir:SearchParameter.description [ fhir:value "This SearchParameter enables query of HealthcareService by `organization` with `mutlipleOr` enabled."];
   fhir:SearchParameter.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -49,33 +49,14 @@
      fhir:value "HealthcareService";
      fhir:index 0
   ];
-  fhir:SearchParameter.type [ fhir:value "reference"];
-  fhir:SearchParameter.expression [ fhir:value "HealthcareService.providedBy"];
-  fhir:SearchParameter.target [
-     fhir:value "Organization";
-     fhir:index 0
-  ];
-  fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean];
-  fhir:SearchParameter.multipleAnd [ fhir:value "true"^^xsd:boolean];
-  fhir:SearchParameter.chain [
-     fhir:value "name";
-     fhir:index 0
-  ], [
-     fhir:value "address";
-     fhir:index 1
-  ], [
-     fhir:value "partof";
-     fhir:index 2
-  ], [
-     fhir:value "type";
-     fhir:index 3
-  ] .
+  fhir:SearchParameter.type [ fhir:value "token"];
+  fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/healthcareservice-organization.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-query/SearchParameter/HealthcareService-organization.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/SearchParameter/healthcareservice-organization.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/SearchParameter/HealthcareService-organization.ttl> .
 
 # -------------------------------------------------------------------------------------
 

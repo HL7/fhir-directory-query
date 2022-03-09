@@ -3,14 +3,14 @@
   "id": "PractitionerRoleVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ProviderRoleCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-practitioner-role.html\"><code>http://terminology.hl7.org/CodeSystem/practitioner-role</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ProviderRoleCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-practitioner-role.html\"><code>http://terminology.hl7.org/CodeSystem/practitioner-role</code></a></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS",
   "version": "0.0.1",
   "name": "PractitionerRoleVS",
   "title": "PractitionerRole Code",
   "status": "active",
-  "date": "2022-02-03T10:48:00-05:00",
+  "date": "2022-03-09T14:32:46-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
