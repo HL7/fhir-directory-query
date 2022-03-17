@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DynamicRegistration"];
   fhir:StructureDefinition.title [ fhir:value "Dynamic Registration"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-09T14:32:46-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-16T09:57:32-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
