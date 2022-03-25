@@ -45,7 +45,7 @@ menu:
     General Guidance:                              general-guidance.html
     Technical Guidance: technical-guidance.html
     Bulk Data and Subscriptions:          bulk-data.html
-  Search Parameters   : searchparameters.html
+  Search Parameters   : artifacts.html#behavior-search-parameters
   Profiles: profiles.html
   Capability Statements:
     Basic Endpoint Conformance Requirements  : CapabilityStatement-fhir-directory-query-basic-endpoint.html

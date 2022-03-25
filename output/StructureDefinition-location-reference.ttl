@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "LocationReference"];
   fhir:StructureDefinition.title [ fhir:value "Location Reference"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-25T16:16:05-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-25T16:25:37-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
