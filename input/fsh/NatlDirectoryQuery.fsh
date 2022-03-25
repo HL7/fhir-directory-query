@@ -215,12 +215,12 @@ Description:    "A Location is the physical place where healthcare services are 
                  organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
 * meta.lastUpdated 1..1
 * extension contains
-    NewPatients named newpatients 0..* MS and
     Accessibility named accessibility 0..* MS and
+    NewPatients named newpatients 0..* MS and
     $R4GeoJSONExtension named region 0..1 MS
+* extension[region] ^short = "Associated Region (GeoJSON)"
 * extension[newpatients] ^short = "New Patients"
 * extension[accessibility] ^short = "Accessibility"
-* extension[region] ^short = "Associated Region (GeoJSON)"
 * identifier.type MS
 * identifier.value MS
 * status 1..1 MS
