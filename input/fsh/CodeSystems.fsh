@@ -1,3 +1,19 @@
+CodeSystem: ConsentCS
+Title: "National Healthcare Directory Consent"
+Description:  "Codes for use in defining access levels for sharing subsets of constrained content (as an example)"
+* #protect "Protect" "The data (or subset of data) provided should be only made available to the people, or types of people explicitly declared in the consent."
+* ^caseSensitive = true
+
+CodeSystem: ConsentScopeCS
+Title: "National Healthcare Directory ConsentScopeCodes"
+Description:  "This value set includes the four Consent scope codes."
+* #adr "Advanced Care Directive" "Actions to be taken if they are no longer able to make decisions for themselves."
+* #research "Research" "Consent to participate in research protocol and information sharing required."
+* #patient-privacy "Privacy Consent" "Agreement to collect, access, use or disclose (share) information."
+* #treatment "Treatment" "Consent to undergo a specific treatment."
+* ^caseSensitive = true
+
+
 CodeSystem: IgTypeCS
 Title: "IG Type"
 Description: "IG Type"

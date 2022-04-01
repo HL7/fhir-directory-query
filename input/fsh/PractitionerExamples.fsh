@@ -77,6 +77,7 @@ Usage: #example
 * extension[qualification].extension[code].valueCodeableConcept = $NUCCProviderTaxonomy#207R00000X 
 * extension[qualification].extension[issuer].valueReference.display = "American Board of Internal Medicine"
 * extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
+
 // specialty = internal medicine
 // available M-F
 

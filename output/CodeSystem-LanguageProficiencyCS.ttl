@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "LanguageProficiencyCS"];
   fhir:CodeSystem.title [ fhir:value "Language Proficiency"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-03-25T16:25:37-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-04-01T12:43:46-04:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;

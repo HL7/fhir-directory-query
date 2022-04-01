@@ -20,7 +20,7 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/hl7.css" rel="stylesheet"/>
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -1153,6 +1153,24 @@ there may be a relationship to an organization. A provider renders services to p
 be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NatlDir-Validation.html"
+                     title="StructureDefinition/NatlDir-Validation">NatlDir Validation</a>
+               </td>
+               <td>
+<p>Describes validation requirements, source(s), status and dates for one or more elements</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NatlDir-Restriction.html"
+                     title="StructureDefinition/NatlDir-Restriction">NatlDir Restriction</a>
+               </td>
+               <td>
+<p>Restriction on use/release of exchanged information</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -1437,6 +1455,17 @@ be a relationship to an organization. Practitioner participation in healthcare p
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-usage-restriction.html"
+                     title="StructureDefinition/usage-restriction">NatlDir Usage Restriction</a>
+               </td>
+               <td>
+<p>The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn’t exposed that shouldn’t be.
+This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)
+This will be expected to be used as a modifier extension.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-via-intermediary.html"
                      title="StructureDefinition/via-intermediary">Via Intermediary</a>
                </td>
@@ -1471,6 +1500,15 @@ be a relationship to an organization. Practitioner participation in healthcare p
                </td>
                <td>
 <p>Codes for documenting general categories of accommodations available.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ConsentVS.html" title="ValueSet/ConsentVS">National Directory Consent Value Set</a>
+               </td>
+               <td>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;#xD; Codes for use in defining access levels for sharing subsets of constrained content (as an example).
+</code></pre></div></div>
 </td>
             </tr>
             <tr>
@@ -1720,6 +1758,22 @@ be a relationship to an organization. Practitioner participation in healthcare p
                </td>
                <td>
 <p>General categories of accommodations available.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ConsentCS.html" title="CodeSystem/ConsentCS">National Healthcare Directory Consent</a>
+               </td>
+               <td>
+<p>Codes for use in defining access levels for sharing subsets of constrained content (as an example)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ConsentScopeCS.html" title="CodeSystem/ConsentScopeCS">National Healthcare Directory ConsentScopeCodes</a>
+               </td>
+               <td>
+<p>This value set includes the four Consent scope codes.</p>
 </td>
             </tr>
             <tr>
@@ -2313,19 +2367,17 @@ be a relationship to an organization. Practitioner participation in healthcare p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 25, 2022 16:25-0400">2022-03-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 12:43-0400">2022-04-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
-
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

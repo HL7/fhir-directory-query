@@ -14,7 +14,6 @@
     <sch:rule context="f:Organization">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-description']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-description': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:address) &gt;= 1">address: minimum cardinality of 'address' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

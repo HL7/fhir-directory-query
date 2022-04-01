@@ -50,15 +50,15 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension","rating","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating]]} {[]}
+"Organization.extension","rating","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating]]} {[]}
 ","Rating","Rating","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension","qualification","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification]]} {[]}
+"Organization.extension","qualification","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification]]} {[]}
 ","Qualification","An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension","org-description","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-description]]} {[]}
+"Organization.extension","org-description","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-description]]} {[]}
 ","Organization Description","An extension to provide a human-readable description of an organization.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -83,7 +83,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A","Role.code or implied by context"
-"Organization.identifier.type","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
+"Organization.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Organization.identifier.system","","","",0,1,"Y","","Y","uri {[]} {[]}
@@ -95,7 +95,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"
-"Organization.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"Organization.identifier.assigner","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
 "Organization.identifier","NPI","","",0,1,"Y","","Y","Identifier {[]} {[]}
@@ -126,7 +126,7 @@ We expect that some jurisdictions will profile this optionality to be a single c
 ","Name used for the organization","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"org-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XON.1",".name",".PreferredName/Name","./PrimaryAddress and ./OtherAddresses"
-"Organization.alias","","","",0,*,"","","","string {[]} {[]}
+"Organization.alias","","","",0,*,"Y","","","string {[]} {[]}
 ","A list of alternate names that the organization is known as, or was known as in the past","A list of alternate names that the organization is known as, or was known as in the past.","There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization.","Over time locations and organizations go through many changes and can be known by different names.
 
 For searching knowing previous names that the organization was known by can be very useful.","","","","","","","",,,,,"",,,,"Organization.alias",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -142,10 +142,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Organization.telecom.extension","contactpoint-availabletime","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime]]} {[]}
+"Organization.telecom.extension","contactpoint-availabletime","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime]]} {[]}
 ","Contactpoint Availabletime","An extension representing the days and times a contact point is available","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.telecom.extension","via-intermediary","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary]]} {[]}
+"Organization.telecom.extension","via-intermediary","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary]]} {[]}
 ","Via Intermediary","A reference to an alternative point of contact (NatlDirEndpointQry-PractitionerRole, NatlDirEndpointQry-Organization, NatlDirEndpointQry-OrganizationAffiliation, or NatlDirEndpointQry-Location) for this organization","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
@@ -158,13 +158,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | mobile - purpose of this contact point","Identifies the purpose for the contact point.","Applications can assume that a contact is current unless it explicitly says that it is temporary or old.","Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.","","","","","","","",,"required","Use of contact point.","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XTN.2 - but often indicated by field","unique(./use)","./ContactPointPurpose"
-"Organization.telecom.rank","","","",0,1,"Y","","Y","positiveInt {[]} {[]}
+"Organization.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
 ","Specify preferred order of use (1 = highest)","Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.","Note that rank does not necessarily follow the order in which the contacts are represented in the instance.","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","n/a"
 "Organization.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
-"Organization.address","","","",1,*,"Y","","","Address {[]} {[]}
+"Organization.address","","","",0,*,"Y","","","Address {[]} {[]}
 ","An address for the organization","An address for the organization.","Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.address",0,*,"org-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}","ORC-23?",".address","./PrimaryAddress and ./OtherAddresses","n/a"
@@ -175,16 +175,16 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Organization.address.extension","geolocation","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/geolocation]]} {[]}
+"Organization.address.extension","geolocation","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/geolocation]]} {[]}
 ","The absolute geographic location","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.7","unique(./use)","./AddressPurpose"
-"Organization.address.type","","","",0,1,"Y","","Y","code {[]} {[]}
+"Organization.address.type","","","",0,1,"","","Y","code {[]} {[]}
 ","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.18","unique(./use)"
-"Organization.address.text","","","",0,1,"Y","","Y","string {[]} {[]}
+"Organization.address.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6","./formatted"
 "Organization.address.line","","","",0,4,"Y","","Y","string {[]} {[]}
@@ -215,10 +215,10 @@ Territory","",0,1,"Y","","Y","string {[]} {[]}
   <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
-"Organization.partOf","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
+"Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","The organization of which this organization forms a part","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in HL7 v2",".playedBy[classCode=Part].scoper","n/a"
-"Organization.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Contact for the organization for a certain purpose","Contact for the organization for a certain purpose.","Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.","Need to keep track of assigned contact points within bigger organization.","","","","","","","",,,,,"",,,,"Organization.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".contactParty"
 "Organization.contact.id","","","",0,1,"","","","string {[]} {[]}
@@ -239,7 +239,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.contact.name","","","",0,1,"","","","HumanName {[]} {[]}
 ","A name associated with the contact","A name associated with the contact.","","Need to be able to track the person by name.","","","","","","","",,,,,"",,,,"Organization.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PID-5, PID-9","./name"
-"Organization.contact.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
+"Organization.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","Contact details (telephone, email, etc.)  for a contact","A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.","","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Organization.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PID-13, PID-14","./telecom"
 "Organization.contact.telecom.id","","","",0,1,"","","","string {[]} {[]}
@@ -255,14 +255,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.contact.telecom.extension","via-intermediary","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary]]} {[]}
 ","Via Intermediary","A reference to an alternative point of contact (NatlDirEndpointQry-PractitionerRole, NatlDirEndpointQry-Organization, NatlDirEndpointQry-OrganizationAffiliation, or NatlDirEndpointQry-Location) for this organization","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.contact.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
+"Organization.contact.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
 ","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XTN.3","./scheme","./ContactPointType"
-"Organization.contact.telecom.value","","","",0,1,"Y","","Y","string {[]} {[]}
+"Organization.contact.telecom.value","","","",0,1,"","","Y","string {[]} {[]}
 ","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XTN.1 (or XTN.12)","./url","./Value"
-"Organization.contact.telecom.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+"Organization.contact.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | mobile - purpose of this contact point","Identifies the purpose for the contact point.","Applications can assume that a contact is current unless it explicitly says that it is temporary or old.","Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.","","","","","","","",,"required","Use of contact point.","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XTN.2 - but often indicated by field","unique(./use)","./ContactPointPurpose"
 "Organization.contact.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}

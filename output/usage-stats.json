@@ -1005,6 +1005,20 @@
       ]
     },
     {
+      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction",
+      "title": "NatlDir Usage Restriction",
+      "types": [
+        "Reference",
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary",
       "title": "Via Intermediary",
       "types": [
@@ -1013,6 +1027,18 @@
     }
   ],
   "profiles": {
+    "Consent": [
+      {
+        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction",
+        "title": "NatlDir Restriction"
+      }
+    ],
+    "VerificationResult": [
+      {
+        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation",
+        "title": "NatlDir Validation"
+      }
+    ],
     "CareTeam": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam",
@@ -1113,6 +1139,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -1241,6 +1268,9 @@
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework": [
       "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction": [
+      "CareTeam"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary": [
       "CareTeam.telecom",

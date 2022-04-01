@@ -70,6 +70,20 @@
     "name": "AccessibilityCS"
   },
   {
+    "id": "ConsentCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentCS",
+    "version": "0.0.1",
+    "name": "ConsentCS"
+  },
+  {
+    "id": "ConsentScopeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS",
+    "version": "0.0.1",
+    "name": "ConsentScopeCS"
+  },
+  {
     "id": "DeliveryMethodCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS",
@@ -180,6 +194,20 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query",
     "version": "0.0.1",
     "name": "ONCFASTNationalDirectoryEndpointQuery"
+  },
+  {
+    "id": "NatlDir-Restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction",
+    "version": "0.0.1",
+    "name": "NatlDirRestriction"
+  },
+  {
+    "id": "NatlDir-Validation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation",
+    "version": "0.0.1",
+    "name": "NatlDirEndpointQryValidation"
   },
   {
     "id": "NatlDirEndpointQry-CareTeam",
@@ -525,6 +553,13 @@
     "name": "TrustFramework"
   },
   {
+    "id": "usage-restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction",
+    "version": "0.0.1",
+    "name": "UsageRestriction"
+  },
+  {
     "id": "via-intermediary",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary",
@@ -544,6 +579,13 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AccessibilityVS",
     "version": "0.0.1",
     "name": "AccessibilityVS"
+  },
+  {
+    "id": "ConsentVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ConsentVS",
+    "version": "0.0.1",
+    "name": "ConsentVS"
   },
   {
     "id": "DeliveryMethodVS",

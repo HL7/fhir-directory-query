@@ -50,7 +50,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Endpoint.extension","endpoint-usecase","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase]]} {[]}
+"Endpoint.extension","endpoint-usecase","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase]]} {[]}
 ","Endpoint Usecase","EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -58,19 +58,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","IGs Supported","IGs Supported document the different types of IGs supported by the Endpoint.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Endpoint.extension","endpoint-type","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType]]} {[]}
+"Endpoint.extension","endpoint-type","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType]]} {[]}
 ","Endpoint Type","Type of Endpoint","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Endpoint.extension","secure-exchange-artifacts","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts]]} {[]}
+"Endpoint.extension","secure-exchange-artifacts","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts]]} {[]}
 ","Secure Exchange Artifacts","Secure Exchange Artifacts","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Endpoint.extension","trust-framework","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework]]} {[]}
+"Endpoint.extension","trust-framework","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework]]} {[]}
 ","Trust Framework","Trust Framework","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Endpoint.extension","dynamic-registration","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration]]} {[]}
+"Endpoint.extension","dynamic-registration","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration]]} {[]}
 ","Dynamic Registration","Dynamic Registration","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -88,7 +88,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Endpoint.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+"Endpoint.identifier","","","",0,*,"Y","","Y","Identifier {[]} {[]}
 ","Identifies this endpoint across multiple systems","Identifier for the organization that is used to identify the endpoint across multiple disparate systems.","","","","","","","","","",,,,,"",,,,"Endpoint.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.identifier"
 "Endpoint.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
@@ -97,48 +97,25 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Endpoint.connectionType","","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Protocol/Profile/Standard to be used with this endpoint connection","A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way. (e.g. XDS.b/DICOM/cds-hook).","For additional connectivity details for the protocol, extensions will be used at this point, as in the XDS example.","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS","",,,,"Endpoint.connectionType",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.class"
-"Endpoint.name","","","",0,1,"Y","","Y","string {[]} {[]}
+"Endpoint.name","","","",0,1,"","","Y","string {[]} {[]}
 ","A name that this endpoint can be identified by","A friendly name that this endpoint can be referred to with.","","","","","","","","","",,,,,"",,,,"Endpoint.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.what[x]"
 "Endpoint.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Organization that manages this endpoint (might not be the organization that exposes the endpoint)","The organization that manages this endpoint (even if technically another organization is hosting this in the cloud, it is the organization associated with the data).","This property is not typically used when searching for Endpoint resources for usage. The typical usage is via the reference from an applicable Organization/Location/Practitioner resource, which is where the context is provided. Multiple Locations may reference a single endpoint, and don't have to be within the same organization resource, but most likely within the same organizational hierarchy.","","","","","","","","",,,,,"",,,,"Endpoint.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Endpoint.contact","","","",0,*,"Y","","","ContactPoint {[]} {[]}
+"Endpoint.contact","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","Contact details for source (e.g. troubleshooting)","Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting.","","","","","","","","","",,,,,"",,,,"Endpoint.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Endpoint.contact.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Endpoint.contact.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Endpoint.contact.system","","","",0,1,"Y","","Y","code {[]} {[]}
-","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./scheme"
-"Endpoint.contact.value","","","",0,1,"Y","","Y","string {[]} {[]}
-","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./url"
-"Endpoint.contact.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","home | work | temp | old | mobile - purpose of this contact point","Identifies the purpose for the contact point.","Applications can assume that a contact is current unless it explicitly says that it is temporary or old.","Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.","","","","","","","",,"required","Use of contact point.","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)"
-"Endpoint.contact.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
-","Specify preferred order of use (1 = highest)","Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.","Note that rank does not necessarily follow the order in which the contacts are represented in the instance.","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","n/a"
-"Endpoint.contact.period","","","",0,1,"","","Y","Period {[]} {[]}
-","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./usablePeriod[type=""IVL<TS>""]"
 "Endpoint.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Interval the endpoint is expected to be operational","The interval during which the endpoint is expected to be operational.","","","","","","","","","",,,,,"",,,,"Endpoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.done[x]"
-"Endpoint.payloadType","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"Endpoint.payloadType","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)","The payload type describes the acceptable content that can be communicated on the endpoint.","The payloadFormat describes the serialization format of the data, where the payloadType indicates the specific document/schema that is being transferred; e.g. DischargeSummary or CarePlan.","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS","",,,,"Endpoint.payloadType",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Endpoint.payloadMimeType","","","",0,*,"Y","","Y","code {[]} {[]}
+"Endpoint.payloadMimeType","","","",0,*,"","","Y","code {[]} {[]}
 ","Mimetype to send. If not specified, the content could be anything (including no payload, if the connectionType defined this)","The mime type to send the payload in - e.g. application/fhir+xml, application/fhir+json. If the mime type is not specified, then the sender could send any content (including no content depending on the connectionType).","Sending the payload has obvious security consequences. The server is responsible for ensuring that the content is appropriately secured.","","","","","","","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Endpoint.payloadMimeType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Endpoint.address","","","",1,1,"Y","","Y","url {[]} {[]}
+"Endpoint.address","","","",1,1,"","","Y","url {[]} {[]}
 ","The technical base address for connecting to this endpoint","The uri that describes the actual end-point to connect to.","For rest-hook, and websocket, the end-point must be an http: or https: URL; for email, a mailto: url, for sms, a tel: url, and for message the endpoint can be in any form of url the server understands (usually, http: or mllp:). The URI is allowed to be relative; in which case, it is relative to the server end-point (since there may be more than one, clients should avoid using relative URIs)
 
 This address will be to the service base, without any parameters, or sub-services or resources tacked on.

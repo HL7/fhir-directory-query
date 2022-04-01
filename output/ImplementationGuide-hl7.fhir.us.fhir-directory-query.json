@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-03-25T16:25:37-04:00",
+  "date": "2022-04-01T12:43:46-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -338,6 +338,19 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -619,6 +632,34 @@
         },
         "name": "National Directory Endpoint Qry Exchange PractitionerRole - Complete",
         "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NatlDir-Validation"
+        },
+        "name": "NatlDir Validation",
+        "description": "Describes validation requirements, source(s), status and dates for one or more elements",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NatlDir-Restriction"
+        },
+        "name": "NatlDir Restriction",
+        "description": "Restriction on use/release of exchanged information",
         "exampleBoolean": false
       },
       {
@@ -1035,6 +1076,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/usage-restriction"
+        },
+        "name": "NatlDir Usage Restriction",
+        "description": "The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.\nThis mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)\nThis will be expected to be used as a modifier extension.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/via-intermediary"
         },
         "name": "Via Intermediary",
@@ -1067,6 +1122,20 @@
         },
         "name": "Accessibility",
         "description": "Codes for documenting general categories of accommodations available.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ConsentVS"
+        },
+        "name": "National Directory Consent Value Set",
+        "description": "\t\r\nCodes for use in defining access levels for sharing subsets of constrained content (as an example).",
         "exampleBoolean": false
       },
       {
@@ -1445,6 +1514,34 @@
         },
         "name": "Accessibility",
         "description": "General categories of accommodations available.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ConsentCS"
+        },
+        "name": "National Healthcare Directory Consent",
+        "description": "Codes for use in defining access levels for sharing subsets of constrained content (as an example)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ConsentScopeCS"
+        },
+        "name": "National Healthcare Directory ConsentScopeCodes",
+        "description": "This value set includes the four Consent scope codes.",
         "exampleBoolean": false
       },
       {

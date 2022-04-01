@@ -86,6 +86,12 @@ Description:  "Codes for documenting business use case by a general grouping by 
 * $V3ActReason#ETREAT "emergency treatment"
 * $V3ActReason#PATRQT "patient requested"   
 
+ValueSet: ConsentVS
+Title: "National Directory Consent Value Set"
+Description: "	
+Codes for use in defining access levels for sharing subsets of constrained content (as an example)."
+* codes from system ConsentCS
+* codes from system ConsentScopeCS
 
 ValueSet: EndpointPayloadTypeVS
 Title: "Endpoint Payload Types"
