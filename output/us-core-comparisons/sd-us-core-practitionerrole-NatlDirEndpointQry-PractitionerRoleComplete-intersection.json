@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "2f9562ef-6a0a-45dc-83f3-bc761e882332-21",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2f9562ef-6a0a-45dc-83f3-bc761e882332-21",
+  "id" : "1f751aa9-6384-4f1c-af74-d07f31c445b9-21",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1f751aa9-6384-4f1c-af74-d07f31c445b9-21",
   "name" : "IntersectionUSCorePractitionerRoleProfileAndNatlDirEndpointQryPractitionerRoleComplete",
   "title" : "Intersection of US Core PractitionerRole Profile And National Directory Endpoint Qry Exchange PractitionerRole - Complete",
   "status" : "active",
-  "date" : "2022-04-01T12:44:16-04:00",
+  "date" : "2022-04-05T10:32:45-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -994,7 +994,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Provider role codes consisting of NUCC Health Care Provider Taxonomy Code Set for providers.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2f9562ef-6a0a-45dc-83f3-bc761e882332-15"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1f751aa9-6384-4f1c-af74-d07f31c445b9-15"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1031,7 +1031,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2f9562ef-6a0a-45dc-83f3-bc761e882332-18"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1f751aa9-6384-4f1c-af74-d07f31c445b9-18"
       },
       "mapping" : [{
         "identity" : "v2",

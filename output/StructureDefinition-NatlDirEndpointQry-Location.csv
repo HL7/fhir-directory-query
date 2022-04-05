@@ -205,7 +205,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Location.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Organization responsible for provisioning and upkeep","The organization responsible for the provisioning and upkeep of the location.","This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource.","Need to know who manages the location.","","","","","","","",,,,,"",,,,"Location.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scopingEntity[classCode=ORG determinerKind=INSTANCE]"
-"Location.partOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
+"Location.partOf","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Another Location this one is physically a part of","Another Location of which this Location is physically a part of.","","For purposes of location, display and identification, knowing which locations are located within other locations is important.","","","","","","","",,,,,"",,,,"Location.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundLink[typeCode=PART].source[classCode=SDLC]"
 "Location.hoursOfOperation","","","",0,*,"","","","BackboneElement {[]} {[]}

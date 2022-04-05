@@ -124,5 +124,7 @@ Usage: #example
 * name = "Endpoint for Acme of CT Portal"
 * connectionType = EndpointConnectionTypeCS#rest-non-fhir
 * payloadType = EndpointPayloadTypeCS#NA
+/* endpoint-type = #FHIR*/
 * address = "https://urlofportal.acmect.com"
 * extension[endpoint-usecase].extension[type].valueCodeableConcept = $V3ActReason#HOPERAT
+* extension[endpoint-type].extension[type].valueCodeableConcept = #FHIR

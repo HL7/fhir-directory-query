@@ -46,7 +46,7 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "Endpoint.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Endpoint.extension","","","",0,*,"","","","Extension {[]} {[]}
+"Endpoint.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -58,7 +58,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","IGs Supported","IGs Supported document the different types of IGs supported by the Endpoint.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Endpoint.extension","endpoint-type","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType]]} {[]}
+"Endpoint.extension","endpoint-type","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType]]} {[]}
 ","Endpoint Type","Type of Endpoint","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -112,7 +112,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Endpoint.payloadType","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)","The payload type describes the acceptable content that can be communicated on the endpoint.","The payloadFormat describes the serialization format of the data, where the payloadType indicates the specific document/schema that is being transferred; e.g. DischargeSummary or CarePlan.","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS","",,,,"Endpoint.payloadType",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Endpoint.payloadMimeType","","","",0,*,"","","Y","code {[]} {[]}
+"Endpoint.payloadMimeType","","","",0,*,"Y","","Y","code {[]} {[]}
 ","Mimetype to send. If not specified, the content could be anything (including no payload, if the connectionType defined this)","The mime type to send the payload in - e.g. application/fhir+xml, application/fhir+json. If the mime type is not specified, then the sender could send any content (including no content depending on the connectionType).","Sending the payload has obvious security consequences. The server is responsible for ensuring that the content is appropriately secured.","","","","","","","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Endpoint.payloadMimeType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Endpoint.address","","","",1,1,"","","Y","url {[]} {[]}

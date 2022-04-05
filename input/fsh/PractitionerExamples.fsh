@@ -70,6 +70,7 @@ Usage: #example
 * active = true
 * code = ProviderRoleCS#ph 
 * practitioner = Reference(HansSolo)
+* organization = Reference(HartfordOrthopedics)
 * healthcareService = Reference(HansSoloService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
@@ -169,6 +170,7 @@ Usage: #example
 * active = true
 * code = ProviderRoleCS#co "Counselor"
 * practitioner = Reference(Counselor)
+* organization = Reference(BurrClinic)
 * healthcareService = Reference(VirtualCounselService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
@@ -219,6 +221,7 @@ Usage: #example
 * code = ProviderRoleCS#ph
 // specialty = internal medicine
 // Available:  Sat/Sun
+* practitioner = Reference(JoeSmith)
 * healthcareService = Reference(BurrClinicServices)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HospLoc2)
@@ -238,6 +241,7 @@ Usage: #example
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
 * organization = Reference(Hospital)
+* practitioner = Reference(JoeSmith)
 
 Instance: AnonRole
 InstanceOf: NatlDirEndpointQryPractitionerRole
@@ -253,6 +257,7 @@ Usage: #example
 * location[0] = Reference(HospLoc2)
 * specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
 * organization = Reference(CancerClinic)
+* practitioner = Reference(HansSolo)
 
 Instance: CancerClinicService
 InstanceOf: NatlDirEndpointQryHealthcareService

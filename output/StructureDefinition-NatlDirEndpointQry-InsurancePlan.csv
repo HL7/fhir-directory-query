@@ -56,7 +56,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"InsurancePlan.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+"InsurancePlan.identifier","","","",0,*,"Y","","Y","Identifier {[]} {[]}
 ","Business Identifier for Product","Business identifiers assigned to this health insurance product which remain constant as the resource is updated and propagates from server to server.","","","","","","","","","",,,,,"",,,,"InsurancePlan.identifier",0,*,"ipn-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.identifier",".scopes[Role](classCode=IDENT)"
@@ -66,7 +66,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "InsurancePlan.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Product Type","The kind of health insurance product.","","","","","","","","","",,"extensible","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/InsuranceProductTypeVS","",,,,"InsurancePlan.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class",".code"
-"InsurancePlan.name","","","",0,1,"","","Y","string {[]} {[]}
+"InsurancePlan.name","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Official name","Official name of the health insurance product as designated by the owner.","If the name of the product/plan changes, consider putting the old name in the alias column so that it can still be located through searches.","","","","","","","","",,,,,"",,,,"InsurancePlan.name",0,1,"ipn-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".name"
@@ -79,13 +79,13 @@ For searching knowing previous names that the product/plan was known by can be v
 ","When the product is available","The period of time that the health insurance product is available.","","","","","","","","","",,,,,"",,,,"InsurancePlan.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.ownedBy","","Payer
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Plan issuer","The entity that is providing  the health insurance product and underwriting the risk.  This is typically an insurance carriers, other third-party payers, or health plan sponsors comonly referred to as 'payers'.","","","","","","","","","",,,,,"",,,,"InsurancePlan.ownedBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.administeredBy","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Product administrator","An organization which administer other services such as underwriting, customer service and/or claims processing on behalf of the health insurance product owner.","","","","","","","","","",,,,,"",,,,"InsurancePlan.administeredBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"InsurancePlan.coverageArea","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
+"InsurancePlan.coverageArea","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location]]}
 ","Where product applies","The geographic region in which a health insurance product's benefits apply.","","","","","","","","","",,,,,"",,,,"InsurancePlan.coverageArea",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
@@ -118,7 +118,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "InsurancePlan.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint]]}
 ","Technical endpoint","The technical endpoints providing access to services operated for the health insurance product.","","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"InsurancePlan.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"InsurancePlan.network","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network]]}
+"InsurancePlan.network","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network]]}
 ","What networks are Included","Reference to the network included in the health insurance product.","Networks are represented as a hierarchy of organization resources.","","","","","","","","",,,,,"",,,,"InsurancePlan.network",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.coverage","","","",0,*,"","","","BackboneElement {[]} {[]}
@@ -157,7 +157,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"InsurancePlan.coverage.benefit.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"InsurancePlan.coverage.benefit.type","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of benefit","Type of benefit (primary care; speciality care; inpatient; outpatient).","","","","","","","","","",,,,,"",,,,"InsurancePlan.coverage.benefit.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "InsurancePlan.coverage.benefit.requirement","","","",0,1,"","","","string {[]} {[]}

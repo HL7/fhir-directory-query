@@ -173,7 +173,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"PractitionerRole.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+"PractitionerRole.identifier","","","",0,*,"Y","","Y","Identifier {[]} {[]}
 ","Business Identifiers that are specific to a role/location","Business Identifiers that are specific to a role/location.","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"PractitionerRole.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)",".id","./Identifiers","FiveWs.identifier"
 "PractitionerRole.active","","","",1,1,"","","Y","boolean {[]} {[]}
@@ -182,10 +182,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PractitionerRole.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","The period during which the practitioner is authorized to perform in these role(s)","The period during which the person is authorized to act as a practitioner in these role(s) for the organization.","","Even after the agencies is revoked, the fact that it existed must still be recorded.","","","","","","","",,,,,"",,,,"PractitionerRole.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-8/9 / PRA-5.4",".performance[@typeCode <= 'PPRF'].ActDefinitionOrEvent.effectiveTime","(ServD maps Practitioners and Organizations via another entity, so this concept is not available)","FiveWs.done[x]"
-"PractitionerRole.practitioner","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner]]}
+"PractitionerRole.practitioner","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner]]}
 ","Practitioner that is able to provide the defined services for the organization","Practitioner that is able to provide the defined services for the organization.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player"
-"PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
+"PractitionerRole.organization","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization]]}
 ","Organization where the roles are available","The organization where the Practitioner performs the roles associated.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"
 "PractitionerRole.code","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}

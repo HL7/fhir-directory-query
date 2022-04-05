@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 114, warn = 163, info = 10
+err = 115, warn = 163, info = 10
 IG Publisher Version: 1.1.98 Out of date - current version is 1.1.114
-Generated Fri Apr 01 12:45:41 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+Generated Tue Apr 05 10:34:10 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 316 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-endpoint : 8 / 1 / 1
@@ -33,7 +33,7 @@ Generated Fri Apr 01 12:45:41 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-QualificationStatusCS : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-TrustFrameworkTypeCS : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-VirtualModalitiesCS : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\endpoint-AcmeOfCTPortalEndpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\endpoint-AcmeOfCTPortalEndpoint : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-BurrClinicServices : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-CancerClinicService : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 0 / 1 / 1
@@ -185,7 +185,7 @@ Generated Fri Apr 01 12:45:41 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-dynamicRegistration : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-usecase : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpointType : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpointType : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-healthcareservice-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-identifier-status : 2 / 3 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-igsSupported : 0 / 1 / 1
@@ -674,6 +674,8 @@ WARNING: CodeSystem/TrustFrameworkTypeCS: CodeSystem: HL7 Defined CodeSystems SH
 == fsh-generated\resources\CodeSystem-VirtualModalitiesCS.json ==
 WARNING: CodeSystem/VirtualModalitiesCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated\resources\Endpoint-AcmeOfCTPortalEndpoint.json ==
+WARNING: Endpoint/AcmeOfCTPortalEndpoint: Endpoint.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Endpoint/AcmeOfCTPortalEndpoint: Endpoint.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Endpoint Type' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointTypeVS), and a coding from this value set is required) (codes = null#FHIR)
 == fsh-generated\resources\HealthcareService-BurrClinicServices.json ==
 WARNING: HealthcareService/BurrClinicServices: HealthcareService.specialty[0]: The display "Family Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207Q00000X - should be one of ['Family Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-CancerClinicService.json ==
@@ -987,7 +989,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-endpoint-usecase.json ==
 == fsh-generated\resources\StructureDefinition-endpointType.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-healthcareservice-reference.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-identifier-status.json ==

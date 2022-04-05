@@ -81,7 +81,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * extension contains 
     EndpointUsecase named endpoint-usecase 0..*  and
     IGsSupported named ig-supported 0..*  MS and
-    EndpointType named endpoint-type 0..*  and
+    EndpointType named endpoint-type 1..1 MS and
     SecureExchangeArtifacts named secure-exchange-artifacts 0..*  and
     TrustFramework named trust-framework 0..*  and 
     DynamicRegistration named dynamic-registration 0..*  and
@@ -105,6 +105,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * payloadMimeType 
 * address 
 * identifier MS
+* payloadMimeType MS 
 
 Profile:        NatlDirEndpointQryHealthcareService
 Parent:         HealthcareService
@@ -195,7 +196,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * position 
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(NatlDirEndpointQryOrganization)
-* partOf 0..1 
+* partOf 0..1 MS
 * partOf only Reference(NatlDirEndpointQryLocation)
 * hoursOfOperation 
 * hoursOfOperation.daysOfWeek 
@@ -352,6 +353,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
 * extension[qualification] ^short = "Qualification"
+* identifier MS
 * identifier.type 
 * identifier.value 
 * active 1..1 
@@ -359,8 +361,8 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * period  
 * practitioner only Reference(NatlDirEndpointQryPractitioner)   // 1..1 from USCore
 * organization only Reference(NatlDirEndpointQryOrganization)         // 1..1 from USCore
-* practitioner  MS     // 1..1 from USCore
-* organization  MS     // 1..1 from USCore
+* practitioner 1..1 MS     // 1..1 from USCore
+* organization 1..1 MS     // 1..1 from USCore
 * code   MS
 * code from PractitionerRoleVS
 * specialty MS 
@@ -400,8 +402,10 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * extension contains
    Qualification named qualification 0..* 
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
+* identifier MS
 * identifier.type 
 * identifier.value 
+* identifier.assigner MS
 * active 1..1 
 * active = true 
 * period  //Jira ticket FHIR-33206 SMM
@@ -452,8 +456,10 @@ In the NatlDir IG, individuals and organizations are represented as participants
 * extension contains
     LocationReference named location-reference 0..* MS
 * extension[location-reference] ^short = "Network coverage area"
+* identifier MS
 * identifier.type MS
 * identifier.value MS
+* identifier.assigner MS
 * active 1..1 MS
 * active = true (exactly)
 * type from NetworkTypeVS (required)
@@ -499,6 +505,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * obeys network-or-NatlDirwork 
 * obeys plan-type-is-distinct
 * meta.lastUpdated 1..1
+* identifier MS
 * identifier.type 
 * identifier.value 
 * identifier.assigner 
@@ -507,14 +514,14 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * type 1..1  MS
 * type from InsuranceProductTypeVS (extensible)
 * type ^short = "Product Type"
-* name 
+* name MS
 * alias 
-* ownedBy 1..1 
+* ownedBy 1..1 MS
 * ownedBy only Reference(NatlDirEndpointQryOrganization)
 * administeredBy 1..1 MS
 * administeredBy only Reference(NatlDirEndpointQryOrganization)
 * coverageArea only Reference(NatlDirEndpointQryLocation)
-* coverageArea 
+* coverageArea MS
 * contact 
 * contact.name 
 * contact.name.text 
@@ -524,7 +531,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * endpoint only Reference(NatlDirEndpointQryEndpoint)
 * endpoint  
 * network only Reference(NatlDirEndpointQryNetwork)
-* network  
+* network  MS
 * coverage.network MS
 * plan ^short = "Cost sharing details for the plan"
 * plan.type from InsurancePlanTypeVS (extensible)
@@ -534,7 +541,7 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * plan.coverageArea    
 * plan.network only Reference(NatlDirEndpointQryNetwork)
 * period  // Jira ticket FHIR-33206 - SMM
-
+* coverage.benefit.type 1..1 MS
 
 
 
