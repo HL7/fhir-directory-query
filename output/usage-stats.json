@@ -1251,6 +1251,7 @@
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification": [
       "Organization",
       "OrganizationAffiliation",
+      "Practitioner",
       "PractitionerRole"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating": [

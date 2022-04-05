@@ -296,7 +296,8 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * identifier.type 
 * identifier.assigner MS
 * extension contains
-   Rating named rating 0..*   
+   Rating named rating 0..*   and
+   Qualification named qualification 0..*   
 * identifier.value 
 * active 1..1  
 * active = true 
@@ -454,7 +455,8 @@ Description:    "A Network refers to a healthcare provider insurance network. A 
 In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."
 * meta.lastUpdated 1..1
 * extension contains
-    LocationReference named location-reference 0..* MS
+    LocationReference named location-reference 0..* MS and
+    Qualification named qualification 0..* 
 * extension[location-reference] ^short = "Network coverage area"
 * identifier MS
 * identifier.type MS
