@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-04-05T18:50:47-04:00",
+  "date": "2022-04-08T11:43:46-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -376,38 +376,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-CareTeamComplete"
-        },
-        "name": "National Directory Endpoint Qry Care Team - Complete",
-        "description": "Defines the expanded constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Endpoint"
         },
         "name": "National Directory Endpoint Qry Exchange Endpoint",
         "description": "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-EndpointComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange Endpoint - Complete",
-        "description": "The technical details of an expanded endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.",
         "exampleBoolean": false
       },
       {
@@ -460,20 +432,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange InsurancePlan - Complete",
-        "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\r\n\r\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Location"
         },
         "name": "National Directory Endpoint Qry Exchange Location",
@@ -488,37 +446,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-LocationComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange Location - Complete",
-        "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, \r\n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Network"
         },
         "name": "National Directory Endpoint Qry Exchange Network",
-        "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\r\n\r\nIn the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-NetworkComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange Network - Complete",
         "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\r\n\r\nIn the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively.",
         "exampleBoolean": false
       },
@@ -558,34 +488,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange OrganizationAffiliation - Complete",
-        "description": "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-OrganizationComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange Organization - Complete",
-        "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\r\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-Practitioner"
         },
         "name": "National Directory Endpoint Qry Exchange Practitioner",
@@ -600,37 +502,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-PractitionerComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange Practitioner - Complete",
-        "description": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-PractitionerRole"
         },
         "name": "National Directory Endpoint Qry Exchange PractitionerRole",
-        "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete"
-        },
-        "name": "National Directory Endpoint Qry Exchange PractitionerRole - Complete",
         "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
         "exampleBoolean": false
       },

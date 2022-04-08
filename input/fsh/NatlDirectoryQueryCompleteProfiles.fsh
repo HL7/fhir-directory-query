@@ -1,3 +1,60 @@
+
+Profile:        NatlDirEndpointQryHealthcareServiceComplete
+Parent:         HealthcareService
+Id:             NatlDirEndpointQry-HealthcareServiceComplete
+Title:          "National Directory  Endpoint Qry Exchange HealthcareService - Complete"
+Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
+* meta.lastUpdated 1..1
+* extension contains
+    Rating named rating 0..* MS and 
+    NewPatients named newpatients 0..* MS and
+    DeliveryMethod named deliverymethod 1..* MS 
+* extension[newpatients] ^short = "New Patients"
+* extension[deliverymethod] ^short = "Delivery Method"
+* identifier.type MS
+* identifier.value MS
+* active 1..1 MS
+* active = true 
+* providedBy only Reference(NatlDirEndpointQryOrganization) 
+* providedBy MS
+* category 1..1 MS
+* category from HealthcareServiceCategoryVS (extensible)
+* type MS
+* type from HealthcareServiceTypeVS (extensible)
+* specialty MS
+* specialty from SpecialtiesVS (required)
+* location only Reference(NatlDirEndpointQryLocation)
+* location MS
+* name MS
+* comment MS
+* telecom MS
+* telecom.extension contains
+       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
+       ViaIntermediary named via-intermediary 0..* MS
+* telecom.extension[via-intermediary] ^short = "Via Intermediary"
+* telecom.system MS
+* telecom.value MS
+* coverageArea only Reference(NatlDirEndpointQryLocation)
+* coverageArea MS
+// * serviceProvisionCode MS
+// eligibility  MS
+// program  
+//* characteristic MS
+//* referralMethod MS
+* appointmentRequired MS
+* availableTime MS
+* availableTime.daysOfWeek MS
+* availableTime.allDay MS
+* availableTime.availableStartTime MS
+* availableTime.availableEndTime MS
+* notAvailable MS
+* notAvailable.description MS
+* notAvailable.during MS
+* availabilityExceptions MS
+* endpoint only Reference(NatlDirEndpointQryEndpoint)
+* endpoint MS
+
+/*
 Profile: NatlDirEndpointQryCareTeamComplete
 Parent: CareTeam
 Id: NatlDirEndpointQry-CareTeamComplete
@@ -104,62 +161,6 @@ Description:    "The technical details of an expanded endpoint that can be used 
 * payloadMimeType MS
 * address MS
 
-Profile:        NatlDirEndpointQryHealthcareServiceComplete
-Parent:         HealthcareService
-Id:             NatlDirEndpointQry-HealthcareServiceComplete
-Title:          "National Directory  Endpoint Qry Exchange HealthcareService - Complete"
-Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
-* meta.lastUpdated 1..1
-* extension contains
-    Rating named rating 0..* MS and 
-    NewPatients named newpatients 0..* MS and
-    DeliveryMethod named deliverymethod 1..* MS 
-* extension[newpatients] ^short = "New Patients"
-* extension[deliverymethod] ^short = "Delivery Method"
-* identifier.type MS
-* identifier.value MS
-* active 1..1 MS
-* active = true 
-* providedBy only Reference(NatlDirEndpointQryOrganization) 
-* providedBy MS
-* category 1..1 MS
-* category from HealthcareServiceCategoryVS (extensible)
-* type MS
-* type from HealthcareServiceTypeVS (extensible)
-* specialty MS
-* specialty from SpecialtiesVS (required)
-* location only Reference(NatlDirEndpointQryLocation)
-* location MS
-* name MS
-* comment MS
-* telecom MS
-* telecom.extension contains
-       ContactPointAvailableTime named contactpoint-availabletime 0..* MS and
-       ViaIntermediary named via-intermediary 0..* MS
-* telecom.extension[via-intermediary] ^short = "Via Intermediary"
-* telecom.system MS
-* telecom.value MS
-* coverageArea only Reference(NatlDirEndpointQryLocation)
-* coverageArea MS
-// * serviceProvisionCode MS
-// eligibility  MS
-// program  
-//* characteristic MS
-//* referralMethod MS
-* appointmentRequired MS
-* availableTime MS
-* availableTime.daysOfWeek MS
-* availableTime.allDay MS
-* availableTime.availableStartTime MS
-* availableTime.availableEndTime MS
-* notAvailable MS
-* notAvailable.description MS
-* notAvailable.during MS
-* availabilityExceptions MS
-* endpoint only Reference(NatlDirEndpointQryEndpoint)
-* endpoint MS
-
-
 
 Profile:        NatlDirEndpointQryInsurancePlanComplete
 Parent:         InsurancePlan
@@ -250,24 +251,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * endpoint MS
 * endpoint only Reference(NatlDirEndpointQryEndpoint)
 
-/* Network -- deleted 
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* alias MS
-* contact.name.use MS
-* contact.name.text MS
-* contact.name.family MS
-* contact.name.given MS
-* contact.name.prefix MS
-* contact.name.suffix MS
-* contact.name.period MS
-* contact.telecom.use MS
-* contact.telecom.period MS
-* contact.telecom extensions -- not MS
-*/
+
 
 Profile:        NatlDirEndpointQryNetworkComplete
 Parent:         $USCoreOrganization    //Organization 
@@ -304,18 +288,7 @@ In the NatlDir IG, individuals and organizations are represented as participants
 * endpoint only Reference(NatlDirEndpointQryEndpoint)
 * endpoint MS 
 
-/*  Organizaiton
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* alias MS
-* address.use MS
-* address.period MS
-* telecom.use MS
-* telecom.period MS
-*/
+
 
 Profile:        NatlDirEndpointQryOrganizationComplete
 Parent:         $USCoreOrganization
@@ -406,19 +379,7 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * endpoint MS
 * endpoint only Reference (NatlDirEndpointQryEndpoint)
 
-/* Practitioner
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* name.use MS
-* name.prefix MS
-* name.suffix MS
-* name.period MS
-* gender MS
-* photo MS
-*/
+
 
 
 Profile:        NatlDirEndpointQryPractitionerComplete
@@ -456,15 +417,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * communication.extension contains
    CommunicationProficiency named communication-proficiency 0..1 MS
 
-/* PractitionerRole
-* identifier.id MS
-* identifier.use MS
-* identifier.system MS
-* identifier.period MS
-* identifier.assigner MS
-* telecom.use MS
-* telecom.period MS
-*/
+
 
 Profile:        NatlDirEndpointQryPractitionerRoleComplete
 Parent:         PractitionerRole
@@ -520,6 +473,6 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * notAvailable.during MS
 * endpoint only Reference(NatlDirEndpointQryEndpoint) 
 * endpoint 0..* MS
-
+*/
 
 

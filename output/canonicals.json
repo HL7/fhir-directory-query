@@ -217,25 +217,11 @@
     "name": "NatlDirEndpointQryCareTeam"
   },
   {
-    "id": "NatlDirEndpointQry-CareTeamComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeamComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryCareTeamComplete"
-  },
-  {
     "id": "NatlDirEndpointQry-Endpoint",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint",
     "version": "0.0.1",
     "name": "NatlDirEndpointQryEndpoint"
-  },
-  {
-    "id": "NatlDirEndpointQry-EndpointComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-EndpointComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryEndpointComplete"
   },
   {
     "id": "NatlDirEndpointQry-HealthcareService",
@@ -259,13 +245,6 @@
     "name": "NatlDirEndpointQryInsurancePlan"
   },
   {
-    "id": "NatlDirEndpointQry-InsurancePlanComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryInsurancePlanComplete"
-  },
-  {
     "id": "NatlDirEndpointQry-Location",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location",
@@ -273,25 +252,11 @@
     "name": "NatlDirEndpointQryLocation"
   },
   {
-    "id": "NatlDirEndpointQry-LocationComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-LocationComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryLocationComplete"
-  },
-  {
     "id": "NatlDirEndpointQry-Network",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network",
     "version": "0.0.1",
     "name": "NatlDirEndpointQryNetwork"
-  },
-  {
-    "id": "NatlDirEndpointQry-NetworkComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-NetworkComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryNetworkComplete"
   },
   {
     "id": "NatlDirEndpointQry-Organization",
@@ -308,20 +273,6 @@
     "name": "NatlDirEndpointQryOrganizationAffiliation"
   },
   {
-    "id": "NatlDirEndpointQry-OrganizationAffiliationComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryOrganizationAffiliationComplete"
-  },
-  {
-    "id": "NatlDirEndpointQry-OrganizationComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryOrganizationComplete"
-  },
-  {
     "id": "NatlDirEndpointQry-Practitioner",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner",
@@ -329,25 +280,11 @@
     "name": "NatlDirEndpointQryPractitioner"
   },
   {
-    "id": "NatlDirEndpointQry-PractitionerComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryPractitionerComplete"
-  },
-  {
     "id": "NatlDirEndpointQry-PractitionerRole",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole",
     "version": "0.0.1",
     "name": "NatlDirEndpointQryPractitionerRole"
-  },
-  {
-    "id": "NatlDirEndpointQry-PractitionerRoleComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryPractitionerRoleComplete"
   },
   {
     "id": "accessibility",

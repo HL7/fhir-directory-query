@@ -1043,20 +1043,12 @@
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam",
         "title": "National Directory Endpoint Qry Care Team"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeamComplete",
-        "title": "National Directory Endpoint Qry Care Team - Complete"
       }
     ],
     "Endpoint": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint",
         "title": "National Directory Endpoint Qry Exchange Endpoint"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-EndpointComplete",
-        "title": "National Directory Endpoint Qry Exchange Endpoint - Complete"
       }
     ],
     "HealthcareService": [
@@ -1073,56 +1065,40 @@
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan",
         "title": "National Directory Endpoint Qry Exchange InsurancePlan"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete",
-        "title": "National Directory Endpoint Qry Exchange InsurancePlan - Complete"
       }
     ],
     "Location": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location",
         "title": "National Directory Endpoint Qry Exchange Location"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-LocationComplete",
-        "title": "National Directory Endpoint Qry Exchange Location - Complete"
       }
     ],
     "Organization": [
       {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationComplete",
-        "title": "National Directory Endpoint Qry Exchange Organization - Complete"
+        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network",
+        "title": "National Directory Endpoint Qry Exchange Network"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization",
+        "title": "National Directory Endpoint Qry Exchange Organization"
       }
     ],
     "OrganizationAffiliation": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation",
         "title": "National Directory Endpoint Qry Exchange OrganizationAffiliation"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete",
-        "title": "National Directory Endpoint Qry Exchange OrganizationAffiliation - Complete"
       }
     ],
     "Practitioner": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner",
         "title": "National Directory Endpoint Qry Exchange Practitioner"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerComplete",
-        "title": "National Directory Endpoint Qry Exchange Practitioner - Complete"
       }
     ],
     "PractitionerRole": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole",
         "title": "National Directory Endpoint Qry Exchange PractitionerRole"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete",
-        "title": "National Directory Endpoint Qry Exchange PractitionerRole - Complete"
       }
     ]
   },
@@ -1257,7 +1233,6 @@
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating": [
       "HealthcareService",
       "Organization",
-      "OrganizationAffiliation",
       "Practitioner",
       "PractitionerRole"
     ],
