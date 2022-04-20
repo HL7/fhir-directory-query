@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CommunicationProficiency"];
   fhir:StructureDefinition.title [ fhir:value "Communication Proficiency"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-08T11:43:46-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-20T16:26:55-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

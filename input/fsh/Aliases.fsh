@@ -49,6 +49,7 @@ Alias:  $NUCCProviderTaxonomy = http://nucc.org/provider-taxonomy
 Alias:  $V2table0360VS = http://terminology.hl7.org/ValueSet/v2-0360 
 Alias:  $V2table0360CS = http://terminology.hl7.org/CodeSystem/v2-0360 
 Alias:  $yesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
+Alias:  $paymentTypeVS = http://terminology.hl7.org/ValueSet/v2-0570
 
 
 // NatlDir defined CS that mimic VHDir CodeSystems

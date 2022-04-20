@@ -1,3 +1,44 @@
+//added 4/19 SMM
+//supports HSDS interoperabilty
+Extension: PaymentAccepted
+Id: paymentAccepted
+Title: "Payment Accepted"
+Description: "Methods of payment that can be used for a healthcare service"
+* extension contains
+   id 1..* and 
+   type  1..*  
+* extension[type].id only string
+* extension[type].value[x] only string
+* extension[type] ^short = "Payment Type"
+* extension[type].value[x] 1..1
+* extension[type].value[x] from $paymentTypeVS (required)
+
+//added 4/19 SMM
+//supports HSDS interoperabilty
+Extension: RequiredDocument
+Id: requiredDocument
+Title: "Required Document"
+Description: "Documents that are required in order to access or use services (eg. Gov't issued ID, passport)"
+* extension contains
+   id 1..* and 
+   document  1..*  
+* extension[id].value[x] only string
+* extension[document].value[x] only string
+
+//added 4/19 SMM
+//supports HSDS interoperabilty
+Extension: FundingSource
+Id: fundingSource
+Title: "Funding Source"
+Description: "The sources of funding for a service or organization"
+* extension contains
+   id 1..* and 
+   fundingOrganization 0..* and
+   fundingSource  1..*  
+* extension[id].value[x] only string
+* extension[fundingSource].value[x] only string
+* extension[fundingOrganization].value[x] only Reference(NatlDirEndpointQryOrganization)
+
 
 Extension: UsageRestriction
 Id: usage-restriction

@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-04-08T11:43:46-04:00"/>
+  <date value="2022-04-20T16:26:55-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -504,6 +504,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fundingSource"/>
+      </reference>
+      <name value="Funding Source"/>
+      <description value="The sources of funding for a service or organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/healthcareservice-reference"/>
       </reference>
       <name value="NatlDirEndpointQry Healthcareservice Reference"/>
@@ -625,6 +636,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/paymentAccepted"/>
+      </reference>
+      <name value="Payment Accepted"/>
+      <description value="Methods of payment that can be used for a healthcare service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/practitioner-qualification"/>
       </reference>
       <name value="Practitioner Qualification"/>
@@ -651,6 +673,17 @@
       </reference>
       <name value="Rating"/>
       <description value="Rating"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/requiredDocument"/>
+      </reference>
+      <name value="Required Document"/>
+      <description value="Documents that are required in order to access or use services (eg. Gov&#39;t issued ID, passport)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

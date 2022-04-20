@@ -371,6 +371,13 @@
     "name": "EndpointType"
   },
   {
+    "id": "fundingSource",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource",
+    "version": "0.0.1",
+    "name": "FundingSource"
+  },
+  {
     "id": "healthcareservice-reference",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference",
@@ -448,6 +455,13 @@
     "name": "OrgDescription"
   },
   {
+    "id": "paymentAccepted",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted",
+    "version": "0.0.1",
+    "name": "PaymentAccepted"
+  },
+  {
     "id": "practitioner-qualification",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification",
@@ -467,6 +481,13 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating",
     "version": "0.0.1",
     "name": "Rating"
+  },
+  {
+    "id": "requiredDocument",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument",
+    "version": "0.0.1",
+    "name": "RequiredDocument"
   },
   {
     "id": "secureEndpoint",

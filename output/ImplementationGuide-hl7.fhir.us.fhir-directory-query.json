@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-04-08T11:43:46-04:00",
+  "date": "2022-04-20T16:26:55-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -712,6 +712,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/fundingSource"
+        },
+        "name": "Funding Source",
+        "description": "The sources of funding for a service or organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/healthcareservice-reference"
         },
         "name": "NatlDirEndpointQry Healthcareservice Reference",
@@ -866,6 +880,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/paymentAccepted"
+        },
+        "name": "Payment Accepted",
+        "description": "Methods of payment that can be used for a healthcare service",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/practitioner-qualification"
         },
         "name": "Practitioner Qualification",
@@ -898,6 +926,20 @@
         },
         "name": "Rating",
         "description": "Rating",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/requiredDocument"
+        },
+        "name": "Required Document",
+        "description": "Documents that are required in order to access or use services (eg. Gov't issued ID, passport)",
         "exampleBoolean": false
       },
       {

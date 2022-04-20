@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 113, warn = 152, info = 9
-IG Publisher Version: 1.1.98 Out of date - current version is 1.1.114
-Generated Fri Apr 08 11:45:30 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+err = 113, warn = 155, info = 9
+IG Publisher Version: 1.1.98 Out of date - current version is 1.1.115
+Generated Wed Apr 20 16:28:35 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 316 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-endpoint : 8 / 1 / 1
@@ -177,6 +177,7 @@ Generated Fri Apr 08 11:45:30 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-usecase : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpointType : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-fundingSource : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-healthcareservice-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-identifier-status : 2 / 3 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-igsSupported : 0 / 1 / 1
@@ -188,9 +189,11 @@ Generated Fri Apr 08 11:45:30 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-org-alias-period : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-org-alias-type : 2 / 3 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-org-description : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-paymentAccepted : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-practitioner-qualification : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-qualification : 0 / 0 / 3
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-rating : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-requiredDocument : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-secureEndpoint : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-secureExchangeArtifacts : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-trustFramework : 0 / 1 / 1
@@ -543,7 +546,7 @@ ERROR: C:\Users\smahoney\Documents\GitHub\fhir-directory-query\output\sp_list.ht
 ERROR: C:\Users\smahoney\Documents\GitHub\fhir-directory-query\output\sp_list.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a/li/a/div/div/div/div/div/ul/li/a at Line 422, column 8: The link 'SearchParameter-verificationresult-validator-organization.html' for "validator-organization" cannot be resolved
 ERROR: C:\Users\smahoney\Documents\GitHub\fhir-directory-query\output\technical-guidance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a/li/a/div/div/div/div/div/figure/img at Line 229, column 4: The image source 'assets/images/diagram5.jpg' cannot be resolved
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query.json ==
-WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[46].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[49].description: value should not start or finish with whitespace
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-endpoint.json ==
 WARNING: CapabilityStatement/fhir-directory-query-basic-endpoint: CapabilityStatement.title: value should not start or finish with whitespace
 ERROR: CapabilityStatement/fhir-directory-query-basic-endpoint: CapabilityStatement.rest[0].resource[0].type: The value provided ('endpoint') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#endpoint in http://hl7.org/fhir/resource-types)
@@ -957,6 +960,8 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-endpoint-usecase.json ==
 == fsh-generated\resources\StructureDefinition-endpointType.json ==
+== fsh-generated\resources\StructureDefinition-fundingSource.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-healthcareservice-reference.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-identifier-status.json ==
@@ -983,12 +988,16 @@ WARNING: StructureDefinition/org-alias-type: StructureDefinition.differential.el
 WARNING: StructureDefinition/org-alias-type: StructureDefinition.snapshot.element[5].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-org-description.json ==
+== fsh-generated\resources\StructureDefinition-paymentAccepted.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-practitioner-qualification.json ==
 == fsh-generated\resources\StructureDefinition-qualification.json ==
 INFORMATION: StructureDefinition/qualification: StructureDefinition.differential.element[26].binding: The element Extension.extension.value[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
 INFORMATION: StructureDefinition/qualification: StructureDefinition.snapshot.element[33].binding: The element Extension.extension.value[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
 == fsh-generated\resources\StructureDefinition-rating.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-requiredDocument.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-secureEndpoint.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-secureExchangeArtifacts.json ==

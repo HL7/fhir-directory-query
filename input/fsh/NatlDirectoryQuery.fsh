@@ -116,7 +116,10 @@ Description:    "The HealthCareService resource typically describes services off
 * extension contains
     Rating named rating 0..*  and
     NewPatients named newpatients 0..*  and
-    DeliveryMethod named deliverymethod 1..*  
+    DeliveryMethod named deliverymethod 1..* and
+    PaymentAccepted named paymentaccepted  0..* and
+    RequiredDocument named requiredDocument 0..* and
+    FundingSource named fundingSource 0..*
 * extension[newpatients] ^short = "New Patients"
 * extension[deliverymethod] ^short = "Delivery Method"
 * identifier.type 
@@ -240,6 +243,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
    Rating named rating 0..*  and
    Qualification named qualification 0..*   and
+   PaymentAccepted named paymentaccepted  0..* and
+   FundingSource named fundingSource 0..* and
    OrgDescription named org-description  0..1 
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[qualification] ^short = "Qualification"
