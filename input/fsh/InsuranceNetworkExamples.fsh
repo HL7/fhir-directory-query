@@ -127,4 +127,4 @@ Usage: #example
 /* endpoint-type = #FHIR*/
 * address = "https://urlofportal.acmect.com"
 * extension[endpoint-usecase].extension[type].valueCodeableConcept = $V3ActReason#HOPERAT
-* extension[endpoint-type].extension[type].valueCodeableConcept = #FHIR
+* extension[endpoint-type].extension[type].valueCodeableConcept = EndpointTypeCS#FHIR

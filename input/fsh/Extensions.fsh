@@ -211,7 +211,7 @@ Description: "Type of alias (legal alternative | historical)"
 * . ^definition = "Type of alias (legal alternative | historical)"
 * valueCodeableConcept 1.. MS
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $aliastype (example)
+* valueCodeableConcept from OrgAliasTypeVS (example)
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept ^label = "type"
 * valueCodeableConcept ^short = "Type"

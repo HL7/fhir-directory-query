@@ -577,15 +577,15 @@ Severity:   #error
 
 
 
-Profile: NatlDirEndpointQryValidation
+Profile: NatlDirEndpointQryVerification
 Parent: VerificationResult
-Id: NatlDir-Validation
-Title: "NatlDir Validation"
-Description: "Describes validation requirements, source(s), status and dates for one or more elements"
+Id: NatlDir-Verification
+Title: "National Directory Endpoint Qry Exchange  Verification"
+Description: "Describes Verification requirements, source(s), status and dates for one or more elements"
 * ^date = "2017-12-10T12:42:47.483-05:00"
 * ^status = #active
-* . ^short = "Validation"
-* . ^definition = "Describes validation requirements, source(s), status and dates for one or more elements"
+* . ^short = "Verification"
+* . ^definition = "Describes Verification requirements, source(s), status and dates for one or more elements"
 * target 1..* MS
 * targetLocation MS
 * need 1..1 MS
@@ -596,7 +596,7 @@ Description: "Describes validation requirements, source(s), status and dates for
 * validationType ^short = "nothing|single|multiple"
 * validationType ^definition = "What the target is validated against (nothing|single source|multiple sources)"
 * validationProcess 1..* MS
-* validationProcess from $validationprocess (example)
+* validationProcess from $verificationprocess (example)
 * validationProcess ^short = "The process(es) by which the target is validated"
 * validationProcess ^definition = "The process(es) by which the target is validated"
 * frequency MS
@@ -638,7 +638,7 @@ Description: "Describes validation requirements, source(s), status and dates for
 Profile: NatlDirRestriction
 Parent: Consent
 Id: NatlDir-Restriction
-Title: "NatlDir Restriction"
+Title: "National Directory Endpoint Qry Exchange  Restriction"
 Description: "Restriction on use/release of exchanged information"
 * ^status = #active
 * ^date = "2017-12-15T01:01:31.325+11:00"

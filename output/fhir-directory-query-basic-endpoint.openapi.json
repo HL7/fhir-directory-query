@@ -1,8 +1,8 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Capability Statement Basic Federated Endpoint Server  ",
-    "description": "Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met",
+    "title": "Capability Statement Basic Federated Endpoint Server",
+    "description": "Capabilities for a basic Query Server for Health Services where Endpoint search capabilities are met",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"

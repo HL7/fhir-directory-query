@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Capability Statement Health or Human Services Federated Endpoint Server  ",
+    "title": "Capability Statement Health or Human Services Federated Endpoint Server",
     "description": "Capabilities for a Federated Query Server for Health or Human Services where endpoint search capabilities are met",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",

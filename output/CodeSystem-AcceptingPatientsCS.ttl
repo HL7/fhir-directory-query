@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "AcceptingPatientsCS"];
   fhir:CodeSystem.title [ fhir:value "Accepting Patients Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-04-20T16:26:55-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-25T13:59:19-04:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;

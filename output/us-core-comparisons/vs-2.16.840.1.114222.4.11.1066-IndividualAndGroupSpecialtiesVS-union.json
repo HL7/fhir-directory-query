@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "31f05407-55b6-48bf-a57f-7c615e23ebd7-14",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/31f05407-55b6-48bf-a57f-7c615e23ebd7-14",
+  "id" : "73d813f8-9522-4b3d-aab2-db9e80c893cb-14",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/73d813f8-9522-4b3d-aab2-db9e80c893cb-14",
   "name" : "UnionHealthcareProviderTaxonomyAndIndividualAndGroupSpecialtiesVS",
   "title" : "Union of Healthcare Provider Taxonomy And Individual and Group Specialties",
   "status" : "active",
-  "date" : "2022-04-20T16:27:22-04:00",
+  "date" : "2022-05-25T13:59:46-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

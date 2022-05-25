@@ -4,7 +4,7 @@
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint",
     "version": "0.0.1",
-    "name": "CapabilityStatementFhirDirectoryQuerybasicEndpoint"
+    "name": "CapabilityStatementFhirDirectoryQueryBasicEndpoint"
   },
   {
     "id": "fhir-directory-query-basic-expanded",
@@ -147,6 +147,13 @@
     "name": "LanguageProficiencyCS"
   },
   {
+    "id": "OrgAliasTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgAliasTypeCS",
+    "version": "0.0.1",
+    "name": "OrgAliasTypeCS"
+  },
+  {
     "id": "OrgTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS",
@@ -203,11 +210,11 @@
     "name": "NatlDirRestriction"
   },
   {
-    "id": "NatlDir-Validation",
+    "id": "NatlDir-Verification",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification",
     "version": "0.0.1",
-    "name": "NatlDirEndpointQryValidation"
+    "name": "NatlDirEndpointQryVerification"
   },
   {
     "id": "NatlDirEndpointQry-CareTeam",
@@ -665,6 +672,13 @@
     "name": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
   },
   {
+    "id": "OrgAliasTypeVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrgAliasTypeVS",
+    "version": "0.0.1",
+    "name": "OrgAliasTypeVS"
+  },
+  {
     "id": "OrgTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrgTypeVS",
@@ -987,111 +1001,6 @@
     "name": "OrganizationAffiliation-specialtySearchParameter"
   },
   {
-    "id": "Practicioner-family",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-family.html",
-    "version": "0.0.1",
-    "name": "Practicioner-familySearchParameter"
-  },
-  {
-    "id": "Practicioner-given",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-given.html",
-    "version": "0.0.1",
-    "name": "Practicioner-givenSearchParameter"
-  },
-  {
-    "id": "Practicioner-identifier-assigner",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-identifier-assigner.html",
-    "version": "0.0.1",
-    "name": "Practicioner-identifier-assignerSearchParameter"
-  },
-  {
-    "id": "Practicioner-identifier",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-identifier.html",
-    "version": "0.0.1",
-    "name": "Practicioner-identifierSearchParameter"
-  },
-  {
-    "id": "Practicioner-name",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-name.html",
-    "version": "0.0.1",
-    "name": "Practicioner-nameSearchParameter"
-  },
-  {
-    "id": "Practicioner-qualification-code",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-qualification-code.html",
-    "version": "0.0.1",
-    "name": "Practicioner-qualification-codeSearchParameter"
-  },
-  {
-    "id": "Practicioner-qualification-issuer",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-qualification-issuer.html",
-    "version": "0.0.1",
-    "name": "Practicioner-qualification-issuerSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-Practicioner",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-Practicioner.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-PracticionerSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-endpoint",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-endpoint.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-endpointSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-location",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-location.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-locationSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-network",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-network.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-networkSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-organization",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-organization.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-organizationSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-role",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-role.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-roleSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-service",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-service.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-serviceSearchParameter"
-  },
-  {
-    "id": "PracticionerRole-specialty",
-    "type": "SearchParameter",
-    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-specialty.html",
-    "version": "0.0.1",
-    "name": "PracticionerRole-specialtySearchParameter"
-  },
-  {
     "id": "VerificationResult-attestation-who",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-attestation-who.html",
@@ -1209,5 +1118,110 @@
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html",
     "version": "0.0.1",
     "name": "NatlDirEndpointQryUsecase-type"
+  },
+  {
+    "id": "practitioner-family",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-family.html",
+    "version": "0.0.1",
+    "name": "practitioner-familySearchParameter"
+  },
+  {
+    "id": "practitioner-given",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-given.html",
+    "version": "0.0.1",
+    "name": "practitioner-givenSearchParameter"
+  },
+  {
+    "id": "practitioner-identifier-assigner",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-identifier-assigner.html",
+    "version": "0.0.1",
+    "name": "practitioner-identifier-assignerSearchParameter"
+  },
+  {
+    "id": "practitioner-identifier",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-identifier.html",
+    "version": "0.0.1",
+    "name": "practitioner-identifierSearchParameter"
+  },
+  {
+    "id": "practitioner-name",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-name.html",
+    "version": "0.0.1",
+    "name": "practitioner-nameSearchParameter"
+  },
+  {
+    "id": "practitioner-qualification-code",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-qualification-code.html",
+    "version": "0.0.1",
+    "name": "practitioner-qualification-codeSearchParameter"
+  },
+  {
+    "id": "practitioner-qualification-issuer",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-qualification-issuer.html",
+    "version": "0.0.1",
+    "name": "practitioner-qualification-issuerSearchParameter"
+  },
+  {
+    "id": "practitionerRole-endpoint",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-endpoint.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-endpointSearchParameter"
+  },
+  {
+    "id": "practitionerRole-location",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-location.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-locationSearchParameter"
+  },
+  {
+    "id": "practitionerRole-network",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-network.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-networkSearchParameter"
+  },
+  {
+    "id": "practitionerRole-organization",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-organization.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-organizationSearchParameter"
+  },
+  {
+    "id": "practitionerRole-practitioner",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-practitioner.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-practitionerSearchParameter"
+  },
+  {
+    "id": "practitionerRole-role",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-role.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-roleSearchParameter"
+  },
+  {
+    "id": "practitionerRole-service",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-service.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-serviceSearchParameter"
+  },
+  {
+    "id": "practitionerRole-specialty",
+    "type": "SearchParameter",
+    "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-specialty.html",
+    "version": "0.0.1",
+    "name": "practitionerRole-specialtySearchParameter"
   }
 ]

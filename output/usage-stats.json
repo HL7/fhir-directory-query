@@ -1309,8 +1309,8 @@
     ],
     "VerificationResult": [
       {
-        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation",
-        "title": "NatlDir Validation"
+        "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification",
+        "title": "NatlDir Verification"
       }
     ],
     "CareTeam": [
@@ -1378,7 +1378,6 @@
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
-      "CapabilityStatement.rest.resource",
       "CapabilityStatement.rest.resource.searchParam",
       "CapabilityStatement.rest.resource.supportedProfile"
     ],

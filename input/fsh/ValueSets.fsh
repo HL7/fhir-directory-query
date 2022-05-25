@@ -110,6 +110,11 @@ Description:  "Categories of organizations based on criteria in provider directo
 * codes from system OrgTypeCS
 * exclude OrgTypeCS#ntwk   // only Network profile uses this type 
 
+ValueSet: OrgAliasTypeVS
+Title: "Organization Alias Type"
+Description:  "Categories of an organization's Alias based on criteria in provider directories."
+* codes from system OrgAliasTypeCS
+
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"
 Description: "A distinct package of health insurance coverage benefits that are offered using a particular product network type."

@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"97.2"}
-    h3,h4,h5,h6{--heading-prefix:"97.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"94.2"}
+    h3,h4,h5,h6{--heading-prefix:"94.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -255,189 +255,34 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;CapabilityStatementFhirDirectoryQueryBasicExpanded&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Capabilities for a Basic Federated Query Server for where expanded search capabilities are met&lt;/p&gt;
-&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&amp;lt;h2 id=&amp;quot;title&amp;quot;&amp;gt;Capability Statement Basic Federated Endpoint Server  &amp;lt;/h2&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Official URL:&amp;lt;/b&amp;gt;&amp;lt;code&amp;gt;http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint&amp;lt;/code&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Implementation Guide Version:&amp;lt;/b&amp;gt; 0.0.1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;FHIR Version:&amp;lt;/b&amp;gt; 4.0.1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Intended Use:&amp;lt;/b&amp;gt; Requirements&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Supported Formats:&amp;lt;/b&amp;gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;                XML, JSON
-			
-			&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Published:&amp;amp;lt;/b&amp;amp;gt; 2022-02-15 07:15:00.000000-04:00&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Published by:&amp;amp;lt;/b&amp;amp;gt; HL7 Patient Administration Working Group&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;b&amp;amp;gt;Status:&amp;amp;lt;/b&amp;amp;gt; Draft (experimental)&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;!-- No support expectation extension --&amp;amp;gt;&amp;amp;lt;h3 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;igs&amp;amp;quot;&amp;amp;gt;Support the Following Implementation Guides:&amp;amp;lt;/h3&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/&amp;amp;quot;&amp;amp;gt;https://build.fhir.org/ig/HL7/fhir-directory-query/&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;!-- REST Behavior --&amp;amp;gt;&amp;amp;lt;h3 id=&amp;amp;quot;behavior&amp;amp;quot;&amp;amp;gt;FHIR Server RESTful Capabilities&amp;amp;lt;/h3&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;A Federated Query server &amp;amp;lt;strong&amp;amp;gt;SHALL&amp;amp;lt;/strong&amp;amp;gt;:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ol&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;Support all profiles defined in this Implementation Guide..&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;Implement the RESTful behavior according to the FHIR specification.&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;Return the following response classes:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;(Status 400): invalid parameter&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 401/4xx): unauthorized request&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 403): insufficient scope&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 404): unknown resource&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 410): deleted resource.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
-&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Support json source formats for all mCODE interactions.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Identify the mCODE  profiles supported as part of the FHIR &amp;lt;code&amp;gt;meta.profile&amp;lt;/code&amp;gt; attribute for each instance.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Support the searchParameters on each profile individually and in combination.&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;p&amp;gt;The Federated Query Server &amp;lt;strong&amp;gt;SHOULD&amp;lt;/strong&amp;gt;:&amp;lt;/p&amp;gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;Support xml source formats for all mCODE interactions.&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;p id=&amp;quot;security&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Security:&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;See the &amp;lt;a href=&amp;quot;https://www.hl7.org/fhir/security.html#general&amp;quot;&amp;gt;General Security Considerations&amp;lt;/a&amp;gt; section for requirements and recommendations.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;A client &amp;lt;strong&amp;gt;SHALL&amp;lt;/strong&amp;gt; reject any unauthorized requests by returning an &amp;lt;code&amp;gt;HTTP 401&amp;lt;/code&amp;gt; unauthorized response code.&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;h3 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;resource--details&amp;quot;&amp;gt;RESTful Capabilities by Resource/Profile:&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Summary&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table class=&amp;quot;grid&amp;quot;&amp;gt;&amp;lt;thead&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;Resource Type&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Interactions&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Profiles&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Searches&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported &amp;lt;code&amp;gt;_includes&amp;lt;/code&amp;gt;&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported &amp;lt;code&amp;gt;_revincludes&amp;lt;/code&amp;gt;&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Operations&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/thead&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#endpoint&amp;quot;&amp;gt;endpoint&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									identifier, usecase-type
-									
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#healthcareservice&amp;amp;quot;&amp;amp;gt;healthcareService&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									service-category, coverage-area, endpoint, location, name, organization, specialty, service-type
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#insuranceplan&amp;amp;quot;&amp;amp;gt;InsurancePlan&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#location&amp;amp;quot;&amp;amp;gt;location&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									address, endpoint, organization, physicalType, partOf, type
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#network&amp;amp;quot;&amp;amp;gt;network&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									coverage-area, name
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#organization&amp;amp;quot;&amp;amp;gt;organization&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									type, address, endpoint, identifier, name, partOf
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#organizationaffiliation&amp;amp;quot;&amp;amp;gt;OrganizationAffiliation&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									endpoint, location, network, participating-organization, primary-organization, role, service, specialty
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#practitioner&amp;amp;quot;&amp;amp;gt;Practitioner&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#practitionerrole&amp;amp;quot;&amp;amp;gt;PractitionerRole&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									endpoint, location, network, organization, Practicioner, role, service, specialty
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#restriction&amp;amp;quot;&amp;amp;gt;Restriction&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									_id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#validation&amp;amp;quot;&amp;amp;gt;Validation&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									attestation-who, primarysource-who, target
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;tr&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;#careteam&amp;amp;quot;&amp;amp;gt;CareTeam&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Profiles --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html)&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Searches --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									endpoint, location, name, organization, service, category
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _includes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported _revincludes --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;!-- Supported Operations --&amp;amp;gt;&amp;amp;lt;td&amp;amp;gt;
-									
-								&amp;amp;lt;/td&amp;amp;gt;&amp;amp;lt;/tr&amp;amp;gt;&amp;amp;lt;/tbody&amp;amp;gt;&amp;amp;lt;/table&amp;amp;gt;&amp;amp;lt;!-- Resource Details --&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;endpoint&amp;amp;quot;&amp;amp;gt;endpoint&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;SHALL&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;SHALL&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;healthcareservice&amp;amp;quot;&amp;amp;gt;healthcareService&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;insuranceplan&amp;amp;quot;&amp;amp;gt;InsurancePlan&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;location&amp;amp;quot;&amp;amp;gt;location&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;SHOULD&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;network&amp;amp;quot;&amp;amp;gt;network&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;organization&amp;amp;quot;&amp;amp;gt;organization&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;SHALL&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;organizationaffiliation&amp;amp;quot;&amp;amp;gt;OrganizationAffiliation&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;practitioner&amp;amp;quot;&amp;amp;gt;Practitioner&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;SHOULD&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;practitionerrole&amp;amp;quot;&amp;amp;gt;PractitionerRole&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;SHOULD&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;restriction&amp;amp;quot;&amp;amp;gt;Restriction&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;validation&amp;amp;quot;&amp;amp;gt;Validation&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;h4 class=&amp;amp;quot;no_toc&amp;amp;quot; id=&amp;amp;quot;careteam&amp;amp;quot;&amp;amp;gt;CareTeam&amp;amp;lt;/h4&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Conformance Expectation:	&amp;amp;lt;strong&amp;amp;gt;(conformance expectation undefined)&amp;amp;lt;/strong&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;p&amp;amp;gt;Supported Profiles:&amp;amp;lt;/p&amp;amp;gt;&amp;amp;lt;ul&amp;amp;gt;&amp;amp;lt;li&amp;amp;gt;&amp;amp;lt;strong&amp;amp;gt;MAY&amp;amp;lt;/strong&amp;amp;gt; support:
-									
-											&amp;amp;lt;a href=&amp;amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html&amp;amp;quot;&amp;amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html)&amp;amp;lt;/a&amp;amp;gt;
-									&amp;amp;lt;/li&amp;amp;gt;&amp;amp;lt;/ul&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET a resource (read interaction)&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET all set of resources of the type (search interaction)&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;PUT a new resource version (update interaction)&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;POST a new resource (create interaction)&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;endpoint&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;healthcareService&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsurancePlan&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;location&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-locationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-locationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;network&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-networkComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-networkComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;organization&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OrganizationAffiliation&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Restriction&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Validation&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CareTeam&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;A Federated Query server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;
+&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;
+&lt;li&gt;Return the following response classes:
+&lt;ul&gt;
+&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;
+&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;
+&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;
+&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;
+&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Support json source formats for all Federated Query interactions.&lt;/li&gt;
+&lt;li&gt;Identify the Federated Query  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;
+&lt;li&gt;Support the searchParameters on each profile individually and in combination.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Federated Query Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Support xml source formats for all Federated Query interactions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET a resource (read interaction)&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET all set of resources of the type (search interaction)&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;PUT a new resource version (update interaction)&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;POST a new resource (create interaction)&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Endpoint&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HealthcareService&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsurancePlan&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-locationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-locationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&lt;/a&gt;&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-networkComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-networkComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OrganizationAffiliation&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Consent&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;VerificationResult&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CareTeam&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-expanded&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.0.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CapabilityStatementFhirDirectoryQueryBasicExpanded&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Capability Statement Basic Federated Expanded Server  &quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Capability Statement Basic Federated Expanded Server&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-02-15T07:15:00.000000-04:00&quot;/&gt;
@@ -470,193 +315,31 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;server&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&amp;lt;h2 id=&amp;quot;title&amp;quot;&amp;gt;Capability Statement Basic Federated Endpoint Server  &amp;lt;/h2&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Official URL:&amp;lt;/b&amp;gt;&amp;lt;code&amp;gt;http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint&amp;lt;/code&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Implementation Guide Version:&amp;lt;/b&amp;gt; 0.0.1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;FHIR Version:&amp;lt;/b&amp;gt; 4.0.1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Intended Use:&amp;lt;/b&amp;gt; Requirements&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Supported Formats:&amp;lt;/b&amp;gt;
-				
-                    XML, JSON
-				
-				&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Published:&amp;lt;/b&amp;gt; 2022-02-15 07:15:00.000000-04:00&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Published by:&amp;lt;/b&amp;gt; HL7 Patient Administration Working Group&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Status:&amp;lt;/b&amp;gt; Draft (experimental)&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met&amp;lt;/p&amp;gt;&amp;lt;!-- No support expectation extension --&amp;gt;&amp;lt;h3 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;igs&amp;quot;&amp;gt;Support the Following Implementation Guides:&amp;lt;/h3&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/&amp;quot;&amp;gt;https://build.fhir.org/ig/HL7/fhir-directory-query/&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;!-- REST Behavior --&amp;gt;&amp;lt;h3 id=&amp;quot;behavior&amp;quot;&amp;gt;FHIR Server RESTful Capabilities&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;A Federated Query server &amp;lt;strong&amp;gt;SHALL&amp;lt;/strong&amp;gt;:&amp;lt;/p&amp;gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;Support all profiles defined in this Implementation Guide..&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Implement the RESTful behavior according to the FHIR specification.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Return the following response classes:
-&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;(Status 400): invalid parameter&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 401/4xx): unauthorized request&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 403): insufficient scope&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 404): unknown resource&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;(Status 410): deleted resource.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
-&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Support json source formats for all mCODE interactions.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Identify the mCODE  profiles supported as part of the FHIR &amp;lt;code&amp;gt;meta.profile&amp;lt;/code&amp;gt; attribute for each instance.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Support the searchParameters on each profile individually and in combination.&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;p&amp;gt;The Federated Query Server &amp;lt;strong&amp;gt;SHOULD&amp;lt;/strong&amp;gt;:&amp;lt;/p&amp;gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;Support xml source formats for all mCODE interactions.&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;p id=&amp;quot;security&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Security:&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;See the &amp;lt;a href=&amp;quot;https://www.hl7.org/fhir/security.html#general&amp;quot;&amp;gt;General Security Considerations&amp;lt;/a&amp;gt; section for requirements and recommendations.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;A client &amp;lt;strong&amp;gt;SHALL&amp;lt;/strong&amp;gt; reject any unauthorized requests by returning an &amp;lt;code&amp;gt;HTTP 401&amp;lt;/code&amp;gt; unauthorized response code.&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;h3 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;resource--details&amp;quot;&amp;gt;RESTful Capabilities by Resource/Profile:&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Summary&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table class=&amp;quot;grid&amp;quot;&amp;gt;&amp;lt;thead&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;Resource Type&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Interactions&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Profiles&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Searches&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported &amp;lt;code&amp;gt;_includes&amp;lt;/code&amp;gt;&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported &amp;lt;code&amp;gt;_revincludes&amp;lt;/code&amp;gt;&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Supported Operations&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/thead&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#endpoint&amp;quot;&amp;gt;endpoint&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										identifier, usecase-type
-										
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#healthcareservice&amp;quot;&amp;gt;healthcareService&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										service-category, coverage-area, endpoint, location, name, organization, specialty, service-type
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#insuranceplan&amp;quot;&amp;gt;InsurancePlan&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#location&amp;quot;&amp;gt;location&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										address, endpoint, organization, physicalType, partOf, type
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#network&amp;quot;&amp;gt;network&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										coverage-area, name
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#organization&amp;quot;&amp;gt;organization&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										type, address, endpoint, identifier, name, partOf
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#organizationaffiliation&amp;quot;&amp;gt;OrganizationAffiliation&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										endpoint, location, network, participating-organization, primary-organization, role, service, specialty
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#practitioner&amp;quot;&amp;gt;Practitioner&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#practitionerrole&amp;quot;&amp;gt;PractitionerRole&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										endpoint, location, network, organization, Practicioner, role, service, specialty
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#restriction&amp;quot;&amp;gt;Restriction&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										_id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#validation&amp;quot;&amp;gt;Validation&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										attestation-who, primarysource-who, target
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;#careteam&amp;quot;&amp;gt;CareTeam&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Profiles --&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html)&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Searches --&amp;gt;&amp;lt;td&amp;gt;
-										endpoint, location, name, organization, service, category
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _includes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported _revincludes --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;!-- Supported Operations --&amp;gt;&amp;lt;td&amp;gt;
-										
-									&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;!-- Resource Details --&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;endpoint&amp;quot;&amp;gt;endpoint&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;SHALL&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;SHALL&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;healthcareservice&amp;quot;&amp;gt;healthcareService&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;insuranceplan&amp;quot;&amp;gt;InsurancePlan&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;location&amp;quot;&amp;gt;location&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;SHOULD&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;network&amp;quot;&amp;gt;network&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;organization&amp;quot;&amp;gt;organization&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;SHALL&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;organizationaffiliation&amp;quot;&amp;gt;OrganizationAffiliation&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;practitioner&amp;quot;&amp;gt;Practitioner&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;SHOULD&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;practitionerrole&amp;quot;&amp;gt;PractitionerRole&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;SHOULD&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;restriction&amp;quot;&amp;gt;Restriction&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;validation&amp;quot;&amp;gt;Validation&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h4 class=&amp;quot;no_toc&amp;quot; id=&amp;quot;careteam&amp;quot;&amp;gt;CareTeam&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Conformance Expectation:	&amp;lt;strong&amp;gt;(conformance expectation undefined)&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Supported Profiles:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;MAY&amp;lt;/strong&amp;gt; support:
-										
-												&amp;lt;a href=&amp;quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html&amp;quot;&amp;gt;(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html)&amp;lt;/a&amp;gt;
-										&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;A Federated Query server **SHALL**:
+
+1. Support all profiles defined in this Implementation Guide..
+1.  Implement the RESTful behavior according to the FHIR specification.
+1. Return the following response classes:
+   - (Status 400): invalid parameter
+   - (Status 401/4xx): unauthorized request
+   - (Status 403): insufficient scope
+   - (Status 404): unknown resource
+   - (Status 410): deleted resource.
+1. Support json source formats for all Federated Query interactions.
+1. Identify the Federated Query  profiles supported as part of the FHIR `meta.profile` attribute for each instance.
+1. Support the searchParameters on each profile individually and in combination.
+
+The Federated Query Server **SHOULD**:
+
+1. Support xml source formats for all Federated Query interactions.
+&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">description</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.
 1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code.&quot;/&gt;
     &lt;/security&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;endpoint&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Endpoint&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
@@ -679,6 +362,66 @@
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;connection-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-connection-type.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mime-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-mime-type.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-organization.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;payload-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-payload-type.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;usecase-standard&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-usecase-standard.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-status.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;usecase-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-EndpointComplete-usecase-type.html&quot;/&gt;
@@ -686,7 +429,7 @@
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;healthcareService&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HealthcareService&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
@@ -866,7 +609,7 @@
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;location&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Location&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-locationComplete.html&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
@@ -936,44 +679,16 @@
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;network&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Organization&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-networkComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MAY&quot;/&gt;
         &lt;/extension&gt;
       &lt;/supportedProfile&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-area&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-coverage-area&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-networkComplete-name&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
-      &lt;/searchParam&gt;
-    &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;organization&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/supportedProfile&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-networkComplete.html&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
@@ -1032,6 +747,26 @@
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;partOf&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organizationComplete-partOf&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-area&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-coverage-area&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NetworkName&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-networkComplete-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
@@ -1296,7 +1031,7 @@
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Restriction&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Consent&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
@@ -1304,16 +1039,6 @@
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MAY&quot;/&gt;
         &lt;/extension&gt;
       &lt;/supportedProfile&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;_id&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-identifier&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
-      &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
@@ -1386,7 +1111,7 @@
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Validation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;VerificationResult&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
@@ -1526,7 +1251,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 20, 2022 16:26-0400">2022-04-20</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 25, 2022 13:59-0400">2022-05-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

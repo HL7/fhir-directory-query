@@ -213,3 +213,8 @@ Description: "A capability that an individual, group, or organization is acknowl
 
 
 
+CodeSystem: OrgAliasTypeCS
+Title: "Qualification Status"
+Description: "The state indicating if a qualification is currently valid."
+* #legalalternative "Legal Alternative" "A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.)."
+* #historical "Historical" "Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization."

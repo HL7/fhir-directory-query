@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-04-20T16:26:55-04:00"/>
+  <date value="2022-05-25T13:59:19-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -350,10 +350,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Validation"/>
+        <reference value="StructureDefinition/NatlDir-Verification"/>
       </reference>
-      <name value="NatlDir Validation"/>
-      <description value="Describes validation requirements, source(s), status and dates for one or more elements"/>
+      <name value="NatlDir Verification"/>
+      <description value="Describes Verification requirements, source(s), status and dates for one or more elements"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -966,6 +966,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/OrgAliasTypeVS"/>
+      </reference>
+      <name value="Organization Alias Type"/>
+      <description value="Categories of an organization&#39;s Alias based on criteria in provider directories."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/OrgTypeVS"/>
       </reference>
       <name value="Organization Type"/>
@@ -1190,6 +1201,17 @@
       </reference>
       <name value="Language Proficiency"/>
       <description value="Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/OrgAliasTypeCS"/>
+      </reference>
+      <name value="Qualification Status"/>
+      <description value="The state indicating if a qualification is currently valid."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2283,171 +2305,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-family"/>
-      </reference>
-      <name value="Search by family name in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `family` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-given"/>
-      </reference>
-      <name value="Search by given name in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `given` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-identifier"/>
-      </reference>
-      <name value="Search by identifier in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `identifier` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-identifier-assigner"/>
-      </reference>
-      <name value="Search by identifier-assigner in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `identifier-assigner` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-name"/>
-      </reference>
-      <name value="Search by name in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `name` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-qualification-code"/>
-      </reference>
-      <name value="Search by qualification-code in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `qualification-code` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/Practicioner-qualification-issuer"/>
-      </reference>
-      <name value="Search by qualification-issuer in Practicioner with multipleOr"/>
-      <description value="This SearchParameter enables query of Practicioner by `qualification-issuer` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-Practicioner"/>
-      </reference>
-      <name value="Search by Practicioner in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `Practicioner` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-endpoint"/>
-      </reference>
-      <name value="Search by endpoint in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `endpoint` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-location"/>
-      </reference>
-      <name value="Search by location in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `location` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-network"/>
-      </reference>
-      <name value="Search by network in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `network` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-organization"/>
-      </reference>
-      <name value="Search by organization in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `organization` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-role"/>
-      </reference>
-      <name value="Search by role in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `role` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-service"/>
-      </reference>
-      <name value="Search by service in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `service` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/PracticionerRole-specialty"/>
-      </reference>
-      <name value="Search by specialty in PracticionerRole with multipleOr"/>
-      <description value="This SearchParameter enables query of PracticionerRole by `specialty` with `mutlipleOr` enabled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -2575,7 +2432,7 @@
         <reference value="CapabilityStatement/fhir-directory-query-basic-endpoint"/>
       </reference>
       <name value="fhir-directory-query-basic-endpoint"/>
-      <description value="Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met"/>
+      <description value="Capabilities for a basic Query Server for Health Services where Endpoint search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2655,6 +2512,171 @@
       <description value="Capabilities for a Federated Query Server for a Provider where minimum search capabilities are met"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-family"/>
+      </reference>
+      <name value="Search by family name in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `family` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-given"/>
+      </reference>
+      <name value="Search by given name in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `given` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-identifier"/>
+      </reference>
+      <name value="Search by identifier in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `identifier` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-identifier-assigner"/>
+      </reference>
+      <name value="Search by identifier-assigner in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `identifier-assigner` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-name"/>
+      </reference>
+      <name value="Search by name in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `name` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-code"/>
+      </reference>
+      <name value="Search by qualification-code in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `qualification-code` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitioner-qualification-issuer"/>
+      </reference>
+      <name value="Search by qualification-issuer in practitioner with multipleOr"/>
+      <description value="This SearchParameter enables query of practitioner by `qualification-issuer` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-endpoint"/>
+      </reference>
+      <name value="Search by endpoint in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `endpoint` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-location"/>
+      </reference>
+      <name value="Search by location in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `location` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-network"/>
+      </reference>
+      <name value="Search by network in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `network` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-organization"/>
+      </reference>
+      <name value="Search by organization in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `organization` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-practitioner"/>
+      </reference>
+      <name value="Search by practitioner in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `practitioner` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-role"/>
+      </reference>
+      <name value="Search by role in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `role` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-service"/>
+      </reference>
+      <name value="Search by service in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `service` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/practitionerRole-specialty"/>
+      </reference>
+      <name value="Search by specialty in practitionerRole with multipleOr"/>
+      <description value="This SearchParameter enables query of practitionerRole by `specialty` with `mutlipleOr` enabled."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -2722,11 +2744,6 @@
       <page>
         <nameUrl value="communication-proficiency-summary.html"/>
         <title value="Communication Proficiency Summary"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="conformance.html"/>
-        <title value="Conformance"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -3085,18 +3102,8 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="searchparameters.html"/>
-        <title value="Searchparameters"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="security.html"/>
         <title value="Security"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="sp_list.html"/>
-        <title value="Sp List"/>
         <generation value="markdown"/>
       </page>
       <page>
