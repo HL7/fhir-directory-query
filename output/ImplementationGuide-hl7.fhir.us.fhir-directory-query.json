@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-05-25T13:59:19-04:00",
+  "date": "2022-06-03T15:19:55-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -518,7 +518,7 @@
         "reference": {
           "reference": "StructureDefinition/NatlDir-Verification"
         },
-        "name": "NatlDir Verification",
+        "name": "National Directory Endpoint Qry Exchange  Verification",
         "description": "Describes Verification requirements, source(s), status and dates for one or more elements",
         "exampleBoolean": false
       },
@@ -532,7 +532,7 @@
         "reference": {
           "reference": "StructureDefinition/NatlDir-Restriction"
         },
-        "name": "NatlDir Restriction",
+        "name": "National Directory Endpoint Qry Exchange  Restriction",
         "description": "Restriction on use/release of exchanged information",
         "exampleBoolean": false
       },
@@ -1160,6 +1160,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/IdentifierStatusVS"
+        },
+        "name": "IG Type",
+        "description": "Codes to identify IG Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/IgTypeVS"
         },
         "name": "IG Type",
@@ -1412,6 +1426,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/ValidationProcessVS"
+        },
+        "name": "Validation Type",
+        "description": "Codes to identify Validation Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/VirtualModalitiesVS"
         },
         "name": "Virtual Modalities",
@@ -1472,6 +1500,20 @@
         },
         "name": "National Healthcare Directory ConsentScopeCodes",
         "description": "This value set includes the four Consent scope codes.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CredentialStatusCS"
+        },
+        "name": "Credential Status Code System",
+        "description": "This code system contains codes for indicating the status of a credential, such as an identifier or qualification.",
         "exampleBoolean": false
       },
       {
@@ -1682,6 +1724,20 @@
         },
         "name": "Trust FrameworkType",
         "description": "Trust Framework Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ValidationTypeCS"
+        },
+        "name": "Validation Type Code System",
+        "description": "This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory..",
         "exampleBoolean": false
       },
       {
@@ -1961,7 +2017,7 @@
           "reference": "SearchParameter/Endpoint-connection-type"
         },
         "name": "Search by Connection Type in Endpoints",
-        "description": "Accesses the  connection-type of an Endpoint",
+        "description": "Accesses the  connection type of an Endpoint",
         "exampleBoolean": false
       },
       {

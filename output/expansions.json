@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "68df2951-8671-49e7-bb15-98ad4d483c46",
+  "id" : "895f63e4-61ad-41e8-bf4b-edae5f7a1f21",
   "meta" : {
-    "lastUpdated" : "2022-05-25T13:59:19.886-04:00"
+    "lastUpdated" : "2022-06-03T15:19:55.897-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AcceptingPatientsVS",
       "title" : "Accepting Patients Codes",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6d578db0-71ca-4989-9cea-b32e27f05b93",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:c79670a7-ba0e-4185-89be-79c466b5daec",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -88,7 +88,7 @@
       "name" : "AccessibilityVS",
       "title" : "Accessibility",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -109,8 +109,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2b3e8e0d-1d7f-4d7c-9c7d-f66f76659408",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:1a771654-8da7-41b1-8803-d9bfd9d2a122",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -172,7 +172,7 @@
       "name" : "ConsentVS",
       "title" : "National Directory Consent Value Set",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -193,8 +193,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b43beaf1-2bf3-43d7-9cae-b879c27bdf75",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:840fcc8c-3997-4ae6-8d1f-53d383878698",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -250,7 +250,7 @@
       "name" : "DeliveryMethodVS",
       "title" : "Delivery Methods",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -271,8 +271,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:70167836-145b-4722-9040-7a423734f12c",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:453b4569-368e-4f4b-bcb6-d6b4cb62f3be",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -309,7 +309,7 @@
       "name" : "EndpointConnectionTypeVS",
       "title" : "Endpoint Connection Types",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -330,8 +330,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a6f9ec0b-878e-4174-b35d-9336922584cc",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:d002aa50-2b3d-49ee-b203-8d4e4a378614",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 16,
         "parameter" : [{
           "name" : "excludeNested",
@@ -442,7 +442,7 @@
       "name" : "EndpointPayloadTypeVS",
       "title" : "Endpoint Payload Types",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -463,8 +463,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8daf7086-e6d9-417c-b026-01fee3406034",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:19d1d72a-c8b9-46e9-9243-6fb82ff3b030",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -496,7 +496,7 @@
       "name" : "EndpointTypeVS",
       "title" : "Endpoint Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -517,8 +517,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bc075c1f-c0de-4eb4-803e-c96524fe229b",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:8130621d-8e2a-4f5b-bdb6-b3977592113f",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -560,7 +560,7 @@
       "name" : "EndpointUsecaseVS",
       "title" : "Endpoint Usecases",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -581,8 +581,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ddd3f94e-b8f2-42a2-9e94-1d0d5d675601",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:ffdd140b-cd03-4a3c-b028-09a7d95a50fe",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -654,7 +654,7 @@
       "name" : "HealthcareServiceCategoryVS",
       "title" : "Healthcare Service Category",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -675,8 +675,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7b155427-a696-4fb7-9eb0-e8df773221af",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:b5240b51-f8c8-4426-a792-e5330e64ed1d",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1727,20 +1727,20 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS",
+    "fullUrl" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "IgTypeVS",
+      "id" : "IdentifierStatusVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-IgTypeCS.html\">IG Type v0.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-IgTypeCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/IgTypeCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-IgTypeCS-FHIR\"> </a><a href=\"CodeSystem-IgTypeCS.html#IgTypeCS-FHIR\">FHIR</a></td><td>FHIR</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-IgTypeCS-direct\"> </a><a href=\"CodeSystem-IgTypeCS.html#IgTypeCS-direct\">direct</a></td><td>Direct</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CredentialStatusCS.html\">Credential Status Code System v0.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-CredentialStatusCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-active\"> </a><a href=\"CodeSystem-CredentialStatusCS.html#CredentialStatusCS-active\">active</a></td><td>active</td><td>The credential may be considered valid for use.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-inactive\"> </a><a href=\"CodeSystem-CredentialStatusCS.html#CredentialStatusCS-inactive\">inactive</a></td><td>inactive</td><td>The credential may not be considered valid for use.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-issued-in-error\"> </a><a href=\"CodeSystem-CredentialStatusCS.html#CredentialStatusCS-issued-in-error\">issued-in-error</a></td><td>issued in error</td><td>The credential was mistakenly assigned and should not be considered valid for use.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-revoked\"> </a><a href=\"CodeSystem-CredentialStatusCS.html#CredentialStatusCS-revoked\">revoked</a></td><td>revoked</td><td>The credential was revoked by the issuing organization and should not be considered valid for use.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-pending\"> </a><a href=\"CodeSystem-CredentialStatusCS.html#CredentialStatusCS-pending\">pending</a></td><td>pending</td><td>The credential has not been officially assigned. It may or may not be considered valid for use.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-unknown\"> </a><a href=\"CodeSystem-CredentialStatusCS.html#CredentialStatusCS-unknown\">unknown</a></td><td>unknown</td><td>The status of this credential is unknown. It may or may not be considered valid for use.</td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS",
+      "url" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS",
       "version" : "0.0.1",
-      "name" : "IgTypeVS",
+      "name" : "IdentifierStatusVS",
       "title" : "IG Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -1761,8 +1761,87 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:70b34eed-ae4c-404c-a6ee-9eb8791067f8",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:607ef66e-25e0-4523-8c9e-553d94cc712d",
+        "timestamp" : "2022-06-03T15:20:43-04:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS|0.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+          "code" : "active",
+          "display" : "active"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+          "code" : "inactive",
+          "display" : "inactive"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+          "code" : "issued-in-error",
+          "display" : "issued in error"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+          "code" : "revoked",
+          "display" : "revoked"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+          "code" : "pending",
+          "display" : "pending"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+          "code" : "unknown",
+          "display" : "unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "IgTypeVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-IgTypeCS.html\">IG Type v0.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-IgTypeCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/IgTypeCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-IgTypeCS-FHIR\"> </a><a href=\"CodeSystem-IgTypeCS.html#IgTypeCS-FHIR\">FHIR</a></td><td>FHIR</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-IgTypeCS-direct\"> </a><a href=\"CodeSystem-IgTypeCS.html#IgTypeCS-direct\">direct</a></td><td>Direct</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS",
+      "version" : "0.0.1",
+      "name" : "IgTypeVS",
+      "title" : "IG Type",
+      "status" : "active",
+      "date" : "2022-06-03T15:19:55-04:00",
+      "publisher" : "HL7 Patient Administration Working Group",
+      "contact" : [{
+        "name" : "HL7 Patient Administration Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.org/Special/committees/pafm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "pafm@lists.HL7.org"
+        }]
+      }],
+      "description" : "Codes to identify IG Type",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5d7f322a-a1b4-4096-becf-7b4ae6109267",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1799,7 +1878,7 @@
       "name" : "IndividualAndGroupSpecialtiesVS",
       "title" : "Individual and Group Specialties",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -1820,8 +1899,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a4831607-bf44-4b61-8761-40102883d21a",
-        "timestamp" : "2022-05-25T14:00:05-04:00",
+        "identifier" : "urn:uuid:0c628afb-c02e-4848-ac8f-d5a6a877ab4d",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 669,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5197,7 +5276,7 @@
       "name" : "IndividualSpecialtyAndDegreeLicenseCertificateVS",
       "title" : "Individual Specialties, Degrees, Licenses, and Certificates",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -5218,8 +5297,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b559d085-5cb4-4d22-86cb-6378dbb6cb2c",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:c5fbb40c-3fad-42d8-998e-97ce568ec3b6",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 730,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10246,7 +10325,7 @@
       "name" : "InsurancePlanTypeVS",
       "title" : "Insurance Plan Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -10267,8 +10346,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:25c178ba-d6a2-4497-a1f1-b751460db21a",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:95929d4d-35ee-495e-b832-9f2040e2b4a4",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10335,7 +10414,7 @@
       "name" : "InsuranceProductTypeVS",
       "title" : "Insurance Product Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -10356,8 +10435,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e8575840-57b4-49fd-870b-8722d8b501b4",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:c79a9433-8314-42c5-9f1d-0d6b63806187",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 22,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10494,7 +10573,7 @@
       "name" : "LanguageProficiencyVS",
       "title" : "Language Proficiency",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -10515,8 +10594,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dbc4da73-6a62-460f-a879-ac0f9c56a751",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:e3a67db7-d045-4bf2-813a-8f605ed25a7e",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10573,7 +10652,7 @@
       "name" : "MinEndpointConnectionTypeVS",
       "title" : "Minimum Endpoint Connection Types",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -10594,8 +10673,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3d682955-5e77-4c9f-a1c2-ba04452f0102",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:20e15480-2aef-4c6e-849e-b108ad29d0d9",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10651,7 +10730,7 @@
       "name" : "NetworkTypeVS",
       "title" : "Network Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -10672,8 +10751,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2f2c264e-20a4-42aa-a00a-99da6f69b07f",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:d2ae8387-104a-4f2d-96b0-4b19423bea01",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10705,7 +10784,7 @@
       "name" : "NonIndividualSpecialtiesVS",
       "title" : "Non-Individual Specialties",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -10726,8 +10805,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bb702c71-a260-4438-bc57-cee82d7e06a0",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:18dc074c-b16d-4290-a60a-503c96bede27",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 181,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11663,7 +11742,7 @@
       "name" : "NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
       "title" : "Non-Individual Specialties, Degrees, Licenses, and Certificates",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -11684,8 +11763,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f9b0826e-948a-4b64-8e3b-41950ad3a846",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:1011ce4c-aa0e-4642-a3bf-e22ee32601f2",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 242,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13296,7 +13375,7 @@
       "name" : "OrgAliasTypeVS",
       "title" : "Organization Alias Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13317,8 +13396,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:db48c45f-9c9e-4a8e-88a6-eaf0508928ba",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:98fffbda-ed7f-4aa9-8425-718a9cf0cbd1",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13355,7 +13434,7 @@
       "name" : "OrgTypeVS",
       "title" : "Organization Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13376,8 +13455,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:495a32a3-5f83-4890-a902-fe1f55ac94ca",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:8664d0c6-3de5-4ae1-80c8-eb879c9ca85b",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13429,7 +13508,7 @@
       "name" : "OrganizationAffiliationRoleVS",
       "title" : "OrganizationAffiliation Roles",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13450,8 +13529,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dea2a4da-36cd-41fc-8419-9066e5af8db1",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:d4a3e6b2-7536-4be3-b4c7-145d51706904",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 24,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13602,7 +13681,7 @@
       "name" : "PractitionerRoleVS",
       "title" : "PractitionerRole Code",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13623,8 +13702,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:66c3af17-bf7d-4a5f-b86f-662dda310ebf",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:4c48aef6-abb7-4059-b604-24a650472e9e",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 47,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13890,7 +13969,7 @@
       "name" : "QualificationStatusVS",
       "title" : "Qualification Status",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13911,8 +13990,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:11dac993-635a-4ec2-8896-15a72ffe5044",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:e8b6a108-d93b-468d-bdfa-779b71bbac67",
+        "timestamp" : "2022-06-03T15:20:44-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13969,7 +14048,7 @@
       "name" : "SpecialtiesVS",
       "title" : "Specialties",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13990,8 +14069,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1e49d30f-9803-44f1-ace8-28a0f9808ed4",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:55036ca9-c9c0-4361-af82-f09f13f7219d",
+        "timestamp" : "2022-06-03T15:20:45-04:00",
         "total" : 850,
         "parameter" : [{
           "name" : "excludeNested",
@@ -19980,7 +20059,7 @@
       "name" : "SpecialtyAndDegreeLicenseCertificateVS",
       "title" : "Specialties, Degrees, Licenses, and Certificates",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -20001,8 +20080,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a5820289-2ce6-47d8-9c50-b0b64bfbab5e",
-        "timestamp" : "2022-05-25T14:00:06-04:00",
+        "identifier" : "urn:uuid:70cd0215-fac1-44b3-b118-991ef9e3c146",
+        "timestamp" : "2022-06-03T15:20:45-04:00",
         "total" : 911,
         "parameter" : [{
           "name" : "excludeNested",
@@ -26304,7 +26383,7 @@
       "name" : "TrustFrameworkTypeVS",
       "title" : "Trust Framework Type",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -26325,8 +26404,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:92389631-383b-4a05-80ff-a8b4ef7aa788",
-        "timestamp" : "2022-05-25T14:00:07-04:00",
+        "identifier" : "urn:uuid:4a05e024-196c-4824-8c72-8b04a247528b",
+        "timestamp" : "2022-06-03T15:20:45-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -26375,6 +26454,85 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ValidationProcessVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ValidationTypeCS.html\">Validation Type Code System v0.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-ValidationTypeCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-editcheck\"> </a><a href=\"CodeSystem-ValidationTypeCS.html#ValidationTypeCS-editcheck\">editcheck</a></td><td>edit check</td><td>Indicates the element or resource is validated for format, range, presence, or other similar properties.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-valueset\"> </a><a href=\"CodeSystem-ValidationTypeCS.html#ValidationTypeCS-valueset\">valueset</a></td><td>Valueset</td><td>Indicates the element or resource is validated against a value set.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-extsource\"> </a><a href=\"CodeSystem-ValidationTypeCS.html#ValidationTypeCS-extsource\">extsource</a></td><td>External source</td><td>Indicates the element or resource is validated against an external source.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-standalone\"> </a><a href=\"CodeSystem-ValidationTypeCS.html#ValidationTypeCS-standalone\">standalone</a></td><td>Stand alone</td><td>Indicates the element or resource is validated by itself and is unrelated to other elements or resources.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-incontext\"> </a><a href=\"CodeSystem-ValidationTypeCS.html#ValidationTypeCS-incontext\">incontext</a></td><td>In context</td><td>Indicates the element or resource is validated by the existence or value of another related element or resource.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-attester\"> </a><a href=\"CodeSystem-ValidationTypeCS.html#ValidationTypeCS-attester\">attester</a></td><td>Attester</td><td>Attester</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS",
+      "version" : "0.0.1",
+      "name" : "ValidationProcessVS",
+      "title" : "Validation Type",
+      "status" : "active",
+      "date" : "2022-06-03T15:19:55-04:00",
+      "publisher" : "HL7 Patient Administration Working Group",
+      "contact" : [{
+        "name" : "HL7 Patient Administration Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.org/Special/committees/pafm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "pafm@lists.HL7.org"
+        }]
+      }],
+      "description" : "Codes to identify Validation Type",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f642ed65-7cfc-4cb7-bdf3-f5d17ec54fce",
+        "timestamp" : "2022-06-03T15:20:45-04:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS|0.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "code" : "editcheck",
+          "display" : "edit check"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "code" : "valueset",
+          "display" : "Valueset"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "code" : "extsource",
+          "display" : "External source"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "code" : "standalone",
+          "display" : "Stand alone"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "code" : "incontext",
+          "display" : "In context"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "code" : "attester",
+          "display" : "Attester"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/VirtualModalitiesVS",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -26388,7 +26546,7 @@
       "name" : "VirtualModalitiesVS",
       "title" : "Virtual Modalities",
       "status" : "active",
-      "date" : "2022-05-25T13:59:19-04:00",
+      "date" : "2022-06-03T15:19:55-04:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -26409,8 +26567,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:569dad2a-8633-4558-99f3-5b787b7c1346",
-        "timestamp" : "2022-05-25T14:00:07-04:00",
+        "identifier" : "urn:uuid:58201674-a9cf-44a8-bbed-0f7ff166092d",
+        "timestamp" : "2022-06-03T15:20:45-04:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",

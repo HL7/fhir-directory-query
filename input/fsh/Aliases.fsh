@@ -17,7 +17,9 @@ Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/ve
 Alias: $verificationresult-communication-method_1 = http://hl7.org/fhir/ValueSet/verificationresult-communication-method
 Alias: $identifierstatus = http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus
 //Alias: $aliastype = http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype
-Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype
+
+//Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype
+Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate
 Alias: $digitalcertificateuse = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse
 Alias: $digitalcertificatestandard = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard
 Alias: $digitalcertificatetrustframework = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework
@@ -53,9 +55,9 @@ Alias:  $paymentTypeVS = http://terminology.hl7.org/ValueSet/v2-0570
 
 
 // NatlDir defined CS that mimic VHDir CodeSystems
-Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
-Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
+Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
+Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 

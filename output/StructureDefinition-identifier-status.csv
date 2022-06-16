@@ -15,5 +15,5 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Extension.value[x]","valueCode","","status",1,1,"Y","","","code {[]} {[]}
-","active|inactive|issued-in-error|revoked|pending","Describes the status of an identifier","","","","","","","","","",,"required","","http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","active|inactive|issued-in-error|revoked|pending","Describes the status of an identifier","","","","","","","","","",,"required","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"

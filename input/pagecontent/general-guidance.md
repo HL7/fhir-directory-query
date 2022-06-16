@@ -82,7 +82,7 @@ PractionerRole describes the relationship between a practitioner and an organiza
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: PractionerRole </strong></figcaption>
-  <img src="assets/images/diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
+  <img src="diagram1.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram1.jpg" />
 </figure>
 
 ### Organization Affiliation
@@ -91,7 +91,7 @@ Similar to PractitionerRole, OrganizationAffiliation describes relationships bet
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: OrganizationAffiliation </strong></figcaption>
-  <img src="assets/images/diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
+  <img src="diagram2.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram2.jpg" />
 </figure>
 
 ### Network / Insurance Plan
@@ -100,7 +100,7 @@ A network is a group of practitioners and organizations that provide healthcare 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Network / Insurance Plan </strong></figcaption>
-  <img src="assets/images/diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
+  <img src="diagram3.jpg" class="figure-img img-responsive img-rounded center-block" alt="Diagram3.jpg" />
 </figure>
 
 

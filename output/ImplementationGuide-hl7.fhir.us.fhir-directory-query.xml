@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-05-25T13:59:19-04:00"/>
+  <date value="2022-06-03T15:19:55-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -352,7 +352,7 @@
       <reference>
         <reference value="StructureDefinition/NatlDir-Verification"/>
       </reference>
-      <name value="NatlDir Verification"/>
+      <name value="National Directory Endpoint Qry Exchange  Verification"/>
       <description value="Describes Verification requirements, source(s), status and dates for one or more elements"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -363,7 +363,7 @@
       <reference>
         <reference value="StructureDefinition/NatlDir-Restriction"/>
       </reference>
-      <name value="NatlDir Restriction"/>
+      <name value="National Directory Endpoint Qry Exchange  Restriction"/>
       <description value="Restriction on use/release of exchanged information"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -856,6 +856,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/IdentifierStatusVS"/>
+      </reference>
+      <name value="IG Type"/>
+      <description value="Codes to identify IG Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/IgTypeVS"/>
       </reference>
       <name value="IG Type"/>
@@ -1054,6 +1065,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/ValidationProcessVS"/>
+      </reference>
+      <name value="Validation Type"/>
+      <description value="Codes to identify Validation Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VirtualModalitiesVS"/>
       </reference>
       <name value="Virtual Modalities"/>
@@ -1102,6 +1124,17 @@
       </reference>
       <name value="National Healthcare Directory ConsentScopeCodes"/>
       <description value="This value set includes the four Consent scope codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CredentialStatusCS"/>
+      </reference>
+      <name value="Credential Status Code System"/>
+      <description value="This code system contains codes for indicating the status of a credential, such as an identifier or qualification."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1267,6 +1300,17 @@
       </reference>
       <name value="Trust FrameworkType"/>
       <description value="Trust Framework Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ValidationTypeCS"/>
+      </reference>
+      <name value="Validation Type Code System"/>
+      <description value="This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory.."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1486,7 +1530,7 @@
         <reference value="SearchParameter/Endpoint-connection-type"/>
       </reference>
       <name value="Search by Connection Type in Endpoints"/>
-      <description value="Accesses the  connection-type of an Endpoint"/>
+      <description value="Accesses the  connection type of an Endpoint"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

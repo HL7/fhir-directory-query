@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="68df2951-8671-49e7-bb15-98ad4d483c46"/>
+  <id value="895f63e4-61ad-41e8-bf4b-edae5f7a1f21"/>
   <meta>
-    <lastUpdated value="2022-05-25T13:59:19.886-04:00"/>
+    <lastUpdated value="2022-06-03T15:19:55.897-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,7 +75,7 @@
         <name value="AcceptingPatientsVS"/>
         <title value="Accepting Patients Codes"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -96,8 +96,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6d578db0-71ca-4989-9cea-b32e27f05b93"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:c79670a7-ba0e-4185-89be-79c466b5daec"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -224,7 +224,7 @@
         <name value="AccessibilityVS"/>
         <title value="Accessibility"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -245,8 +245,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2b3e8e0d-1d7f-4d7c-9c7d-f66f76659408"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:1a771654-8da7-41b1-8803-d9bfd9d2a122"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -383,7 +383,7 @@
         <name value="ConsentVS"/>
         <title value="National Directory Consent Value Set"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -404,8 +404,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b43beaf1-2bf3-43d7-9cae-b879c27bdf75"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:840fcc8c-3997-4ae6-8d1f-53d383878698"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -501,7 +501,7 @@
         <name value="DeliveryMethodVS"/>
         <title value="Delivery Methods"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -522,8 +522,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:70167836-145b-4722-9040-7a423734f12c"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:453b4569-368e-4f4b-bcb6-d6b4cb62f3be"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -734,7 +734,7 @@
         <name value="EndpointConnectionTypeVS"/>
         <title value="Endpoint Connection Types"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -755,8 +755,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6f9ec0b-878e-4174-b35d-9336922584cc"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:d002aa50-2b3d-49ee-b203-8d4e4a378614"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="16"/>
           <parameter>
             <name value="excludeNested"/>
@@ -899,7 +899,7 @@
         <name value="EndpointPayloadTypeVS"/>
         <title value="Endpoint Payload Types"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -920,8 +920,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8daf7086-e6d9-417c-b026-01fee3406034"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:19d1d72a-c8b9-46e9-9243-6fb82ff3b030"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -995,7 +995,7 @@
         <name value="EndpointTypeVS"/>
         <title value="Endpoint Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -1016,8 +1016,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc075c1f-c0de-4eb4-803e-c96524fe229b"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:8130621d-8e2a-4f5b-bdb6-b3977592113f"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1163,7 +1163,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="EndpointUsecaseVS"/>
         <title value="Endpoint Usecases"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -1184,8 +1184,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ddd3f94e-b8f2-42a2-9e94-1d0d5d675601"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:ffdd140b-cd03-4a3c-b028-09a7d95a50fe"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1401,7 +1401,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="HealthcareServiceCategoryVS"/>
         <title value="Healthcare Service Category"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -1422,8 +1422,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7b155427-a696-4fb7-9eb0-e8df773221af"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:b5240b51-f8c8-4426-a792-e5330e64ed1d"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3110,6 +3110,157 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS"/>
+    <resource>
+      <ValueSet>
+        <id value="IdentifierStatusVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CredentialStatusCS.html">Credential Status Code System v0.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-CredentialStatusCS.html">
+                <code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-active"> </a>
+                  <a href="CodeSystem-CredentialStatusCS.html#CredentialStatusCS-active">active</a>
+                </td>
+                <td>active</td>
+                <td>The credential may be considered valid for use.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-inactive"> </a>
+                  <a href="CodeSystem-CredentialStatusCS.html#CredentialStatusCS-inactive">inactive</a>
+                </td>
+                <td>inactive</td>
+                <td>The credential may not be considered valid for use.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-issued-in-error"> </a>
+                  <a href="CodeSystem-CredentialStatusCS.html#CredentialStatusCS-issued-in-error">issued-in-error</a>
+                </td>
+                <td>issued in error</td>
+                <td>The credential was mistakenly assigned and should not be considered valid for use.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-revoked"> </a>
+                  <a href="CodeSystem-CredentialStatusCS.html#CredentialStatusCS-revoked">revoked</a>
+                </td>
+                <td>revoked</td>
+                <td>The credential was revoked by the issuing organization and should not be considered valid for use.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-pending"> </a>
+                  <a href="CodeSystem-CredentialStatusCS.html#CredentialStatusCS-pending">pending</a>
+                </td>
+                <td>pending</td>
+                <td>The credential has not been officially assigned. It may or may not be considered valid for use.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-CredentialStatusCS-unknown"> </a>
+                  <a href="CodeSystem-CredentialStatusCS.html#CredentialStatusCS-unknown">unknown</a>
+                </td>
+                <td>unknown</td>
+                <td>The status of this credential is unknown. It may or may not be considered valid for use.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS"/>
+        <version value="0.0.1"/>
+        <name value="IdentifierStatusVS"/>
+        <title value="IG Type"/>
+        <status value="active"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
+        <publisher value="HL7 Patient Administration Working Group"/>
+        <contact>
+          <name value="HL7 Patient Administration Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pafm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="Codes to identify IG Type"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:607ef66e-25e0-4523-8c9e-553d94cc712d"/>
+          <timestamp value="2022-06-03T15:20:43-04:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS|0.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS"/>
+            <code value="active"/>
+            <display value="active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS"/>
+            <code value="inactive"/>
+            <display value="inactive"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS"/>
+            <code value="issued-in-error"/>
+            <display value="issued in error"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS"/>
+            <code value="revoked"/>
+            <display value="revoked"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS"/>
+            <code value="pending"/>
+            <display value="pending"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS"/>
+            <code value="unknown"/>
+            <display value="unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS"/>
     <resource>
       <ValueSet>
@@ -3157,7 +3308,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="IgTypeVS"/>
         <title value="IG Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -3178,8 +3329,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:70b34eed-ae4c-404c-a6ee-9eb8791067f8"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:5d7f322a-a1b4-4096-becf-7b4ae6109267"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7247,7 +7398,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="IndividualAndGroupSpecialtiesVS"/>
         <title value="Individual and Group Specialties"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -7268,8 +7419,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a4831607-bf44-4b61-8761-40102883d21a"/>
-          <timestamp value="2022-05-25T14:00:05-04:00"/>
+          <identifier value="urn:uuid:0c628afb-c02e-4848-ac8f-d5a6a877ab4d"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="669"/>
           <parameter>
             <name value="excludeNested"/>
@@ -16577,7 +16728,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="IndividualSpecialtyAndDegreeLicenseCertificateVS"/>
         <title value="Individual Specialties, Degrees, Licenses, and Certificates"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -16598,8 +16749,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b559d085-5cb4-4d22-86cb-6378dbb6cb2c"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:c5fbb40c-3fad-42d8-998e-97ce568ec3b6"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="730"/>
           <parameter>
             <name value="excludeNested"/>
@@ -21714,7 +21865,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="InsurancePlanTypeVS"/>
         <title value="Insurance Plan Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -21735,8 +21886,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:25c178ba-d6a2-4497-a1f1-b751460db21a"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:95929d4d-35ee-495e-b832-9f2040e2b4a4"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22003,7 +22154,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="InsuranceProductTypeVS"/>
         <title value="Insurance Product Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22024,8 +22175,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e8575840-57b4-49fd-870b-8722d8b501b4"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:c79a9433-8314-42c5-9f1d-0d6b63806187"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="22"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22234,7 +22385,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="LanguageProficiencyVS"/>
         <title value="Language Proficiency"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22255,8 +22406,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbc4da73-6a62-460f-a879-ac0f9c56a751"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:e3a67db7-d045-4bf2-813a-8f605ed25a7e"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22388,7 +22539,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="MinEndpointConnectionTypeVS"/>
         <title value="Minimum Endpoint Connection Types"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22409,8 +22560,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d682955-5e77-4c9f-a1c2-ba04452f0102"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:20e15480-2aef-4c6e-849e-b108ad29d0d9"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22498,7 +22649,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="NetworkTypeVS"/>
         <title value="Network Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -22519,8 +22670,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2f2c264e-20a4-42aa-a00a-99da6f69b07f"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:d2ae8387-104a-4f2d-96b0-4b19423bea01"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -23655,7 +23806,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="NonIndividualSpecialtiesVS"/>
         <title value="Non-Individual Specialties"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -23676,8 +23827,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bb702c71-a260-4438-bc57-cee82d7e06a0"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:18dc074c-b16d-4290-a60a-503c96bede27"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="181"/>
           <parameter>
             <name value="excludeNested"/>
@@ -26641,7 +26792,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="NonIndividualSpecialtyAndDegreeLicenseCertificateVS"/>
         <title value="Non-Individual Specialties, Degrees, Licenses, and Certificates"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -26662,8 +26813,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9b0826e-948a-4b64-8e3b-41950ad3a846"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:1011ce4c-aa0e-4642-a3bf-e22ee32601f2"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="242"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28314,7 +28465,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="OrgAliasTypeVS"/>
         <title value="Organization Alias Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -28335,8 +28486,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db48c45f-9c9e-4a8e-88a6-eaf0508928ba"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:98fffbda-ed7f-4aa9-8425-718a9cf0cbd1"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28437,7 +28588,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="OrgTypeVS"/>
         <title value="Organization Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -28458,8 +28609,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:495a32a3-5f83-4890-a902-fe1f55ac94ca"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:8664d0c6-3de5-4ae1-80c8-eb879c9ca85b"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28757,7 +28908,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="OrganizationAffiliationRoleVS"/>
         <title value="OrganizationAffiliation Roles"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -28778,8 +28929,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dea2a4da-36cd-41fc-8419-9066e5af8db1"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:d4a3e6b2-7536-4be3-b4c7-145d51706904"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29383,7 +29534,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="PractitionerRoleVS"/>
         <title value="PractitionerRole Code"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -29404,8 +29555,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:66c3af17-bf7d-4a5f-b86f-662dda310ebf"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:4c48aef6-abb7-4059-b604-24a650472e9e"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="47"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29743,7 +29894,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="QualificationStatusVS"/>
         <title value="Qualification Status"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -29764,8 +29915,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:11dac993-635a-4ec2-8896-15a72ffe5044"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:e8b6a108-d93b-468d-bdfa-779b71bbac67"/>
+          <timestamp value="2022-06-03T15:20:44-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -34950,7 +35101,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="SpecialtiesVS"/>
         <title value="Specialties"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -34971,8 +35122,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1e49d30f-9803-44f1-ace8-28a0f9808ed4"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:55036ca9-c9c0-4361-af82-f09f13f7219d"/>
+          <timestamp value="2022-06-03T15:20:45-04:00"/>
           <total value="850"/>
           <parameter>
             <name value="excludeNested"/>
@@ -48347,7 +48498,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="SpecialtyAndDegreeLicenseCertificateVS"/>
         <title value="Specialties, Degrees, Licenses, and Certificates"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -48368,8 +48519,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a5820289-2ce6-47d8-9c50-b0b64bfbab5e"/>
-          <timestamp value="2022-05-25T14:00:06-04:00"/>
+          <identifier value="urn:uuid:70cd0215-fac1-44b3-b118-991ef9e3c146"/>
+          <timestamp value="2022-06-03T15:20:45-04:00"/>
           <total value="911"/>
           <parameter>
             <name value="excludeNested"/>
@@ -54741,7 +54892,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="TrustFrameworkTypeVS"/>
         <title value="Trust Framework Type"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -54762,8 +54913,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:92389631-383b-4a05-80ff-a8b4ef7aa788"/>
-          <timestamp value="2022-05-25T14:00:07-04:00"/>
+          <identifier value="urn:uuid:4a05e024-196c-4824-8c72-8b04a247528b"/>
+          <timestamp value="2022-06-03T15:20:45-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -54807,6 +54958,157 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
             <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS"/>
             <code value="PCDH"/>
             <display value="Patient Centered Data Home"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS"/>
+    <resource>
+      <ValueSet>
+        <id value="ValidationProcessVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-ValidationTypeCS.html">Validation Type Code System v0.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-ValidationTypeCS.html">
+                <code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-editcheck"> </a>
+                  <a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-editcheck">editcheck</a>
+                </td>
+                <td>edit check</td>
+                <td>Indicates the element or resource is validated for format, range, presence, or other similar properties.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-valueset"> </a>
+                  <a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-valueset">valueset</a>
+                </td>
+                <td>Valueset</td>
+                <td>Indicates the element or resource is validated against a value set.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-extsource"> </a>
+                  <a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-extsource">extsource</a>
+                </td>
+                <td>External source</td>
+                <td>Indicates the element or resource is validated against an external source.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-standalone"> </a>
+                  <a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-standalone">standalone</a>
+                </td>
+                <td>Stand alone</td>
+                <td>Indicates the element or resource is validated by itself and is unrelated to other elements or resources.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-incontext"> </a>
+                  <a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-incontext">incontext</a>
+                </td>
+                <td>In context</td>
+                <td>Indicates the element or resource is validated by the existence or value of another related element or resource.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-fhir-directory-query-CodeSystem-ValidationTypeCS-attester"> </a>
+                  <a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-attester">attester</a>
+                </td>
+                <td>Attester</td>
+                <td>Attester</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS"/>
+        <version value="0.0.1"/>
+        <name value="ValidationProcessVS"/>
+        <title value="Validation Type"/>
+        <status value="active"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
+        <publisher value="HL7 Patient Administration Working Group"/>
+        <contact>
+          <name value="HL7 Patient Administration Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pafm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="Codes to identify Validation Type"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f642ed65-7cfc-4cb7-bdf3-f5d17ec54fce"/>
+          <timestamp value="2022-06-03T15:20:45-04:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS|0.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+            <code value="editcheck"/>
+            <display value="edit check"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+            <code value="valueset"/>
+            <display value="Valueset"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+            <code value="extsource"/>
+            <display value="External source"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+            <code value="standalone"/>
+            <display value="Stand alone"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+            <code value="incontext"/>
+            <display value="In context"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+            <code value="attester"/>
+            <display value="Attester"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -54897,7 +55199,7 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
         <name value="VirtualModalitiesVS"/>
         <title value="Virtual Modalities"/>
         <status value="active"/>
-        <date value="2022-05-25T13:59:19-04:00"/>
+        <date value="2022-06-03T15:19:55-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -54918,8 +55220,8 @@ For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Di
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:569dad2a-8633-4558-99f3-5b787b7c1346"/>
-          <timestamp value="2022-05-25T14:00:07-04:00"/>
+          <identifier value="urn:uuid:58201674-a9cf-44a8-bbed-0f7ff166092d"/>
+          <timestamp value="2022-06-03T15:20:45-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

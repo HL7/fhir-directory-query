@@ -1,4 +1,20 @@
 
+ValueSet: IdentifierStatusVS
+Title: "IG Type"
+Description: "Codes to identify IG Type"
+* codes from system CredentialStatusCS
+
+
+ValueSet: ValidationProcessVS
+Title: "Validation Type"
+Description: "Codes to identify Validation Type"
+* ValidationTypeCS#editcheck  "edit check"
+* ValidationTypeCS#valueset	"Valueset"
+* ValidationTypeCS#extsource	"External source"
+* ValidationTypeCS#standalone	"Stand alone"
+* ValidationTypeCS#incontext	"In context"
+* ValidationTypeCS#attester	"Attester"
+
 ValueSet: IgTypeVS
 Title: "IG Type"
 Description: "Codes to identify IG Type"

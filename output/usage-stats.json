@@ -1304,13 +1304,13 @@
     "Consent": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction",
-        "title": "NatlDir Restriction"
+        "title": "National Directory Endpoint Qry Exchange  Restriction"
       }
     ],
     "VerificationResult": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification",
-        "title": "NatlDir Verification"
+        "title": "National Directory Endpoint Qry Exchange  Verification"
       }
     ],
     "CareTeam": [

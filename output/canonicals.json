@@ -84,6 +84,13 @@
     "name": "ConsentScopeCS"
   },
   {
+    "id": "CredentialStatusCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
+    "version": "0.0.1",
+    "name": "CredentialStatusCS"
+  },
+  {
     "id": "DeliveryMethodCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS",
@@ -187,6 +194,13 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS",
     "version": "0.0.1",
     "name": "TrustFrameworkTypeCS"
+  },
+  {
+    "id": "ValidationTypeCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+    "version": "0.0.1",
+    "name": "ValidationTypeCS"
   },
   {
     "id": "VirtualModalitiesCS",
@@ -602,6 +616,13 @@
     "name": "HealthcareServiceTypeVS"
   },
   {
+    "id": "IdentifierStatusVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS",
+    "version": "0.0.1",
+    "name": "IdentifierStatusVS"
+  },
+  {
     "id": "IgTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS",
@@ -728,6 +749,13 @@
     "name": "TrustFrameworkTypeVS"
   },
   {
+    "id": "ValidationProcessVS",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS",
+    "version": "0.0.1",
+    "name": "ValidationProcessVS"
+  },
+  {
     "id": "VirtualModalitiesVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/VirtualModalitiesVS",
@@ -781,7 +809,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-type.html",
     "version": "0.0.1",
-    "name": "HealthcareService-service-typeSearchParameter"
+    "name": "HealthcareService-servicetypeSearchParameter"
   },
   {
     "id": "HealthcareService-specialty",
@@ -809,7 +837,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-benefit-type.html",
     "version": "0.0.1",
-    "name": "InsurancePlan-coverage-benefit-typeSearchParameter"
+    "name": "InsurancePlan-coverage-benefittypeSearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-network",
@@ -844,7 +872,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type.html",
     "version": "0.0.1",
-    "name": "InsurancePlan-typeSearchParameter"
+    "name": "InsurancePlantypeSearchParameter"
   },
   {
     "id": "Location-address",
@@ -1068,7 +1096,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-connection-type.html",
     "version": "0.0.1",
-    "name": "NatlDirEndpointQryConnection-type"
+    "name": "NatlDirEndpointQryConnectiontype"
   },
   {
     "id": "Endpoint-identifier",
@@ -1082,7 +1110,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-mime-type.html",
     "version": "0.0.1",
-    "name": "NatlDirEndpointQryMime-type"
+    "name": "NatlDirEndpointQryMimetype"
   },
   {
     "id": "Endpoint-organization",
@@ -1096,7 +1124,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-payload-type.html",
     "version": "0.0.1",
-    "name": "NatlDirEndpointQryPayload-type"
+    "name": "NatlDirEndpointQryPayloadtype"
   },
   {
     "id": "Endpoint-status",
@@ -1117,7 +1145,7 @@
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html",
     "version": "0.0.1",
-    "name": "NatlDirEndpointQryUsecase-type"
+    "name": "NatlDirEndpointQryUsecasetype"
   },
   {
     "id": "practitioner-family",

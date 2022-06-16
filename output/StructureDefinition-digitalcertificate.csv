@@ -24,7 +24,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Extension.extension.value[x]","valueCoding","","type",1,1,"","","","Coding {[]} {[]}
-","type","Type of digital certificate (TLS/SSL; device; identity; group)","","","","","","","","","",,"example","","http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","type","Type of digital certificate (TLS/SSL; device; identity; group)","","","","","","","","","",,"example","","http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Extension.extension","use","","use",0,*,"Y","","","Extension {[]} {[]}
 ","Use","Purpose of the digital certificate (digsig; keyEncipherment)","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

@@ -1,3 +1,6 @@
+
+
+
 //added 4/19 SMM
 //supports HSDS interoperabilty
 Extension: PaymentAccepted
@@ -406,7 +409,7 @@ Description: "Describes the status of an identifier"
 * . ^definition = "Describes the status of an identifier"
 * valueCode 1.. MS
 * valueCode only code
-* valueCode from $identifierstatus (required)
+* valueCode from IdentifierStatusVS (required)
 * valueCode ^sliceName = "valueCode"
 * valueCode ^label = "status"
 * valueCode ^short = "active|inactive|issued-in-error|revoked|pending"

@@ -596,7 +596,7 @@ Description: "Describes Verification requirements, source(s), status and dates f
 * validationType ^short = "nothing|single|multiple"
 * validationType ^definition = "What the target is validated against (nothing|single source|multiple sources)"
 * validationProcess 1..* MS
-* validationProcess from $verificationprocess (example)
+* validationProcess from ValidationProcessVS (example)
 * validationProcess ^short = "The process(es) by which the target is validated"
 * validationProcess ^definition = "The process(es) by which the target is validated"
 * frequency MS

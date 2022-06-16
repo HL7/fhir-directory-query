@@ -4,13 +4,13 @@ InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by Connection Type in Endpoints"
 * status = #active
-* code = #connection-type
-* name = "NatlDirEndpointQryConnection-type"
-* description = "Accesses the  connection-type of an Endpoint"
+* code = #connectiontype
+* name = "NatlDirEndpointQryConnectiontype"
+* description = "Accesses the  connection type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-connection-type.html"
 * base[0] = #Endpoint
 * type = #token
-* expression = "Endpoint.connection-type"
+* expression = "Endpoint.connectiontype"
 * multipleOr = true
 * multipleAnd = true
 
@@ -35,7 +35,7 @@ Usage: #definition
 Title: "Search by mime-type in Endpoints"
 * status = #active
 * code = #mime-type
-* name = "NatlDirEndpointQryMime-type"
+* name = "NatlDirEndpointQryMimetype"
 * description = "Accesses the  mime-type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-mime-type.html"
 * base[0] = #Endpoint
@@ -65,7 +65,7 @@ Usage: #definition
 Title: "Search by payload-type in Endpoints"
 * status = #active
 * code = #payload-type
-* name = "NatlDirEndpointQryPayload-type"
+* name = "NatlDirEndpointQryPayloadtype"
 * description = "Accesses the  payload-type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-payload-type.html"
 * base[0] = #Endpoint
@@ -110,7 +110,7 @@ Usage: #definition
 Title: "Search by usecase-type in Endpoints"
 * status = #active
 * code = #usecase-type
-* name = "NatlDirEndpointQryUsecase-type"
+* name = "NatlDirEndpointQryUsecasetype"
 * description = "Accesses the  usecase-type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html"
 * base[0] = #Endpoint
@@ -312,7 +312,7 @@ Usage: #definition
 Title: "Search by service-type in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-service-typeSearchParameter"
+* name = "HealthcareService-servicetypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `service-type` with `mutlipleOr` enabled."
 * code = #service-type
@@ -880,7 +880,7 @@ Usage: #definition
 Title: "Search by coverage-benefit-type in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-benefit-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-coverage-benefit-typeSearchParameter"
+* name = "InsurancePlan-coverage-benefittypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `coverage-benefit-type` with `mutlipleOr` enabled."
 * code = #coverage-benefit-type
@@ -922,7 +922,7 @@ Usage: #definition
 Title: "Search by type in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-typeSearchParameter"
+* name = "InsurancePlantypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `type` with `mutlipleOr` enabled."
 * code = #type

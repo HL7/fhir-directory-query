@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Consent</sch:title>
     <sch:rule context="f:Consent">
+      <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
       <sch:assert test="count(f:patient) &lt;= 0">patient: maximum cardinality of 'patient' is 0</sch:assert>
       <sch:assert test="count(f:performer) &lt;= 0">performer: maximum cardinality of 'performer' is 0</sch:assert>
       <sch:assert test="count(f:organization) &lt;= 0">organization: maximum cardinality of 'organization' is 0</sch:assert>

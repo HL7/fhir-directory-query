@@ -48,7 +48,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","nothing|single|multiple","What the target is validated against (nothing|single source|multiple sources)","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/verificationresult-validation-type","",,,,"VerificationResult.validationType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "VerificationResult.validationProcess","","","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
-","The process(es) by which the target is validated","The process(es) by which the target is validated","","","","","","","","","",,"example","","http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess","",,,,"VerificationResult.validationProcess",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The process(es) by which the target is validated","The process(es) by which the target is validated","","","","","","","","","",,"example","","http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS","",,,,"VerificationResult.validationProcess",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "VerificationResult.frequency","","","",0,1,"Y","","","Timing {[]} {[]}
 ","Frequency of revalidation","Frequency of revalidation.","","","","","","","","","",,,,,"",,,,"VerificationResult.frequency",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
