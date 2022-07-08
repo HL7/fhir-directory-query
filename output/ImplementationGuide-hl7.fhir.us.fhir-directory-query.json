@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-06-03T15:19:55-04:00",
+  "date": "2022-07-08T11:33:11-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -632,20 +632,6 @@
         },
         "name": "Delivery Method",
         "description": "An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/digitalcertificate"
-        },
-        "name": "NatlDirEndpointQry Digitalcertificate",
-        "description": "A digital certificate, used to identify a user or group of users, or for encrypted communications",
         "exampleBoolean": false
       },
       {

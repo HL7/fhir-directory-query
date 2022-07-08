@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "NonIndividualSpecialtyAndDegreeLicenseCertificateVS"];
   fhir:ValueSet.title [ fhir:value "Non-Individual Specialties, Degrees, Licenses, and Certificates"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-06-03T15:19:55-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-07-08T11:33:11-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

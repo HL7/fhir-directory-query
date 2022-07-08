@@ -292,7 +292,7 @@ Description: "The technical details of an endpoint that can be used for electron
 * valueReference ^short = "Endpoint reference"
 * valueReference ^definition = "A reference to the endpoint"
 
-
+/*
 Extension: DigitalCertificate
 Id: digitalcertificate
 Title: "NatlDirEndpointQry Digitalcertificate"
@@ -377,7 +377,7 @@ Description: "A digital certificate, used to identify a user or group of users, 
 * extension[trustFramework].valueCodeableConcept ^short = "Trust framework"
 * extension[trustFramework].valueCodeableConcept ^definition = "The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)"
 //* value[x] MS
-
+*/
 
 Extension: CareteamAlias
 Id: careteam-alias

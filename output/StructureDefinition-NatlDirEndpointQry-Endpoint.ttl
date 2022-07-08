@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "NatlDirEndpointQryEndpoint"];
   fhir:StructureDefinition.title [ fhir:value "National Directory Endpoint Qry Exchange Endpoint"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-03T15:19:55-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-08T11:33:11-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1368,8 +1368,8 @@
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet" ];
            fhir:Extension.valueCanonical [
-             fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS";
-             fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS>
+             fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS";
+             fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS>
            ]
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
@@ -1892,8 +1892,8 @@
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet" ];
            fhir:Extension.valueCanonical [
-             fhir:value "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS";
-             fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS>
+             fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS";
+             fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS>
            ]
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];

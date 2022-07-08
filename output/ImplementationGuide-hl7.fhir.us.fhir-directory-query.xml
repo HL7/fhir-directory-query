@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-06-03T15:19:55-04:00"/>
+  <date value="2022-07-08T11:33:11-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -442,17 +442,6 @@
       </reference>
       <name value="Delivery Method"/>
       <description value="An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/digitalcertificate"/>
-      </reference>
-      <name value="NatlDirEndpointQry Digitalcertificate"/>
-      <description value="A digital certificate, used to identify a user or group of users, or for encrypted communications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -183,7 +183,7 @@ Usage: #example
 * meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
-* active = true
+* active = true 
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = VirtualModalitiesCS#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 

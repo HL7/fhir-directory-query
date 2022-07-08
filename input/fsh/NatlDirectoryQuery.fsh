@@ -88,7 +88,7 @@ Description:    "The technical details of an endpoint that can be used for elect
     AssociatedServers named associated-servers 0..* and
     SecureEndpoint named secured-endpoint 0..1
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
-* status 1..1 MS
+* status 1..1 MS 
 * status = #active (exactly)  
 * connectionType MS  
 * connectionType from EndpointConnectionTypeVS (extensible)

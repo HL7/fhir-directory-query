@@ -57,7 +57,7 @@ Alias:  $paymentTypeVS = http://terminology.hl7.org/ValueSet/v2-0570
 // NatlDir defined CS that mimic VHDir CodeSystems
 Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
-Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS
+Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 

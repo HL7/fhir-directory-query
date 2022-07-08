@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 12, warn = 102, info = 5
-IG Publisher Version: 1.1.98 Out of date - current version is 1.1.121
-Generated Fri Jun 03 15:21:38 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+err = 2, warn = 31, info = 5
+IG Publisher Version: 1.1.98 Out of date - current version is 1.1.122
+Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 1 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-endpoint : 0 / 0 / 1
@@ -91,74 +91,74 @@ Generated Fri Jun 03 15:21:38 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Endpoint-organization : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Endpoint-payload-type : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Endpoint-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Endpoint-usecase-standard : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Endpoint-usecase-standard : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Endpoint-usecase-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-coverage-area : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-endpoint : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-location : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-name : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-organization : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-service-category : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-service-type : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-specialty : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-administrated-by : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-coverage-area : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-coverage-benefit-type : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-coverage-network : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-identifier : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-name : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-owned-by : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-coverage-area : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-location : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-service-category : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-service-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-HealthcareService-specialty : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-administrated-by : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-coverage-area : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-coverage-benefit-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-coverage-network : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-identifier : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-owned-by : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-InsurancePlan-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-address : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-endpoint : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-organization : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-partOf : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-physicalType : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-type : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Network-coverage-area : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Network-name : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-address : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-endpoint : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-identifier : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-name : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-partOf : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-type : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-endpoint : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-location : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-network : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-participating-organization : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-primary-organization : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-role : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-service : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-specialty : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-VerificationResult-attestation-who : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-VerificationResult-primarysource-who : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-VerificationResult-target : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-category : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-endpoint : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-location : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-name : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-organization : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-service : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-family : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-given : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-identifier : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-identifier-assigner : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-name : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-qualification-code : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-qualification-issuer : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-endpoint : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-location : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-network : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-organization : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-practitioner : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-role : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-service : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-specialty : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-address : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-partOf : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-physicalType : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Location-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Network-coverage-area : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Network-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-address : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-identifier : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-partOf : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-Organization-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-location : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-network : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-participating-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-primary-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-role : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-service : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-OrganizationAffiliation-specialty : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-VerificationResult-attestation-who : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-VerificationResult-primarysource-who : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-VerificationResult-target : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-category : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-location : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-careTeam-service : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-family : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-given : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-identifier : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-identifier-assigner : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-qualification-code : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitioner-qualification-issuer : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-location : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-network : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-practitioner : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-role : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-service : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\searchparameter-practitionerRole-specialty : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDir-Restriction : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDir-Verification : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-CareTeam : 0 / 2 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Endpoint : 2 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Endpoint : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-HealthcareService : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-HealthcareServiceComplete : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-InsurancePlan : 0 / 0 / 1
@@ -175,7 +175,6 @@ Generated Fri Jun 03 15:21:38 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-contactpoint-availabletime : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-contactpoint-viaintermediary : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-delivery-method : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-digitalcertificate : 8 / 9 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-dynamicRegistration : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-usecase : 0 / 0 / 1
@@ -237,7 +236,7 @@ Generated Fri Jun 03 15:21:38 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
 == n/a ==
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-fhir-directory-query in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query.json ==
-WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[49].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[48].description: value should not start or finish with whitespace
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-endpoint.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-expanded.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-health-or-human-services-endpoint.json ==
@@ -327,131 +326,69 @@ INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does
 == fsh-generated\resources\SearchParameter-Endpoint-payload-type.json ==
 == fsh-generated\resources\SearchParameter-Endpoint-status.json ==
 == fsh-generated\resources\SearchParameter-Endpoint-usecase-standard.json ==
-WARNING: SearchParameter/Endpoint-usecase-standard: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Endpoint-usecase-type.json ==
 == fsh-generated\resources\SearchParameter-HealthcareService-coverage-area.json ==
-WARNING: SearchParameter/HealthcareService-coverage-area: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-endpoint.json ==
-WARNING: SearchParameter/HealthcareService-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-location.json ==
-WARNING: SearchParameter/HealthcareService-location: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-name.json ==
-WARNING: SearchParameter/HealthcareService-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-organization.json ==
-WARNING: SearchParameter/HealthcareService-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-service-category.json ==
-WARNING: SearchParameter/HealthcareService-service-category: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-service-type.json ==
-WARNING: SearchParameter/HealthcareService-service-type: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-HealthcareService-specialty.json ==
-WARNING: SearchParameter/HealthcareService-specialty: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-administrated-by.json ==
-WARNING: SearchParameter/InsurancePlan-administrated-by: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-coverage-area.json ==
-WARNING: SearchParameter/InsurancePlan-coverage-area: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-coverage-benefit-type.json ==
-WARNING: SearchParameter/InsurancePlan-coverage-benefit-type: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-coverage-network.json ==
-WARNING: SearchParameter/InsurancePlan-coverage-network: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-identifier.json ==
-WARNING: SearchParameter/InsurancePlan-identifier: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-name.json ==
-WARNING: SearchParameter/InsurancePlan-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-owned-by.json ==
-WARNING: SearchParameter/InsurancePlan-owned-by: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-InsurancePlan-type.json ==
 == fsh-generated\resources\SearchParameter-Location-address.json ==
-WARNING: SearchParameter/Location-address: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Location-endpoint.json ==
-WARNING: SearchParameter/Location-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Location-organization.json ==
-WARNING: SearchParameter/Location-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Location-partOf.json ==
-WARNING: SearchParameter/Location-partOf: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Location-physicalType.json ==
-WARNING: SearchParameter/Location-physicalType: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Location-type.json ==
-WARNING: SearchParameter/Location-type: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Network-coverage-area.json ==
-WARNING: SearchParameter/Network-coverage-area: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Network-name.json ==
-WARNING: SearchParameter/Network-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Organization-address.json ==
-WARNING: SearchParameter/Organization-address: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Organization-endpoint.json ==
-WARNING: SearchParameter/Organization-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Organization-identifier.json ==
-WARNING: SearchParameter/Organization-identifier: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Organization-name.json ==
-WARNING: SearchParameter/Organization-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Organization-partOf.json ==
-WARNING: SearchParameter/Organization-partOf: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-Organization-type.json ==
-WARNING: SearchParameter/Organization-type: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-endpoint.json ==
-WARNING: SearchParameter/OrganizationAffiliation-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-location.json ==
-WARNING: SearchParameter/OrganizationAffiliation-location: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-network.json ==
-WARNING: SearchParameter/OrganizationAffiliation-network: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-participating-organization.json ==
-WARNING: SearchParameter/OrganizationAffiliation-participating-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-primary-organization.json ==
-WARNING: SearchParameter/OrganizationAffiliation-primary-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-role.json ==
-WARNING: SearchParameter/OrganizationAffiliation-role: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-service.json ==
-WARNING: SearchParameter/OrganizationAffiliation-service: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-OrganizationAffiliation-specialty.json ==
-WARNING: SearchParameter/OrganizationAffiliation-specialty: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-VerificationResult-attestation-who.json ==
-WARNING: SearchParameter/VerificationResult-attestation-who: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-VerificationResult-primarysource-who.json ==
-WARNING: SearchParameter/VerificationResult-primarysource-who: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-VerificationResult-target.json ==
-WARNING: SearchParameter/VerificationResult-target: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-careTeam-category.json ==
-WARNING: SearchParameter/careTeam-category: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-careTeam-endpoint.json ==
-WARNING: SearchParameter/careTeam-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-careTeam-location.json ==
-WARNING: SearchParameter/careTeam-location: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-careTeam-name.json ==
-WARNING: SearchParameter/careTeam-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-careTeam-organization.json ==
-WARNING: SearchParameter/careTeam-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-careTeam-service.json ==
-WARNING: SearchParameter/careTeam-service: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-family.json ==
-WARNING: SearchParameter/practitioner-family: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-given.json ==
-WARNING: SearchParameter/practitioner-given: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-identifier.json ==
-WARNING: SearchParameter/practitioner-identifier: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-identifier-assigner.json ==
-WARNING: SearchParameter/practitioner-identifier-assigner: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-name.json ==
-WARNING: SearchParameter/practitioner-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-qualification-code.json ==
-WARNING: SearchParameter/practitioner-qualification-code: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitioner-qualification-issuer.json ==
-WARNING: SearchParameter/practitioner-qualification-issuer: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-endpoint.json ==
-WARNING: SearchParameter/practitionerRole-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-location.json ==
-WARNING: SearchParameter/practitionerRole-location: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-network.json ==
-WARNING: SearchParameter/practitionerRole-network: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-organization.json ==
-WARNING: SearchParameter/practitionerRole-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-practitioner.json ==
-WARNING: SearchParameter/practitionerRole-practitioner: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-role.json ==
-WARNING: SearchParameter/practitionerRole-role: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-service.json ==
-WARNING: SearchParameter/practitionerRole-service: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\SearchParameter-practitionerRole-specialty.json ==
-WARNING: SearchParameter/practitionerRole-specialty: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\StructureDefinition-NatlDir-Restriction.json ==
 ERROR: StructureDefinition/NatlDir-Restriction: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction'): The Implementation Guide contains no examples for this profile
@@ -461,8 +398,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-Endpoint.json ==
-ERROR: StructureDefinition/NatlDirEndpointQry-Endpoint: StructureDefinition.snapshot.element[27].binding.extension[0].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS' does not resolve
-ERROR: StructureDefinition/NatlDirEndpointQry-Endpoint: StructureDefinition.differential.element[13].binding.extension[0].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointConnectionTypeCS' does not resolve
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-HealthcareService.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete'): The Implementation Guide contains no examples for this profile
@@ -485,24 +420,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 == fsh-generated\resources\StructureDefinition-contactpoint-viaintermediary.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-delivery-method.json ==
-== fsh-generated\resources\StructureDefinition-digitalcertificate.json ==
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[8].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[14].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[20].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[37].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[6].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[11].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[16].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard' does not resolve
-ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[30].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework' does not resolve
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[6].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate on element Extension.extension.valueCoding could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[11].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse on element Extension.extension.valueCoding could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[16].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard on element Extension.extension.valueCoding could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[30].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework on element Extension.extension.valueCodeableConcept could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[8].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[20].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[37].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework on element Extension.extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/digitalcertificate'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-dynamicRegistration.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-endpoint-reference.json ==
