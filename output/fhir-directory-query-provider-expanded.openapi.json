@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Capability Statement Provider Federated Expanded Server  ",
+    "title": "Capability Statement Provider Federated Expanded Server",
     "description": "Capabilities for a Federated Query Server for a Provider where minimum search capabilities are met",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValidationProcessVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-ValidationTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-editcheck">editcheck</a></td><td>edit check</td><td>Indicates the element or resource is validated for format, range, presence, or other similar properties.</td></tr><tr><td><a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-valueset">valueset</a></td><td>Valueset</td><td>Indicates the element or resource is validated against a value set.</td></tr><tr><td><a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-extsource">extsource</a></td><td>External source</td><td>Indicates the element or resource is validated against an external source.</td></tr><tr><td><a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-standalone">standalone</a></td><td>Stand alone</td><td>Indicates the element or resource is validated by itself and is unrelated to other elements or resources.</td></tr><tr><td><a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-incontext">incontext</a></td><td>In context</td><td>Indicates the element or resource is validated by the existence or value of another related element or resource.</td></tr><tr><td><a href="CodeSystem-ValidationTypeCS.html#ValidationTypeCS-attester">attester</a></td><td>Attester</td><td>Attester</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS"/>
+  <version value="0.0.1"/>
+  <name value="ValidationProcessVS"/>
+  <title value="Validation Type"/>
+  <status value="active"/>
+  <date value="2022-07-08T11:33:11-04:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes to identify Validation Type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS"/>
+      <concept>
+        <code value="editcheck"/>
+        <display value="edit check"/>
+      </concept>
+      <concept>
+        <code value="valueset"/>
+        <display value="Valueset"/>
+      </concept>
+      <concept>
+        <code value="extsource"/>
+        <display value="External source"/>
+      </concept>
+      <concept>
+        <code value="standalone"/>
+        <display value="Stand alone"/>
+      </concept>
+      <concept>
+        <code value="incontext"/>
+        <display value="In context"/>
+      </concept>
+      <concept>
+        <code value="attester"/>
+        <display value="Attester"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

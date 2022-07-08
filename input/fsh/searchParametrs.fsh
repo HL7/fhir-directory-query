@@ -4,13 +4,13 @@ InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by Connection Type in Endpoints"
 * status = #active
-* code = #connection-type
-* name = "NatlDirEndpointQryConnection-type"
-* description = "Accesses the  connection-type of an Endpoint"
+* code = #connectiontype
+* name = "NatlDirEndpointQryConnectiontype"
+* description = "Accesses the  connection type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-connection-type.html"
 * base[0] = #Endpoint
 * type = #token
-* expression = "Endpoint.connection-type"
+* expression = "Endpoint.connectiontype"
 * multipleOr = true
 * multipleAnd = true
 
@@ -35,7 +35,7 @@ Usage: #definition
 Title: "Search by mime-type in Endpoints"
 * status = #active
 * code = #mime-type
-* name = "NatlDirEndpointQryMime-type"
+* name = "NatlDirEndpointQryMimetype"
 * description = "Accesses the  mime-type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-mime-type.html"
 * base[0] = #Endpoint
@@ -65,7 +65,7 @@ Usage: #definition
 Title: "Search by payload-type in Endpoints"
 * status = #active
 * code = #payload-type
-* name = "NatlDirEndpointQryPayload-type"
+* name = "NatlDirEndpointQryPayloadtype"
 * description = "Accesses the  payload-type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-payload-type.html"
 * base[0] = #Endpoint
@@ -95,7 +95,7 @@ Usage: #definition
 Title: "Search by usecase-standard in Endpoints"
 * status = #active
 * code = #usecase-standard
-* name = "NatlDirEndpointQryUsecase-standard"
+* name = "NatlDirEndpointQryUsecaseStandard"
 * description = "Accesses the usecase-standard of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-standard.html"
 * base[0] = #Endpoint
@@ -110,7 +110,7 @@ Usage: #definition
 Title: "Search by usecase-type in Endpoints"
 * status = #active
 * code = #usecase-type
-* name = "NatlDirEndpointQryUsecase-type"
+* name = "NatlDirEndpointQryUsecasetype"
 * description = "Accesses the  usecase-type of an Endpoint"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html"
 * base[0] = #Endpoint
@@ -127,7 +127,7 @@ Usage: #definition
 Title: "Search by endpoint in CareTeam with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-endpoint.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "careTeam-endpointSearchParameter"
+* name = "CareTeamEndpointSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Careteams by `endpoint` with `mutlipleOr` enabled."
 * code = #endpoint
@@ -141,7 +141,7 @@ Usage: #definition
 Title: "Search by location in CareTeam with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-location.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "careTeam-locationSearchParameter"
+* name = "CareTeamLocationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Careteams by `location` with `mutlipleOr` enabled."
 * code = #location
@@ -155,7 +155,7 @@ Usage: #definition
 Title: "Search by name in CareTeam with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "careTeam-nameSearchParameter"
+* name = "CareTeamNameSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled."
 * code = #name
@@ -169,7 +169,7 @@ Usage: #definition
 Title: "Search by organization in CareTeam with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "careTeam-organizationSearchParameter"
+* name = "CareTeamOrganizationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Careteams by `organization` with `mutlipleOr` enabled."
 * code = #organization
@@ -183,7 +183,7 @@ Usage: #definition
 Title: "Search by service in CareTeam with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "careTeam-serviceSearchParameter"
+* name = "CareTeamServiceSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Careteams by `service` with `mutlipleOr` enabled."
 * code = #service
@@ -198,7 +198,7 @@ Usage: #definition
 Title: "Search by category in CareTeam with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "careTeam-categorySearchParameter"
+* name = "CareTeamCategorySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Careteams by `category` with `mutlipleOr` enabled."
 * code = #category
@@ -214,7 +214,7 @@ Usage: #definition
 Title: "Search by service-category in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-category.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-categorySearchParameter"
+* name = "HealthcareServiceCategorySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `service-category` with `mutlipleOr` enabled."
 * code = #category
@@ -228,7 +228,7 @@ Usage: #definition
 Title: "Search by coverage-area in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-coverage-area.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-coverage-areaSearchParameter"
+* name = "HealthcareServiceCoverageAreaSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `coverage-area` with `mutlipleOr` enabled."
 * code = #coverage-area
@@ -242,7 +242,7 @@ Usage: #definition
 Title: "Search by endpoint in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-endpoint.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-categorySearchParameter"
+* name = "HealthcareServiceCategorySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `endpoint` with `mutlipleOr` enabled."
 * code = #endpoint
@@ -256,7 +256,7 @@ Usage: #definition
 Title: "Search by location in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-location.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-locationSearchParameter"
+* name = "HealthcareServiceLocationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `location` with `mutlipleOr` enabled."
 * code = #location
@@ -270,7 +270,7 @@ Usage: #definition
 Title: "Search by name in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-nameSearchParameter"
+* name = "HealthcareServiceNameSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `name` with `mutlipleOr` enabled."
 * code = #name
@@ -284,7 +284,7 @@ Usage: #definition
 Title: "Search by organization in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-organization.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-organizationSearchParameter"
+* name = "HealthcareServiceOrganizationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `organization` with `mutlipleOr` enabled."
 * code = #organization
@@ -298,7 +298,7 @@ Usage: #definition
 Title: "Search by specialty in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-specialty.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-specialtySearchParameter"
+* name = "HealthcareServiceSpecialtySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `specialty` with `mutlipleOr` enabled."
 * code = #endpoint
@@ -312,7 +312,7 @@ Usage: #definition
 Title: "Search by service-type in HealthcareService with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "HealthcareService-service-typeSearchParameter"
+* name = "HealthcareServiceServicetypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of HealthcareService by `service-type` with `mutlipleOr` enabled."
 * code = #service-type
@@ -327,7 +327,7 @@ Usage: #definition
 Title: "Search by address in Location with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-address.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Location-addressSearchParameter"
+* name = "LocationAddressSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Location by `address` with `mutlipleOr` enabled."
 * code = #address
@@ -341,7 +341,7 @@ Usage: #definition
 Title: "Search by endpoint in Location with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-endpoint.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Location-endpointSearchParameter"
+* name = "LocationEndpointSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Location by `endpoint` with `mutlipleOr` enabled."
 * code = #endpoint
@@ -355,7 +355,7 @@ Usage: #definition
 Title: "Search by organization in Location with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-organization.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Location-organizationSearchParameter"
+* name = "LocationOrganizationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Location by `organization` with `mutlipleOr` enabled."
 * code = #organization
@@ -369,7 +369,7 @@ Usage: #definition
 Title: "Search by physicalType in Location with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-physicalType.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Location-physicalTypeSearchParameter"
+* name = "LocationPhysicalTypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Location by `physicalType` with `mutlipleOr` enabled."
 * code = #physicalType
@@ -383,7 +383,7 @@ Usage: #definition
 Title: "Search by partOf in Location with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-partOf.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Location-partOfSearchParameter"
+* name = "LocationPartOfSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Location by `partOf` with `mutlipleOr` enabled."
 * code = #partOf
@@ -397,7 +397,7 @@ Usage: #definition
 Title: "Search by type in Location with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Location-typeSearchParameter"
+* name = "LocationTypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Location by `type` with `mutlipleOr` enabled."
 * code = #type
@@ -412,7 +412,7 @@ Usage: #definition
 Title: "Search by type in Organization with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Organization-typeSearchParameter"
+* name = "OrganizationTypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `type` with `mutlipleOr` enabled."
 * code = #type
@@ -426,7 +426,7 @@ Usage: #definition
 Title: "Search by address in Organization with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-address.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Organization-addressSearchParameter"
+* name = "OrganizationAddressSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `address` with `mutlipleOr` enabled."
 * code = #address
@@ -440,7 +440,7 @@ Usage: #definition
 Title: "Search by endpoint in Organization with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-endpoint.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Organization-endpointSearchParameter"
+* name = "OrganizationEndpointSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled."
 * code = #endpoint
@@ -454,7 +454,7 @@ Usage: #definition
 Title: "Search by identifier in Organization with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-identifier.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Organization-identifierSearchParameter"
+* name = "OrganizationIdentifierSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `identifier` with `mutlipleOr` enabled."
 * code = #identifier
@@ -468,7 +468,7 @@ Usage: #definition
 Title: "Search by name in Organization with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Organization-nameSearchParameter"
+* name = "OrganizationNameSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `name` with `mutlipleOr` enabled."
 * code = #name
@@ -482,7 +482,7 @@ Usage: #definition
 Title: "Search by partOf in Organization with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-partOf.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Organization-partOfSearchParameter"
+* name = "OrganizationPartOfSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `partOf` with `mutlipleOr` enabled."
 * code = #partOf
@@ -497,7 +497,7 @@ Usage: #definition
 Title: "Search by endpoint in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-endpoint.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-endpointSearchParameter"
+* name = "OrganizationAffiliationEndpointSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `endpoint` with `mutlipleOr` enabled."
 * code = #endpoint
@@ -511,7 +511,7 @@ Usage: #definition
 Title: "Search by location in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-location.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-locationSearchParameter"
+* name = "OrganizationAffiliationLocationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `location` with `mutlipleOr` enabled."
 * code = #location
@@ -525,10 +525,10 @@ Usage: #definition
 Title: "Search by network in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-network.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-networkSearchParameter"
+* name = "OrganizationAffiliationNetworkSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `network` with `mutlipleOr` enabled."
-* code = #network
+* code = #Organization
 * base[0] = #OrganizationAffiliation
 * type = #token
 * multipleOr = true
@@ -539,7 +539,7 @@ Usage: #definition
 Title: "Search by participating-organization in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-participating-organization.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-participating-organizationfSearchParameter"
+* name = "OrganizationAffiliationParticipatingOrganizationfSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `participating-organization` with `mutlipleOr` enabled."
 * code = #participating-organization
@@ -553,7 +553,7 @@ Usage: #definition
 Title: "Search by primary-organization in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-primary-organization.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-primary-organizationSearchParameter"
+* name = "OrganizationAffiliationPrimaryOrganizationSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `primary-organization` with `mutlipleOr` enabled."
 * code = #primary-organization
@@ -567,7 +567,7 @@ Usage: #definition
 Title: "Search by role in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-role.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-roleSearchParameter"
+* name = "OrganizationAffiliationRoleSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `role` with `mutlipleOr` enabled."
 * code = #role
@@ -581,7 +581,7 @@ Usage: #definition
 Title: "Search by service in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-service.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-serviceSearchParameter"
+* name = "OrganizationAffiliationServiceSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `service` with `mutlipleOr` enabled."
 * code = #service
@@ -595,7 +595,7 @@ Usage: #definition
 Title: "Search by specialty in OrganizationAffiliation with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-specialty.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "OrganizationAffiliation-specialtySearchParameter"
+* name = "OrganizationAffiliationSpecialtySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Organization by `specialty` with `mutlipleOr` enabled."
 * code = #specialty
@@ -603,216 +603,216 @@ Title: "Search by specialty in OrganizationAffiliation with multipleOr"
 * type = #token
 * multipleOr = true
 
-//Practicioner
-Instance: Practicioner-name
+//practitioner
+Instance: practitioner-name
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by name in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-name.html"
+Title: "Search by name in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-nameSearchParameter"
+* name = "PractitionerNameSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `name` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `name` with `mutlipleOr` enabled."
 * code = #name
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
-Instance: Practicioner-family
+Instance: practitioner-family
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by family name in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-family.html"
+Title: "Search by family name in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-family.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-familySearchParameter"
+* name = "PractitionerFamilySearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `family` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `family` with `mutlipleOr` enabled."
 * code = #family
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
-Instance: Practicioner-given
+Instance: practitioner-given
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by given name in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-given.html"
+Title: "Search by given name in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-given.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-givenSearchParameter"
+* name = "PractitionerGivenSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `given` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `given` with `mutlipleOr` enabled."
 * code = #given
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
-Instance: Practicioner-identifier
+Instance: practitioner-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by identifier in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-identifier.html"
+Title: "Search by identifier in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-identifier.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-identifierSearchParameter"
+* name = "PractitionerIdentifierSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `identifier` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `identifier` with `mutlipleOr` enabled."
 * code = #identifier
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
-Instance: Practicioner-identifier-assigner
+Instance: practitioner-identifier-assigner
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by identifier-assigner in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-identifier-assigner.html"
+Title: "Search by identifier-assigner in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-identifier-assigner.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-identifier-assignerSearchParameter"
+* name = "PractitionerIdentifierAssignerSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `identifier-assigner` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `identifier-assigner` with `mutlipleOr` enabled."
 * code = #identifier-assigner
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
-Instance: Practicioner-qualification-code
+Instance: practitioner-qualification-code
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by qualification-code in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-qualification-code.html"
+Title: "Search by qualification-code in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-qualification-code.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-qualification-codeSearchParameter"
+* name = "PractitionerQualificationCodeSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `qualification-code` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `qualification-code` with `mutlipleOr` enabled."
 * code = #qualification-code
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
-Instance: Practicioner-qualification-issuer
+Instance: practitioner-qualification-issuer
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by qualification-issuer in Practicioner with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Practicioner-qualification-issuer.html"
+Title: "Search by qualification-issuer in practitioner with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-qualification-issuer.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Practicioner-qualification-issuerSearchParameter"
+* name = "PractitionerQualificationIssuerSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of Practicioner by `qualification-issuer` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitioner by `qualification-issuer` with `mutlipleOr` enabled."
 * code = #qualification-issuer
-* base[0] = #Practicioner
+* base[0] = #Practitioner
 * type = #token
 * multipleOr = true
 
 
-//PracticionerRole
-Instance: PracticionerRole-endpoint
+//practitionerRole
+Instance: practitionerRole-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by endpoint in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-endpoint.html"
+Title: "Search by endpoint in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-endpoint.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-endpointSearchParameter"
+* name = "PractitionerRoleEndpointSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `endpoint` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitionerRole by `endpoint` with `mutlipleOr` enabled."
 * code = #endpoint
-* base[0] = #PracticionerRole
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-location
+Instance: practitionerRole-location
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by location in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-location.html"
+Title: "Search by location in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-location.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-locationSearchParameter"
+* name = "PractitionerRoleLocationSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `location` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitionerRole by `location` with `mutlipleOr` enabled."
 * code = #location
-* base[0] = #PracticionerRole
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-network
+Instance: practitionerRole-network
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by network in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-network.html"
+Title: "Search by network in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-network.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-networkSearchParameter"
+* name = "PractitionerRoleNetworkSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `network` with `mutlipleOr` enabled."
-* code = #network
-* base[0] = #PracticionerRole
+* description = "This SearchParameter enables query of practitionerRole by `network` with `mutlipleOr` enabled."
+* code = #Organization
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-organization
+Instance: practitionerRole-organization
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by organization in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-organization.html"
+Title: "Search by organization in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-organization.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-organizationSearchParameter"
+* name = "PractitionerRoleOrganizationSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `organization` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitionerRole by `organization` with `mutlipleOr` enabled."
 * code = #organization
-* base[0] = #PracticionerRole
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-Practicioner
+Instance: practitionerRole-practitioner
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by Practicioner in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-Practicioner.html"
+Title: "Search by practitioner in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-practitioner.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-PracticionerSearchParameter"
+* name = "PractitionerRolePractitionerSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `Practicioner` with `mutlipleOr` enabled."
-* code = #Practicioner
-* base[0] = #PracticionerRole
+* description = "This SearchParameter enables query of practitionerRole by `practitioner` with `mutlipleOr` enabled."
+* code = #Practitioner
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-role
+Instance: practitionerRole-role
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by role in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-role.html"
+Title: "Search by role in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-role.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-roleSearchParameter"
+* name = "PractitionerRoleRoleSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `role` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitionerRole by `role` with `mutlipleOr` enabled."
 * code = #role
-* base[0] = #PracticionerRole
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-service
+Instance: practitionerRole-service
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by service in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-service.html"
+Title: "Search by service in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-service.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-serviceSearchParameter"
+* name = "PractitionerRoleServiceSearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `service` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitionerRole by `service` with `mutlipleOr` enabled."
 * code = #service
-* base[0] = #PracticionerRole
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
-Instance: PracticionerRole-specialty
+Instance: practitionerRole-specialty
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Search by specialty in PracticionerRole with multipleOr"
-* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-PracticionerRole-specialty.html"
+Title: "Search by specialty in practitionerRole with multipleOr"
+* url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-specialty.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "PracticionerRole-specialtySearchParameter"
+* name = "PractitionerRoleSpecialtySearchParameter"
 * status = #active
-* description = "This SearchParameter enables query of PracticionerRole by `specialty` with `mutlipleOr` enabled."
+* description = "This SearchParameter enables query of practitionerRole by `specialty` with `mutlipleOr` enabled."
 * code = #specialty
-* base[0] = #PracticionerRole
+* base[0] = #PractitionerRole
 * type = #token
 * multipleOr = true
 
@@ -823,11 +823,11 @@ Usage: #definition
 Title: "Search by coverage-area in Network with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Network-coverage-area.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "Network-coverage-areaSearchParameter"
+* name = "NetworkCoverageAreaSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Network by `coverage-area` with `mutlipleOr` enabled."
 * code = #coverage-area
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -837,11 +837,11 @@ Usage: #definition
 Title: "Search by name in Network with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Network-name.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "name-specialtySearchParameter"
+* name = "NameSpecialtySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of Network by `name` with `mutlipleOr` enabled."
 * code = #name
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -852,11 +852,11 @@ Usage: #definition
 Title: "Search by coverage-area in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-area.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-coverage-areaSearchParameter"
+* name = "InsurancePlanCoverageAreaSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `coverage-area` with `mutlipleOr` enabled."
 * code = #coverage-area
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -866,11 +866,11 @@ Usage: #definition
 Title: "Search by administrated-by in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-administrated-by.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-administrated-bySearchParameter"
+* name = "InsurancePlanAdministratedBySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `administrated-by` with `mutlipleOr` enabled."
 * code = #administrated-by
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -880,11 +880,11 @@ Usage: #definition
 Title: "Search by coverage-benefit-type in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-benefit-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-coverage-benefit-typeSearchParameter"
+* name = "InsurancePlanCoverageBenefittypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `coverage-benefit-type` with `mutlipleOr` enabled."
 * code = #coverage-benefit-type
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -894,11 +894,11 @@ Usage: #definition
 Title: "Search by coverage-network in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-network.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-coverage-networkSearchParameter"
+* name = "InsurancePlanCoverageNetworkSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `coverage-network` with `mutlipleOr` enabled."
 * code = #coverage-network
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -908,11 +908,11 @@ Usage: #definition
 Title: "Search by identifier in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-identifier.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-identifierSearchParameter"
+* name = "InsurancePlanIdentifierSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `identifier` with `mutlipleOr` enabled."
 * code = #identifier
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -922,11 +922,11 @@ Usage: #definition
 Title: "Search by type in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-typeSearchParameter"
+* name = "InsurancePlantypeSearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `type` with `mutlipleOr` enabled."
 * code = #type
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -936,11 +936,11 @@ Usage: #definition
 Title: "Search by name in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-specialty.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-specialtySearchParameter"
+* name = "InsurancePlanSpecialtySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `specialty` with `mutlipleOr` enabled."
 * code = #name
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -950,11 +950,11 @@ Usage: #definition
 Title: "Search by owned-by in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-owned-by.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "InsurancePlan-owned-bySearchParameter"
+* name = "InsurancePlanOwnedBySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of InsurancePlan by `owned-by` with `mutlipleOr` enabled."
 * code = #owned-by
-* base[0] = #Network
+* base[0] = #Organization
 * type = #token
 * multipleOr = true
 
@@ -965,7 +965,7 @@ Usage: #definition
 Title: "Search by attestation-who in VerificationResult with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-attestation-who.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "VerificationResult-attestation-who-bySearchParameter"
+* name = "VerificationResultAttestationWhoBySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of VerificationResult by `attestation-who` with `mutlipleOr` enabled."
 * code = #attestation-who
@@ -979,7 +979,7 @@ Usage: #definition
 Title: "Search by primarysource-who in VerificationResult with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-primarysource-who.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "VerificationResult-primarysource-who-bySearchParameter"
+* name = "VerificationResultPrimarysourceWhoBySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of VerificationResult by `primarysource-who` with `mutlipleOr` enabled."
 * code = #primarysource-who
@@ -993,7 +993,7 @@ Usage: #definition
 Title: "Search by target in InsurancePlan with multipleOr"
 * url = "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-target.html"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* name = "VerificationResult-target-bySearchParameter"
+* name = "VerificationResultTargetBySearchParameter"
 * status = #active
 * description = "This SearchParameter enables query of VerificationResult by `target` with `mutlipleOr` enabled."
 * code = #attestation-who

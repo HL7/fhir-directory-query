@@ -17,8 +17,10 @@ Description:  "This value set includes the four Consent scope codes."
 CodeSystem: IgTypeCS
 Title: "IG Type"
 Description: "IG Type"
+
 * #FHIR	"FHIR"
 * #direct	"Direct"
+* ^caseSensitive = true
 
 CodeSystem: EndpointTypeCS
 Title: "IG Type"
@@ -26,6 +28,7 @@ Description: "IG Type"
 * #FHIR	"FHIR Server"
 * #OpEndpoint	"Operation Endpoint"
 * #CDS	"CDS Hooks"
+* ^caseSensitive = true
 
 CodeSystem: TrustFrameworkTypeCS
 Title: "Trust FrameworkType"
@@ -37,6 +40,7 @@ Description: "Trust Framework Type"
 * #PayerToPayer	"Payer to Payer Trust Network"
 * #Exchange	"Exchange Required by Federal Regulations"
 * #PCDH "Patient Centered Data Home"
+* ^caseSensitive = true
 
 CodeSystem: AcceptingPatientsCS
 Title: "Accepting Patients Codes"
@@ -45,6 +49,7 @@ Description: "Codes to identify if the practice is accepting new patients"
 * #newpt	"Accepting" "Accepting patients"
 * #existptonly	"Accepting existing patients" "Accepting existing patients"
 * #existptfam	"Accepting existing patients and their families" "Accepting existing patients and members of their families"
+* ^caseSensitive = true
 
 CodeSystem: AccessibilityCS
 Title: "Accessibility"
@@ -56,12 +61,14 @@ Description: "General categories of accommodations available."
 * #anssrvc	"answering service"	"Provides capability to communicate when intended recipient is not immediately available."
 * #cognitive	"cognitive"	"Provides services for cognitively impaired persons."
 * #mobility	"mobility"	"Provides services for mobility impaired persons."
+* ^caseSensitive = true
 
 CodeSystem: DeliveryMethodCS
 Title: "Delivery Methods"
 Description: "Categories of healthcare service delivery methods."
 * #virtual	"Virtual" "Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"
 * #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
+* ^caseSensitive = true
 
 CodeSystem: VirtualModalitiesCS
 Title: "Virtual Modalities"
@@ -72,18 +79,21 @@ Description: "Categories of virtual service delivery modalities."
 * #sms	"SMS" "SMS Text Messaging"
 * #app  "App" "Mobile Application"
 * #web  "Website" "Website accessed through browser"
+* ^caseSensitive = true
 
 CodeSystem:  EndpointConnectionTypeCS
   Title: "Endpoint Connection Types (additional)"
   Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
 * #hl7-fhir-opn "HL7 FHIR Operation" "Interact with a FHIR server interface using FHIR's RESTful interface using an operation other than messaging. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement."
 * #rest-non-fhir "REST (not FHIR)" "Interact with a server using HTTP/REST but not FHIR.  Should be used for web portals."
+* ^caseSensitive = true
  
 
 CodeSystem:  EndpointPayloadTypeCS
   Title: "Endpoint Payload Types"
   Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * #NA "Not Applicable" "Not Applicable"
+* ^caseSensitive = true
  
  CodeSystem: HealthcareServiceCategoryCS
  Title: "Healthcare Service Category"
@@ -103,6 +113,7 @@ CodeSystem:  EndpointPayloadTypeCS
 * #trans "Transportation" "Services which transport patients to or from a medical facility, e.g., ambulance."
 * #urg "Urgent Care" "Unscheduled health care services which provide for point-in-time evaluation or treatment of a non-life-threatening medical condition."
 * #vis "Vision" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
+* ^caseSensitive = true
 
 CodeSystem: InsuranceProductTypeCS
 Title: "Insurance Product Type"
@@ -129,6 +140,7 @@ Description:  "A distinct package of health insurance coverage benefits that are
 * #denthmo "Dental HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity provided through a Health Maintenance Organization (HMO)."
 * #vis "Vision Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
 * #vishmo "Vision HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes provided through a Health Maintenance Organization (HMO)."
+* ^caseSensitive = true
 
 CodeSystem: InsurancePlanTypeCS
 Title: "Insurance Plan Type"
@@ -141,6 +153,7 @@ Description:  "Categories of cost-sharing used by plans"
 * #lowdeductible "Low Deductible" "A plan that requires the insured to pay out of pocket a smaller proportion of incurred health care costs than a traditional insurance plan."
 * #highdeductible "High Deductible" "A plan that requires the insured to pay out of pocket a larger proportion of incurred health care costs than a traditional insurance plan."
 * #catastrophicplan "Catastrophic Plan" "A plan that requires the insured to pay out of pocket a much larger proportion of incurred health care costs than a traditional insurance plan."
+* ^caseSensitive = true
 
 CodeSystem:  OrgTypeCS
   Title: "Organization Type"
@@ -151,6 +164,7 @@ CodeSystem:  OrgTypeCS
 * #atyprv "Atypical Provider" "Providers that do not provide healthcare"
 * #bus "Non-Healthcare Business" "An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility"
 * #ntwk "Network" "A healthcare provider insurance network"
+* ^caseSensitive = true
 
 
 CodeSystem: QualificationStatusCS
@@ -162,6 +176,7 @@ Description: "The state indicating if a qualification is currently valid."
 * #revoked "revoked" "The credential was revoked by the issuing organization and should not be considered valid for use."
 * #pending "pending" "The credential has not been officially assigned. It may or may not be considered valid for use."
 * #unknown "unknown" "The status of this credential is unknown. It may or may not be considered valid for use."
+* ^caseSensitive = true
 
 
 CodeSystem: ProviderRoleCS
@@ -209,7 +224,78 @@ Description: "A capability that an individual, group, or organization is acknowl
 * #sp "Speech Language Pathologist" "Speech Language Pathologist"
 * #sh "Speech, Language and Hearing Service Providers" "Speech, Language and Hearing Service Providers"
 * #te "Technologists, Technicians and Other Technical Service Providers" "Technologists, Technicians and Other Technical Service Providers"
+* ^caseSensitive = true
 
 
 
 
+CodeSystem: OrgAliasTypeCS
+Title: "Qualification Status"
+Description: "The state indicating if a qualification is currently valid."
+* #legalalternative "Legal Alternative" "A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.)."
+* #historical "Historical" "Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization."
+* ^caseSensitive = true
+
+
+CodeSystem: ValidationTypeCS
+Title: "Validation Type Code System"
+Description: "This code system contains codes for documenting the attributes of the FHIR resource Validation to reflect the business process of validating information in a Healthcare Directory.."
+* #noneneeded	"None needed"	"No validation needed/planned for this resource or element."
+* #initial	"Initial"	"Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'."
+* #periodic	"Periodic"	"Validation is needed after initial attestation and on a periodic basis. E.g. elements that expire or may change such as licensure."
+* #attested	"Attested"	"Indicates the element or resource has only been attested."
+* #validated	"Validated"	"Indicates the element or resource has been successfully validated."
+* #inprocess	"Inprocess"	"Indicates the element or resource is currently being validated."
+* #reqreval	"Required revalidation"	"Indicates the element or resource has passed an expiration date and requires revalidation."
+* #valfailed	"Valiation failed"	"Indicates validation was attepted on an element or resource and that validation failed."
+* #nothing	"Nothing"	"No external validation is required."
+* #single	"Single"	"Indicates the element or resource is validated against a single source."
+* #multiple	"Multiple"	"Indicates the element or resource may require validation against multiple sources, e.g. a practitioner participating in an insurance network."
+* #editcheck	"Edit check"	"Indicates the element or resource is validated for format, range, presence, or other similar properties."
+* #valueset	"Valueset"	"Indicates the element or resource is validated against a value set."
+* #extsource	"External source"	"Indicates the element or resource is validated against an external source."
+* #standalone	"Stand alone"	"Indicates the element or resource is validated by itself and is unrelated to other elements or resources."
+* #incontext	"In context"	"Indicates the element or resource is validated by the existence or value of another related element or resource."
+* #fatal	"Fatal"	"A failure that is likely relevant to local workflow environments, considered sufficient to suspend the resource/element and one or more action has been taken."
+* #warning	"Warning"	"A failure that may be relevant to some local workflow environments, but in and of itself is not consider sufficient to suspend the resource/element. E.g. validating membership in an organization."
+* #recordonly	"Record only"	"A failure that may be relevant to some local workflow environments and will be documented but not result in notification or publication of the error."
+* #noaction	"No action"	"A failure that is unlikely to be relevant to any local workflow environment."
+* #manual	"Manual"	"The resource or element is validated manually."
+* #portal	"Portal"	"The resource or element is validated via a portal into a source of valid data."
+* #push	"Push"	"Data is sent (i.e. pushed) from a source of valid data to the Healthcare Directory."
+* #pull	"Pull"	"Data is retrieved (i.e. pulled) from a source of valid data into the Healthcare Directory"
+* #successful	"Successful"	"The validation process is complete and a determination made that the the attested data is true and accurate."
+* #failed	"Failed"	"The validation process is complete and a determination made that the the attested data is not true or accurate."
+* #undetermined	"Undetermined"	"The validation process is complete and a determination could not be made that the the attested data is, or is not, true and accurate."
+* #pushyes	"Yes"	"The primary source validation can be achieved via a push of data from the source of that information."
+* #pushno	"No"	"The primary source validation cannot be achieved via a push of data from the source of that information."
+* #pushundetermined	"Undetermined"	"It is if undetermined if primary source validation can be achieved via a push of data from the source of that information."
+* #specific	"Specific requested changes"	"The sender will send specific changes to the healthcare directory as determined by agreement."
+* #any	"Any changes"	"The sender will send all changes to the healthcare directory."
+* #sourcedef	"As defined by the source/sender"	"The sender will only send changes they have determined to be significant."
+* #owner	"Owner"	"Indicates the element or resource was attested to by the individual who owned the data."
+* #authrep	"Authorized representative"	"Indicates the element or resource was attested to by an individual who was designated to attest by the owner of the data."
+* #authint	"Authorized intermediary"	"Indicates the element or resource was attested to by a system (intermediary) that was designated to attest by the owner of the data."
+* #non-auth-src	"Non-authorized source"	"Indicates the element or resource was attested to by an individual or system that was not designated to attest by the owner of the data."
+* #licenseboard	"License Board"	"License Board"
+* #primaryed	"Primary Education"	"Primary Education"
+* #continuinged	"Continuing Education"	"Continuing Education"
+* #postalservice	"Postal Service"	"Postal Service"
+* #relowner	"Relationship owner"	"Relationship owner"
+* #regauth	"Registration Authority"	"Registration Authority"
+* #legalsource	"Legal source"	"Legal source"
+* #issuingsource	"Issuing source"	"Issuing source"
+* #attester	"Attester"	"Attester"
+* ^caseSensitive = true
+
+
+CodeSystem: CredentialStatusCS
+Title: "Credential Status Code System"
+Description: "This code system contains codes for indicating the status of a credential, such as an identifier or qualification."
+* #active	"active"	"The credential may be considered valid for use."
+* #inactive "inactive"	"The credential may not be considered valid for use."
+* #issued-in-error	"issued in error"	"The credential was mistakenly assigned and should not be considered valid for use."
+* #revoked	"revoked"	"The credential was revoked by the issuing organization and should not be considered valid for use."
+* #pending	"pending"	"The credential has not been officially assigned. It may or may not be considered valid for use."
+* #unknown	"unknown"	"The status of this credential is unknown. It may or may not be considered valid for use."
+* ^caseSensitive = true

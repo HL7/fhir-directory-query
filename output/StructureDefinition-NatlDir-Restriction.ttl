@@ -24,7 +24,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirRestriction"];
-  fhir:StructureDefinition.title [ fhir:value "NatlDir Restriction"];
+  fhir:StructureDefinition.title [ fhir:value "National Directory Endpoint Qry Exchange  Restriction"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-12-15T01:01:31.325+11:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];

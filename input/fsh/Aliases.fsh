@@ -12,12 +12,14 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias: $consent = http://hl7.org/fhir/uv/vhdir/ValueSet/consent
 Alias: $verificationresult-validation-type = http://hl7.org/fhir/ValueSet/verificationresult-validation-type
-Alias: $validationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
+Alias: $verificationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
 Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type
 Alias: $verificationresult-communication-method_1 = http://hl7.org/fhir/ValueSet/verificationresult-communication-method
 Alias: $identifierstatus = http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus
-Alias: $aliastype = http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype
-Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype
+//Alias: $aliastype = http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype
+
+//Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype
+Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/StructureDefinition/digitalcertificate
 Alias: $digitalcertificateuse = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse
 Alias: $digitalcertificatestandard = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard
 Alias: $digitalcertificatetrustframework = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework
@@ -49,12 +51,13 @@ Alias:  $NUCCProviderTaxonomy = http://nucc.org/provider-taxonomy
 Alias:  $V2table0360VS = http://terminology.hl7.org/ValueSet/v2-0360 
 Alias:  $V2table0360CS = http://terminology.hl7.org/CodeSystem/v2-0360 
 Alias:  $yesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
+Alias:  $paymentTypeVS = http://terminology.hl7.org/ValueSet/v2-0570
 
 
 // NatlDir defined CS that mimic VHDir CodeSystems
-Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
-Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
+Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
+Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 

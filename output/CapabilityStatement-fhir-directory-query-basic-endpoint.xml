@@ -3,7 +3,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="fhir-directory-query-basic-endpoint"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CapabilityStatementFhirDirectoryQuerybasicEndpoint</h2><div><p>Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CapabilityStatementFhirDirectoryQueryBasicEndpoint</h2><div><p>Capabilities for a basic Query Server for Health Services where Endpoint search capabilities are met</p>
 </div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>A Federated Query server <strong>SHALL</strong>:</p>
 <ol>
 <li>Support all profiles defined in this Implementation Guide..</li>
@@ -25,12 +25,12 @@
 <ol>
 <li>Support xml source formats for all Federated Query interactions.</li>
 </ol>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>endpoint</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>healthcareService</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>location</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>network</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>organization</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Restriction</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Validation</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html</a></td><td></td><td></td><td></td><td></td></tr></table></div>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Endpoint</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>HealthcareService</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Location</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Consent</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>VerificationResult</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html">https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html</a></td><td></td><td></td><td></td><td></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint"/>
   <version value="0.0.1"/>
-  <name value="CapabilityStatementFhirDirectoryQuerybasicEndpoint"/>
-  <title value="Capability Statement Basic Federated Endpoint Server  "/>
+  <name value="CapabilityStatementFhirDirectoryQueryBasicEndpoint"/>
+  <title value="Capability Statement Basic Federated Endpoint Server"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2022-02-15T07:15:00.000000-04:00"/>
@@ -46,7 +46,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Capabilities for a basic Query Server for Health Services where endpoint search capabilities are met"/>
+  <description value="Capabilities for a basic Query Server for Health Services where Endpoint search capabilities are met"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -65,10 +65,7 @@
       <description value="1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.&#xA;1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
     </security>
     <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHALL"/>
-      </extension>
-      <type value="endpoint"/>
+      <type value="Endpoint"/>
       <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -86,13 +83,61 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
+        <name value="connection-type"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-connection-type.html"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="mime-type"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-mime-type.html"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="organization"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-organization.html"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="payload-type"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-payload-type.html"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="usecase-standard"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-standard.html"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="status"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-status.html"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
         <name value="usecase-type"/>
         <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html"/>
         <type value="token"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="healthcareService"/>
+      <type value="HealthcareService"/>
       <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -236,7 +281,7 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="location"/>
+      <type value="Location"/>
       <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -292,34 +337,10 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="network"/>
-      <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-      </supportedProfile>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="coverage-area"/>
-        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-coverage-area"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="name"/>
-        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-network-name"/>
-        <type value="token"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="organization"/>
+      <type value="Organization"/>
       <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="MAY"/>
         </extension>
       </supportedProfile>
       <searchParam>
@@ -368,6 +389,22 @@
         </extension>
         <name value="partOf"/>
         <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-organization-partOf"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="coverage-area"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-location-coverage-area"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="Networkname"/>
+        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-network-name"/>
         <type value="token"/>
       </searchParam>
     </resource>
@@ -580,20 +617,12 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="Restriction"/>
+      <type value="Consent"/>
       <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>
       </supportedProfile>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_id"/>
-        <definition value="https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Restriction-identifier"/>
-        <type value="token"/>
-      </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -652,7 +681,7 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="Validation"/>
+      <type value="VerificationResult"/>
       <supportedProfile value="https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>

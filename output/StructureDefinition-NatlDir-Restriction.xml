@@ -43,7 +43,7 @@
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction"/>
   <version value="0.0.1"/>
   <name value="NatlDirRestriction"/>
-  <title value="NatlDir Restriction"/>
+  <title value="National Directory Endpoint Qry Exchange  Restriction"/>
   <status value="active"/>
   <date value="2017-12-15T01:01:31.325+11:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>

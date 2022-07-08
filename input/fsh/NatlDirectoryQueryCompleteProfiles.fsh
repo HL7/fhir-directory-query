@@ -8,7 +8,10 @@ Description:    "The HealthCareService resource typically describes services off
 * extension contains
     Rating named rating 0..* MS and 
     NewPatients named newpatients 0..* MS and
-    DeliveryMethod named deliverymethod 1..* MS 
+    DeliveryMethod named deliverymethod 1..* MS and
+    PaymentAccepted named paymentaccepted  0..* and
+    RequiredDocument named requiredDocument 0..* and
+    FundingSource named fundingSource 0..*
 * extension[newpatients] ^short = "New Patients"
 * extension[deliverymethod] ^short = "Delivery Method"
 * identifier.type MS

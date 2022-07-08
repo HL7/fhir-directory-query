@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OrgAliasTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-OrgAliasTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgAliasTypeCS</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrgAliasTypeVS"/>
+  <version value="0.0.1"/>
+  <name value="OrgAliasTypeVS"/>
+  <title value="Organization Alias Type"/>
+  <status value="active"/>
+  <date value="2022-07-08T11:33:11-04:00"/>
+  <publisher value="HL7 Patient Administration Working Group"/>
+  <contact>
+    <name value="HL7 Patient Administration Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pafm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Categories of an organization&#39;s Alias based on criteria in provider directories."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgAliasTypeCS"/>
+    </include>
+  </compose>
+</ValueSet>

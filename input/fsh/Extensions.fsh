@@ -1,4 +1,48 @@
 
+
+
+//added 4/19 SMM
+//supports HSDS interoperabilty
+Extension: PaymentAccepted
+Id: paymentAccepted
+Title: "Payment Accepted"
+Description: "Methods of payment that can be used for a healthcare service"
+* extension contains
+   id 1..* and 
+   type  1..*  
+* extension[type].id only string
+* extension[type].value[x] only string
+* extension[type] ^short = "Payment Type"
+* extension[type].value[x] 1..1
+* extension[type].value[x] from $paymentTypeVS (required)
+
+//added 4/19 SMM
+//supports HSDS interoperabilty
+Extension: RequiredDocument
+Id: requiredDocument
+Title: "Required Document"
+Description: "Documents that are required in order to access or use services (eg. Gov't issued ID, passport)"
+* extension contains
+   id 1..* and 
+   document  1..*  
+* extension[id].value[x] only string
+* extension[document].value[x] only string
+
+//added 4/19 SMM
+//supports HSDS interoperabilty
+Extension: FundingSource
+Id: fundingSource
+Title: "Funding Source"
+Description: "The sources of funding for a service or organization"
+* extension contains
+   id 1..* and 
+   fundingOrganization 0..* and
+   fundingSource  1..*  
+* extension[id].value[x] only string
+* extension[fundingSource].value[x] only string
+* extension[fundingOrganization].value[x] only Reference(NatlDirEndpointQryOrganization)
+
+
 Extension: UsageRestriction
 Id: usage-restriction
 Title: "NatlDir Usage Restriction"
@@ -170,7 +214,7 @@ Description: "Type of alias (legal alternative | historical)"
 * . ^definition = "Type of alias (legal alternative | historical)"
 * valueCodeableConcept 1.. MS
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $aliastype (example)
+* valueCodeableConcept from OrgAliasTypeVS (example)
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept ^label = "type"
 * valueCodeableConcept ^short = "Type"
@@ -248,7 +292,7 @@ Description: "The technical details of an endpoint that can be used for electron
 * valueReference ^short = "Endpoint reference"
 * valueReference ^definition = "A reference to the endpoint"
 
-
+/*
 Extension: DigitalCertificate
 Id: digitalcertificate
 Title: "NatlDirEndpointQry Digitalcertificate"
@@ -333,7 +377,7 @@ Description: "A digital certificate, used to identify a user or group of users, 
 * extension[trustFramework].valueCodeableConcept ^short = "Trust framework"
 * extension[trustFramework].valueCodeableConcept ^definition = "The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)"
 //* value[x] MS
-
+*/
 
 Extension: CareteamAlias
 Id: careteam-alias
@@ -365,7 +409,7 @@ Description: "Describes the status of an identifier"
 * . ^definition = "Describes the status of an identifier"
 * valueCode 1.. MS
 * valueCode only code
-* valueCode from $identifierstatus (required)
+* valueCode from IdentifierStatusVS (required)
 * valueCode ^sliceName = "valueCode"
 * valueCode ^label = "status"
 * valueCode ^short = "active|inactive|issued-in-error|revoked|pending"

@@ -1,4 +1,20 @@
 
+ValueSet: IdentifierStatusVS
+Title: "IG Type"
+Description: "Codes to identify IG Type"
+* codes from system CredentialStatusCS
+
+
+ValueSet: ValidationProcessVS
+Title: "Validation Type"
+Description: "Codes to identify Validation Type"
+* ValidationTypeCS#editcheck  "edit check"
+* ValidationTypeCS#valueset	"Valueset"
+* ValidationTypeCS#extsource	"External source"
+* ValidationTypeCS#standalone	"Stand alone"
+* ValidationTypeCS#incontext	"In context"
+* ValidationTypeCS#attester	"Attester"
+
 ValueSet: IgTypeVS
 Title: "IG Type"
 Description: "Codes to identify IG Type"
@@ -109,6 +125,11 @@ Title: "Organization Type"
 Description:  "Categories of organizations based on criteria in provider directories."
 * codes from system OrgTypeCS
 * exclude OrgTypeCS#ntwk   // only Network profile uses this type 
+
+ValueSet: OrgAliasTypeVS
+Title: "Organization Alias Type"
+Description:  "Categories of an organization's Alias based on criteria in provider directories."
+* codes from system OrgAliasTypeCS
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type"

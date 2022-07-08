@@ -88,7 +88,7 @@ Description:    "The technical details of an endpoint that can be used for elect
     AssociatedServers named associated-servers 0..* and
     SecureEndpoint named secured-endpoint 0..1
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
-* status 1..1 MS
+* status 1..1 MS 
 * status = #active (exactly)  
 * connectionType MS  
 * connectionType from EndpointConnectionTypeVS (extensible)
@@ -116,7 +116,10 @@ Description:    "The HealthCareService resource typically describes services off
 * extension contains
     Rating named rating 0..*  and
     NewPatients named newpatients 0..*  and
-    DeliveryMethod named deliverymethod 1..*  
+    DeliveryMethod named deliverymethod 1..* and
+    PaymentAccepted named paymentaccepted  0..* and
+    RequiredDocument named requiredDocument 0..* and
+    FundingSource named fundingSource 0..*
 * extension[newpatients] ^short = "New Patients"
 * extension[deliverymethod] ^short = "Delivery Method"
 * identifier.type 
@@ -240,6 +243,8 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * extension contains
    Rating named rating 0..*  and
    Qualification named qualification 0..*   and
+   PaymentAccepted named paymentaccepted  0..* and
+   FundingSource named fundingSource 0..* and
    OrgDescription named org-description  0..1 
 * extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[qualification] ^short = "Qualification"
@@ -572,15 +577,15 @@ Severity:   #error
 
 
 
-Profile: NatlDirEndpointQryValidation
+Profile: NatlDirEndpointQryVerification
 Parent: VerificationResult
-Id: NatlDir-Validation
-Title: "NatlDir Validation"
-Description: "Describes validation requirements, source(s), status and dates for one or more elements"
+Id: NatlDir-Verification
+Title: "National Directory Endpoint Qry Exchange  Verification"
+Description: "Describes Verification requirements, source(s), status and dates for one or more elements"
 * ^date = "2017-12-10T12:42:47.483-05:00"
 * ^status = #active
-* . ^short = "Validation"
-* . ^definition = "Describes validation requirements, source(s), status and dates for one or more elements"
+* . ^short = "Verification"
+* . ^definition = "Describes Verification requirements, source(s), status and dates for one or more elements"
 * target 1..* MS
 * targetLocation MS
 * need 1..1 MS
@@ -591,7 +596,7 @@ Description: "Describes validation requirements, source(s), status and dates for
 * validationType ^short = "nothing|single|multiple"
 * validationType ^definition = "What the target is validated against (nothing|single source|multiple sources)"
 * validationProcess 1..* MS
-* validationProcess from $validationprocess (example)
+* validationProcess from ValidationProcessVS (example)
 * validationProcess ^short = "The process(es) by which the target is validated"
 * validationProcess ^definition = "The process(es) by which the target is validated"
 * frequency MS
@@ -633,7 +638,7 @@ Description: "Describes validation requirements, source(s), status and dates for
 Profile: NatlDirRestriction
 Parent: Consent
 Id: NatlDir-Restriction
-Title: "NatlDir Restriction"
+Title: "National Directory Endpoint Qry Exchange  Restriction"
 Description: "Restriction on use/release of exchanged information"
 * ^status = #active
 * ^date = "2017-12-15T01:01:31.325+11:00"
