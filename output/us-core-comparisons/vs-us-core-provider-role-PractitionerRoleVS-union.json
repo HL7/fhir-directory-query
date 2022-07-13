@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "5a18e190-3ac4-4778-98c6-274b538f0d25-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/5a18e190-3ac4-4778-98c6-274b538f0d25-11",
+  "id" : "d3721c19-9a61-476a-92ae-f1b4c9c8a382-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d3721c19-9a61-476a-92ae-f1b4c9c8a382-11",
   "name" : "UnionUSCoreProviderRoleNuccAndPractitionerRoleVS",
   "title" : "Union of US Core Provider Role (NUCC) And PractitionerRole Code",
   "status" : "active",
-  "date" : "2022-07-12T12:55:39-04:00",
+  "date" : "2022-07-13T15:48:45-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -25,6 +25,11 @@
   },
   "expansion" : {
     "contains" : [{
+      "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "101200000X",
+      "display" : "Drama Therapist"
+    },
+    {
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "101Y00000X",
       "display" : "Counselor"
@@ -71,6 +76,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "103GC0700X",
+      "display" : "Deactivated - Clinical Neuropsychologist"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "103K00000X",
       "display" : "Behavioral Analyst"
     },
@@ -111,6 +121,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "103TE1000X",
+      "display" : "Deactivated - Psychologist"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "103TE1100X",
       "display" : "Exercise & Sports Psychologist"
     },
@@ -136,6 +151,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "103TM1700X",
+      "display" : "Deactivated - Psychologist Men & Masculinity"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "103TM1800X",
       "display" : "Intellectual & Developmental Disabilities Psychologist"
     },
@@ -151,6 +171,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "103TP2700X",
+      "display" : "Deactivated - Psychologist Psychotherapy"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "103TP2701X",
       "display" : "Group Psychotherapy Psychologist"
     },
@@ -163,6 +188,11 @@
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "103TS0200X",
       "display" : "School Psychologist"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "103TW0100X",
+      "display" : "Deactivated - Psychotherapy Women"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -851,6 +881,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "171400000X",
+      "display" : "Health & Wellness Coach"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "171M00000X",
       "display" : "Case Manager/Care Coordinator"
     },
@@ -1011,6 +1046,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "1835G0000X",
+      "display" : "Deactivated - Pharmacist"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "1835G0303X",
       "display" : "Geriatric Pharmacist"
     },
@@ -1076,6 +1116,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "202D00000X",
+      "display" : "Integrative Medicine"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "202K00000X",
       "display" : "Phlebology Physician"
     },
@@ -1092,7 +1137,7 @@
     {
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "204E00000X",
-      "display" : "Oral & Maxillofacial Surgery (D.M.D.) Physician"
+      "display" : "Oral & Maxillofacial Surgery (D.M.D.)"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -1476,6 +1521,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "207VC0300X",
+      "display" : "Complex Family Planning"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "207VE0102X",
       "display" : "Reproductive Endocrinology Physician"
     },
@@ -1537,7 +1587,7 @@
     {
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "207WX0110X",
-      "display" : "Pediatric Ophthalmology and Strabismus Specialist Physician"
+      "display" : "Pediatric Ophthalmology and Strabismus Specialist Physician Physician"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -1747,7 +1797,7 @@
     {
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "2080P0006X",
-      "display" : "Developmental – Behavioral Pediatrics Physician"
+      "display" : "Developmental - Behavioral Pediatrics Physician"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -1961,6 +2011,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "2084E0001X",
+      "display" : "Epilepsy Physician"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "2084F0202X",
       "display" : "Forensic Psychiatry Physician"
     },
@@ -1992,7 +2047,7 @@
     {
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "2084P0005X",
-      "display" : "Neurodevelopmental Disabilities Physician"
+      "display" : "Neurodevelopmental Disabilities Physician Physician"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -2213,6 +2268,11 @@
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "213E00000X",
       "display" : "Podiatrist"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "213EG0000X",
+      "display" : "Deactivated - Podiatrist"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -3511,6 +3571,11 @@
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "2865C1500X",
+      "display" : "Deactivated - Military Hospital"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
       "code" : "2865M2000X",
       "display" : "Military General Acute Care Hospital"
     },
@@ -3518,6 +3583,11 @@
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "2865X1600X",
       "display" : "Operational (Transportable) Military General Acute Care Hospital"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "287300000X",
+      "display" : "Deactivated - Christian Science Sanitorium"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -3618,6 +3688,11 @@
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "315P00000X",
       "display" : "Intellectual Disabilities Intermediate Care Facility"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "317400000X",
+      "display" : "Deactivated - Christian Science Facility"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",
@@ -3853,6 +3928,11 @@
       "system" : "http://nucc.org/provider-taxonomy",
       "code" : "3418M1130X",
       "display" : "Military or U.S. Coast Guard Water Transport Ambulance"
+    },
+    {
+      "system" : "http://nucc.org/provider-taxonomy",
+      "code" : "342000000X",
+      "display" : "Transportation Network Company"
     },
     {
       "system" : "http://nucc.org/provider-taxonomy",

@@ -94,6 +94,8 @@ Usage: #example
 * category = HealthcareServiceCategoryCS#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
+* extension[fundingSource].extension[fundingSource].valueString = "Grant"
+
 
 Instance: HansSoloClinic
 InstanceOf: NatlDirEndpointQryLocation
@@ -120,6 +122,7 @@ Usage: #example
 * telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][4].valueCode  = #fri 
 * telecom[0].extension[contactpoint-availabletime][0].extension[availableStartTime].valueTime = 08:00:00
 * telecom[0].extension[contactpoint-availabletime][0].extension[availableEndTime].valueTime = 17:00:00
+* telecom[0].extension[contactpoint-viaintermediary][0].valueReference = Reference(HansSoloRole1)
 * telecom[1].system = #url
 * telecom[1].value = "https://www.hanssolo.com"
 * telecom[1].rank = 1

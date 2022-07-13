@@ -1,6 +1,8 @@
 {
   "version": "0.0.1",
-  "fhirVersion": "[4.0.1]",
-  "date": "20220712125443",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220713154748",
   "name": "hl7.fhir.us.fhir-directory-query"
 }

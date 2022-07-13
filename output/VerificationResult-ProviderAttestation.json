@@ -1,0 +1,64 @@
+{
+  "resourceType": "VerificationResult",
+  "id": "ProviderAttestation",
+  "meta": {
+    "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
+    "profile": [
+      "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ProviderAttestation\" Updated \"2020-07-07 01:26:22+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDir-Verification.html\">National Directory Endpoint Qry Exchange  Verification</a></p></div><p><b>target</b>: <a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</p><p><b>need</b>: none <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#none)</span></p><p><b>status</b>: attested</p><p><b>statusDate</b>: 2020-07-07 01:26:22+0000</p><p><b>validationType</b>: primary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#primary)</span></p><p><b>validationProcess</b>: attester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#attester)</span></p><p><b>failureAction</b>: warn <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#warn)</span></p><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>Date</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</td><td>pull <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#pull)</span></td><td>2020-07-07</td></tr></table></div>"
+  },
+  "target": [
+    {
+      "reference": "Practitioner/JoeSmith"
+    }
+  ],
+  "need": {
+    "coding": [
+      {
+        "code": "none"
+      }
+    ]
+  },
+  "status": "attested",
+  "statusDate": "2020-07-07T13:26:22.0314215+00:00",
+  "validationType": {
+    "coding": [
+      {
+        "code": "primary"
+      }
+    ]
+  },
+  "validationProcess": [
+    {
+      "coding": [
+        {
+          "code": "attester"
+        }
+      ]
+    }
+  ],
+  "failureAction": {
+    "coding": [
+      {
+        "code": "warn"
+      }
+    ]
+  },
+  "attestation": {
+    "who": {
+      "reference": "Practitioner/JoeSmith"
+    },
+    "communicationMethod": {
+      "coding": [
+        {
+          "code": "pull"
+        }
+      ]
+    },
+    "date": "2020-07-07"
+  }
+}

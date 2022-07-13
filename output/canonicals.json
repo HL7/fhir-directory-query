@@ -406,13 +406,6 @@
     "name": "IGsSupported"
   },
   {
-    "id": "insuranceplan-reference",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/insuranceplan-reference",
-    "version": "0.0.1",
-    "name": "InsurancePlanReference"
-  },
-  {
     "id": "location-reference",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/location-reference",

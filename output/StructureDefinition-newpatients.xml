@@ -28,7 +28,7 @@
   <name value="NewPatients"/>
   <title value="New Patients"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -89,14 +89,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <constraint>
         <key value="new-patients-characteristics"/>
         <severity value="error"/>
         <human value="If no new patients are accepted, no characteristics are allowed"/>
-        <expression value="extension(&#39;acceptingPatients&#39;).valueCodeableConcept.coding.exists(code = &#39;no&#39;) implies extension(&#39;characteristics&#39;).empty()"/>
+        <expression value="extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()"/>
         <source value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"/>
       </constraint>
       <isModifier value="false"/>
@@ -856,7 +856,7 @@
         <key value="new-patients-characteristics"/>
         <severity value="error"/>
         <human value="If no new patients are accepted, no characteristics are allowed"/>
-        <expression value="extension(&#39;acceptingPatients&#39;).valueCodeableConcept.coding.exists(code = &#39;no&#39;) implies extension(&#39;characteristics&#39;).empty()"/>
+        <expression value="extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()"/>
         <source value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"/>
       </constraint>
     </element>

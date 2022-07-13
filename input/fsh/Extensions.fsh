@@ -252,6 +252,7 @@ Description: "Additional information about new patients a practitioner/service/l
 * valueString ^definition = "Additional information about new patients a practitioner/service/location accepts (e.g. only children)"
 */
 
+/* SMM take out on 7/13 as its not in spreadsheet 
 Extension: InsurancePlanReference
 Id: insuranceplan-reference
 Title: "NatlDirEndpointQry Insurance Plan Reference"
@@ -266,7 +267,7 @@ Description: "A reference to the insurancePlan resource"
 * valueReference ^sliceName = "valueReference"
 * valueReference ^short = "A reference to the insurance plan"
 * valueReference ^definition = "A reference to the insurance plan"
-
+*/
 
 Extension: HealthcareServiceReference
 Id: healthcareservice-reference

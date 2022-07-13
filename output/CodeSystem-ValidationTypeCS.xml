@@ -10,7 +10,7 @@
   <name value="ValidationTypeCS"/>
   <title value="Validation Type Code System"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -41,7 +41,7 @@
   <concept>
     <code value="initial"/>
     <display value="Initial"/>
-    <definition value="Validation is only needed after initial attestation. For elements that typically do not change such as &#39;medical school attended and graduation date&#39;."/>
+    <definition value="Validation is only needed after initial attestation. For elements that typically do not change such as 'medical school attended and graduation date'."/>
   </concept>
   <concept>
     <code value="periodic"/>

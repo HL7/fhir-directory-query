@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="PatientConsent"/>
+  <meta>
+    <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
+    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "PatientConsent" Updated "2020-07-07 01:26:22+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NatlDir-Restriction.html">National Directory Endpoint Qry Exchange  Restriction</a></p></div><p><b>status</b>: active</p><p><b>scope</b>: patient-privacy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#patient-privacy)</span></p><p><b>category</b>: 59284-0 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#59284-0)</span></p></div>
+  </text>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <code value="patient-privacy"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <code value="59284-0"/>
+    </coding>
+  </category>
+</Consent>

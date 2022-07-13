@@ -10,7 +10,7 @@
   <name value="IndividualAndGroupSpecialtiesVS"/>
   <title value="Individual and Group Specialties"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -627,7 +627,7 @@
       </concept>
       <concept>
         <code value="163WW0101X"/>
-        <display value="Ambulatory Women&#39;s Health Care Registered Nurse"/>
+        <display value="Ambulatory Women's Health Care Registered Nurse"/>
       </concept>
       <concept>
         <code value="163WX0002X"/>
@@ -2503,7 +2503,7 @@
       </concept>
       <concept>
         <code value="363LW0102X"/>
-        <display value="Women&#39;s Health Nurse Practitioner"/>
+        <display value="Women's Health Nurse Practitioner"/>
       </concept>
       <concept>
         <code value="363LX0001X"/>
@@ -2635,7 +2635,7 @@
       </concept>
       <concept>
         <code value="364SW0102X"/>
-        <display value="Women&#39;s Health Clinical Nurse Specialist"/>
+        <display value="Women's Health Clinical Nurse Specialist"/>
       </concept>
       <concept>
         <code value="364SX0106X"/>
@@ -2711,7 +2711,7 @@
       </concept>
       <concept>
         <code value="376K00000X"/>
-        <display value="Nurse&#39;s Aide"/>
+        <display value="Nurse's Aide"/>
       </concept>
       <concept>
         <code value="405300000X"/>

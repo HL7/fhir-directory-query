@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/fhir-directory-query/VerificationResult/ProviderAttestation> a fhir:VerificationResult;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ProviderAttestation"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ProviderAttestation\" Updated \"2020-07-07 01:26:22+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDir-Verification.html\">National Directory Endpoint Qry Exchange  Verification</a></p></div><p><b>target</b>: <a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</p><p><b>need</b>: none <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#none)</span></p><p><b>status</b>: attested</p><p><b>statusDate</b>: 2020-07-07 01:26:22+0000</p><p><b>validationType</b>: primary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#primary)</span></p><p><b>validationProcess</b>: attester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#attester)</span></p><p><b>failureAction</b>: warn <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#warn)</span></p><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>Date</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</td><td>pull <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#pull)</span></td><td>2020-07-07</td></tr></table></div>"
+  ];
+  fhir:VerificationResult.target [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Practitioner/JoeSmith>;
+     fhir:Reference.reference [ fhir:value "Practitioner/JoeSmith" ]
+  ];
+  fhir:VerificationResult.need [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "none" ]
+     ]
+  ];
+  fhir:VerificationResult.status [ fhir:value "attested"];
+  fhir:VerificationResult.statusDate [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime];
+  fhir:VerificationResult.validationType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "primary" ]
+     ]
+  ];
+  fhir:VerificationResult.validationProcess [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "attester" ]
+     ]
+  ];
+  fhir:VerificationResult.failureAction [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "warn" ]
+     ]
+  ];
+  fhir:VerificationResult.attestation [
+     fhir:VerificationResult.attestation.who [
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Practitioner/JoeSmith>;
+       fhir:Reference.reference [ fhir:value "Practitioner/JoeSmith" ]
+     ];
+     fhir:VerificationResult.attestation.communicationMethod [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "pull" ]
+       ]
+     ];
+     fhir:VerificationResult.attestation.date [ fhir:value "2020-07-07"^^xsd:date ]
+  ] .
+
+<http://hl7.org/fhir/us/fhir-directory-query/Practitioner/JoeSmith> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/fhir-directory-query/VerificationResult/ProviderAttestation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/VerificationResult/ProviderAttestation.ttl> .
+
+# -------------------------------------------------------------------------------------
+

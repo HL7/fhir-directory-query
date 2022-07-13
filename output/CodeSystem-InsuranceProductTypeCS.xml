@@ -10,7 +10,7 @@
   <name value="InsuranceProductTypeCS"/>
   <title value="Insurance Product Type"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -86,7 +86,7 @@
   <concept>
     <code value="medib"/>
     <display value="Medicare Part B"/>
-    <definition value="Health insurance provided under the Federal Medicfare program covering certain doctors&#39; services, outpatient care, medical supplies, and preventive services."/>
+    <definition value="Health insurance provided under the Federal Medicfare program covering certain doctors' services, outpatient care, medical supplies, and preventive services."/>
   </concept>
   <concept>
     <code value="medid"/>
@@ -96,7 +96,7 @@
   <concept>
     <code value="mediab"/>
     <display value="Medicare A/B"/>
-    <definition value="Health insurance provided under the Federal Medicare program covering inpatient hospital stays, care in a skilled nursing facility, hospice care, some home health care, certain doctors&#39; services, outpatient care, medical supplies, and preventive services."/>
+    <definition value="Health insurance provided under the Federal Medicare program covering inpatient hospital stays, care in a skilled nursing facility, hospice care, some home health care, certain doctors' services, outpatient care, medical supplies, and preventive services."/>
   </concept>
   <concept>
     <code value="qhp"/>
