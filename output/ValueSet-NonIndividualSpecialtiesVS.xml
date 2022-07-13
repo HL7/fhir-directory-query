@@ -10,7 +10,7 @@
   <name value="NonIndividualSpecialtiesVS"/>
   <title value="Non-Individual Specialties"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -371,7 +371,7 @@
       </concept>
       <concept>
         <code value="281PC2000X"/>
-        <display value="Children&#39; s Chronic Disease Hospital"/>
+        <display value="Children' s Chronic Disease Hospital"/>
       </concept>
       <concept>
         <code value="282E00000X"/>
@@ -391,7 +391,7 @@
       </concept>
       <concept>
         <code value="282NC2000X"/>
-        <display value="Children&#39;s Hospital"/>
+        <display value="Children's Hospital"/>
       </concept>
       <concept>
         <code value="282NR1301X"/>
@@ -399,7 +399,7 @@
       </concept>
       <concept>
         <code value="282NW0100X"/>
-        <display value="Women&#39;s Hospital"/>
+        <display value="Women's Hospital"/>
       </concept>
       <concept>
         <code value="283Q00000X"/>
@@ -411,7 +411,7 @@
       </concept>
       <concept>
         <code value="283XC2000X"/>
-        <display value="Children&#39;s Rehabilitation Hospital"/>
+        <display value="Children's Rehabilitation Hospital"/>
       </concept>
       <concept>
         <code value="284300000X"/>
@@ -535,7 +535,7 @@
       </concept>
       <concept>
         <code value="322D00000X"/>
-        <display value="Emotionally Disturbed Childrens&#39; Residential Treatment Facility"/>
+        <display value="Emotionally Disturbed Childrens' Residential Treatment Facility"/>
       </concept>
       <concept>
         <code value="323P00000X"/>
@@ -547,7 +547,7 @@
       </concept>
       <concept>
         <code value="3245S0500X"/>
-        <display value="Children&#39;s Substance Abuse Rehabilitation Facility"/>
+        <display value="Children's Substance Abuse Rehabilitation Facility"/>
       </concept>
       <concept>
         <code value="385H00000X"/>

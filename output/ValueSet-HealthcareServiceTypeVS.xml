@@ -10,7 +10,7 @@
   <name value="HealthcareServiceTypeVS"/>
   <title value="HealthcareService Types"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -411,11 +411,11 @@
       </concept>
       <concept>
         <code value="559"/>
-        <display value="Women&#39;s Health"/>
+        <display value="Women's Health"/>
       </concept>
       <concept>
         <code value="560"/>
-        <display value="Men&#39;s Health"/>
+        <display value="Men's Health"/>
       </concept>
       <concept>
         <code value="565"/>

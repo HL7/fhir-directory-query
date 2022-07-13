@@ -10,7 +10,7 @@
   <name value="OrgAliasTypeCS"/>
   <title value="Qualification Status"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -36,7 +36,7 @@
   <concept>
     <code value="legalalternative"/>
     <display value="Legal Alternative"/>
-    <definition value="A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or &#39;doing business as&#39; (d.b.a.)."/>
+    <definition value="A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.)."/>
   </concept>
   <concept>
     <code value="historical"/>

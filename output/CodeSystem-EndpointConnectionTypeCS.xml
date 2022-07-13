@@ -10,7 +10,7 @@
   <name value="EndpointConnectionTypeCS"/>
   <title value="Endpoint Connection Types (additional)"/>
   <status value="active"/>
-  <date value="2022-07-12T12:55:11-04:00"/>
+  <date value="2022-07-13T15:48:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -36,7 +36,7 @@
   <concept>
     <code value="hl7-fhir-opn"/>
     <display value="HL7 FHIR Operation"/>
-    <definition value="Interact with a FHIR server interface using FHIR&#39;s RESTful interface using an operation other than messaging. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement."/>
+    <definition value="Interact with a FHIR server interface using FHIR's RESTful interface using an operation other than messaging. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement."/>
   </concept>
   <concept>
     <code value="rest-non-fhir"/>

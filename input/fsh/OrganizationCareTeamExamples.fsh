@@ -299,6 +299,7 @@ Usage: #example
 * location[0] = Reference(HospLoc1)
 
 
+
 Instance: BurrClinic
 InstanceOf: NatlDirEndpointQryOrganization
 Description: "Burr Clinic provides service to Hartford Hospital"
@@ -362,6 +363,20 @@ Usage: #example
 * participatingOrganization = Reference(BurrClinic)
 * organization = Reference(ConnHIE)
 
+Instance: CareTeam1
+InstanceOf: NatlDirEndpointQryCareTeam
+Description: "Burr Clinic's Care Team"
+Usage: #example
+* meta.profile = Canonical(NatlDirEndpointQryCareTeam)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* status = #proposed
+* category = #LA27975-4
+* extension[careteam-alias].valueString = "CareTeam1"
+* extension[endpoint].valueReference = Reference(AcmeOfCTPortalEndpoint) 
+* extension[service].valueReference = Reference(HansSoloService) 
+* identifier.extension[status].valueCode = #active
+* extension[restriction].valueReference = Reference(PatientConsent) 
 
 /*
 

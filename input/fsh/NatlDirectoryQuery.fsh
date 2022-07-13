@@ -636,7 +636,7 @@ Description: "Restriction on use/release of exchanged information"
 * ^date = "2017-12-15T01:01:31.325+11:00"
 * . ^short = "A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time"
 * . ^alias = "Restriction"
-* identifier ..0 MS
+* identifier 0..0 MS
 * status MS
 * status ^short = "Indicates the current state of this restriction"
 * status ^comment = "This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid."

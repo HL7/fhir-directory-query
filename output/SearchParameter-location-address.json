@@ -3,14 +3,14 @@
   "id": "Location-address",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Location-address\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-address.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: LocationAddressSearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-07-12T12:55:11-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of Location by `address` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: address</p><p><b>base</b>: Location</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Location-address\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-address.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: LocationAddressSearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-07-13 03:48:20-0400</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of Location by `address` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: address</p><p><b>base</b>: Location</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
   },
   "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-address.html",
   "version": "0.0.1",
   "name": "LocationAddressSearchParameter",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Resource-id",
   "status": "active",
-  "date": "2022-07-12T12:55:11-04:00",
+  "date": "2022-07-13T15:48:20-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

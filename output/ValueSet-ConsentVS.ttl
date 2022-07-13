@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "ConsentVS"];
   fhir:ValueSet.title [ fhir:value "National Directory Consent Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-07-12T12:55:11-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-07-13T15:48:20-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

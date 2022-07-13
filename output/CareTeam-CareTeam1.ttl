@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/fhir-directory-query/CareTeam/CareTeam1> a fhir:CareTeam;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CareTeam1"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CareTeam1\" Updated \"2020-07-07 01:26:22+0000\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEndpointQry-CareTeam.html\">National Directory Endpoint Qry Care Team</a></p></div><p><b>NatlDirEndpointQry Careteam Alias</b>: CareTeam1</p><p><b>NatlDirEndpointQry Practitioner Endpoint Reference</b>: <a href=\"Endpoint-AcmeOfCTPortalEndpoint.html\">Endpoint/AcmeOfCTPortalEndpoint</a> \"Endpoint for Acme of CT Portal\"</p><p><b>NatlDirEndpointQry Healthcareservice Reference</b>: <a href=\"HealthcareService-HansSoloService.html\">HealthcareService/HansSoloService</a></p><p><b>NatlDir Usage Restriction</b>: <a href=\"Consent-PatientConsent.html\">Consent/PatientConsent</a></p><p><b>identifier</b>: id: ?ngen-9?</p><p><b>status</b>: proposed</p><p><b>category</b>: LA27975-4 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#LA27975-4)</span></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias" ];
+     fhir:Extension.valueString [ fhir:value "CareTeam1" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint>;
+       fhir:Reference.reference [ fhir:value "Endpoint/AcmeOfCTPortalEndpoint" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/HealthcareService/HansSoloService>;
+       fhir:Reference.reference [ fhir:value "HealthcareService/HansSoloService" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/Consent/PatientConsent>;
+       fhir:Reference.reference [ fhir:value "Consent/PatientConsent" ]
+     ]
+  ];
+  fhir:CareTeam.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status" ];
+       fhir:Extension.valueCode [ fhir:value "active" ]
+     ]
+  ];
+  fhir:CareTeam.status [ fhir:value "proposed"];
+  fhir:CareTeam.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "LA27975-4" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/fhir-directory-query/Endpoint/AcmeOfCTPortalEndpoint> a fhir:us .
+
+<http://hl7.org/fhir/us/fhir-directory-query/HealthcareService/HansSoloService> a fhir:us .
+
+<http://hl7.org/fhir/us/fhir-directory-query/Consent/PatientConsent> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/fhir-directory-query/CareTeam/CareTeam1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-query/CareTeam/CareTeam1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

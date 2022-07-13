@@ -528,14 +528,6 @@
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/insuranceplan-reference",
-      "title": "NatlDirEndpointQry Insurance Plan Reference",
-      "types": [
-        "Reference",
-        "Reference"
-      ]
-    },
-    {
       "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/location-reference",
       "title": "Location Reference",
       "types": [
@@ -1097,6 +1089,9 @@
       "Organization.telecom",
       "Practitioner.telecom",
       "PractitionerRole.telecom"
+    ],
+    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary": [
+      "Location.telecom"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method": [
       "HealthcareService"
