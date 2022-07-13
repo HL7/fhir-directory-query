@@ -19,7 +19,7 @@
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"AcmeOfCTPortalEndpoint\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEndpointQry-Endpoint.html\">National Directory Endpoint Qry Exchange Endpoint</a></p></div><blockquote><p><b>Endpoint Type</b></p><p><b>value</b>: FHIR Server <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-EndpointTypeCS.html\">IG Type</a>#FHIR)</span></p></blockquote><blockquote><p><b>Endpoint Usecase</b></p><p><b>value</b>: healthcare operations <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html\">ActReason</a>#HOPERAT)</span></p></blockquote><p><b>status</b>: active</p><p><b>connectionType</b>: REST (not FHIR) (Details: http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS code rest-non-fhir = 'REST (not FHIR)', stated as 'null')</p><p><b>name</b>: Endpoint for Acme of CT Portal</p><p><b>payloadType</b>: Not Applicable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-EndpointPayloadTypeCS.html\">Endpoint Payload Types</a>#NA)</span></p><p><b>address</b>: <a href=\"https://urlofportal.acmect.com\">https://urlofportal.acmect.com</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"AcmeOfCTPortalEndpoint\" Updated \"2020-07-07T09:26:22.031-04:00\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEndpointQry-Endpoint.html\">National Directory Endpoint Qry Exchange Endpoint</a></p></div><blockquote><p><b>Endpoint Type</b></p><p><b>value</b>: FHIR Server <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-EndpointTypeCS.html\">IG Type</a>#FHIR)</span></p></blockquote><blockquote><p><b>Endpoint Usecase</b></p><p><b>value</b>: healthcare operations <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html\">ActReason</a>#HOPERAT)</span></p></blockquote><p><b>Secure Endpoint</b>: false</p><blockquote><p><b>IGs Supported</b></p><p><b>value</b>: FHIR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-IgTypeCS.html\">IG Type</a>#FHIR)</span></p></blockquote><p><b>status</b>: active</p><p><b>connectionType</b>: REST (not FHIR) (Details: http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS code rest-non-fhir = 'REST (not FHIR)', stated as 'null')</p><p><b>name</b>: Endpoint for Acme of CT Portal</p><p><b>payloadType</b>: Not Applicable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-EndpointPayloadTypeCS.html\">Endpoint Payload Types</a>#NA)</span></p><p><b>address</b>: <a href=\"https://urlofportal.acmect.com\">https://urlofportal.acmect.com</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -49,6 +49,24 @@
        ]
      ];
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint" ];
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 3;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/IgTypeCS" ];
+           fhir:Coding.code [ fhir:value "FHIR" ]
+         ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported" ]
   ];
   fhir:Endpoint.status [ fhir:value "active"];
   fhir:Endpoint.connectionType [

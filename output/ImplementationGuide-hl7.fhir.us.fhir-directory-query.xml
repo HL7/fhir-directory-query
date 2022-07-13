@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-07-08T11:33:11-04:00"/>
+  <date value="2022-07-12T12:55:11-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -254,17 +254,6 @@
         <reference value="StructureDefinition/NatlDirEndpointQry-HealthcareService"/>
       </reference>
       <name value="National Directory  Endpoint Qry Exchange HealthcareService"/>
-      <description value="The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete"/>
-      </reference>
-      <name value="National Directory  Endpoint Qry Exchange HealthcareService - Complete"/>
       <description value="The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -570,43 +559,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/newpatientprofile"/>
-      </reference>
-      <name value="NatlDirEndpointQry New Patient Profile"/>
-      <description value="Additional information about new patients a practitioner/service/location accepts (e.g. only children)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/newpatients"/>
       </reference>
       <name value="New Patients"/>
       <description value="New Patients indicates whether new patients are being accepted in general, or from a specific network.   &#xD;&#xA;              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  &#xD;&#xA;              This provides needed flexibility for specifying whether a provider accepts new patients by location and network."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/org-alias-period"/>
-      </reference>
-      <name value="NatlDirEndpointQry Org Alias Period"/>
-      <description value="the period of time the alias was actively used"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/org-alias-type"/>
-      </reference>
-      <name value="NatlDirEndpointQry Org Alias Type"/>
-      <description value="Type of alias (legal alternative | historical)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -628,7 +584,7 @@
         <reference value="StructureDefinition/paymentAccepted"/>
       </reference>
       <name value="Payment Accepted"/>
-      <description value="Methods of payment that can be used for a healthcare service"/>
+      <description value="Methods of payment that can be used for a healthcare service."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -640,17 +596,6 @@
       </reference>
       <name value="Practitioner Qualification"/>
       <description value="An extension to add status and whereValid elements to a practitioner’s qualifications."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/qualification"/>
-      </reference>
-      <name value="Qualification"/>
-      <description value="An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

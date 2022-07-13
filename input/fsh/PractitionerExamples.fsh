@@ -26,6 +26,9 @@ Usage: #example
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
+//* rating.type = "5"
+//* rating[0].value.text = "5"
+* extension[rating].extension[type].valueCodeableConcept = $USPSStateCS#IL 
 
 
 Instance: HansSolo
@@ -75,9 +78,6 @@ Usage: #example
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
-* extension[qualification].extension[code].valueCodeableConcept = $NUCCProviderTaxonomy#207R00000X 
-* extension[qualification].extension[issuer].valueReference.display = "American Board of Internal Medicine"
-* extension[qualification].extension[status].valueCode = QualificationStatusCS#active 
 
 // specialty = internal medicine
 // available M-F

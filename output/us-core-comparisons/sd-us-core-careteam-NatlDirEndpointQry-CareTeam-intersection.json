@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "ffe13938-4a91-46ff-a8b4-a0c8afaffea9-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ffe13938-4a91-46ff-a8b4-a0c8afaffea9-3",
+  "id" : "5a18e190-3ac4-4778-98c6-274b538f0d25-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5a18e190-3ac4-4778-98c6-274b538f0d25-3",
   "name" : "IntersectionUSCoreCareTeamAndNatlDirEndpointQryCareTeam",
   "title" : "Intersection of US Core CareTeam Profile And National Directory Endpoint Qry Care Team",
   "status" : "active",
-  "date" : "2022-07-08T11:33:38-04:00",
+  "date" : "2022-07-12T12:55:39-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

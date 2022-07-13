@@ -128,3 +128,7 @@ Usage: #example
 * address = "https://urlofportal.acmect.com"
 * extension[endpoint-usecase].extension[type].valueCodeableConcept = $V3ActReason#HOPERAT
 * extension[endpoint-type].extension[type].valueCodeableConcept = EndpointTypeCS#FHIR
+* extension[secureEndpoint].valueBoolean = false
+//* extension[SecureExchangeArtifacts].extension[type].valueString = "digital certificates"
+//* extension[SecureExchangeArtifacts].extension[expirationDate].valueDateTime = "2024-07-07T13:26:22.0314215+00:00"
+* extension[igsSupported].extension[type].valueCodeableConcept  = IgTypeCS#FHIR

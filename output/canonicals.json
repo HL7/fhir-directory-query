@@ -252,13 +252,6 @@
     "name": "NatlDirEndpointQryHealthcareService"
   },
   {
-    "id": "NatlDirEndpointQry-HealthcareServiceComplete",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete",
-    "version": "0.0.1",
-    "name": "NatlDirEndpointQryHealthcareServiceComplete"
-  },
-  {
     "id": "NatlDirEndpointQry-InsurancePlan",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan",
@@ -434,32 +427,11 @@
     "name": "NetworkReference"
   },
   {
-    "id": "newpatientprofile",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatientprofile",
-    "version": "0.0.1",
-    "name": "NewPatientProfile"
-  },
-  {
     "id": "newpatients",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients",
     "version": "0.0.1",
     "name": "NewPatients"
-  },
-  {
-    "id": "org-alias-period",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-period",
-    "version": "0.0.1",
-    "name": "OrgAliasPeriod"
-  },
-  {
-    "id": "org-alias-type",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-type",
-    "version": "0.0.1",
-    "name": "OrgAliasType"
   },
   {
     "id": "org-description",
@@ -481,13 +453,6 @@
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification",
     "version": "0.0.1",
     "name": "PractitionerQualification"
-  },
-  {
-    "id": "qualification",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification",
-    "version": "0.0.1",
-    "name": "Qualification"
   },
   {
     "id": "rating",

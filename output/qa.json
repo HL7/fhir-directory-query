@@ -3,10 +3,10 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "package-id": "hl7.fhir.us.fhir-directory-query",
   "ig-ver": "0.0.1",
-  "date": "Fri, 08 Jul, 2022 11:33:11 -0400",
-  "errs": 2,
-  "warnings": 31,
-  "hints": 5,
+  "date": "Tue, 12 Jul, 2022 12:55:11 -0400",
+  "errs": 4,
+  "warnings": 22,
+  "hints": 2,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"
 }

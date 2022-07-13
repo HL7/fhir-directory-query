@@ -231,7 +231,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * contact.telecom.period MS
 * contact.telecom extensions -- not MS
 */
-
+ 
 
 Profile:        NatlDirEndpointQryOrganization
 Parent:         $USCoreOrganization
@@ -242,12 +242,10 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * meta.lastUpdated 1..1
 * extension contains
    Rating named rating 0..*  and
-   Qualification named qualification 0..*   and
    PaymentAccepted named paymentaccepted  0..* and
    FundingSource named fundingSource 0..* and
    OrgDescription named org-description  0..1 
-* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
-* extension[qualification] ^short = "Qualification"
+/** extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)*/
 * extension[org-description] ^short = "Organization Description"
 * identifier MS
 * identifier.type 
@@ -301,8 +299,7 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * identifier.type 
 * identifier.assigner MS
 * extension contains
-   Rating named rating 0..*   and
-   Qualification named qualification 0..*   
+   Rating named rating 0..*      
 * identifier.value 
 * active 1..1  
 * active = true 
@@ -353,12 +350,10 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * extension contains
    Rating named rating 0..*  and 
    NewPatients named newpatients 0..*  and
-   NetworkReference named network-reference 0..1  and
-   Qualification named qualification  0..* 
-* extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)
+   NetworkReference named network-reference 0..1  
+/** extension[qualification].extension[code].value[x] from IndividualSpecialtyAndDegreeLicenseCertificateVS (extensible)*/
 * extension[newpatients] ^short = "New Patients"
 * extension[network-reference] ^short = "NetworkReference"
-* extension[qualification] ^short = "Qualification"
 * identifier MS
 * identifier.type 
 * identifier.value 
@@ -405,9 +400,7 @@ Title:          "National Directory Endpoint Qry Exchange OrganizationAffiliatio
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
 * meta.lastUpdated 1..1
 * obeys organization-or-participatingOrganization 
-* extension contains
-   Qualification named qualification 0..* 
-* extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
+/** extension[qualification].extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)*/
 * identifier MS
 * identifier.type 
 * identifier.value 
@@ -460,8 +453,7 @@ Description:    "A Network refers to a healthcare provider insurance network. A 
 In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."
 * meta.lastUpdated 1..1
 * extension contains
-    LocationReference named location-reference 0..* MS and
-    Qualification named qualification 0..* 
+    LocationReference named location-reference 0..* MS 
 * extension[location-reference] ^short = "Network coverage area"
 * identifier MS
 * identifier.type MS

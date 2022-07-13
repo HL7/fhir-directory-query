@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 2, warn = 31, info = 5
-IG Publisher Version: 1.1.98 Out of date - current version is 1.1.122
-Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+err = 4, warn = 22, info = 2
+IG Publisher Version: 1.1.98 Out of date - current version is 1.1.124
+Generated Tue Jul 12 12:56:45 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 1 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-endpoint : 0 / 0 / 1
@@ -41,7 +41,7 @@ Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-CancerClinicService : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HansSoloService : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HospERService : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-PharmChainCompService : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-PharmChainMailService : 0 / 0 / 1
@@ -78,7 +78,7 @@ Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\organizationaffiliation-PharmChainAffil3 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 2
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-HansSolo : 0 / 0 / 2
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-JoeSmith : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-JoeSmith : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitionerrole-AnonRole : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitionerrole-CounselorRole1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitionerrole-HansSoloRole1 : 0 / 0 / 1
@@ -160,14 +160,13 @@ Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-CareTeam : 0 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Endpoint : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-HealthcareService : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-HealthcareServiceComplete : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-InsurancePlan : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Location : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Network : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Organization : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-OrganizationAffiliation : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-Practitioner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-PractitionerRole : 0 / 1 / 2
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-NatlDirEndpointQry-PractitionerRole : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-accessibility : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-associatedServers : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-careteam-alias : 0 / 1 / 1
@@ -182,21 +181,17 @@ Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-fundingSource : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-healthcareservice-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-identifier-status : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-igsSupported : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-igsSupported : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-insuranceplan-reference : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-location-reference : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-network-reference : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-newpatientprofile : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-newpatients : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-org-alias-period : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-org-alias-type : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-org-description : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-paymentAccepted : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-paymentAccepted : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-practitioner-qualification : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-qualification : 0 / 0 / 3
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-rating : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-requiredDocument : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-secureEndpoint : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-rating : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-requiredDocument : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-secureEndpoint : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-secureExchangeArtifacts : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-trustFramework : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-usage-restriction : 0 / 1 / 1
@@ -236,7 +231,7 @@ Generated Fri Jul 08 11:34:52 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
 == n/a ==
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-fhir-directory-query in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query.json ==
-WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[48].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[43].description: value should not start or finish with whitespace
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-endpoint.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-expanded.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-health-or-human-services-endpoint.json ==
@@ -274,6 +269,7 @@ WARNING: CodeSystem/LanguageProficiencyCS: CodeSystem: HL7 Defined CodeSystems S
 == fsh-generated\resources\HealthcareService-HamiltonClinicServices.json ==
 == fsh-generated\resources\HealthcareService-HansSoloService.json ==
 == fsh-generated\resources\HealthcareService-HartfordOrthopedicServices.json ==
+ERROR: HealthcareService/HartfordOrthopedicServices: HealthcareService.extension[2].extension[1]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
 == fsh-generated\resources\HealthcareService-HospERService.json ==
 == fsh-generated\resources\HealthcareService-PharmChainCompService.json ==
 == fsh-generated\resources\HealthcareService-PharmChainMailService.json ==
@@ -313,6 +309,7 @@ INFORMATION: Practitioner/Counselor: Practitioner.extension[0]: This element doe
 == fsh-generated\resources\Practitioner-HansSolo.json ==
 INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
 == fsh-generated\resources\Practitioner-JoeSmith.json ==
+ERROR: Practitioner/JoeSmith: Practitioner.extension[0].extension[1]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
 == fsh-generated\resources\PractitionerRole-AnonRole.json ==
 == fsh-generated\resources\PractitionerRole-CounselorRole1.json ==
 == fsh-generated\resources\PractitionerRole-HansSoloRole1.json ==
@@ -399,8 +396,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-Endpoint.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-HealthcareService.json ==
-== fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-InsurancePlan.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-Location.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-Network.json ==
@@ -408,7 +403,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-Practitioner.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEndpointQry-PractitionerRole.json ==
-INFORMATION: StructureDefinition/NatlDirEndpointQry-PractitionerRole: StructureDefinition.snapshot.element[52].binding: The element PractitionerRole.extension.extension.value[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
 == fsh-generated\resources\StructureDefinition-accessibility.json ==
 == fsh-generated\resources\StructureDefinition-associatedServers.json ==
@@ -433,31 +427,17 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 == fsh-generated\resources\StructureDefinition-identifier-status.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-igsSupported.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-insuranceplan-reference.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/insuranceplan-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-location-reference.json ==
 == fsh-generated\resources\StructureDefinition-network-reference.json ==
-== fsh-generated\resources\StructureDefinition-newpatientprofile.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatientprofile'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-newpatients.json ==
-== fsh-generated\resources\StructureDefinition-org-alias-period.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-period'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-org-alias-type.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-alias-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-org-description.json ==
 == fsh-generated\resources\StructureDefinition-paymentAccepted.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-practitioner-qualification.json ==
-== fsh-generated\resources\StructureDefinition-qualification.json ==
-INFORMATION: StructureDefinition/qualification: StructureDefinition.differential.element[26].binding: The element Extension.extension.value[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
-INFORMATION: StructureDefinition/qualification: StructureDefinition.snapshot.element[33].binding: The element Extension.extension.value[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
 == fsh-generated\resources\StructureDefinition-rating.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-requiredDocument.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-secureEndpoint.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-secureExchangeArtifacts.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-trustFramework.json ==
