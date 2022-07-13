@@ -1,9 +1,10 @@
 
 
 
+
 //added 4/19 SMM
 //supports HSDS interoperabilty
-Extension: PaymentAccepted
+/*Extension: PaymentAccepted
 Id: paymentAccepted
 Title: "Payment Accepted"
 Description: "Methods of payment that can be used for a healthcare service"
@@ -15,6 +16,16 @@ Description: "Methods of payment that can be used for a healthcare service"
 * extension[type] ^short = "Payment Type"
 * extension[type].value[x] 1..1
 * extension[type].value[x] from $paymentTypeVS (required)
+*/
+Extension: PaymentAccepted
+Id: paymentAccepted
+Title: "Payment Accepted"
+Description: "Methods of payment that can be used for a healthcare service."
+* value[x] 0..1 
+* value[x] only CodeableConcept 
+* valueCodeableConcept from $paymentTypeVS (required)   // was example
+
+
 
 //added 4/19 SMM
 //supports HSDS interoperabilty
@@ -87,7 +98,7 @@ Extension: EndpointType
 Id: endpointType
 Title: "Endpoint Type"
 Description: "Type of Endpoint"
-* extension contains
+* extension contains 
    type  1..1 MS 
 * extension[type].value[x] only CodeableConcept
 * extension[type] ^short = "IG Type"
@@ -119,13 +130,13 @@ Description: "Secure Exchange Artifacts"
    expirationDate 1..1
 * extension[type].value[x] only string
 * extension[type] ^short = "Secure Artifact Type"
-* extension[type].value[x] 1..1
+* extension[type].value[x] 0..1
 * extension[certificate].value[x] only base64Binary
 * extension[certificate] ^short = "Certificate"
-* extension[certificate].value[x] 1..1
+* extension[certificate].value[x] 0..1
 * extension[expirationDate].value[x] only dateTime
 * extension[expirationDate] ^short = "Expiration Date"
-* extension[expirationDate].value[x] 1..1
+* extension[expirationDate].value[x] 0..1
 
 Extension: TrustFramework
 Id: trustFramework
@@ -185,6 +196,7 @@ Description: "Is the Endpoint Secured"
 * value[x] only boolean
 
 
+/* 7/11 - Took out as it does not appear on combined resources spreadsheet
 Extension: OrgAliasPeriod
 Id: org-alias-period
 Title: "NatlDirEndpointQry Org Alias Period"
@@ -220,7 +232,6 @@ Description: "Type of alias (legal alternative | historical)"
 * valueCodeableConcept ^short = "Type"
 * valueCodeableConcept ^definition = "Type of alias (legal alternative | historical)"
 
-
 Extension: NewPatientProfile
 Id: newpatientprofile
 Title: "NatlDirEndpointQry New Patient Profile"
@@ -239,7 +250,7 @@ Description: "Additional information about new patients a practitioner/service/l
 * valueString ^label = "newpatientprofile"
 * valueString ^short = "New patient profile"
 * valueString ^definition = "Additional information about new patients a practitioner/service/location accepts (e.g. only children)"
-
+*/
 
 Extension: InsurancePlanReference
 Id: insuranceplan-reference
@@ -574,7 +585,7 @@ Description: "An extension to add status and whereValid elements to a practition
 * extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirEndpointQryLocation)
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
 * extension[whereValid].value[x] 1..1
-
+/*
 Extension: Qualification
 Id: qualification
 Title: "Qualification"
@@ -602,7 +613,7 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirEndpointQryLocation)
 * extension[whereValid].value[x] from $USPSState (required)
 * extension[whereValid].value[x] 1..1
-
+*/
 Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"

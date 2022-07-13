@@ -192,6 +192,8 @@ Usage: #example
 * providedBy = Reference(HartfordOrthopedics)
 * location[1] = Reference(HospLoc2)
 * location[0] = Reference(HospLoc1)
+* extension[paymentAccepted].valueCodeableConcept = $paymentTypeCS#CASH
+* extension[requiredDocument].extension[document].valueString = "Insurance Card"
 
 Instance: HartfordOrthopedicAffil
 InstanceOf: NatlDirEndpointQryOrganizationAffiliation

@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-07-08T11:33:11-04:00",
+  "date": "2022-07-12T12:55:11-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -404,20 +404,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete"
-        },
-        "name": "National Directory  Endpoint Qry Exchange HealthcareService - Complete",
-        "description": "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/NatlDirEndpointQry-InsurancePlan"
         },
         "name": "National Directory Endpoint Qry Exchange InsurancePlan",
@@ -796,52 +782,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/newpatientprofile"
-        },
-        "name": "NatlDirEndpointQry New Patient Profile",
-        "description": "Additional information about new patients a practitioner/service/location accepts (e.g. only children)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/newpatients"
         },
         "name": "New Patients",
         "description": "New Patients indicates whether new patients are being accepted in general, or from a specific network.   \r\n              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  \r\n              This provides needed flexibility for specifying whether a provider accepts new patients by location and network.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/org-alias-period"
-        },
-        "name": "NatlDirEndpointQry Org Alias Period",
-        "description": "the period of time the alias was actively used",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/org-alias-type"
-        },
-        "name": "NatlDirEndpointQry Org Alias Type",
-        "description": "Type of alias (legal alternative | historical)",
         "exampleBoolean": false
       },
       {
@@ -869,7 +813,7 @@
           "reference": "StructureDefinition/paymentAccepted"
         },
         "name": "Payment Accepted",
-        "description": "Methods of payment that can be used for a healthcare service",
+        "description": "Methods of payment that can be used for a healthcare service.",
         "exampleBoolean": false
       },
       {
@@ -884,20 +828,6 @@
         },
         "name": "Practitioner Qualification",
         "description": "An extension to add status and whereValid elements to a practitioner’s qualifications.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/qualification"
-        },
-        "name": "Qualification",
-        "description": "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).",
         "exampleBoolean": false
       },
       {

@@ -54,12 +54,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Rating","Rating","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.extension","qualification","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification]]} {[]}
-","Qualification","An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension","paymentaccepted","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted]]} {[]}
-","Payment Accepted","Methods of payment that can be used for a healthcare service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Payment Accepted","Methods of payment that can be used for a healthcare service.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.extension","fundingSource","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource]]} {[]}

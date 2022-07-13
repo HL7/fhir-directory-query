@@ -1,4 +1,4 @@
-
+/*
 Profile:        NatlDirEndpointQryHealthcareServiceComplete
 Parent:         HealthcareService
 Id:             NatlDirEndpointQry-HealthcareServiceComplete
@@ -57,7 +57,7 @@ Description:    "The HealthCareService resource typically describes services off
 * endpoint only Reference(NatlDirEndpointQryEndpoint)
 * endpoint MS
 
-/*
+
 Profile: NatlDirEndpointQryCareTeamComplete
 Parent: CareTeam
 Id: NatlDirEndpointQry-CareTeamComplete
