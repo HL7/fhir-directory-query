@@ -85,7 +85,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Specific policy covered by this restriction","The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law.","This element is for discoverability / documentation and does not modify or qualify the policy rules.","","","","","","","","",,,,,"",,,,"Consent.policy.uri",0,1,"ppc-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Consent.policyRule","Consent.policyRule","","","",0,0,"Y","","Y","CodeableConcept {[]} {[]}
+"Consent.policyRule","Consent.policyRule","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Regulation that this consents to","A reference to the specific base computable regulation or policy.","If the policyRule is absent, computable consent would need to be constructed from the elements of the Consent resource.","Might be a unique identifier of a policy set in XACML, or other rules engine.","","","","","","","",,"extensible","Regulatory policy examples.","http://hl7.org/fhir/ValueSet/consent-policy","",,,,"Consent.policyRule",0,1,"ppc-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

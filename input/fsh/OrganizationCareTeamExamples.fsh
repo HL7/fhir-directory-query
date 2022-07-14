@@ -294,7 +294,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
+* specialty = $NUCCProviderTaxonomy#207VX0201X "Obstetrics & Gynecology"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
 
@@ -371,11 +371,11 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #proposed
-* category = #LA27975-4
+* category = $loinc#LA27975-4
 * extension[careteam-alias].valueString = "CareTeam1"
 * extension[endpoint].valueReference = Reference(AcmeOfCTPortalEndpoint) 
 * extension[service].valueReference = Reference(HansSoloService) 
-* identifier.extension[status].valueCode = #active
+* identifier.extension[status].valueCode = CredentialStatusCS#active
 * extension[restriction].valueReference = Reference(PatientConsent) 
 
 /*

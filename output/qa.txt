@@ -1,11 +1,11 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 22, warn = 15, info = 3
+err = 23, warn = 7, info = 4
 IG Publisher Version: 1.1.125
-Generated Wed Jul 13 15:50:01 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+Generated Thu Jul 14 18:45:40 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 1 / 0 / 0
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-endpoint : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-expanded : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-health-or-human-services-endpoint : 0 / 0 / 1
@@ -14,9 +14,10 @@ Generated Wed Jul 13 15:50:01 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-human-services-expanded : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-provider-endpoint : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-provider-expanded : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\careteam-CareTeam1 : 1 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\careteam-CareTeam1 : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-AcceptingPatientsCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-AccessibilityCS : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-CareTeamCategoryCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-ConsentCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-ConsentScopeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-CredentialStatusCS : 0 / 0 / 1
@@ -28,7 +29,7 @@ Generated Wed Jul 13 15:50:01 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-IgTypeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-InsurancePlanTypeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-InsuranceProductTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-LanguageProficiencyCS : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-LanguageProficiencyCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-OrgAliasTypeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-OrgTypeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-OrganizationAffiliationRoleCS : 0 / 0 / 1
@@ -37,12 +38,12 @@ Generated Wed Jul 13 15:50:01 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-TrustFrameworkTypeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-ValidationTypeCS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\codesystem-VirtualModalitiesCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\consent-PatientConsent : 1 / 2 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\consent-PatientConsent : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\endpoint-AcmeOfCTPortalEndpoint : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-BurrClinicServices : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-BurrClinicServices : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-CancerClinicService : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HansSoloService : 2 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HansSoloService : 3 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 2 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-HospERService : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\healthcareservice-PharmChainCompService : 1 / 0 / 1
@@ -228,13 +229,11 @@ Generated Wed Jul 13 15:50:01 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-TrustFrameworkTypeVS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-ValidationProcessVS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-VirtualModalitiesVS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\verificationresult-ProviderAttestation : 1 / 5 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\verificationresult-ProviderAttestation : 2 / 0 / 2
 </table>
 == n/a ==
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-fhir-directory-query in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query.json ==
-WARNING: ImplementationGuide/hl7.fhir.us.fhir-directory-query: ImplementationGuide.definition.resource[42].description: value should not start or finish with whitespace '	
-Codes...example).'
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-endpoint.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-basic-expanded.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-health-or-human-services-endpoint.json ==
@@ -245,9 +244,9 @@ Codes...example).'
 == fsh-generated\resources\CapabilityStatement-fhir-directory-query-provider-expanded.json ==
 == fsh-generated\resources\CareTeam-CareTeam1.json ==
 ERROR: CareTeam/CareTeam1: CareTeam: The modifier extension http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction is not allowed to be used at this point (allowed = p:descendants(); this element is [[CareTeam])
-WARNING: CareTeam/CareTeam1: CareTeam.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated\resources\CodeSystem-AcceptingPatientsCS.json ==
 == fsh-generated\resources\CodeSystem-AccessibilityCS.json ==
+== fsh-generated\resources\CodeSystem-CareTeamCategoryCS.json ==
 == fsh-generated\resources\CodeSystem-ConsentCS.json ==
 == fsh-generated\resources\CodeSystem-ConsentScopeCS.json ==
 == fsh-generated\resources\CodeSystem-CredentialStatusCS.json ==
@@ -260,7 +259,6 @@ WARNING: CareTeam/CareTeam1: CareTeam.category[0].coding[0]: A code with no syst
 == fsh-generated\resources\CodeSystem-InsurancePlanTypeCS.json ==
 == fsh-generated\resources\CodeSystem-InsuranceProductTypeCS.json ==
 == fsh-generated\resources\CodeSystem-LanguageProficiencyCS.json ==
-WARNING: CodeSystem/LanguageProficiencyCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated\resources\CodeSystem-OrgAliasTypeCS.json ==
 == fsh-generated\resources\CodeSystem-OrgTypeCS.json ==
 == fsh-generated\resources\CodeSystem-OrganizationAffiliationRoleCS.json ==
@@ -270,20 +268,20 @@ WARNING: CodeSystem/LanguageProficiencyCS: CodeSystem: HL7 Defined CodeSystems S
 == fsh-generated\resources\CodeSystem-ValidationTypeCS.json ==
 == fsh-generated\resources\CodeSystem-VirtualModalitiesCS.json ==
 == fsh-generated\resources\Consent-PatientConsent.json ==
-ERROR: Consent/PatientConsent: Consent: ppc-1: 'Either a Policy or PolicyRule' Rule 'Either a Policy or PolicyRule' Failed
-WARNING: Consent/PatientConsent: Consent.scope.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Consent/PatientConsent: Consent.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated\resources\Endpoint-AcmeOfCTPortalEndpoint.json ==
 ERROR: Endpoint/AcmeOfCTPortalEndpoint: Endpoint.extension[6].extension[2]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
 == fsh-generated\resources\HealthcareService-BurrClinicServices.json ==
-ERROR: HealthcareService/BurrClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
+ERROR: HealthcareService/BurrClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207VX0201X)
+WARNING: HealthcareService/BurrClinicServices: HealthcareService.specialty[0].coding[0]: The display "Obstetrics & Gynecology" is not a valid display for the code {http://nucc.org/provider-taxonomy}207VX0201X - should be one of ['Gynecologic Oncology Physician'] (from http://tx.fhir.org/r4) for 'http://nucc.org/provider-taxonomy#207VX0201X'
 == fsh-generated\resources\HealthcareService-CancerClinicService.json ==
 ERROR: HealthcareService/CancerClinicService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207RX0202X)
 == fsh-generated\resources\HealthcareService-HamiltonClinicServices.json ==
 ERROR: HealthcareService/HamiltonClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
 == fsh-generated\resources\HealthcareService-HansSoloService.json ==
 ERROR: HealthcareService/HansSoloService: HealthcareService.extension[1].extension[1]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
+ERROR: HealthcareService/HansSoloService: HealthcareService.extension[1].extension[2]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
 ERROR: HealthcareService/HansSoloService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
+WARNING: HealthcareService/HansSoloService: HealthcareService.specialty[0].coding[0]: The display "Family Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207Q00000X - should be one of ['Family Medicine Physician'] (from http://tx.fhir.org/r4) for 'http://nucc.org/provider-taxonomy#207Q00000X'
 == fsh-generated\resources\HealthcareService-HartfordOrthopedicServices.json ==
 ERROR: HealthcareService/HartfordOrthopedicServices: HealthcareService.extension[2].extension[1]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
 ERROR: HealthcareService/HartfordOrthopedicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207X00000X)
@@ -490,9 +488,6 @@ WARNING: ValueSet/NonIndividualSpecialtiesVS: ValueSet.compose[0].include[0].con
 == fsh-generated\resources\ValueSet-ValidationProcessVS.json ==
 == fsh-generated\resources\ValueSet-VirtualModalitiesVS.json ==
 == fsh-generated\resources\VerificationResult-ProviderAttestation.json ==
-WARNING: VerificationResult/ProviderAttestation: VerificationResult.need.coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: VerificationResult/ProviderAttestation: VerificationResult.validationType: None of the codings provided are in the value set 'Validation-type' (http://hl7.org/fhir/ValueSet/verificationresult-validation-type), and a coding from this value set is required) (codes = null#primary)
-WARNING: VerificationResult/ProviderAttestation: VerificationResult.validationType.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: VerificationResult/ProviderAttestation: VerificationResult.validationProcess[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: VerificationResult/ProviderAttestation: VerificationResult.failureAction.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: VerificationResult/ProviderAttestation: VerificationResult.attestation.communicationMethod.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: VerificationResult/ProviderAttestation: VerificationResult.validationType: None of the codings provided are in the value set 'Validation-type' (http://hl7.org/fhir/ValueSet/verificationresult-validation-type), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/validation-type#valueset)
+ERROR: VerificationResult/ProviderAttestation: VerificationResult.validationType.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/validation-type#valueset in http://terminology.hl7.org/CodeSystem/validation-type for 'http://terminology.hl7.org/CodeSystem/validation-type#valueset'
+INFORMATION: VerificationResult/ProviderAttestation: VerificationResult.attestation.communicationMethod.coding[0]: Code System URI 'https://terminology.hl7.org/3.1.0/CodeSystem-verificationresult-communication-method.html' is unknown so the code cannot be validated

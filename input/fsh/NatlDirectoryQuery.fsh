@@ -660,7 +660,7 @@ Description: "Restriction on use/release of exchanged information"
 * policy.authority ..0 MS
 * policy.uri MS
 * policy.uri ^short = "Specific policy covered by this restriction"
-* policyRule ..0 MS
+* policyRule  MS
 * verification ..0 MS
 * verification.verified MS
 * verification.verifiedWith MS

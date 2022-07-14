@@ -15,6 +15,8 @@ Alias: $verificationresult-validation-type = http://hl7.org/fhir/ValueSet/verifi
 Alias: $verificationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
 Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type
 Alias: $verificationresult-communication-method_1 = http://hl7.org/fhir/ValueSet/verificationresult-communication-method
+Alias: $verificationresult-communication-methodCS = https://terminology.hl7.org/3.1.0/CodeSystem-verificationresult-communication-method.html
+
 Alias: $identifierstatus = http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus
 //Alias: $aliastype = http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype
 
@@ -62,3 +64,11 @@ Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/fhir-directory-quer
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 
+Alias: $failureActionCS = 	http://terminology.hl7.org/CodeSystem/failure-action
+Alias: $needCS = 	http://terminology.hl7.org/CodeSystem/need
+Alias: $verificationResultStatusCS = 	http://hl7.org/fhir/CodeSystem/status
+Alias: $verificationResultTypeCS = http://terminology.hl7.org/CodeSystem/validation-type
+Alias: $loinc = http://loinc.org
+Alias: $ConsentCS = http://hl7.org/fhir/consent-state-codes
+Alias: $ConsentPolicyCS = http://terminology.hl7.org/CodeSystem/consentpolicycodes
+		
