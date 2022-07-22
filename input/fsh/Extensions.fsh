@@ -34,24 +34,29 @@ Id: requiredDocument
 Title: "Required Document"
 Description: "Documents that are required in order to access or use services (eg. Gov't issued ID, passport)"
 * extension contains
-   id 1..* and 
+   requiredDocumentId 1..* and 
    document  1..*  
-* extension[id].value[x] only string
+* extension[requiredDocumentId].value[x] only string
 * extension[document].value[x] only string
 
 //added 4/19 SMM
 //supports HSDS interoperabilty
-Extension: FundingSource
-Id: fundingSource
+Extension:      FundingSource
+Id:             fundingSource
 Title: "Funding Source"
 Description: "The sources of funding for a service or organization"
 * extension contains
-   id 1..* and 
-   fundingOrganization 0..* and
-   fundingSource  1..*  
-* extension[id].value[x] only string
-//* extension[fundingSource].value[x] only string
+    fundingSourceId 0..1 MS and
+    fundingOrganization 0..* and
+    fundingSource 1..1 MS
+* extension[fundingSourceId].value[x] only string
+* extension[fundingSource].value[x] only string
 * extension[fundingOrganization].value[x] only Reference(NatlDirEndpointQryOrganization)
+
+
+
+
+
 
 
 Extension: UsageRestriction
@@ -79,13 +84,13 @@ Title: "IGs Supported"
 Description: "IGs Supported document the different types of IGs supported by the Endpoint."
 * value[x] 0..0
 * extension contains
-   type  1..1 MS and
+   igsSupportedType  1..1 MS and
    formatCode 0..1 MS  and
    versionCode 0..* MS 
-* extension[type].value[x] only CodeableConcept
-* extension[type] ^short = "IG Type"
-* extension[type].value[x] 1..1
-* extension[type].value[x] from IgTypeVS (required)
+* extension[igsSupportedType].value[x] only CodeableConcept
+* extension[igsSupportedType] ^short = "IG Type"
+* extension[igsSupportedType].value[x] 1..1
+* extension[igsSupportedType].value[x] from IgTypeVS (required)
 * extension[formatCode].value[x] only CodeableConcept
 * extension[formatCode].value[x] 1..1
 * extension[formatCode] ^short = "IG Format Code"
@@ -99,25 +104,24 @@ Id: endpointType
 Title: "Endpoint Type"
 Description: "Type of Endpoint"
 * extension contains 
-   type  1..1 MS 
-* extension[type].value[x] only CodeableConcept
-* extension[type] ^short = "IG Type"
-* extension[type].value[x] 1..1
-* extension[type].value[x] from EndpointTypeVS (required)
+   endpointType  1..1 MS 
+* extension[endpointType].value[x] only CodeableConcept
+* extension[endpointType] ^short = "Endpoint Type"
+* extension[endpointType].value[x] from EndpointTypeVS (required)
 
 Extension: Rating
 Id: rating
 Title: "Rating"
 Description: "Rating"
 * extension contains
-   type  1..1 MS and
-   value 1..1 MS
-* extension[type].value[x] only CodeableConcept
-* extension[type] ^short = "Rating Type"
-* extension[type].value[x] 1..1
-* extension[value].value[x] only string
-* extension[value] ^short = "Rating"
-* extension[type].value[x] 1..1
+   ratingType  1..1 MS and
+   ratingValue 1..1 MS
+* extension[ratingType].value[x] only CodeableConcept
+* extension[ratingType] ^short = "Rating Type"
+* extension[ratingType].value[x] 1..1
+* extension[ratingValue].value[x] only string
+* extension[ratingValue] ^short = "Rating"
+
 
 
 Extension: SecureExchangeArtifacts
@@ -125,31 +129,30 @@ Id: secureExchangeArtifacts
 Title: "Secure Exchange Artifacts"
 Description: "Secure Exchange Artifacts"
 * extension contains
-   type  1..1 MS and
+   secureExchangeArtifactsType  1..1 MS and
    certificate 1..1 MS and
    expirationDate 1..1
-* extension[type].value[x] only string
-* extension[type] ^short = "Secure Artifact Type"
-* extension[type].value[x] 0..1
+* extension[secureExchangeArtifactsType].value[x] only string
+* extension[secureExchangeArtifactsType] ^short = "Secure Artifact Type"
+* extension[secureExchangeArtifactsType].value[x] 0..1
 * extension[certificate].value[x] only base64Binary
 * extension[certificate] ^short = "Certificate"
-* extension[certificate].value[x] 0..1
 * extension[expirationDate].value[x] only dateTime
 * extension[expirationDate] ^short = "Expiration Date"
-* extension[expirationDate].value[x] 0..1
+
 
 Extension: TrustFramework
 Id: trustFramework
 Title: "Trust Framework"
 Description: "Trust Framework"
 * extension contains
-   type  1..1 MS and
+   trustFrameworkType  1..1 MS and
    qualifier 1..1 MS and
    signedArtifact 1..1 and
    publicCertificate 1..1 
-* extension[type].value[x] only CodeableConcept
-* extension[type] ^short = "Trust Framework Type"
-* extension[type].value[x] from TrustFrameworkTypeVS (required)
+* extension[trustFrameworkType].value[x] only CodeableConcept
+* extension[trustFrameworkType] ^short = "Trust Framework Type"
+* extension[trustFrameworkType].value[x] from TrustFrameworkTypeVS (required)
 * extension[qualifier].value[x] only string
 * extension[qualifier] ^short = "Qualifier"
 * extension[qualifier].value[x] 1..1
@@ -169,24 +172,26 @@ Description: "Dynamic Registration"
    binary 1..1 MS 
 * extension[version].value[x] only string
 * extension[version] ^short = "Dynamic Registration Version"
-* extension[version].value[x] 1..1
+* extension[version].value[x] 0..1
 * extension[binary].value[x] only string
 * extension[binary] ^short = "Binary"
-* extension[binary].value[x] 1..1
+* extension[binary].value[x] 0..1
+
+
 
 Extension: AssociatedServers
 Id: associatedServers
 Title: "Associated Servers"
 Description: "Associated Servers"
 * extension contains
-   type  1..1 MS and
-   URL 1..1 MS 
-* extension[type].value[x] only string
-* extension[type] ^short = "Dynamic Registration Version"
-* extension[type].value[x] 1..1
-* extension[URL].value[x] only string
-* extension[URL] ^short = "Binary"
-* extension[URL].value[x] 1..1
+   associatedServersType  1..1 MS and
+   serverURL 1..1 MS 
+* extension[associatedServersType].value[x] only string
+* extension[associatedServersType] ^short = "Dynamic Registration Version"
+* extension[associatedServersType].value[x] 1..1
+* extension[serverURL].value[x] only string
+* extension[serverURL] ^short = "Binary"
+* extension[serverURL].value[x] 1..1
 
 Extension: SecureEndpoint
 Id: secureEndpoint
@@ -484,12 +489,12 @@ Title: "Delivery Method"
 Description: "An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified."
 * value[x] 0..0
 * extension contains
-   type 1..1 and
+   deliveryMethodtype 1..1 and
    virtualModalities 0..* MS 
-* extension[type].value[x] only CodeableConcept 
-* extension[type].value[x] from DeliveryMethodVS (required)
-* extension[type] ^short = "Physical or Virtual Service Delivery"
-* extension[type].value[x] 1..1
+* extension[deliveryMethodtype].value[x] only CodeableConcept 
+* extension[deliveryMethodtype].value[x] from DeliveryMethodVS (required)
+* extension[deliveryMethodtype] ^short = "Physical or Virtual Service Delivery"
+* extension[deliveryMethodtype].value[x] 1..1
 * extension[virtualModalities].value[x] only CodeableConcept 
 * extension[virtualModalities].value[x] from VirtualModalitiesVS (extensible)
 * extension[virtualModalities].value[x] 1..1
@@ -502,12 +507,12 @@ Title: "Endpoint Usecase"
 Description: "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint"
 * value[x] 0..0
 * extension contains
-   type 1..1 MS and
+   endpointUsecasetype 1..1 MS and
    standard 0..1 MS 
-* extension[type] ^short = "An indication of the type of services supported by the endpoint"
-* extension[type].value[x] only  CodeableConcept 
-* extension[type].value[x]  1..1
-* extension[type].value[x] from EndpointUsecaseVS (extensible)
+* extension[endpointUsecasetype] ^short = "An indication of the type of services supported by the endpoint"
+* extension[endpointUsecasetype].value[x] only  CodeableConcept 
+* extension[endpointUsecasetype].value[x]  1..1
+* extension[endpointUsecasetype].value[x] from EndpointUsecaseVS (extensible)
 * extension[standard] ^short = "A URI to a published standard describing the services supported by the endpoint (e.g. an HL7 implementation guide)"
 * extension[standard].value[x] only uri 
 * extension[standard].value[x] 1..1

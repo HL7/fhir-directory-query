@@ -286,7 +286,7 @@ Description:  "Individual and Group Specialties from National Uniform Claim Comm
 * $NUCCProviderTaxonomy#207U00000X "Nuclear Medicine Physician" 
 * $NUCCProviderTaxonomy#207UN0901X "Nuclear Cardiology Physician" 
 * $NUCCProviderTaxonomy#207UN0902X "Nuclear Imaging & Therapy Physician" 
-* $NUCCProviderTaxonomy#207UN0903X "In Vivo & In Vitro Nuclear Medicine Physician" 
+* $NUCCProviderTaxonomy#207UN0903X "In Vivo & In Vitro Nuclear Medicine Physician"  
 * $NUCCProviderTaxonomy#207V00000X "Obstetrics & Gynecology Physician" 
 * $NUCCProviderTaxonomy#207VB0002X "Obesity Medicine (Obstetrics & Gynecology) Physician" 
 * $NUCCProviderTaxonomy#207VC0200X "Critical Care Medicine (Obstetrics & Gynecology) Physician" 

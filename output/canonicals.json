@@ -77,13 +77,6 @@
     "name": "CareTeamCategoryCS"
   },
   {
-    "id": "ConsentCS",
-    "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentCS",
-    "version": "0.0.1",
-    "name": "ConsentCS"
-  },
-  {
     "id": "ConsentScopeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS",

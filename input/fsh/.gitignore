@@ -6,3 +6,4 @@ build/temp/**
 build/template/**
 **/.DS_Store
 **/thumbs.db
+output/**

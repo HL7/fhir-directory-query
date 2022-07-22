@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-07-14T18:44:03-04:00",
+  "date": "2022-07-21T17:51:33-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -1394,20 +1394,6 @@
         },
         "name": "CareTeam Category Code System",
         "description": "This code system contains codes for Care Team Category.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ConsentCS"
-        },
-        "name": "National Healthcare Directory Consent",
-        "description": "Codes for use in defining access levels for sharing subsets of constrained content (as an example)",
         "exampleBoolean": false
       },
       {

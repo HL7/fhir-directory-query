@@ -1,9 +1,10 @@
+/*
 CodeSystem: ConsentCS
 Title: "National Healthcare Directory Consent"
 Description:  "Codes for use in defining access levels for sharing subsets of constrained content (as an example)"
 * #protect "Protect" "The data (or subset of data) provided should be only made available to the people, or types of people explicitly declared in the consent."
 * ^caseSensitive = true
-
+*/
 CodeSystem: ConsentScopeCS
 Title: "National Healthcare Directory ConsentScopeCodes"
 Description:  "This value set includes the four Consent scope codes."
