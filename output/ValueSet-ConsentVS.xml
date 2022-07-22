@@ -10,7 +10,7 @@
   <name value="ConsentVS"/>
   <title value="National Directory Consent Value Set"/>
   <status value="active"/>
-  <date value="2022-07-13T15:48:20-04:00"/>
+  <date value="2022-07-14T18:44:03-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -23,7 +23,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="&#x9;&#xD;&#xA;Codes for use in defining access levels for sharing subsets of constrained content (as an example)."/>
+  <description value="Codes for use in defining access levels for sharing subsets of constrained content (as an example)."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

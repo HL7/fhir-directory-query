@@ -104,8 +104,7 @@ Description:  "Codes for documenting business use case by a general grouping by 
 
 ValueSet: ConsentVS
 Title: "National Directory Consent Value Set"
-Description: "	
-Codes for use in defining access levels for sharing subsets of constrained content (as an example)."
+Description: "Codes for use in defining access levels for sharing subsets of constrained content (as an example)."
 * codes from system ConsentCS
 * codes from system ConsentScopeCS
 
@@ -153,20 +152,6 @@ Title: "Qualification Status"
 Description: "The state indicating if a qualification is currently valid."
 * codes from system QualificationStatusCS
 
-CodeSystem:  LanguageProficiencyCS
-Title: "Language Proficiency"
-Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
-* #00	"No proficiency"	"Unable to function in the spoken language."
-//* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
-* #10	"Elementary proficiency"	"Able to satisfy minimum courtesy requirements and maintain very simple face-to-face conversations on familiar topics. A native speaker must often use slowed speech, repetition, paraphrase, or a combination of these to be understood by this individual."
-//* #16	"Elementary proficiency, plus"	"Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands."
-* #20	"Limited working proficiency"	"Able to satisfy routine social demands and limited work requirements."
-//* #26	"Limited working proficiency, plus"	"Able to satisfy most work requirements with language usage that is often, but not always, acceptable and effective."
-* #30	"General professional proficiency"	"Able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most formal and informal conversations in practical, social and professional topics."
-//* #36	"General professional proficiency, plus"	"Is often able to use the language to satisfy professional needs in a wide range of sophisticated and demanding tasks."
-* #40	"Advanced professional proficiency"	"Able to use the language fluently and accurately on all levels normally pertinent to professional needs."
-//* #46	"Advanced professional proficiency, plus"	"Speaking proficiency is regularly superior in all respects, usually equivalent to that of a well educated, highly articulate native speaker."
-* #50	"Functional native proficiency"	"Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."
 
 ValueSet: LanguageProficiencyVS
 Title: "Language Proficiency"

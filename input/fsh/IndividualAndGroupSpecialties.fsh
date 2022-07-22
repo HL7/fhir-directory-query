@@ -238,7 +238,7 @@ Description:  "Individual and Group Specialties from National Uniform Claim Comm
 * $NUCCProviderTaxonomy#207PP0204X "Pediatric Emergency Medicine (Emergency Medicine) Physician" 
 * $NUCCProviderTaxonomy#207PS0010X "Sports Medicine (Emergency Medicine) Physician" 
 * $NUCCProviderTaxonomy#207PT0002X "Medical Toxicology (Emergency Medicine) Physician" 
-* $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician" 
+* $NUCCProviderTaxonomy#207Q00000X "Family Medicine" 
 * $NUCCProviderTaxonomy#207QA0000X "Adolescent Medicine (Family Medicine) Physician" 
 * $NUCCProviderTaxonomy#207QA0401X "Addiction Medicine (Family Medicine) Physician" 
 * $NUCCProviderTaxonomy#207QA0505X "Adult Medicine Physician" 

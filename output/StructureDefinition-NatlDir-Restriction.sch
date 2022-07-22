@@ -17,7 +17,6 @@
       <sch:assert test="count(f:performer) &lt;= 0">performer: maximum cardinality of 'performer' is 0</sch:assert>
       <sch:assert test="count(f:organization) &lt;= 0">organization: maximum cardinality of 'organization' is 0</sch:assert>
       <sch:assert test="count(f:source[x]) &lt;= 0">source[x]: maximum cardinality of 'source[x]' is 0</sch:assert>
-      <sch:assert test="count(f:policyRule) &lt;= 0">policyRule: maximum cardinality of 'policyRule' is 0</sch:assert>
       <sch:assert test="count(f:verification) &lt;= 0">verification: maximum cardinality of 'verification' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

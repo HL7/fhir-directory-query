@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "d3721c19-9a61-476a-92ae-f1b4c9c8a382-15",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/d3721c19-9a61-476a-92ae-f1b4c9c8a382-15",
+  "id" : "0996cf80-308e-4e48-8e2d-6f930cdc8572-15",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0996cf80-308e-4e48-8e2d-6f930cdc8572-15",
   "name" : "IntersectionHealthcareProviderTaxonomyAndIndividualAndGroupSpecialtiesVS",
   "title" : "Intersection of Healthcare Provider Taxonomy And Individual and Group Specialties",
   "status" : "active",
-  "date" : "2022-07-13T15:48:45-04:00",
+  "date" : "2022-07-14T18:44:30-04:00",
   "compose" : {
     "include" : [{
       "concept" : [{
@@ -950,7 +950,7 @@
       },
       {
         "code" : "207Q00000X",
-        "display" : "Family Medicine Physician"
+        "display" : "Family Medicine"
       },
       {
         "code" : "207QA0000X",

@@ -50,7 +50,7 @@ Description: "The sources of funding for a service or organization"
    fundingOrganization 0..* and
    fundingSource  1..*  
 * extension[id].value[x] only string
-* extension[fundingSource].value[x] only string
+//* extension[fundingSource].value[x] only string
 * extension[fundingOrganization].value[x] only Reference(NatlDirEndpointQryOrganization)
 
 

@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ProviderAttestation\" Updated \"2020-07-07 01:26:22+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDir-Verification.html\">National Directory Endpoint Qry Exchange  Verification</a></p></div><p><b>target</b>: <a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</p><p><b>need</b>: none <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#none)</span></p><p><b>status</b>: attested</p><p><b>statusDate</b>: 2020-07-07 01:26:22+0000</p><p><b>validationType</b>: primary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#primary)</span></p><p><b>validationProcess</b>: attester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#attester)</span></p><p><b>failureAction</b>: warn <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#warn)</span></p><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>Date</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</td><td>pull <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#pull)</span></td><td>2020-07-07</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ProviderAttestation\" Updated \"2020-07-07 01:26:22+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDir-Verification.html\">National Directory Endpoint Qry Exchange  Verification</a></p></div><p><b>target</b>: <a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</p><p><b>need</b>: None <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-need.html\">Need</a>#none)</span></p><p><b>status</b>: attested</p><p><b>statusDate</b>: 2020-07-07 01:26:22+0000</p><p><b>validationType</b>: valueset <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-validation-type.html\">Validation-type</a>#valueset)</span></p><p><b>validationProcess</b>: Attester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ValidationTypeCS.html\">Validation Type Code System</a>#attester)</span></p><p><b>failureAction</b>: Warning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-failure-action.html\">Failure-action</a>#warn)</span></p><h3>Attestations</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>Date</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-JoeSmith.html\">Practitioner/JoeSmith</a> \" SMITH\"</td><td>pull <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CodeSystem-verificationresult-communication-method.html#pull)</span></td><td>2020-07-07</td></tr></table></div>"
   ];
   fhir:VerificationResult.target [
      fhir:index 0;
@@ -28,6 +28,7 @@
   fhir:VerificationResult.need [
      fhir:CodeableConcept.coding [
        fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/need" ];
        fhir:Coding.code [ fhir:value "none" ]
      ]
   ];
@@ -36,19 +37,22 @@
   fhir:VerificationResult.validationType [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.code [ fhir:value "primary" ]
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/validation-type" ];
+       fhir:Coding.code [ fhir:value "valueset" ]
      ]
   ];
   fhir:VerificationResult.validationProcess [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS" ];
        fhir:Coding.code [ fhir:value "attester" ]
      ]
   ];
   fhir:VerificationResult.failureAction [
      fhir:CodeableConcept.coding [
        fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/failure-action" ];
        fhir:Coding.code [ fhir:value "warn" ]
      ]
   ];
@@ -60,6 +64,7 @@
      fhir:VerificationResult.attestation.communicationMethod [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://terminology.hl7.org/3.1.0/CodeSystem-verificationresult-communication-method.html" ];
          fhir:Coding.code [ fhir:value "pull" ]
        ]
      ];

@@ -92,9 +92,9 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat 
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
-* location[0] = Reference(HansSoloClinic)
-* extension[fundingSource].extension[fundingSource].valueString = "Grant"
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
+* location[0] = Reference(HansSoloClinic) 
+* extension[fundingSource].extension[fundingOrganization].valueReference = Reference(HamiltonClinic)
 
 
 Instance: HansSoloClinic
