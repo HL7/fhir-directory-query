@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'type']) &gt;= 1">extension with URL = 'type': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'type']) &lt;= 1">extension with URL = 'type': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'trustFrameworkType']) &gt;= 1">extension with URL = 'trustFrameworkType': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'trustFrameworkType']) &lt;= 1">extension with URL = 'trustFrameworkType': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'qualifier']) &gt;= 1">extension with URL = 'qualifier': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'qualifier']) &lt;= 1">extension with URL = 'qualifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'signedArtifact']) &gt;= 1">extension with URL = 'signedArtifact': minimum cardinality of 'extension' is 1</sch:assert>

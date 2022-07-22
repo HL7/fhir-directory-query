@@ -28,7 +28,8 @@ Usage: #example
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
 //* rating.type = "5"
 //* rating[0].value.text = "5"
-* extension[rating].extension[type].valueCodeableConcept = $USPSStateCS#IL 
+* extension[rating].extension[ratingType].valueCodeableConcept = $USPSStateCS#IL 
+* extension[rating].extension[ratingValue].valueString = "5"
 
 
 Instance: HansSolo
@@ -82,19 +83,6 @@ Usage: #example
 // specialty = internal medicine
 // available M-F
 
-Instance: HansSoloService
-InstanceOf: NatlDirEndpointQryHealthcareService
-Description: "Hans Solo Services"
-Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
-* active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#outpat 
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
-* location[0] = Reference(HansSoloClinic) 
-* extension[fundingSource].extension[fundingOrganization].valueReference = Reference(HamiltonClinic)
 
 
 Instance: HansSoloClinic
@@ -187,7 +175,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true 
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = VirtualModalitiesCS#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 
@@ -262,6 +250,23 @@ Usage: #example
 * organization = Reference(CancerClinic)
 * practitioner = Reference(HansSolo)
 
+
+Instance: HansSoloService
+InstanceOf: NatlDirEndpointQryHealthcareService
+Description: "Hans Solo Services"
+Usage: #example
+* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
+* category = HealthcareServiceCategoryCS#outpat 
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
+* location[0] = Reference(HansSoloClinic) 
+* extension[fundingSource].extension[fundingOrganization].valueReference = Reference(HamiltonClinic)
+* extension[fundingSource].extension[fundingSource].valueString = "Private"
+
+
 Instance: CancerClinicService
 InstanceOf: NatlDirEndpointQryHealthcareService
 Description: "Cancer Clinic Services"
@@ -270,11 +275,11 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
-* providedBy = Reference(CancerClinic)
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLoc)
+* providedBy = Reference(CancerClinic)
 
 Instance: CancerClinicLoc
 InstanceOf: NatlDirEndpointQryLocation

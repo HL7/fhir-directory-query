@@ -632,6 +632,7 @@ Parent: Consent
 Id: NatlDir-Restriction
 Title: "National Directory Endpoint Qry Exchange  Restriction"
 Description: "Restriction on use/release of exchanged information"
+
 * ^status = #active
 * ^date = "2017-12-15T01:01:31.325+11:00"
 * . ^short = "A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time"
@@ -641,7 +642,7 @@ Description: "Restriction on use/release of exchanged information"
 * status ^short = "Indicates the current state of this restriction"
 * status ^comment = "This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid."
 * scope MS
-* scope from ConsentVS (extensible)
+* scope from ConsentVS (extensible) 
 * scope ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * scope ^binding.extension.valueString = "ConsentScope"
 * category MS

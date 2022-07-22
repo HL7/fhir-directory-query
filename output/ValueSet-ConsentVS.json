@@ -3,14 +3,14 @@
   "id": "ConsentVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ConsentCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentCS</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ConsentScopeCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html\"><code>http://hl7.org/fhir/consent-state-codes</code></a></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ConsentVS",
   "version": "0.0.1",
   "name": "ConsentVS",
   "title": "National Directory Consent Value Set",
   "status": "active",
-  "date": "2022-07-14T18:44:03-04:00",
+  "date": "2022-07-21T17:51:33-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -41,10 +41,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentCS"
-      },
-      {
-        "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS"
+        "system": "http://hl7.org/fhir/consent-state-codes"
       }
     ]
   }

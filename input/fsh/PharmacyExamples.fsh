@@ -67,7 +67,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Pharmacy by PharmChain"
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = AcceptingPatientsCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * category = HealthcareServiceCategoryCS#pharm   "Pharmacy"
@@ -135,7 +135,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Compounding Pharmacy by OrgA"
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#pharm "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
@@ -152,7 +152,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Mail Order Pharmacy by OrgA"
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#virtual
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = VirtualModalitiesCS#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = VirtualModalitiesCS#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = VirtualModalitiesCS#tdd 

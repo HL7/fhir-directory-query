@@ -1,6 +1,12 @@
 == Suppressed Messages ==
+
 # Errors to suppress
-WARNING: The code 101200000X is not valid in the system http://nucc.org/provider-taxonomy
+The code 101200000X is not valid in the system http://nucc.org/provider-taxonomy
 WARNING: The code 171400000X  is not valid in the system http://nucc.org/provider-taxonomy
 WARNING: The code 342000000X  is not valid in the system http://nucc.org/provider-taxonomy
- 
+
+#We are not using US careteam profile
+WARNING:US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile. Comparison with US Core CareTeam Profile
+
+#This is an error with IG publisher, it appears whenever the consent resource is used without any changes.
+error: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)

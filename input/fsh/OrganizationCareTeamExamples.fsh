@@ -84,7 +84,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#emerg  
 * specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
 * providedBy = Reference(Hospital)
@@ -186,7 +186,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[virtualModalities].valueCodeableConcept = VirtualModalitiesCS#phone
 * category = HealthcareServiceCategoryCS#prov 
 * specialty = $NUCCProviderTaxonomy#207X00000X "Orthopaedic Surgery Physician"   // Orthopedics
 * providedBy = Reference(HartfordOrthopedics)
@@ -194,6 +195,8 @@ Usage: #example
 * location[0] = Reference(HospLoc1)
 * extension[paymentAccepted].valueCodeableConcept = $paymentTypeCS#CASH
 * extension[requiredDocument].extension[document].valueString = "Insurance Card"
+* extension[requiredDocument].extension[requiredDocumentId].valueString = "MV3039G"
+
 
 Instance: HartfordOrthopedicAffil
 InstanceOf: NatlDirEndpointQryOrganizationAffiliation
@@ -234,7 +237,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(HamiltonClinic)
@@ -282,19 +285,19 @@ Usage: #example
 * participatingOrganization = Reference(BurrClinic)
 * location[0] = Reference(HospLoc2)
 * network = Reference(AcmeofCTStdNet)
-* organization = Reference(Hospital)
+* organization = Reference(Hospital) 
 
 Instance: BurrClinicServices
 InstanceOf: NatlDirEndpointQryHealthcareService
 Description: "Burr Clinic Services"
 Usage: #example
 * meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00" 
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat
-* specialty = $NUCCProviderTaxonomy#207VX0201X "Obstetrics & Gynecology"  
+* specialty = $NUCCProviderTaxonomy#101YA0400X 
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
 

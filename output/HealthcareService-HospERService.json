@@ -16,7 +16,7 @@
     {
       "extension": [
         {
-          "url": "type",
+          "url": "deliveryMethodtype",
           "valueCodeableConcept": {
             "coding": [
               {

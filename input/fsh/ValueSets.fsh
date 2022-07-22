@@ -65,7 +65,7 @@ Description:  "Specialties and Degree License and Certificates"
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Individual Specialties, Degrees, Licenses, and Certificates"
 Description: "Individual Specialties, Degrees, Licenses, and Certificates"
-* codes from valueset IndividualAndGroupSpecialtiesVS
+//* codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
@@ -105,8 +105,8 @@ Description:  "Codes for documenting business use case by a general grouping by 
 ValueSet: ConsentVS
 Title: "National Directory Consent Value Set"
 Description: "Codes for use in defining access levels for sharing subsets of constrained content (as an example)."
-* codes from system ConsentCS
-* codes from system ConsentScopeCS
+* codes from system $ConsentCS
+//* codes from system ConsentScopeCS
 
 ValueSet: EndpointPayloadTypeVS
 Title: "Endpoint Payload Types"
