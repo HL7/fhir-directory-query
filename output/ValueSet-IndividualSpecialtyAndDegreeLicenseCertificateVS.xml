@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0360.html"><code>http://terminology.hl7.org/CodeSystem/v2-0360</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS"/>
-  <version value="0.0.1"/>
+  <version value="1.0.0-ballot1"/>
   <name value="IndividualSpecialtyAndDegreeLicenseCertificateVS"/>
   <title value="Individual Specialties, Degrees, Licenses, and Certificates"/>
   <status value="active"/>
-  <date value="2022-07-21T17:51:33-04:00"/>
+  <date value="2022-07-24T13:15:49-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

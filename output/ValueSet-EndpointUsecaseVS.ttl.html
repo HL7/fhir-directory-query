@@ -21,6 +21,8 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,11 +49,23 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span>
             <br/>
-            <span style="display:inline-block;">0.0.1 - draft
+            <span style="display:inline-block;">1.0.0-ballot1 - draft
 
 
 
@@ -169,7 +183,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -222,7 +236,7 @@
         
           Active
           
-            as of 2022-07-21
+            as of 2022-07-24
           
         
       </td>
@@ -254,11 +268,11 @@
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-ActReason&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-TREAT\&quot;&gt;TREAT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;treatment&lt;/td&gt;&lt;td&gt;To perform one or more operations on information for provision of health care.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-HPAYMT\&quot;&gt;HPAYMT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;healthcare payment&lt;/td&gt;&lt;td&gt;To perform one or more operations on information for conducting financial or contractual activities related to payment for provision of health care.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-COC\&quot;&gt;COC&lt;/a&gt;&lt;/td&gt;&lt;td&gt;coordination of care&lt;/td&gt;&lt;td&gt;To perform one or more actions on information in order to organize the provision and case management of an individualâ€™s healthcare, including: Monitoring a person's goals, needs, and preferences; acting as the communication link between two or more participants concerned with a person's health and wellness; organizing and facilitating care activities and promoting self-management by advocating for, empowering, and educating a person; and ensuring safe, appropriate, non-duplicative, and effective integrated care.&lt;br/&gt;&lt;br/&gt;*Usage Note:* Use when describing these functions: 1. Monitoring a personâ€™s goals, needs, and preferences. 2. Acting as the communication link between two or more participants concerned with a person's health and wellness. 3. Organizing and facilitating care activities and promoting self-management by advocating for, empowering, and educating a person. 4. Ensuring safe, appropriate, non-duplicative, and effective integrated care.&lt;br/&gt;&lt;br/&gt;The goal is to clearly differentiate this type of coordination of care from HIPAA Operations by specifying that these actions on information are undertaken in the provision of healthcare treatment.&lt;br/&gt;&lt;br/&gt;For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Disorder Patient Records Supplemental notice of proposed rulemaking, which differentiates concepts of care coordination and case management for the provision of treatment as specifically distinct from activities related to health care delivery management and the operations of organizational entities involved in the delivery of healthcare.&lt;br/&gt;&lt;br/&gt;*Map:* Maps to ISO 14265 Classification Terms: &amp;quot;Support of care activities within the provider organisation for an individual subject of care&amp;quot; described as &amp;quot;To inform persons or processes enabling others to provide health care services to the subject of care.&amp;quot; &amp;quot;Subject of Care Uses&amp;quot; described as &amp;quot;To inform the subject of care in support of his or her own interests.&amp;quot;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-COVERAGE\&quot;&gt;COVERAGE&lt;/a&gt;&lt;/td&gt;&lt;td&gt;eligibility verification and determination&lt;/td&gt;&lt;td&gt;To perform one or more operations on information for conducting activities related to coverage under a program or policy.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-HOPERAT\&quot;&gt;HOPERAT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;healthcare operations&lt;/td&gt;&lt;td&gt;To perform one or more operations on information used for conducting administrative and contractual activities related to the provision of health care.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-PUBHLTH\&quot;&gt;PUBHLTH&lt;/a&gt;&lt;/td&gt;&lt;td&gt;public health&lt;/td&gt;&lt;td&gt;To perform one or more operations on information for conducting public health activities, such as the reporting of notifiable conditions.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-HRESCH\&quot;&gt;HRESCH&lt;/a&gt;&lt;/td&gt;&lt;td&gt;healthcare research&lt;/td&gt;&lt;td&gt;To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data iincludes basic and applied research such as biomedical, population origin or ancestry, translational research, and disease, discipline, specialty specific healthcare research and clinical trial research.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-ETREAT\&quot;&gt;ETREAT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;emergency treatment&lt;/td&gt;&lt;td&gt;To perform one or more operations on information for provision of immediately needed health care for an emergent condition.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATRQT\&quot;&gt;PATRQT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;patient requested&lt;/td&gt;&lt;td&gt;To perform one or more operations on information in response to a patient's request.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointUsecaseVS&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.0.1&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0-ballot1&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EndpointUsecaseVS&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Endpoint Usecases&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-07-21T17:51:33-04:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-07-24T13:15:49-04:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;HL7 Patient Administration Working Group&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -349,13 +363,17 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 21, 2022 17:51-0400">2022-07-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 24, 2022 13:15-0400">2022-07-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

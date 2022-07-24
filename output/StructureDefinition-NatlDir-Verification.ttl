@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
+  fhir:StructureDefinition.version [ fhir:value "1.0.0-ballot1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirEndpointQryVerification"];
   fhir:StructureDefinition.title [ fhir:value "National Directory Endpoint Qry Exchange  Verification"];
   fhir:StructureDefinition.status [ fhir:value "active"];

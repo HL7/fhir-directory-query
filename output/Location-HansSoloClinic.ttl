@@ -109,7 +109,7 @@
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary" ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary" ];
        fhir:Extension.valueReference [
          fhir:link <http://hl7.org/fhir/us/fhir-directory-query/PractitionerRole/HansSoloRole1>;
          fhir:Reference.reference [ fhir:value "PractitionerRole/HansSoloRole1" ]

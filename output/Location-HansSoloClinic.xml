@@ -73,7 +73,7 @@
         <valueTime value="17:00:00"/>
       </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary">
+    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary">
       <valueReference>
         <reference value="PractitionerRole/HansSoloRole1"/>
       </valueReference>

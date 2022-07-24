@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html"><code>http://hl7.org/fhir/consent-state-codes</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ConsentVS"/>
-  <version value="0.0.1"/>
+  <version value="1.0.0-ballot1"/>
   <name value="ConsentVS"/>
   <title value="National Directory Consent Value Set"/>
   <status value="active"/>
-  <date value="2022-07-21T17:51:33-04:00"/>
+  <date value="2022-07-24T13:15:49-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

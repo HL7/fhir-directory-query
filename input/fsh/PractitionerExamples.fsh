@@ -110,7 +110,7 @@ Usage: #example
 * telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][4].valueCode  = #fri 
 * telecom[0].extension[contactpoint-availabletime][0].extension[availableStartTime].valueTime = 08:00:00
 * telecom[0].extension[contactpoint-availabletime][0].extension[availableEndTime].valueTime = 17:00:00
-* telecom[0].extension[contactpoint-viaintermediary][0].valueReference = Reference(HansSoloRole1)
+* telecom[0].extension[via-intermediary][0].valueReference = Reference(HansSoloRole1)
 * telecom[1].system = #url
 * telecom[1].value = "https://www.hanssolo.com"
 * telecom[1].rank = 1
@@ -261,7 +261,7 @@ Usage: #example
 * active = true
 * extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = DeliveryMethodCS#physical
 * category = HealthcareServiceCategoryCS#outpat 
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic) 
 * extension[fundingSource].extension[fundingOrganization].valueReference = Reference(HamiltonClinic)
 * extension[fundingSource].extension[fundingSource].valueString = "Private"

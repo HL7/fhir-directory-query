@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cultcomp<a name=\"AccessibilityCS-cultcomp\"> </a></td><td>Cultural competence</td><td>Provides services that meet the social, cultural, and linguistic needs of persons.</td></tr><tr><td style=\"white-space:nowrap\">handiaccess<a name=\"AccessibilityCS-handiaccess\"> </a></td><td>handicap accessible</td><td>Provides access to persons with disabilities.</td></tr><tr><td style=\"white-space:nowrap\">adacomp<a name=\"AccessibilityCS-adacomp\"> </a></td><td>ADA compliant</td><td>Provides access which complies with the Americans with Disabilities Act and/or amendments.</td></tr><tr><td style=\"white-space:nowrap\">pubtrans<a name=\"AccessibilityCS-pubtrans\"> </a></td><td>public transit options</td><td>Provides access using public transportation modes.</td></tr><tr><td style=\"white-space:nowrap\">anssrvc<a name=\"AccessibilityCS-anssrvc\"> </a></td><td>answering service</td><td>Provides capability to communicate when intended recipient is not immediately available.</td></tr><tr><td style=\"white-space:nowrap\">cognitive<a name=\"AccessibilityCS-cognitive\"> </a></td><td>cognitive</td><td>Provides services for cognitively impaired persons.</td></tr><tr><td style=\"white-space:nowrap\">mobility<a name=\"AccessibilityCS-mobility\"> </a></td><td>mobility</td><td>Provides services for mobility impaired persons.</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "AccessibilityCS",
   "title": "Accessibility",
   "status": "active",
-  "date": "2022-07-21T17:51:33-04:00",
+  "date": "2022-07-24T13:15:49-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

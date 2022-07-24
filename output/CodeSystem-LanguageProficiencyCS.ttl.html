@@ -21,6 +21,8 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,11 +49,23 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span>
             <br/>
-            <span style="display:inline-block;">0.0.1 - draft
+            <span style="display:inline-block;">1.0.0-ballot1 - draft
 
 
 
@@ -169,7 +183,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -222,7 +236,7 @@
         
           Active
           
-            as of 2022-07-21
+            as of 2022-07-24
           
         
       </td>
@@ -254,11 +268,11 @@
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;00&lt;a name=\&quot;LanguageProficiencyCS-00\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No proficiency&lt;/td&gt;&lt;td&gt;Unable to function in the spoken language.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;10&lt;a name=\&quot;LanguageProficiencyCS-10\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elementary proficiency&lt;/td&gt;&lt;td&gt;Able to satisfy minimum courtesy requirements and maintain very simple face-to-face conversations on familiar topics. A native speaker must often use slowed speech, repetition, paraphrase, or a combination of these to be understood by this individual.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20&lt;a name=\&quot;LanguageProficiencyCS-20\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Limited working proficiency&lt;/td&gt;&lt;td&gt;Able to satisfy routine social demands and limited work requirements.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;30&lt;a name=\&quot;LanguageProficiencyCS-30\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;General professional proficiency&lt;/td&gt;&lt;td&gt;Able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most formal and informal conversations in practical, social and professional topics.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;40&lt;a name=\&quot;LanguageProficiencyCS-40\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Advanced professional proficiency&lt;/td&gt;&lt;td&gt;Able to use the language fluently and accurately on all levels normally pertinent to professional needs.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;50&lt;a name=\&quot;LanguageProficiencyCS-50\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Functional native proficiency&lt;/td&gt;&lt;td&gt;Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS&quot;];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.0.1&quot;];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0-ballot1&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;LanguageProficiencyCS&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Language Proficiency&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-07-21T17:51:33-04:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-07-24T13:15:49-04:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:CodeSystem.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;HL7 Patient Administration Working Group&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -350,13 +364,17 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 21, 2022 17:51-0400">2022-07-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 24, 2022 13:15-0400">2022-07-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

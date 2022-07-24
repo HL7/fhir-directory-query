@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/QualificationStatusCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">active<a name="QualificationStatusCS-active"> </a></td><td>active</td><td>The credential may be considered valid for use.</td></tr><tr><td style="white-space:nowrap">inactive<a name="QualificationStatusCS-inactive"> </a></td><td>inactive</td><td>The credential may not be considered valid for use.</td></tr><tr><td style="white-space:nowrap">issiner<a name="QualificationStatusCS-issiner"> </a></td><td>issued in error</td><td>The credential was mistakenly assigned and should not be considered valid for use.</td></tr><tr><td style="white-space:nowrap">revoked<a name="QualificationStatusCS-revoked"> </a></td><td>revoked</td><td>The credential was revoked by the issuing organization and should not be considered valid for use.</td></tr><tr><td style="white-space:nowrap">pending<a name="QualificationStatusCS-pending"> </a></td><td>pending</td><td>The credential has not been officially assigned. It may or may not be considered valid for use.</td></tr><tr><td style="white-space:nowrap">unknown<a name="QualificationStatusCS-unknown"> </a></td><td>unknown</td><td>The status of this credential is unknown. It may or may not be considered valid for use.</td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/QualificationStatusCS"/>
-  <version value="0.0.1"/>
+  <version value="1.0.0-ballot1"/>
   <name value="QualificationStatusCS"/>
   <title value="Qualification Status"/>
   <status value="active"/>
-  <date value="2022-07-21T17:51:33-04:00"/>
+  <date value="2022-07-24T13:15:49-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

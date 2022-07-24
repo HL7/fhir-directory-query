@@ -3,1204 +3,1204 @@
     "id": "fhir-directory-query-basic-endpoint",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-endpoint",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryBasicEndpoint"
   },
   {
     "id": "fhir-directory-query-basic-expanded",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-basic-expanded",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryBasicExpanded"
   },
   {
     "id": "fhir-directory-query-health-or-human-services-endpoint",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-health-or-human-services-endpoint",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryHealthHumanServicesEndpoint"
   },
   {
     "id": "fhir-directory-query-health-or-human-services-expanded",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-health-or-human-services-expanded",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryHealthHumanServicesExpanded"
   },
   {
     "id": "fhir-directory-query-human-services-endpoint",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-human-services-endpoint",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryHumanServicesEndpoint"
   },
   {
     "id": "fhir-directory-query-human-services-expanded",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-human-services-expanded",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryHumanServicesExpanded"
   },
   {
     "id": "fhir-directory-query-provider-endpoint",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-provider-endpoint",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryProviderEndpoint"
   },
   {
     "id": "fhir-directory-query-provider-expanded",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CapabilityStatement/fhir-directory-query-provider-expanded",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CapabilityStatementFhirDirectoryQueryProviderExpanded"
   },
   {
     "id": "AcceptingPatientsCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "AcceptingPatientsCS"
   },
   {
     "id": "AccessibilityCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "AccessibilityCS"
   },
   {
     "id": "CareTeamCategoryCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CareTeamCategoryCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamCategoryCS"
   },
   {
     "id": "ConsentScopeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ConsentScopeCS"
   },
   {
     "id": "CredentialStatusCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CredentialStatusCS"
   },
   {
     "id": "DeliveryMethodCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "DeliveryMethodCS"
   },
   {
     "id": "EndpointConnectionTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointConnectionTypeCS"
   },
   {
     "id": "EndpointPayloadTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointPayloadTypeCS"
   },
   {
     "id": "EndpointTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointTypeCS"
   },
   {
     "id": "HealthcareServiceCategoryCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceCategoryCS"
   },
   {
     "id": "IgTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/IgTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IgTypeCS"
   },
   {
     "id": "InsurancePlanTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsurancePlanTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanTypeCS"
   },
   {
     "id": "InsuranceProductTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsuranceProductTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsuranceProductTypeCS"
   },
   {
     "id": "LanguageProficiencyCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LanguageProficiencyCS"
   },
   {
     "id": "OrgAliasTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgAliasTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrgAliasTypeCS"
   },
   {
     "id": "OrgTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrgTypeCS"
   },
   {
     "id": "OrganizationAffiliationRoleCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationRoleCS"
   },
   {
     "id": "ProviderRoleCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ProviderRoleCS"
   },
   {
     "id": "QualificationStatusCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/QualificationStatusCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "QualificationStatusCS"
   },
   {
     "id": "TrustFrameworkTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "TrustFrameworkTypeCS"
   },
   {
     "id": "ValidationTypeCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ValidationTypeCS"
   },
   {
     "id": "VirtualModalitiesCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "VirtualModalitiesCS"
   },
   {
     "id": "hl7.fhir.us.fhir-directory-query",
     "type": "ImplementationGuide",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ONCFASTNationalDirectoryEndpointQuery"
   },
   {
     "id": "NatlDir-Restriction",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirRestriction"
   },
   {
     "id": "NatlDir-Verification",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryVerification"
   },
   {
     "id": "NatlDirEndpointQry-CareTeam",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryCareTeam"
   },
   {
     "id": "NatlDirEndpointQry-Endpoint",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryEndpoint"
   },
   {
     "id": "NatlDirEndpointQry-HealthcareService",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryHealthcareService"
   },
   {
     "id": "NatlDirEndpointQry-InsurancePlan",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-InsurancePlan",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryInsurancePlan"
   },
   {
     "id": "NatlDirEndpointQry-Location",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryLocation"
   },
   {
     "id": "NatlDirEndpointQry-Network",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryNetwork"
   },
   {
     "id": "NatlDirEndpointQry-Organization",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryOrganization"
   },
   {
     "id": "NatlDirEndpointQry-OrganizationAffiliation",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryOrganizationAffiliation"
   },
   {
     "id": "NatlDirEndpointQry-Practitioner",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryPractitioner"
   },
   {
     "id": "NatlDirEndpointQry-PractitionerRole",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryPractitionerRole"
   },
   {
     "id": "accessibility",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "Accessibility"
   },
   {
     "id": "associatedServers",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/associatedServers",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "AssociatedServers"
   },
   {
     "id": "careteam-alias",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareteamAlias"
   },
   {
     "id": "communication-proficiency",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CommunicationProficiency"
   },
   {
     "id": "contactpoint-availabletime",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ContactPointAvailableTime"
   },
   {
     "id": "contactpoint-viaintermediary",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ContactPointViaIntermediary"
   },
   {
     "id": "delivery-method",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "DeliveryMethod"
   },
   {
     "id": "dynamicRegistration",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "DynamicRegistration"
   },
   {
     "id": "endpoint-reference",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointReference"
   },
   {
     "id": "endpoint-usecase",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointUsecase"
   },
   {
     "id": "endpointType",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointType"
   },
   {
     "id": "fundingSource",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "FundingSource"
   },
   {
     "id": "healthcareservice-reference",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceReference"
   },
   {
     "id": "identifier-status",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IdentifierStatus"
   },
   {
     "id": "igsSupported",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IGsSupported"
   },
   {
     "id": "location-reference",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/location-reference",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationReference"
   },
   {
     "id": "network-reference",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/network-reference",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NetworkReference"
   },
   {
     "id": "newpatients",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NewPatients"
   },
   {
     "id": "org-description",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-description",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrgDescription"
   },
   {
     "id": "paymentAccepted",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PaymentAccepted"
   },
   {
     "id": "practitioner-qualification",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerQualification"
   },
   {
     "id": "rating",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "Rating"
   },
   {
     "id": "requiredDocument",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "RequiredDocument"
   },
   {
     "id": "secureEndpoint",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "SecureEndpoint"
   },
   {
     "id": "secureExchangeArtifacts",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "SecureExchangeArtifacts"
   },
   {
     "id": "trustFramework",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "TrustFramework"
   },
   {
     "id": "usage-restriction",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "UsageRestriction"
   },
   {
     "id": "via-intermediary",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ViaIntermediary"
   },
   {
     "id": "AcceptingPatientsVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "AcceptingPatientsVS"
   },
   {
     "id": "AccessibilityVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AccessibilityVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "AccessibilityVS"
   },
   {
     "id": "ConsentVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ConsentVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ConsentVS"
   },
   {
     "id": "DeliveryMethodVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "DeliveryMethodVS"
   },
   {
     "id": "EndpointConnectionTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointConnectionTypeVS"
   },
   {
     "id": "EndpointPayloadTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointPayloadTypeVS"
   },
   {
     "id": "EndpointTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointTypeVS"
   },
   {
     "id": "EndpointUsecaseVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointUsecaseVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "EndpointUsecaseVS"
   },
   {
     "id": "HealthcareServiceCategoryVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceCategoryVS"
   },
   {
     "id": "HealthcareServiceTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceTypeVS"
   },
   {
     "id": "IdentifierStatusVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IdentifierStatusVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IdentifierStatusVS"
   },
   {
     "id": "IgTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IgTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IgTypeVS"
   },
   {
     "id": "IndividualAndGroupSpecialtiesVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IndividualAndGroupSpecialtiesVS"
   },
   {
     "id": "IndividualSpecialtyAndDegreeLicenseCertificateVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "IndividualSpecialtyAndDegreeLicenseCertificateVS"
   },
   {
     "id": "InsurancePlanTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/InsurancePlanTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanTypeVS"
   },
   {
     "id": "InsuranceProductTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/InsuranceProductTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsuranceProductTypeVS"
   },
   {
     "id": "LanguageProficiencyVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/LanguageProficiencyVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LanguageProficiencyVS"
   },
   {
     "id": "MinEndpointConnectionTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "MinEndpointConnectionTypeVS"
   },
   {
     "id": "NetworkTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NetworkTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NetworkTypeVS"
   },
   {
     "id": "NonIndividualSpecialtiesVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NonIndividualSpecialtiesVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NonIndividualSpecialtiesVS"
   },
   {
     "id": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
   },
   {
     "id": "OrgAliasTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrgAliasTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrgAliasTypeVS"
   },
   {
     "id": "OrgTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrgTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrgTypeVS"
   },
   {
     "id": "OrganizationAffiliationRoleVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrganizationAffiliationRoleVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationRoleVS"
   },
   {
     "id": "PractitionerRoleVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleVS"
   },
   {
     "id": "QualificationStatusVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/QualificationStatusVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "QualificationStatusVS"
   },
   {
     "id": "SpecialtiesVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "SpecialtiesVS"
   },
   {
     "id": "SpecialtyAndDegreeLicenseCertificateVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtyAndDegreeLicenseCertificateVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "SpecialtyAndDegreeLicenseCertificateVS"
   },
   {
     "id": "TrustFrameworkTypeVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/TrustFrameworkTypeVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "TrustFrameworkTypeVS"
   },
   {
     "id": "ValidationProcessVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "ValidationProcessVS"
   },
   {
     "id": "VirtualModalitiesVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/VirtualModalitiesVS",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "VirtualModalitiesVS"
   },
   {
     "id": "HealthcareService-coverage-area",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-coverage-area.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceCoverageAreaSearchParameter"
   },
   {
     "id": "HealthcareService-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-endpoint.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceCategorySearchParameter"
   },
   {
     "id": "HealthcareService-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-location.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceLocationSearchParameter"
   },
   {
     "id": "HealthcareService-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceNameSearchParameter"
   },
   {
     "id": "HealthcareService-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-organization.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceOrganizationSearchParameter"
   },
   {
     "id": "HealthcareService-service-category",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-category.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceCategorySearchParameter"
   },
   {
     "id": "HealthcareService-service-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-service-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceServicetypeSearchParameter"
   },
   {
     "id": "HealthcareService-specialty",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-HealthcareService-specialty.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "HealthcareServiceSpecialtySearchParameter"
   },
   {
     "id": "InsurancePlan-administrated-by",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-administrated-by.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanAdministratedBySearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-area",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-area.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanCoverageAreaSearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-benefit-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-benefit-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanCoverageBenefittypeSearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-network",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-coverage-network.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanCoverageNetworkSearchParameter"
   },
   {
     "id": "InsurancePlan-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-identifier.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanIdentifierSearchParameter"
   },
   {
     "id": "InsurancePlan-owned-by",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-owned-by.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanOwnedBySearchParameter"
   },
   {
     "id": "InsurancePlan-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-specialty.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlanSpecialtySearchParameter"
   },
   {
     "id": "InsurancePlan-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-InsurancePlan-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "InsurancePlantypeSearchParameter"
   },
   {
     "id": "Location-address",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-address.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationAddressSearchParameter"
   },
   {
     "id": "Location-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-endpoint.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationEndpointSearchParameter"
   },
   {
     "id": "Location-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-organization.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationOrganizationSearchParameter"
   },
   {
     "id": "Location-partOf",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-partOf.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationPartOfSearchParameter"
   },
   {
     "id": "Location-physicalType",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-physicalType.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationPhysicalTypeSearchParameter"
   },
   {
     "id": "Location-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Location-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "LocationTypeSearchParameter"
   },
   {
     "id": "Network-coverage-area",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Network-coverage-area.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NetworkCoverageAreaSearchParameter"
   },
   {
     "id": "Network-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Network-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NameSpecialtySearchParameter"
   },
   {
     "id": "Organization-address",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-address.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAddressSearchParameter"
   },
   {
     "id": "Organization-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-endpoint.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationEndpointSearchParameter"
   },
   {
     "id": "Organization-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-identifier.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationIdentifierSearchParameter"
   },
   {
     "id": "Organization-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationNameSearchParameter"
   },
   {
     "id": "Organization-partOf",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-partOf.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationPartOfSearchParameter"
   },
   {
     "id": "Organization-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-Organization-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationTypeSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-endpoint.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationEndpointSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-location.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationLocationSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-network",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-network.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationNetworkSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-participating-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-participating-organization.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationParticipatingOrganizationfSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-primary-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-primary-organization.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationPrimaryOrganizationSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-role",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-role.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationRoleSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-service",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-service.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationServiceSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-specialty",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-OrganizationAffiliation-specialty.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "OrganizationAffiliationSpecialtySearchParameter"
   },
   {
     "id": "VerificationResult-attestation-who",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-attestation-who.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "VerificationResultAttestationWhoBySearchParameter"
   },
   {
     "id": "VerificationResult-primarysource-who",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-primarysource-who.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "VerificationResultPrimarysourceWhoBySearchParameter"
   },
   {
     "id": "VerificationResult-target",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-VerificationResult-target.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "VerificationResultTargetBySearchParameter"
   },
   {
     "id": "careTeam-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-endpoint.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamEndpointSearchParameter"
   },
   {
     "id": "careTeam-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-location.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamLocationSearchParameter"
   },
   {
     "id": "careTeam-category",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamCategorySearchParameter"
   },
   {
     "id": "careTeam-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamNameSearchParameter"
   },
   {
     "id": "careTeam-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamOrganizationSearchParameter"
   },
   {
     "id": "careTeam-service",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-careteam-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "CareTeamServiceSearchParameter"
   },
   {
     "id": "Endpoint-connection-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-connection-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryConnectiontype"
   },
   {
     "id": "Endpoint-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-identifier.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryIdentifier"
   },
   {
     "id": "Endpoint-mime-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-mime-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryMimetype"
   },
   {
     "id": "Endpoint-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-organization.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryOrganization"
   },
   {
     "id": "Endpoint-payload-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-payload-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryPayloadtype"
   },
   {
     "id": "Endpoint-status",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-status.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryStatus"
   },
   {
     "id": "Endpoint-usecase-standard",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-standard.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryUsecaseStandard"
   },
   {
     "id": "Endpoint-usecase-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-endpoint-usecase-type.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "NatlDirEndpointQryUsecasetype"
   },
   {
     "id": "practitioner-family",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-family.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerFamilySearchParameter"
   },
   {
     "id": "practitioner-given",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-given.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerGivenSearchParameter"
   },
   {
     "id": "practitioner-identifier-assigner",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-identifier-assigner.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerIdentifierAssignerSearchParameter"
   },
   {
     "id": "practitioner-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-identifier.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerIdentifierSearchParameter"
   },
   {
     "id": "practitioner-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-name.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerNameSearchParameter"
   },
   {
     "id": "practitioner-qualification-code",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-qualification-code.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerQualificationCodeSearchParameter"
   },
   {
     "id": "practitioner-qualification-issuer",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitioner-qualification-issuer.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerQualificationIssuerSearchParameter"
   },
   {
     "id": "practitionerRole-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-endpoint.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleEndpointSearchParameter"
   },
   {
     "id": "practitionerRole-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-location.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleLocationSearchParameter"
   },
   {
     "id": "practitionerRole-network",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-network.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleNetworkSearchParameter"
   },
   {
     "id": "practitionerRole-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-organization.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleOrganizationSearchParameter"
   },
   {
     "id": "practitionerRole-practitioner",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-practitioner.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRolePractitionerSearchParameter"
   },
   {
     "id": "practitionerRole-role",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-role.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleRoleSearchParameter"
   },
   {
     "id": "practitionerRole-service",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-service.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleServiceSearchParameter"
   },
   {
     "id": "practitionerRole-specialty",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-query/SearchParameter-practitionerRole-specialty.html",
-    "version": "0.0.1",
+    "version": "1.0.0-ballot1",
     "name": "PractitionerRoleSpecialtySearchParameter"
   }
 ]

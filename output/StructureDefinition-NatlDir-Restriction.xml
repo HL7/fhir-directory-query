@@ -41,7 +41,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction"/>
-  <version value="0.0.1"/>
+  <version value="1.0.0-ballot1"/>
   <name value="NatlDirRestriction"/>
   <title value="National Directory Endpoint Qry Exchange  Restriction"/>
   <status value="active"/>

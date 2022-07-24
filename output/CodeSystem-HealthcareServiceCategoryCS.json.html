@@ -21,6 +21,8 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,11 +49,23 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Endpoint Query</span>
             <br/>
-            <span style="display:inline-block;">0.0.1 - draft
+            <span style="display:inline-block;">1.0.0-ballot1 - draft
 
 
 
@@ -169,7 +183,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Endpoint Query - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -222,7 +236,7 @@
         
           Active
           
-            as of 2022-07-21
+            as of 2022-07-24
           
         
       </td>
@@ -247,11 +261,11 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;behav&lt;a name=\&quot;HealthcareServiceCategoryCS-behav\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Behavioral Health&lt;/td&gt;&lt;td&gt;Services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dent&lt;a name=\&quot;HealthcareServiceCategoryCS-dent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dental&lt;/td&gt;&lt;td&gt;Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the mouth.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dme&lt;a name=\&quot;HealthcareServiceCategoryCS-dme\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DME/Medical Supplies&lt;/td&gt;&lt;td&gt;Health care consumables or equipments supplied to patients&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emerg&lt;a name=\&quot;HealthcareServiceCategoryCS-emerg\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency care&lt;/td&gt;&lt;td&gt;Health care services rendered within a designated emergency care facility, for point-in-time evaluation and/or treatment any medical condition such that a prudent layperson possessing an average knowledge of medicine and health, believes that immediate unscheduled medical care is required.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;group&lt;a name=\&quot;HealthcareServiceCategoryCS-group\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical Group&lt;/td&gt;&lt;td&gt;Health care services rendered by a group of people, e.g. a group of Physicians.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;home&lt;a name=\&quot;HealthcareServiceCategoryCS-home\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Home Health&lt;/td&gt;&lt;td&gt;Health care services delivered to patients within their residence rather than a clinical setting; usually provided by nurses, home health aides, and other professionals on a regularly scheduled visit.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hosp&lt;a name=\&quot;HealthcareServiceCategoryCS-hosp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital&lt;/td&gt;&lt;td&gt;Health care services rendered within a hospital or other inpatient setting providng patient treatment with specialzed medical and nursing staff and medical equipment.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lab&lt;a name=\&quot;HealthcareServiceCategoryCS-lab\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory&lt;/td&gt;&lt;td&gt;Pathology and laboratory testing on clinical specimenst to obtain informaion about the health of a paeint to aid in diagnosis, treatment and prevention of disease.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;other&lt;a name=\&quot;HealthcareServiceCategoryCS-other\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;outpat&lt;a name=\&quot;HealthcareServiceCategoryCS-outpat\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinic or Outpatient Facility&lt;/td&gt;&lt;td&gt;Health care services rendered in an outpatient facility, e.g. medical procedures, surgeries, etc.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;prov&lt;a name=\&quot;HealthcareServiceCategoryCS-prov\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical Provider&lt;/td&gt;&lt;td&gt;Health care services rendered by a person, e.g. Physician.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pharm&lt;a name=\&quot;HealthcareServiceCategoryCS-pharm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy&lt;/td&gt;&lt;td&gt;Services related to the storage, compounding, dispensing and sale of drugs.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;trans&lt;a name=\&quot;HealthcareServiceCategoryCS-trans\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transportation&lt;/td&gt;&lt;td&gt;Services which transport patients to or from a medical facility, e.g., ambulance.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;urg&lt;a name=\&quot;HealthcareServiceCategoryCS-urg\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgent Care&lt;/td&gt;&lt;td&gt;Unscheduled health care services which provide for point-in-time evaluation or treatment of a non-life-threatening medical condition.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vis&lt;a name=\&quot;HealthcareServiceCategoryCS-vis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vision&lt;/td&gt;&lt;td&gt;Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.0.1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.0.0-ballot1",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "HealthcareServiceCategoryCS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Healthcare Service Category",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-07-21T17:51:33-04:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-07-24T13:15:49-04:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "HL7 Patient Administration Working Group",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -389,13 +403,17 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 21, 2022 17:51-0400">2022-07-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-query#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 24, 2022 13:15-0400">2022-07-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-query/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
