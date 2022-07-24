@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.us.fhir-directory-query",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [
@@ -1089,9 +1089,6 @@
       "Organization.telecom",
       "Practitioner.telecom",
       "PractitionerRole.telecom"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary": [
-      "Location.telecom"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method": [
       "HealthcareService"

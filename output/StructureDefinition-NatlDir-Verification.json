@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "NatlDirEndpointQryVerification",
   "title": "National Directory Endpoint Qry Exchange  Verification",
   "status": "active",

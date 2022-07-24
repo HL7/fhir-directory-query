@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DirectTrust<a name=\"TrustFrameworkTypeCS-DirectTrust\"> </a></td><td>Direct Trust</td></tr><tr><td style=\"white-space:nowrap\">CareQuality<a name=\"TrustFrameworkTypeCS-CareQuality\"> </a></td><td>Carequality</td></tr><tr><td style=\"white-space:nowrap\">Commonwell<a name=\"TrustFrameworkTypeCS-Commonwell\"> </a></td><td>Commonwell</td></tr><tr><td style=\"white-space:nowrap\">TEFCA<a name=\"TrustFrameworkTypeCS-TEFCA\"> </a></td><td>TEFCA</td></tr><tr><td style=\"white-space:nowrap\">PayerToPayer<a name=\"TrustFrameworkTypeCS-PayerToPayer\"> </a></td><td>Payer to Payer Trust Network</td></tr><tr><td style=\"white-space:nowrap\">Exchange<a name=\"TrustFrameworkTypeCS-Exchange\"> </a></td><td>Exchange Required by Federal Regulations</td></tr><tr><td style=\"white-space:nowrap\">PCDH<a name=\"TrustFrameworkTypeCS-PCDH\"> </a></td><td>Patient Centered Data Home</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "TrustFrameworkTypeCS",
   "title": "Trust FrameworkType",
   "status": "active",
-  "date": "2022-07-21T17:51:33-04:00",
+  "date": "2022-07-24T13:15:49-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

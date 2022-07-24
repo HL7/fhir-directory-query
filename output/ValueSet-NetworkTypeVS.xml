@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-OrgTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-OrgTypeCS.html#OrgTypeCS-ntwk">ntwk</a></td><td>Network</td><td>A healthcare provider insurance network</td></tr></table></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NetworkTypeVS"/>
-  <version value="0.0.1"/>
+  <version value="1.0.0-ballot1"/>
   <name value="NetworkTypeVS"/>
   <title value="Network Type"/>
   <status value="active"/>
-  <date value="2022-07-21T17:51:33-04:00"/>
+  <date value="2022-07-24T13:15:49-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

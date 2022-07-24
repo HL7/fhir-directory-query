@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.fhir-directory-query
 canonical: http://hl7.org/fhir/us/fhir-directory-query
-version: 0.0.1
+version: 1.0.0-ballot1
 name: ONC FAST National Directory Endpoint Query
 title: National Healthcare Directory Endpoint Query
 status: active

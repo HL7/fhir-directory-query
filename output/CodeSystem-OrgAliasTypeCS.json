@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgAliasTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">legalalternative<a name=\"OrgAliasTypeCS-legalalternative\"> </a></td><td>Legal Alternative</td><td>A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.).</td></tr><tr><td style=\"white-space:nowrap\">historical<a name=\"OrgAliasTypeCS-historical\"> </a></td><td>Historical</td><td>Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization.</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgAliasTypeCS",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "OrgAliasTypeCS",
   "title": "Qualification Status",
   "status": "active",
-  "date": "2022-07-21T17:51:33-04:00",
+  "date": "2022-07-24T13:15:49-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

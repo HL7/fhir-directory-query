@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">adr<a name=\"ConsentScopeCS-adr\"> </a></td><td>Advanced Care Directive</td><td>Actions to be taken if they are no longer able to make decisions for themselves.</td></tr><tr><td style=\"white-space:nowrap\">research<a name=\"ConsentScopeCS-research\"> </a></td><td>Research</td><td>Consent to participate in research protocol and information sharing required.</td></tr><tr><td style=\"white-space:nowrap\">patient-privacy<a name=\"ConsentScopeCS-patient-privacy\"> </a></td><td>Privacy Consent</td><td>Agreement to collect, access, use or disclose (share) information.</td></tr><tr><td style=\"white-space:nowrap\">treatment<a name=\"ConsentScopeCS-treatment\"> </a></td><td>Treatment</td><td>Consent to undergo a specific treatment.</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "ConsentScopeCS",
   "title": "National Healthcare Directory ConsentScopeCodes",
   "status": "active",
-  "date": "2022-07-21T17:51:33-04:00",
+  "date": "2022-07-24T13:15:49-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

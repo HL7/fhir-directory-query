@@ -107,7 +107,7 @@
           "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime"
         },
         {
-          "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary",
+          "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary",
           "valueReference": {
             "reference": "PractitionerRole/HansSoloRole1"
           }
