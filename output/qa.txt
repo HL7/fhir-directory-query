@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectoryEndpointQuery : Validation Results
 =========================================
 
-err = 17, warn = 3, info = 3
+err = 15, warn = 2, info = 0
 IG Publisher Version: 1.1.125 Out of date - current version is 1.1.126
-Generated Sun Jul 24 13:17:20 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#1.0.0-ballot1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
+Generated Mon Jul 25 10:00:58 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-query#1.0.0-ballot1 (canonical = http://hl7.org/fhir/us/fhir-directory-query)
  Build Errors : 1 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-query : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\capabilitystatement-fhir-directory-query-basic-endpoint : 0 / 0 / 1
@@ -78,8 +78,8 @@ Generated Sun Jul 24 13:17:20 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\organizationaffiliation-PharmChainAffil1 : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\organizationaffiliation-PharmChainAffil2 : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\organizationaffiliation-PharmChainAffil3 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 2
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-HansSolo : 0 / 0 / 2
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-HansSolo : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitioner-JoeSmith : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitionerrole-AnonRole : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\practitionerrole-CounselorRole1 : 0 / 0 / 1
@@ -174,7 +174,6 @@ Generated Sun Jul 24 13:17:20 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-careteam-alias : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-communication-proficiency : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-contactpoint-availabletime : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-contactpoint-viaintermediary : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-delivery-method : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-dynamicRegistration : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\structuredefinition-endpoint-reference : 0 / 0 / 1
@@ -228,7 +227,7 @@ Generated Sun Jul 24 13:17:20 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-TrustFrameworkTypeVS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-ValidationProcessVS : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\valueset-VirtualModalitiesVS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\verificationresult-ProviderAttestation : 2 / 0 / 2
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-query\fsh-generated\resources\verificationresult-ProviderAttestation : 0 / 0 / 1
 </table>
 == n/a ==
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-fhir-directory-query in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
@@ -319,9 +318,7 @@ ERROR: OrganizationAffiliation/PharmChainAffil2: OrganizationAffiliation.special
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil3.json ==
 ERROR: OrganizationAffiliation/PharmChainAffil3: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336M0002X)
 == fsh-generated\resources\Practitioner-Counselor.json ==
-INFORMATION: Practitioner/Counselor: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
 == fsh-generated\resources\Practitioner-HansSolo.json ==
-INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
 == fsh-generated\resources\Practitioner-JoeSmith.json ==
 == fsh-generated\resources\PractitionerRole-AnonRole.json ==
 == fsh-generated\resources\PractitionerRole-CounselorRole1.json ==
@@ -419,8 +416,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 == fsh-generated\resources\StructureDefinition-careteam-alias.json ==
 == fsh-generated\resources\StructureDefinition-communication-proficiency.json ==
 == fsh-generated\resources\StructureDefinition-contactpoint-availabletime.json ==
-== fsh-generated\resources\StructureDefinition-contactpoint-viaintermediary.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-delivery-method.json ==
 == fsh-generated\resources\StructureDefinition-dynamicRegistration.json ==
 == fsh-generated\resources\StructureDefinition-endpoint-reference.json ==
@@ -475,6 +470,3 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 == fsh-generated\resources\ValueSet-ValidationProcessVS.json ==
 == fsh-generated\resources\ValueSet-VirtualModalitiesVS.json ==
 == fsh-generated\resources\VerificationResult-ProviderAttestation.json ==
-ERROR: VerificationResult/ProviderAttestation: VerificationResult.validationType: None of the codings provided are in the value set 'Validation-type' (http://hl7.org/fhir/ValueSet/verificationresult-validation-type), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/validation-type#valueset)
-ERROR: VerificationResult/ProviderAttestation: VerificationResult.validationType.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/validation-type#valueset in http://terminology.hl7.org/CodeSystem/validation-type for 'http://terminology.hl7.org/CodeSystem/validation-type#valueset'
-INFORMATION: VerificationResult/ProviderAttestation: VerificationResult.attestation.communicationMethod.coding[0]: Code System URI 'https://terminology.hl7.org/3.1.0/CodeSystem-verificationresult-communication-method.html' is unknown so the code cannot be validated

@@ -433,7 +433,7 @@ Description: "Describes the status of an identifier"
 * valueCode ^label = "status"
 * valueCode ^short = "active|inactive|issued-in-error|revoked|pending"
 * valueCode ^definition = "Describes the status of an identifier"
-
+/* SMM - duplicate
 Extension: ContactPointViaIntermediary
 Id: contactpoint-viaintermediary
 Title: "NatlDirEndpointQry Contactpoint Viaintermediary"
@@ -450,7 +450,7 @@ Description: "Represents an external point of contact responsible for handling c
 * valueReference ^label = "viaintermediary"
 * valueReference ^short = "Via intermediary"
 * valueReference ^definition = "Represents an external point of contact responsible for handling communications with this entity"
-
+*/
 
 Extension: Accessibility
 Id: accessibility

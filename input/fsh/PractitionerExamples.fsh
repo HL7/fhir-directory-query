@@ -60,7 +60,7 @@ Usage: #example
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
+* communication[0].extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 * communication = $BCP47#ja 
 
 
@@ -148,7 +148,7 @@ Usage: #example
 * qualification[0].code.text = "IL"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = QualificationStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
+* communication[0].extension[communication-proficiency].valueCodeableConcept = LanguageProficiencyCS#30
 * communication = $BCP47#ru 
 
 Instance: CounselorRole1
@@ -165,7 +165,7 @@ Usage: #example
 * healthcareService = Reference(VirtualCounselService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
-
+ 
 
 Instance: VirtualCounselService
 InstanceOf: NatlDirEndpointQryHealthcareService
@@ -303,6 +303,8 @@ Usage: #example
 * telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][3].valueCode  = #thu
 * telecom[0].extension[contactpoint-availabletime][0].extension[daysOfWeek][4].valueCode  = #fri 
 * telecom[0].extension[contactpoint-availabletime][0].extension[allDay].valueBoolean = true
+* telecom[0].extension[via-intermediary][0].valueReference = Reference(JoeSmithRole1)
+
 * telecom[1].system = #url
 * telecom[1].value = "https://www.hgh.com"
 * telecom[1].rank = 1

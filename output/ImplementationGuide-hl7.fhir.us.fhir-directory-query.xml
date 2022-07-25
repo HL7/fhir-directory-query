@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectoryEndpointQuery"/>
   <title value="National Healthcare Directory Endpoint Query"/>
   <status value="active"/>
-  <date value="2022-07-24T13:15:49-04:00"/>
+  <date value="2022-07-25T09:59:20-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -67,6 +67,22 @@
       </extension>
       <extension url="value">
         <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="n/a"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../exp-params.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -414,17 +430,6 @@
       </reference>
       <name value="Contactpoint Availabletime"/>
       <description value="An extension representing the days and times a contact point is available"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/contactpoint-viaintermediary"/>
-      </reference>
-      <name value="NatlDirEndpointQry Contactpoint Viaintermediary"/>
-      <description value="Represents an external point of contact responsible for handling communications with this entity"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

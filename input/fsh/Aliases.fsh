@@ -15,7 +15,7 @@ Alias: $verificationresult-validation-type = http://hl7.org/fhir/ValueSet/verifi
 Alias: $verificationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
 Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type
 Alias: $verificationresult-communication-method_1 = http://hl7.org/fhir/ValueSet/verificationresult-communication-method
-Alias: $verificationresult-communication-methodCS = https://terminology.hl7.org/3.1.0/CodeSystem-verificationresult-communication-method.html
+Alias: $verificationresult-communication-methodCS = http://terminology.hl7.org/CodeSystem/verificationresult-communication-method
 
 Alias: $identifierstatus = http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus
 //Alias: $aliastype = http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype

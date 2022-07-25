@@ -147,14 +147,6 @@
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary",
-      "title": "NatlDirEndpointQry Contactpoint Viaintermediary",
-      "types": [
-        "Reference",
-        "Reference"
-      ]
-    },
-    {
       "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method",
       "title": "Delivery Method",
       "types": [
@@ -1078,7 +1070,6 @@
       "CareTeam"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency": [
-      "Practitioner",
       "Practitioner.communication"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime": [
