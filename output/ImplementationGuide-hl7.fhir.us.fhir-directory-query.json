@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectoryEndpointQuery",
   "title": "National Healthcare Directory Endpoint Query",
   "status": "active",
-  "date": "2022-07-24T13:15:49-04:00",
+  "date": "2022-07-25T09:59:20-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -94,6 +94,32 @@
           {
             "url": "value",
             "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "version-comparison"
+          },
+          {
+            "url": "value",
+            "valueString": "n/a"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-expansion-params"
+          },
+          {
+            "url": "value",
+            "valueString": "../../exp-params.json"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -596,20 +622,6 @@
         },
         "name": "Contactpoint Availabletime",
         "description": "An extension representing the days and times a contact point is available",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/contactpoint-viaintermediary"
-        },
-        "name": "NatlDirEndpointQry Contactpoint Viaintermediary",
-        "description": "Represents an external point of contact responsible for handling communications with this entity",
         "exampleBoolean": false
       },
       {

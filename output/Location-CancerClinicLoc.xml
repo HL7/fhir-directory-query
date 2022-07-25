@@ -55,6 +55,11 @@
         <valueBoolean value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary">
+      <valueReference>
+        <reference value="PractitionerRole/JoeSmithRole1"/>
+      </valueReference>
+    </extension>
     <system value="phone"/>
     <value value="(111)-222-3333"/>
     <rank value="2"/>

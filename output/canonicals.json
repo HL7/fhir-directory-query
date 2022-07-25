@@ -336,13 +336,6 @@
     "name": "ContactPointAvailableTime"
   },
   {
-    "id": "contactpoint-viaintermediary",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-viaintermediary",
-    "version": "1.0.0-ballot1",
-    "name": "ContactPointViaIntermediary"
-  },
-  {
     "id": "delivery-method",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method",
