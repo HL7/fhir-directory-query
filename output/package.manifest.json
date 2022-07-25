@@ -1,8 +1,0 @@
-{
-  "version": "1.0.0-ballot1",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20220725095849",
-  "name": "hl7.fhir.us.fhir-directory-query"
-}

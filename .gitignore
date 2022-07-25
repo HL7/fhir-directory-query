@@ -5,3 +5,5 @@ Thumbs.db
 /template
 /temp
 /output
+/output/*
+/output/**
