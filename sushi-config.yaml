@@ -13,14 +13,14 @@
 id: hl7.fhir.us.fhir-directory-query
 canonical: http://hl7.org/fhir/us/fhir-directory-query
 version: 1.0.0-ballot1
-name: ONC FAST National Directory Endpoint Query
-title: National Healthcare Directory Endpoint Query
+name: ONC FAST National Directory  Query
+title: National Healthcare Directory Query
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
   url: https://www.hl7.org/Special/committees/pafm/index.cfm
   email: pafm@lists.HL7.org
-description: National Directory Endpoint Query
+description: National Directory Query
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -49,6 +49,7 @@ menu:
     Bulk Data and Subscriptions:          bulk-data.html
   Search Parameters   : artifacts.html#behavior-search-parameters
   Profiles: profiles.html
+  Artifacts         : artifacts.html
   Capability Statements:
     Basic Endpoint Conformance Requirements  : CapabilityStatement-fhir-directory-query-basic-endpoint.html
     Basic Expanded Conformance Requirements  : CapabilityStatement-fhir-directory-query-basic-expanded.html

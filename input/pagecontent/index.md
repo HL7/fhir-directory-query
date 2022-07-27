@@ -1,4 +1,11 @@
-
+---
+title: National Directory Implementation Guide HomePage
+layout: default
+active: home
+topofpage: true
+sectionnumbering: true
+F: http://build.fhir.org/
+---
 
 ## Introduction
 
@@ -9,6 +16,7 @@ It describes the architectural considerations for attesting to, validating, and 
 Although we developed this guide from the conceptual starting point of a national source of validated provider data, we recognize that implementers may have different business needs, contexts, or use cases. Therefore, we have strived to make this guide as broadly applicable as possible. Every implementation may not use all of the content in this guide. It serves as a “floor” for the exchange of validated provider data, while describing additional data elements and capabilities that support more robust implementations.
 
 Likewise, we provide general guidance about the technical architecture and capabilities of a central source of validated provider data, but are not prescriptive about what an implementation must include.  
+
 
 
 
