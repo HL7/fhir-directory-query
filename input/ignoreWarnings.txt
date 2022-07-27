@@ -5,8 +5,13 @@ The code 101200000X is not valid in the system http://nucc.org/provider-taxonomy
 WARNING: The code 171400000X  is not valid in the system http://nucc.org/provider-taxonomy
 WARNING: The code 342000000X  is not valid in the system http://nucc.org/provider-taxonomy
 
-#We are not using US careteam profile
+#None of the codings provided are in the value set 'Specialties' - Graham is awaare of this issue and is looking into it.
+error: None of the codings provided are in the value set 'Specialties'
+
+#We are using the Plan Net profile instead of US core for Practitioner Role and using the Jira exception
 WARNING:US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile. Comparison with US Core CareTeam Profile
 
-#This is an error with IG publisher, it appears whenever the consent resource is used without any changes.
+#error: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme) is an error with underlying spec.
 error: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+
+#We are not able to use Care Team profile from US core because of 1..1 on subject (there is no patient info in National Directory). We will have an exception before ballot
