@@ -32,7 +32,7 @@ parameters:
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
 
 copyrightYear: 2021+
-releaseLabel: draft
+releaseLabel: ballot
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │

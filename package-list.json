@@ -15,7 +15,7 @@
         "date": "2022-07-26",
         "desc": "National Directory",
         "path": "http://hl7.org/fhir/us/fhir-directory-query",
-        "status": "Draft",
+        "status": "ballot",
         "sequence": "STU 1",
         "fhirversion": "4.0.1"
       }

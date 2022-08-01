@@ -1,17 +1,14 @@
 == Suppressed Messages ==
 
-# Errors to suppress
-The code 101200000X is not valid in the system http://nucc.org/provider-taxonomy
-WARNING: The code 171400000X  is not valid in the system http://nucc.org/provider-taxonomy
-WARNING: The code 342000000X  is not valid in the system http://nucc.org/provider-taxonomy
 
-#None of the codings provided are in the value set 'Specialties' - Graham is awaare of this issue and is looking into it.
+# None of the codings provided are in the value set 'Specialties' - Graham is awaare of this issue and is looking into it.
 error: None of the codings provided are in the value set 'Specialties'
 
-#We are using the Plan Net profile instead of US core for Practitioner Role and using the Jira exception
-WARNING:US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile. Comparison with US Core CareTeam Profile
+# We are using the Plan Net profile instead of US core for Practitioner Role and using the Jira exception
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
 
-#error: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme) is an error with underlying spec.
+# error: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme) is an error with underlying spec.
 error: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 
-#We are not able to use Care Team profile from US core because of 1..1 on subject (there is no patient info in National Directory). We will have an exception before ballot
+# US Core variance request for Care Team and Practitioner Role https://jira.hl7.org/browse/FHIR-37832?filter=12641
