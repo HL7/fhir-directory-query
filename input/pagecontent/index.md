@@ -35,7 +35,7 @@ Note: The individual National Directory profiles identify the structural constra
 
 ----
 
-Primary Authors: Dan Chaput, Alex Kontur, Brian Postlethwaite, Bob Dieterle
+Primary Authors: Dan Chaput, Alex Kontur, Brian Postlethwaite, Bob Dieterle, Sean Mahoney
 
 [Argonaut]: http://argonautwiki.hl7.org/index.php?title=Main_Page
 [National Directory Security]: US Core-security.html
