@@ -6,7 +6,7 @@ Description:  "Codes for use in defining access levels for sharing subsets of co
 * ^caseSensitive = true
 */
 CodeSystem: ConsentScopeCS
-Title: "National Healthcare Directory ConsentScopeCodes"
+Title: "National Healthcare Directory ConsentScopeCodes Code System"
 Description:  "This value set includes the four Consent scope codes."
 * #adr "Advanced Care Directive" "Actions to be taken if they are no longer able to make decisions for themselves."
 * #research "Research" "Consent to participate in research protocol and information sharing required."
@@ -16,7 +16,7 @@ Description:  "This value set includes the four Consent scope codes."
 
 
 CodeSystem: IgTypeCS
-Title: "IG Type"
+Title: "IG Type Code System"
 Description: "IG Type"
 
 * #FHIR	"FHIR"
@@ -24,15 +24,15 @@ Description: "IG Type"
 * ^caseSensitive = true
 
 CodeSystem: EndpointTypeCS
-Title: "IG Type"
-Description: "IG Type"
+Title: "Endpoint Type Code System"
+Description: "Endpoint Type"
 * #FHIR	"FHIR Server"
 * #OpEndpoint	"Operation Endpoint"
 * #CDS	"CDS Hooks"
 * ^caseSensitive = true
 
 CodeSystem: TrustFrameworkTypeCS
-Title: "Trust FrameworkType"
+Title: "Trust FrameworkType Code System"
 Description: "Trust Framework Type"
 * #DirectTrust	"Direct Trust"
 * #CareQuality	"Carequality"
@@ -44,7 +44,7 @@ Description: "Trust Framework Type"
 * ^caseSensitive = true
 
 CodeSystem: AcceptingPatientsCS
-Title: "Accepting Patients Codes"
+Title: "Accepting Patients Codes Code System"
 Description: "Codes to identify if the practice is accepting new patients"
 * #nopt	"Not Accepting" "Not accepting patients"
 * #newpt	"Accepting" "Accepting patients"
@@ -53,7 +53,7 @@ Description: "Codes to identify if the practice is accepting new patients"
 * ^caseSensitive = true
 
 CodeSystem: AccessibilityCS
-Title: "Accessibility"
+Title: "Accessibility Code System"
 Description: "General categories of accommodations available."
 * #cultcomp	"Cultural competence"	"Provides services that meet the social, cultural, and linguistic needs of persons."
 * #handiaccess	"handicap accessible"	"Provides access to persons with disabilities."
@@ -65,14 +65,14 @@ Description: "General categories of accommodations available."
 * ^caseSensitive = true
 
 CodeSystem: DeliveryMethodCS
-Title: "Delivery Methods"
+Title: "Delivery Methods Code System"
 Description: "Categories of healthcare service delivery methods."
 * #virtual	"Virtual" "Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"
 * #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
 * ^caseSensitive = true
 
 CodeSystem: VirtualModalitiesCS
-Title: "Virtual Modalities"
+Title: "Virtual Modalities Code System"
 Description: "Categories of virtual service delivery modalities."
 * #phone	"phone" "Voice Telephone"
 * #video	"video chat" "Video Chat"
@@ -83,7 +83,7 @@ Description: "Categories of virtual service delivery modalities."
 * ^caseSensitive = true
 
 CodeSystem:  EndpointConnectionTypeCS
-  Title: "Endpoint Connection Types (additional)"
+  Title: "Endpoint Connection Types (additional) Code System"
   Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
 * #hl7-fhir-opn "HL7 FHIR Operation" "Interact with a FHIR server interface using FHIR's RESTful interface using an operation other than messaging. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement."
 * #rest-non-fhir "REST (not FHIR)" "Interact with a server using HTTP/REST but not FHIR.  Should be used for web portals."
@@ -91,13 +91,13 @@ CodeSystem:  EndpointConnectionTypeCS
  
 
 CodeSystem:  EndpointPayloadTypeCS
-  Title: "Endpoint Payload Types"
+  Title: "Endpoint Payload Types Code System"
   Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * #NA "Not Applicable" "Not Applicable"
 * ^caseSensitive = true
  
  CodeSystem: HealthcareServiceCategoryCS
- Title: "Healthcare Service Category"
+ Title: "Healthcare Service Category Code System"
  Description: "Broad categories of healthcare services being performed or delivered"
 * #behav "Behavioral Health" "Services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."
 * #dent "Dental" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the mouth."
@@ -117,7 +117,7 @@ CodeSystem:  EndpointPayloadTypeCS
 * ^caseSensitive = true
 
 CodeSystem: InsuranceProductTypeCS
-Title: "Insurance Product Type"
+Title: "Insurance Product Type Code System"
 Description:  "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
 * #commppo "Commercial PPO"  "Health insurance provided through a Preferred Provider Organization (PPO)."
 * #commhdhp "Commercial HDHP" "Health insurance provided through a High Deductible Health Plan (HDHP)."
@@ -144,7 +144,7 @@ Description:  "A distinct package of health insurance coverage benefits that are
 * ^caseSensitive = true
 
 CodeSystem: InsurancePlanTypeCS
-Title: "Insurance Plan Type"
+Title: "Insurance Plan Type Code System"
 Description:  "Categories of cost-sharing used by plans"
 * #platinum "Platinum-QHP" "Plan with highest monthly premium and lowest costs when you need care	A Qualified Health Plan with the highest monthly premiums and smallest out-of-pocket costs for the member in comparison to other metal-category plans"
 * #gold "Gold-QHP" "Plan with high monthly premium and low costs when you need care	A Qualified Health Plan with the higher monthly premiums and smaller out-of-pocket costs for the member in comparison to other metal-category plans"
@@ -157,7 +157,7 @@ Description:  "Categories of cost-sharing used by plans"
 * ^caseSensitive = true
 
 CodeSystem:  OrgTypeCS
-  Title: "Organization Type"
+  Title: "Organization Type Code System"
   Description:  "Categories of organizations based on criteria in provider directories."
 * #fac "Facility" "A physical healthcare facility."
 * #prvgrp "Provider Group" "A healthcare provider entity"
@@ -169,7 +169,7 @@ CodeSystem:  OrgTypeCS
 
 
 CodeSystem: QualificationStatusCS
-Title: "Qualification Status"
+Title: "Qualification Status Code System"
 Description: "The state indicating if a qualification is currently valid."
 * #active "active" "The credential may be considered valid for use."
 * #inactive "inactive" "The credential may not be considered valid for use."
@@ -180,7 +180,7 @@ Description: "The state indicating if a qualification is currently valid."
 * ^caseSensitive = true
 
 CodeSystem:  LanguageProficiencyCS
-Title: "Language Proficiency"
+Title: "Language Proficiency Code System"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
 * #00	"No proficiency"	"Unable to function in the spoken language."
 //* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
@@ -196,7 +196,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 * ^caseSensitive = true
 
 CodeSystem: ProviderRoleCS
-Title: "Provider Role Codes"
+Title: "Provider Role Codes Code System"
 Description: "A capability that an individual, group, or organization is acknowledged to have in a payer network."
 // These are Payer Roles from Gail
 * #ap "Admitting Privileges" "Practitioner has admitting privileges at hospital (organization)"
@@ -246,8 +246,8 @@ Description: "A capability that an individual, group, or organization is acknowl
 
 
 CodeSystem: OrgAliasTypeCS
-Title: "Qualification Status"
-Description: "The state indicating if a qualification is currently valid."
+Title: "Organization Alias Type Code System"
+Description: "The state indicating if an Organization has an alias."
 * #legalalternative "Legal Alternative" "A pseudonym used by an organization to perform their business under a name that differs from the registered, legal name of the business, also known as a trade name, business name, or 'doing business as' (d.b.a.)."
 * #historical "Historical" "Any previously used legal or trade names used by an organization since the creation of the business. Could include names used by independent organizations before a merger or other reorganization."
 * ^caseSensitive = true 

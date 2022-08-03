@@ -16,10 +16,14 @@ version: 1.0.0-ballot1
 name: NationalHealthcareDirectoryQuery
 title: National Healthcare Directory Query
 status: active
-publisher:
-  name: HL7 Patient Administration Working Group
-  url: https://www.hl7.org/Special/committees/pafm/index.cfm
-  email: pafm@lists.HL7.org
+publisher: 
+  name: HL7 International - Patient Administration Work Group
+  url: http://hl7.org/Special/committees/pafm
+  email: pafm@lists.hl7.org
+#publisher:
+#  name: HL7 Patient Administration Working Group
+#  url: https://www.hl7.org/Special/committees/pa
+#  email: pafm@lists.HL7.org
 description: National Directory Query
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0

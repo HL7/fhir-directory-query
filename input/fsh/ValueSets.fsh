@@ -1,12 +1,12 @@
 
 ValueSet: IdentifierStatusVS
-Title: "IG Type"
-Description: "Codes to identify IG Type"
+Title: "Identifier Status Value Set"
+Description: "Codes for Identifier Status"
 * codes from system CredentialStatusCS
 
 
 ValueSet: ValidationProcessVS
-Title: "Validation Type"
+Title: "Validation Type Value Set"
 Description: "Codes to identify Validation Type"
 * ValidationTypeCS#editcheck  "edit check"
 * ValidationTypeCS#valueset	"Valueset"
@@ -16,72 +16,72 @@ Description: "Codes to identify Validation Type"
 * ValidationTypeCS#attester	"Attester"
 
 ValueSet: IgTypeVS
-Title: "IG Type"
+Title: "IG Type Value Set"
 Description: "Codes to identify IG Type"
 * codes from system IgTypeCS
 
 ValueSet: EndpointTypeVS
-Title: "Endpoint Type"
+Title: "Endpoint Type Value Set"
 Description: "Codes to identify Endpoint Type"
 * codes from system EndpointTypeCS
 
 ValueSet: TrustFrameworkTypeVS
-Title: "Trust Framework Type"
+Title: "Trust Framework Type Value Set"
 Description: "Trust Framework Type"
 * codes from system TrustFrameworkTypeCS
 
 ValueSet: AcceptingPatientsVS
-Title: "Accepting Patients Codes"
+Title: "Accepting Patients Codes Value Set"
 Description: "Codes to identify if the practice is accepting new patients"
 * codes from system AcceptingPatientsCS
 
 ValueSet: AccessibilityVS
-Title: "Accessibility"
+Title: "Accessibility Value Set"
 Description: "Codes for documenting general categories of accommodations available."
 * codes from system AccessibilityCS
 
 ValueSet: DeliveryMethodVS
-Title: "Delivery Methods"
+Title: "Delivery Methods Value Set"
 Description: "Codes for documenting delivery methods."
 * codes from system DeliveryMethodCS
 
 ValueSet: VirtualModalitiesVS
-Title: "Virtual Modalities"
+Title: "Virtual Modalities Value Set"
 Description: "Codes for virtual service delivery modalities ."
 * codes from system VirtualModalitiesCS
 
 ValueSet: SpecialtiesVS
-Title: "Specialties"
+Title: "Specialties Value Set"
 Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
 
 ValueSet: SpecialtyAndDegreeLicenseCertificateVS
-Title: "Specialties, Degrees, Licenses, and Certificates"
+Title: "Specialties, Degrees, Licenses, and Certificates Value Set"
 Description:  "Specialties and Degree License and Certificates"
 * codes from valueset SpecialtiesVS 
 * codes from system $V2table0360CS
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
-Title: "Individual Specialties, Degrees, Licenses, and Certificates"
+Title: "Individual Specialties, Degrees, Licenses, and Certificates Value Set"
 Description: "Individual Specialties, Degrees, Licenses, and Certificates"
 //* codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
-Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
+Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates Value Set"
 Description: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
 * codes from valueset NonIndividualSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: EndpointConnectionTypeVS
-Title: "Endpoint Connection Types"
+Title: "Endpoint Connection Types Value Set"
 Description:  "Endpoint Connection Types"
 * codes from system $ConnectionTypeCS
 * codes from system EndpointConnectionTypeCS 
 
 ValueSet: MinEndpointConnectionTypeVS
-Title: "Minimum Endpoint Connection Types"
+Title: "Minimum Endpoint Connection Types Value Set"
 Description:  "Minimum Endpoint Connection Types"
 * $ConnectionTypeCS#hl7-fhir-rest "HL7 FHIR"
 * $ConnectionTypeCS#hl7-fhir-msg "HL7 FHIR Messaging"
@@ -90,7 +90,7 @@ Description:  "Minimum Endpoint Connection Types"
 * EndpointConnectionTypeCS#rest-non-fhir "REST (not FHIR)"
 
 ValueSet: EndpointUsecaseVS
-Title: "Endpoint Usecases"
+Title: "Endpoint Usecases Value Set"
 Description:  "Codes for documenting business use case by a general grouping by business area."
 * $V3ActReason#TREAT  "treatment"
 * $V3ActReason#HPAYMT "healthcare payment"
@@ -109,59 +109,59 @@ Description: "Codes for use in defining access levels for sharing subsets of con
 //* codes from system ConsentScopeCS
 
 ValueSet: EndpointPayloadTypeVS
-Title: "Endpoint Payload Types"
+Title: "Endpoint Payload Type Value Set"
 Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * EndpointPayloadTypeCS#NA  "Not Applicable"
 
 ValueSet: NetworkTypeVS
-Title: "Network Type"
+Title: "Network Type Value Set"
 Description:  "Single value describing networks."
 * OrgTypeCS#ntwk   // only Network profile uses this type 
 
 
 ValueSet: OrgTypeVS
-Title: "Organization Type"
+Title: "Organization Type Value Set"
 Description:  "Categories of organizations based on criteria in provider directories."
 * codes from system OrgTypeCS
 * exclude OrgTypeCS#ntwk   // only Network profile uses this type 
 
 ValueSet: OrgAliasTypeVS
-Title: "Organization Alias Type"
+Title: "Organization Alias Typ Value Sete"
 Description:  "Categories of an organization's Alias based on criteria in provider directories."
 * codes from system OrgAliasTypeCS
 
 ValueSet: InsuranceProductTypeVS
-Title: "Insurance Product Type"
+Title: "Insurance Product Type Value Set"
 Description: "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
 * codes from system InsuranceProductTypeCS
 
 
 ValueSet: InsurancePlanTypeVS
-Title: "Insurance Plan Type"
+Title: "Insurance Plan Type Value Set"
 Description: "Categories of cost-sharing used by plans."
 * codes from system InsurancePlanTypeCS
 
 ValueSet: HealthcareServiceCategoryVS
-Title: "Healthcare Service Category"
+Title: "Healthcare Service Category Value Set"
 Description: "Broad categories of healthcare services being performed or delivered."
 * codes from system HealthcareServiceCategoryCS
 
 
 ValueSet: QualificationStatusVS
-Title: "Qualification Status"
+Title: "Qualification Status Value Set"
 Description: "The state indicating if a qualification is currently valid."
 * codes from system QualificationStatusCS
 
 
 ValueSet: LanguageProficiencyVS
-Title: "Language Proficiency"
+Title: "Language Proficiency Value Set"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
 * codes from system LanguageProficiencyCS
 
 
 
 ValueSet: PractitionerRoleVS
-Title: "PractitionerRole Code"
+Title: "PractitionerRole Code Value Set"
 Description: "Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System."
 * codes from system ProviderRoleCS
 * codes from system $HL7PractitionerRoleCS
@@ -169,8 +169,8 @@ Description: "Codes for the capabilities that an individual, group, or organizat
 
 
 ValueSet: HealthcareServiceTypeVS
-Description: "Valueset for HealthCareService type"
-Title: "HealthcareService Types"
+Description: "HealthCareService type Value Set"
+Title: "HealthcareService Type Value Set"
 * $ServiceTypeCS#1 "Adoption/Permanent Care Info/Support" 
 * $ServiceTypeCS#3 "Aged Care Information/Referral" 
 * $ServiceTypeCS#8 "Home Care/Housekeeping Assistance" 
