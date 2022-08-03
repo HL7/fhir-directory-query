@@ -110,7 +110,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 Profile:        NatlDirEndpointQryHealthcareService
 Parent:         HealthcareService
 Id:             NatlDirEndpointQry-HealthcareService
-Title:          "National Directory  Endpoint Qry Exchange HealthcareService"
+Title:          "National Directory Endpoint Qry Exchange HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * meta.lastUpdated 1..1
 * extension contains
@@ -572,7 +572,7 @@ Severity:   #error
 Profile: NatlDirEndpointQryVerification
 Parent: VerificationResult
 Id: NatlDir-Verification
-Title: "National Directory Endpoint Qry Exchange  Verification"
+Title: "National Directory Endpoint Qry Exchange Verification"
 Description: "Describes Verification requirements, source(s), status and dates for one or more elements"
 * ^date = "2017-12-10T12:42:47.483-05:00"
 * ^status = #active
@@ -630,7 +630,7 @@ Description: "Describes Verification requirements, source(s), status and dates f
 Profile: NatlDirRestriction
 Parent: Consent
 Id: NatlDir-Restriction
-Title: "National Directory Endpoint Qry Exchange  Restriction"
+Title: "National Directory Endpoint Qry Exchange Restriction"
 Description: "Restriction on use/release of exchanged information"
 
 * ^status = #active

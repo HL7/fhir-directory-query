@@ -1,12 +1,12 @@
   {
     "package-id": "hl7.fhir.us.fhir-directory-query",
-    "title": "ONC FAST National Healthcare query",
+    "title": "National Healthcare Query",
     "canonical": "http://hl7.org/fhir/us/fhir-directory-query",
     "list": [
       {
         "version": "current",
         "desc": "Continuous Integration Build (latest in version control)",
-        "path": "http://build.fhir.org/ig/HL7/fhir-directory-query/",
+        "path": "http://build.fhir.org/ig/HL7/fhir-directory-query",
         "status": "ci-build",
         "current": true
       },
