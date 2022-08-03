@@ -30,12 +30,12 @@ Note: the following diagrams provide a high-level view of the relationships betw
 A practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.
 
 ### Practitioner Role
-
+ 
 PractionerRole describes the relationship between a practitioner and an organization. A practitioner provides services to the organization at a location. Practitioners also participate in healthcare provider insurance networks through their role at an organization.
 
 **Figure 1: PractionerRole**
 
-[![Diagram1.jpg](https://github.com/HL7/fhir-directory-exchange/raw/master/input/pagecontent/diagram1.jpg)](https://github.com/HL7/fhir-directory-exchange/blob/master/input/pagecontent/diagram1.jpg)
+[![Diagram1.jpg](diagram1.jpg)](diagram1.jpg)
 
 ### Organization Affiliation
 
@@ -43,7 +43,7 @@ Similar to PractitionerRole, OrganizationAffiliation describes relationships bet
 
 **Figure 2: OrganizationAffiliation**
 
-[![Diagram2.jpg](https://github.com/HL7/fhir-directory-exchange/raw/master/input/pagecontent/diagram2.jpg)](https://github.com/HL7/fhir-directory-exchange/blob/master/input/pagecontent/diagram2.jpg)
+[![Diagram2.jpg](diagram2.jpg)](diagram2.jpg)
 
 ### Network / Insurance Plan
 
@@ -51,4 +51,4 @@ A network is a group of practitioners and organizations that provide healthcare 
 
 **Figure 3: Network / Insurance Plan**
 
-[![Diagram3.jpg](https://github.com/HL7/fhir-directory-exchange/raw/master/input/pagecontent/diagram3.jpg)](https://github.com/HL7/fhir-directory-exchange/blob/master/input/pagecontent/diagram3.jpg)
+[![Diagram3.jpg](diagram3.jpg)](diagram3.jpg)

@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.fhir-directory-query
 canonical: http://hl7.org/fhir/us/fhir-directory-query
-version: 1.0.0-ballot1
+version: 1.0.0-ballot
 name: NationalHealthcareDirectoryQuery
 title: National Healthcare Directory Query
 status: active

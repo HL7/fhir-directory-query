@@ -11,10 +11,10 @@
         "current": true
       },
       {
-        "version": "1.0.0-ballot1",     
+        "version": "1.0.0-ballot",     
         "date": "2022-07-26",
         "desc": "National Directory",
-        "path": "http://hl7.org/fhir/us/fhir-directory-query",
+        "path": "http://hl7.org/fhir/us/fhir-directory-query/2022Sep",
         "status": "ballot",
         "sequence": "STU 1",
         "fhirversion": "4.0.1"
