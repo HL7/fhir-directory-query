@@ -55,14 +55,14 @@ menu:
   Profiles: profiles.html
   Artifacts         : artifacts.html
   Capability Statements:
-    Basic Endpoint Conformance Requirements  : CapabilityStatement-fhir-directory-query-basic-endpoint.html
-    Basic Expanded Conformance Requirements  : CapabilityStatement-fhir-directory-query-basic-expanded.html
-    Health & Human Services Endpoint Conformance Requirements  : CapabilityStatement-fhir-directory-query-health-or-human-services-endpoint.html
-    Health & Human Services Expanded Conformance Requirements  : CapabilityStatement-fhir-directory-query-health-or-human-services-expanded.html
-    Human Services Endpoint Conformance Requirements  : CapabilityStatement-fhir-directory-query-human-services-endpoint.html
-    Human Services Expanded Conformance Requirements  : CapabilityStatement-fhir-directory-query-human-services-expanded.html
-    Provider Endpoint Conformance Requirements  : CapabilityStatement-fhir-directory-query-provider-endpoint.html
-    Provider Expanded Conformance Requirements  : CapabilityStatement-fhir-directory-query-provider-expanded.html
+    Basic Endpoint Conformance Requirements  : CapabilityStatement-directory-query-basic-endpoint.html
+    Basic Expanded Conformance Requirements  : CapabilityStatement-directory-query-basic-expanded.html
+    Health & Human Services Endpoint Conformance Requirements  : CapabilityStatement-directory-query-health-or-human-services-endpoint.html
+    Health & Human Services Expanded Conformance Requirements  : CapabilityStatement-directory-query-health-or-human-services-expanded.html
+    Human Services Endpoint Conformance Requirements  : CapabilityStatement-directory-query-human-services-endpoint.html
+    Human Services Expanded Conformance Requirements  : CapabilityStatement-directory-query-human-services-expanded.html
+    Provider Endpoint Conformance Requirements  : CapabilityStatement-directory-query-provider-endpoint.html
+    Provider Expanded Conformance Requirements  : CapabilityStatement-directory-query-provider-expanded.html
   Examples      : examples.html
   Downloads     : downloads.html
   

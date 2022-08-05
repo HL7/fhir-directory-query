@@ -1,2 +1,2 @@
-# fhir-directory-exchange
+# directory-exchange
 FAST directory query FHIR implementation guide
