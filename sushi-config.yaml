@@ -10,8 +10,8 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.us.fhir-directory-query
-canonical: http://hl7.org/fhir/us/fhir-directory-query
+id: hl7.fhir.us.directory-query
+canonical: http://hl7.org/fhir/us/directory-query
 version: 1.0.0-ballot
 name: NationalHealthcareDirectoryQuery
 title: National Healthcare Directory Query
