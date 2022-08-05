@@ -33,7 +33,7 @@ Alias:   $PublicationStatus = http://hl7.org/fhir/ValueSet/publication-status
 Alias:   $LocationStatus = http://hl7.org/fhir/location-status 
 Alias:   $USPSState = http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state
 Alias:   $USPSStateCS = https://www.usps.com/
-Alias:   $ConnectionTypeCS = http://terminology.hl7.org/CodeSystem/endpoint-connection-type
+Alias:   $ConnectionTypeCS = http://terminology.hl7.org/CodeSystem/endpoint-connection-type 
 Alias:   $MinValueSet = http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet
 Alias:   $DaysOfWeekVS  = http://hl7.org/fhir/ValueSet/days-of-week
 Alias:   $OrganizationRoleVS  = http://hl7.org/fhir/ValueSet/organization-role
@@ -60,7 +60,7 @@ Alias:  $paymentTypeCS = http://terminology.hl7.org/CodeSystem/v2-0570
 // NatlDir defined CS that mimic VHDir CodeSystems
 Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
-Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS
+Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/directory-query/ValueSet/MinEndpointConnectionTypeVS
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 
