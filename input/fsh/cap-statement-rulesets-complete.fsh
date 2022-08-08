@@ -15,7 +15,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 * rest.security.description = "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
 //endpoint connection-type, identifier, mime-type, organization, payload-type, status, usecase-standard, usecase-type, 
 * rest[0].resource[0].type = #Endpoint
-* rest[0].resource[0].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-Endpoint"
+* rest[0].resource[0].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint"
 * rest[0].resource[0].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[0].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[0].name = "identifier"
@@ -62,7 +62,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 //careteam
 //search parameters: endpoint, location, name, organization, service, category
 * rest[0].resource[10].type = #CareTeam
-* rest[0].resource[10].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-CareTeam"
+* rest[0].resource[10].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam"
 * rest[0].resource[10].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[9].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[10].searchParam[0].name = "endpoint"
@@ -98,7 +98,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //healthcare service
 * rest[0].resource[1].type = #HealthcareService
-* rest[0].resource[1].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-HealthcareService"
+* rest[0].resource[1].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService"
 * rest[0].resource[1].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[1].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[1].searchParam[0].name = "service-category"
@@ -144,7 +144,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Location
 * rest[0].resource[3].type = #Location
-* rest[0].resource[3].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-location"
+* rest[0].resource[3].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-location"
 * rest[0].resource[3].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[3].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[3].searchParam[0].name = "address"
@@ -183,8 +183,8 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //organization
 * rest[0].resource[4].type = #Organization
-* rest[0].resource[4].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-organization"
-* rest[0].resource[4].supportedProfile[1] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-network"
+* rest[0].resource[4].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-organization"
+* rest[0].resource[4].supportedProfile[1] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-network"
 * rest[0].resource[4].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[4].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[4].searchParam[0].name = "type"
@@ -232,7 +232,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //OrganizationAffiliation
 * rest[0].resource[5].type = #OrganizationAffiliation
-* rest[0].resource[5].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-organizationAffiliation"
+* rest[0].resource[5].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-organizationAffiliation"
 * rest[0].resource[5].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[5].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[5].searchParam[0].name = "endpoint"
@@ -279,7 +279,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Practitioner
 * rest[0].resource[6].type = #Practitioner
-* rest[0].resource[6].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-Practitioner"
+* rest[0].resource[6].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner"
 * rest[0].resource[6].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[6].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[6].searchParam[0].name = "name"
@@ -320,7 +320,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //PractitionerRole
 * rest[0].resource[7].type = #PractitionerRole
-* rest[0].resource[7].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-PractitionerRole"
+* rest[0].resource[7].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole"
 * rest[0].resource[7].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[7].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[7].searchParam[0].name = "endpoint"
@@ -366,7 +366,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Insurance Plan
 * rest[0].resource[2].type = #InsurancePlan
-* rest[0].resource[2].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-InsurancePlan"
+* rest[0].resource[2].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan"
 * rest[0].resource[2].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[2].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[2].searchParam[0].name = "coverage-area"
@@ -413,7 +413,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Restriction
 * rest[0].resource[8].type = #Consent
-* rest[0].resource[8].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-Restriction"
+* rest[0].resource[8].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-Restriction"
 * rest[0].resource[8].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[8].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[8].searchParam[0].name = "_id"
@@ -454,7 +454,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Validation
 * rest[0].resource[9].type = #VerificationResult
-* rest[0].resource[9].supportedProfile[0] = "https://hl7.org/fhir/us/directory-queryStructureDefinition-NatlDirEndpointQry-Validation"
+* rest[0].resource[9].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-Validation"
 * rest[0].resource[9].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[9].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[9].searchParam[0].name = "attestation-who"
