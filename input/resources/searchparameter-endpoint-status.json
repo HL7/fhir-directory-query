@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "endpoint-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-status",
+  "name": "NatlDir_sp_endpoint_status",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Endpoints with the specified status",
+  "code": "status",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "token",
+  "expression": "status",
+  "multipleOr": true,
+  "multipleAnd": true
+}

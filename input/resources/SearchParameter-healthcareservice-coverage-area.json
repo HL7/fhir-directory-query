@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-coverage-area",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/healthcareservice-coverage-area",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_healthcareservice_coverage_area",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select services available in a region described by the specified location",
+  "code": "coverage-area",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "reference",
+  "expression": "HealthcareService.coverageArea",
+  "target": [
+    "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+  ]
+}

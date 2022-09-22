@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-specialty",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitionerrole-specialty",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_practitionerrole_specialty",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles associated with the specified specialty",
+  "code": "specialty",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "token",
+  "expression": "specialty.coding.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-identifier",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-identifier",
+  "name": "NatlDir_sp_healthcareservice_identifier",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select HealthcareServices with the specified identifier",
+  "code": "identifier",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
+  "expression": "identifier.value",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text",
+    "ofType"
+  ]
+}

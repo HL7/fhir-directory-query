@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organizationaffiliation-specialty",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/organizationaffiliation-specialty",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_organizationaffiliation_specialty",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select OrganizationAffiliations associated with the specified specialty",
+  "code": "specialty",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "token",
+  "expression": "specialty.coding.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

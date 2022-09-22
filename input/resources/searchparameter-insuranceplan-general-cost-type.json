@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-general-cost-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-type",
+  "name": "NatlDir_sp_insuranceplan_general_cost_type",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select plans with the specified type of cost",
+  "code": "general-cost-type",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "token",
+  "expression": "plan.generalCost.type.coding.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}
