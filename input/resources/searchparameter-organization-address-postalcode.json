@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-address-postalcode",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-postalcode",
+  "name": "VhDir_sp_organization_address_postalcode",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address-postalcode",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select organizations with an address with the specified postal code",
+  "code": "address-postalcode",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
+  "expression": "Organization.address.postalCode",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}

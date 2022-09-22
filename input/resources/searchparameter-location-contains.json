@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-contains",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains",
+  "name": "VhDir_sp_location_contains",
+  "status": "draft",
+  "date": "2018-08-19",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select locations that contain the specified co-ordinates",
+  "code": "contains",
+  "base": [
+    "Location"
+  ],
+  "type": "special",
+  "expression": "Location.extension('http://hl7.org/fhir/StructureDefinition/location-boundary-geojson')",
+  "multipleOr": true,
+  "multipleAnd": true
+}

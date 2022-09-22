@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "verificationresult-attestation-method",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-method",
+  "name": "VhDir_sp_verificationresult_attestation_method",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select validation information for data that was attested to using the specified method",
+  "code": "attestation-method",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "token",
+  "expression": "VerificationResult.attestation.method",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

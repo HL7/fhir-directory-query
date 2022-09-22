@@ -1,0 +1,44 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "practitioner-name-text",
+    "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-name-text",
+    "version": "0.1.4",
+    "name": "NatDir_sp_practitioner_name_text",
+    "status": "draft",
+    "date": "2022-07-10T00:00:00+00:00",
+    "publisher": "FHIR At Scale Taskforce",
+    "contact": [
+      {
+        "name": "FHIR At Scale Taskforce",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "awatson@mitre.org"
+          }
+        ]
+      }
+    ],
+    "description": "Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)",
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "US"
+          }
+        ]
+      }
+    ],
+    "code": "name-text",
+    "base": [
+      "Practitioner"
+    ],
+    "type": "string",
+    "expression": "Practitioner.name.text",
+    "multipleOr": true,
+    "multipleAnd": true,
+    "modifier": [
+        "exact",
+        "contains"
+    ]
+  }

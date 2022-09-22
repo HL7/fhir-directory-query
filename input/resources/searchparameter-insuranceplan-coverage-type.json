@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-coverage-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-type",
+  "name": "VhDir_sp_insuranceplan_coverage_type",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select products offering the specified type of coverage",
+  "code": "coverage-type",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "token",
+  "expression": "InsurancePlan.coverage.type",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "endpoint-payload-type",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-payload-type",
+  "name": "VhDir_sp_endpoint_payload_type",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-payload-type",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Endpoints that support the specified type of content",
+  "code": "payload-type",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "token",
+  "expression": "Endpoint.payloadType",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

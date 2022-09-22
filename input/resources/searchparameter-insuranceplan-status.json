@@ -1,0 +1,29 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-status",
+  "name": "VhDir_sp_insuranceplan_status",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-status",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select health insurance products/plans with the specified status",
+  "code": "status",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "token",
+  "expression": "InsurancePlan.status",
+  "multipleOr": true,
+  "multipleAnd": true
+}

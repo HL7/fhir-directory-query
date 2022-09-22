@@ -1,0 +1,38 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-qualification-issuer",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-qualification-issuer",
+  "name": "VhDir_sp_practitionerrole_qualification_issuer",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles with a qualification issued by the specified organization",
+  "code": "qualification-issuer",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('issuer')",
+  "target": [
+    "Organization"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "below"
+  ],
+  "chain": [
+    "identifier",
+    "name"
+  ]
+}

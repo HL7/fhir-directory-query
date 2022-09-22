@@ -1,0 +1,27 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-new-patient",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-new-patient",
+  "name": "VhDir_sp_practitionerrole_new_patient",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles that are/are not accepting new patients",
+  "code": "new-patient",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "token",
+  "expression": "PractitionerRole.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/newpatients').extension('acceptingPatients')",
+  "multipleAnd": true
+}

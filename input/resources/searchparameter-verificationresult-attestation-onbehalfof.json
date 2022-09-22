@@ -1,0 +1,45 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "verificationresult-attestation-onbehalfof",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-onbehalfof",
+  "name": "VhDir_sp_verificationresult_attestation_onbehalfof",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select validation information for data that was attested to on behalf of the specified source",
+  "code": "attestation-onbehalfof",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
+  "expression": "VerificationResult.attestation.onBehalfOf",
+  "target": [
+    "Practitioner",
+    "Organization",
+    "PractitionerRole"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "type"
+  ],
+  "chain": [
+    "identifier",
+    "address",
+    "name",
+    "partof",
+    "location",
+    "organization",
+    "practitioner"
+  ]
+}

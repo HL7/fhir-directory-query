@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-qualification-code",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-code",
+  "name": "VhDir_sp_practitioner_qualification_code",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Practitioners with a type of qualification matching the specified code",
+  "code": "qualification-code",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "token",
+  "expression": "Practitioner.qualification.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

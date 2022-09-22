@@ -1,0 +1,45 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "verificationresult-primarysource-who",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who",
+  "name": "VhDir_sp_verificationresult_primarysource_who",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select validation information for data that was validated against the specified primary source",
+  "code": "primarysource-who",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
+  "expression": "VerificationResult.primarySource.who",
+  "target": [
+    "Practitioner",
+    "Organization",
+    "PractitionerRole"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "type"
+  ],
+  "chain": [
+    "identifier",
+    "address",
+    "name",
+    "partof",
+    "location",
+    "organization",
+    "practitioner"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organizationaffiliation-identifier",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier",
+  "name": "VhDir_sp_organizationaffiliation_identifier",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-identifier",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select OrganizationAffiliations with the specified identifier",
+  "code": "identifier",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "token",
+  "expression": "OrganizationAffiliation.identifier",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text",
+    "ofType"
+  ]
+}

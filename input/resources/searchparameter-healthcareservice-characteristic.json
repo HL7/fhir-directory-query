@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-characteristic",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic",
+  "name": "VhDir_sp_healthcareservice_characteristic",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select HealthcareServices with the specified characteristic",
+  "code": "characteristic",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
+  "expression": "HealthcareService.characteristic",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

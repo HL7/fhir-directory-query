@@ -1,0 +1,39 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-qualification-wherevalid-location",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-wherevalid-location",
+  "name": "VhDir_sp_organization_qualification_wherevalid_location",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Organizations with a qualification that is valid at the specified location",
+  "code": "qualification-wherevalid-location",
+  "base": [
+    "Organization"
+  ],
+  "type": "reference",
+  "expression": "Organization.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/qualification').extension('whereValid').as(Reference)",
+  "target": [
+    "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "above",
+    "below"
+  ],
+  "chain": [
+    "identifier",
+    "organization"
+  ]
+}

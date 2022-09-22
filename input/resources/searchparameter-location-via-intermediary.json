@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-via-intermediary",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-via-intermediary",
+  "name": "VhDir_sp_location_via_intermediary",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Locations with contact information available through the specified intermediary",
+  "code": "via-intermediary",
+  "base": [
+    "Location"
+  ],
+  "type": "reference",
+  "expression": "Location.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
+  "target": [
+    "PractitionerRole",
+    "Organization",
+    "OrganizationAffiliation",
+    "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true
+}

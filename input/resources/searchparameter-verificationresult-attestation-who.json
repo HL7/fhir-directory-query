@@ -1,0 +1,45 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "verificationresult-attestation-who",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who",
+  "name": "VhDir_sp_verificationresult_attestation_who",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select validation information for data that was attested to by the specified source",
+  "code": "attestation-who",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
+  "expression": "VerificationResult.attestation.who",
+  "target": [
+    "Practitioner",
+    "Organization",
+    "PractitionerRole"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "type"
+  ],
+  "chain": [
+    "identifier",
+    "address",
+    "name",
+    "partof",
+    "location",
+    "organization",
+    "practitioner"
+  ]
+}

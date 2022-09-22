@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-via-intermediary",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitionerrole-via-intermediary",
+  "name": "VhDir_sp_practitionerrole_via_intermediary",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles with contact information available through the specified intermediary",
+  "code": "via-intermediary",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
+  "expression": "PractitionerRole.telecom.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/contactpoint-viaintermediary')",
+  "target": [
+    "PractitionerRole",
+    "Organization",
+    "OrganizationAffiliation",
+    "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true
+}

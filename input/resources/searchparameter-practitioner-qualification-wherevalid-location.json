@@ -1,0 +1,40 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-qualification-wherevalid-location",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-location",
+  "name": "VhDir_sp_practitioner_qualification_wherevalid_location",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Practitioners with a qualification that is valid at the specified location",
+  "code": "qualification-wherevalid-location",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "reference",
+  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/practitioner-qualification').extension('whereValid').as(Reference)",
+  "target": [
+    "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "above",
+    "below"
+  ],
+  "chain": [
+    "identifier",
+    "address",
+    "organization"
+  ]
+}

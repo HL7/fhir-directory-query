@@ -1,0 +1,43 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "practitioner-address-state",
+    "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-state",
+    "version": "0.1.4",
+    "name": "NatDir_practitioner_address_state",
+    "derivedFrom": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-state",
+    "status": "draft",
+    "publisher": "FHIR At Scale Taskforce",
+    "contact": [
+      {
+        "name": "FHIR At Scale Taskforce",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "awatson@mitre.org"
+          }
+        ]
+      }
+    ],
+    "description": "Select organizations with an address in the specified state",
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "code": "US",
+            "system": "urn:iso:std:iso:3166"
+          }
+        ]
+      }
+    ],
+    "code": "address-state",
+    "base": [
+      "Practitioner"
+    ],
+    "type": "string",
+    "expression": "Practitioner.address.state",
+    "multipleOr": true,
+    "multipleAnd": true,
+    "modifier": [
+      "exact"
+    ]
+  }

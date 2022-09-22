@@ -1,0 +1,37 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-general-cost-value",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-general-cost-value",
+  "name": "VhDir_sp_insuranceplan_general_cost_value",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select plans which include the specified cost",
+  "code": "general-cost-value",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "quantity",
+  "expression": "InsurancePlan.plan.generalCost.cost",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le",
+    "sa",
+    "eb"
+  ]
+}
