@@ -1,0 +1,35 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-endpoint",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitionerrole-endpoint",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_practitionerrole_endpoint",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles with the specified endpoint",
+  "code": "endpoint",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
+  "expression": "PractitionerRole.endpoint",
+  "target": [
+    "Endpoint"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "organization"
+  ]
+}

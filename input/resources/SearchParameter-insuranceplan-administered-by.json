@@ -1,0 +1,36 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-administered-by",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/insuranceplan-administered-by",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_insuranceplan_administered_by",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select products that are administered by the specified organization",
+  "code": "administered-by",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "reference",
+  "expression": "InsurancePlan.administeredBy",
+  "target": [
+    "Organization"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "name",
+    "partof"
+  ]
+}
