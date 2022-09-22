@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/organization-name",
   "version": "0.2.0",
   "name": "NatlDir_sp_organization_name",
-  "status": "active",
+  "status": "draft",
   "date": "2022-09-21",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
