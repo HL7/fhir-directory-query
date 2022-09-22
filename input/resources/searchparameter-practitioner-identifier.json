@@ -3,8 +3,7 @@
   "id": "practitioner-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier",
   "name": "NatlDir_sp_practitioner_identifier",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

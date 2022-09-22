@@ -4,7 +4,6 @@
   "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-given-name",
   "version": "0.2.0",
   "name": "NatlDir_sp_practitioner_given_name",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-given",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",

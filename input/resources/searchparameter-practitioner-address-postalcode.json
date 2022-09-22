@@ -3,8 +3,7 @@
   "id": "practitioner-address-postalcode",
   "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-postalcode",
   "name": "NatlDir_sp_practitioner_address_postalcode",
-  "derivedFrom": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-postalcode",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

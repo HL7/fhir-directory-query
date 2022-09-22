@@ -3,8 +3,7 @@
   "id": "careteam-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-status",
   "name": "NatlDir_sp_careteam_status",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/CareTeam-status",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

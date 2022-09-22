@@ -3,8 +3,7 @@
   "id": "endpoint-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-status",
   "name": "NatlDir_sp_endpoint_status",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-status",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

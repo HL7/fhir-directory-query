@@ -3,8 +3,7 @@
   "id": "healthcareservice-characteristic",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-characteristic",
   "name": "NatlDir_sp_healthcareservice_characteristic",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

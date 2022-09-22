@@ -3,8 +3,7 @@
   "id": "insuranceplan-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-status",
   "name": "NatlDir_sp_insuranceplan_status",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-status",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -3,8 +3,7 @@
   "id": "location-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-status",
   "name": "NatlDir_sp_location_status",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-status",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -4,8 +4,7 @@
     "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-city",
     "version": "0.1.4",
     "name": "NatDir_practitioner_address_city",
-    "derivedFrom": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-city",
-    "status": "draft",
+    "status": "active",
     "publisher": "FHIR At Scale Taskforce",
     "contact": [
       {

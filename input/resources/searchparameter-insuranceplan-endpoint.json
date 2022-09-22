@@ -3,8 +3,7 @@
   "id": "insuranceplan-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-endpoint",
   "name": "NatlDir_sp_insuranceplan_endpoint",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-endpoint",
-  "status": "draft",
+  "status": "active",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -4,7 +4,6 @@
   "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-family-name",
   "version": "0.2.0",
   "name": "NatlDir_sp_practitioner_family_name",
-  "derivedFrom": "http://hl7.org/fhir/SearchParameter/individual-family",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
