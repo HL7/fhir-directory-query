@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-postalcode",
   "name": "NatlDir_sp_practitioner_address_postalcode",
   "status": "active",
-  "date": "2018-05-23",
+  "date": "2022-09-21",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {

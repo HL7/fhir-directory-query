@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-status",
   "name": "NatlDir_sp_endpoint_status",
   "status": "active",
-  "date": "2018-05-23",
+  "date": "2022-09-21",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {

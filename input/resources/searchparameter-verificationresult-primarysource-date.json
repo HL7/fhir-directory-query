@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-date",
   "name": "NatlDir_sp_verificationresult_primarysource_date",
   "status": "active",
-  "date": "2018-05-23",
+  "date": "2022-09-21",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
     {
