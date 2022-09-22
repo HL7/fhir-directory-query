@@ -22,7 +22,7 @@
     "InsurancePlan"
   ],
   "type": "token",
-  "expression": "InsurancePlan.status",
+  "expression": "status",
   "multipleOr": true,
   "multipleAnd": true
 }

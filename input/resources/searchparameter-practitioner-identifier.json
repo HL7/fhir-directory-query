@@ -22,7 +22,7 @@
     "Practitioner"
   ],
   "type": "token",
-  "expression": "Practitioner.identifier",
+  "expression": "identifier.value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

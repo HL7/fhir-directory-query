@@ -23,7 +23,7 @@
     "PractitionerRole"
   ],
   "type": "date",
-  "expression": "PractitionerRole.period",
+  "expression": "period.start",
   "multipleOr": true,
   "multipleAnd": true
 }

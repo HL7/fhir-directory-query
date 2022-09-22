@@ -22,7 +22,7 @@
     "CareTeam"
   ],
   "type": "token",
-  "expression": "CareTeam.identifier",
+  "expression": "identifier.value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

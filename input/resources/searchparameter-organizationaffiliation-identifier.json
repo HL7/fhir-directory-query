@@ -22,7 +22,7 @@
     "OrganizationAffiliation"
   ],
   "type": "token",
-  "expression": "OrganizationAffiliation.identifier",
+  "expression": "identifier.value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

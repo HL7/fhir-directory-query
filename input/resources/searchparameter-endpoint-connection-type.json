@@ -22,7 +22,7 @@
     "Endpoint"
   ],
   "type": "token",
-  "expression": "Endpoint.connectionType",
+  "expression": "connectionType.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -22,7 +22,7 @@
     "Practitioner"
   ],
   "type": "string",
-  "expression": "Practitioner.address.postalCode",
+  "expression": "address.postalCode",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

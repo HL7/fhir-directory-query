@@ -22,7 +22,7 @@
     "InsurancePlan"
   ],
   "type": "token",
-  "expression": "InsurancePlan.coverage.benefit.type",
+  "expression": "coverage.benefit.type.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

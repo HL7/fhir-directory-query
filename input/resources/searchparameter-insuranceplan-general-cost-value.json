@@ -22,7 +22,7 @@
     "InsurancePlan"
   ],
   "type": "quantity",
-  "expression": "InsurancePlan.plan.generalCost.cost",
+  "expression": "plan.generalCost.cost",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [

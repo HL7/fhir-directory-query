@@ -22,7 +22,7 @@
     "VerificationResult"
   ],
   "type": "date",
-  "expression": "VerificationResult.statusDate",
+  "expression": "statusDate",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [

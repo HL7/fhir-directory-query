@@ -23,7 +23,7 @@
     "Organization"
   ],
   "type": "string",
-  "expression": "Organization.address",
+  "expression": "address.line",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

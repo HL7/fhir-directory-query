@@ -22,7 +22,7 @@
     "InsurancePlan"
   ],
   "type": "quantity",
-  "expression": "InsurancePlan.coverage.benefit.limit.value",
+  "expression": "coverage.benefit.limit.value.value",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [

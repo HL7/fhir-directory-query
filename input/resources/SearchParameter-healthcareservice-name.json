@@ -23,7 +23,7 @@
     "HealthcareService"
   ],
   "type": "string",
-  "expression": "HealthcareService.name",
+  "expression": "name",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

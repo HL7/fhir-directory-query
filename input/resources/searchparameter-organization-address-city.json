@@ -22,7 +22,7 @@
     "Organization"
   ],
   "type": "string",
-  "expression": "Organization.address.city",
+  "expression": "address.city",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

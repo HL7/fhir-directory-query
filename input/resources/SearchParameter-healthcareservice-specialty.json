@@ -23,7 +23,7 @@
     "HealthcareService"
   ],
   "type": "token",
-  "expression": "HealthcareService.specialty",
+  "expression": "specialty.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

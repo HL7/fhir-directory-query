@@ -22,7 +22,7 @@
     "Endpoint"
   ],
   "type": "token",
-  "expression": "Endpoint.identifier",
+  "expression": "identifier.value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

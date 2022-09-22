@@ -22,7 +22,7 @@
     "VerificationResult"
   ],
   "type": "token",
-  "expression": "VerificationResult.primarySource.type",
+  "expression": "primarySource.type.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

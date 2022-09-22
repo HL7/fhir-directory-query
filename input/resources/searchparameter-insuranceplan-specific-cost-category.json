@@ -22,7 +22,7 @@
     "InsurancePlan"
   ],
   "type": "token",
-  "expression": "InsurancePlan.plan.specificCost.category",
+  "expression": "plan.specificCost.category.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
