@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "practitioner-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-identifier",
-  "name": "VhDir_sp_practitioner_identifier",
+  "name": "NatlDir_sp_practitioner_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
   "status": "draft",
   "date": "2018-05-23",

@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "location-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-status",
-  "name": "VhDir_sp_location_status",
+  "name": "NatlDir_sp_location_status",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Location-status",
   "status": "draft",
   "date": "2018-05-23",

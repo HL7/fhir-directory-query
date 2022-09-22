@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "endpoint-connection-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-connection-type",
-  "name": "VhDir_sp_endpoint_connection_type",
+  "name": "NatlDir_sp_endpoint_connection_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-connection-type",
   "status": "draft",
   "date": "2018-05-23",

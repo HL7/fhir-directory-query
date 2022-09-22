@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "endpoint-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-identifier",
-  "name": "VhDir_sp_endpoint_identifier",
+  "name": "NatlDir_sp_endpoint_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-identifier",
   "status": "draft",
   "date": "2018-05-23",

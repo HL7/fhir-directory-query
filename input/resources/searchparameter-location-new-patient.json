@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "location-new-patient",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-new-patient",
-  "name": "VhDir_sp_location_new_patient",
+  "name": "NatlDir_sp_location_new_patient",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

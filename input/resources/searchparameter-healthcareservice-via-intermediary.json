@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "healthcareservice-via-intermediary",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/healthcareservice-via-intermediary",
-  "name": "VhDir_sp_healthcareservice_via_intermediary",
+  "name": "NatlDir_sp_healthcareservice_via_intermediary",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "insuranceplan-status",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-status",
-  "name": "VhDir_sp_insuranceplan_status",
+  "name": "NatlDir_sp_insuranceplan_status",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-status",
   "status": "draft",
   "date": "2018-05-23",

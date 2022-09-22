@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "practitioner-qualification-period",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period",
-  "name": "VhDir_sp_practitioner_qualification_period",
+  "name": "NatlDir_sp_practitioner_qualification_period",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

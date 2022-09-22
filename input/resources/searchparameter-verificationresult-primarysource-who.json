@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "verificationresult-primarysource-who",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-primarysource-who",
-  "name": "VhDir_sp_verificationresult_primarysource_who",
+  "name": "NatlDir_sp_verificationresult_primarysource_who",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

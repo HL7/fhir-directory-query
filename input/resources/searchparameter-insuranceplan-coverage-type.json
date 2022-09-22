@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "insuranceplan-coverage-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-type",
-  "name": "VhDir_sp_insuranceplan_coverage_type",
+  "name": "NatlDir_sp_insuranceplan_coverage_type",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "insuranceplan-specific-cost-benefit-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-specific-cost-benefit-type",
-  "name": "VhDir_sp_insuranceplan_specific_cost_benefit_type",
+  "name": "NatlDir_sp_insuranceplan_specific_cost_benefit_type",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

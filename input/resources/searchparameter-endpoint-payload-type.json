@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "endpoint-payload-type",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-payload-type",
-  "name": "VhDir_sp_endpoint_payload_type",
+  "name": "NatlDir_sp_endpoint_payload_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-payload-type",
   "status": "draft",
   "date": "2018-05-23",

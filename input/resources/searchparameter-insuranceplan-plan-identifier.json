@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "insuranceplan-plan-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-plan-identifier",
-  "name": "VhDir_sp_insuranceplan_plan_identifier",
+  "name": "NatlDir_sp_insuranceplan_plan_identifier",
   "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",

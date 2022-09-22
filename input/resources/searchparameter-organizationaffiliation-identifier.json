@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "organizationaffiliation-identifier",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organizationaffiliation-identifier",
-  "name": "VhDir_sp_organizationaffiliation_identifier",
+  "name": "NatlDir_sp_organizationaffiliation_identifier",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-identifier",
   "status": "draft",
   "date": "2018-05-23",
