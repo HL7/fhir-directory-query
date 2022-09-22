@@ -3,7 +3,7 @@
   "id": "location-contains",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/location-contains",
   "name": "NatlDir_sp_location_contains",
-  "status": "active",
+  "status": "draft",
   "date": "2018-08-19",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
