@@ -3,7 +3,7 @@
   "id": "verificationresult-validator-organization",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-validator-organization",
   "name": "NatlDir_sp_verificationresult_validator_organization",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/insuranceplan-administered-by",
   "version": "0.2.0",
   "name": "NatlDir_sp_insuranceplan_administered_by",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23T00:00:00+00:00",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

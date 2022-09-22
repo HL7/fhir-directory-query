@@ -3,7 +3,7 @@
   "id": "careteam-participant",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-participant",
   "name": "NatlDir_sp_careteam_member",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

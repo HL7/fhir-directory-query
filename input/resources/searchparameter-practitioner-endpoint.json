@@ -3,7 +3,7 @@
   "id": "practitioner-endpoint",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-endpoint",
   "name": "NatlDir_sp_practitioner_endpoint",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

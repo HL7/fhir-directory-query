@@ -3,7 +3,7 @@
   "id": "careteam-service",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-service",
   "name": "NatlDir_sp_careteam_service",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

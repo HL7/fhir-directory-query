@@ -3,7 +3,7 @@
   "id": "practitioner-qualification-wherevalid-location",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-wherevalid-location",
   "name": "NatlDir_sp_practitioner_qualification_wherevalid_location",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

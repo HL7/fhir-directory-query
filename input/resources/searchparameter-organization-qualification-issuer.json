@@ -3,7 +3,7 @@
   "id": "organization-qualification-issuer",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-qualification-issuer",
   "name": "NatlDir_sp_organization_qualification_issuer",
-  "status": "active",
+  "status": "draft",
   "date": "2018-05-23",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [
