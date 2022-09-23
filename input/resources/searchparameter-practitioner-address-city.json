@@ -33,7 +33,7 @@
       "Practitioner"
     ],
     "type": "string",
-    "expression": "Practitioner.address.city",
+    "expression": "address.city",
     "multipleOr": true,
     "multipleAnd": true,
     "modifier": [

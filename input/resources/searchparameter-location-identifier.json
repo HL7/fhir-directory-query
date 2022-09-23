@@ -22,7 +22,7 @@
     "Location"
   ],
   "type": "token",
-  "expression": "Location.identifier",
+  "expression": "identifier.value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

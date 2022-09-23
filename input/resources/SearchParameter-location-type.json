@@ -23,7 +23,7 @@
     "Location"
   ],
   "type": "token",
-  "expression": "Location.type",
+  "expression": "type.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

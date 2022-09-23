@@ -3,7 +3,7 @@
   "id": "verificationresult-target",
   "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target",
   "name": "NatlDir_sp_verificationresult_target",
-  "status": "active",
+  "status": "draft",
   "date": "2022-09-21",
   "publisher": "HL7 Patient Administration Committee",
   "contact": [

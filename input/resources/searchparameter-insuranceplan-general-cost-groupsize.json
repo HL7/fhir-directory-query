@@ -22,7 +22,7 @@
     "InsurancePlan"
   ],
   "type": "token",
-  "expression": "InsurancePlan.plan.generalCost.groupSize",
+  "expression": "plan.generalCost.groupSize",
   "multipleOr": true,
   "multipleAnd": true,
   "comparator": [

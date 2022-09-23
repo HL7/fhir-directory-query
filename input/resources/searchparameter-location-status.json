@@ -22,7 +22,7 @@
     "Location"
   ],
   "type": "token",
-  "expression": "Location.status",
+  "expression": "status",
   "multipleOr": true,
   "multipleAnd": true
 }

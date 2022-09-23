@@ -23,7 +23,7 @@
     "InsurancePlan"
   ],
   "type": "token",
-  "expression": "InsurancePlan.identifier",
+  "expression": "identifier.value",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -23,7 +23,7 @@
     "PractitionerRole"
   ],
   "type": "token",
-  "expression": "PractitionerRole.code",
+  "expression": "code.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

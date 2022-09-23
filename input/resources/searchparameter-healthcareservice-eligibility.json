@@ -22,7 +22,7 @@
     "HealthcareService"
   ],
   "type": "token",
-  "expression": "HealthcareService.eligibility.code",
+  "expression": "eligibility.code.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

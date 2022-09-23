@@ -22,7 +22,7 @@
     "Endpoint"
   ],
   "type": "token",
-  "expression": "Endpoint.payloadMimeType",
+  "expression": "payloadMimeType.coding.code",
   "multipleOr": true,
   "multipleAnd": true
 }

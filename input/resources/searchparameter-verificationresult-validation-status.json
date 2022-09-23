@@ -22,7 +22,7 @@
     "VerificationResult"
   ],
   "type": "token",
-  "expression": "VerificationResult.status",
+  "expression": "status",
   "multipleOr": true,
   "multipleAnd": true
 }

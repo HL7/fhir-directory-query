@@ -22,7 +22,7 @@
     "Practitioner"
   ],
   "type": "date",
-  "expression": "Practitioner.qualification.period",
+  "expression": "qualification.period.start",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

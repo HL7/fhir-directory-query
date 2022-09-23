@@ -22,7 +22,7 @@
     "CareTeam"
   ],
   "type": "token",
-  "expression": "CareTeam.status",
+  "expression": "status",
   "multipleOr": true,
   "multipleAnd": true
 }

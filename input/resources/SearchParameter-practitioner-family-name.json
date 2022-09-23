@@ -23,7 +23,7 @@
     "Practitioner"
   ],
   "type": "string",
-  "expression": "Practitioner.name.family",
+  "expression": "name.family",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

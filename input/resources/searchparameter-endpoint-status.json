@@ -22,7 +22,7 @@
     "Endpoint"
   ],
   "type": "token",
-  "expression": "Endpoint.status",
+  "expression": "status",
   "multipleOr": true,
   "multipleAnd": true
 }

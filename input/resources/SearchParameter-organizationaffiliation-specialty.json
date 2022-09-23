@@ -23,7 +23,7 @@
     "OrganizationAffiliation"
   ],
   "type": "token",
-  "expression": "OrganizationAffiliation.specialty",
+  "expression": "specialty.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

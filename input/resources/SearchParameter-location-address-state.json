@@ -23,7 +23,7 @@
     "Location"
   ],
   "type": "string",
-  "expression": "Location.address.state",
+  "expression": "address.state",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

@@ -23,7 +23,7 @@
     "Location"
   ],
   "type": "string",
-  "expression": "Location.address.postalCode",
+  "expression": "address.postalCode",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [

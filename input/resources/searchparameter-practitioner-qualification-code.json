@@ -22,7 +22,7 @@
     "Practitioner"
   ],
   "type": "token",
-  "expression": "Practitioner.qualification.code",
+  "expression": "qualification.code.coding.code",
   "multipleOr": true,
   "multipleAnd": true,
   "modifier": [
