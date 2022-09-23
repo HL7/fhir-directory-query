@@ -46,23 +46,18 @@ releaseLabel: ballot
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home:          index.html
+  Home:  index.html
   Guidance:
-    General Guidance:                              general-guidance.html
+    General Guidance: general-guidance.html
     Technical Guidance: technical-guidance.html
-    Bulk Data and Subscriptions:          bulk-data.html
-  Search Parameters   : artifacts.html#behavior-search-parameters
+    Bulk Data and Subscriptions:  bulk-data.html
+    Performance: performance.html
   Profiles: profiles.html
-  Artifacts         : artifacts.html
-  Capability Statements:
-    Basic Endpoint Conformance Requirements  : CapabilityStatement-directory-query-basic-endpoint.html
-    Basic Expanded Conformance Requirements  : CapabilityStatement-directory-query-basic-expanded.html
-    Health & Human Services Endpoint Conformance Requirements  : CapabilityStatement-directory-query-health-or-human-services-endpoint.html
-    Health & Human Services Expanded Conformance Requirements  : CapabilityStatement-directory-query-health-or-human-services-expanded.html
-    Human Services Endpoint Conformance Requirements  : CapabilityStatement-directory-query-human-services-endpoint.html
-    Human Services Expanded Conformance Requirements  : CapabilityStatement-directory-query-human-services-expanded.html
-    Provider Endpoint Conformance Requirements  : CapabilityStatement-directory-query-provider-endpoint.html
-    Provider Expanded Conformance Requirements  : CapabilityStatement-directory-query-provider-expanded.html
+  Conformance Expectations:
+    Basic Directories  : CapabilityStatement-basic-endpoint.html
+    Health & Human Services Directories : CapabilityStatement-health-or-human-services-endpoint.html
+    Human Service Directories : CapabilityStatement-human-services-endpoint.html
+    Provider Directories  : CapabilityStatement-provider-endpoint.html
   Examples      : examples.html
   Downloads     : downloads.html
-  
+  Artifacts         : artifacts.html

@@ -1,23 +1,21 @@
 // Defines expanded operations for the server
 RuleSet: Federated_Query_CapabilityStatement_Expanded
-* status = #draft
-* experimental = true
-* date = "2022-02-15T07:15:00.000000-04:00"
-* kind = #requirements
-* format[0] = #xml
-* format[1] = #json
-* fhirVersion = #4.0.1
-* implementationGuide = "https://hl7.org/fhir/us/directory-query"
-* rest[0].mode = #server
-
-* rest.security.description = "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
+// * experimental = true
+// * fhirVersion = #4.0.1
+// * date = "2022-02-15T07:15:00.000000-04:00"
+// * format[0] = #xml
+// * format[1] = #json
+// * status = #draft
+// * kind = #requirements
+// * implementationGuide = "https://hl7.org/fhir/us/directory-query"
+// * rest[0].mode = #server
+// * fhirVersion = #4.0.1
 //* rest.documentation =  "A Federated Query server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all Federated Query interactions.\n1. Identify the Federated Query  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile individually and in combination.\n\nThe Federated Query Server **SHOULD**:\n\n1. Support xml source formats for all Federated Query interactions.\n"
 * rest.security.description = "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
 //endpoint connection-type, identifier, mime-type, organization, payload-type, status, usecase-standard, usecase-type, 
 * rest[0].resource[0].type = #Endpoint
 * rest[0].resource[0].supportedProfile[0] = "https://hl7.org/fhir/us/directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint"
 * rest[0].resource[0].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest[0].resource[0].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[0].name = "identifier"
 * rest[0].resource[0].searchParam[0].type = #token
 * rest[0].resource[0].searchParam[0].definition = "https://hl7.org/fhir/us/directory-querySearchParameter-EndpointComplete-identifier"
