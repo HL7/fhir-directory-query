@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-address-city",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/organization-address-city",
+  "name": "NatlDir_sp_organization_address_city",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select organizations with an address in the specified city",
+  "code": "address-city",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
+  "expression": "Organization.address.city",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact"
+  ]
+}

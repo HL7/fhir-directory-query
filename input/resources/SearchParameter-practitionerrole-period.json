@@ -1,0 +1,29 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-period",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitionerrole-period",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_practitionerrole_period",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles available in the specified period",
+  "code": "period",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "date",
+  "expression": "PractitionerRole.period",
+  "multipleOr": true,
+  "multipleAnd": true
+}

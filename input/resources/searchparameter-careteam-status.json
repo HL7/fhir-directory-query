@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "careteam-status",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-status",
+  "name": "NatlDir_sp_careteam_status",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select CareTeams with the specified status",
+  "code": "status",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "token",
+  "expression": "CareTeam.status",
+  "multipleOr": true,
+  "multipleAnd": true
+}

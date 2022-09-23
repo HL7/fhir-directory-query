@@ -1,0 +1,38 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "endpoint-organization",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/endpoint-organization",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_endpoint_organization",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Endpoints managed by the specified organization",
+  "code": "organization",
+  "base": [
+    "Endpoint"
+  ],
+  "type": "reference",
+  "expression": "Endpoint.managingOrganization",
+  "target": [
+    "Organization"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "name",
+    "address",
+    "partof",
+    "type"
+  ]
+}

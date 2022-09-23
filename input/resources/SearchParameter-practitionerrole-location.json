@@ -1,0 +1,40 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitionerrole-location",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitionerrole-location",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_practitionerrole_location",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select PractitionerRoles available at the specified location",
+  "code": "location",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "reference",
+  "expression": "PractitionerRole.location",
+  "target": [
+    "Location"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "address",
+    "address-postalcode",
+    "address-city",
+    "address-state",
+    "organization",
+    "type"
+  ]
+}

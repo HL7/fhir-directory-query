@@ -1,0 +1,37 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organizationaffiliation-service",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/organizationaffiliation-service",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_organizationaffiliation_service",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select OrganizationAffiliations providing the specified service",
+  "code": "service",
+  "base": [
+    "OrganizationAffiliation"
+  ],
+  "type": "reference",
+  "expression": "OrganizationAffiliation.healthcareService",
+  "target": [
+    "HealthcareService"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "service-category",
+    "organization",
+    "location"
+  ]
+}
