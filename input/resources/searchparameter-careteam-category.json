@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "careteam-category",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-category",
+  "name": "NatlDir_sp_careteam_category",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select CareTeams of the specified type",
+  "code": "category",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "token",
+  "expression": "category.coding.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

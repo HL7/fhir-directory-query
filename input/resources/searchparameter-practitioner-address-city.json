@@ -1,0 +1,43 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "practitioner-address-city",
+    "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-city",
+    "version": "0.1.4",
+    "name": "NatDir_practitioner_address_city",
+    "status": "active",
+    "publisher": "FHIR At Scale Taskforce",
+    "contact": [
+      {
+        "name": "FHIR At Scale Taskforce",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "awatson@mitre.org"
+          }
+        ]
+      }
+    ],
+    "description": "Select organizations with an address in the specified city",
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "code": "US",
+            "system": "urn:iso:std:iso:3166"
+          }
+        ]
+      }
+    ],
+    "code": "address-city",
+    "base": [
+      "Practitioner"
+    ],
+    "type": "string",
+    "expression": "address.city",
+    "multipleOr": true,
+    "multipleAnd": true,
+    "modifier": [
+      "exact",
+      "contains"
+    ]
+  }

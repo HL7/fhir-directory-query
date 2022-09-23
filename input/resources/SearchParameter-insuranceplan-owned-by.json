@@ -1,0 +1,37 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-owned-by",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/insuranceplan-owned-by",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_insuranceplan_owned_by",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select products that are owned by the specified organization",
+  "code": "owned-by",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "reference",
+  "expression": "InsurancePlan.ownedBy",
+  "target": [
+    "Organization"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+
+  "chain": [
+    "name",
+    "partof"
+  ]
+}

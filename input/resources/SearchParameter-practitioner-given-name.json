@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-given-name",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-given-name",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_practitioner_given_name",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Practitioners with the specified given name",
+  "code": "given",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
+  "expression": "name.given",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact"
+  ]
+}

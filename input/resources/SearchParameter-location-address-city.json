@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "location-address-city",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/location-address-city",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_location_address_city",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Locations with the specified address.city",
+  "code": "address-city",
+  "base": [
+    "Location"
+  ],
+  "type": "string",
+  "expression": "address.city",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}

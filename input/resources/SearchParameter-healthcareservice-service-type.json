@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "healthcareservice-service-type",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/healthcareservice-service-type",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_healthcareservice_type", 
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select HealthcareServices of the specified type",
+  "code": "service-type",
+  "base": [
+    "HealthcareService"
+  ],
+  "type": "token",
+  "expression": "type.coding.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

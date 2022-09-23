@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-plan-type",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/insuranceplan-plan-type",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_insuranceplan_plan_type",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select plans of the specified type",
+  "code": "plan-type",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "token",
+  "expression": "plan.type.coding.code",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "text"
+  ]
+}

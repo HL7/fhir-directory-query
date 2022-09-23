@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-name",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-name",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_practitioner_name",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)",
+  "code": "name",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
+  "expression": "name.text",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}

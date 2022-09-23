@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-address-postalcode",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/practitioner-address-postalcode",
+  "name": "NatlDir_sp_practitioner_address_postalcode",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select practitioners with an address with the specified postal code",
+  "code": "address-postalcode",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
+  "expression": "address.postalCode",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}

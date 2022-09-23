@@ -1,0 +1,36 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "insuranceplan-endpoint",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-endpoint",
+  "name": "NatlDir_sp_insuranceplan_endpoint",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select health insurance products/plans with the specified endpoint",
+  "code": "endpoint",
+  "base": [
+    "InsurancePlan"
+  ],
+  "type": "reference",
+  "expression": "InsurancePlan.endpoint",
+  "target": [
+    "Endpoint"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "chain": [
+    "identifier",
+    "connection-type",
+    "organization"
+  ]
+}

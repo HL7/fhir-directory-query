@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-address",
+  "url": "http://hl7.org/fhir/us/directory-attestation/SearchParameter/organization-address",
+  "version": "0.2.0",
+  "name": "NatlDir_sp_organization_address",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select organizations with the specified address (matches any of the string elements of an address)",
+  "code": "address",
+  "base": [
+    "Organization"
+  ],
+  "type": "string",
+  "expression": "address.line",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}

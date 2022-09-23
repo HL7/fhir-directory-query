@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "verificationresult-target",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-target",
+  "name": "NatlDir_sp_verificationresult_target",
+  "status": "draft",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select validation information for the specified resource",
+  "code": "target",
+  "base": [
+    "VerificationResult"
+  ],
+  "type": "reference",
+  "expression": "VerificationResult.target",
+  "target": [
+    "Resource"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "type"
+  ]
+}

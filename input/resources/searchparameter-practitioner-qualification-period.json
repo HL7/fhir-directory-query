@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-qualification-period",
+  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/practitioner-qualification-period",
+  "name": "NatlDir_sp_practitioner_qualification_period",
+  "status": "active",
+  "date": "2022-09-21",
+  "publisher": "HL7 Patient Administration Committee",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Select Practitioners that have a qualification relevant to the date provided",
+  "code": "qualification-period",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "date",
+  "expression": "qualification.period.start",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "modifier": [
+    "exact",
+    "contains"
+  ]
+}
