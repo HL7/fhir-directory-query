@@ -219,14 +219,18 @@
 <artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities Code System"/>
 <artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities Value Set"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
-<artifact id="CapabilityStatement/directory-query-basic-endpoint" key="CapabilityStatement-directory-query-basic-endpoint" name="directory-query-basic-endpoint"/>
-<artifact id="CapabilityStatement/directory-query-basic-expanded" key="CapabilityStatement-directory-query-basic-expanded" name="directory-query-basic-expanded"/>
-<artifact id="CapabilityStatement/directory-query-health-or-human-services-endpoint" key="CapabilityStatement-directory-query-health-or-human-services-endpoint" name="directory-query-health-or-human-services-endpoint"/>
-<artifact id="CapabilityStatement/directory-query-health-or-human-services-expanded" key="CapabilityStatement-directory-query-health-or-human-services-expanded" name="directory-query-health-or-human-services-expanded"/>
-<artifact id="CapabilityStatement/directory-query-human-services-endpoint" key="CapabilityStatement-directory-query-human-services-endpoint" name="directory-query-human-services-endpoint"/>
-<artifact id="CapabilityStatement/directory-query-human-services-expanded" key="CapabilityStatement-directory-query-human-services-expanded" name="directory-query-human-services-expanded"/>
-<artifact id="CapabilityStatement/directory-query-provider-endpoint" key="CapabilityStatement-directory-query-provider-endpoint" name="directory-query-provider-endpoint"/>
-<artifact id="CapabilityStatement/directory-query-provider-expanded" key="CapabilityStatement-directory-query-provider-expanded" name="directory-query-provider-expanded"/>
+<artifact id="CapabilityStatement/basic-endpoint" key="CapabilityStatement-basic-endpoint" name="basic-endpoint"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-basic-endpoint" key="CapabilityStatement-directory-query-basic-endpoint" name="directory-query-basic-endpoint"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-basic-expanded" key="CapabilityStatement-directory-query-basic-expanded" name="directory-query-basic-expanded"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-health-or-human-services-endpoint" key="CapabilityStatement-directory-query-health-or-human-services-endpoint" name="directory-query-health-or-human-services-endpoint"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-health-or-human-services-expanded" key="CapabilityStatement-directory-query-health-or-human-services-expanded" name="directory-query-health-or-human-services-expanded"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-human-services-endpoint" key="CapabilityStatement-directory-query-human-services-endpoint" name="directory-query-human-services-endpoint"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-human-services-expanded" key="CapabilityStatement-directory-query-human-services-expanded" name="directory-query-human-services-expanded"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-provider-endpoint" key="CapabilityStatement-directory-query-provider-endpoint" name="directory-query-provider-endpoint"/>
+<artifact deprecated="true" id="CapabilityStatement/directory-query-provider-expanded" key="CapabilityStatement-directory-query-provider-expanded" name="directory-query-provider-expanded"/>
+<artifact id="CapabilityStatement/health-or-human-services-endpoint" key="CapabilityStatement-health-or-human-services-endpoint" name="health-or-human-services-endpoint"/>
+<artifact id="CapabilityStatement/human-services-endpoint" key="CapabilityStatement-human-services-endpoint" name="human-services-endpoint"/>
+<artifact id="CapabilityStatement/provider-endpoint" key="CapabilityStatement-provider-endpoint" name="provider-endpoint"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="all-examples" name="All Examples"/>
