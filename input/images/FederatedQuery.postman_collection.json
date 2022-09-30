@@ -1,0 +1,850 @@
+{
+	"info": {
+		"_postman_id": "e2898669-9d13-49fe-94a2-057f238018dd",
+		"name": "FederatedQuery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "St. James Infirmary (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "resourceType",
+						"value": "Organization",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization/o6AJtyEk6sSsHWLjt",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization",
+						"o6AJtyEk6sSsHWLjt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (name)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?name=St. James Infirmary",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "St. James Infirmary"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (address)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address=456 Main Street",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "456 Main Street"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (address-city)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-city=Anytown",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-city",
+							"value": "Anytown"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (address-state)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-state=CA",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-state",
+							"value": "CA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (address-state & name)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-state=RI",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-state",
+							"value": "RI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (address-country)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-country=US",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-country",
+							"value": "US"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (postalcode)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-postalcode=85202",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-postalcode",
+							"value": "85202"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary (identifier)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-postalcode=85202",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-postalcode",
+							"value": "85202"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "456 Main Street (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Location/l4bjaZGQfeNfhAEpb",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Location",
+						"l4bjaZGQfeNfhAEpb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "456 Main Street (search postalcode)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Location?address-postalcode=00014-1234",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Location"
+					],
+					"query": [
+						{
+							"key": "address-postalcode",
+							"value": "00014-1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "456 Main Street (search state)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/baseR4/Location?address-state=CO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"baseR4",
+						"Location"
+					],
+					"query": [
+						{
+							"key": "address-state",
+							"value": "CO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emergency Medical Services (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/HealthcareService/hsEk35Ayonz755t6u",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"HealthcareService",
+						"hsEk35Ayonz755t6u"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emergency Medical Services (specialty)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/HealthcareService?specialty=332U00000X",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"HealthcareService"
+					],
+					"query": [
+						{
+							"key": "specialty",
+							"value": "332U00000X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary - Patient Portal (id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Endpoint/etKzBJvzbeHDZi7Gd",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Endpoint",
+						"etKzBJvzbeHDZi7Gd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary - Patient Portal (search)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Endpoint?name=St. James Infirmary",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Endpoint"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "St. James Infirmary"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "St. James Infirmary - Patient Portal (managingOrganization)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Endpoint?organization=Organization/o6AJtyEk6sSsHWLjt",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Endpoint"
+					],
+					"query": [
+						{
+							"key": "organization",
+							"value": "Organization/o6AJtyEk6sSsHWLjt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dr. Allison Camron (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Practitioner/fZzusFYr3PBYyRnot",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Practitioner",
+						"fZzusFYr3PBYyRnot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dr. Allison Camron (search)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/baseR4/Practitioner?name=Camron",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Practitioner"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Camron"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FHIR Endpoints",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Endpoint?connection-type=hl7-fhir-rest",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Endpoint"
+					],
+					"query": [
+						{
+							"key": "connection-type",
+							"value": "hl7-fhir-rest"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HealthcareServices in Colorado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/HealthcareService?location.address-state=CO",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"HealthcareService"
+					],
+					"query": [
+						{
+							"key": "location.address-state",
+							"value": "CO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Practitioner by specialty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Practitioner?specialty=207R00000X",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Practitioner"
+					],
+					"query": [
+						{
+							"key": "specialty",
+							"value": "207R00000X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Organization by specialty and state",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?specialty=2083P0901X&address-state=CT",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "specialty",
+							"value": "2083P0901X"
+						},
+						{
+							"key": "address-state",
+							"value": "CT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Practitioner by name and location",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Practitioner?name=DAMLE&address-state=RI",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Practitioner"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "DAMLE"
+						},
+						{
+							"key": "address-state",
+							"value": "RI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Womens Healthcare providers in New England states",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Organization?address-state=RI,CT,MA,NY&specialty=2083P0901X",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Organization"
+					],
+					"query": [
+						{
+							"key": "address-state",
+							"value": "RI,CT,MA,NY"
+						},
+						{
+							"key": "specialty",
+							"value": "2083P0901X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Practitioner by NPI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/baseR4/Practitioner?identifier=364SH1100X",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"baseR4",
+						"Practitioner"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "364SH1100X"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
