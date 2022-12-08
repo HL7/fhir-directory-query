@@ -9,6 +9,11 @@ F: http://build.fhir.org/
 
 ## Introduction
 
+><span style="color:red">**Alert:**
+FAST is in the process of combining the three National Directory IGs into a single IG (National Directory for Healthcare Providers and Services -- NDH) based on feedback from the community. The combined IG is located at: **http://build.fhir.org/ig/HL7/fhir-us-ndh/branches/master/index.html**. While useful information may be found in this IG, please use the combined IG as the basis for the National Directory / NDH IG standard. </span>
+
+---
+
 The National Healthcare Directory Implementation Guide  is based on [FHIR Version 4.0](http://build.fhir.org/). It was developed in cooperation with the [Office of the National Coordinator for Health Information Technology (ONC)](http://www.healthit.gov/newsroom/about-onc) and [Federal Health Architecture (FHA)](https://www.healthit.gov/policy-researchers-implementers/federal-health-architecture-fha) with guidance from HL7 International, the Patient Administration Workgroup, and the HL7 US Realm Steering Committee.
 
 It describes the architectural considerations for attesting to, validating, and exchanging data from a central source of validated provider data, as well as a RESTful FHIR API for accessing data from a VHDir.
@@ -57,3 +62,4 @@ Primary Authors: Dan Chaput, Alex Kontur, Brian Postlethwaite, Bob Dieterle, Sea
 [FHIR Search]: http://hl7.org/fhir/STU3/search.html
 [FHIR Resource]: http://hl7.org/fhir/STU3/formats.html
 [2015 Edition Common Clinical Data Set]: guidance.html#edition-common-clinical-data-set
+

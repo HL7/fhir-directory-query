@@ -2,12 +2,14 @@
 ValueSet: IdentifierStatusVS
 Title: "Identifier Status Value Set"
 Description: "Codes for Identifier Status"
+* ^experimental = false
 * codes from system CredentialStatusCS
 
 
 ValueSet: ValidationProcessVS
 Title: "Validation Type Value Set"
 Description: "Codes to identify Validation Type"
+* ^experimental = false
 * ValidationTypeCS#editcheck  "edit check"
 * ValidationTypeCS#valueset	"Valueset"
 * ValidationTypeCS#extsource	"External source"
@@ -18,71 +20,85 @@ Description: "Codes to identify Validation Type"
 ValueSet: IgTypeVS
 Title: "IG Type Value Set"
 Description: "Codes to identify IG Type"
+* ^experimental = false
 * codes from system IgTypeCS
 
 ValueSet: EndpointTypeVS
 Title: "Endpoint Type Value Set"
 Description: "Codes to identify Endpoint Type"
+* ^experimental = false
 * codes from system EndpointTypeCS
 
 ValueSet: TrustFrameworkTypeVS
 Title: "Trust Framework Type Value Set"
 Description: "Trust Framework Type"
+* ^experimental = false
 * codes from system TrustFrameworkTypeCS
 
 ValueSet: AcceptingPatientsVS
 Title: "Accepting Patients Codes Value Set"
 Description: "Codes to identify if the practice is accepting new patients"
+* ^experimental = false
 * codes from system AcceptingPatientsCS
 
 ValueSet: AccessibilityVS
 Title: "Accessibility Value Set"
 Description: "Codes for documenting general categories of accommodations available."
+* ^experimental = false
 * codes from system AccessibilityCS
 
 ValueSet: DeliveryMethodVS
 Title: "Delivery Methods Value Set"
 Description: "Codes for documenting delivery methods."
+* ^experimental = false
 * codes from system DeliveryMethodCS
 
 ValueSet: VirtualModalitiesVS
 Title: "Virtual Modalities Value Set"
 Description: "Codes for virtual service delivery modalities ."
+* ^experimental = false
 * codes from system VirtualModalitiesCS
 
 ValueSet: SpecialtiesVS
 Title: "Specialties Value Set"
 Description:  "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set."
+* ^experimental = false
 * codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from valueset NonIndividualSpecialtiesVS
 
 ValueSet: SpecialtyAndDegreeLicenseCertificateVS
 Title: "Specialties, Degrees, Licenses, and Certificates Value Set"
 Description:  "Specialties and Degree License and Certificates"
+* ^experimental = false
 * codes from valueset SpecialtiesVS 
 * codes from system $V2table0360CS
 
 ValueSet: IndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Individual Specialties, Degrees, Licenses, and Certificates Value Set"
 Description: "Individual Specialties, Degrees, Licenses, and Certificates"
+* ^experimental = false
 //* codes from valueset IndividualAndGroupSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: NonIndividualSpecialtyAndDegreeLicenseCertificateVS
 Title: "Non-Individual Specialties, Degrees, Licenses, and Certificates Value Set"
 Description: "Non-Individual Specialties, Degrees, Licenses, and Certificates"
+* ^experimental = false
 * codes from valueset NonIndividualSpecialtiesVS
 * codes from system $V2table0360CS
 
 ValueSet: EndpointConnectionTypeVS
 Title: "Endpoint Connection Types Value Set"
 Description:  "Endpoint Connection Types"
+* ^experimental = false
+* ^experimental = false
 * codes from system $ConnectionTypeCS
 * codes from system EndpointConnectionTypeCS 
 
 ValueSet: MinEndpointConnectionTypeVS
 Title: "Minimum Endpoint Connection Types Value Set"
 Description:  "Minimum Endpoint Connection Types"
+* ^experimental = false
 * $ConnectionTypeCS#hl7-fhir-rest "HL7 FHIR"
 * $ConnectionTypeCS#hl7-fhir-msg "HL7 FHIR Messaging"
 * EndpointConnectionTypeCS#hl7-fhir-opn "HL7 FHIR Operation"
@@ -92,6 +108,7 @@ Description:  "Minimum Endpoint Connection Types"
 ValueSet: EndpointUsecaseVS
 Title: "Endpoint Usecases Value Set"
 Description:  "Codes for documenting business use case by a general grouping by business area."
+* ^experimental = false
 * $V3ActReason#TREAT  "treatment"
 * $V3ActReason#HPAYMT "healthcare payment"
 * $V3ActReason#COC "coordination of care"
@@ -105,57 +122,67 @@ Description:  "Codes for documenting business use case by a general grouping by 
 ValueSet: ConsentVS
 Title: "National Directory Consent Value Set"
 Description: "Codes for use in defining access levels for sharing subsets of constrained content (as an example)."
+* ^experimental = false
 * codes from system $ConsentCS
 //* codes from system ConsentScopeCS
 
 ValueSet: EndpointPayloadTypeVS
 Title: "Endpoint Payload Type Value Set"
 Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
+* ^experimental = false
 * EndpointPayloadTypeCS#NA  "Not Applicable"
 
 ValueSet: NetworkTypeVS
 Title: "Network Type Value Set"
 Description:  "Single value describing networks."
+* ^experimental = false
 * OrgTypeCS#ntwk   // only Network profile uses this type 
 
 
 ValueSet: OrgTypeVS
 Title: "Organization Type Value Set"
 Description:  "Categories of organizations based on criteria in provider directories."
+* ^experimental = false
 * codes from system OrgTypeCS
 * exclude OrgTypeCS#ntwk   // only Network profile uses this type 
 
 ValueSet: OrgAliasTypeVS
 Title: "Organization Alias Typ Value Sete"
 Description:  "Categories of an organization's Alias based on criteria in provider directories."
+* ^experimental = false
 * codes from system OrgAliasTypeCS
 
 ValueSet: InsuranceProductTypeVS
 Title: "Insurance Product Type Value Set"
 Description: "A distinct package of health insurance coverage benefits that are offered using a particular product network type."
+* ^experimental = false
 * codes from system InsuranceProductTypeCS
 
 
 ValueSet: InsurancePlanTypeVS
 Title: "Insurance Plan Type Value Set"
 Description: "Categories of cost-sharing used by plans."
+* ^experimental = false
 * codes from system InsurancePlanTypeCS
 
 ValueSet: HealthcareServiceCategoryVS
 Title: "Healthcare Service Category Value Set"
 Description: "Broad categories of healthcare services being performed or delivered."
+* ^experimental = false
 * codes from system HealthcareServiceCategoryCS
 
 
 ValueSet: QualificationStatusVS
 Title: "Qualification Status Value Set"
 Description: "The state indicating if a qualification is currently valid."
+* ^experimental = false
 * codes from system QualificationStatusCS
 
 
 ValueSet: LanguageProficiencyVS
 Title: "Language Proficiency Value Set"
 Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
+* ^experimental = false
 * codes from system LanguageProficiencyCS
 
 
@@ -163,6 +190,7 @@ Description: "Codes for documenting spoken language proficiency based on the Int
 ValueSet: PractitionerRoleVS
 Title: "PractitionerRole Code Value Set"
 Description: "Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System."
+* ^experimental = false
 * codes from system ProviderRoleCS
 * codes from system $HL7PractitionerRoleCS
 
@@ -171,6 +199,7 @@ Description: "Codes for the capabilities that an individual, group, or organizat
 ValueSet: HealthcareServiceTypeVS
 Description: "HealthCareService type Value Set"
 Title: "HealthcareService Type Value Set"
+* ^experimental = false
 * $ServiceTypeCS#1 "Adoption/Permanent Care Info/Support" 
 * $ServiceTypeCS#3 "Aged Care Information/Referral" 
 * $ServiceTypeCS#8 "Home Care/Housekeeping Assistance" 

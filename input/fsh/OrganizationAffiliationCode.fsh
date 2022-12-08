@@ -2,6 +2,7 @@
 CodeSystem: OrganizationAffiliationRoleCS
 Title: "Organization Affiliation Role"
 Description: "Codes For Organization Affiliation Role"
+* ^experimental = false
 * #behavioral	"Outpatient Behavioral Health Provider" "Provider of services related to the promotion of mental health, resilience and wellbeing; the treatment of mental and substance use disorders; and the support of those who experience and/or are in recovery from these conditions, along with their families and communities."
 * #bt "Member Of" "Has a relationship of participation with.  This does NOT represent a member of an insurance plan, but other types of membership such as membership of a hospital in an HIE"    // Added 7/15/2020
 * #dme	"DME/Medical Supplier"	"Supplier of health care consumables or equipments supplied to patients."
@@ -24,6 +25,7 @@ Description: "Codes For Organization Affiliation Role"
 ValueSet: OrganizationAffiliationRoleVS
 Title: "OrganizationAffiliation Roles"
 Description: "Value Set for Organization Affiliation Roles"
+* ^experimental = false
 * codes from system $HL7OrganizationRoleCS 
 * exclude  $HL7OrganizationRoleCS#member  // replaced by OrganizationAffiliationRoleCS#memberof
 * codes from system OrganizationAffiliationRoleCS
